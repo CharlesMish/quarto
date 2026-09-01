@@ -1,0 +1,495 @@
+{
+  "tag": "DP1_DERIVED_ARCHITECTURE_RESULT",
+  "freezeId": "MT1-DP1A",
+  "sourceDp1Sha256": "fc46ae8f55c2484273375a65fe2745a8977929738daf4a5a17e46ee5e7743761",
+  "status": "DP1A_CANDIDATE_PENDING_DIRECTOR",
+  "disposition": "DP1A_BPRIME_SURVIVES_WITH_CAUTION",
+  "packaging": {
+    "tag": "DP1_DERIVED_ARCHITECTURE_RESULT",
+    "outerCan": {
+      "w": 1,
+      "h": 0.82
+    },
+    "innerPassage": {
+      "w": 0.88,
+      "h": 0.7
+    },
+    "maxCoreSection": {
+      "w": 0.74,
+      "h": 0.56
+    },
+    "recommendedCoreSection": {
+      "w": 0.7,
+      "h": 0.52
+    },
+    "shoeIntrudesEnvelope": false,
+    "shoeEnvelopeGap": 0.010000000000000064,
+    "maxCoreBand": {
+      "zAft": -4.525,
+      "zFwd": -2.075,
+      "length": 2.45
+    },
+    "recommendedCoreBand": {
+      "zAft": -4.405,
+      "zFwd": -2.6050000000000004,
+      "length": 1.8
+    },
+    "handoverStation": -4.525,
+    "rawBayEngagement": 0.27499999999999947,
+    "usableEngagement": 0.19499999999999945,
+    "minRadialClearanceOverStroke": 0.07,
+    "coreClearsCanInteriorOverStroke": true,
+    "canFullyLeavesCoreBulk": true,
+    "canFullyLeavesBay": false,
+    "overlapSamples": [
+      {
+        "driveT": 0,
+        "overlapLength": 1.7999999999999998,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.05,
+        "overlapLength": 1.7999999999999998,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.1,
+        "overlapLength": 1.7999999999999998,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.15,
+        "overlapLength": 1.7999999999999998,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.2,
+        "overlapLength": 1.7999999999999998,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.25,
+        "overlapLength": 1.7925,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.3,
+        "overlapLength": 1.6650000000000005,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.35,
+        "overlapLength": 1.5375,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.4,
+        "overlapLength": 1.4100000000000006,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.45,
+        "overlapLength": 1.2825000000000002,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.5,
+        "overlapLength": 1.1549999999999998,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.55,
+        "overlapLength": 1.0275000000000003,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.6,
+        "overlapLength": 0.9000000000000008,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.65,
+        "overlapLength": 0.7725000000000004,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.7,
+        "overlapLength": 0.645,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.75,
+        "overlapLength": 0.5175000000000005,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.8,
+        "overlapLength": 0.3899999999999997,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.85,
+        "overlapLength": 0.2625000000000002,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.9,
+        "overlapLength": 0.13500000000000068,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 0.95,
+        "overlapLength": 0.007500000000001172,
+        "radialClearance": 0.07
+      },
+      {
+        "driveT": 1,
+        "overlapLength": 0,
+        "radialClearance": null
+      }
+    ]
+  },
+  "allowanceCorners": {
+    "tag": "DP1_DERIVED_ARCHITECTURE_RESULT",
+    "corners": [
+      {
+        "id": "WLRLAL",
+        "wall": "LOW",
+        "running": "LOW",
+        "align": "LOW",
+        "wall_m": 0.05,
+        "running_m": 0.03,
+        "align_m": 0.02,
+        "maxCoreW": 0.8,
+        "maxCoreH": 0.62,
+        "admitsNominalRecommended": true
+      },
+      {
+        "id": "WLRLAH",
+        "wall": "LOW",
+        "running": "LOW",
+        "align": "HIGH",
+        "wall_m": 0.05,
+        "running_m": 0.03,
+        "align_m": 0.04,
+        "maxCoreW": 0.76,
+        "maxCoreH": 0.58,
+        "admitsNominalRecommended": true
+      },
+      {
+        "id": "WLRHAL",
+        "wall": "LOW",
+        "running": "HIGH",
+        "align": "LOW",
+        "wall_m": 0.05,
+        "running_m": 0.05,
+        "align_m": 0.02,
+        "maxCoreW": 0.76,
+        "maxCoreH": 0.58,
+        "admitsNominalRecommended": true
+      },
+      {
+        "id": "WLRHAH",
+        "wall": "LOW",
+        "running": "HIGH",
+        "align": "HIGH",
+        "wall_m": 0.05,
+        "running_m": 0.05,
+        "align_m": 0.04,
+        "maxCoreW": 0.72,
+        "maxCoreH": 0.54,
+        "admitsNominalRecommended": true
+      },
+      {
+        "id": "WHRLAL",
+        "wall": "HIGH",
+        "running": "LOW",
+        "align": "LOW",
+        "wall_m": 0.08,
+        "running_m": 0.03,
+        "align_m": 0.02,
+        "maxCoreW": 0.74,
+        "maxCoreH": 0.56,
+        "admitsNominalRecommended": true
+      },
+      {
+        "id": "WHRLAH",
+        "wall": "HIGH",
+        "running": "LOW",
+        "align": "HIGH",
+        "wall_m": 0.08,
+        "running_m": 0.03,
+        "align_m": 0.04,
+        "maxCoreW": 0.7,
+        "maxCoreH": 0.52,
+        "admitsNominalRecommended": true
+      },
+      {
+        "id": "WHRHAL",
+        "wall": "HIGH",
+        "running": "HIGH",
+        "align": "LOW",
+        "wall_m": 0.08,
+        "running_m": 0.05,
+        "align_m": 0.02,
+        "maxCoreW": 0.7,
+        "maxCoreH": 0.52,
+        "admitsNominalRecommended": true
+      },
+      {
+        "id": "WHRHAH",
+        "wall": "HIGH",
+        "running": "HIGH",
+        "align": "HIGH",
+        "wall_m": 0.08,
+        "running_m": 0.05,
+        "align_m": 0.04,
+        "maxCoreW": 0.66,
+        "maxCoreH": 0.48,
+        "admitsNominalRecommended": false
+      }
+    ],
+    "favorable": {
+      "w": 0.8,
+      "h": 0.62,
+      "id": "WLRLAL"
+    },
+    "nominalPublished": {
+      "w": 0.74,
+      "h": 0.56
+    },
+    "conservative": {
+      "w": 0.66,
+      "h": 0.48,
+      "id": "WHRHAH"
+    },
+    "NOMINAL_CORE_PROXY": {
+      "w": 0.7,
+      "h": 0.52
+    },
+    "RANGE_ROBUST_CORE_PROXY": {
+      "w": 0.66,
+      "h": 0.48
+    },
+    "recommendedIsRangeRobust": false
+  },
+  "loadPaths": {
+    "tag": "DP1_DERIVED_ARCHITECTURE_RESULT",
+    "coreReaction": "fixed prime mover → core mounts/reaction frame → bay floor / BULKHEAD_Z-1p70 / spanning keel",
+    "canOperatingLoad": "can pressure/terminal axial load → deployed lugs/register → short handover frame → AFT_POST_PAIR → BAY_WALL_PORT/STBD → BULKHEAD_Z-1p70 → VENTRAL_KEEL",
+    "rails": "guides only; carry can during translation; do not take operating axial reaction after capture",
+    "physicalProof": "PENDING_PHYSICAL_S5_PROOF"
+  },
+  "comparison": {
+    "tag": "DP1_DERIVED_ARCHITECTURE_RESULT",
+    "A": {
+      "name": "whole propulsion module translates",
+      "packaging": "current solid envelope is the module; no inner-core fit required",
+      "movingServices": "power/fuel/cooling must flex the full 2.55 m",
+      "deployedCapture": "still required — rails are not a thrust frame",
+      "loadPath": "module lug ring → same handover seat → AFT_POST_PAIR → BAY_WALL_PORT/STBD → BULKHEAD_Z-1p70 → VENTRAL_KEEL",
+      "movingBurden": "entire prime mover walks",
+      "waistInterface": "core leaves the bay; lateral service to a departed core is awkward",
+      "strokeComplexity": "simplest internals; no sliding flow joint",
+      "s4a": "preserves envelope/stroke unchanged",
+      "vetoedByVb1Cg": false
+    },
+    "Bprime": {
+      "name": "fixed core + translating thrust can + deployed capture",
+      "packaging": "useful core section exists under declared allowances",
+      "movingServices": "core services stay in the bay; can needs only lock/align harness",
+      "deployedCapture": "required at handover, same seat family as A",
+      "loadPath": "core mounts → bay/keel; can operating load → seat → AFT_POST_PAIR → BAY_WALL_PORT/STBD → BULKHEAD_Z-1p70 → VENTRAL_KEEL",
+      "movingBurden": "hollow can + carriage only",
+      "waistInterface": "fixed core remains at bay mouth; lateral datums stay meaningful",
+      "strokeComplexity": "coaxial extraction; constant section; one plane joint",
+      "s4a": "preserves envelope/stroke; envelope becomes hollow",
+      "vetoedByVb1Cg": false,
+      "winsIf": {
+        "usefulCore": true,
+        "realFlowInsertion": true,
+        "structuralBypassFeasible": true
+      }
+    },
+    "C": {
+      "name": "telescoping train",
+      "necessary": false,
+      "verdict": "rejected_as_unnecessary_complexity"
+    }
+  },
+  "killConditionsEncountered": [],
+  "sentence": "The vehicle extends its aft thrust can from around the fixed propulsion core into the free exhaust station; the can's forward mouth remains 0.275 m inside the bay, seats on the handover structure forward of the AFT_POST_PAIR, and only then is propulsion considered mechanically ready.",
+  "gates": [
+    {
+      "id": "DP1-G1",
+      "name": "S4A identity",
+      "evidenceKind": "EXTERNAL_ATTESTATION",
+      "pass": true,
+      "status": "PASS",
+      "source": "Playwright/release hash test",
+      "detail": "declared frozen identity 95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8; workspace file hashes are not computed in the browser study",
+      "attestedSourceCount": 23,
+      "mismatches": []
+    },
+    {
+      "id": "DP1-G2",
+      "name": "station geometry truth",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "status": "PASS",
+      "detail": "live envelope matches P; stroke=length=2.55"
+    },
+    {
+      "id": "DP1-G3",
+      "name": "deployed engagement / sign",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "status": "PASS",
+      "detail": "deployedBayEngagement=0.275 (can fwd face forward of aft-post station)"
+    },
+    {
+      "id": "DP1-G4",
+      "name": "can/core packaging",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "status": "PASS",
+      "detail": "max core 0.74×0.56"
+    },
+    {
+      "id": "DP1-G5",
+      "name": "hollow-can analytical model",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "status": "PASS",
+      "detail": "inner passage 0.88×0.70"
+    },
+    {
+      "id": "DP1-G6",
+      "name": "flow handover",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "status": "PASS",
+      "detail": "gap=0.120 insertion=0.120 receiver=0.180 nondegenerate=true (>0.050)"
+    },
+    {
+      "id": "DP1-G7",
+      "name": "structural handover architecture feasible",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "status": "PASS",
+      "detail": "can→lock→seat→handover frame→AFT_POST_PAIR→BAY_WALL_PORT/STBD→BULKHEAD_Z-1p70→VENTRAL_KEEL; S5 must still instantiate this path"
+    },
+    {
+      "id": "DP1-G8",
+      "name": "rail bypass architecture",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "status": "PASS",
+      "detail": "complete can→seat→frame→existing-structure path with no DRIVE_RAILS edge; does not certify thrust capacity"
+    },
+    {
+      "id": "DP1-G9",
+      "name": "S4A preservation",
+      "evidenceKind": "EXTERNAL_ATTESTATION",
+      "pass": true,
+      "status": "PASS",
+      "source": "Playwright/release hash test",
+      "detail": "no bay/axis/stroke/map edit proposed; file-hash proof is the Playwright/release attestation",
+      "attestedSourceCount": 23,
+      "mismatches": []
+    },
+    {
+      "id": "DP1-G10",
+      "name": "architecture comparison honesty",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "status": "PASS",
+      "detail": "A retained as fallback; CG not used as veto; C unnecessary if selected insertion is nondegenerate"
+    }
+  ],
+  "closures": [
+    {
+      "id": "C1",
+      "name": "actual flow insertion",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "detail": "overlapLength(spigot, receiver)=0.120 (not usableBayEngagement)"
+    },
+    {
+      "id": "C2",
+      "name": "flow negative control",
+      "evidenceKind": "EXTERNAL_ATTESTATION",
+      "pass": true,
+      "status": "PASS",
+      "detail": "NC-FLOW1: prior 0.150 m spigot; insertion=0.030; nondegenerate=false; G6 FAIL",
+      "source": "Playwright/release prior-spigot regression"
+    },
+    {
+      "id": "C3",
+      "name": "receiver truth",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "detail": "receiverDepth=0.180; passage open"
+    },
+    {
+      "id": "C4",
+      "name": "structural seat region",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "detail": "seat z∈[-4.720, -4.525]; lat 0.100; vert 0.090/0.090"
+    },
+    {
+      "id": "C5",
+      "name": "structural graph",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "detail": "can→seat→frame→AFT_POST_PAIR→BAY_WALL_PORT/STBD→BULKHEAD_Z-1p70→VENTRAL_KEEL"
+    },
+    {
+      "id": "C6",
+      "name": "rail bypass",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "detail": "operating-load path has no rail edge"
+    },
+    {
+      "id": "C7",
+      "name": "flow/lock coexistence",
+      "evidenceKind": "COMPUTED_STUDY_RESULT",
+      "pass": true,
+      "detail": "CENTER/INNER_ANNULUS/OUTER_SECTORS/EXCLUDED_SECTORS; flow and lock may share axial band"
+    },
+    {
+      "id": "C8",
+      "name": "truthful provenance",
+      "evidenceKind": "EXTERNAL_ATTESTATION",
+      "pass": true,
+      "detail": "G1/G9 are EXTERNAL_ATTESTATION, not browser-computed freeze proof"
+    },
+    {
+      "id": "C9",
+      "name": "README/scope truth",
+      "evidenceKind": "EXTERNAL_ATTESTATION",
+      "pass": true,
+      "status": "PASS",
+      "detail": "Node test asserts README does not retain the pre-DP1 drive-architecture prohibition",
+      "source": "Playwright/release README test",
+      "staleProhibitionPresent": false,
+      "correctedSentencePresent": true
+    }
+  ],
+  "s4aAttestation": {
+    "evidenceKind": "EXTERNAL_ATTESTATION",
+    "status": "PASS",
+    "source": "Playwright/release hash test",
+    "sourceCount": 23,
+    "mismatches": []
+  },
+  "readmeAttestation": {
+    "evidenceKind": "EXTERNAL_ATTESTATION",
+    "status": "PASS",
+    "source": "Playwright/release README test",
+    "staleProhibitionPresent": false,
+    "correctedSentencePresent": true
+  }
+}

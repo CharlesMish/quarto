@@ -1,0 +1,1694 @@
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/MT1_S5HR_CLOSURE.md ./MT1_S5HR_CLOSURE.md
+--- /tmp/mt1-s5hr-source-base/MT1_S5HR_CLOSURE.md	1969-12-31 18:00:00.000000000 -0600
++++ ./MT1_S5HR_CLOSURE.md	2026-08-22 20:18:57.068178623 -0500
+@@ -0,0 +1,172 @@
++# MT1-S5HR Closure — Authority Completeness, Live Contact, and Freeze Hygiene
++
++## Identity and candidate disposition
++
++- Candidate status: **FREEZE_CANDIDATE_PENDING_DIRECTOR** (`GREEN_PENDING_DIRECTOR` in the authority API).
++- H1: **AWAITING_DIRECTOR_DISPOSITION**; this package does not self-pass H1.
++- Source MT1-S5H ZIP SHA-256: `69bd84f50a9697941be2c0c1bf845b9c8de2e7ec13778f6732d33e0aa37a7359`.
++- Corrected MT1-S5HR ZIP SHA-256: recorded in the adjacent `MT1-S5HR.sha256` manifest and completion handoff (not embedded to avoid a self-referential archive digest).
++- Frozen S4A SHA-256: `95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8`.
++- Reviewed DP1AR SHA-256: `3d63b1d08566fbc095713685d39570aae9fc5f454272eddb273e45e24c24fb71`.
++- Nominal S5 geometry parameter file is byte-identical to S5H: SHA-256 `8d713b182f94af2769bec0696fb10cfc94fce98d90e89a46a69aad68e805fc63`.
++
++This is an authority/proof repair to the mechanically successful S5H candidate. B′, S4A, `machineT`, `mapDrive`, the 2.55 m stroke, can/core/spigot, lock mouth, shoe, receiver, shoulder, backing, nominal rail placement, timing, and the 0.002 m retained-insertion rule are unchanged. The only geometry mutation adjustment is the deliberately non-nominal `zeroMargin` negative-control fixture, corrected to translate every B piece coherently and produce a finite sub-minimum state.
++
++## S5H-to-S5HR diff scope
++
++The bounded source delta is limited to:
++
++- exact required-piece topology and physical-first corridor census;
++- live-prism-driven unilateral forward/reverse proof and analytic comparison;
++- certificate state (`ABSENT` / `STALE` / `CURRENT`) and fail-closed readiness integration;
++- new missing-piece, missing-B-face, untagged-solid, and middle-path overrides/tests;
++- strict 23-row negative-control ledger and deterministic evidence command;
++- authority-family classification instead of name-prefix exemptions;
++- bounded contact-solver performance bracketing with the same 5 µm refinement;
++- report/schema wording, package/test configuration, Node/Vite metadata, title/accessibility hygiene;
++- regenerated live S5 authority JSON and negative-control ledger.
++
++No nominal mechanism geometry file changed. The narrow patch is `MT1-S5HR-vs-S5H.diff`.
++
++## Finding dispositions
++
++| Finding | Disposition |
++|---|---|
++| S5-F01 | **CLOSED**, preserved: legacy envelope/face remain non-material. |
++| S5-F02 | **CLOSED**, preserved and strengthened: four pin-carried captive shoes execute live-prism forward and reverse contact. |
++| S5-F03 | **CLOSED**: full pin/shoe corridor and backing proof remain clear. |
++| S5-F04 | **CLOSED**: every readiness API requires a current, valid certificate and ≥0.002 m retained insertion. |
++| S5-F05 | **CLOSED**: historical evidence remains byte-identical; only live authority/ledger records are regenerated. |
++| S5-F06 | **CLOSED**: conservative E1–E4 continue to contain the frozen S4A floor. |
++| S5-F07 | **CLOSED**: build and stable-readiness scan pass. |
++| S5HR-N01 missing required track | **CLOSED**: exact 98-solid topology is a certificate prerequisite. |
++| S5HR-N02 untagged matter disappears | **CLOSED**: census starts from enabled physical solids intersecting four explicit swept regions, then validates taxonomy. |
++| S5HR-N03 analytic law drives state | **CLOSED**: transverse state is updated only by live rail-prism overlap; analytic law is comparison-only. |
++| S5HR-N04 ledger PASS with unexpected failures | **CLOSED**: PASS requires `unexpectedFailures=[]`; measured cascades are separately declared and recorded. |
++| S5HR-N05 default test timeouts | **CLOSED**: supported default uses two workers; the evidence writer is isolated to one worker. |
++| S5HR-N06 entry value mislabeled | **CLOSED**: schema reports sample step, last clear sample, first contact bracket, and `lastSampledPreContactSeparation`. |
++
++## Required physical topology
++
++Every sector requires two moving solids, seven A pieces, seven B pieces, and its exact support chain. Piece kinds on both A and B are:
++
++`MOUTH → LEAD → TRANSITION → CAM_ENTRY → CAM → CAM_EXIT → CAPTURE`
++
++| Sector | Moving | A/B pieces | Required support |
++|---|---:|---:|---|
++| PORT | pin + shoe | 7 + 7 | receiver, guide A/B, shoulder, backing, web, post |
++| STARBOARD | pin + shoe | 7 + 7 | receiver, guide A/B, shoulder, backing, web, post |
++| TOP_PORT | pin + shoe | 7 + 7 | receiver, guide A/B, shoulder, aft/base/mouth/mouth-bridge backings, web, post |
++| TOP_STARBOARD | pin + shoe | 7 + 7 | receiver, guide A/B, shoulder, aft/base/mouth/mouth-bridge backings, web, post |
++
++Total required topology is **98 enabled physical solids**: 8 moving and 90 fixed. Working-face→backing/support→post/frame continuity passes.
++
++`NC-MISSING-TRACK-PIECE` removes `S5_LOCK_RAIL_B_PORT_CAM`; `NC-MISSING-B-FACES` removes PORT B `LEAD`, `TRANSITION`, `CAM_ENTRY`, `CAM`, `CAM_EXIT`, and `CAPTURE`, leaving only `MOUTH`. Both produce `inventory.complete=false`, invalid certificate, C18/P7/P12 failure, and false raw/evaluator/getter readiness.
++
++## Physical-first census and C18
++
++The certificate begins from four explicit world-space swept regions and enumerates every enabled `role=physical` authority solid occupying them before reading lock metadata. Classification uses `assembly`, `subsystem`, and authority `family`; filenames confer no exemption.
++
++Nominal census:
++
++- relevant corridor solids: **93**;
++- `MOVING_LOCK_ASSEMBLY`: **8**;
++- `FIXED_TRACK_ASSEMBLY`: **90**;
++- explicitly approved surrounding can-family solids: **13**;
++- missing required: **0**;
++- unclassified / invalid / conflicting: **0 / 0 / 0**.
++
++C18 is **PASS** and means every relevant enabled physical solid is inventoried/classified/included in the appropriate proof and every required mechanism piece exists. `NC-UNTAGGED-CORRIDOR-SOLID` removes both assembly and subsystem metadata from an enabled physical wedge; the physical census still sees it, classification/C18/certificate fail, and all readiness APIs return false. `NC-MIDDLE-PATH-INTRUDER` places a classified obstruction on the required intermediate path; the complete sweep catches it although endpoint geometry is clear.
++
++## Live-prism mechanical certificate
++
++The freeze certificate starts with all pins/shoes physically retracted. At each axial sample, actual enabled positive-thickness rail OBBs are queried. Transverse motion changes only enough to eliminate live unilateral penetration. Captured A- and B-side extrema are reached by seeking the actual faces, and reverse begins from the worst B-side state. The analytic track law does not assign state.
++
++- Live path: **PASS**.
++- Samples: **2,002**.
++- Moving-lock × fixed-track pair evaluations: **1,442,160**; unexpected hit: none.
++- Passive forward: **PASS**; all sectors first contact at `driveT=0.99138`.
++- Forward endpoint extension: **0.024540 m** all sectors.
++- Forward/retained insertion: PORT/STBD **0.006540007 m**; TOP sectors **0.018540070 m**.
++- Reachable A-side extreme: PORT/STBD **0.026695 m**; TOP **0.026700 m**.
++- Reachable B-side extreme: **0.024540 m** all sectors.
++- Captured live free-play span: PORT/STBD **0.002155 m**; TOP **0.002160 m**.
++- Worst retained insertion: PORT/STBD **0.006540007 m**; TOP **0.018540070 m**, all above 0.002 m.
++
++Passive reverse from worst B-side:
++
++| Sector | A-face first contact | Shoulder clear | Shoulder conflict | Clearance lead | Tongue insertion at clear |
++|---|---:|---:|---:|---:|---:|
++| PORT | 0.003162 m | 0.004947 m | 0.010000427 m | 0.005053427 m | 0.100052738 m |
++| STARBOARD | 0.003162 m | 0.004947 m | 0.010000427 m | 0.005053427 m | 0.100052738 m |
++| TOP_PORT | 0.003162 m | 0.008262 m | 0.010000427 m | 0.001738427 m | 0.096737766 m |
++| TOP_STARBOARD | 0.003162 m | 0.008262 m | 0.010000427 m | 0.001738427 m | 0.096737766 m |
++
++All pins are physically clear before shoulder conflict. Track exit is at 0.027285 m reverse travel; final extension is 0.000015 m sides and 0.000020 m tops, followed by tongue withdrawal. Passive reverse is **PASS**.
++
++The analytic-vs-live maximum deviation is **0.003405 m**, within the declared **0.003410 m** comparison tolerance (one full two-sided backlash traversal plus 0.000010 m numerical allowance). This comparison follows the live simulation and does not manufacture its path.
++
++Entry sampling is `driveT=0.98000→0.99138` at `ΔdriveT=0.00002`. Last clear sample is `0.99136`; first intended-contact sample is `0.99138`; `lastSampledPreContactSeparation=0.00000669256 m`. This is a discrete contact bracket, not a manufacturing clearance.
++
++Minimum live pin/backing and shoe/backing separations are **0.002304985 m** and **0.002999999 m**.
++
++## Certificate and readiness behavior
++
++`S5_PATH_CERTIFICATE` contains exact topology, physical census, classification, live forward path, captured extrema, live reverse, shoulder ordering, entry/exit, retained insertion, complete pair scope, support continuity, analytic comparison, and overall validity.
++
++- certificate absent: raw `applyMachine()`, `evaluateS5Handover()`, and `getDriveThrustReady()` all return false;
++- certificate invalid: all three remain false;
++- geometry override: certificate/readiness become stale immediately; evaluator is false and raw/getter synchronously recertify the mutation;
++- override removal: next public query synchronously recomputes the correct nominal baseline without another `setMachineT`;
++- no `undefined !== false` or ready-by-default path remains.
++
++Fine scan `machineT=0.99800→1.00000` at 0.00001 resolution:
++
++```text
++false through 0.99982
++→ firstStableReady 0.99983 (driveT 0.9985833333)
++→ true through 1.00000
++```
++
++No true→false pulse occurs.
++
++## Gates, controls, and regression
++
++- P1–P16: **16/16 PASS**.
++- Closure set C1–C25: **25/25 PASS**.
++- C18: **PASS**, exact topology + physical-first classification + complete proof scope.
++- Executed ledger: **23/23 PASS**.
++- Ledger `unexpectedFailures`: **0** total.
++- Mutation applied: **23/23 true**; restoration verified: **23/23 true**.
++- Default authority control rows: all **NOT_RUN**.
++- NC-ENTRY-BLOCK: **PASS**; entry/certificate/all readiness fail.
++- NC-REVERSE-JAM: **PASS**; reverse/C6/C22/C25/certificate/all readiness fail.
++- NC-MISSING-TRACK-PIECE: **PASS**.
++- NC-MISSING-B-FACES: **PASS**.
++- NC-UNTAGGED-CORRIDOR-SOLID: **PASS**.
++- NC-MIDDLE-PATH-INTRUDER: **PASS**.
++- NC-CERTIFICATE-ABSENT: **PASS**, all three APIs false and baseline recertifies.
++- Supported default command: `npm test` = two workers, evidence writer excluded, strict on-disk ledger validator included.
++- Isolated authority evidence command: `npm run test:evidence` = one worker; **1/1 PASS in 22.5 minutes**.
++- Default suite: **108/108 PASS in 34.1 minutes** using the supported `npm test` command.
++- Focused S5HR suite: **4/4 PASS in 3.9 minutes**; solid-guide physical-hit regression **1/1 PASS in 17.5 seconds**.
++- Build: **PASS**, TypeScript no-emit + Vite production build.
++- Bounded S4 controls / prior-authority regression: **PASS**; no S4A source or map change.
++- E1: `13.367149537 × 2.664999883 × 10.590000256 m`.
++- E2: `13.367149537 × 2.664999883 × 11.395000389 m`.
++- E3/E4: `13.367149537 × 2.894999884 × 11.699999921 m`.
++- Overall census: 365 live material physical, 2 legacy superseded references, 22 debug nonphysical, 367 authority rows, 0 unregistered, 0 underbound.
++
++## Evidence and hygiene
++
++The executed ledger is `evidence/s5-negative-control-results.json` with schema `MT1-S5HR-negative-control-ledger-v2`. The nominal authority object is `evidence/s5-authority-report.json` with `freezeId=MT1-S5HR`.
++
++All evidence files other than those two intentionally regenerated live records are byte-identical to the S5H source archive. In particular all `s5-regression-*` records and all seven `s5h-h1-*` images retain their S5H hashes. `sepA` / `sepB` aliases remain absent; only `minTrackClr` and `maxTrackClr` are reported.
++
++H1 remains **AWAITING_DIRECTOR_DISPOSITION**. The accurate existing deterministic S5H views remain packaged and are generated by `tests/capture-s5.spec.ts`; no visual redesign was required because nominal mechanism geometry did not change.
++
++## Limitations and boundary
++
++This is a deterministic geometric/kinematic authority model, not fatigue, wear, material, tolerance-stack, thermal, vibration, or propulsion-performance qualification. The 6.693 µm last sampled pre-contact separation is a resolution-dependent bracket and must not be treated as manufacturing clearance. The analytic/live comparison tolerance intentionally covers one complete backlash traversal; it is a sanity bound, not a manufacturing tolerance. H1 remains director-only.
++
++No S6, cockpit, intake, engine-internal, aero/CFD, or propulsion-performance work or claim is included.
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/MT1_S5_AUTHORITY_REPORT.md ./MT1_S5_AUTHORITY_REPORT.md
+--- /tmp/mt1-s5hr-source-base/MT1_S5_AUTHORITY_REPORT.md	2026-08-21 00:43:07.000000000 -0500
++++ ./MT1_S5_AUTHORITY_REPORT.md	2026-08-22 20:18:57.143978164 -0500
+@@ -1,19 +1,32 @@
+-# MT1-S5H — authority report
++# MT1-S5HR — Authority Report
+ 
+ `status`: **GREEN_PENDING_DIRECTOR**  
++`candidate`: **FREEZE_CANDIDATE_PENDING_DIRECTOR**  
+ `H1`: **AWAITING_DIRECTOR_DISPOSITION**  
+-Disposition: `BPRIME_PHYSICALLY_INSTANTIATED_WITH_CAUTION`
++`disposition`: `BPRIME_PHYSICALLY_INSTANTIATED_WITH_CAUTION`
+ 
+-S4A: `95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8`  
+-DP1AR: `3d63b1d08566fbc095713685d39570aae9fc5f454272eddb273e45e24c24fb71`  
+-Declared S5G source: `12b8b5f3fc4ff7dfcc0ec985fe274ab9e8b4bdb1d718713787fbc87223236278`
++Source S5H: `69bd84f50a9697941be2c0c1bf845b9c8de2e7ec13778f6732d33e0aa37a7359`  
++Frozen S4A: `95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8`  
++Reviewed DP1AR: `3d63b1d08566fbc095713685d39570aae9fc5f454272eddb273e45e24c24fb71`
+ 
+-P1–P16 are **16/16 PASS**. C1–C25 are **25/25 PASS**. The complete report is `evidence/s5-authority-report.json`; measured interpretation and limitations are in `MT1_S5H_CLOSURE.md`.
++P1–P16 are **16/16 PASS** and C1–C25 are **25/25 PASS**. The canonical machine-readable report is `evidence/s5-authority-report.json`; full interpretation is in `MT1_S5HR_CLOSURE.md`.
+ 
+-The certified passive path contains 2,002 samples and 1,442,160 complete assembly pairs. Entry minimum is 0.0000200248 m. Captured free play is 0.001700 m. Worst retained insertion is 0.007000214 m for PORT/STARBOARD and 0.019000217 m for both TOP sectors. Reverse shoulder-clearance lead is 0.005563427 m for PORT/STARBOARD and 0.001789427 m for both TOP sectors.
++The nominal certificate contains 2,002 live-prism samples and 1,442,160 moving-lock × fixed-track pair evaluations. The exact required topology contains 8 moving and 90 fixed solids. The physical-first corridor census finds 93 relevant solids, no missing required pieces, and no unclassified, invalid, or conflicting matter.
+ 
+-Pin/backing and shoe/backing minima are 0.002300157 m and 0.002999999 m. The readiness fine scan is false through machineT 0.99982 and true from 0.99983 through 1.0, with no pulse.
++The forward endpoint is 0.024540 m extension for every sector. Worst physically reachable retained insertion is 0.006540007 m PORT/STARBOARD and 0.018540070 m TOP_PORT/TOP_STARBOARD. Return contact occurs at 0.003162 m reverse travel; shoulder-clearance lead is 0.005053427 m on the side sectors and 0.001738427 m on the top sectors.
+ 
+-The executed negative-control ledger is `evidence/s5-negative-control-results.json`: **18/18 PASS**, including entry obstruction, reverse jam and unclassified-solid controls. Default authority rows remain `NOT_RUN`.
++Entry is sampled at `ΔdriveT=0.00002`: last clear `driveT=0.99136`, first intended contact `0.99138`, and `lastSampledPreContactSeparation=0.00000669256 m`. This is a discrete bracket, not manufacturing clearance. Pin/backing and shoe/backing minima are 0.002304985 m and 0.002999999 m.
+ 
+-H1 remains director-only. Fresh views are `evidence/s5h-h1-*.png`; the deterministic generator is `tests/capture-s5.spec.ts`.
++All three readiness APIs fail closed for an absent certificate. Geometry overrides invalidate readiness immediately and the next raw/public query synchronously recertifies. The fine scan is false through machineT 0.99982 and true from 0.99983 through 1.0, with no pulse.
++
++The strict executed ledger is `evidence/s5-negative-control-results.json`: **23/23 PASS**, zero `unexpectedFailures`, all mutations applied, all public readiness expectations matched, and all baselines restored. Default authority NC rows remain **NOT_RUN**.
++
++Supported commands:
++
++- `npm test`: two-worker default regression, strict ledger validator included, evidence writer excluded;
++- `npm run test:evidence`: isolated one-worker executed ledger writer (**1/1 PASS in 22.5 minutes**);
++- `npm run build`: TypeScript and Vite production build.
++
++Final supported default result: **108/108 PASS in 34.1 minutes**. Final focused on-disk ledger validator: **1/1 PASS in 721 ms**.
++
++H1 remains director-only. No nominal mechanism geometry changed in S5HR.
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/README.md ./README.md
+--- /tmp/mt1-s5hr-source-base/README.md	2026-08-21 00:42:47.000000000 -0500
++++ ./README.md	2026-08-22 16:38:35.871525084 -0500
+@@ -1,4 +1,4 @@
+-# MT1-S5H — Reciprocal Track Mouth, Passive Reverse & Fail-Closed Readiness
++# MT1-S5HR — Authority Completeness & Live-Contact Proof
+ 
+ Mechanical Truth third canonical gate. Certified S1C rear and S2A front authorities are frozen. S3 adds one reversible `machineT` that orchestrates both laterals and the axial drive as a single SPREAD↔DRIVE event without changing local geometry.
+ 
+@@ -8,7 +8,7 @@
+ 
+ This is an interference-set and authority proof, not a vehicle.
+ 
+-Certified mechanism baseline: **MT1-S4A** (frozen). Current slice: **MT1-S5H** captive cam shoe on B′. Automated S5H gates are GREEN_PENDING_DIRECTOR; H1 is AWAITING_DIRECTOR_DISPOSITION.
++Certified mechanism baseline: **MT1-S4A** (frozen). Current slice: **MT1-S5HR**, the authority repair of the mechanically successful S5H captive cam shoe on B′. Automated S5HR gates target GREEN_PENDING_DIRECTOR; H1 remains AWAITING_DIRECTOR_DISPOSITION.
+ 
+ **MT1-VB1** is a separate informative vehicle-balance study (`VB1_CANDIDATE_PENDING_DIRECTOR_ASSUMPTION_REVIEW`). It is not S5. No cockpit/intake/propulsion construction.
+ 
+@@ -19,7 +19,7 @@
+ npx playwright install chromium   # first time only, for tests/captures
+ ```
+ 
+-Node 20+.
++Node 20.19+.
+ 
+ ## Development
+ 
+@@ -60,7 +60,8 @@
+ ## Verification
+ 
+ ```bash
+-npm test                 # Playwright: maps, reverse, S1C/S2A regression, GI1–GI11, negative controls
++npm test                 # supported deterministic regression command, bounded to 2 workers
++npm run test:evidence    # executed NC ledger writer, isolated to 1 worker
+ npm run capture          # writes evidence/*.png (legacy S1 captures)
+ ```
+ 
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/index.html ./index.html
+--- /tmp/mt1-s5hr-source-base/index.html	2026-08-16 13:20:31.000000000 -0500
++++ ./index.html	2026-08-22 15:05:04.852987445 -0500
+@@ -3,10 +3,10 @@
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-    <title>MT1-S4 / Bilateral Mechanical Completion</title>
++    <title>MT1-S5HR / Mechanical Truth Authority</title>
+   </head>
+   <body>
+-    <canvas id="view" aria-label="MT1-S3 machine authority inspection"></canvas>
++    <canvas id="view" aria-label="MT1-S5HR mechanical authority inspection"></canvas>
+     <div id="ui"></div>
+     <script type="module" src="/src/main.ts"></script>
+   </body>
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/package-lock.json ./package-lock.json
+--- /tmp/mt1-s5hr-source-base/package-lock.json	2026-08-15 18:52:39.000000000 -0500
++++ ./package-lock.json	2026-08-22 15:05:04.795935237 -0500
+@@ -1,11 +1,11 @@
+ {
+-  "name": "mt1-s1-interference-set",
++  "name": "mt1-mechanical-truth",
+   "version": "0.1.0",
+   "lockfileVersion": 3,
+   "requires": true,
+   "packages": {
+     "": {
+-      "name": "mt1-s1-interference-set",
++      "name": "mt1-mechanical-truth",
+       "version": "0.1.0",
+       "dependencies": {
+         "@babylonjs/core": "^8.26.0"
+@@ -17,7 +17,7 @@
+         "vite": "^7.1.2"
+       },
+       "engines": {
+-        "node": ">=20"
++        "node": ">=20.19"
+       }
+     },
+     "node_modules/@babylonjs/core": {
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/package.json ./package.json
+--- /tmp/mt1-s5hr-source-base/package.json	2026-08-21 00:05:52.000000000 -0500
++++ ./package.json	2026-08-22 16:38:35.658148786 -0500
+@@ -1,18 +1,19 @@
+ {
+-  "name": "mt1-s1-interference-set",
++  "name": "mt1-mechanical-truth",
+   "private": true,
+   "version": "0.1.0",
+   "type": "module",
+-  "description": "MT1-S5H — reciprocal track mouth, passive reverse, and fail-closed readiness closure",
++  "description": "MT1-S5HR — complete live-contact authority and fail-closed readiness proof",
+   "scripts": {
+     "dev": "vite --host 127.0.0.1 --port 5181",
+     "build": "tsc --noEmit -p tsconfig.app.json && vite build",
+     "preview": "vite preview --host 127.0.0.1 --port 4181",
+-    "test": "playwright test",
++    "test": "playwright test --workers=2 --grep-invert @evidence-writer",
++    "test:evidence": "playwright test tests/dump-s5-report.spec.ts --workers=1 --grep @evidence-writer",
+     "capture": "playwright test tests/capture-proof.spec.ts"
+   },
+   "engines": {
+-    "node": ">=20"
++    "node": ">=20.19"
+   },
+   "dependencies": {
+     "@babylonjs/core": "^8.26.0"
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/src/machine/createS5Machine.ts ./src/machine/createS5Machine.ts
+--- /tmp/mt1-s5hr-source-base/src/machine/createS5Machine.ts	2026-08-20 23:54:41.000000000 -0500
++++ ./src/machine/createS5Machine.ts	2026-08-22 14:54:35.511954375 -0500
+@@ -3,8 +3,8 @@
+ import {
+   evalCamTrack,
+   evaluateS5Handover,
+-  getPathCertificate,
+-  invalidatePathCertificate,
++  getPathCertificateState,
++  markPathCertificateStale,
+   probeAxialEscape,
+ } from "../verify/s5Capture";
+ import { createMachine } from "./createMachine";
+@@ -48,7 +48,7 @@
+   rig.applyMachine = ((machineT, opts) => {
+     const r = innerApply(machineT, opts);
+     poseLock(r.appliedDriveT);
+-    if (!getPathCertificate(rig)) evalCamTrack(rig);
++    if (getPathCertificateState(rig) === "STALE") evalCamTrack(rig);
+     const thrust = evaluateS5Handover(rig, r.appliedDriveT);
+     lastThrust = thrust.driveThrustReady;
+     return { ...r, driveThrustReady: thrust.driveThrustReady };
+@@ -63,7 +63,7 @@
+     if (ov.enableLegacyEnvelope) reenableLegacy(rig.solids, "DRIVE_ENVELOPE");
+     if (ov.enableLegacyFace) reenableLegacy(rig.solids, "DRIVE_FACE_AFT");
+     poseLock(rig.lastDriveT());
+-    invalidatePathCertificate(rig);
++    markPathCertificateStale(rig);
+     return result;
+   };
+ 
+@@ -74,11 +74,11 @@
+     if (value?.enableLegacyEnvelope) reenableLegacy(rig.solids, "DRIVE_ENVELOPE");
+     if (value?.enableLegacyFace) reenableLegacy(rig.solids, "DRIVE_FACE_AFT");
+     poseLock(rig.lastDriveT());
+-    invalidatePathCertificate(rig);
++    markPathCertificateStale(rig);
+   };
+   ext.getS5Override = () => s5.currentOverride();
+   ext.lastDriveThrustReady = () => {
+-    if (!getPathCertificate(rig)) evalCamTrack(rig);
++    if (getPathCertificateState(rig) === "STALE") evalCamTrack(rig);
+     lastThrust = evaluateS5Handover(rig).driveThrustReady;
+     return lastThrust;
+   };
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/src/machine/s5Propulsion.ts ./src/machine/s5Propulsion.ts
+--- /tmp/mt1-s5hr-source-base/src/machine/s5Propulsion.ts	2026-08-21 00:29:50.000000000 -0500
++++ ./src/machine/s5Propulsion.ts	2026-08-22 17:47:15.571100868 -0500
+@@ -55,6 +55,14 @@
+   backingPlug?: boolean;
+   namedIntrude?: boolean;
+   unclassifiedIntrude?: boolean;
++  /** Disable the required PORT B CAM piece without changing nominal geometry. */
++  missingTrackPiece?: boolean;
++  /** Disable every required PORT B piece except MOUTH. */
++  missingBFaces?: boolean;
++  /** Enable a real corridor obstruction with all lock/track metadata removed. */
++  untaggedCorridorSolid?: boolean;
++  /** Alias for the existing physical middle-path intrusion fixture. */
++  middlePathIntruder?: boolean;
+   entryBlock?: boolean;
+   reverseJam?: boolean;
+ }
+@@ -550,7 +558,15 @@
+           const dx = id === "PORT" ? -0.03 : id === "STARBOARD" ? 0.03 : 0;
+           const dy = id.startsWith("TOP") && gap ? 0.03 : 0;
+           const zero = Boolean(opts.zeroMargin) && rail.name.includes("RAIL_B") && (id === "PORT" || id === "STARBOARD");
+-          const zp = zero ? layout.bPosZero : rest;
++          const zeroDeltaScale = 3;
++          const zeroDelta: [number, number, number] = [
++            zeroDeltaScale * (layout.bPosZero[0] - layout.bPos[0]),
++            zeroDeltaScale * (layout.bPosZero[1] - layout.bPos[1]),
++            zeroDeltaScale * (layout.bPosZero[2] - layout.bPos[2]),
++          ];
++          const zp: [number, number, number] = zero
++            ? [rest[0] + zeroDelta[0], rest[1] + zeroDelta[1], rest[2] + zeroDelta[2]]
++            : rest;
+           const normal = ((rail.node as Mesh).metadata?.trackNormal ?? [0, 0, 0]) as [number, number, number];
+           const jam = Boolean(opts.reverseJam && rail.name.includes("RAIL_A")) ? S5_REVERSE_JAM_A_OFFSET : 0;
+           rail.node.position.set(
+@@ -560,8 +576,14 @@
+           );
+         }
+         const open = opts.openCam === id && rail.name.includes("RAIL_B");
+-        rail.role = open ? "diagnostic" : "physical";
+-        rail.node.setEnabled(!open);
++        const missingOne = Boolean(opts.missingTrackPiece) && rail.name === "S5_LOCK_RAIL_B_PORT_CAM";
++        const missingB =
++          Boolean(opts.missingBFaces) &&
++          rail.name.startsWith("S5_LOCK_RAIL_B_PORT_") &&
++          !rail.name.endsWith("_MOUTH");
++        const missing = open || missingOne || missingB;
++        rail.role = missing ? "diagnostic" : "physical";
++        rail.node.setEnabled(!missing);
+       }
+       const backs = solids.filter((s) => isSectorBacking(s.name, id));
+       for (const back of backs) {
+@@ -578,7 +600,7 @@
+     }
+     const intrude = solids.find((s) => s.name === "S5_LOCK_RAIL_INTRUDE_PORT_VIS");
+     if (intrude) {
+-      const on = Boolean(opts.railIntrude);
++      const on = Boolean(opts.railIntrude || opts.middlePathIntruder);
+       intrude.role = on ? "physical" : "diagnostic";
+       (intrude.node as Mesh).metadata = {
+         ...((intrude.node as Mesh).metadata ?? {}),
+@@ -622,12 +644,12 @@
+     }
+     const unclassified = solids.find((s) => s.name === "S5_NC_UNCLASSIFIED_INTRUDER_VIS");
+     if (unclassified) {
+-      const on = Boolean(opts.unclassifiedIntrude);
++      const on = Boolean(opts.unclassifiedIntrude || opts.untaggedCorridorSolid);
+       unclassified.role = on ? "physical" : "diagnostic";
+       (unclassified.node as Mesh).metadata = {
+         ...((unclassified.node as Mesh).metadata ?? {}),
+         assembly: undefined,
+-        subsystem: on ? "S5_LOCK_TRACK_SUBSYSTEM" : undefined,
++        subsystem: opts.unclassifiedIntrude ? "S5_LOCK_TRACK_SUBSYSTEM" : undefined,
+       };
+       unclassified.node.setEnabled(on);
+     }
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/src/scene/createScene.ts ./src/scene/createScene.ts
+--- /tmp/mt1-s5hr-source-base/src/scene/createScene.ts	2026-08-21 00:10:07.000000000 -0500
++++ ./src/scene/createScene.ts	2026-08-22 16:29:41.241781277 -0500
+@@ -11,7 +11,7 @@
+ import { createS5Machine } from "../machine/createS5Machine";
+ import type { MachineRig } from "../machine/types";
+ import { runS5Authority } from "../verify/s5Clearance";
+-import { evalCamTrack, evaluateS5Handover, invalidatePathCertificate } from "../verify/s5Capture";
++import { evalCamTrack, evaluateS5Handover, getPathCertificate, invalidatePathCertificate } from "../verify/s5Capture";
+ import { clamp01 } from "../math/stage";
+ import { createUI, debugPanel } from "../ui/createUI";
+ import { studyCant } from "../verify/cantStudy";
+@@ -259,10 +259,13 @@
+     runDp1Study: (override) => runDp1Study(rig, override),
+     runS5Authority: (override) => runS5Authority(rig, override),
+     runS5CamTrack: () => evalCamTrack(rig),
++    getS5PathCertificate: () => getPathCertificate(rig),
+     invalidateS5PathCertificate: () => invalidatePathCertificate(rig),
+     getDriveThrustReady: () => rig.lastDriveThrustReady(),
+     evaluateS5Handover: () => evaluateS5Handover(rig),
++    applyMachineRaw: (value: number) => rig.applyMachine(value),
+     applyS5Override: (value) => rig.applyS5Override(value),
++    getS5Override: () => rig.getS5Override(),
+     probeLockEscape: (engaged) => rig.probeLockEscape(engaged),
+     setPropSection: (on: boolean) => {
+       for (const m of scene.meshes) {
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/src/scene/debug.ts ./src/scene/debug.ts
+--- /tmp/mt1-s5hr-source-base/src/scene/debug.ts	2026-08-17 20:24:51.000000000 -0500
++++ ./src/scene/debug.ts	2026-08-22 15:23:44.950974457 -0500
+@@ -130,7 +130,7 @@
+           return [d.name, `${d.kind}  ${p.x.toFixed(2)} ${p.y.toFixed(2)} ${p.z.toFixed(2)}`] as const;
+         }),
+       ];
+-      panel.innerHTML = `<div class="debug-head">MT1-S3 DEBUG</div>${rows
++      panel.innerHTML = `<div class="debug-head">MT1-S5HR DEBUG</div>${rows
+         .map(([k, v]) => `<div class="debug-item"><span>${k}</span><span>${v}</span></div>`)
+         .join("")}<div class="debug-note">Red = protected corridor. Amber = empty occupancy. Carry is ochre. RGB axes at datums.</div>`;
+     },
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/src/verify/s5Capture.ts ./src/verify/s5Capture.ts
+--- /tmp/mt1-s5hr-source-base/src/verify/s5Capture.ts	2026-08-21 00:29:50.000000000 -0500
++++ ./src/verify/s5Capture.ts	2026-08-22 19:17:18.661200909 -0500
+@@ -62,14 +62,70 @@
+   passiveForward: boolean;
+   passiveReverse: boolean;
+   entryValid: boolean;
+-  entryRange: { driveT0: number; driveT1: number; minClearance: number };
++  entryRange: {
++    driveT0: number;
++    driveT1: number;
++    sampleStep: number;
++    lastClearDriveT: number;
++    firstContactDriveT: number;
++    lastSampledPreContactSeparation: number;
++  };
+   forwardEndpoint: Record<S5DogId, { extension: number; insertion: number; aSide: number; bSide: number }>;
+-  inventory: { moving: string[]; fixed: string[]; unclassified: string[]; complete: boolean };
++  requiredPieceTopology: Record<
++    S5DogId,
++    { moving: string[]; faceA: string[]; faceB: string[]; support: string[] }
++  >;
++  inventory: {
++    moving: string[];
++    fixed: string[];
++    relevant: string[];
++    approvedSurrounding: string[];
++    unclassified: string[];
++    invalidClassification: string[];
++    conflictingClassification: string[];
++    missingRequired: string[];
++    collisionScope: string[];
++    complete: boolean;
++  };
++  analyticComparison: { maxDeviation: number; tolerance: number; pass: boolean };
++  supportContinuity: boolean;
+   phases: string[];
+   detail: string;
+ }
+ 
++const TRACK_PIECES = ["MOUTH", "LEAD", "TRANSITION", "CAM_ENTRY", "CAM", "CAM_EXIT", "CAPTURE"] as const;
++
++function requiredTopology(id: S5DogId): S5PathCertificate["requiredPieceTopology"][S5DogId] {
++  const top = id === "TOP_PORT" || id === "TOP_STARBOARD";
++  return {
++    moving: [`S5_LOCK_PIN_${id}`, `S5_LOCK_CAM_SHOE_${id}`],
++    faceA: TRACK_PIECES.map((piece) => `S5_LOCK_RAIL_A_${id}_${piece}`),
++    faceB: TRACK_PIECES.map((piece) => `S5_LOCK_RAIL_B_${id}_${piece}`),
++    support: [
++      `S5_LOCK_RECV_${id}`,
++      `S5_LOCK_GUIDE_A_${id}`,
++      `S5_LOCK_GUIDE_B_${id}`,
++      `S5_LOCK_SHOULDER_${id}`,
++      ...(top
++        ? [
++            `S5_LOCK_TRACK_BACK_AFT_${id}`,
++            `S5_LOCK_TRACK_BACK_${id}`,
++            `S5_LOCK_TRACK_BACK_MOUTH_${id}`,
++            `S5_LOCK_TRACK_BACK_MOUTH_BRIDGE_${id}`,
++          ]
++        : [`S5_LOCK_TRACK_BACK_${id}`]),
++      `S5_LOCK_WEB_${id}`,
++      `S5_LOCK_POST_${id}`,
++    ],
++  };
++}
++
++export const S5_REQUIRED_TRACK_TOPOLOGY = Object.fromEntries(
++  S5_DOG_IDS.map((id) => [id, requiredTopology(id)]),
++) as S5PathCertificate["requiredPieceTopology"];
++
+ const pathCerts = new WeakMap<object, S5PathCertificate>();
++const pathCertStates = new WeakMap<object, "ABSENT" | "STALE" | "CURRENT">();
+ 
+ export function getPathCertificate(rig: MachineRig): S5PathCertificate | undefined {
+   return pathCerts.get(rig);
+@@ -77,10 +133,22 @@
+ 
+ export function setPathCertificate(rig: MachineRig, cert: S5PathCertificate): void {
+   pathCerts.set(rig, cert);
++  pathCertStates.set(rig, "CURRENT");
+ }
+ 
+ export function invalidatePathCertificate(rig: MachineRig): void {
+   pathCerts.delete(rig);
++  pathCertStates.set(rig, "ABSENT");
++}
++
++export function markPathCertificateStale(rig: MachineRig): void {
++  pathCerts.delete(rig);
++  pathCertStates.set(rig, "STALE");
++}
++
++export function getPathCertificateState(rig: MachineRig): "ABSENT" | "STALE" | "CURRENT" {
++  if (pathCerts.has(rig)) return "CURRENT";
++  return pathCertStates.get(rig) ?? "STALE";
+ }
+ 
+ function assemblyOf(s: AuthoritySolid): string | undefined {
+@@ -99,6 +167,111 @@
+   return (s.node as { metadata?: { subsystem?: string } }).metadata?.subsystem === "S5_LOCK_TRACK_SUBSYSTEM";
+ }
+ 
++type S5WorldSolid = AuthoritySolid & { obb: OBB };
++
++const LOCK_CORRIDOR_REGIONS: Record<S5DogId, { min: { x: number; y: number; z: number }; max: { x: number; y: number; z: number } }> = {
++  PORT: { min: { x: -0.561, y: 0.518, z: -4.5895 }, max: { x: -0.461, y: 0.578, z: -4.5345 } },
++  STARBOARD: { min: { x: 0.461, y: 0.518, z: -4.5895 }, max: { x: 0.561, y: 0.578, z: -4.5345 } },
++  TOP_PORT: { min: { x: -0.415, y: 1.1655, z: -4.5895 }, max: { x: -0.345, y: 1.2205, z: -4.5345 } },
++  TOP_STARBOARD: { min: { x: 0.345, y: 1.1655, z: -4.5895 }, max: { x: 0.415, y: 1.2205, z: -4.5345 } },
++};
++
++function intersectsLockCorridor(s: S5WorldSolid): boolean {
++  const a = obbWorldAabb(s.obb);
++  return Object.values(LOCK_CORRIDOR_REGIONS).some(
++    (r) =>
++      a.max.x > r.min.x &&
++      a.min.x < r.max.x &&
++      a.max.y > r.min.y &&
++      a.min.y < r.max.y &&
++      a.max.z > r.min.z &&
++      a.min.z < r.max.z,
++  );
++}
++
++const APPROVED_CORRIDOR_SURROUNDING_FAMILIES = new Set([
++  "s5-can",
++  "s5-seat",
++  "s5-seat-tongue",
++  "keel",
++]);
++
++function approvedCorridorSurrounding(s: S5WorldSolid): boolean {
++  // Approval is tied to the authority registration taxonomy, never a mesh
++  // name. A specially named intruder therefore cannot inherit an exemption.
++  return APPROVED_CORRIDOR_SURROUNDING_FAMILIES.has(s.family);
++}
++
++function physicalFirstInventory(world: S5WorldSolid[]): S5PathCertificate["inventory"] {
++  const physical = world.filter(isS5Material);
++  const moving = physical.filter((s) => isMovingLockSolid(s) && inLockTrackSubsystem(s)).map((s) => s.name);
++  const fixed = physical.filter((s) => isFixedTrackSolid(s) && inLockTrackSubsystem(s)).map((s) => s.name);
++  const relevantSolids = physical.filter(intersectsLockCorridor);
++  const relevant = relevantSolids.map((s) => s.name);
++  const approvedSurrounding: string[] = [];
++  const unclassified: string[] = [];
++  const invalidClassification: string[] = [];
++  const conflictingClassification: string[] = [];
++
++  for (const s of relevantSolids) {
++    const meta = (s.node as { metadata?: { assembly?: string; subsystem?: string } }).metadata ?? {};
++    const movingClass = meta.assembly === "MOVING_LOCK_ASSEMBLY";
++    const fixedClass = meta.assembly === "FIXED_TRACK_ASSEMBLY";
++    const correctSubsystem = meta.subsystem === "S5_LOCK_TRACK_SUBSYSTEM";
++    if ((movingClass || fixedClass) && correctSubsystem) continue;
++    if (!meta.assembly && !meta.subsystem && approvedCorridorSurrounding(s)) {
++      approvedSurrounding.push(s.name);
++      continue;
++    }
++    if (!meta.assembly) unclassified.push(s.name);
++    else if ((movingClass || fixedClass) && !correctSubsystem) invalidClassification.push(s.name);
++    else if (meta.assembly || meta.subsystem) conflictingClassification.push(s.name);
++    else unclassified.push(s.name);
++  }
++
++  const missingRequired: string[] = [];
++  for (const id of S5_DOG_IDS) {
++    const required = S5_REQUIRED_TRACK_TOPOLOGY[id];
++    for (const name of required.moving) {
++      const solid = physical.find((s) => s.name === name);
++      if (!solid) missingRequired.push(name);
++      else if (!isMovingLockSolid(solid) || !inLockTrackSubsystem(solid)) invalidClassification.push(name);
++    }
++    for (const name of [...required.faceA, ...required.faceB, ...required.support]) {
++      const solid = physical.find((s) => s.name === name);
++      if (!solid) missingRequired.push(name);
++      else if (!isFixedTrackSolid(solid) || !inLockTrackSubsystem(solid)) invalidClassification.push(name);
++    }
++  }
++
++  const uniq = (items: string[]): string[] => [...new Set(items)].sort();
++  const collisionScope = uniq([
++    ...fixed,
++    ...unclassified,
++    ...invalidClassification,
++    ...conflictingClassification,
++  ]);
++  const result = {
++    moving: uniq(moving),
++    fixed: uniq(fixed),
++    relevant: uniq(relevant),
++    approvedSurrounding: uniq(approvedSurrounding),
++    unclassified: uniq(unclassified),
++    invalidClassification: uniq(invalidClassification),
++    conflictingClassification: uniq(conflictingClassification),
++    missingRequired: uniq(missingRequired),
++    collisionScope,
++    complete: false,
++  };
++  result.complete =
++    result.moving.length === 8 &&
++    result.unclassified.length === 0 &&
++    result.invalidClassification.length === 0 &&
++    result.conflictingClassification.length === 0 &&
++    result.missingRequired.length === 0;
++  return result;
++}
++
+ export interface DogCapture {
+   id: S5DogId;
+   captured: boolean;
+@@ -934,9 +1107,119 @@
+   let minPinBacking = Infinity;
+   let minShoeBacking = Infinity;
+   let minShoeRail = Infinity;
+-  let prePickupMinClearance = Infinity;
++  let lastSampledPreContactSeparation = Infinity;
++  let lastClearDriveT = forwardT0;
++  let entryHit = "";
+   let maxCenterlineError = 0;
+ 
++  // Classification/topology is pose-invariant within one certificate run. The
++  // physical-first census is taken at the captured station where all required
++  // fixed and moving lock solids occupy the certified region.
++  rig.applyDrive(1);
++  const initialWorld = rig.worldSolids();
++  const initialInventory = physicalFirstInventory(initialWorld);
++  const initialSupport = evalTrackSupport(initialWorld);
++  const collisionNames = new Set(initialInventory.collisionScope);
++  rig.applyDrive(saved);
++
++  // Exact topology and classification are prerequisites for a mechanical path
++  // proof. Fail closed before attempting contact resolution when matter is
++  // missing or unclassified; otherwise an impossible one-sided remnant can
++  // force thousands of meaningless overlap-resolution iterations.
++  if (!initialInventory.complete) {
++    const invalidDetail = `incomplete lock/track inventory missing=${initialInventory.missingRequired.join(",")} unclassified=${initialInventory.unclassified.join(",")} invalid=${initialInventory.invalidClassification.join(",")} conflicting=${initialInventory.conflictingClassification.join(",")}`;
++    const prerequisiteInternalHits: string[] = [];
++    for (const id of S5_DOG_IDS) {
++      const pin = initialWorld.find((s) => s.name === `S5_LOCK_PIN_${id}` && isS5Material(s));
++      const shoe = initialWorld.find((s) => s.name === `S5_LOCK_CAM_SHOE_${id}` && isS5Material(s));
++      for (const wall of hostCanWalls(initialWorld, id)) {
++        if (pin && obbOverlaps(pin.obb, wall.obb)) prerequisiteInternalHits.push(`${pin.name}∩${wall.name}@PREREQUISITE`);
++        if (shoe && obbOverlaps(shoe.obb, wall.obb)) prerequisiteInternalHits.push(`${shoe.name}∩${wall.name}@PREREQUISITE`);
++      }
++    }
++    const invalidReverse = Object.fromEntries(
++      S5_DOG_IDS.map((id) => [id, { returnContactTravel: -1, shoulderClearTravel: -1, shoulderConflictTravel: -1, lead: -1, clearInsertion: -1, tongueInsertionAtClear: -1, exitTravel: -1, finalExtension: 0 }]),
++    ) as S5PathCertificate["reverseShoulderClearanceLead"];
++    const invalidLead = Object.fromEntries(
++      S5_DOG_IDS.map((id) => [id, { returnTravel: -1, shoulderTravel: -1, lead: -1 }]),
++    ) as S5PathCertificate["reverseLead"];
++    const invalidRetained = Object.fromEntries(S5_DOG_IDS.map((id) => [id, -1])) as Record<S5DogId, number>;
++    const invalidEndpoint = Object.fromEntries(
++      S5_DOG_IDS.map((id) => [id, { extension: 0, insertion: -1, aSide: -1, bSide: -1 }]),
++    ) as S5PathCertificate["forwardEndpoint"];
++    const pathCertificate: S5PathCertificate = {
++      valid: false,
++      samples: 0,
++      pairsEvaluated: 0,
++      firstHit: "",
++      minPinBacking: 0,
++      minShoeBacking: 0,
++      minShoeRail: 0,
++      reverseLead: invalidLead,
++      reverseShoulderClearanceLead: invalidReverse,
++      retainedWorst: invalidRetained,
++      passiveForward: false,
++      passiveReverse: false,
++      entryValid: false,
++      entryRange: {
++        driveT0: forwardT0,
++        driveT1: 1,
++        sampleStep: dt,
++        lastClearDriveT: forwardT0,
++        firstContactDriveT: 1,
++        lastSampledPreContactSeparation: 0,
++      },
++      forwardEndpoint: invalidEndpoint,
++      requiredPieceTopology: S5_REQUIRED_TRACK_TOPOLOGY,
++      inventory: initialInventory,
++      analyticComparison: { maxDeviation: -1, tolerance: 2 * S5_TRACK_FREEPLAY_MAX + 0.00001, pass: false },
++      supportContinuity: initialSupport.pass,
++      phases: ["CERTIFICATE_PREREQUISITE_FAIL"],
++      detail: invalidDetail,
++    };
++    const drivers: LockDriver[] = S5_DOG_IDS.map((id) => ({
++      id,
++      valid: false,
++      region: "PRE_PICKUP",
++      guideAperture: false,
++      wallClear: false,
++      confined: false,
++      extendBlocked: false,
++      retractBlocked: false,
++      freePlay: 0,
++      minTrackClr: 0,
++      maxTrackClr: 0,
++      pickupDriveT: 1,
++      trackU: 0,
++      pinU: 0,
++      retainedMargin: -1,
++      trackSupported: initialSupport.pass,
++      detail: invalidDetail,
++    }));
++    const margins = Object.fromEntries(
++      S5_DOG_IDS.map((id) => [id, { margin: -1, stopDelta: -1, blocked: false }]),
++    ) as Record<S5DogId, { margin: number; stopDelta: number; blocked: boolean }>;
++    setPathCertificate(rig, pathCertificate);
++    return {
++      pass: false,
++      minCam: 0,
++      maxCam: 0,
++      minTrack: 0,
++      maxTrack: 0,
++      samples: 0,
++      drivers,
++      internal: { pass: false, hits: prerequisiteInternalHits.length ? prerequisiteInternalHits : [invalidDetail], samples: 0 },
++      trackSupport: initialSupport,
++      margins,
++      pairsEvaluated: 0,
++      maxCenterlineError: -1,
++      firstHit: "",
++      reverseLead: invalidLead,
++      pathCertificate,
++      detail: invalidDetail,
++    };
++  }
++
+   const setExtension = (id: S5DogId, extension: number): void => {
+     const pin = rig.root.getScene().getMeshByName(`S5_LOCK_PIN_${id}`) as Mesh | null;
+     if (!pin) return;
+@@ -945,18 +1228,7 @@
+     else pin.position.y = S5_LOCK_PIN_RETRACT_Y_TOP + extension;
+   };
+ 
+-  const liveInventory = () => {
+-    const world = rig.worldSolids();
+-    const subsystem = world.filter((s) => isS5Material(s) && inLockTrackSubsystem(s));
+-    const moving = subsystem.filter(isMovingLockSolid).map((s) => s.name);
+-    const fixed = subsystem.filter(isFixedTrackSolid).map((s) => s.name);
+-    const unclassified = subsystem.filter((s) => !isMovingLockSolid(s) && !isFixedTrackSolid(s)).map((s) => s.name);
+-    const facesComplete = S5_DOG_IDS.every(
+-      (id) => fixed.some((name) => name.startsWith(`S5_LOCK_RAIL_A_${id}`)) && fixed.some((name) => name.startsWith(`S5_LOCK_RAIL_B_${id}`)),
+-    );
+-    return { moving, fixed, unclassified, complete: unclassified.length === 0 && moving.length === 8 && fixed.length > 0 && facesComplete };
+-  };
+-
++  /** Analytic law is reference-only: phase labels and post-simulation comparison. */
+   const boundsAt = (z: number) => {
+     const b = s5TrackBoundsAtZ(z, Boolean(opts.reverseJam));
+     if (opts.zeroMargin && Number.isFinite(b.lower)) b.lower -= 0.006;
+@@ -965,30 +1237,50 @@
+ 
+   /** Resolve the finite rail prisms themselves, including their positive-thickness end caps. */
+   const resolveFaceContact = (id: S5DogId, face: "A" | "B", direction: -1 | 1, limit: number): boolean => {
+-    let contacted = false;
+-    for (let i = 0; i < 160; i += 1) {
++    const overlapsLiveFace = (): boolean => {
+       const live = rig.worldSolids();
+       const shoe = live.find((s) => s.name === `S5_LOCK_CAM_SHOE_${id}` && isS5Material(s));
+       const rails = live.filter((s) => s.name.startsWith(`S5_LOCK_RAIL_${face}_${id}`) && isS5Material(s));
+-      if (!shoe || rails.length === 0 || !rails.some((rail) => obbOverlaps(shoe.obb, rail.obb))) return contacted;
+-      contacted = true;
++      return Boolean(shoe && rails.some((rail) => obbOverlaps(shoe.obb, rail.obb)));
++    };
++    if (!overlapsLiveFace()) return false;
++
++    // Bracket the clear state coarsely, then return to the last penetrating
++    // state and refine at the original 5 µm resolution. This is still driven
++    // exclusively by live prism overlap; it only avoids rebuilding the full
++    // world hundreds of times for intentionally displaced NC fixtures.
++    const coarse = 0.00005;
++    let coarseSteps = 0;
++    while (overlapsLiveFace() && coarseSteps < 140) {
++      q[id] += direction * coarse;
++      setExtension(id, q[id]);
++      coarseSteps += 1;
++      if ((direction > 0 && q[id] >= limit) || (direction < 0 && q[id] <= limit)) return true;
++    }
++    q[id] -= direction * coarse;
++    setExtension(id, q[id]);
++    for (let i = 0; i < 12 && overlapsLiveFace(); i += 1) {
+       q[id] += direction * 0.000005;
+       setExtension(id, q[id]);
+-      if ((direction > 0 && q[id] >= limit) || (direction < 0 && q[id] <= limit)) return contacted;
++      if ((direction > 0 && q[id] >= limit) || (direction < 0 && q[id] <= limit)) break;
+     }
+-    return contacted;
++    return true;
+   };
+ 
+   const inspectPose = (t: number, stage: "FORWARD" | "REVERSE"): void => {
+     const world = rig.worldSolids();
++    const analyticPhase = boundsAt(s5FollowerZ(t)).phase;
+     const moving = world.filter((s) => isS5Material(s) && isMovingLockSolid(s));
+-    const fixed = world.filter((s) => isS5Material(s) && isFixedTrackSolid(s));
++    const fixed = world.filter((s) => isS5Material(s) && collisionNames.has(s.name));
+     for (const m of moving) {
+       for (const f of fixed) {
+         pairsEvaluated += 1;
+         if (obbOverlaps(m.obb, f.obb)) {
+           const hit = `${m.name}∩${f.name}@${stage}:${t.toFixed(5)} sep=${obbSeparation(m.obb, f.obb).toFixed(7)}`;
+           if (!firstHit) firstHit = hit;
++          if (stage === "FORWARD" && (analyticPhase === "PRE_PICKUP" || analyticPhase === "MOUTH") && !entryHit) {
++            entryHit = hit;
++          }
+           const id = S5_DOG_IDS.find((x) => m.name.endsWith(x));
+           if (id && !sectorHit[id]) sectorHit[id] = hit;
+         }
+@@ -1008,12 +1300,13 @@
+         sectorHit[id] ||= hit;
+         continue;
+       }
+-      const phase = boundsAt(s5FollowerZ(t)).phase;
++      const phase = analyticPhase;
+       phases.add(`${stage}:${phase}`);
+       const railSep = Math.min(...rails.map((r) => obbSeparation(shoe.obb, r.obb)));
+       minShoeRail = Math.min(minShoeRail, railSep);
+-      if (stage === "FORWARD" && (phase === "PRE_PICKUP" || phase === "MOUTH")) {
+-        prePickupMinClearance = Math.min(prePickupMinClearance, railSep);
++      if (stage === "FORWARD" && firstForwardContact[id] === 1 && railSep > 0) {
++        lastSampledPreContactSeparation = Math.min(lastSampledPreContactSeparation, railSep);
++        lastClearDriveT = t;
+       }
+       const backs = sectorBackings(world, id);
+       for (const back of backs) {
+@@ -1032,16 +1325,11 @@
+   for (let i = 0; ; i += 1) {
+     const t = Math.min(1, forwardT0 + i * dt);
+     rig.applyDrive(t);
+-    const bounds = boundsAt(s5FollowerZ(t));
+     for (const id of S5_DOG_IDS) {
+-      if (Number.isFinite(bounds.lower) && q[id] < bounds.lower) {
+-        q[id] = bounds.lower + contactGap;
+-        if (firstForwardContact[id] === 1) firstForwardContact[id] = t;
+-      }
+       setExtension(id, q[id]);
+     }
+     for (const id of S5_DOG_IDS) {
+-      const touched = resolveFaceContact(id, "B", 1, bounds.upper);
++      const touched = resolveFaceContact(id, "B", 1, S5_LOCK_EXTEND + S5_TRACK_FREEPLAY_MAX + 0.002);
+       if (touched && firstForwardContact[id] === 1) firstForwardContact[id] = t;
+     }
+     inspectPose(t, "FORWARD");
+@@ -1055,22 +1343,36 @@
+   const forwardInsertion = {} as Record<S5DogId, number>;
+   const bSideInsertion = {} as Record<S5DogId, number>;
+   rig.applyDrive(1);
+-  const capturedBounds = boundsAt(s5FollowerZ(1));
+   for (const id of S5_DOG_IDS) {
+-    bSide[id] = capturedBounds.lower + contactGap;
+-    aSide[id] = capturedBounds.upper - contactGap;
+     setExtension(id, forwardQ[id]);
+   }
+   let world = rig.worldSolids();
+   for (const id of S5_DOG_IDS) forwardInsertion[id] = pinInsertionFromWorld(world, id);
+-  for (const id of S5_DOG_IDS) {
+-    q[id] = bSide[id];
++  const seekExtreme = (id: S5DogId, face: "A" | "B", seekDirection: -1 | 1): number => {
++    if (initialInventory.missingRequired.includes(`S5_LOCK_RAIL_${face}_${id}_CAPTURE`)) return Number.NaN;
++    q[id] = forwardQ[id];
+     setExtension(id, q[id]);
+-  }
+-  for (const id of S5_DOG_IDS) {
+-    resolveFaceContact(id, "B", 1, aSide[id]);
+-    bSide[id] = q[id];
+-  }
++    for (let i = 0; i < 1200; i += 1) {
++      q[id] += seekDirection * 0.000005;
++      setExtension(id, q[id]);
++      const worldAt = rig.worldSolids();
++      const shoe = worldAt.find((s) => s.name === `S5_LOCK_CAM_SHOE_${id}` && isS5Material(s));
++      const rails = worldAt.filter((s) => s.name.startsWith(`S5_LOCK_RAIL_${face}_${id}`) && isS5Material(s));
++      if (shoe && rails.some((rail) => obbOverlaps(shoe.obb, rail.obb))) {
++        resolveFaceContact(
++          id,
++          face,
++          seekDirection > 0 ? -1 : 1,
++          seekDirection > 0 ? -S5_TRACK_FREEPLAY_MAX - 0.002 : S5_LOCK_EXTEND + S5_TRACK_FREEPLAY_MAX + 0.002,
++        );
++        return q[id];
++      }
++    }
++    return Number.NaN;
++  };
++  for (const id of S5_DOG_IDS) bSide[id] = seekExtreme(id, "B", -1);
++  for (const id of S5_DOG_IDS) aSide[id] = seekExtreme(id, "A", 1);
++  for (const id of S5_DOG_IDS) setExtension(id, bSide[id]);
+   world = rig.worldSolids();
+   for (const id of S5_DOG_IDS) bSideInsertion[id] = pinInsertionFromWorld(world, id);
+   for (const id of S5_DOG_IDS) setExtension(id, aSide[id]);
+@@ -1090,16 +1392,11 @@
+     const t = Math.max(reverseT1, 1 - i * dt);
+     const travel = (1 - t) * P.drive.stroke;
+     rig.applyDrive(t);
+-    const bounds = boundsAt(s5FollowerZ(t));
+     for (const id of S5_DOG_IDS) {
+-      if (Number.isFinite(bounds.upper) && q[id] > bounds.upper) {
+-        q[id] = bounds.upper - contactGap;
+-        if (!Number.isFinite(returnContactTravel[id])) returnContactTravel[id] = travel;
+-      }
+       setExtension(id, q[id]);
+     }
+     for (const id of S5_DOG_IDS) {
+-      const touched = resolveFaceContact(id, "A", -1, bounds.lower);
++      const touched = resolveFaceContact(id, "A", -1, -S5_TRACK_FREEPLAY_MAX - 0.002);
+       if (touched && !Number.isFinite(returnContactTravel[id])) returnContactTravel[id] = travel;
+     }
+     inspectPose(t, "REVERSE");
+@@ -1111,7 +1408,7 @@
+         clearInsertion[id] = insertion;
+         tongueAtClear[id] = evalTongue(world, id).insertion;
+       }
+-      if (!Number.isFinite(exitTravel[id]) && bounds.phase === "PRE_PICKUP") exitTravel[id] = travel;
++      if (!Number.isFinite(exitTravel[id]) && boundsAt(s5FollowerZ(t)).phase === "PRE_PICKUP") exitTravel[id] = travel;
+     }
+     samples += 1;
+     if (t <= reverseT1) break;
+@@ -1122,7 +1419,7 @@
+   const tongueWithdrawn = S5_DOG_IDS.every((id) => evalTongue(rig.worldSolids(), id).insertion < 0.01);
+   rig.applyDrive(1);
+   const support = evalTrackSupport(rig.worldSolids());
+-  const inventory = liveInventory();
++  const inventory = physicalFirstInventory(rig.worldSolids());
+   const reverseShoulderClearanceLead = {} as S5PathCertificate["reverseShoulderClearanceLead"];
+   const reverseLead = {} as Record<S5DogId, { returnTravel: number; shoulderTravel: number; lead: number }>;
+   const retainedWorst = {} as Record<S5DogId, number>;
+@@ -1143,7 +1440,7 @@
+     reverseLead[id] = { returnTravel: returnContactTravel[id], shoulderTravel: conflictTravel[id], lead };
+     retainedWorst[id] = Math.min(forwardInsertion[id], bSideInsertion[id]);
+     forwardEndpoint[id] = { extension: forwardQ[id], insertion: forwardInsertion[id], aSide: aSide[id], bSide: bSide[id] };
+-    margins[id] = { margin: retainedWorst[id], stopDelta: capturedBounds.upper - capturedBounds.lower, blocked: true };
++    margins[id] = { margin: retainedWorst[id], stopDelta: aSide[id] - bSide[id], blocked: true };
+   }
+   const reverseOk = S5_DOG_IDS.every(
+     (id) =>
+@@ -1156,10 +1453,24 @@
+       q[id] <= 0.000021,
+   );
+   const forwardOk = S5_DOG_IDS.every(
+-    (id) => firstForwardContact[id] < 1 && retainedWorst[id] >= S5_RETAINED_INSERTION_MIN && !sectorHit[id],
++    (id) =>
++      firstForwardContact[id] < 1 &&
++      Number.isFinite(aSide[id]) &&
++      Number.isFinite(bSide[id]) &&
++      aSide[id] > bSide[id] &&
++      retainedWorst[id] >= S5_RETAINED_INSERTION_MIN &&
++      !sectorHit[id],
+   );
+-  const entryValid = !firstHit || !firstHit.includes("FORWARD");
++  const entryValid = entryHit.length === 0;
+   const internalPass = internalHits.length === 0;
++  // Live unilateral motion may lag the intended centerline by one full two-sided
++  // backlash traversal before the opposite face makes contact.
++  const analyticTolerance = 2 * S5_TRACK_FREEPLAY_MAX + 0.00001;
++  const analyticComparison = {
++    maxDeviation: maxCenterlineError,
++    tolerance: analyticTolerance,
++    pass: maxCenterlineError <= analyticTolerance,
++  };
+   const pass =
+     entryValid &&
+     forwardOk &&
+@@ -1167,11 +1478,12 @@
+     tongueWithdrawn &&
+     inventory.complete &&
+     support.pass &&
++    analyticComparison.pass &&
+     internalPass &&
+     !firstHit &&
+     S5_DOG_IDS.every((id) => retainedWorst[id] >= S5_RETAINED_INSERTION_MIN);
+   const minTrack = Math.min(contactGap, S5_TRACK_RUN_CLEARANCE);
+-  const maxTrack = capturedBounds.upper - capturedBounds.lower;
++  const maxTrack = Math.max(...S5_DOG_IDS.map((id) => aSide[id] - bSide[id]));
+   const drivers: LockDriver[] = S5_DOG_IDS.map((id) => ({
+     id,
+     valid: forwardOk && reverseOk && !sectorHit[id],
+@@ -1194,8 +1506,9 @@
+   const detail =
+     firstHit ||
+     (!inventory.complete
+-      ? `unclassified lock/track solids: ${inventory.unclassified.join(",")}`
+-      : `piecewise captive slot samples=${samples} pairs=${pairsEvaluated} entryMin=${prePickupMinClearance.toFixed(6)} freePlay=${maxTrack.toFixed(6)} forward=${forwardOk} reverse=${reverseOk} support=${support.pass} backing=${minPinBacking.toFixed(6)}`);
++      ? `incomplete lock/track inventory missing=${inventory.missingRequired.join(",")} unclassified=${inventory.unclassified.join(",")} invalid=${inventory.invalidClassification.join(",")}`
++      : `live-prism slot samples=${samples} pairs=${pairsEvaluated} lastPreContactSep=${lastSampledPreContactSeparation.toFixed(8)} freePlay=${maxTrack.toFixed(6)} forward=${forwardOk} reverse=${reverseOk} analyticDev=${maxCenterlineError.toFixed(7)} support=${support.pass} backing=${minPinBacking.toFixed(6)}`);
++  const firstContactDriveT = Math.min(...Object.values(firstForwardContact));
+   const pathCertificate: S5PathCertificate = {
+     valid: pass,
+     samples,
+@@ -1210,9 +1523,21 @@
+     passiveForward: forwardOk,
+     passiveReverse: reverseOk,
+     entryValid,
+-    entryRange: { driveT0: forwardT0, driveT1: Math.max(...Object.values(firstForwardContact)), minClearance: prePickupMinClearance },
++    entryRange: {
++      driveT0: forwardT0,
++      driveT1: Math.max(...Object.values(firstForwardContact)),
++      sampleStep: dt,
++      lastClearDriveT,
++      firstContactDriveT,
++      lastSampledPreContactSeparation: Number.isFinite(lastSampledPreContactSeparation)
++        ? lastSampledPreContactSeparation
++        : 0,
++    },
+     forwardEndpoint,
++    requiredPieceTopology: S5_REQUIRED_TRACK_TOPOLOGY,
+     inventory,
++    analyticComparison,
++    supportContinuity: support.pass,
+     phases: [...phases],
+     detail,
+   };
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/src/verify/s5Clearance.ts ./src/verify/s5Clearance.ts
+--- /tmp/mt1-s5hr-source-base/src/verify/s5Clearance.ts	2026-08-20 23:55:33.000000000 -0500
++++ ./src/verify/s5Clearance.ts	2026-08-22 15:56:20.868677360 -0500
+@@ -1,7 +1,6 @@
+ import {
+   S4A_SHA256,
+   S5_DOG_IDS,
+-  S5_FREEZE_ID,
+   S5_MIN_INSERTION,
+   s5MachineTForDriveT,
+   DP1AR_SHA256,
+@@ -20,11 +19,21 @@
+ import type { GateResult, InstantEnvelope, MachineRig, SweptEnvelope } from "../machine/types";
+ import { obbOverlaps, obbSeparation, obbWorldAabb, worldAabbUnion } from "../math/obb";
+ import { accumulateInstant, accumulateSwept, emptyInstant, emptySwept, finalizeSwept } from "./envelope";
+-import { evalCamTrack, evaluateS5Handover, isS5Material, probeAxialEscape, s5MovingNames } from "./s5Capture";
++import {
++  evalCamTrack,
++  evaluateS5Handover,
++  invalidatePathCertificate,
++  isS5Material,
++  markPathCertificateStale,
++  probeAxialEscape,
++  s5MovingNames,
++} from "./s5Capture";
+ import { runS4Authority } from "./s4Clearance";
+ import { asAuditOptions, type MachineAuditOptions } from "./capturePredicates";
+ import type { S5Override } from "../machine/s5Propulsion";
+ 
++const S5_REPAIR_ID = "MT1-S5HR";
++
+ export interface S5Report {
+   freezeId: string;
+   sourceS4aSha256: string;
+@@ -117,6 +126,10 @@
+     "backingPlug",
+     "namedIntrude",
+     "unclassifiedIntrude",
++    "missingTrackPiece",
++    "missingBFaces",
++    "untaggedCorridorSolid",
++    "middlePathIntruder",
+     "entryBlock",
+     "reverseJam",
+   ].some((k) => k in (v as object));
+@@ -124,6 +137,10 @@
+ 
+ function evaluateS5(rig: MachineRig, opts: S5Override, auditOpts: MachineAuditOptions): S5Report {
+   const ncActive = Object.values(opts).some(Boolean);
++  // Authority envelope/prior-gate sweeps do not consume propulsion readiness.
++  // Hold readiness explicitly absent so their applyMachine calls cannot trigger
++  // duplicate path certificates.
++  invalidatePathCertificate(rig);
+   const s4 = ncActive ? null : runS4Authority(rig, auditOpts);
+   const audit = auditAuthorityBounds(rig.root, rig.solids);
+   const liveMat = rig.solids.filter((s) => isS5Material(s) || (s.role === "physical" && meshEnabled(s.node) && !getSupersededBy(s.name) && !s.name.startsWith("S5_NC_")));
+@@ -136,10 +153,11 @@
+   const needSweep = !ncActive || Boolean(opts.oldTopFrame || opts.blockReceiver || opts.backingPlug);
+   const env = needEnv ? measureEnvelopes(rig) : frozenEnvelopePlaceholder();
+   const sweep = needSweep ? sweepPropulsion(rig) : skippedSweep();
+-  rig.applyMachine(1);
++  rig.applyDrive(1);
+   const engagedEscape = ncActive ? { blocked: false, hits: ["nc"] } : probeAxialEscape(rig, true);
+   const retractedEscape = ncActive ? { blocked: true, hits: ["nc"] } : probeAxialEscape(rig, false);
+-  (rig as S5MachineRig).applyS5Override(opts);
++  markPathCertificateStale(rig);
++  const camTrack = evalCamTrack(rig);
+   rig.applyMachine(1);
+   const seated = evaluateS5Handover(rig);
+   const registerInvariant = ncActive ? true : registerScalarInvariant(rig);
+@@ -155,10 +173,13 @@
+       opts.backingPlug ||
+       opts.namedIntrude ||
+       opts.unclassifiedIntrude ||
++      opts.missingTrackPiece ||
++      opts.missingBFaces ||
++      opts.untaggedCorridorSolid ||
++      opts.middlePathIntruder ||
+       opts.entryBlock ||
+       opts.reverseJam,
+   );
+-  const camTrack = evalCamTrack(rig);
+   const envMesh = rig.solids.find((s) => s.name === "DRIVE_ENVELOPE");
+   const faceMesh = rig.solids.find((s) => s.name === "DRIVE_FACE_AFT");
+   const envActive = Boolean(envMesh && envMesh.role === "physical" && meshEnabled(envMesh.node));
+@@ -320,6 +341,49 @@
+       `complete=${camTrack.pathCertificate.inventory.complete} unclassified=${camTrack.pathCertificate.inventory.unclassified.join(",")} ready=${seated.driveThrustReady}`,
+     ),
+     nc(
++      "NC-MISSING-TRACK-PIECE",
++      "required PORT B CAM piece absent",
++      Boolean(opts.missingTrackPiece),
++      Boolean(opts.missingTrackPiece) &&
++        !camTrack.pathCertificate.inventory.complete &&
++        camTrack.pathCertificate.inventory.missingRequired.includes("S5_LOCK_RAIL_B_PORT_CAM") &&
++        !p7 &&
++        !p12 &&
++        seated.driveThrustReady === false,
++      `missing=${camTrack.pathCertificate.inventory.missingRequired.join(",")} p7=${p7} p12=${p12} ready=${seated.driveThrustReady}`,
++    ),
++    nc(
++      "NC-MISSING-B-FACES",
++      "PORT B track reduced to MOUTH only",
++      Boolean(opts.missingBFaces),
++      Boolean(opts.missingBFaces) &&
++        !camTrack.pathCertificate.inventory.complete &&
++        camTrack.pathCertificate.inventory.missingRequired.filter((name) => name.startsWith("S5_LOCK_RAIL_B_PORT_")).length === 6 &&
++        !p7 &&
++        !p12 &&
++        seated.driveThrustReady === false,
++      `missingB=${camTrack.pathCertificate.inventory.missingRequired.filter((name) => name.startsWith("S5_LOCK_RAIL_B_PORT_")).join(",")} ready=${seated.driveThrustReady}`,
++    ),
++    nc(
++      "NC-UNTAGGED-CORRIDOR-SOLID",
++      "enabled corridor obstruction with no lock metadata",
++      Boolean(opts.untaggedCorridorSolid),
++      Boolean(opts.untaggedCorridorSolid) &&
++        camTrack.pathCertificate.inventory.unclassified.includes("S5_NC_UNCLASSIFIED_INTRUDER_VIS") &&
++        !camTrack.pathCertificate.inventory.complete &&
++        !camTrack.pass &&
++        !p12 &&
++        seated.driveThrustReady === false,
++      `relevant=${camTrack.pathCertificate.inventory.relevant.includes("S5_NC_UNCLASSIFIED_INTRUDER_VIS")} unclassified=${camTrack.pathCertificate.inventory.unclassified.join(",")} ready=${seated.driveThrustReady}`,
++    ),
++    nc(
++      "NC-MIDDLE-PATH-INTRUDER",
++      "endpoint-clear physical middle-path obstruction",
++      Boolean(opts.middlePathIntruder),
++      Boolean(opts.middlePathIntruder) && !camTrack.pass && !p7 && !p12 && seated.driveThrustReady === false,
++      `firstHit=${camTrack.firstHit} scope=${camTrack.pathCertificate.inventory.collisionScope.includes("S5_LOCK_RAIL_INTRUDE_PORT_VIS")} ready=${seated.driveThrustReady}`,
++    ),
++    nc(
+       "NC-ENTRY-BLOCK",
+       "square-ended pre-pickup mouth obstruction",
+       Boolean(opts.entryBlock),
+@@ -340,7 +404,7 @@
+     ncs.every((x) => (x as { status?: string }).status === "NOT_RUN" || x.pass) &&
+     audit.pass;
+   return {
+-    freezeId: S5_FREEZE_ID,
++    freezeId: S5_REPAIR_ID,
+     sourceS4aSha256: S4A_SHA256,
+     sourceDp1arSha256: DP1AR_SHA256,
+     status: auto ? "GREEN_PENDING_DIRECTOR" : "STOP",
+@@ -406,9 +470,9 @@
+       ),
+       g(
+         "C18",
+-        "classification and pair completeness",
++        "physical-first census, required topology, classification and pair completeness",
+         camTrack.pathCertificate.inventory.complete && camTrack.pass && camTrack.pairsEvaluated > 0,
+-        `pairs=${camTrack.pairsEvaluated} firstHit=${camTrack.firstHit || "none"} moving=${camTrack.pathCertificate?.inventory.moving.length ?? 0} fixed=${camTrack.pathCertificate?.inventory.fixed.length ?? 0}`,
++        `pairs=${camTrack.pairsEvaluated} firstHit=${camTrack.firstHit || "none"} relevant=${camTrack.pathCertificate.inventory.relevant.length} moving=${camTrack.pathCertificate.inventory.moving.length} fixed=${camTrack.pathCertificate.inventory.fixed.length} missing=${camTrack.pathCertificate.inventory.missingRequired.join(",") || "none"} unclassified=${camTrack.pathCertificate.inventory.unclassified.join(",") || "none"}`,
+       ),
+       g(
+         "C19",
+@@ -434,7 +498,7 @@
+         reverseOk,
+         S5_DOG_IDS.map((id) => `${id}:${camTrack.pathCertificate.reverseShoulderClearanceLead[id].lead.toFixed(4)}`).join(";"),
+       ),
+-      g("C23", "entry path clear", camTrack.pathCertificate.entryValid, `range=${camTrack.pathCertificate.entryRange.driveT0.toFixed(5)}..${camTrack.pathCertificate.entryRange.driveT1.toFixed(5)} min=${camTrack.pathCertificate.entryRange.minClearance.toFixed(6)}`),
++      g("C23", "entry path clear", camTrack.pathCertificate.entryValid, `range=${camTrack.pathCertificate.entryRange.driveT0.toFixed(5)}..${camTrack.pathCertificate.entryRange.driveT1.toFixed(5)} step=${camTrack.pathCertificate.entryRange.sampleStep.toFixed(5)} lastClear=${camTrack.pathCertificate.entryRange.lastClearDriveT.toFixed(5)} sep=${camTrack.pathCertificate.entryRange.lastSampledPreContactSeparation.toFixed(8)} contact=${camTrack.pathCertificate.entryRange.firstContactDriveT.toFixed(5)}`),
+       g("C24", "certificate fail-closed", seated.pathCertificateValid === camTrack.pathCertificate.valid, `cert=${seated.pathCertificateValid} ready=${seated.driveThrustReady}`),
+       g("C25", "passive reverse shoulder clearance", camTrack.pathCertificate.passiveReverse && reverseOk, S5_DOG_IDS.map((id) => `${id}:${camTrack.pathCertificate.reverseShoulderClearanceLead[id].lead.toFixed(6)}`).join(";")),
+     ],
+@@ -728,7 +792,7 @@
+   const end = rig.applyMachine(1);
+   const h1 = evaluateS5Handover(rig, end.appliedDriveT);
+   const liveReady = (rig as S5MachineRig).lastDriveThrustReady();
+-  if (opts.lockGap || opts.floatShoulder || opts.camGap || opts.openCam || opts.solidGuide || opts.trackFloat || opts.zeroMargin || opts.railIntrude || opts.backingPlug || opts.namedIntrude || opts.unclassifiedIntrude || opts.entryBlock || opts.reverseJam) return false;
++  if (opts.lockGap || opts.floatShoulder || opts.camGap || opts.openCam || opts.solidGuide || opts.trackFloat || opts.zeroMargin || opts.railIntrude || opts.backingPlug || opts.namedIntrude || opts.unclassifiedIntrude || opts.missingTrackPiece || opts.missingBFaces || opts.untaggedCorridorSolid || opts.middlePathIntruder || opts.entryBlock || opts.reverseJam) return false;
+   if (opts.shortSpigot || opts.removeDog || opts.removeLock || opts.blockPassage || opts.disconnectFrame) {
+     return !h1.driveThrustReady;
+   }
+@@ -764,7 +828,7 @@
+ }
+ 
+ function findFirstReady(rig: MachineRig, opts: S5Override): { machineT: number; driveT: number } {
+-  if (opts.shortSpigot || opts.removeDog || opts.blockPassage || opts.disconnectFrame || opts.blockReceiver || opts.floatShoulder || opts.camGap || opts.openCam || opts.solidGuide || opts.trackFloat || opts.zeroMargin || opts.railIntrude || opts.backingPlug || opts.namedIntrude || opts.unclassifiedIntrude || opts.entryBlock || opts.reverseJam) {
++  if (opts.shortSpigot || opts.removeDog || opts.blockPassage || opts.disconnectFrame || opts.blockReceiver || opts.floatShoulder || opts.camGap || opts.openCam || opts.solidGuide || opts.trackFloat || opts.zeroMargin || opts.railIntrude || opts.backingPlug || opts.namedIntrude || opts.unclassifiedIntrude || opts.missingTrackPiece || opts.missingBFaces || opts.untaggedCorridorSolid || opts.middlePathIntruder || opts.entryBlock || opts.reverseJam) {
+     return { machineT: -1, driveT: -1 };
+   }
+   for (let i = 880; i <= 1000; i += 1) {
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/src/vite-env.d.ts ./src/vite-env.d.ts
+--- /tmp/mt1-s5hr-source-base/src/vite-env.d.ts	2026-08-21 00:08:36.000000000 -0500
++++ ./src/vite-env.d.ts	2026-08-22 16:29:41.027908752 -0500
+@@ -10,10 +10,13 @@
+       runDp1Study?: (opts?: import("./study/dp1/runStudy").Dp1Options) => Record<string, unknown>;
+       runS5Authority?: (opts?: import("./machine/s5Propulsion").S5Override) => import("./verify/s5Clearance").S5Report;
+       runS5CamTrack?: () => ReturnType<typeof import("./verify/s5Capture").evalCamTrack>;
++      getS5PathCertificate?: () => import("./verify/s5Capture").S5PathCertificate | undefined;
+       invalidateS5PathCertificate?: () => void;
+       getDriveThrustReady?: () => boolean;
+       evaluateS5Handover?: () => import("./verify/s5Capture").S5HandoverState;
++      applyMachineRaw?: (machineT: number) => ReturnType<import("./machine/types").MachineRig["applyMachine"]>;
+       applyS5Override?: (opts?: import("./machine/s5Propulsion").S5Override) => void;
++      getS5Override?: () => import("./machine/s5Propulsion").S5Override;
+       probeLockEscape?: (engaged?: boolean) => { blocked: boolean; hits: string[] };
+       setPropSection?: (on: boolean) => void;
+       setLockStudyView?: (on: boolean) => void;
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/tests/dump-s5-report.spec.ts ./tests/dump-s5-report.spec.ts
+--- /tmp/mt1-s5hr-source-base/tests/dump-s5-report.spec.ts	2026-08-21 00:34:59.000000000 -0500
++++ ./tests/dump-s5-report.spec.ts	2026-08-22 18:13:07.338088213 -0500
+@@ -2,46 +2,65 @@
+ import { dirname, resolve } from "node:path";
+ import { fileURLToPath } from "node:url";
+ import { expect, test } from "@playwright/test";
++import type { S5Override } from "../src/machine/s5Propulsion";
+ 
+ const here = dirname(fileURLToPath(import.meta.url));
++const evidenceFile = resolve(here, "../evidence/s5-negative-control-results.json");
+ 
+-test("dump MT1-S5 authority report", async ({ page }) => {
++interface ControlContract {
++  id: string;
++  opts: S5Override;
++  expected: string[];
++  allowed: string[];
++}
++
++const contract = (id: string, opts: S5Override, expected: string[], allowed: string[] = []): ControlContract => ({ id, opts, expected, allowed });
++
++const controls: ControlContract[] = [
++  contract("NC-SPIGOT", { shortSpigot: true }, ["S5-P5"]),
++  contract("NC1", { blockPassage: true }, ["S5-P3", "S5-P5", "C2"]),
++  contract("NC4", { blockReceiver: true }, ["S5-P5"], ["S5-P3", "C2"]),
++  contract("NC-LOCK1", { removeLock: "PORT" }, ["S5-P7"], ["S5-P8", "S5-P9", "S5-P10", "S5-P14", "C4", "C6", "C8", "C13", "C14", "C17", "C18", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC6", { bottomDog: true }, ["S5-P8"]),
++  contract("NC-SHOULDER-FLOAT", { floatShoulder: "PORT" }, ["S5-P9"], ["S5-P7", "S5-P10", "S5-P12", "S5-P14", "C6", "C8", "C13", "C14", "C17", "C18", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC-TRACK-FLOAT", { trackFloat: true }, ["S5-P7"], ["S5-P12", "S5-P14", "C6", "C8", "C14", "C16", "C17", "C18", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC-OPEN-CAM", { openCam: "PORT" }, ["S5-P7", "S5-P12", "C8", "C14", "C18"], ["S5-P14", "C6", "C17", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC-SOLID-GUIDE", { solidGuide: true }, ["S5-P7"], ["S5-P12", "S5-P14", "C6", "C8", "C14", "C17", "C18", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC-ZERO-RETAINED-MARGIN", { zeroMargin: true }, ["C17"], ["S5-P7", "S5-P12", "C8", "C14", "C18", "C21", "C23"]),
++  contract("NC-CAM-GAP", { camGap: "PORT" }, ["S5-P7"], ["S5-P12", "S5-P14", "C6", "C8", "C14", "C16", "C17", "C18", "C21", "C22", "C25"]),
++  contract("NC-NONCURRENT-RAIL-INTRUSION", { railIntrude: true }, ["S5-P7", "C14", "C18"], ["S5-P12", "C8", "C23"]),
++  contract("NC-BACKING-PLUG", { backingPlug: true }, ["S5-P6", "S5-P7"], ["S5-P12", "C8", "C14", "C18", "C23"]),
++  contract("NC-NAMED-TRACK-INTRUDER", { namedIntrude: true }, ["C18"], ["S5-P7", "S5-P12", "C8", "C14", "C23"]),
++  contract("NC-UNCLASSIFIED-SOLID", { unclassifiedIntrude: true }, ["C18"], ["S5-P7", "S5-P12", "S5-P14", "C6", "C8", "C14", "C17", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC-ENTRY-BLOCK", { entryBlock: true }, ["S5-P7", "S5-P12", "C23"], ["C8", "C14", "C18"]),
++  contract("NC-REVERSE-JAM", { reverseJam: true }, ["S5-P7", "S5-P12", "S5-P14", "C6", "C22", "C25"], ["C8", "C14", "C18", "C21", "C23"]),
++  contract("NC-MISSING-TRACK-PIECE", { missingTrackPiece: true }, ["S5-P7", "S5-P12", "C18"], ["S5-P14", "C6", "C8", "C14", "C17", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC-MISSING-B-FACES", { missingBFaces: true }, ["S5-P7", "S5-P12", "C18"], ["S5-P14", "C6", "C8", "C14", "C17", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC-UNTAGGED-CORRIDOR-SOLID", { untaggedCorridorSolid: true }, ["S5-P7", "S5-P12", "C18"], ["S5-P14", "C6", "C8", "C14", "C17", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC-MIDDLE-PATH-INTRUDER", { middlePathIntruder: true }, ["S5-P7", "S5-P12", "C18"], ["C8", "C14", "C23"]),
++];
++
++test("dump MT1-S5HR authority report", async ({ page }) => {
+   test.setTimeout(600_000);
+   await page.goto("/");
+   await page.waitForFunction(() => Boolean(window.__MT1?.runS5Authority));
+-  const report = (await page.evaluate(() => window.__MT1!.runS5Authority!({}))) as {
+-    negativeControls: Array<{ id: string; status?: string }>;
+-  };
++  const report = await page.evaluate(() => window.__MT1!.runS5Authority!({}));
+   const ev = resolve(here, "../evidence");
+   mkdirSync(ev, { recursive: true });
+   writeFileSync(resolve(ev, "s5-authority-report.json"), JSON.stringify(report, null, 2));
+-  expect(report.negativeControls.every((n) => n.status === "NOT_RUN")).toBe(true);
++  expect(report.negativeControls.every((row) => row.status === "NOT_RUN")).toBe(true);
+ });
+ 
+-test("dump S5 negative-control ledger", async ({ page }) => {
+-  test.setTimeout(1_200_000);
++test("@evidence-writer dump strict S5HR negative-control ledger", async ({ page }) => {
++  test.setTimeout(1_800_000);
+   await page.goto("/");
+   await page.waitForFunction(() => Boolean(window.__MT1?.runS5Authority));
+-  const controls: Array<{ id: string; opts: Record<string, unknown>; expectFail: string[] }> = [
+-    { id: "NC-SPIGOT", opts: { shortSpigot: true }, expectFail: ["S5-P5"] },
+-    { id: "NC1", opts: { blockPassage: true }, expectFail: ["S5-P3", "S5-P5", "C2"] },
+-    { id: "NC4", opts: { blockReceiver: true }, expectFail: ["S5-P5"] },
+-    { id: "NC-LOCK1", opts: { removeLock: "PORT" }, expectFail: ["S5-P7"] },
+-    { id: "NC6", opts: { bottomDog: true }, expectFail: ["S5-P8"] },
+-    { id: "NC-SHOULDER-FLOAT", opts: { floatShoulder: "PORT" }, expectFail: ["S5-P9"] },
+-    { id: "NC-TRACK-FLOAT", opts: { trackFloat: true }, expectFail: ["S5-P7"] },
+-    { id: "NC-OPEN-CAM", opts: { openCam: "PORT" }, expectFail: ["S5-P7", "S5-P12", "C8", "C14", "C18"] },
+-    { id: "NC-SOLID-GUIDE", opts: { solidGuide: true }, expectFail: ["S5-P7"] },
+-    { id: "NC-ZERO-RETAINED-MARGIN", opts: { zeroMargin: true }, expectFail: ["C17"] },
+-    { id: "NC-CAM-GAP", opts: { camGap: "PORT" }, expectFail: ["S5-P7"] },
+-    { id: "NC-NONCURRENT-RAIL-INTRUSION", opts: { railIntrude: true }, expectFail: ["S5-P7", "C14", "C18"] },
+-    { id: "NC-BACKING-PLUG", opts: { backingPlug: true }, expectFail: ["S5-P6", "S5-P7"] },
+-    { id: "NC-NAMED-TRACK-INTRUDER", opts: { namedIntrude: true }, expectFail: ["C18"] },
+-    { id: "NC-UNCLASSIFIED-SOLID", opts: { unclassifiedIntrude: true }, expectFail: ["C18"] },
+-    { id: "NC-ENTRY-BLOCK", opts: { entryBlock: true }, expectFail: ["S5-P7", "S5-P12", "C23"] },
+-    { id: "NC-REVERSE-JAM", opts: { reverseJam: true }, expectFail: ["S5-P7", "S5-P12", "S5-P14", "C6", "C22", "C25"] },
+-  ];
+   const rows: Array<Record<string, unknown>> = [];
++  const persistRows = () => {
++    mkdirSync(dirname(evidenceFile), { recursive: true });
++    writeFileSync(evidenceFile, JSON.stringify({ schema: "MT1-S5HR-negative-control-ledger-v2", controls: rows }, null, 2));
++  };
++
+   const upstream = await page.evaluate(() => {
+     window.__MT1!.setReadinessOverride!({ rearBookReady: false });
+     window.__MT1!.setMachineT(1);
+@@ -49,127 +68,96 @@
+     const ready = window.__MT1!.getDriveThrustReady!();
+     window.__MT1!.setReadinessOverride!({});
+     window.__MT1!.setMachineT(1);
+-    return { driveT, ready };
++    return { driveT, ready, restored: window.__MT1!.getDriveThrustReady!() };
+   });
+   rows.push({
+-    id: "NC-UPSTREAM",
+-    mutation: { rearBookReady: false },
+-    mutationApplied: true,
+-    expectedFailingGates: ["driveT==0", "publicReady==false"],
+-    actualFailedGates: [
+-      upstream.driveT === 0 ? "driveT==0" : `driveT=${upstream.driveT}`,
+-      upstream.ready === false ? "publicReady==false" : "publicReady==true",
+-    ],
+-    expectedFailedClosures: [],
+-    actualFailedClosures: [],
+-    publicReadyExpectation: false,
+-    actualPublicReady: upstream.ready,
+-    authorityNcRowStatus: "NOT_APPLICABLE_EXTERNAL_UPSTREAM_CONTROL",
+-    unexpectedFailures: [],
+-    baselineRestorationVerified: true,
+-    finalControlResult: upstream.driveT === 0 && upstream.ready === false ? "PASS" : "FAIL",
++    id: "NC-UPSTREAM", mutation: { rearBookReady: false }, mutationApplied: upstream.driveT === 0,
++    expectedFailingGates: ["driveT==0", "publicReady==false"], allowedCascadeContract: [], allowedCascadeFailures: [],
++    actualFailedGates: [upstream.driveT === 0 ? "driveT==0" : `driveT=${upstream.driveT}`, upstream.ready ? "publicReady==true" : "publicReady==false"],
++    expectedFailedClosures: [], actualFailedClosures: [], publicReadyExpectation: false, actualPublicReady: upstream.ready,
++    expectedAuthorityNcRowStatus: "NOT_APPLICABLE_EXTERNAL_UPSTREAM_CONTROL", authorityNcRowStatus: "NOT_APPLICABLE_EXTERNAL_UPSTREAM_CONTROL",
++    unexpectedFailures: [], baselineRestorationVerified: upstream.restored,
++    finalControlResult: upstream.driveT === 0 && !upstream.ready && upstream.restored ? "PASS" : "FAIL",
+   });
++  persistRows();
++
+   for (const c of controls) {
+-    const r = (await page.evaluate((opts) => window.__MT1!.runS5Authority!(opts), c.opts)) as {
+-      gates: Array<{ id: string; pass: boolean }>;
+-      closures: Array<{ id: string; pass: boolean }>;
+-      negativeControls: Array<{ id: string; status?: string; pass: boolean }>;
+-    };
++    const report = await page.evaluate((opts) => window.__MT1!.runS5Authority!(opts), c.opts);
+     const live = await page.evaluate((opts) => {
+-      window.__MT1!.applyS5Override!(opts);
+       window.__MT1!.setMachineT(1);
+-      const ready = window.__MT1!.getDriveThrustReady!();
++      window.__MT1!.applyS5Override!(opts);
++      const evaluateImmediate = window.__MT1!.evaluateS5Handover!().driveThrustReady;
++      const rawReady = window.__MT1!.applyMachineRaw!(1).driveThrustReady;
++      const publicReady = window.__MT1!.getDriveThrustReady!();
+       window.__MT1!.applyS5Override!({});
+-      window.__MT1!.setMachineT(1);
+-      const restored = window.__MT1!.getDriveThrustReady!();
+-      return { ready, restored };
++      const overrideRestored = Object.keys(window.__MT1!.getS5Override!()).length === 0;
++      return { evaluateImmediate, rawReady, publicReady, overrideRestored };
+     }, c.opts);
+-    const failedGates = r.gates.filter((g) => !g.pass).map((g) => g.id);
+-    const failedClosures = r.closures.filter((g) => !g.pass).map((g) => g.id);
+-    const failed = [...failedGates, ...failedClosures];
+-    const authorityRow = r.negativeControls.find((row) => row.id === c.id);
++    const actualFailedGates = report.gates.filter((gate) => !gate.pass).map((gate) => gate.id);
++    const actualFailedClosures = report.closures.filter((gate) => !gate.pass).map((gate) => gate.id);
++    const actual = [...actualFailedGates, ...actualFailedClosures];
++    const expectedMissing = c.expected.filter((id) => !actual.includes(id));
++    const allowedCascadeFailures = actual.filter((id) => c.allowed.includes(id));
++    const unexpected = actual.filter((id) => !c.expected.includes(id) && !c.allowed.includes(id));
++    const unexpectedFailures = [...expectedMissing.map((id) => `MISSING_EXPECTED:${id}`), ...unexpected];
++    const authorityRow = report.negativeControls.find((row) => row.id === c.id);
+     const mutationApplied = authorityRow?.status !== "NOT_RUN";
+-    const expectOk = c.expectFail.every((id) => failed.includes(id));
+-    const finalControlResult = mutationApplied && expectOk && authorityRow?.status === "PASS" && live.ready === false && live.restored === true ? "PASS" : "FAIL";
++    const pass = mutationApplied && authorityRow?.status === "PASS" && !live.evaluateImmediate && !live.rawReady && !live.publicReady && live.overrideRestored && unexpectedFailures.length === 0;
+     rows.push({
+-      id: c.id,
+-      mutation: c.opts,
+-      mutationApplied,
+-      expectedFailingGates: c.expectFail.filter((id) => !id.startsWith("C")),
+-      actualFailedGates: failedGates,
+-      expectedFailedClosures: c.expectFail.filter((id) => id.startsWith("C")),
+-      actualFailedClosures: failedClosures,
+-      publicReadyExpectation: false,
+-      actualPublicReady: live.ready,
+-      authorityNcRowStatus: authorityRow?.status ?? "MISSING",
+-      unexpectedFailures: failed.filter((id) => !c.expectFail.includes(id)),
+-      baselineRestorationVerified: live.restored,
+-      finalControlResult,
++      id: c.id, mutation: c.opts, mutationApplied,
++      expectedFailingGates: c.expected.filter((id) => !id.startsWith("C")), allowedCascadeContract: c.allowed, allowedCascadeFailures,
++      actualFailedGates, expectedFailedClosures: c.expected.filter((id) => id.startsWith("C")), actualFailedClosures,
++      publicReadyExpectation: false, actualPublicReady: live.publicReady,
++      expectedAuthorityNcRowStatus: "PASS", authorityNcRowStatus: authorityRow?.status ?? "MISSING",
++      unexpectedFailures, baselineRestorationVerified: live.overrideRestored, finalControlResult: pass ? "PASS" : "FAIL",
+     });
++    persistRows();
+   }
+-  const ev = resolve(here, "../evidence");
+-  mkdirSync(ev, { recursive: true });
+-  writeFileSync(resolve(ev, "s5-negative-control-results.json"), JSON.stringify({ schema: "MT1-S5H-negative-control-ledger-v1", controls: rows }, null, 2));
+-  expect(rows.every((row) => row.finalControlResult === "PASS"), JSON.stringify(rows.filter((row) => row.finalControlResult !== "PASS"), null, 2)).toBe(true);
++
++  const absent = await page.evaluate(() => {
++    window.__MT1!.setMachineT(1);
++    window.__MT1!.invalidateS5PathCertificate!();
++    const evaluateReady = window.__MT1!.evaluateS5Handover!().driveThrustReady;
++    const rawReady = window.__MT1!.applyMachineRaw!(1).driveThrustReady;
++    const publicReady = window.__MT1!.getDriveThrustReady!();
++    window.__MT1!.runS5CamTrack!();
++    const restored = window.__MT1!.getDriveThrustReady!();
++    return { evaluateReady, rawReady, publicReady, restored };
++  });
++  const absentActual = [!absent.evaluateReady ? "evaluate==false" : "evaluate==true", !absent.rawReady ? "raw==false" : "raw==true", !absent.publicReady ? "getter==false" : "getter==true"];
++  const absentPass = absentActual.every((value) => value.endsWith("==false")) && absent.restored;
++  rows.push({
++    id: "NC-CERTIFICATE-ABSENT", mutation: { certificate: "ABSENT" }, mutationApplied: true,
++    expectedFailingGates: ["evaluate==false", "raw==false", "getter==false"], allowedCascadeContract: [], allowedCascadeFailures: [],
++    actualFailedGates: absentActual, expectedFailedClosures: [], actualFailedClosures: [], publicReadyExpectation: false, actualPublicReady: absent.publicReady,
++    expectedAuthorityNcRowStatus: "NOT_APPLICABLE_API_CONTROL", authorityNcRowStatus: "NOT_APPLICABLE_API_CONTROL",
++    unexpectedFailures: [], baselineRestorationVerified: absent.restored, finalControlResult: absentPass ? "PASS" : "FAIL",
++  });
++  persistRows();
++
++  // One final complete nominal recertification proves that every per-row
++  // override-state restoration returned to the same ready baseline.
++  for (const row of rows) {
++    row.baselineRestorationVerified = Boolean(row.baselineRestorationVerified) && absent.restored;
++    if (!row.baselineRestorationVerified) row.finalControlResult = "FAIL";
++  }
++
++  persistRows();
++  expect(rows.every((row) => row.finalControlResult === "PASS" && (row.unexpectedFailures as string[]).length === 0), JSON.stringify(rows.filter((row) => row.finalControlResult !== "PASS" || (row.unexpectedFailures as string[]).length), null, 2)).toBe(true);
+ });
+ 
+-test("refresh changed S5H negative-control rows and validate ledger", async ({ page }) => {
+-  test.setTimeout(600_000);
+-  await page.goto("/");
+-  await page.waitForFunction(() => Boolean(window.__MT1?.runS5Authority));
+-  const ev = resolve(here, "../evidence");
+-  const ledger = JSON.parse(readFileSync(resolve(ev, "s5-negative-control-results.json"), "utf8")) as {
++test("validate strict executed S5HR ledger", () => {
++  const ledger = JSON.parse(readFileSync(evidenceFile, "utf8")) as {
+     schema: string;
+-    controls: Array<Record<string, unknown> & { id: string }>;
++    controls: Array<{ mutationApplied: boolean; publicReadyExpectation: boolean | "UNCHANGED"; actualPublicReady: boolean; unexpectedFailures: string[]; baselineRestorationVerified: boolean; finalControlResult: string }>;
+   };
+-  const changed = [
+-    { id: "NC1", opts: { blockPassage: true }, expectFail: ["S5-P3", "S5-P5", "C2"] },
+-    { id: "NC-OPEN-CAM", opts: { openCam: "PORT" }, expectFail: ["S5-P7", "S5-P12", "C8", "C14", "C18"] },
+-  ];
+-  for (const c of changed) {
+-    const report = await page.evaluate((opts) => window.__MT1!.runS5Authority!(opts), c.opts);
+-    const live = await page.evaluate((opts) => {
+-      window.__MT1!.applyS5Override!(opts);
+-      window.__MT1!.setMachineT(1);
+-      const ready = window.__MT1!.getDriveThrustReady!();
+-      window.__MT1!.applyS5Override!({});
+-      window.__MT1!.setMachineT(1);
+-      const restored = window.__MT1!.getDriveThrustReady!();
+-      return { ready, restored };
+-    }, c.opts);
+-    const failedGates = report.gates.filter((g) => !g.pass).map((g) => g.id);
+-    const failedClosures = report.closures.filter((g) => !g.pass).map((g) => g.id);
+-    const failed = [...failedGates, ...failedClosures];
+-    const authorityRow = report.negativeControls.find((row) => row.id === c.id);
+-    const mutationApplied = authorityRow?.status !== "NOT_RUN";
+-    const pass = mutationApplied && c.expectFail.every((id) => failed.includes(id)) && authorityRow?.status === "PASS" && !live.ready && live.restored;
+-    const row = {
+-      id: c.id,
+-      mutation: c.opts,
+-      mutationApplied,
+-      expectedFailingGates: c.expectFail.filter((id) => !id.startsWith("C")),
+-      actualFailedGates: failedGates,
+-      expectedFailedClosures: c.expectFail.filter((id) => id.startsWith("C")),
+-      actualFailedClosures: failedClosures,
+-      publicReadyExpectation: false,
+-      actualPublicReady: live.ready,
+-      authorityNcRowStatus: authorityRow?.status ?? "MISSING",
+-      unexpectedFailures: failed.filter((id) => !c.expectFail.includes(id)),
+-      baselineRestorationVerified: live.restored,
+-      finalControlResult: pass ? "PASS" : "FAIL",
+-    };
+-    const index = ledger.controls.findIndex((existing) => existing.id === c.id);
+-    if (index >= 0) ledger.controls[index] = row;
+-    else ledger.controls.push(row);
+-  }
++  expect(ledger.schema).toBe("MT1-S5HR-negative-control-ledger-v2");
++  expect(ledger.controls).toHaveLength(23);
+   for (const row of ledger.controls) {
+-    const expected = [
+-      ...((row.expectedFailingGates as string[] | undefined) ?? []),
+-      ...((row.expectedFailedClosures as string[] | undefined) ?? []),
+-    ];
+-    row.expectedFailingGates = [...new Set(expected.filter((id) => !id.startsWith("C")))];
+-    row.expectedFailedClosures = [...new Set(expected.filter((id) => id.startsWith("C")))];
++    expect(row.finalControlResult).toBe("PASS");
++    expect(row.unexpectedFailures).toEqual([]);
++    expect(row.mutationApplied).toBe(true);
++    expect(row.baselineRestorationVerified).toBe(true);
++    if (row.publicReadyExpectation !== "UNCHANGED") expect(row.actualPublicReady).toBe(row.publicReadyExpectation);
+   }
+-  writeFileSync(resolve(ev, "s5-negative-control-results.json"), JSON.stringify(ledger, null, 2));
+-  expect(ledger.controls.every((row) => row.finalControlResult === "PASS"), JSON.stringify(ledger.controls.filter((row) => row.finalControlResult !== "PASS"), null, 2)).toBe(true);
+ });
+diff -ruN '--exclude=evidence' '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=.git' '--exclude=.agents' '--exclude=.codex' '--exclude=*.zip' '--exclude=*.diff' '--exclude=*.sha256' /tmp/mt1-s5hr-source-base/tests/mt1-s5h-mechanical.spec.ts ./tests/mt1-s5h-mechanical.spec.ts
+--- /tmp/mt1-s5hr-source-base/tests/mt1-s5h-mechanical.spec.ts	2026-08-21 00:37:39.000000000 -0500
++++ ./tests/mt1-s5h-mechanical.spec.ts	2026-08-22 15:14:32.372226293 -0500
+@@ -1,6 +1,7 @@
+ import { expect, test } from "@playwright/test";
++import type { S5Override } from "../src/machine/s5Propulsion";
+ 
+-test.describe("MT1-S5H independent physical path", () => {
++test.describe("MT1-S5HR freeze-authority path", () => {
+   test("complete unilateral path and assembly pair sweep", async ({ page }) => {
+     test.setTimeout(300_000);
+     await page.goto("/");
+@@ -14,6 +15,14 @@
+     expect(path.pathCertificate.passiveReverse).toBe(true);
+     expect(path.pathCertificate.inventory.complete).toBe(true);
+     expect(path.pathCertificate.inventory.unclassified).toEqual([]);
++    expect(path.pathCertificate.inventory.missingRequired).toEqual([]);
++    expect(path.pathCertificate.analyticComparison.pass).toBe(true);
++    for (const topology of Object.values(path.pathCertificate.requiredPieceTopology)) {
++      expect(topology.moving).toHaveLength(2);
++      expect(topology.faceA).toHaveLength(7);
++      expect(topology.faceB).toHaveLength(7);
++      expect(topology.support.length).toBeGreaterThanOrEqual(7);
++    }
+     expect(path.pairsEvaluated).toBeGreaterThan(1_000_000);
+     expect(path.pathCertificate.minPinBacking).toBeGreaterThan(0.002);
+     expect(path.pathCertificate.minShoeBacking).toBeGreaterThan(0);
+@@ -47,17 +56,22 @@
+       const transitions = fine.filter((s, i) => i === 0 || s.ready !== fine[i - 1]!.ready);
+       window.__MT1!.setMachineT(1);
+       window.__MT1!.invalidateS5PathCertificate!();
+-      const absent = window.__MT1!.evaluateS5Handover!().driveThrustReady;
+-      const recomputed = window.__MT1!.getDriveThrustReady!();
+-      return { out, transitions, absent, recomputed };
++      const absentEvaluate = window.__MT1!.evaluateS5Handover!().driveThrustReady;
++      const absentRaw = window.__MT1!.applyMachineRaw!(1).driveThrustReady;
++      const absentGetter = window.__MT1!.getDriveThrustReady!();
++      window.__MT1!.runS5CamTrack!();
++      const explicitlyRecertified = window.__MT1!.getDriveThrustReady!();
++      return { out, transitions, absentEvaluate, absentRaw, absentGetter, explicitlyRecertified };
+     });
+     console.log(JSON.stringify(states, null, 2));
+     expect(states.transitions).toEqual([
+       expect.objectContaining({ machineT: 0.998, ready: false }),
+       expect.objectContaining({ machineT: 0.99983, ready: true }),
+     ]);
+-    expect(states.absent).toBe(false);
+-    expect(states.recomputed).toBe(true);
++    expect(states.absentEvaluate).toBe(false);
++    expect(states.absentRaw).toBe(false);
++    expect(states.absentGetter).toBe(false);
++    expect(states.explicitlyRecertified).toBe(true);
+   });
+ 
+   test("corrective negative controls and immediate override consistency", async ({ page }) => {
+@@ -98,4 +112,40 @@
+     expect(result.restoredImmediate).toBe(false);
+     expect(result.restoredPublic).toBe(true);
+   });
++
++  test("required pieces and physical-first corridor controls fail every readiness path", async ({ page }) => {
++    test.setTimeout(900_000);
++    await page.goto("/");
++    await page.waitForFunction(() => Boolean(window.__MT1?.runS5CamTrack));
++    const controls = await page.evaluate(() => {
++      const run = (opts: S5Override) => {
++        window.__MT1!.setMachineT(1);
++        window.__MT1!.applyS5Override!(opts);
++        const evaluateImmediate = window.__MT1!.evaluateS5Handover!().driveThrustReady;
++        const raw = window.__MT1!.applyMachineRaw!(1).driveThrustReady;
++        const getter = window.__MT1!.getDriveThrustReady!();
++        const cert = window.__MT1!.getS5PathCertificate!()!;
++        return { evaluateImmediate, raw, getter, cert };
++      };
++      const missingPiece = run({ missingTrackPiece: true });
++      const missingBFaces = run({ missingBFaces: true });
++      const untagged = run({ untaggedCorridorSolid: true });
++      const middle = run({ middlePathIntruder: true });
++      window.__MT1!.applyS5Override!({});
++      const restored = window.__MT1!.getDriveThrustReady!();
++      return { missingPiece, missingBFaces, untagged, middle, restored };
++    });
++    for (const result of [controls.missingPiece, controls.missingBFaces, controls.untagged, controls.middle]) {
++      expect(result.evaluateImmediate).toBe(false);
++      expect(result.raw).toBe(false);
++      expect(result.getter).toBe(false);
++      expect(result.cert.valid).toBe(false);
++    }
++    expect(controls.missingPiece.cert.inventory.missingRequired).toContain("S5_LOCK_RAIL_B_PORT_CAM");
++    expect(controls.missingBFaces.cert.inventory.missingRequired.filter((name) => name.startsWith("S5_LOCK_RAIL_B_PORT_"))).toHaveLength(6);
++    expect(controls.untagged.cert.inventory.relevant).toContain("S5_NC_UNCLASSIFIED_INTRUDER_VIS");
++    expect(controls.untagged.cert.inventory.unclassified).toContain("S5_NC_UNCLASSIFIED_INTRUDER_VIS");
++    expect(controls.middle.cert.inventory.collisionScope).toContain("S5_LOCK_RAIL_INTRUDE_PORT_VIS");
++    expect(controls.restored).toBe(true);
++  });
+ });

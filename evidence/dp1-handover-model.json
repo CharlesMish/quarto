@@ -1,0 +1,200 @@
+{
+  "tag": "DP1_DERIVED_ARCHITECTURE_RESULT",
+  "flowHandover": {
+    "tag": "DP1_DERIVED_ARCHITECTURE_RESULT",
+    "CORE_BULK_AFT_FACE": -4.405,
+    "CAN_DEPLOYED_FORWARD_FACE": -4.525,
+    "BAY_AFT_STATION": -4.8,
+    "coreToCanMouthGap": 0.1200000000000001,
+    "coreToCanMouthGapSign": "positive_means_core_aft_face_is_forward_of_can_mouth",
+    "publishedSpigotLength": 0.15,
+    "selectedSpigotLength": 0.24,
+    "spigotLengthChanged": true,
+    "FLOW_SPIGOT_ROOT": -4.405,
+    "FLOW_SPIGOT_AFT_TIP": -4.6450000000000005,
+    "FLOW_SPIGOT_INTERVAL": {
+      "zAft": -4.6450000000000005,
+      "zFwd": -4.405
+    },
+    "CAN_RECEIVER_FORWARD_FACE": -4.525,
+    "CAN_RECEIVER_AFT_EXTENT": -4.705,
+    "CAN_RECEIVER_INTERVAL": {
+      "zAft": -4.705,
+      "zFwd": -4.525
+    },
+    "receiverDepth": 0.18,
+    "publishedInsertionIfUnchanged": 0.03000000000000025,
+    "flowInsertion": 0.1200000000000001,
+    "remainingReceiverAftOfTip": 0.05999999999999961,
+    "remainingBayAftOfTip": 0.15499999999999936,
+    "axialPassageContinuous": true,
+    "allInterfaceMarginsNonNegative": true,
+    "nondegenerateInsertionThreshold": 0.05,
+    "nondegenerate": true
+  },
+  "structuralHandover": {
+    "tag": "DP1_ARCHITECTURE_ASSUMPTION",
+    "BAY_AFT_STATION": -4.8,
+    "aftStructureLabel": "AFT_POST_PAIR",
+    "aftStructureMembers": [
+      "AFT_POST_PORT",
+      "AFT_POST_STBD",
+      "BAY_WALL_PORT",
+      "BAY_WALL_STBD",
+      "BULKHEAD_Z-1p70",
+      "VENTRAL_KEEL"
+    ],
+    "seat": {
+      "zFwd": -4.525,
+      "zAft": -4.72,
+      "lateralGapEach": 0.09999999999999998,
+      "verticalGapUpper": 0.09000000000000008,
+      "verticalGapLower": 0.09000000000000002,
+      "railFreeSectors": [
+        "PORT",
+        "STARBOARD",
+        "TOP"
+      ],
+      "excludedSectors": [
+        "BOTTOM_RAIL_SHOE"
+      ]
+    },
+    "register": {
+      "zFwd": -4.525,
+      "zAft": -4.6450000000000005,
+      "role": "INNER_ANNULUS"
+    },
+    "lugs": {
+      "zFwd": -4.525,
+      "zAft": -4.6850000000000005,
+      "sectors": [
+        "PORT",
+        "STARBOARD",
+        "TOP"
+      ],
+      "count": 4,
+      "role": "OUTER_SECTORS"
+    },
+    "HANDOVER_FRAME_ENVELOPE": {
+      "zFwd": -4.525,
+      "zAft": -4.8,
+      "xHalf": 0.65,
+      "yBot": 0.28,
+      "yTop": 1.28
+    },
+    "graph": [
+      {
+        "from": "MOVING_CAN",
+        "to": "MOVING_LOCK_HALF",
+        "kind": "same_interface_station",
+        "note": "lugs/register on can mouth, coaxial with receiver"
+      },
+      {
+        "from": "MOVING_LOCK_HALF",
+        "to": "FIXED_REGISTER_SEAT",
+        "kind": "overlapping_study_envelope",
+        "note": "seat band shares axial interval with can mouth / receiver"
+      },
+      {
+        "from": "FIXED_REGISTER_SEAT",
+        "to": "HANDOVER_FRAME",
+        "kind": "named_future_direct_splice",
+        "note": "future S5 frame starts at seat, not current S4A geometry"
+      },
+      {
+        "from": "HANDOVER_FRAME",
+        "to": "AFT_POST_PAIR",
+        "kind": "named_future_direct_splice",
+        "note": "frame aft end meets AFT_POST_PORT/STBD at BAY_AFT_STATION"
+      },
+      {
+        "from": "HANDOVER_FRAME",
+        "to": "BAY_WALL_PORT/STBD",
+        "kind": "named_future_direct_splice",
+        "note": "frame may splice to BAY_WALL_PORT/STBD"
+      },
+      {
+        "from": "AFT_POST_PAIR",
+        "to": "BAY_WALL_PORT/STBD",
+        "kind": "existing_s4a_physical_contact",
+        "note": "AFT_POST_PORT/STBD physically contact the corresponding BAY_WALL_PORT/STBD solids"
+      },
+      {
+        "from": "BAY_WALL_PORT/STBD",
+        "to": "BULKHEAD_Z-1p70",
+        "kind": "existing_s4a_physical_contact",
+        "note": "BAY_WALL_PORT/STBD physically contact BULKHEAD_Z-1p70"
+      },
+      {
+        "from": "BULKHEAD_Z-1p70",
+        "to": "VENTRAL_KEEL",
+        "kind": "existing_s4a_physical_contact",
+        "note": "BULKHEAD_Z-1p70 physically contacts VENTRAL_KEEL"
+      }
+    ],
+    "graphConnected": true,
+    "terminatesOnExistingS4a": true,
+    "railBypassComplete": true,
+    "lugClearsRails": true,
+    "coexistenceOk": true,
+    "zoning": {
+      "CENTER": "continuous flow passage (inner bore)",
+      "INNER_ANNULUS": "spigot / can receiver / alignment register",
+      "OUTER_SECTORS": "structural lugs in PORT/STBD/TOP; coaxial with flow, not serial",
+      "EXCLUDED_SECTORS": "BOTTOM rail/shoe sector"
+    },
+    "axialZoning": {
+      "coreBulkAft": -4.405,
+      "spigot": {
+        "zAft": -4.6450000000000005,
+        "zFwd": -4.405
+      },
+      "receiver": {
+        "zAft": -4.705,
+        "zFwd": -4.525
+      },
+      "seatRegister": {
+        "zAft": -4.6450000000000005,
+        "zFwd": -4.525
+      },
+      "lugEngagement": {
+        "zAft": -4.6850000000000005,
+        "zFwd": -4.525
+      },
+      "handoverFrame": {
+        "zAft": -4.8,
+        "zFwd": -4.525
+      },
+      "aftPostStation": -4.8
+    }
+  },
+  "spigotCandidates": [
+    {
+      "id": "published_0.150",
+      "length": 0.15,
+      "insertion": 0.03000000000000025,
+      "tip": -4.555000000000001,
+      "remainingReceiverAftOfTip": 0.14999999999999947,
+      "nondegenerate": false,
+      "judgment": "marginal — ~30 mm insertion after the 120 mm core-to-mouth bridge"
+    },
+    {
+      "id": "selected_0.240",
+      "length": 0.24,
+      "insertion": 0.1200000000000001,
+      "tip": -4.6450000000000005,
+      "remainingReceiverAftOfTip": 0.05999999999999961,
+      "nondegenerate": true,
+      "judgment": "selected DP1A assumption — 120 mm insertion with residual receiver for coaxial register"
+    },
+    {
+      "id": "receiver_fill_0.300",
+      "length": 0.3,
+      "insertion": 0.17999999999999972,
+      "tip": -4.705,
+      "remainingReceiverAftOfTip": 0,
+      "nondegenerate": true,
+      "judgment": "longest useful for the 0.18 m receiver — fills the sleeve, no residual receiver"
+    }
+  ]
+}

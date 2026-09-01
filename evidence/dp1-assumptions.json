@@ -1,0 +1,88 @@
+{
+  "tag": "DP1_ARCHITECTURE_ASSUMPTION",
+  "assumptions": {
+    "tag": "DP1_ARCHITECTURE_ASSUMPTION",
+    "canWallPerFace": 0.06,
+    "canWallRange": [
+      0.05,
+      0.08
+    ],
+    "runningClearancePerFace": 0.04,
+    "runningClearanceRange": [
+      0.03,
+      0.05
+    ],
+    "alignmentThermalPerFace": 0.03,
+    "alignmentThermalRange": [
+      0.02,
+      0.04
+    ],
+    "endWallAllowance": 0.06,
+    "engagementMarginEachEnd": 0.04,
+    "flowSpigotLength": 0.15,
+    "recommendedCoreLength": 1.8,
+    "note": "Study-level allowances for wall, running gap, and alignment. Not a BOM.",
+    "publishedFlowSpigotLength": 0.15,
+    "selectedFlowSpigotLength": 0.24,
+    "selectedReceiverDepth": 0.18,
+    "spigotRevision": "0.15 m published DP1 length revised to 0.24 m in DP1A because 0.030 m insertion is marginal"
+  },
+  "handover": {
+    "tag": "DP1_ARCHITECTURE_ASSUMPTION",
+    "z_long": -4.525,
+    "equals": "CAN_DEPLOYED_FORWARD_FACE",
+    "relationToAftPosts": "0.275 m forward of BAY_AFT_STATION / AFT_POST_PAIR, inside the bay"
+  },
+  "flowInterface": {
+    "tag": "DP1_DERIVED_ARCHITECTURE_RESULT",
+    "form": "fixed concentric male spigot on the core aft face, entering the can receiver sleeve",
+    "publishedLength": 0.15,
+    "selectedLength": 0.24,
+    "interval": {
+      "zAft": -4.6450000000000005,
+      "zFwd": -4.405
+    },
+    "insertion": 0.1200000000000001,
+    "coreToCanMouthGap": 0.1200000000000001,
+    "notDerivedFrom": "usableBayEngagement"
+  },
+  "structuralSeat": {
+    "tag": "DP1_ARCHITECTURE_ASSUMPTION",
+    "form": "annular register plus 4 axial locking lugs/dogs in rail-free sectors",
+    "engages": "final millimetres of existing mapDrive stroke",
+    "predicate": "driveThrustReady means seated capture, not merely driveT==1",
+    "aftStructureLabel": "AFT_POST_PAIR"
+  },
+  "spreadAssumption": {
+    "tag": "DP1_ARCHITECTURE_ASSUMPTION",
+    "id": "DP1_ASSUMPTION_AXIAL_DRIVE_INACTIVE_WHILE_STOWED",
+    "text": "axial propulsion is inactive while the thrust can is stowed",
+    "reason": "stowed can is inside the bay; no honest free terminal exhaust station exists",
+    "notS4aAuthority": true
+  },
+  "waistInterfaces": {
+    "tag": "DP1_ARCHITECTURE_ASSUMPTION",
+    "planes": [
+      {
+        "name": "DP1_WAIST_IFACE_PORT",
+        "x_lat": -0.6,
+        "z0": -1.9,
+        "z1": -1.55,
+        "note": "lateral bay-wall plane toward DRIVE_WAIST_PORT; not a duct"
+      },
+      {
+        "name": "DP1_WAIST_IFACE_STBD",
+        "x_lat": 0.6,
+        "z0": -1.9,
+        "z1": -1.55,
+        "note": "lateral bay-wall plane toward DRIVE_WAIST_STBD; not a duct"
+      }
+    ]
+  },
+  "families": {
+    "F6": "moving can + carriage + shoes + moving lock half",
+    "F7": "rails + stops + fixed guide + fixed seat hardware",
+    "F_PROP_FIXED": "NEW — prime mover, fixed reaction frame, fixed core hardware. Not F5.",
+    "F5": "remain decomposed: forward/dorsal · spanning keel · aft bay / thrust-seat structure"
+  }
+}

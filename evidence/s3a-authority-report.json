@@ -1,0 +1,4001 @@
+{
+  "freezeId": "MT1-S3A",
+  "sourceS1cSha256": "fef06acea92ed2f76e872f99f01dee38969dc755f7845cdd685e1f6bab707201",
+  "sourceS2aSha256": "f38efd6c1691244ceb44069b843aacc4dfd440cce5d745631892c8035c0e8fba",
+  "sourceS3Sha256": "d6aeb43d684925cbc6266b1b606ab61efa27565a413f800d92ce45eb6f0d975e",
+  "method": "machineT wraps certified maps. requestedDriveT=mapDrive; appliedDriveT is gated by pose capture predicates before applyDrive. DRIVE_WAIST_PORT is state-conditioned empty occupancy bounded by channel mouth and FWD_CARRY aft frame.",
+  "maps": {
+    "front": [
+      {
+        "m0": 0,
+        "m1": 0.04,
+        "t0": 0,
+        "t1": 0
+      },
+      {
+        "m0": 0.04,
+        "m1": 0.26,
+        "t0": 0,
+        "t1": 0.28
+      },
+      {
+        "m0": 0.26,
+        "m1": 0.58,
+        "t0": 0.28,
+        "t1": 0.7
+      },
+      {
+        "m0": 0.58,
+        "m1": 0.8,
+        "t0": 0.7,
+        "t1": 1
+      },
+      {
+        "m0": 0.8,
+        "m1": 1,
+        "t0": 1,
+        "t1": 1
+      }
+    ],
+    "rear": [
+      {
+        "m0": 0,
+        "m1": 0.08,
+        "t0": 0,
+        "t1": 0
+      },
+      {
+        "m0": 0.08,
+        "m1": 0.34,
+        "t0": 0,
+        "t1": 0.27
+      },
+      {
+        "m0": 0.34,
+        "m1": 0.66,
+        "t0": 0.27,
+        "t1": 0.7
+      },
+      {
+        "m0": 0.66,
+        "m1": 0.86,
+        "t0": 0.7,
+        "t1": 0.9
+      },
+      {
+        "m0": 0.86,
+        "m1": 1,
+        "t0": 0.9,
+        "t1": 0.9
+      }
+    ],
+    "drive": [
+      {
+        "m0": 0,
+        "m1": 0.88,
+        "t0": 0,
+        "t1": 0
+      },
+      {
+        "m0": 0.88,
+        "m1": 1,
+        "t0": 0,
+        "t1": 1
+      }
+    ],
+    "driveStart": 0.88
+  },
+  "firstReadyMachineT": 0.84,
+  "firstDriveExitMachineT": 0.89,
+  "firstRequestedDriveMachineT": 0.89,
+  "driveWaist": {
+    "cells": [
+      {
+        "name": "DRIVE_WAIST_PORT",
+        "cx": -1.5243817628306766,
+        "cy": 1.475,
+        "cz": -0.2900000262260437,
+        "hx": 0.7143817628306766,
+        "hy": 0.875,
+        "hz": 1.3400000023841856
+      },
+      {
+        "name": "DRIVE_WAIST_STBD",
+        "cx": 1.5243817628306766,
+        "cy": 1.475,
+        "cz": -0.2900000262260437,
+        "hx": 0.7143817628306766,
+        "hy": 0.875,
+        "hz": 1.3400000023841856
+      }
+    ],
+    "activeWhen": "frontDriveStructureReady AND rearDriveStructureReady",
+    "zAftClearance": -2.220446049250313e-16,
+    "zFwdClearance": 0,
+    "principal": {
+      "width": 1.4287635256613531,
+      "height": 1.75,
+      "length": 2.680000004768371,
+      "volume": 6.7009009472742775
+    },
+    "hits": []
+  },
+  "minFrontRear": 1.55693181154977,
+  "minFrontRearT": 0.41000000000000003,
+  "minFrontRearSolids": "FL_CATCH_KEEPER vs RL_INNER_ARMOR",
+  "envelopes": {
+    "e1MovingInstant": {
+      "width": 13.367149536972,
+      "height": 2.6649998831748962,
+      "length": 10.590000190734864,
+      "widthAt": 0.1578999999999989,
+      "heightAt": 0,
+      "lengthAt": 1
+    },
+    "e2MovingSwept": {
+      "width": 13.367149536972,
+      "height": 2.6649998831748962,
+      "length": 11.395000324249267,
+      "minX": -6.683574768486,
+      "maxX": 6.683574768486,
+      "minY": 0.2600000023841858,
+      "maxY": 2.924999885559082,
+      "minZ": -7.075000190734864,
+      "maxZ": 4.320000133514404
+    },
+    "e3WholeInstant": {
+      "width": 13.367149536972,
+      "height": 2.894999884068966,
+      "length": 11.699999920725823,
+      "widthAt": 0.1578999999999989,
+      "heightAt": 0,
+      "lengthAt": 0
+    },
+    "e4WholeSwept": {
+      "width": 13.367149536972,
+      "height": 2.894999884068966,
+      "length": 11.699999920725823,
+      "minX": -6.683574768486,
+      "maxX": 6.683574768486,
+      "minY": 0.030000001490116113,
+      "maxY": 2.924999885559082,
+      "minZ": -7.149999923706055,
+      "maxZ": 4.549999997019768
+    },
+    "method": "sampled/refined authority: machineT Δt=0.001 global + Δt=0.0001 refine ±0.01 around extrema; reservations excluded",
+    "coarseStep": 0.001,
+    "refineStep": 0.0001
+  },
+  "readinessAtInspection": [
+    {
+      "machineT": 0,
+      "frontT": 0,
+      "rearT": 0,
+      "requestedDriveT": 0,
+      "appliedDriveT": 0,
+      "driveT": 0,
+      "phase": "SPREAD",
+      "rearBookReady": false,
+      "rearNestReady": false,
+      "rearDriveStructureReady": false,
+      "frontBookReady": false,
+      "frontNestReady": false,
+      "frontPassivePickupReady": false,
+      "frontDriveStructureReady": false,
+      "rearStbdBookReady": false,
+      "rearStbdNestReady": false,
+      "rearStbdDriveStructureReady": false,
+      "frontStbdBookReady": false,
+      "frontStbdNestReady": false,
+      "frontStbdPassivePickupReady": false,
+      "frontStbdDriveStructureReady": false,
+      "portRearReady": false,
+      "portFrontReady": false,
+      "stbdRearReady": false,
+      "stbdFrontReady": false,
+      "driveStructuralReady": false,
+      "detail": "pR=false/false pF=false/false/false sR=false/false sF=false/false/false"
+    },
+    {
+      "machineT": 0.12,
+      "frontT": 0.10181818181818182,
+      "rearT": 0.04153846153846154,
+      "requestedDriveT": 0,
+      "appliedDriveT": 0,
+      "driveT": 0,
+      "phase": "COMPACT",
+      "rearBookReady": false,
+      "rearNestReady": false,
+      "rearDriveStructureReady": false,
+      "frontBookReady": false,
+      "frontNestReady": false,
+      "frontPassivePickupReady": false,
+      "frontDriveStructureReady": false,
+      "rearStbdBookReady": false,
+      "rearStbdNestReady": false,
+      "rearStbdDriveStructureReady": false,
+      "frontStbdBookReady": false,
+      "frontStbdNestReady": false,
+      "frontStbdPassivePickupReady": false,
+      "frontStbdDriveStructureReady": false,
+      "portRearReady": false,
+      "portFrontReady": false,
+      "stbdRearReady": false,
+      "stbdFrontReady": false,
+      "driveStructuralReady": false,
+      "detail": "pR=false/false pF=false/false/false sR=false/false sF=false/false/false"
+    },
+    {
+      "machineT": 0.24,
+      "frontT": 0.2545454545454546,
+      "rearT": 0.16615384615384615,
+      "requestedDriveT": 0,
+      "appliedDriveT": 0,
+      "driveT": 0,
+      "phase": "COMPACT",
+      "rearBookReady": false,
+      "rearNestReady": false,
+      "rearDriveStructureReady": false,
+      "frontBookReady": false,
+      "frontNestReady": false,
+      "frontPassivePickupReady": false,
+      "frontDriveStructureReady": false,
+      "rearStbdBookReady": false,
+      "rearStbdNestReady": false,
+      "rearStbdDriveStructureReady": false,
+      "frontStbdBookReady": false,
+      "frontStbdNestReady": false,
+      "frontStbdPassivePickupReady": false,
+      "frontStbdDriveStructureReady": false,
+      "portRearReady": false,
+      "portFrontReady": false,
+      "stbdRearReady": false,
+      "stbdFrontReady": false,
+      "driveStructuralReady": false,
+      "detail": "pR=false/false pF=false/false/false sR=false/false sF=false/false/false"
+    },
+    {
+      "machineT": 0.36,
+      "frontT": 0.41125,
+      "rearT": 0.29687499999999994,
+      "requestedDriveT": 0,
+      "appliedDriveT": 0,
+      "driveT": 0,
+      "phase": "REORIENT",
+      "rearBookReady": true,
+      "rearNestReady": false,
+      "rearDriveStructureReady": false,
+      "frontBookReady": true,
+      "frontNestReady": false,
+      "frontPassivePickupReady": false,
+      "frontDriveStructureReady": false,
+      "rearStbdBookReady": true,
+      "rearStbdNestReady": false,
+      "rearStbdDriveStructureReady": false,
+      "frontStbdBookReady": true,
+      "frontStbdNestReady": false,
+      "frontStbdPassivePickupReady": false,
+      "frontStbdDriveStructureReady": false,
+      "portRearReady": false,
+      "portFrontReady": false,
+      "stbdRearReady": false,
+      "stbdFrontReady": false,
+      "driveStructuralReady": false,
+      "detail": "pR=true/false pF=true/false/false sR=true/false sF=true/false/false"
+    },
+    {
+      "machineT": 0.48,
+      "frontT": 0.56875,
+      "rearT": 0.4581249999999999,
+      "requestedDriveT": 0,
+      "appliedDriveT": 0,
+      "driveT": 0,
+      "phase": "REORIENT",
+      "rearBookReady": true,
+      "rearNestReady": false,
+      "rearDriveStructureReady": false,
+      "frontBookReady": true,
+      "frontNestReady": false,
+      "frontPassivePickupReady": false,
+      "frontDriveStructureReady": false,
+      "rearStbdBookReady": true,
+      "rearStbdNestReady": false,
+      "rearStbdDriveStructureReady": false,
+      "frontStbdBookReady": true,
+      "frontStbdNestReady": false,
+      "frontStbdPassivePickupReady": false,
+      "frontStbdDriveStructureReady": false,
+      "portRearReady": false,
+      "portFrontReady": false,
+      "stbdRearReady": false,
+      "stbdFrontReady": false,
+      "driveStructuralReady": false,
+      "detail": "pR=true/false pF=true/false/false sR=true/false sF=true/false/false"
+    },
+    {
+      "machineT": 0.6,
+      "frontT": 0.7272727272727273,
+      "rearT": 0.6193749999999999,
+      "requestedDriveT": 0,
+      "appliedDriveT": 0,
+      "driveT": 0,
+      "phase": "REORIENT",
+      "rearBookReady": true,
+      "rearNestReady": false,
+      "rearDriveStructureReady": false,
+      "frontBookReady": true,
+      "frontNestReady": false,
+      "frontPassivePickupReady": false,
+      "frontDriveStructureReady": false,
+      "rearStbdBookReady": true,
+      "rearStbdNestReady": false,
+      "rearStbdDriveStructureReady": false,
+      "frontStbdBookReady": true,
+      "frontStbdNestReady": false,
+      "frontStbdPassivePickupReady": false,
+      "frontStbdDriveStructureReady": false,
+      "portRearReady": false,
+      "portFrontReady": false,
+      "stbdRearReady": false,
+      "stbdFrontReady": false,
+      "driveStructuralReady": false,
+      "detail": "pR=true/false pF=true/false/false sR=true/false sF=true/false/false"
+    },
+    {
+      "machineT": 0.72,
+      "frontT": 0.8909090909090909,
+      "rearT": 0.7599999999999999,
+      "requestedDriveT": 0,
+      "appliedDriveT": 0,
+      "driveT": 0,
+      "phase": "SEAT",
+      "rearBookReady": true,
+      "rearNestReady": false,
+      "rearDriveStructureReady": false,
+      "frontBookReady": true,
+      "frontNestReady": false,
+      "frontPassivePickupReady": true,
+      "frontDriveStructureReady": false,
+      "rearStbdBookReady": true,
+      "rearStbdNestReady": false,
+      "rearStbdDriveStructureReady": false,
+      "frontStbdBookReady": true,
+      "frontStbdNestReady": false,
+      "frontStbdPassivePickupReady": true,
+      "frontStbdDriveStructureReady": false,
+      "portRearReady": false,
+      "portFrontReady": false,
+      "stbdRearReady": false,
+      "stbdFrontReady": false,
+      "driveStructuralReady": false,
+      "detail": "pR=true/false pF=true/false/true sR=true/false sF=true/false/true"
+    },
+    {
+      "machineT": 0.86,
+      "frontT": 1,
+      "rearT": 0.9,
+      "requestedDriveT": 0,
+      "appliedDriveT": 0,
+      "driveT": 0,
+      "phase": "STRUCTURAL_READY",
+      "rearBookReady": true,
+      "rearNestReady": true,
+      "rearDriveStructureReady": true,
+      "frontBookReady": true,
+      "frontNestReady": true,
+      "frontPassivePickupReady": true,
+      "frontDriveStructureReady": true,
+      "rearStbdBookReady": true,
+      "rearStbdNestReady": true,
+      "rearStbdDriveStructureReady": true,
+      "frontStbdBookReady": true,
+      "frontStbdNestReady": true,
+      "frontStbdPassivePickupReady": true,
+      "frontStbdDriveStructureReady": true,
+      "portRearReady": true,
+      "portFrontReady": true,
+      "stbdRearReady": true,
+      "stbdFrontReady": true,
+      "driveStructuralReady": true,
+      "detail": "pR=true/true pF=true/true/true sR=true/true sF=true/true/true"
+    },
+    {
+      "machineT": 1,
+      "frontT": 1,
+      "rearT": 0.9,
+      "requestedDriveT": 1,
+      "appliedDriveT": 1,
+      "driveT": 1,
+      "phase": "DRIVE",
+      "rearBookReady": true,
+      "rearNestReady": true,
+      "rearDriveStructureReady": true,
+      "frontBookReady": true,
+      "frontNestReady": true,
+      "frontPassivePickupReady": true,
+      "frontDriveStructureReady": true,
+      "rearStbdBookReady": true,
+      "rearStbdNestReady": true,
+      "rearStbdDriveStructureReady": true,
+      "frontStbdBookReady": true,
+      "frontStbdNestReady": true,
+      "frontStbdPassivePickupReady": true,
+      "frontStbdDriveStructureReady": true,
+      "portRearReady": true,
+      "portFrontReady": true,
+      "stbdRearReady": true,
+      "stbdFrontReady": true,
+      "driveStructuralReady": true,
+      "detail": "pR=true/true pF=true/true/true sR=true/true sF=true/true/true"
+    }
+  ],
+  "authorityBoundAudit": {
+    "pass": true,
+    "physicalCount": 213,
+    "unregisteredPhysical": [],
+    "underbound": [],
+    "rows": [
+      {
+        "name": "VENTRAL_KEEL",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.15,
+          "y": 0.07,
+          "z": 4.75
+        },
+        "authorityHalf": {
+          "x": 0.15,
+          "y": 0.07,
+          "z": 4.75
+        }
+      },
+      {
+        "name": "DORSAL_LONGERON",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.12,
+          "y": 0.075,
+          "z": 3.125
+        },
+        "authorityHalf": {
+          "x": 0.12,
+          "y": 0.075,
+          "z": 3.125
+        }
+      },
+      {
+        "name": "BULKHEAD_Z3p35",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.75,
+          "y": 0.77,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.75,
+          "y": 0.77,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "BULKHEAD_Z1p15",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.75,
+          "y": 0.77,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.75,
+          "y": 0.77,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "BULKHEAD_Z-1p70",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.75,
+          "y": 0.77,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.75,
+          "y": 0.77,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "AFT_POST_PORT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.5,
+          "z": 0.05
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.5,
+          "z": 0.05
+        }
+      },
+      {
+        "name": "AFT_POST_STBD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.5,
+          "z": 0.05
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.5,
+          "z": 0.05
+        }
+      },
+      {
+        "name": "BAY_WALL_PORT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.5,
+          "z": 1.5499999999999998
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.5,
+          "z": 1.5499999999999998
+        }
+      },
+      {
+        "name": "BAY_WALL_STBD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.5,
+          "z": 1.5499999999999998
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.5,
+          "z": 1.5499999999999998
+        }
+      },
+      {
+        "name": "CHANNEL_FRAME_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.4,
+          "y": 0.4900000000000001,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 0.4,
+          "y": 0.4900000000000001,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "CHANNEL_FRAME_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.4,
+          "y": 0.4900000000000001,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 0.4,
+          "y": 0.4900000000000001,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "NEST_CHEEK_P",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.08,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.08,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "NEST_CHEEK_S",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.08,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.08,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "NEST_BRIDGE_UP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.03,
+          "y": 0.025,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.03,
+          "y": 0.025,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "NEST_BRIDGE_DN",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.03,
+          "y": 0.025,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.03,
+          "y": 0.025,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "SOCKET_RAIL_BEAM",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.4999999999999999,
+          "y": 0.035,
+          "z": 0.035
+        },
+        "authorityHalf": {
+          "x": 0.4999999999999999,
+          "y": 0.035,
+          "z": 0.035
+        }
+      },
+      {
+        "name": "SOCKET_RAIL_STOP_OUT",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.02,
+          "z": 0.04874639560909119
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.02,
+          "z": 0.05
+        }
+      },
+      {
+        "name": "SOCKET_RAIL_STOP_IN",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.02,
+          "z": 0.04874639560909119
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.02,
+          "z": 0.05
+        }
+      },
+      {
+        "name": "DRIVE_RAIL_P",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.03,
+          "y": 0.03,
+          "z": 2.6950000000000003
+        },
+        "authorityHalf": {
+          "x": 0.03,
+          "y": 0.03,
+          "z": 2.6950000000000003
+        }
+      },
+      {
+        "name": "DRIVE_RAIL_S",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.03,
+          "y": 0.03,
+          "z": 2.6950000000000003
+        },
+        "authorityHalf": {
+          "x": 0.03,
+          "y": 0.03,
+          "z": 2.6950000000000003
+        }
+      },
+      {
+        "name": "RL_CARRIAGE_BODY",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.21,
+          "y": 0.1,
+          "z": 0.18
+        },
+        "authorityHalf": {
+          "x": 0.21,
+          "y": 0.1,
+          "z": 0.18
+        }
+      },
+      {
+        "name": "RL_SHOE_TOP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        }
+      },
+      {
+        "name": "RL_SHOE_BOT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        }
+      },
+      {
+        "name": "RL_SHOE_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        }
+      },
+      {
+        "name": "RL_SHOE_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        }
+      },
+      {
+        "name": "RL_SPREAD_LOCK_JAW",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.11,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.11,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RL_NEST_BOLT_PIN",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.0175,
+          "y": 0.0175,
+          "z": 0.11
+        },
+        "authorityHalf": {
+          "x": 0.0175,
+          "y": 0.0175,
+          "z": 0.11
+        }
+      },
+      {
+        "name": "RL_YAW_BEARING",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.08,
+          "z": 0.09749279121818238
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.08,
+          "z": 0.1
+        }
+      },
+      {
+        "name": "RL_ROLL_BEARING",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.11,
+          "z": 0.0779942329745459
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.11,
+          "z": 0.08
+        }
+      },
+      {
+        "name": "RL_SPAR_CAP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.11,
+          "y": 0.05,
+          "z": 0.14
+        },
+        "authorityHalf": {
+          "x": 0.11,
+          "y": 0.05,
+          "z": 0.14
+        }
+      },
+      {
+        "name": "RL_INNER_ARMOR",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.26,
+          "y": 0.06,
+          "z": 1.08
+        },
+        "authorityHalf": {
+          "x": 1.26,
+          "y": 0.06,
+          "z": 1.08
+        }
+      },
+      {
+        "name": "RL_INNER_UNDER",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.22,
+          "y": 0.08,
+          "z": 1
+        },
+        "authorityHalf": {
+          "x": 1.22,
+          "y": 0.08,
+          "z": 1
+        }
+      },
+      {
+        "name": "RL_INNER_RIB_0.18",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RL_INNER_RIB_0.5",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RL_INNER_RIB_0.82",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RL_INNER_SPAR",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.13,
+          "z": 1.03
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.13,
+          "z": 1.03
+        }
+      },
+      {
+        "name": "RL_BOOK_HINGE_BARREL",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.045,
+          "y": 0.9800000000000001,
+          "z": 0.04387175604818207
+        },
+        "authorityHalf": {
+          "x": 0.045,
+          "y": 0.9800000000000001,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "RL_OUTER_ARMOR",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.08,
+          "y": 0.06,
+          "z": 1.08
+        },
+        "authorityHalf": {
+          "x": 1.08,
+          "y": 0.06,
+          "z": 1.08
+        }
+      },
+      {
+        "name": "RL_OUTER_UNDER",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.04,
+          "y": 0.08,
+          "z": 1
+        },
+        "authorityHalf": {
+          "x": 1.04,
+          "y": 0.08,
+          "z": 1
+        }
+      },
+      {
+        "name": "RL_OUTER_RIB_-0.7",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RL_OUTER_RIB_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RL_OUTER_RIB_0.7",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RL_LATCH_KEEPER",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.02,
+          "y": 0.02,
+          "z": 0.02
+        },
+        "authorityHalf": {
+          "x": 0.02,
+          "y": 0.02,
+          "z": 0.02
+        }
+      },
+      {
+        "name": "RL_LATCH_CHEEK_P",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.11,
+          "z": 0.015
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.11,
+          "z": 0.015
+        }
+      },
+      {
+        "name": "RL_LATCH_CHEEK_S",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.11,
+          "z": 0.015
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.11,
+          "z": 0.015
+        }
+      },
+      {
+        "name": "RL_LATCH_THROAT_BACK",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.015,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.015,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "RL_LATCH_JAW",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.03,
+          "y": 0.02,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.03,
+          "y": 0.02,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "RR_CARRIAGE_BODY",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.21,
+          "y": 0.1,
+          "z": 0.18
+        },
+        "authorityHalf": {
+          "x": 0.21,
+          "y": 0.1,
+          "z": 0.18
+        }
+      },
+      {
+        "name": "RR_SHOE_TOP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        }
+      },
+      {
+        "name": "RR_SHOE_BOT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        }
+      },
+      {
+        "name": "RR_SHOE_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        }
+      },
+      {
+        "name": "RR_SHOE_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.055,
+          "z": 0.055
+        }
+      },
+      {
+        "name": "RR_SPREAD_LOCK_JAW",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.11,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.11,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RR_NEST_BOLT_PIN",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.0175,
+          "y": 0.0175,
+          "z": 0.11
+        },
+        "authorityHalf": {
+          "x": 0.0175,
+          "y": 0.0175,
+          "z": 0.11
+        }
+      },
+      {
+        "name": "RR_YAW_BEARING",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.08,
+          "z": 0.09749279121818238
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.08,
+          "z": 0.1
+        }
+      },
+      {
+        "name": "RR_ROLL_BEARING",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.11,
+          "z": 0.0779942329745459
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.11,
+          "z": 0.08
+        }
+      },
+      {
+        "name": "RR_SPAR_CAP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.11,
+          "y": 0.05,
+          "z": 0.14
+        },
+        "authorityHalf": {
+          "x": 0.11,
+          "y": 0.05,
+          "z": 0.14
+        }
+      },
+      {
+        "name": "RR_INNER_ARMOR",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.26,
+          "y": 0.06,
+          "z": 1.08
+        },
+        "authorityHalf": {
+          "x": 1.26,
+          "y": 0.06,
+          "z": 1.08
+        }
+      },
+      {
+        "name": "RR_INNER_UNDER",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.22,
+          "y": 0.08,
+          "z": 1
+        },
+        "authorityHalf": {
+          "x": 1.22,
+          "y": 0.08,
+          "z": 1
+        }
+      },
+      {
+        "name": "RR_INNER_RIB_0.18",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RR_INNER_RIB_0.5",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RR_INNER_RIB_0.82",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.2,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RR_INNER_SPAR",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.13,
+          "z": 1.03
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.13,
+          "z": 1.03
+        }
+      },
+      {
+        "name": "RR_BOOK_HINGE_BARREL",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.045,
+          "y": 0.9800000000000001,
+          "z": 0.04387175604818207
+        },
+        "authorityHalf": {
+          "x": 0.045,
+          "y": 0.9800000000000001,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "RR_OUTER_ARMOR",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.08,
+          "y": 0.06,
+          "z": 1.08
+        },
+        "authorityHalf": {
+          "x": 1.08,
+          "y": 0.06,
+          "z": 1.08
+        }
+      },
+      {
+        "name": "RR_OUTER_UNDER",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.04,
+          "y": 0.08,
+          "z": 1
+        },
+        "authorityHalf": {
+          "x": 1.04,
+          "y": 0.08,
+          "z": 1
+        }
+      },
+      {
+        "name": "RR_OUTER_RIB_-0.7",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RR_OUTER_RIB_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RR_OUTER_RIB_0.7",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 1.02,
+          "y": 0.07,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "RR_LATCH_KEEPER",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.02,
+          "y": 0.02,
+          "z": 0.02
+        },
+        "authorityHalf": {
+          "x": 0.02,
+          "y": 0.02,
+          "z": 0.02
+        }
+      },
+      {
+        "name": "RR_LATCH_CHEEK_P",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.11,
+          "z": 0.015
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.11,
+          "z": 0.015
+        }
+      },
+      {
+        "name": "RR_LATCH_CHEEK_S",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.11,
+          "z": 0.015
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.11,
+          "z": 0.015
+        }
+      },
+      {
+        "name": "RR_LATCH_THROAT_BACK",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.015,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.015,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "RR_LATCH_JAW",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.03,
+          "y": 0.02,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.03,
+          "y": 0.02,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "DRIVE_SHOE_P",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.05,
+          "z": 0.14
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.05,
+          "z": 0.14
+        }
+      },
+      {
+        "name": "DRIVE_SHOE_S",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.05,
+          "z": 0.14
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.05,
+          "z": 0.14
+        }
+      },
+      {
+        "name": "DRIVE_ENVELOPE",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.5,
+          "y": 0.41,
+          "z": 1.275
+        },
+        "authorityHalf": {
+          "x": 0.5,
+          "y": 0.41,
+          "z": 1.275
+        }
+      },
+      {
+        "name": "DRIVE_SPINE",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.11,
+          "y": 0.05,
+          "z": 1.1749999999999998
+        },
+        "authorityHalf": {
+          "x": 0.11,
+          "y": 0.05,
+          "z": 1.1749999999999998
+        }
+      },
+      {
+        "name": "DRIVE_FACE_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.44,
+          "y": 0.32999999999999996,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 0.44,
+          "y": 0.32999999999999996,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "FL_CARRIAGE_BODY",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.12,
+          "y": 0.06,
+          "z": 0.11
+        },
+        "authorityHalf": {
+          "x": 0.12,
+          "y": 0.06,
+          "z": 0.11
+        }
+      },
+      {
+        "name": "FL_SHOE_TOP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FL_SHOE_BOT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FL_SHOE_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FL_SHOE_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FL_SPREAD_LOCK_JAW",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.03,
+          "y": 0.08,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.03,
+          "y": 0.08,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FL_NEST_PIN_BODY",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.015,
+          "z": 0.015
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.015,
+          "z": 0.015
+        }
+      },
+      {
+        "name": "FL_YAW_BEARING",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.07,
+          "z": 0.0779942329745459
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.07,
+          "z": 0.08
+        }
+      },
+      {
+        "name": "FL_CANT_BEARING",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.05849567473090942
+        },
+        "authorityHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "FL_SPAR_CAP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.09,
+          "y": 0.04,
+          "z": 0.11
+        },
+        "authorityHalf": {
+          "x": 0.09,
+          "y": 0.04,
+          "z": 0.11
+        }
+      },
+      {
+        "name": "FL_INNER_ARMOR_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.635,
+          "y": 0.05,
+          "z": 0.42500000000000004
+        },
+        "authorityHalf": {
+          "x": 0.635,
+          "y": 0.05,
+          "z": 0.42500000000000004
+        }
+      },
+      {
+        "name": "FL_INNER_ARMOR_1",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.06,
+          "y": 0.05,
+          "z": 0.42500000000000004
+        },
+        "authorityHalf": {
+          "x": 0.06,
+          "y": 0.05,
+          "z": 0.42500000000000004
+        }
+      },
+      {
+        "name": "FL_INNER_ARMOR_2",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "FL_INNER_ARMOR_3",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.335
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.335
+        }
+      },
+      {
+        "name": "FL_INNER_UNDER_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.6199999999999999,
+          "y": 0.07,
+          "z": 0.38
+        },
+        "authorityHalf": {
+          "x": 0.6199999999999999,
+          "y": 0.07,
+          "z": 0.38
+        }
+      },
+      {
+        "name": "FL_INNER_UNDER_1",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.044999999999999984,
+          "y": 0.07,
+          "z": 0.38
+        },
+        "authorityHalf": {
+          "x": 0.044999999999999984,
+          "y": 0.07,
+          "z": 0.38
+        }
+      },
+      {
+        "name": "FL_INNER_UNDER_2",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.044999999999999984
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.044999999999999984
+        }
+      },
+      {
+        "name": "FL_INNER_UNDER_3",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.305
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.305
+        }
+      },
+      {
+        "name": "FL_INNER_RIB_0.22",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FL_INNER_RIB_0.5",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FL_INNER_RIB_0.78",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FL_INNER_SPAR",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.11000000000000001,
+          "z": 0.51
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.11000000000000001,
+          "z": 0.51
+        }
+      },
+      {
+        "name": "FL_BOOK_HINGE_BARREL",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.035,
+          "y": 0.47000000000000003,
+          "z": 0.03412247692636383
+        },
+        "authorityHalf": {
+          "x": 0.035,
+          "y": 0.47000000000000003,
+          "z": 0.035
+        }
+      },
+      {
+        "name": "FL_OUTER_ARMOR_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08499999999999996,
+          "y": 0.05,
+          "z": 0.55
+        },
+        "authorityHalf": {
+          "x": 0.08499999999999996,
+          "y": 0.05,
+          "z": 0.55
+        }
+      },
+      {
+        "name": "FL_OUTER_ARMOR_1",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.635,
+          "y": 0.05,
+          "z": 0.55
+        },
+        "authorityHalf": {
+          "x": 0.635,
+          "y": 0.05,
+          "z": 0.55
+        }
+      },
+      {
+        "name": "FL_OUTER_ARMOR_2",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.18500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.18500000000000003
+        }
+      },
+      {
+        "name": "FL_OUTER_ARMOR_3",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.335
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.335
+        }
+      },
+      {
+        "name": "FL_OUTER_UNDER_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.06999999999999995,
+          "y": 0.07,
+          "z": 0.49000000000000005
+        },
+        "authorityHalf": {
+          "x": 0.06999999999999995,
+          "y": 0.07,
+          "z": 0.49000000000000005
+        }
+      },
+      {
+        "name": "FL_OUTER_UNDER_1",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.62,
+          "y": 0.07,
+          "z": 0.49000000000000005
+        },
+        "authorityHalf": {
+          "x": 0.62,
+          "y": 0.07,
+          "z": 0.49000000000000005
+        }
+      },
+      {
+        "name": "FL_OUTER_UNDER_2",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.15500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.15500000000000003
+        }
+      },
+      {
+        "name": "FL_OUTER_UNDER_3",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.30500000000000005
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.30500000000000005
+        }
+      },
+      {
+        "name": "FL_OUTER_RIB_-0.32",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FL_OUTER_RIB_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FL_OUTER_RIB_0.32",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FL_BOOK_CHEEK_P",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.022500000000000003,
+          "y": 0.11,
+          "z": 0.07
+        },
+        "authorityHalf": {
+          "x": 0.022500000000000003,
+          "y": 0.11,
+          "z": 0.07
+        }
+      },
+      {
+        "name": "FL_BOOK_CHEEK_S",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.022500000000000003,
+          "y": 0.11,
+          "z": 0.07
+        },
+        "authorityHalf": {
+          "x": 0.022500000000000003,
+          "y": 0.11,
+          "z": 0.07
+        }
+      },
+      {
+        "name": "FL_BOOK_BRIDGE_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.11,
+          "z": 0.022500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.11,
+          "z": 0.022500000000000003
+        }
+      },
+      {
+        "name": "FL_BOOK_BRIDGE_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.11,
+          "z": 0.022500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.11,
+          "z": 0.022500000000000003
+        }
+      },
+      {
+        "name": "FL_BOOK_PIN_BODY",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.014,
+          "y": 0.15,
+          "z": 0.014
+        },
+        "authorityHalf": {
+          "x": 0.014,
+          "y": 0.15,
+          "z": 0.014
+        }
+      },
+      {
+        "name": "FL_CATCH_KEEPER",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.025,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.025,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FR_CARRIAGE_BODY",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.12,
+          "y": 0.06,
+          "z": 0.11
+        },
+        "authorityHalf": {
+          "x": 0.12,
+          "y": 0.06,
+          "z": 0.11
+        }
+      },
+      {
+        "name": "FR_SHOE_TOP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FR_SHOE_BOT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FR_SHOE_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FR_SHOE_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.045,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FR_SPREAD_LOCK_JAW",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.03,
+          "y": 0.08,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.03,
+          "y": 0.08,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FR_NEST_PIN_BODY",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.1,
+          "y": 0.015,
+          "z": 0.015
+        },
+        "authorityHalf": {
+          "x": 0.1,
+          "y": 0.015,
+          "z": 0.015
+        }
+      },
+      {
+        "name": "FR_YAW_BEARING",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08,
+          "y": 0.07,
+          "z": 0.0779942329745459
+        },
+        "authorityHalf": {
+          "x": 0.08,
+          "y": 0.07,
+          "z": 0.08
+        }
+      },
+      {
+        "name": "FR_CANT_BEARING",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.05849567473090942
+        },
+        "authorityHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "FR_SPAR_CAP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.09,
+          "y": 0.04,
+          "z": 0.11
+        },
+        "authorityHalf": {
+          "x": 0.09,
+          "y": 0.04,
+          "z": 0.11
+        }
+      },
+      {
+        "name": "FR_INNER_ARMOR_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.06,
+          "y": 0.05,
+          "z": 0.42500000000000004
+        },
+        "authorityHalf": {
+          "x": 0.06,
+          "y": 0.05,
+          "z": 0.42500000000000004
+        }
+      },
+      {
+        "name": "FR_INNER_ARMOR_1",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.635,
+          "y": 0.05,
+          "z": 0.42500000000000004
+        },
+        "authorityHalf": {
+          "x": 0.635,
+          "y": 0.05,
+          "z": 0.42500000000000004
+        }
+      },
+      {
+        "name": "FR_INNER_ARMOR_2",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "FR_INNER_ARMOR_3",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.335
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.335
+        }
+      },
+      {
+        "name": "FR_INNER_UNDER_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.044999999999999984,
+          "y": 0.07,
+          "z": 0.38
+        },
+        "authorityHalf": {
+          "x": 0.044999999999999984,
+          "y": 0.07,
+          "z": 0.38
+        }
+      },
+      {
+        "name": "FR_INNER_UNDER_1",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.6199999999999999,
+          "y": 0.07,
+          "z": 0.38
+        },
+        "authorityHalf": {
+          "x": 0.6199999999999999,
+          "y": 0.07,
+          "z": 0.38
+        }
+      },
+      {
+        "name": "FR_INNER_UNDER_2",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.044999999999999984
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.044999999999999984
+        }
+      },
+      {
+        "name": "FR_INNER_UNDER_3",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.305
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.305
+        }
+      },
+      {
+        "name": "FR_INNER_RIB_0.22",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FR_INNER_RIB_0.5",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FR_INNER_RIB_0.78",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7999999999999999,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FR_INNER_SPAR",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.11000000000000001,
+          "z": 0.51
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.11000000000000001,
+          "z": 0.51
+        }
+      },
+      {
+        "name": "FR_BOOK_HINGE_BARREL",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.035,
+          "y": 0.47000000000000003,
+          "z": 0.03412247692636383
+        },
+        "authorityHalf": {
+          "x": 0.035,
+          "y": 0.47000000000000003,
+          "z": 0.035
+        }
+      },
+      {
+        "name": "FR_OUTER_ARMOR_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.635,
+          "y": 0.05,
+          "z": 0.55
+        },
+        "authorityHalf": {
+          "x": 0.635,
+          "y": 0.05,
+          "z": 0.55
+        }
+      },
+      {
+        "name": "FR_OUTER_ARMOR_1",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.08499999999999996,
+          "y": 0.05,
+          "z": 0.55
+        },
+        "authorityHalf": {
+          "x": 0.08499999999999996,
+          "y": 0.05,
+          "z": 0.55
+        }
+      },
+      {
+        "name": "FR_OUTER_ARMOR_2",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.18500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.18500000000000003
+        }
+      },
+      {
+        "name": "FR_OUTER_ARMOR_3",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.335
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.05,
+          "z": 0.335
+        }
+      },
+      {
+        "name": "FR_OUTER_UNDER_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.62,
+          "y": 0.07,
+          "z": 0.49000000000000005
+        },
+        "authorityHalf": {
+          "x": 0.62,
+          "y": 0.07,
+          "z": 0.49000000000000005
+        }
+      },
+      {
+        "name": "FR_OUTER_UNDER_1",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.06999999999999995,
+          "y": 0.07,
+          "z": 0.49000000000000005
+        },
+        "authorityHalf": {
+          "x": 0.06999999999999995,
+          "y": 0.07,
+          "z": 0.49000000000000005
+        }
+      },
+      {
+        "name": "FR_OUTER_UNDER_2",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.15500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.15500000000000003
+        }
+      },
+      {
+        "name": "FR_OUTER_UNDER_3",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.30500000000000005
+        },
+        "authorityHalf": {
+          "x": 0.030000000000000027,
+          "y": 0.07,
+          "z": 0.30500000000000005
+        }
+      },
+      {
+        "name": "FR_OUTER_RIB_-0.32",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FR_OUTER_RIB_0",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FR_OUTER_RIB_0.32",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.7,
+          "y": 0.060000000000000005,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FR_BOOK_CHEEK_P",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.022500000000000003,
+          "y": 0.11,
+          "z": 0.07
+        },
+        "authorityHalf": {
+          "x": 0.022500000000000003,
+          "y": 0.11,
+          "z": 0.07
+        }
+      },
+      {
+        "name": "FR_BOOK_CHEEK_S",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.022500000000000003,
+          "y": 0.11,
+          "z": 0.07
+        },
+        "authorityHalf": {
+          "x": 0.022500000000000003,
+          "y": 0.11,
+          "z": 0.07
+        }
+      },
+      {
+        "name": "FR_BOOK_BRIDGE_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.11,
+          "z": 0.022500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.11,
+          "z": 0.022500000000000003
+        }
+      },
+      {
+        "name": "FR_BOOK_BRIDGE_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.11,
+          "z": 0.022500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.11,
+          "z": 0.022500000000000003
+        }
+      },
+      {
+        "name": "FR_BOOK_PIN_BODY",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.014,
+          "y": 0.15,
+          "z": 0.014
+        },
+        "authorityHalf": {
+          "x": 0.014,
+          "y": 0.15,
+          "z": 0.014
+        }
+      },
+      {
+        "name": "FR_CATCH_KEEPER",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.025,
+          "z": 0.025
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.025,
+          "z": 0.025
+        }
+      },
+      {
+        "name": "FWD_IFACE_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.25,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.25,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "FWD_IFACE_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.25,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.25,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "FWD_FRAME_FWD_IN",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.78,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.78,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "FWD_FRAME_FWD_TOP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.21,
+          "y": 0.04,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.21,
+          "y": 0.04,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "FWD_FRAME_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.58,
+          "y": 0.78,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.58,
+          "y": 0.78,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "FWD_LONGERON_HIGH",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.04,
+          "z": 1.1
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.04,
+          "z": 1.1
+        }
+      },
+      {
+        "name": "FWD_LONGERON_LOW",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.05,
+          "z": 1.1
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.05,
+          "z": 1.1
+        }
+      },
+      {
+        "name": "FWD_RAIL_BRACKET",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.19,
+          "y": 0.06,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.19,
+          "y": 0.06,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "FL_SOCKET_RAIL_BEAM",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.46499999999999986,
+          "y": 0.03,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 0.46499999999999986,
+          "y": 0.03,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "FL_SOCKET_STOP_OUT",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.045,
+          "y": 0.0175,
+          "z": 0.04387175604818207
+        },
+        "authorityHalf": {
+          "x": 0.045,
+          "y": 0.0175,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FL_SOCKET_STOP_IN",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.045,
+          "y": 0.0175,
+          "z": 0.04387175604818207
+        },
+        "authorityHalf": {
+          "x": 0.045,
+          "y": 0.0175,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FL_NEST_CHEEK_UP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.022500000000000003,
+          "z": 0.07
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.022500000000000003,
+          "z": 0.07
+        }
+      },
+      {
+        "name": "FL_NEST_CHEEK_DN",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.022500000000000003,
+          "z": 0.07
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.022500000000000003,
+          "z": 0.07
+        }
+      },
+      {
+        "name": "FL_NEST_BRIDGE_P",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.025,
+          "z": 0.022500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.025,
+          "z": 0.022500000000000003
+        }
+      },
+      {
+        "name": "FL_NEST_BRIDGE_S",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.025,
+          "z": 0.022500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.025,
+          "z": 0.022500000000000003
+        }
+      },
+      {
+        "name": "FWD_NEST_BRACKET",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.15,
+          "y": 0.03,
+          "z": 0.14
+        },
+        "authorityHalf": {
+          "x": 0.15,
+          "y": 0.03,
+          "z": 0.14
+        }
+      },
+      {
+        "name": "FL_CATCH_CHEEK_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.0125
+        },
+        "authorityHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.0125
+        }
+      },
+      {
+        "name": "FL_CATCH_CHEEK_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.0125
+        },
+        "authorityHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.0125
+        }
+      },
+      {
+        "name": "FL_CATCH_BACK",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.0125,
+          "y": 0.05,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.0125,
+          "y": 0.05,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "FWD_CATCH_ARM",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.04,
+          "z": 0.17
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.04,
+          "z": 0.17
+        }
+      },
+      {
+        "name": "FWD_CATCH_RISER_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.3810633206843352,
+          "z": 0.0125
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.3810633206843352,
+          "z": 0.0125
+        }
+      },
+      {
+        "name": "FWD_CATCH_RISER_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.3810633206843352,
+          "z": 0.0125
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.3810633206843352,
+          "z": 0.0125
+        }
+      },
+      {
+        "name": "FWD_STBD_IFACE_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.25,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.25,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "FWD_STBD_IFACE_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.25,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.25,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "FWD_STBD_FRAME_FWD_IN",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.78,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.78,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "FWD_STBD_FRAME_FWD_TOP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.21,
+          "y": 0.04,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.21,
+          "y": 0.04,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "FWD_STBD_FRAME_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.58,
+          "y": 0.78,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.58,
+          "y": 0.78,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "FWD_STBD_LONGERON_HIGH",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.04,
+          "z": 1.1
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.04,
+          "z": 1.1
+        }
+      },
+      {
+        "name": "FWD_STBD_LONGERON_LOW",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.05,
+          "z": 1.1
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.05,
+          "z": 1.1
+        }
+      },
+      {
+        "name": "FWD_STBD_RAIL_BRACKET",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.19,
+          "y": 0.06,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.19,
+          "y": 0.06,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "FR_SOCKET_RAIL_BEAM",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.46499999999999986,
+          "y": 0.03,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 0.46499999999999986,
+          "y": 0.03,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "FR_SOCKET_STOP_OUT",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.045,
+          "y": 0.0175,
+          "z": 0.04387175604818207
+        },
+        "authorityHalf": {
+          "x": 0.045,
+          "y": 0.0175,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FR_SOCKET_STOP_IN",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.045,
+          "y": 0.0175,
+          "z": 0.04387175604818207
+        },
+        "authorityHalf": {
+          "x": 0.045,
+          "y": 0.0175,
+          "z": 0.045
+        }
+      },
+      {
+        "name": "FR_NEST_CHEEK_UP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.022500000000000003,
+          "z": 0.07
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.022500000000000003,
+          "z": 0.07
+        }
+      },
+      {
+        "name": "FR_NEST_CHEEK_DN",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.022500000000000003,
+          "z": 0.07
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.022500000000000003,
+          "z": 0.07
+        }
+      },
+      {
+        "name": "FR_NEST_BRIDGE_P",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.025,
+          "z": 0.022500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.025,
+          "z": 0.022500000000000003
+        }
+      },
+      {
+        "name": "FR_NEST_BRIDGE_S",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.07,
+          "y": 0.025,
+          "z": 0.022500000000000003
+        },
+        "authorityHalf": {
+          "x": 0.07,
+          "y": 0.025,
+          "z": 0.022500000000000003
+        }
+      },
+      {
+        "name": "FWD_STBD_NEST_BRACKET",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.15,
+          "y": 0.03,
+          "z": 0.14
+        },
+        "authorityHalf": {
+          "x": 0.15,
+          "y": 0.03,
+          "z": 0.14
+        }
+      },
+      {
+        "name": "FR_CATCH_CHEEK_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.0125
+        },
+        "authorityHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.0125
+        }
+      },
+      {
+        "name": "FR_CATCH_CHEEK_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.0125
+        },
+        "authorityHalf": {
+          "x": 0.06,
+          "y": 0.08,
+          "z": 0.0125
+        }
+      },
+      {
+        "name": "FR_CATCH_BACK",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.0125,
+          "y": 0.05,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.0125,
+          "y": 0.05,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "FWD_STBD_CATCH_ARM",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.04,
+          "y": 0.04,
+          "z": 0.17
+        },
+        "authorityHalf": {
+          "x": 0.04,
+          "y": 0.04,
+          "z": 0.17
+        }
+      },
+      {
+        "name": "FWD_STBD_CATCH_RISER_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.3810633206843352,
+          "z": 0.0125
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.3810633206843352,
+          "z": 0.0125
+        }
+      },
+      {
+        "name": "FWD_STBD_CATCH_RISER_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.3810633206843352,
+          "z": 0.0125
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.3810633206843352,
+          "z": 0.0125
+        }
+      },
+      {
+        "name": "CHANNEL_FRAME_STBD_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.4,
+          "y": 0.4900000000000001,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 0.4,
+          "y": 0.4900000000000001,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "CHANNEL_FRAME_STBD_AFT",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.4,
+          "y": 0.4900000000000001,
+          "z": 0.03
+        },
+        "authorityHalf": {
+          "x": 0.4,
+          "y": 0.4900000000000001,
+          "z": 0.03
+        }
+      },
+      {
+        "name": "STBD_CHANNEL_TIE_FWD",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.11,
+          "z": 0.04
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.11,
+          "z": 0.04
+        }
+      },
+      {
+        "name": "RR_NEST_CHEEK_P",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.08,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.08,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "RR_NEST_CHEEK_S",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.025,
+          "y": 0.08,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.025,
+          "y": 0.08,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "RR_NEST_BRIDGE_UP",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.03,
+          "y": 0.025,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.03,
+          "y": 0.025,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "RR_NEST_BRIDGE_DN",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.03,
+          "y": 0.025,
+          "z": 0.06
+        },
+        "authorityHalf": {
+          "x": 0.03,
+          "y": 0.025,
+          "z": 0.06
+        }
+      },
+      {
+        "name": "RR_SOCKET_RAIL_BEAM",
+        "source": "mesh-exact",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.4999999999999999,
+          "y": 0.035,
+          "z": 0.035
+        },
+        "authorityHalf": {
+          "x": 0.4999999999999999,
+          "y": 0.035,
+          "z": 0.035
+        }
+      },
+      {
+        "name": "RR_SOCKET_RAIL_STOP_OUT",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.02,
+          "z": 0.04874639560909119
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.02,
+          "z": 0.05
+        }
+      },
+      {
+        "name": "RR_SOCKET_RAIL_STOP_IN",
+        "source": "mesh-derived-conservative",
+        "registered": true,
+        "conservativeOrExact": true,
+        "meshHalf": {
+          "x": 0.05,
+          "y": 0.02,
+          "z": 0.04874639560909119
+        },
+        "authorityHalf": {
+          "x": 0.05,
+          "y": 0.02,
+          "z": 0.05
+        }
+      }
+    ]
+  },
+  "gates": [
+    {
+      "id": "GI1",
+      "name": "S1C regression",
+      "pass": true,
+      "detail": "rear GREEN minCrit=0.0500"
+    },
+    {
+      "id": "GI2",
+      "name": "S2A regression",
+      "pass": true,
+      "detail": "front GREEN"
+    },
+    {
+      "id": "GI3",
+      "name": "machineT maps",
+      "pass": true,
+      "detail": "mono F/R/D=true/true/true sceneMatch=true"
+    },
+    {
+      "id": "GI4",
+      "name": "Reversible machineT",
+      "pass": true,
+      "detail": "0.17/0.37/0.63/0.84 reverse ok"
+    },
+    {
+      "id": "GI5",
+      "name": "Live front/rear clearance",
+      "pass": true,
+      "detail": "minSep=1.557 at m=0.410 FL_CATCH_KEEPER vs RL_INNER_ARMOR"
+    },
+    {
+      "id": "GI6",
+      "name": "Drive structural barrier",
+      "pass": true,
+      "detail": "firstReady=0.840 firstRequested=0.890 firstApplied=0.890 barrier=true"
+    },
+    {
+      "id": "GI7",
+      "name": "Declared dependencies",
+      "pass": true,
+      "detail": "front pin before front yaw; rear latch before rear yaw; drive after 0.88; front leads compact"
+    },
+    {
+      "id": "GI8",
+      "name": "DRIVE waist",
+      "pass": true,
+      "detail": "cells=2 L=2.680 V=6.701 early=false hits=0"
+    },
+    {
+      "id": "GI9",
+      "name": "Integrated envelopes",
+      "pass": true,
+      "detail": "E2 W 13.367150 @0.1579 L 11.395 boundsMatch=true contain=true"
+    },
+    {
+      "id": "GI10",
+      "name": "Authority preview mode",
+      "pass": true,
+      "detail": "cant/haunch/local preview disclose and restore"
+    },
+    {
+      "id": "GI11",
+      "name": "Certified params immutable",
+      "pass": true,
+      "detail": "S1C/S2A parameters unchanged"
+    },
+    {
+      "id": "GI12",
+      "name": "Choreography legibility",
+      "pass": true,
+      "detail": "DIRECTOR_PASS retained — canonical maps unchanged"
+    }
+  ],
+  "closures": [
+    {
+      "id": "C1",
+      "name": "production drive barrier",
+      "pass": true,
+      "detail": "m=0.95 requested=0.583333 applied=0 stowed=true"
+    },
+    {
+      "id": "C2",
+      "name": "canonical drive unchanged",
+      "pass": true,
+      "detail": "applied==requested when ready"
+    },
+    {
+      "id": "C3",
+      "name": "real waist empty",
+      "pass": true,
+      "detail": "no unauthorized physicals"
+    },
+    {
+      "id": "C4",
+      "name": "meaningful waist",
+      "pass": true,
+      "detail": "W 1.429 H 1.750 L 2.680 V 6.701"
+    },
+    {
+      "id": "C5",
+      "name": "preview disclosure",
+      "pass": true,
+      "detail": "cant/haunch/local preview disclose and restore"
+    },
+    {
+      "id": "C6",
+      "name": "preview restoration",
+      "pass": true,
+      "detail": "setMachineT restores pose+mode"
+    },
+    {
+      "id": "C7",
+      "name": "full supplied suite",
+      "pass": true,
+      "detail": "reported by Playwright npm test"
+    },
+    {
+      "id": "C8",
+      "name": "conservative envelopes",
+      "pass": true,
+      "detail": "sampled poses contained"
+    }
+  ],
+  "findings": [
+    {
+      "id": "S3-F01",
+      "disposition": "CLOSED",
+      "detail": "production gate before applyDrive"
+    },
+    {
+      "id": "S3-F02",
+      "disposition": "CLOSED",
+      "detail": "waist derived outside channel/carry frames"
+    },
+    {
+      "id": "S3-F03",
+      "disposition": "CLOSED",
+      "detail": "cant/haunch preview disclosure"
+    },
+    {
+      "id": "S3-F04",
+      "disposition": "CLOSED",
+      "detail": "inherited S1/S2 tests expect preview on local setters"
+    },
+    {
+      "id": "S3-F05",
+      "disposition": "CLOSED",
+      "detail": "Δt=0.001 + refine 0.0001 envelopes"
+    }
+  ],
+  "gi12": "DIRECTOR_PASS",
+  "status": "GREEN_CANDIDATE"
+}

@@ -1,0 +1,530 @@
+{
+  "studyId": "MT1-GE1",
+  "title": "Pose Envelopes & Environmental Plane Study",
+  "freezeId": "MT1-S5HR3R1",
+  "sourceS4aSha256": "95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8",
+  "participatesInAuthority": false,
+  "addsVehicleGeometry": false,
+  "bodyShell": {
+    "reference": "MT1-BODY-SHELL-03.1",
+    "role": "presentation review skin only",
+    "mayNot": [
+      "create a keepout",
+      "consume reserved volume",
+      "establish structural ownership",
+      "establish ground contact",
+      "decide gear/skid placement"
+    ]
+  },
+  "historicalDriveWidthSketch": {
+    "text": "3.0–3.6 m (superseded; not a GE1 target)",
+    "usedAsTarget": false,
+    "tag": "FROZEN_FACT",
+    "note": "S1 froze 70° haunch and recorded ~4.46 m mirrored DRIVE width as overshoot. GE1 uses certified envelopes, not the sketch."
+  },
+  "floor": {
+    "datumY": 0,
+    "tag": "FROZEN_FACT",
+    "name": "Mechanical Truth floor / fold-clearance datum",
+    "finalContactPlane": false,
+    "designClearanceLaterals": 0.06
+  },
+  "frozenEnvelopes": {
+    "tag": "FROZEN_FACT",
+    "e1MovingInstant": {
+      "width": 13.367149536972,
+      "height": 2.6649998831748962,
+      "length": 10.590000190734864
+    },
+    "e2MovingSwept": {
+      "width": 13.367149536972,
+      "height": 2.6649998831748962,
+      "length": 11.395000324249267,
+      "minX": -6.683574768486,
+      "maxX": 6.683574768486,
+      "minY": 0.2600000023841858,
+      "maxY": 2.924999885559082,
+      "minZ": -7.075000190734864,
+      "maxZ": 4.320000133514404
+    },
+    "e3WholeInstant": {
+      "width": 13.367149536972,
+      "height": 2.894999884068966,
+      "length": 11.699999920725823
+    },
+    "e4WholeSwept": {
+      "width": 13.367149536972,
+      "height": 2.894999884068966,
+      "length": 11.699999920725823,
+      "minX": -6.683574768486,
+      "maxX": 6.683574768486,
+      "minY": 0.030000001490116113,
+      "maxY": 2.924999885559082,
+      "minZ": -7.149999923706055,
+      "maxZ": 4.549999997019768
+    },
+    "s4aEndpointsRecorded": {
+      "spread": {
+        "width": 13.31999984741211,
+        "height": 2.894999884068966,
+        "length": 11.699999920725823
+      },
+      "structuralReady": {
+        "width": 4.599999942779541,
+        "height": 2.894999884068966,
+        "length": 11.699999920725823
+      },
+      "drive": {
+        "width": 4.599999942779541,
+        "height": 2.894999884068966,
+        "length": 11.699999920725823
+      },
+      "firstReadyMachineT": 0.84,
+      "driveStartMachineT": 0.88
+    }
+  },
+  "livePoses": {
+    "spread": {
+      "label": "SPREAD",
+      "machineT": 0,
+      "whole": {
+        "minX": -6.659999923706055,
+        "maxX": 6.659999923706055,
+        "minY": 0.030000001490116113,
+        "maxY": 2.924999885559082,
+        "minZ": -7.149999923706055,
+        "maxZ": 4.549999997019768,
+        "width": 13.31999984741211,
+        "height": 2.894999884068966,
+        "length": 11.699999920725823,
+        "lowest": {
+          "y": 0.030000001490116113,
+          "solid": "VENTRAL_KEEL"
+        }
+      },
+      "moving": {
+        "minX": -6.659999923706055,
+        "maxX": 6.659999923706055,
+        "minY": 0.2600000023841858,
+        "maxY": 2.924999885559082,
+        "minZ": -4.525000064849854,
+        "maxZ": 4.320000133514404,
+        "width": 13.31999984741211,
+        "height": 2.6649998831748962,
+        "length": 8.845000198364257,
+        "lowest": {
+          "y": 0.2600000023841858,
+          "solid": "DRIVE_SHOE_P"
+        }
+      },
+      "keelVentral": {
+        "yMin": 0.030000001490116113,
+        "yCenter": 0.1,
+        "solid": "VENTRAL_KEEL"
+      },
+      "frontBooks": {
+        "minX": -4.979999980926514,
+        "maxX": 4.979999980926514,
+        "minY": 1.5821266603469848,
+        "maxY": 2.4800000762939454,
+        "minZ": 1.3175000429153443,
+        "maxZ": 4.320000133514404,
+        "width": 9.959999961853027,
+        "height": 0.8978734159469606,
+        "length": 3.00250009059906,
+        "lowest": {
+          "y": 1.5821266603469848,
+          "solid": "FL_CATCH_CHEEK_FWD"
+        }
+      },
+      "rearBooks": {
+        "minX": -6.659999923706055,
+        "maxX": 6.659999923706055,
+        "minY": 2.269999876022339,
+        "maxY": 2.924999885559082,
+        "minZ": -2.0250000286102297,
+        "maxZ": 0.2800000476837159,
+        "width": 13.31999984741211,
+        "height": 0.6550000095367432,
+        "length": 2.3050000762939455,
+        "lowest": {
+          "y": 2.269999876022339,
+          "solid": "RL_LATCH_CHEEK_P"
+        }
+      },
+      "floorClearanceWhole": 0.030000001490116113,
+      "floorClearanceMoving": 0.2600000023841858,
+      "floorClearanceKeel": 0.030000001490116113,
+      "floorClearanceFrontBooks": 1.5821266603469848,
+      "floorClearanceRearBooks": 2.269999876022339
+    },
+    "structuralReady": {
+      "label": "STRUCTURAL_READY",
+      "machineT": 0.84,
+      "whole": {
+        "minX": -2.2999999713897705,
+        "maxX": 2.2999999713897705,
+        "minY": 0.030000001490116113,
+        "maxY": 2.924999885559082,
+        "minZ": -7.149999923706055,
+        "maxZ": 4.549999997019768,
+        "width": 4.599999942779541,
+        "height": 2.894999884068966,
+        "length": 11.699999920725823,
+        "lowest": {
+          "y": 0.030000001490116113,
+          "solid": "VENTRAL_KEEL"
+        }
+      },
+      "moving": {
+        "minX": -2.238763525661353,
+        "maxX": 2.238763525661353,
+        "minY": 0.2600000023841858,
+        "maxY": 2.924999885559082,
+        "minZ": -4.525000064849854,
+        "maxZ": 3.515,
+        "width": 4.477527051322706,
+        "height": 2.6649998831748962,
+        "length": 8.040000064849854,
+        "lowest": {
+          "y": 0.2600000023841858,
+          "solid": "DRIVE_SHOE_P"
+        }
+      },
+      "keelVentral": {
+        "yMin": 0.030000001490116113,
+        "yCenter": 0.1,
+        "solid": "VENTRAL_KEEL"
+      },
+      "frontBooks": {
+        "minX": -2.0674999523162843,
+        "maxX": 2.0674999523162843,
+        "minY": 1.0016472575849582,
+        "maxY": 2.4700000953674315,
+        "minZ": 1.3175000429153443,
+        "maxZ": 3.57,
+        "width": 4.1349999046325685,
+        "height": 1.4683528377824733,
+        "length": 2.2524999570846553,
+        "lowest": {
+          "y": 1.0016472575849582,
+          "solid": "FL_OUTER_ARMOR_1"
+        }
+      },
+      "rearBooks": {
+        "minX": -2.238763525661353,
+        "maxX": 2.2999999713897705,
+        "minY": 0.5313709469345431,
+        "maxY": 2.924999885559082,
+        "minZ": -4.445000095367432,
+        "maxZ": -1.6199999523162842,
+        "width": 4.538763497051123,
+        "height": 2.393628938624539,
+        "length": 2.825000143051147,
+        "lowest": {
+          "y": 0.5313709469345431,
+          "solid": "RL_OUTER_ARMOR"
+        }
+      },
+      "floorClearanceWhole": 0.030000001490116113,
+      "floorClearanceMoving": 0.2600000023841858,
+      "floorClearanceKeel": 0.030000001490116113,
+      "floorClearanceFrontBooks": 1.0016472575849582,
+      "floorClearanceRearBooks": 0.5313709469345431
+    },
+    "drive": {
+      "label": "DRIVE",
+      "machineT": 1,
+      "whole": {
+        "minX": -2.2999999713897705,
+        "maxX": 2.2999999713897705,
+        "minY": 0.030000001490116113,
+        "maxY": 2.924999885559082,
+        "minZ": -7.149999923706055,
+        "maxZ": 4.549999997019768,
+        "width": 4.599999942779541,
+        "height": 2.894999884068966,
+        "length": 11.699999920725823,
+        "lowest": {
+          "y": 0.030000001490116113,
+          "solid": "VENTRAL_KEEL"
+        }
+      },
+      "moving": {
+        "minX": -2.238763525661353,
+        "maxX": 2.238763525661353,
+        "minY": 0.2600000023841858,
+        "maxY": 2.924999885559082,
+        "minZ": -7.075000255584717,
+        "maxZ": 3.515,
+        "width": 4.477527051322706,
+        "height": 2.6649998831748962,
+        "length": 10.590000255584718,
+        "lowest": {
+          "y": 0.2600000023841858,
+          "solid": "DRIVE_SHOE_P"
+        }
+      },
+      "keelVentral": {
+        "yMin": 0.030000001490116113,
+        "yCenter": 0.1,
+        "solid": "VENTRAL_KEEL"
+      },
+      "frontBooks": {
+        "minX": -2.0674999523162843,
+        "maxX": 2.0674999523162843,
+        "minY": 1.0016472575849582,
+        "maxY": 2.4700000953674315,
+        "minZ": 1.3175000429153443,
+        "maxZ": 3.57,
+        "width": 4.1349999046325685,
+        "height": 1.4683528377824733,
+        "length": 2.2524999570846553,
+        "lowest": {
+          "y": 1.0016472575849582,
+          "solid": "FL_OUTER_ARMOR_1"
+        }
+      },
+      "rearBooks": {
+        "minX": -2.238763525661353,
+        "maxX": 2.2999999713897705,
+        "minY": 0.5313709469345431,
+        "maxY": 2.924999885559082,
+        "minZ": -4.445000095367432,
+        "maxZ": -1.6100000286102294,
+        "width": 4.538763497051123,
+        "height": 2.393628938624539,
+        "length": 2.8350000667572024,
+        "lowest": {
+          "y": 0.5313709469345431,
+          "solid": "RL_OUTER_ARMOR"
+        }
+      },
+      "floorClearanceWhole": 0.030000001490116113,
+      "floorClearanceMoving": 0.2600000023841858,
+      "floorClearanceKeel": 0.030000001490116113,
+      "floorClearanceFrontBooks": 1.0016472575849582,
+      "floorClearanceRearBooks": 0.5313709469345431
+    }
+  },
+  "sweptMinima": {
+    "tag": "FROZEN_FACT",
+    "frozenMovingE2": {
+      "minY": 0.2600000023841858,
+      "clearance": 0.2600000023841858
+    },
+    "frozenWholeE4": {
+      "minY": 0.030000001490116113,
+      "clearance": 0.030000001490116113
+    },
+    "liveInspection": {
+      "samples": [
+        0,
+        0.12,
+        0.24,
+        0.36,
+        0.48,
+        0.6,
+        0.72,
+        0.86,
+        1
+      ],
+      "whole": {
+        "minY": 0.030000001490116113,
+        "atT": 0,
+        "solid": "VENTRAL_KEEL",
+        "clearance": 0.030000001490116113
+      },
+      "moving": {
+        "minY": 0.2600000023841858,
+        "atT": 0,
+        "solid": "DRIVE_SHOE_P",
+        "clearance": 0.2600000023841858
+      }
+    },
+    "note": "Certified swept minima are FROZEN_S4A_E2/E4. Live check uses the nine machine inspection poses, not a re-certifying dense authority sweep."
+  },
+  "volumeMap": [
+    {
+      "id": "front-reserved-box",
+      "name": "front reserved box (KEEP_COCKPIT; historical name only)",
+      "source": "P.keep.cockpit",
+      "center": {
+        "cx": 0,
+        "cy": 1.25,
+        "cz": 3.55,
+        "hx": 0.68,
+        "hy": 0.95,
+        "hz": 1.05
+      },
+      "spread": "MUST_REMAIN_CLEAR",
+      "drive": "MUST_REMAIN_CLEAR",
+      "note": "Protected corridor. Not a cockpit architecture. BODY-SHELL-03.1 nose may occupy this visually; that is not authority.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "id": "keel-core",
+      "name": "keel core",
+      "source": "P.keel + VENTRAL_KEEL / bulkheads / bay walls",
+      "spread": "contains",
+      "drive": "contains",
+      "note": "Fixed primary structure. Lowest whole-machine solid is the ventral keel AABB.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "id": "dorsal-keep",
+      "name": "dorsal keep / service corridor",
+      "source": "P.keep.dorsal",
+      "spread": "MUST_REMAIN_CLEAR",
+      "drive": "MUST_REMAIN_CLEAR",
+      "note": "Protected dorsal corridor. BODY dorsal deck is presentation-only.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "id": "bay-can",
+      "name": "bay + can corridor",
+      "source": "P.bay / P.drive / S5 can",
+      "spread": "contains (can stowed)",
+      "drive": "contains (can seated aft; still overlaps bay 0.275 m)",
+      "note": "Open stern/service throat remains inspectable. Not a closed transom.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "id": "drive-waist",
+      "name": "DRIVE waist",
+      "source": "DRIVE_WAIST_PORT / DRIVE_WAIST_STBD",
+      "spread": "AVAILABLE (empty occupancy not yet active in the same way)",
+      "drive": "MUST_REMAIN_CLEAR (state-conditioned empty occupancy when structurally ready)",
+      "note": "Certified empty occupancy between seated laterals. BODY must not fill it.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "id": "book-roots",
+      "name": "four book roots",
+      "source": "P.fl / P.rl hinge stations",
+      "spread": "contains (hinge clusters)",
+      "drive": "contains (hinge clusters; books nested outboard)",
+      "note": "BODY-SHELL-03.1 pockets are presentation sockets, not structural ownership.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "id": "book-envelopes",
+      "name": "book SPREAD / DRIVE / swept envelopes",
+      "source": "live physical laterals + FROZEN_S4A_E1/E2",
+      "spread": "contains (outboard planform)",
+      "drive": "contains (flank hang)",
+      "note": "Swept moving minY is the fold-floor event, not a DRIVE ride height.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "id": "ventral-band",
+      "name": "ventral band (keel-to-floor)",
+      "source": "VENTRAL_KEEL vs floor y=0",
+      "spread": "see ventral zoning",
+      "drive": "see ventral zoning",
+      "note": "Under-keel gap is millimetre-class against the study floor. Not a hover plenum.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "id": "open-stern",
+      "name": "open stern / service throat",
+      "source": "S5 can mouth + aft posts",
+      "spread": "AVAILABLE / inspectable",
+      "drive": "contains seated can; MUST remain open for handover inspection",
+      "note": "BODY-SHELL-03.1 collar frames this; it does not cap it.",
+      "tag": "FROZEN_FACT"
+    }
+  ],
+  "ventralZoning": [
+    {
+      "id": "below-floor",
+      "region": "y < 0 (below Mechanical Truth floor datum)",
+      "kind": "MUST_REMAIN_CLEAR",
+      "tag": "FROZEN_FACT",
+      "note": "Lateral fold studies treat y=0 as the floor. Moving laterals are not permitted through it."
+    },
+    {
+      "id": "under-keel",
+      "region": "under VENTRAL_KEEL AABB down to y=0",
+      "kind": "MUST_REMAIN_CLEAR",
+      "tag": "FROZEN_FACT",
+      "note": "The ventral keel already occupies this band. There is no empty hover gap under the keel."
+    },
+    {
+      "id": "keel-flank-band",
+      "region": "outboard of keel half-width, y in (0, moving-fold minY)",
+      "kind": "UNKNOWN",
+      "tag": "UNKNOWN",
+      "note": "Empty at endpoints except where fold sweep occupies it. Not a granted gear bay. Future evidence: a contact architecture that does not intersect fold sweep or waist."
+    },
+    {
+      "id": "fold-sweep-low",
+      "region": "rear/front outer fold-floor tracks",
+      "kind": "MUST_REMAIN_CLEAR",
+      "tag": "FROZEN_FACT",
+      "note": "Certified moving envelope includes mid-fold tips near the floor. Fixed interface hardware cannot sit in that sweep."
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hover-gap",
+      "title": "empty hover / clearance gap",
+      "status": "NOT SUPPORTED under the keel",
+      "tag": "ARCHITECTURE_HYPOTHESIS",
+      "reversible": true,
+      "assumption": "Would require a clear ventral plenum between keel and floor.",
+      "evidence": "VENTRAL_KEEL minY is millimetre-class above y=0. That is occupied structure, not a plenum."
+    },
+    {
+      "id": "skid-reserve",
+      "title": "skid / contact reserve",
+      "status": "UNKNOWN",
+      "tag": "UNKNOWN",
+      "reversible": true,
+      "assumption": "Keel underside or added skids would be the contact hardware.",
+      "evidence": "Keel proximity to the study floor is a packaging fact, not a certified running surface. Godot hop does not specify skids."
+    },
+    {
+      "id": "deployable-gear",
+      "title": "deployable gear reserve",
+      "status": "UNKNOWN",
+      "tag": "UNKNOWN",
+      "reversible": true,
+      "assumption": "Gear would stow outside fold sweep and waist, then reach y=0.",
+      "evidence": "No authority row is gear. Under-keel space is gone. Outboard band is constrained by fold sweep. Not selected."
+    },
+    {
+      "id": "study-floor-only",
+      "title": "y=0 is a study/fold datum, not a contact plane",
+      "status": "provisional preferred (reversible)",
+      "tag": "ARCHITECTURE_HYPOTHESIS",
+      "reversible": true,
+      "assumption": "The director floor is the fold-clearance datum used in S1/S2. It does not, by itself, freeze a landing-gear architecture.",
+      "evidence": "directorInspection labels floor as ground reference. DESIGN_CLEARANCE was applied to laterals, not written as keel-skid spec."
+    }
+  ],
+  "groundAware": {
+    "conclusion": true,
+    "tag": "DERIVED_OBLIGATION",
+    "because": [
+      "S1/S2 floor-clearance authority exists and laterals were raised/shortened to respect y=0",
+      "Godot P1A R7 operates on a ground-network world and can hop"
+    ],
+    "doesNotSelect": "ground-contact mechanism"
+  },
+  "nextSlice": {
+    "id": "MT1-US1",
+    "title": "utility spine zoning",
+    "reason": "GE1 supports that MT1 is ground-aware (existing floor-clearance authority + Godot ground-route/hop semantics) but does not select a ground-contact mechanism. Under-keel hover is not available. Contact/skid/gear remain UNKNOWN. Per GE1 decision logic, the next bounded slice is utility spine zoning of the already-occupied keel/bay/dorsal core — not wheels, not another shell, not operator volume.",
+    "notRecommended": [
+      "BODY-SHELL-04",
+      "S6",
+      "finished wheels/skids/gear",
+      "cockpit occupancy"
+    ]
+  },
+  "readinessNote": {
+    "driveStructuralReadyCached": true,
+    "tag": "FROZEN_FACT"
+  }
+}

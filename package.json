@@ -1,0 +1,29 @@
+{
+  "name": "mt1-mechanical-truth",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "MT1-S5HR3R1 — final V1 proof-identity migration",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5181",
+    "build": "tsc --noEmit -p tsconfig.app.json && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4181",
+    "test": "playwright test tests/mt1-*.spec.ts tests/dump-s5-report.spec.ts --workers=1 --grep-invert \"@evidence-writer|@current-authority-writer\"",
+    "test:evidence": "playwright test tests/dump-s5-report.spec.ts --workers=1 --grep @evidence-writer",
+    "test:authority": "playwright test tests/dump-s5-report.spec.ts --workers=1 --grep @current-authority-writer",
+    "capture": "playwright test tests/capture-proof.spec.ts",
+    "capture:h1": "playwright test tests/capture-s5-h1-review.spec.ts --workers=1"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^8.26.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.2"
+  }
+}

@@ -1,0 +1,421 @@
+import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
+import { Engine } from "@babylonjs/core/Engines/engine";
+import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
+import { DirectionalLight } from "@babylonjs/core/Lights/directionalLight";
+import { Vector3 } from "@babylonjs/core/Maths/math.vector";
+import { Color3, Color4 } from "@babylonjs/core/Maths/math.color";
+import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
+import { Scene } from "@babylonjs/core/scene";
+import "@babylonjs/core/Culling/ray";
+import { P } from "../design/parameters";
+import { getBuildInfo, type Mt1InspectionState } from "../buildInfo";
+import { auditAuthorityBounds } from "../machine/authority";
+import { createS5Machine } from "../machine/createS5Machine";
+import type { MachineRig } from "../machine/types";
+import { runS5Authority } from "../verify/s5Clearance";
+import {
+  evalCamTrack,
+  evaluateS5Handover,
+  getPathCertificate,
+  getPathCertificateState,
+  invalidatePathCertificate,
+} from "../verify/s5Capture";
+import { clamp01 } from "../math/stage";
+import { createUI, debugPanel } from "../ui/createUI";
+import { studyCant } from "../verify/cantStudy";
+import { runClearance } from "../verify/clearance";
+import { runFrontClearance } from "../verify/frontClearance";
+import { evaluateDriveReadiness } from "../verify/capturePredicates";
+import { studyHaunch } from "../verify/haunchStudy";
+import { runMachineAuthority } from "../verify/machineClearance";
+import { runS4Authority } from "../verify/s4Clearance";
+import { runVb1Study } from "../study/vb1/runStudy";
+import { runVb1Ar1Study } from "../study/vb1/ar1F5";
+import { runDp1Study } from "../study/dp1/runStudy";
+import { runGe1Study } from "../study/ge1/runStudy";
+import { runUs1Study } from "../study/us1/runStudy";
+import { runKc1Study } from "../study/kc1/runStudy";
+import { runKs1Study } from "../study/ks1/runStudy";
+
+import { createDebugView } from "./debug";
+import { createMaterials } from "./materials";
+import { box } from "./primitives";
+import { describeDirectorMesh, renderRow } from "./directorInspection";
+import { createH1Presentation } from "./h1Presentation";
+
+export interface App {
+  setT(t: number): void;
+  getT(): number;
+  rig: MachineRig;
+}
+
+const CAMERAS: Record<string, { alpha: number; beta: number; radius: number; target: [number, number, number] }> = {
+  three: { alpha: 0.7, beta: 1.12, radius: 16, target: [-1.3, 1.5, 0.4] },
+  top: { alpha: -Math.PI / 2, beta: 0.18, radius: 20, target: [-1.3, 0.2, 0.2] },
+  side: { alpha: Math.PI, beta: 1.22, radius: 14, target: [-1.3, 1.4, 0.4] },
+  rear: { alpha: Math.PI / 2, beta: 1.18, radius: 13, target: [-0.6, 1.2, -3.2] },
+  bay: { alpha: 0.45, beta: 1.22, radius: 8, target: [0, 0.85, -3.3] },
+  front: { alpha: 0.55, beta: 1.12, radius: 10, target: [-1.4, 1.6, 2.4] },
+  frontTop: { alpha: -Math.PI / 2, beta: 0.16, radius: 12, target: [-1.5, 0.2, 2.2] },
+  carry: { alpha: 0.25, beta: 1.18, radius: 8, target: [-1.15, 1.55, 2.25] },
+  prop: { alpha: 0.92, beta: 1.16, radius: 4.6, target: [0, 0.82, -4.7] },
+  aftProp: { alpha: 1.42, beta: 1.18, radius: 4.8, target: [0, 0.8, -5.95] },
+  propStowed: { alpha: 1.42, beta: 1.18, radius: 4.8, target: [0, 0.82, -3.55] },
+  propMid: { alpha: 1.42, beta: 1.18, radius: 4.8, target: [0, 0.82, -4.5] },
+  propSeated: { alpha: 1.42, beta: 1.18, radius: 4.8, target: [0, 0.82, -5.65] },
+  propReleased: { alpha: 1.42, beta: 1.18, radius: 4.8, target: [0, 0.82, -5.55] },
+  lockPort: { alpha: 2.22, beta: 1.04, radius: 0.16, target: [-0.54, 0.53, -4.57] },
+  lockStarboard: { alpha: 0.92, beta: 1.04, radius: 0.16, target: [0.54, 0.53, -4.57] },
+  lockTopPort: { alpha: 1.92, beta: 0.62, radius: 0.17, target: [-0.393, 1.224, -4.57] },
+  lockTopStarboard: { alpha: 1.22, beta: 0.62, radius: 0.17, target: [0.393, 1.224, -4.57] },
+};
+
+export function createApp(canvas: HTMLCanvasElement): App {
+  const engine = new Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true });
+  const scene = new Scene(engine);
+  scene.clearColor = new Color4(0.06, 0.07, 0.08, 1);
+
+  const camera = new ArcRotateCamera("cam", CAMERAS.three.alpha, CAMERAS.three.beta, CAMERAS.three.radius, Vector3.Zero(), scene);
+  camera.attachControl(canvas, true);
+  camera.lowerRadiusLimit = 0.05;
+  camera.upperRadiusLimit = 36;
+  camera.lowerBetaLimit = 0.05;
+  camera.upperBetaLimit = Math.PI / 2 - 0.04;
+  camera.wheelPrecision = 40;
+  camera.panningSensibility = 80;
+  camera.minZ = 0.005;
+  applyCamera("three", camera);
+
+  const hemi = new HemisphericLight("hemi", new Vector3(0.2, 1, 0.15), scene);
+  hemi.intensity = 0.55;
+  hemi.groundColor = new Color3(0.08, 0.09, 0.1);
+  const sun = new DirectionalLight("sun", new Vector3(-0.35, -1, 0.25), scene);
+  sun.position = new Vector3(6, 14, -4);
+  sun.intensity = 0.75;
+
+  const mats = createMaterials(scene);
+  const floor = MeshBuilder.CreateGround("floor", { width: 28, height: 28 }, scene);
+  floor.material = mats.floor;
+  floor.position.y = 0;
+  for (let i = -10; i <= 10; i += 1) {
+    box(scene, `gridX_${i}`, floor, mats.grid, [0.02, 0.01, 20], [i, 0.01, 0]);
+    box(scene, `gridZ_${i}`, floor, mats.grid, [20, 0.01, 0.02], [0, 0.01, i]);
+  }
+
+  const rig = createS5Machine(scene, mats);
+  createH1Presentation(scene, rig, mats);
+  const solidsByNode = new Map(rig.solids.map((solid) => [solid.node, solid]));
+  const datumsByNode = new Map(rig.datums.map((datum) => [datum.node, datum]));
+  const uiRoot = document.getElementById("ui");
+  if (!uiRoot) throw new Error("missing #ui");
+
+  let transformT = 0;
+  let frontT = 0;
+  let machineT = 0;
+  let automatic = false;
+  let direction = 1;
+  let debugOn = false;
+  let sectionOn = false;
+  let propSectionOn = false;
+  let previewOn = false;
+  let inspectPickOn = false;
+  let lockFocusOn = false;
+  let debug: ReturnType<typeof createDebugView>;
+
+  const setLockFocus = (on: boolean): void => {
+    if (lockFocusOn === on) return;
+    lockFocusOn = on;
+    for (const mesh of scene.meshes) {
+      const keep =
+        mesh.name.startsWith("S5_LOCK_") ||
+        mesh.name.startsWith("S5_SEAT_TONGUE_") ||
+        mesh.name.startsWith("S5_REG_PAD_") ||
+        mesh.name.startsWith("H1_REG_BRACKET_");
+      const meta = (mesh.metadata ??= {}) as Record<string, unknown>;
+      if (on) {
+        meta.s5StudyVisibility = mesh.visibility;
+        if (!keep) mesh.visibility = 0;
+      } else if (typeof meta.s5StudyVisibility === "number") {
+        mesh.visibility = meta.s5StudyVisibility;
+        delete meta.s5StudyVisibility;
+      }
+    }
+  };
+
+  const refreshDebug = (): void => {
+    debug.update(frontT, rig.evaluateFront(frontT), transformT, rig.evaluate(transformT), {
+      machineT,
+      driveT: rig.lastDriveT(),
+      requestedDriveT: rig.lastRequestedDriveT(),
+      appliedDriveT: rig.lastDriveT(),
+      frontStbdT: rig.lastFrontStbdT(),
+      rearStbdT: rig.lastRearStbdT(),
+      mode: rig.authorityMode(),
+      ready: evaluateDriveReadiness(rig, rig.getReadinessOverride()),
+      driveThrustReady: rig.lastDriveThrustReady(),
+      s5: evaluateS5Handover(rig),
+    });
+  };
+
+  const setMachineT = (value: number): void => {
+    previewOn = false;
+    machineT = clamp01(value);
+    const mapped = rig.applyMachine(machineT);
+    frontT = mapped.frontT;
+    transformT = mapped.rearT;
+    ui.setMachineT(machineT, automatic, "MACHINE");
+    ui.setFrontT(frontT, automatic);
+    ui.setTransform(transformT, automatic);
+    refreshDebug();
+  };
+
+  const setT = (value: number): void => {
+    previewOn = true;
+    transformT = clamp01(value);
+    rig.apply(transformT);
+    rig.setAuthorityMode("REAR_PREVIEW");
+    ui.setTransform(transformT, automatic);
+    ui.setMachineT(machineT, automatic, "REAR_PREVIEW");
+    refreshDebug();
+  };
+
+  const setFrontT = (value: number): void => {
+    previewOn = true;
+    frontT = clamp01(value);
+    rig.applyFront(frontT);
+    rig.setAuthorityMode("FRONT_PREVIEW");
+    ui.setFrontT(frontT, automatic);
+    ui.setMachineT(machineT, automatic, "FRONT_PREVIEW");
+    refreshDebug();
+  };
+
+  const ui = createUI(uiRoot, {
+    setMachineT(value) {
+      automatic = false;
+      setMachineT(value);
+    },
+    setTransform(value) {
+      automatic = false;
+      setT(value);
+    },
+    setFrontT(value) {
+      automatic = false;
+      setFrontT(value);
+    },
+    toggleAutomatic() {
+      automatic = !automatic;
+      direction = machineT >= 0.999 ? -1 : machineT <= 0.001 ? 1 : direction;
+      ui.setMachineT(machineT, automatic, rig.authorityMode());
+    },
+    setCamera(preset) {
+      applyCamera(preset, camera);
+    },
+    resetCamera() {
+      camera.inertialAlphaOffset = 0;
+      camera.inertialBetaOffset = 0;
+      camera.inertialRadiusOffset = 0;
+      camera.inertialPanningX = 0;
+      camera.inertialPanningY = 0;
+      applyCamera("three", camera);
+    },
+    toggleDebug() {
+      debugOn = !debugOn;
+      debug.setEnabled(debugOn);
+      refreshDebug();
+      return debugOn;
+    },
+    toggleSection() {
+      sectionOn = !sectionOn;
+      debug.setSection(sectionOn);
+      return sectionOn;
+    },
+    togglePropSection() {
+      propSectionOn = !propSectionOn;
+      for (const m of scene.meshes) {
+        if (m.name.startsWith("S5_CAN_")) m.visibility = propSectionOn ? 0.08 : 1;
+      }
+      return propSectionOn;
+    },
+    toggleInspectPick() {
+      inspectPickOn = !inspectPickOn;
+      ui.setInspectMode(inspectPickOn);
+      if (!inspectPickOn) ui.showInspection(null);
+      return inspectPickOn;
+    },
+    toggleLockFocus() {
+      setLockFocus(!lockFocusOn);
+      return lockFocusOn;
+    },
+  });
+
+  canvas.addEventListener("pointerup", (event) => {
+    if (!inspectPickOn) return;
+    const bounds = canvas.getBoundingClientRect();
+    const x = ((event.clientX - bounds.left) / bounds.width) * canvas.clientWidth;
+    const y = ((event.clientY - bounds.top) / bounds.height) * canvas.clientHeight;
+    const picked = scene.pick(x, y)?.pickedMesh;
+    ui.showInspection(picked ? describeDirectorMesh(picked, solidsByNode, datumsByNode) : null);
+  });
+
+  debug = createDebugView(scene, debugPanel(), rig.datums, rig.keepoutNodes, rig.emptyVolumeNodes);
+  // The machine is constructed at the zero pose. Reflect that existing pose in
+  // the presentation without calling production applyMachine(), which may
+  // synchronously certify a stale S5 path.
+  ui.setMachineT(machineT, automatic, rig.authorityMode());
+  ui.setFrontT(frontT, automatic);
+  ui.setTransform(transformT, automatic);
+
+  scene.registerBeforeRender(() => {
+    if (!automatic) return;
+    const dt = Math.min(engine.getDeltaTime() / 1000, 0.05);
+    const next = machineT + direction * dt * (1 / 12);
+    if (next >= 1) {
+      setMachineT(1);
+      automatic = false;
+    } else if (next <= 0) {
+      setMachineT(0);
+      automatic = false;
+    } else {
+      setMachineT(next);
+    }
+  });
+
+  engine.runRenderLoop(() => {
+    scene.render();
+  });
+  window.addEventListener("resize", () => engine.resize());
+
+  window.__MT1 = {
+    getBuildInfo,
+    getInspectionState: (): Mt1InspectionState => {
+      const certificate = getPathCertificate(rig);
+      return {
+        candidateId: getBuildInfo().candidateId,
+        machineT,
+        driveT: rig.lastDriveT(),
+        requestedDriveT: rig.lastRequestedDriveT(),
+        mode: rig.authorityMode(),
+        preview: previewOn,
+        driveThrustReadyCached: rig.peekDriveThrustReady(),
+        certificate: {
+          state: getPathCertificateState(rig),
+          present: certificate !== undefined,
+          valid: certificate?.valid === true,
+          samples: certificate?.samples ?? null,
+          pairsEvaluated: certificate?.pairsEvaluated ?? null,
+        },
+      };
+    },
+    getRenderInventory: () => scene.meshes.map((mesh) => renderRow(mesh, solidsByNode, datumsByNode)),
+    setT,
+    getT: () => transformT,
+    setFrontT,
+    getFrontT: () => frontT,
+    setFrontStbdT: (value) => {
+      previewOn = true;
+      rig.applyFrontStbd(clamp01(value));
+      rig.setAuthorityMode("FRONT_STBD_PREVIEW");
+      ui.setMachineT(machineT, automatic, "FRONT_STBD_PREVIEW");
+      refreshDebug();
+    },
+    getFrontStbdT: () => rig.lastFrontStbdT(),
+    setRearStbdT: (value) => {
+      previewOn = true;
+      rig.applyRearStbd(clamp01(value));
+      rig.setAuthorityMode("REAR_STBD_PREVIEW");
+      ui.setMachineT(machineT, automatic, "REAR_STBD_PREVIEW");
+      refreshDebug();
+    },
+    getRearStbdT: () => rig.lastRearStbdT(),
+    setMachineT,
+    getMachineT: () => machineT,
+    getDriveT: () => rig.lastDriveT(),
+    getRequestedDriveT: () => rig.lastRequestedDriveT(),
+    getAppliedDriveT: () => rig.lastDriveT(),
+    getAuthorityMode: () => rig.authorityMode(),
+    setReadinessOverride: (value) => rig.setReadinessOverride(value),
+    applyDrive: (driveT) => rig.applyDrive(driveT),
+    getStages: () => rig.evaluate(transformT),
+    getFrontStages: () => rig.evaluateFront(frontT),
+    getParams: () => P,
+    getReadiness: () => evaluateDriveReadiness(rig, rig.getReadinessOverride()),
+    poseSnapshot: (t) => rig.poseSnapshot(t ?? transformT),
+    frontPoseSnapshot: (t) => rig.frontPoseSnapshot(t ?? frontT),
+    machinePoseSnapshot: (t) => rig.machinePoseSnapshot(t ?? machineT),
+    runClearance: () => runClearance(rig),
+    runFrontClearance: () => runFrontClearance(rig),
+    runMachineAuthority: (override) => runMachineAuthority(rig, override),
+    runS4Authority: (override) => runS4Authority(rig, override),
+    runVb1Study: (override) => runVb1Study(rig, override),
+    runVb1Ar1Study: (override) => runVb1Ar1Study(rig, override),
+    runDp1Study: (override) => runDp1Study(rig, override),
+    runGe1Study: () => runGe1Study(rig),
+    runUs1Study: () => runUs1Study(rig),
+    runKc1Study: () => runKc1Study(rig),
+    runKs1Study: () => runKs1Study(rig),
+    runS5Authority: (override) => runS5Authority(rig, override),
+    runS5CamTrack: () => evalCamTrack(rig),
+    getS5PathCertificate: () => getPathCertificate(rig),
+    invalidateS5PathCertificate: () => invalidatePathCertificate(rig),
+    getDriveThrustReady: () => rig.lastDriveThrustReady(),
+    evaluateS5Handover: () => evaluateS5Handover(rig),
+    applyMachineRaw: (value: number) => rig.applyMachine(value),
+    applyS5Override: (value) => rig.applyS5Override(value),
+    getS5Override: () => rig.getS5Override(),
+    probeLockEscape: (engaged) => rig.probeLockEscape(engaged),
+    setPropSection: (on: boolean) => {
+      for (const m of scene.meshes) {
+        if (m.name.startsWith("S5_CAN_")) m.visibility = on ? 0 : 1;
+      }
+    },
+    setLockStudyView: (on: boolean) => {
+      setLockFocus(on);
+    },
+    runHaunchStudy: () => rig.withPreservedPose(() => studyHaunch(rig)),
+    runCantStudy: () => rig.withPreservedPose(() => studyCant(rig)),
+    setCamera: (preset) => applyCamera(preset, camera),
+    setDebug: (on) => {
+      debugOn = on;
+      debug.setEnabled(on);
+      refreshDebug();
+    },
+    setSection: (on) => {
+      sectionOn = on;
+      debug.setSection(on);
+    },
+    previewHaunch: (deg) => {
+      previewOn = true;
+      rig.apply(0.9, { haunchDeg: deg });
+      rig.setAuthorityMode("HAUNCH_PREVIEW");
+      ui.setMachineT(machineT, automatic, "HAUNCH_PREVIEW");
+      refreshDebug();
+    },
+    previewCant: (deg) => {
+      previewOn = true;
+      rig.applyFront(1, { cantDeg: deg });
+      rig.setAuthorityMode("CANT_PREVIEW");
+      ui.setMachineT(machineT, automatic, "CANT_PREVIEW");
+      refreshDebug();
+    },
+    clearPreview: () => {
+      setMachineT(machineT);
+    },
+    isPreview: () => previewOn,
+    auditAuthority: () => auditAuthorityBounds(rig.root, rig.solids),
+  };
+
+  return { setT, getT: () => transformT, rig };
+}
+
+function applyCamera(preset: string, camera: ArcRotateCamera): void {
+  const c = CAMERAS[preset] ?? CAMERAS.three;
+  camera.inertialAlphaOffset = 0;
+  camera.inertialBetaOffset = 0;
+  camera.inertialRadiusOffset = 0;
+  camera.inertialPanningX = 0;
+  camera.inertialPanningY = 0;
+  camera.setTarget(new Vector3(...c.target));
+  camera.alpha = c.alpha;
+  camera.beta = c.beta;
+  camera.radius = c.radius;
+}

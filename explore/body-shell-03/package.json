@@ -1,0 +1,26 @@
+{
+  "name": "mt1-body-shell-03-exploration",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "MT1-BODY-SHELL-03 — open-stern chine hull presentation over MT1-S5HR3R1",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5185",
+    "build": "tsc --noEmit -p tsconfig.app.json && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4185",
+    "test": "playwright test tests/body-shell-03.spec.ts --workers=1",
+    "capture:body": "playwright test tests/capture-body-shell-03.spec.ts --workers=1"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^8.26.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.2"
+  }
+}

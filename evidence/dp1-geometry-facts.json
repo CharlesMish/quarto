@@ -1,0 +1,71 @@
+{
+  "tag": "S4A_GEOMETRY_FACT",
+  "sourceS4aSha256": "95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8",
+  "stations": {
+    "tag": "S4A_GEOMETRY_FACT",
+    "BAY_FORWARD_STATION": -1.7,
+    "BAY_AFT_STATION": -4.8,
+    "BAY_AFT_HOOP": -4.8,
+    "CAN_STOWED_CENTER": -3.25,
+    "CAN_STOWED_FORWARD_FACE": -1.975,
+    "CAN_STOWED_AFT_FACE": -4.525,
+    "CAN_DEPLOYED_CENTER": -5.8,
+    "CAN_DEPLOYED_FORWARD_FACE": -4.525,
+    "CAN_DEPLOYED_AFT_FACE": -7.074999999999999,
+    "canLength": 2.55,
+    "stroke": 2.55,
+    "axis": {
+      "x_lat": 0,
+      "y_vert": 0.78
+    },
+    "outerCan": {
+      "w": 1,
+      "h": 0.82
+    },
+    "bay": {
+      "xHalf": 0.6,
+      "yBot": 0.28,
+      "yTop": 1.28
+    },
+    "rails": {
+      "xs": [
+        -0.36,
+        0.36
+      ],
+      "y": 0.31,
+      "zFwd": -1.76,
+      "zAft": -7.15,
+      "section": 0.06,
+      "shoe": 0.1
+    }
+  },
+  "live": {
+    "stowed": {
+      "center": {
+        "x_lat": 0,
+        "y_vert": 0.7799999713897705,
+        "z_long": -3.25
+      },
+      "zFwd": -1.975,
+      "zAft": -4.525
+    },
+    "deployed": {
+      "center": {
+        "x_lat": 0,
+        "y_vert": 0.7799999713897705,
+        "z_long": -5.800000190734863
+      },
+      "zFwd": -4.525000190734863,
+      "zAft": -7.075000190734864
+    },
+    "match": true
+  },
+  "engagementTruth": {
+    "tag": "S4A_GEOMETRY_FACT",
+    "value": 0.27499999999999947,
+    "sign": "positive_means_can_forward_face_is_forward_of_hoop",
+    "canOccupiesBayFrom": -4.8,
+    "canOccupiesBayTo": -4.525,
+    "interpretation": "mechanically_useful"
+  }
+}

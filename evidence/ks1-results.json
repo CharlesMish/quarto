@@ -1,0 +1,1574 @@
+{
+  "studyId": "MT1-KS1",
+  "title": "Keel/Bulkhead Crossing Feasibility",
+  "freezeId": "MT1-S5HR3R1",
+  "sourceS4aSha256": "95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8",
+  "participatesInAuthority": false,
+  "addsVehicleGeometry": false,
+  "mutatesKc1": false,
+  "professionsAssigned": [],
+  "kc1Closed": "B — CONTINUOUS_ROUTE_REQUIRES_DECLARED_CROSSINGS. Do not reopen.",
+  "method": {
+    "motion": "applyMachine Δt=0.01 vs all candidate OBBs in one loop; local Δt=0.002 refine around first contact, min separation, and fold windows. Feasibility screening, not a new authority certificate.",
+    "waist": "Certified DRIVE waist treated as OUTBOARD empty cells (xIn=0.81), not the US1 keel-centered diagnostic AABB.",
+    "sleeve": "ARCHITECTURE_HYPOTHESIS only. Not an authorized hole. No stress/manufacturing/profession claim."
+  },
+  "keel": {
+    "minX": -0.15,
+    "maxX": 0.15,
+    "minY": 0.03,
+    "maxY": 0.17,
+    "minZ": -4.95,
+    "maxZ": 4.55
+  },
+  "plates": [
+    {
+      "id": "Z3p35",
+      "aabb": {
+        "minX": -0.75,
+        "maxX": 0.75,
+        "minY": 0.04,
+        "maxY": 1.58,
+        "minZ": 3.31,
+        "maxZ": 3.39
+      }
+    },
+    {
+      "id": "Z1p15",
+      "aabb": {
+        "minX": -0.75,
+        "maxX": 0.75,
+        "minY": 0.04,
+        "maxY": 1.58,
+        "minZ": 1.11,
+        "maxZ": 1.19
+      }
+    },
+    {
+      "id": "Zm1p70",
+      "aabb": {
+        "minX": -0.75,
+        "maxX": 0.75,
+        "minY": 0.04,
+        "maxY": 1.58,
+        "minZ": -1.74,
+        "maxZ": -1.66
+      }
+    }
+  ],
+  "stations": [
+    {
+      "id": "Z3p35",
+      "name": "BULKHEAD_Z3.35",
+      "z": 3.35,
+      "plate": {
+        "minX": -0.75,
+        "maxX": 0.75,
+        "minY": 0.04,
+        "maxY": 1.58,
+        "minZ": 3.31,
+        "maxZ": 3.39
+      },
+      "keel": {
+        "minX": -0.15,
+        "maxX": 0.15,
+        "minY": 0.03,
+        "maxY": 0.17,
+        "minZ": -4.95,
+        "maxZ": 4.55
+      },
+      "gapUnderPlate": 0.01,
+      "frozenFacts": [
+        "BULKHEAD_Z3.35 is a solid box plate ~1.50 × 1.54 × 0.08 m at z=3.35, x∈[−0.75, 0.75], y∈[~0.04, ~1.58].",
+        "No certified hole, bore, or sleeve exists in this plate.",
+        "VENTRAL_KEEL AABB overlaps the plate at the bottom center. Overlap is occupied structure, not a third-party passage.",
+        "KEEP_COCKPIT occupies the over-plate / forward-dorsal region (y≥0.30, |x|≤0.68, z∈[2.50, 4.60]). Over-plate is already NO_ROUTE."
+      ],
+      "existingPassage": {
+        "cls": "NO_FEASIBLE_CROSSING_WITHOUT_STRUCTURE_CHANGE",
+        "tag": "FROZEN_FACT",
+        "holeInPlate": false,
+        "keelPlateOverlapIsPassage": false,
+        "underPlateAirOutboardOfKeel": {
+          "port": {
+            "minX": -0.75,
+            "maxX": -0.15,
+            "minY": 0,
+            "maxY": 0.04,
+            "minZ": 3.31,
+            "maxZ": 3.39
+          },
+          "stbd": {
+            "minX": 0.15,
+            "maxX": 0.75,
+            "minY": 0,
+            "maxY": 0.04,
+            "minZ": 3.31,
+            "maxZ": 3.39
+          },
+          "height": 0.04,
+          "keeps": [],
+          "motionPort": {
+            "status": "CLEAR",
+            "firstT": null,
+            "minSep": 1.01187,
+            "minSepT": 0.7,
+            "solid": "FL_OUTER_ARMOR_0",
+            "bookRootHit": false
+          },
+          "motionStbd": {
+            "status": "CLEAR",
+            "firstT": null,
+            "minSep": 1.01187,
+            "minSepT": 0.7,
+            "solid": "FR_OUTER_ARMOR_1",
+            "bookRootHit": false
+          },
+          "treatedAsCarrier": false,
+          "note": "Air exists under the plate outboard of the keel (y below plate.minY ≈ 0.04). It is floor-adjacent, leaves the keel-side-face carrier, and is not a hole in the plate. Not promoted to EXISTING_PASSAGE."
+        },
+        "gapUnderPlate": 0.01,
+        "note": "Plate minY 0.0400 is 0.0100 m above keel minY 0.0300. That strip is occupied keel bar, not an opening."
+      },
+      "edgeBypass": {
+        "cls": "EDGE_BYPASS",
+        "tag": "ARCHITECTURE_HYPOTHESIS",
+        "envelopePort": {
+          "minX": -0.805,
+          "maxX": -0.752,
+          "minY": 0.05,
+          "maxY": 0.16,
+          "minZ": 3.29,
+          "maxZ": 3.41
+        },
+        "envelopeStbd": {
+          "minX": 0.752,
+          "maxX": 0.805,
+          "minY": 0.05,
+          "maxY": 0.16,
+          "minZ": 3.29,
+          "maxZ": 3.41
+        },
+        "keeps": [],
+        "keepMarginsPort": {
+          "KEEP_COCKPIT": 0.1574,
+          "KEEP_DORSAL": 1.8013,
+          "DRIVE_WAIST": 2.2828,
+          "CAN_CORRIDOR": 5.2752,
+          "FIXED_CORE": 5.9196,
+          "OPEN_STERN": 8.8902
+        },
+        "keepMarginsStbd": {
+          "KEEP_COCKPIT": 0.1574,
+          "KEEP_DORSAL": 1.8013,
+          "DRIVE_WAIST": 2.2828,
+          "CAN_CORRIDOR": 5.2752,
+          "FIXED_CORE": 5.9196,
+          "OPEN_STERN": 8.8902
+        },
+        "motionPort": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.88647,
+          "minSepT": 0.7,
+          "solid": "FL_OUTER_ARMOR_0",
+          "bookRootHit": false
+        },
+        "motionStbd": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.88647,
+          "minSepT": 0.7,
+          "solid": "FR_OUTER_ARMOR_1",
+          "bookRootHit": false
+        },
+        "bothSidesClear": true,
+        "oneSideClear": true,
+        "fixedOccupantsPort": [],
+        "fixedOccupantsStbd": [],
+        "structureChangeIfBuilt": false,
+        "note": "Wrap the 80 mm plate in the ~60 mm strip between plate edge x=±0.75 and waist xIn=±0.81, y∈[0.05, 0.16] (keel height). Inboard of certified waist. Below KEEP_COCKPIT / KEEP_DORSAL."
+      },
+      "surfaceHandoff": null,
+      "boundedSleeve": {
+        "cls": "BOUNDED_SLEEVE_CANDIDATE",
+        "tag": "ARCHITECTURE_HYPOTHESIS",
+        "envelope": {
+          "minX": -0.04,
+          "maxX": 0.04,
+          "minY": 0.172,
+          "maxY": 0.232,
+          "minZ": 3.3,
+          "maxZ": 3.4
+        },
+        "opening": {
+          "width": 0.08,
+          "height": 0.06,
+          "through": 0.1,
+          "cx": 0,
+          "cy": 0.202,
+          "cz": 3.35,
+          "y0": 0.172,
+          "y1": 0.232
+        },
+        "keelModified": false,
+        "plateModifiedIfBuilt": true,
+        "structureChangeIfBuilt": true,
+        "remainingLigaments": "Plate remains full 1.50 m width except a bottom-center opening 0.08 × 0.06 m immediately above the keel bar. Side ligaments ≈ 0.71 m each. Material above the opening remains ≈ plate.maxY − sleeve.maxY. Keel bar is not cut.",
+        "relationshipToKeel": "Adjacent, immediately above VENTRAL_KEEL top face. Opening does not enter the keel solid.",
+        "keeps": [],
+        "keepMargins": {
+          "KEEP_COCKPIT": 0.068,
+          "KEEP_DORSAL": 1.6624,
+          "DRIVE_WAIST": 2.4064,
+          "CAN_CORRIDOR": 5.2768,
+          "FIXED_CORE": 5.912,
+          "OPEN_STERN": 8.9
+        },
+        "motion": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 1.16787,
+          "minSepT": 0.7,
+          "solid": "FL_OUTER_ARMOR_0",
+          "bookRootHit": false
+        },
+        "fixedOccupants": [],
+        "authorizedHole": false
+      },
+      "denseMotion": {
+        "method": "Single canonical applyMachine loop, Δt=0.01 globally, then local refine Δt=0.002 around first-contact, min-separation, and fold windows [0.06,0.22]/[0.50,0.72]/[0.66,0.88]. Candidate OBB vs moving physical authority solids. AABB broadphase; SAT/OBB only when near. Feasibility screening, not a new authority certificate.",
+        "samplesGlobal": 101,
+        "bypassPort": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.88647,
+          "minSepT": 0.7,
+          "solid": "FL_OUTER_ARMOR_0",
+          "bookRootHit": false
+        },
+        "bypassStbd": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.88647,
+          "minSepT": 0.7,
+          "solid": "FR_OUTER_ARMOR_1",
+          "bookRootHit": false
+        },
+        "sleeve": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 1.16787,
+          "minSepT": 0.7,
+          "solid": "FL_OUTER_ARMOR_0",
+          "bookRootHit": false
+        },
+        "bookRootHit": false
+      },
+      "protectedVolume": {
+        "bypass": [],
+        "sleeve": [],
+        "handoff": [],
+        "failIfOccupied": "A candidate that occupies KEEP_COCKPIT, KEEP_DORSAL, DRIVE waist, can/core, or open stern is FAIL. No reservation trading.",
+        "marginsSleeve": {
+          "KEEP_COCKPIT": 0.068,
+          "KEEP_DORSAL": 1.6624,
+          "DRIVE_WAIST": 2.4064,
+          "CAN_CORRIDOR": 5.2768,
+          "FIXED_CORE": 5.912,
+          "OPEN_STERN": 8.9
+        },
+        "marginsBypassPort": {
+          "KEEP_COCKPIT": 0.1574,
+          "KEEP_DORSAL": 1.8013,
+          "DRIVE_WAIST": 2.2828,
+          "CAN_CORRIDOR": 5.2752,
+          "FIXED_CORE": 5.9196,
+          "OPEN_STERN": 8.8902
+        },
+        "marginsBypassStbd": {
+          "KEEP_COCKPIT": 0.1574,
+          "KEEP_DORSAL": 1.8013,
+          "DRIVE_WAIST": 2.2828,
+          "CAN_CORRIDOR": 5.2752,
+          "FIXED_CORE": 5.9196,
+          "OPEN_STERN": 8.8902
+        }
+      },
+      "plateCrossing": "EDGE_BYPASS",
+      "selected": "EDGE_BYPASS",
+      "selectedBundle": "EDGE_BYPASS",
+      "completeDogleg": {
+        "closure": "COMPLETE_DOGLEG_CLEAR",
+        "zOffsetFromPlate": 0.002,
+        "zThickness": 0.018,
+        "vkFaceX": [
+          -0.15,
+          0.15
+        ],
+        "wrapOutboardX": [
+          -0.805,
+          0.805
+        ],
+        "waistXIn": 0.81,
+        "port": {
+          "ok": true,
+          "wrap": {
+            "envelope": {
+              "minX": -0.805,
+              "maxX": -0.752,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 3.29,
+              "maxZ": 3.41
+            },
+            "ok": true,
+            "waist": {
+              "cell": "DRIVE_WAIST_PORT",
+              "xIn": 0.81,
+              "stripOutboardX": -0.805,
+              "deltaXToXIn": 0.005,
+              "dx": 0.005,
+              "dy": 0.44,
+              "dz": 2.24,
+              "hypot": 2.2828,
+              "overlapping": false
+            },
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.88647,
+              "minSepT": 0.7,
+              "solid": "FL_OUTER_ARMOR_0",
+              "bookRootHit": false
+            },
+            "keeps": [],
+            "fixed": []
+          },
+          "outboundFore": {
+            "envelope": {
+              "minX": -0.752,
+              "maxX": -0.152,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 3.392,
+              "maxZ": 3.41
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.92806,
+              "minSepT": 0.7,
+              "solid": "FL_OUTER_ARMOR_0",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_PORT",
+              "xIn": 0.81,
+              "stripOutboardX": -0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 2.342,
+              "hypot": 2.3837,
+              "overlapping": false
+            }
+          },
+          "inboundAft": {
+            "envelope": {
+              "minX": -0.752,
+              "maxX": -0.152,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 3.29,
+              "maxZ": 3.308
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.89208,
+              "minSepT": 0.7,
+              "solid": "FL_OUTER_ARMOR_0",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_PORT",
+              "xIn": 0.81,
+              "stripOutboardX": -0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 2.24,
+              "hypot": 2.2835,
+              "overlapping": false
+            }
+          }
+        },
+        "stbd": {
+          "ok": true,
+          "wrap": {
+            "envelope": {
+              "minX": 0.752,
+              "maxX": 0.805,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 3.29,
+              "maxZ": 3.41
+            },
+            "ok": true,
+            "waist": {
+              "cell": "DRIVE_WAIST_STBD",
+              "xIn": 0.81,
+              "stripOutboardX": 0.805,
+              "deltaXToXIn": 0.005,
+              "dx": 0.005,
+              "dy": 0.44,
+              "dz": 2.24,
+              "hypot": 2.2828,
+              "overlapping": false
+            },
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.88647,
+              "minSepT": 0.7,
+              "solid": "FR_OUTER_ARMOR_1",
+              "bookRootHit": false
+            },
+            "keeps": [],
+            "fixed": []
+          },
+          "outboundFore": {
+            "envelope": {
+              "minX": 0.152,
+              "maxX": 0.752,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 3.392,
+              "maxZ": 3.41
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.92806,
+              "minSepT": 0.7,
+              "solid": "FR_OUTER_ARMOR_1",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_STBD",
+              "xIn": 0.81,
+              "stripOutboardX": 0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 2.342,
+              "hypot": 2.3837,
+              "overlapping": false
+            }
+          },
+          "inboundAft": {
+            "envelope": {
+              "minX": 0.152,
+              "maxX": 0.752,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 3.29,
+              "maxZ": 3.308
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.89208,
+              "minSepT": 0.7,
+              "solid": "FR_OUTER_ARMOR_1",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_STBD",
+              "xIn": 0.81,
+              "stripOutboardX": 0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 2.24,
+              "hypot": 2.2835,
+              "overlapping": false
+            }
+          }
+        },
+        "bothSidesClear": true,
+        "oneSideClear": true,
+        "note": "Transverse legs sit immediately fore/aft of the 80 mm plate at Z offset 2 mm (smallest inset that does not occupy the plate). They span from the ventral-keel side face |x|≈0.15 to the existing plate-edge wrap. Route was not widened. Strip outboard X is 0.805 vs certified waist xIn=0.81 (5 mm by construction)."
+      },
+      "remainingUnknowns": [
+        "No stress, fatigue, sealing, or manufacturing claim.",
+        "Sleeve, if hypothesized, is ARCHITECTURE_HYPOTHESIS only — not an authorized hole.",
+        "Keel underside protrudes ~10 mm below plate minY; that occupied bar is not a through-passage."
+      ]
+    },
+    {
+      "id": "Z1p15",
+      "name": "BULKHEAD_Z1.15",
+      "z": 1.15,
+      "plate": {
+        "minX": -0.75,
+        "maxX": 0.75,
+        "minY": 0.04,
+        "maxY": 1.58,
+        "minZ": 1.11,
+        "maxZ": 1.19
+      },
+      "keel": {
+        "minX": -0.15,
+        "maxX": 0.15,
+        "minY": 0.03,
+        "maxY": 0.17,
+        "minZ": -4.95,
+        "maxZ": 4.55
+      },
+      "gapUnderPlate": 0.01,
+      "frozenFacts": [
+        "BULKHEAD_Z1.15 is a solid box plate ~1.50 × 1.54 × 0.08 m at z=1.15, x∈[−0.75, 0.75], y∈[~0.04, ~1.58].",
+        "No certified hole, bore, or sleeve exists in this plate.",
+        "VENTRAL_KEEL AABB overlaps the plate at the bottom center. Overlap is occupied structure, not a third-party passage.",
+        "Aft of KEEP_COCKPIT. KEEP_DORSAL covers this z only at y≥1.56. Certified DRIVE waist is outboard of x=0.81."
+      ],
+      "existingPassage": {
+        "cls": "NO_FEASIBLE_CROSSING_WITHOUT_STRUCTURE_CHANGE",
+        "tag": "FROZEN_FACT",
+        "holeInPlate": false,
+        "keelPlateOverlapIsPassage": false,
+        "underPlateAirOutboardOfKeel": {
+          "port": {
+            "minX": -0.75,
+            "maxX": -0.15,
+            "minY": 0,
+            "maxY": 0.04,
+            "minZ": 1.11,
+            "maxZ": 1.19
+          },
+          "stbd": {
+            "minX": 0.15,
+            "maxX": 0.75,
+            "minY": 0,
+            "maxY": 0.04,
+            "minZ": 1.11,
+            "maxZ": 1.19
+          },
+          "height": 0.04,
+          "keeps": [],
+          "motionPort": {
+            "status": "CLEAR",
+            "firstT": null,
+            "minSep": 1.02405,
+            "minSepT": 0.7,
+            "solid": "FL_OUTER_ARMOR_1",
+            "bookRootHit": false
+          },
+          "motionStbd": {
+            "status": "CLEAR",
+            "firstT": null,
+            "minSep": 1.02405,
+            "minSepT": 0.7,
+            "solid": "FR_OUTER_ARMOR_0",
+            "bookRootHit": false
+          },
+          "treatedAsCarrier": false,
+          "note": "Air exists under the plate outboard of the keel (y below plate.minY ≈ 0.04). It is floor-adjacent, leaves the keel-side-face carrier, and is not a hole in the plate. Not promoted to EXISTING_PASSAGE."
+        },
+        "gapUnderPlate": 0.01,
+        "note": "Plate minY 0.0400 is 0.0100 m above keel minY 0.0300. That strip is occupied keel bar, not an opening."
+      },
+      "edgeBypass": {
+        "cls": "EDGE_BYPASS",
+        "tag": "ARCHITECTURE_HYPOTHESIS",
+        "envelopePort": {
+          "minX": -0.805,
+          "maxX": -0.752,
+          "minY": 0.05,
+          "maxY": 0.16,
+          "minZ": 1.09,
+          "maxZ": 1.21
+        },
+        "envelopeStbd": {
+          "minX": 0.752,
+          "maxX": 0.805,
+          "minY": 0.05,
+          "maxY": 0.16,
+          "minZ": 1.09,
+          "maxZ": 1.21
+        },
+        "keeps": [],
+        "keepMarginsPort": {
+          "KEEP_COCKPIT": 1.2996,
+          "KEEP_DORSAL": 1.5049,
+          "DRIVE_WAIST": 0.4418,
+          "CAN_CORRIDOR": 3.0825,
+          "FIXED_CORE": 3.7342,
+          "OPEN_STERN": 6.6902
+        },
+        "keepMarginsStbd": {
+          "KEEP_COCKPIT": 1.2996,
+          "KEEP_DORSAL": 1.5049,
+          "DRIVE_WAIST": 0.4418,
+          "CAN_CORRIDOR": 3.0825,
+          "FIXED_CORE": 3.7342,
+          "OPEN_STERN": 6.6902
+        },
+        "motionPort": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.89946,
+          "minSepT": 0.7,
+          "solid": "FL_OUTER_ARMOR_1",
+          "bookRootHit": false
+        },
+        "motionStbd": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.89946,
+          "minSepT": 0.7,
+          "solid": "FR_OUTER_ARMOR_0",
+          "bookRootHit": false
+        },
+        "bothSidesClear": true,
+        "oneSideClear": true,
+        "fixedOccupantsPort": [],
+        "fixedOccupantsStbd": [],
+        "structureChangeIfBuilt": false,
+        "note": "Wrap the 80 mm plate in the ~60 mm strip between plate edge x=±0.75 and waist xIn=±0.81, y∈[0.05, 0.16] (keel height). Inboard of certified waist. Below KEEP_COCKPIT / KEEP_DORSAL."
+      },
+      "surfaceHandoff": null,
+      "boundedSleeve": {
+        "cls": "BOUNDED_SLEEVE_CANDIDATE",
+        "tag": "ARCHITECTURE_HYPOTHESIS",
+        "envelope": {
+          "minX": -0.04,
+          "maxX": 0.04,
+          "minY": 0.172,
+          "maxY": 0.232,
+          "minZ": 1.1,
+          "maxZ": 1.2
+        },
+        "opening": {
+          "width": 0.08,
+          "height": 0.06,
+          "through": 0.1,
+          "cx": 0,
+          "cy": 0.202,
+          "cz": 1.15,
+          "y0": 0.172,
+          "y1": 0.232
+        },
+        "keelModified": false,
+        "plateModifiedIfBuilt": true,
+        "structureChangeIfBuilt": true,
+        "remainingLigaments": "Plate remains full 1.50 m width except a bottom-center opening 0.08 × 0.06 m immediately above the keel bar. Side ligaments ≈ 0.71 m each. Material above the opening remains ≈ plate.maxY − sleeve.maxY. Keel bar is not cut.",
+        "relationshipToKeel": "Adjacent, immediately above VENTRAL_KEEL top face. Opening does not enter the keel solid.",
+        "keeps": [],
+        "keepMargins": {
+          "KEEP_COCKPIT": 1.3018,
+          "KEEP_DORSAL": 1.328,
+          "DRIVE_WAIST": 0.8549,
+          "CAN_CORRIDOR": 3.0781,
+          "FIXED_CORE": 3.7162,
+          "OPEN_STERN": 6.7
+        },
+        "motion": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 1.1781,
+          "minSepT": 0.7,
+          "solid": "FL_OUTER_ARMOR_1",
+          "bookRootHit": false
+        },
+        "fixedOccupants": [],
+        "authorizedHole": false
+      },
+      "denseMotion": {
+        "method": "Single canonical applyMachine loop, Δt=0.01 globally, then local refine Δt=0.002 around first-contact, min-separation, and fold windows [0.06,0.22]/[0.50,0.72]/[0.66,0.88]. Candidate OBB vs moving physical authority solids. AABB broadphase; SAT/OBB only when near. Feasibility screening, not a new authority certificate.",
+        "samplesGlobal": 101,
+        "bypassPort": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.89946,
+          "minSepT": 0.7,
+          "solid": "FL_OUTER_ARMOR_1",
+          "bookRootHit": false
+        },
+        "bypassStbd": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.89946,
+          "minSepT": 0.7,
+          "solid": "FR_OUTER_ARMOR_0",
+          "bookRootHit": false
+        },
+        "sleeve": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 1.1781,
+          "minSepT": 0.7,
+          "solid": "FL_OUTER_ARMOR_1",
+          "bookRootHit": false
+        },
+        "bookRootHit": false
+      },
+      "protectedVolume": {
+        "bypass": [],
+        "sleeve": [],
+        "handoff": [],
+        "failIfOccupied": "A candidate that occupies KEEP_COCKPIT, KEEP_DORSAL, DRIVE waist, can/core, or open stern is FAIL. No reservation trading.",
+        "marginsSleeve": {
+          "KEEP_COCKPIT": 1.3018,
+          "KEEP_DORSAL": 1.328,
+          "DRIVE_WAIST": 0.8549,
+          "CAN_CORRIDOR": 3.0781,
+          "FIXED_CORE": 3.7162,
+          "OPEN_STERN": 6.7
+        },
+        "marginsBypassPort": {
+          "KEEP_COCKPIT": 1.2996,
+          "KEEP_DORSAL": 1.5049,
+          "DRIVE_WAIST": 0.4418,
+          "CAN_CORRIDOR": 3.0825,
+          "FIXED_CORE": 3.7342,
+          "OPEN_STERN": 6.6902
+        },
+        "marginsBypassStbd": {
+          "KEEP_COCKPIT": 1.2996,
+          "KEEP_DORSAL": 1.5049,
+          "DRIVE_WAIST": 0.4418,
+          "CAN_CORRIDOR": 3.0825,
+          "FIXED_CORE": 3.7342,
+          "OPEN_STERN": 6.6902
+        }
+      },
+      "plateCrossing": "EDGE_BYPASS",
+      "selected": "EDGE_BYPASS",
+      "selectedBundle": "EDGE_BYPASS",
+      "completeDogleg": {
+        "closure": "COMPLETE_DOGLEG_CLEAR",
+        "zOffsetFromPlate": 0.002,
+        "zThickness": 0.018,
+        "vkFaceX": [
+          -0.15,
+          0.15
+        ],
+        "wrapOutboardX": [
+          -0.805,
+          0.805
+        ],
+        "waistXIn": 0.81,
+        "port": {
+          "ok": true,
+          "wrap": {
+            "envelope": {
+              "minX": -0.805,
+              "maxX": -0.752,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 1.09,
+              "maxZ": 1.21
+            },
+            "ok": true,
+            "waist": {
+              "cell": "DRIVE_WAIST_PORT",
+              "xIn": 0.81,
+              "stripOutboardX": -0.805,
+              "deltaXToXIn": 0.005,
+              "dx": 0.005,
+              "dy": 0.44,
+              "dz": 0.04,
+              "hypot": 0.4418,
+              "overlapping": false
+            },
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.89946,
+              "minSepT": 0.7,
+              "solid": "FL_OUTER_ARMOR_1",
+              "bookRootHit": false
+            },
+            "keeps": [],
+            "fixed": []
+          },
+          "outboundFore": {
+            "envelope": {
+              "minX": -0.752,
+              "maxX": -0.152,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 1.192,
+              "maxZ": 1.21
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.90499,
+              "minSepT": 0.7,
+              "solid": "FL_OUTER_ARMOR_1",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_PORT",
+              "xIn": 0.81,
+              "stripOutboardX": -0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 0.142,
+              "hypot": 0.466,
+              "overlapping": false
+            }
+          },
+          "inboundAft": {
+            "envelope": {
+              "minX": -0.752,
+              "maxX": -0.152,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 1.09,
+              "maxZ": 1.108
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.9448,
+              "minSepT": 0.7,
+              "solid": "FL_OUTER_ARMOR_1",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_PORT",
+              "xIn": 0.81,
+              "stripOutboardX": -0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 0.04,
+              "hypot": 0.4456,
+              "overlapping": false
+            }
+          }
+        },
+        "stbd": {
+          "ok": true,
+          "wrap": {
+            "envelope": {
+              "minX": 0.752,
+              "maxX": 0.805,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 1.09,
+              "maxZ": 1.21
+            },
+            "ok": true,
+            "waist": {
+              "cell": "DRIVE_WAIST_STBD",
+              "xIn": 0.81,
+              "stripOutboardX": 0.805,
+              "deltaXToXIn": 0.005,
+              "dx": 0.005,
+              "dy": 0.44,
+              "dz": 0.04,
+              "hypot": 0.4418,
+              "overlapping": false
+            },
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.89946,
+              "minSepT": 0.7,
+              "solid": "FR_OUTER_ARMOR_0",
+              "bookRootHit": false
+            },
+            "keeps": [],
+            "fixed": []
+          },
+          "outboundFore": {
+            "envelope": {
+              "minX": 0.152,
+              "maxX": 0.752,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 1.192,
+              "maxZ": 1.21
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.90499,
+              "minSepT": 0.7,
+              "solid": "FR_OUTER_ARMOR_0",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_STBD",
+              "xIn": 0.81,
+              "stripOutboardX": 0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 0.142,
+              "hypot": 0.466,
+              "overlapping": false
+            }
+          },
+          "inboundAft": {
+            "envelope": {
+              "minX": 0.152,
+              "maxX": 0.752,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": 1.09,
+              "maxZ": 1.108
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.9448,
+              "minSepT": 0.7,
+              "solid": "FR_OUTER_ARMOR_0",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_STBD",
+              "xIn": 0.81,
+              "stripOutboardX": 0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 0.04,
+              "hypot": 0.4456,
+              "overlapping": false
+            }
+          }
+        },
+        "bothSidesClear": true,
+        "oneSideClear": true,
+        "note": "Transverse legs sit immediately fore/aft of the 80 mm plate at Z offset 2 mm (smallest inset that does not occupy the plate). They span from the ventral-keel side face |x|≈0.15 to the existing plate-edge wrap. Route was not widened. Strip outboard X is 0.805 vs certified waist xIn=0.81 (5 mm by construction)."
+      },
+      "remainingUnknowns": [
+        "No stress, fatigue, sealing, or manufacturing claim.",
+        "Sleeve, if hypothesized, is ARCHITECTURE_HYPOTHESIS only — not an authorized hole.",
+        "Keel underside protrudes ~10 mm below plate minY; that occupied bar is not a through-passage."
+      ]
+    },
+    {
+      "id": "Zm1p70",
+      "name": "BULKHEAD_Z-1.70",
+      "z": -1.7,
+      "plate": {
+        "minX": -0.75,
+        "maxX": 0.75,
+        "minY": 0.04,
+        "maxY": 1.58,
+        "minZ": -1.74,
+        "maxZ": -1.66
+      },
+      "keel": {
+        "minX": -0.15,
+        "maxX": 0.15,
+        "minY": 0.03,
+        "maxY": 0.17,
+        "minZ": -4.95,
+        "maxZ": 4.55
+      },
+      "gapUnderPlate": 0.01,
+      "frozenFacts": [
+        "BULKHEAD_Z-1.70 is a solid box plate ~1.50 × 1.54 × 0.08 m at z=-1.70, x∈[−0.75, 0.75], y∈[~0.04, ~1.58].",
+        "No certified hole, bore, or sleeve exists in this plate.",
+        "VENTRAL_KEEL AABB overlaps the plate at the bottom center. Overlap is occupied structure, not a third-party passage.",
+        "Bay-forward station. Dorsal longeron ends. Ventral keel continues under the propulsion bay. Can/core sit above the keel route."
+      ],
+      "existingPassage": {
+        "cls": "NO_FEASIBLE_CROSSING_WITHOUT_STRUCTURE_CHANGE",
+        "tag": "FROZEN_FACT",
+        "holeInPlate": false,
+        "keelPlateOverlapIsPassage": false,
+        "underPlateAirOutboardOfKeel": {
+          "port": {
+            "minX": -0.75,
+            "maxX": -0.15,
+            "minY": 0,
+            "maxY": 0.04,
+            "minZ": -1.74,
+            "maxZ": -1.66
+          },
+          "stbd": {
+            "minX": 0.15,
+            "maxX": 0.75,
+            "minY": 0,
+            "maxY": 0.04,
+            "minZ": -1.74,
+            "maxZ": -1.66
+          },
+          "height": 0.04,
+          "keeps": [],
+          "motionPort": {
+            "status": "CLEAR",
+            "firstT": null,
+            "minSep": 0.40512,
+            "minSepT": 0,
+            "solid": "DRIVE_ENVELOPE",
+            "bookRootHit": false
+          },
+          "motionStbd": {
+            "status": "CLEAR",
+            "firstT": null,
+            "minSep": 0.40512,
+            "minSepT": 0,
+            "solid": "DRIVE_ENVELOPE",
+            "bookRootHit": false
+          },
+          "treatedAsCarrier": false,
+          "note": "Air exists under the plate outboard of the keel (y below plate.minY ≈ 0.04). It is floor-adjacent, leaves the keel-side-face carrier, and is not a hole in the plate. Not promoted to EXISTING_PASSAGE."
+        },
+        "gapUnderPlate": 0.01,
+        "note": "Plate minY 0.0400 is 0.0100 m above keel minY 0.0300. That strip is occupied keel bar, not an opening."
+      },
+      "edgeBypass": {
+        "cls": "EDGE_BYPASS",
+        "tag": "ARCHITECTURE_HYPOTHESIS",
+        "envelopePort": {
+          "minX": -0.805,
+          "maxX": -0.752,
+          "minY": 0.05,
+          "maxY": 0.16,
+          "minZ": -1.76,
+          "maxZ": -1.64
+        },
+        "envelopeStbd": {
+          "minX": 0.752,
+          "maxX": 0.805,
+          "minY": 0.05,
+          "maxY": 0.16,
+          "minZ": -1.76,
+          "maxZ": -1.64
+        },
+        "keeps": [],
+        "keepMarginsPort": {
+          "KEEP_COCKPIT": 4.143,
+          "KEEP_DORSAL": 1.5054,
+          "DRIVE_WAIST": 0.4401,
+          "CAN_CORRIDOR": 0.3922,
+          "FIXED_CORE": 1.0026,
+          "OPEN_STERN": 3.8404
+        },
+        "keepMarginsStbd": {
+          "KEEP_COCKPIT": 4.143,
+          "KEEP_DORSAL": 1.5054,
+          "DRIVE_WAIST": 0.4401,
+          "CAN_CORRIDOR": 0.3922,
+          "FIXED_CORE": 1.0026,
+          "OPEN_STERN": 3.8404
+        },
+        "motionPort": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.39221,
+          "minSepT": 0,
+          "solid": "DRIVE_ENVELOPE",
+          "bookRootHit": false
+        },
+        "motionStbd": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.39221,
+          "minSepT": 0,
+          "solid": "DRIVE_ENVELOPE",
+          "bookRootHit": false
+        },
+        "bothSidesClear": true,
+        "oneSideClear": true,
+        "fixedOccupantsPort": [],
+        "fixedOccupantsStbd": [],
+        "structureChangeIfBuilt": false,
+        "note": "Wrap the 80 mm plate in the ~60 mm strip between plate edge x=±0.75 and waist xIn=±0.81, y∈[0.05, 0.16] (keel height). Inboard of certified waist. Below KEEP_COCKPIT / KEEP_DORSAL."
+      },
+      "surfaceHandoff": {
+        "cls": "SURFACE_HANDOFF",
+        "tag": "ARCHITECTURE_HYPOTHESIS",
+        "envelope": {
+          "minX": -0.5,
+          "maxX": -0.36,
+          "minY": 0.17,
+          "maxY": 1.445,
+          "minZ": -1.66,
+          "maxZ": -1.64
+        },
+        "centerlineFace": {
+          "envelope": {
+            "minX": -0.08,
+            "maxX": 0.08,
+            "minY": 0.17,
+            "maxY": 1.445,
+            "minZ": -1.66,
+            "maxZ": -1.64
+          },
+          "keeps": [],
+          "motion": {
+            "status": "CLEAR",
+            "firstT": null,
+            "minSep": 0.315,
+            "minSepT": 0,
+            "solid": "DRIVE_ENVELOPE",
+            "bookRootHit": false
+          },
+          "fixedOccupants": [
+            "S5_CORE_REACTION_FRAME"
+          ],
+          "clear": false,
+          "note": "Full-height centerline drop on the +Z face. Blocked if S5_CORE_REACTION_FRAME occupies that face (it is registered at this station z)."
+        },
+        "offsetPort": {
+          "envelope": {
+            "minX": -0.5,
+            "maxX": -0.36,
+            "minY": 0.17,
+            "maxY": 1.445,
+            "minZ": -1.66,
+            "maxZ": -1.64
+          },
+          "keeps": [],
+          "motion": {
+            "status": "CLEAR",
+            "firstT": null,
+            "minSep": 0.315,
+            "minSepT": 0,
+            "solid": "S5_SEAT_TONGUE_PORT",
+            "bookRootHit": false
+          },
+          "fixedOccupants": [],
+          "clear": true
+        },
+        "offsetStbd": {
+          "envelope": {
+            "minX": 0.36,
+            "maxX": 0.5,
+            "minY": 0.17,
+            "maxY": 1.445,
+            "minZ": -1.66,
+            "maxZ": -1.64
+          },
+          "keeps": [],
+          "motion": {
+            "status": "CLEAR",
+            "firstT": null,
+            "minSep": 0.315,
+            "minSepT": 0,
+            "solid": "S5_SEAT_TONGUE_STARBOARD",
+            "bookRootHit": false
+          },
+          "fixedOccupants": [],
+          "clear": true
+        },
+        "keeps": [],
+        "keepMargins": {
+          "KEEP_COCKPIT": 4.14,
+          "KEEP_DORSAL": 0.2011,
+          "DRIVE_WAIST": 0.3102,
+          "CAN_CORRIDOR": 0.315,
+          "FIXED_CORE": 0.9451,
+          "OPEN_STERN": 3.94
+        },
+        "vkUnderBay": {
+          "cls": "SURFACE_HANDOFF",
+          "tag": "FROZEN_FACT",
+          "note": "VENTRAL_KEEL already continues under the bay to z=−4.95. Keel top 0.17 m, can bottom 0.370 m. That is frozen structure, not a new tunnel, and it does not by itself cross this 80 mm plate."
+        },
+        "note": "Centerline +Z face is occupied by S5_CORE_REACTION_FRAME (same station z as the plate). A face-offset drop outboard of that frame, still on the plate face and inboard of the plate edge, is the SURFACE_HANDOFF candidate. Not through the core or can."
+      },
+      "boundedSleeve": {
+        "cls": "BOUNDED_SLEEVE_CANDIDATE",
+        "tag": "ARCHITECTURE_HYPOTHESIS",
+        "envelope": {
+          "minX": -0.04,
+          "maxX": 0.04,
+          "minY": 0.172,
+          "maxY": 0.232,
+          "minZ": -1.75,
+          "maxZ": -1.65
+        },
+        "opening": {
+          "width": 0.08,
+          "height": 0.06,
+          "through": 0.1,
+          "cx": 0,
+          "cy": 0.202,
+          "cz": -1.7,
+          "y0": 0.172,
+          "y1": 0.232
+        },
+        "keelModified": false,
+        "plateModifiedIfBuilt": true,
+        "structureChangeIfBuilt": true,
+        "remainingLigaments": "Plate remains full 1.50 m width except a bottom-center opening 0.08 × 0.06 m immediately above the keel bar. Side ligaments ≈ 0.71 m each. Material above the opening remains ≈ plate.maxY − sleeve.maxY. Keel bar is not cut.",
+        "relationshipToKeel": "Adjacent, immediately above VENTRAL_KEEL top face. Opening does not enter the keel solid.",
+        "keeps": [],
+        "keepMargins": {
+          "KEEP_COCKPIT": 4.1506,
+          "KEEP_DORSAL": 1.3289,
+          "DRIVE_WAIST": 0.8537,
+          "CAN_CORRIDOR": 0.2639,
+          "FIXED_CORE": 0.9022,
+          "OPEN_STERN": 3.85
+        },
+        "motion": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.26395,
+          "minSepT": 0,
+          "solid": "DRIVE_ENVELOPE",
+          "bookRootHit": false
+        },
+        "fixedOccupants": [],
+        "authorizedHole": false
+      },
+      "denseMotion": {
+        "method": "Single canonical applyMachine loop, Δt=0.01 globally, then local refine Δt=0.002 around first-contact, min-separation, and fold windows [0.06,0.22]/[0.50,0.72]/[0.66,0.88]. Candidate OBB vs moving physical authority solids. AABB broadphase; SAT/OBB only when near. Feasibility screening, not a new authority certificate.",
+        "samplesGlobal": 101,
+        "bypassPort": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.39221,
+          "minSepT": 0,
+          "solid": "DRIVE_ENVELOPE",
+          "bookRootHit": false
+        },
+        "bypassStbd": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.39221,
+          "minSepT": 0,
+          "solid": "DRIVE_ENVELOPE",
+          "bookRootHit": false
+        },
+        "sleeve": {
+          "status": "CLEAR",
+          "firstT": null,
+          "minSep": 0.26395,
+          "minSepT": 0,
+          "solid": "DRIVE_ENVELOPE",
+          "bookRootHit": false
+        },
+        "bookRootHit": false
+      },
+      "protectedVolume": {
+        "bypass": [],
+        "sleeve": [],
+        "handoff": [],
+        "failIfOccupied": "A candidate that occupies KEEP_COCKPIT, KEEP_DORSAL, DRIVE waist, can/core, or open stern is FAIL. No reservation trading.",
+        "marginsSleeve": {
+          "KEEP_COCKPIT": 4.1506,
+          "KEEP_DORSAL": 1.3289,
+          "DRIVE_WAIST": 0.8537,
+          "CAN_CORRIDOR": 0.2639,
+          "FIXED_CORE": 0.9022,
+          "OPEN_STERN": 3.85
+        },
+        "marginsBypassPort": {
+          "KEEP_COCKPIT": 4.143,
+          "KEEP_DORSAL": 1.5054,
+          "DRIVE_WAIST": 0.4401,
+          "CAN_CORRIDOR": 0.3922,
+          "FIXED_CORE": 1.0026,
+          "OPEN_STERN": 3.8404
+        },
+        "marginsBypassStbd": {
+          "KEEP_COCKPIT": 4.143,
+          "KEEP_DORSAL": 1.5054,
+          "DRIVE_WAIST": 0.4401,
+          "CAN_CORRIDOR": 0.3922,
+          "FIXED_CORE": 1.0026,
+          "OPEN_STERN": 3.8404
+        }
+      },
+      "plateCrossing": "EDGE_BYPASS",
+      "selected": "EDGE_BYPASS",
+      "selectedBundle": "SURFACE_HANDOFF + EDGE_BYPASS",
+      "completeDogleg": {
+        "closure": "COMPLETE_DOGLEG_CLEAR",
+        "zOffsetFromPlate": 0.002,
+        "zThickness": 0.018,
+        "vkFaceX": [
+          -0.15,
+          0.15
+        ],
+        "wrapOutboardX": [
+          -0.805,
+          0.805
+        ],
+        "waistXIn": 0.81,
+        "port": {
+          "ok": true,
+          "wrap": {
+            "envelope": {
+              "minX": -0.805,
+              "maxX": -0.752,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": -1.76,
+              "maxZ": -1.64
+            },
+            "ok": true,
+            "waist": {
+              "cell": "DRIVE_WAIST_PORT",
+              "xIn": 0.81,
+              "stripOutboardX": -0.805,
+              "deltaXToXIn": 0.005,
+              "dx": 0.005,
+              "dy": 0.44,
+              "dz": 0.01,
+              "hypot": 0.4401,
+              "overlapping": false
+            },
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.39221,
+              "minSepT": 0,
+              "solid": "DRIVE_ENVELOPE",
+              "bookRootHit": false
+            },
+            "keeps": [],
+            "fixed": []
+          },
+          "outboundFore": {
+            "envelope": {
+              "minX": -0.752,
+              "maxX": -0.152,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": -1.658,
+              "maxZ": -1.64
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.38025,
+              "minSepT": 0,
+              "solid": "DRIVE_ENVELOPE",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_PORT",
+              "xIn": 0.81,
+              "stripOutboardX": -0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 0.01,
+              "hypot": 0.4439,
+              "overlapping": false
+            }
+          },
+          "inboundAft": {
+            "envelope": {
+              "minX": -0.752,
+              "maxX": -0.152,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": -1.76,
+              "maxZ": -1.742
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.30054,
+              "minSepT": 0,
+              "solid": "DRIVE_ENVELOPE",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_PORT",
+              "xIn": 0.81,
+              "stripOutboardX": -0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 0.112,
+              "hypot": 0.4577,
+              "overlapping": false
+            }
+          }
+        },
+        "stbd": {
+          "ok": true,
+          "wrap": {
+            "envelope": {
+              "minX": 0.752,
+              "maxX": 0.805,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": -1.76,
+              "maxZ": -1.64
+            },
+            "ok": true,
+            "waist": {
+              "cell": "DRIVE_WAIST_STBD",
+              "xIn": 0.81,
+              "stripOutboardX": 0.805,
+              "deltaXToXIn": 0.005,
+              "dx": 0.005,
+              "dy": 0.44,
+              "dz": 0.01,
+              "hypot": 0.4401,
+              "overlapping": false
+            },
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.39221,
+              "minSepT": 0,
+              "solid": "DRIVE_ENVELOPE",
+              "bookRootHit": false
+            },
+            "keeps": [],
+            "fixed": []
+          },
+          "outboundFore": {
+            "envelope": {
+              "minX": 0.152,
+              "maxX": 0.752,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": -1.658,
+              "maxZ": -1.64
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.38025,
+              "minSepT": 0,
+              "solid": "DRIVE_ENVELOPE",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_STBD",
+              "xIn": 0.81,
+              "stripOutboardX": 0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 0.01,
+              "hypot": 0.4439,
+              "overlapping": false
+            }
+          },
+          "inboundAft": {
+            "envelope": {
+              "minX": 0.152,
+              "maxX": 0.752,
+              "minY": 0.05,
+              "maxY": 0.16,
+              "minZ": -1.76,
+              "maxZ": -1.742
+            },
+            "ok": true,
+            "keeps": [],
+            "fixed": [],
+            "motion": {
+              "status": "CLEAR",
+              "firstT": null,
+              "minSep": 0.30054,
+              "minSepT": 0,
+              "solid": "DRIVE_ENVELOPE",
+              "bookRootHit": false
+            },
+            "intersectsPlate": false,
+            "waist": {
+              "cell": "DRIVE_WAIST_STBD",
+              "xIn": 0.81,
+              "stripOutboardX": 0.752,
+              "deltaXToXIn": 0.058,
+              "dx": 0.058,
+              "dy": 0.44,
+              "dz": 0.112,
+              "hypot": 0.4577,
+              "overlapping": false
+            }
+          }
+        },
+        "bothSidesClear": true,
+        "oneSideClear": true,
+        "note": "Transverse legs sit immediately fore/aft of the 80 mm plate at Z offset 2 mm (smallest inset that does not occupy the plate). They span from the ventral-keel side face |x|≈0.15 to the existing plate-edge wrap. Route was not widened. Strip outboard X is 0.805 vs certified waist xIn=0.81 (5 mm by construction)."
+      },
+      "remainingUnknowns": [
+        "No stress, fatigue, sealing, or manufacturing claim.",
+        "Sleeve, if hypothesized, is ARCHITECTURE_HYPOTHESIS only — not an authorized hole.",
+        "Keel underside protrudes ~10 mm below plate minY; that occupied bar is not a through-passage."
+      ]
+    }
+  ],
+  "closureCheck": {
+    "result": "COMPLETE_DOGLEG_CLEAR",
+    "ks1OutcomeStands": true,
+    "stations": [
+      "COMPLETE_DOGLEG_CLEAR",
+      "COMPLETE_DOGLEG_CLEAR",
+      "COMPLETE_DOGLEG_CLEAR"
+    ],
+    "waistXIn": 0.81,
+    "stripOutboardAbsX": 0.805,
+    "deltaXStripToWaistXIn": 0.005,
+    "note": "Complete doglegs (outbound + wrap + inbound) are keepout-clear, fixed-clear, and motion-CLEAR at all three stations. Outcome A stands. Route was not widened. Strip max |x|=0.805 vs certified waist xIn=0.81."
+  },
+  "outcome": {
+    "code": "A",
+    "name": "CROSSINGS_FEASIBLE_WITHOUT_STRUCTURE_CHANGE",
+    "rationale": "All three plate crossings can use existing passage, edge bypass, and/or surface handoff. No sleeve is required."
+  },
+  "nextSlice": {
+    "id": "service-route-architecture",
+    "title": "Generic service-route architecture on the proven edge-bypass skeleton",
+    "reason": "All three stations can be crossed by keel-height edge bypass without changing frozen plates or keel. Next is route architecture on that skeleton, still without professions."
+  }
+}

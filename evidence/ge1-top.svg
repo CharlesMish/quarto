@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360">
+  <rect width="760" height="360" fill="#0e1214"/>
+  <text x="16" y="22" fill="#e6a93c" font-size="12" font-family="monospace">GE1 TOP · +X stbd right · +Z forward up</text>
+  <rect x="65.5" y="60.0" width="629.0" height="242.4" fill="none" stroke="#8e999a" stroke-dasharray="4 3"/>
+  <rect x="271.4" y="60.0" width="217.2" height="242.4" fill="none" stroke="#e6a93c" />
+  <text x="16" y="342" fill="#8e999a" font-size="10" font-family="monospace">gray dashed=SPREAD W 13.320 · amber=DRIVE W 4.600 · sketch 3.0–3.6 is not a target</text>
+</svg>

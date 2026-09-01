@@ -1,0 +1,1644 @@
+{
+  "schema": "MT1-S5HR3R1-negative-control-ledger-v1",
+  "complete": true,
+  "controls": [
+    {
+      "id": "NC-UPSTREAM",
+      "mutation": {
+        "rearBookReady": false
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "driveT==0",
+        "publicReady==false"
+      ],
+      "allowedCascadeContract": [],
+      "allowedCascadeFailures": [],
+      "actualFailedGates": [
+        "driveT==0",
+        "publicReady==false"
+      ],
+      "expectedFailedClosures": [],
+      "actualFailedClosures": [],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "NOT_APPLICABLE_EXTERNAL_UPSTREAM_CONTROL",
+      "authorityNcRowStatus": "NOT_APPLICABLE_EXTERNAL_UPSTREAM_CONTROL",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-SPIGOT",
+      "mutation": {
+        "shortSpigot": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P5"
+      ],
+      "allowedCascadeContract": [],
+      "allowedCascadeFailures": [],
+      "actualFailedGates": [
+        "S5-P5"
+      ],
+      "expectedFailedClosures": [],
+      "actualFailedClosures": [],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "ins=0.030 ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC1",
+      "mutation": {
+        "blockPassage": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P3",
+        "S5-P5"
+      ],
+      "allowedCascadeContract": [],
+      "allowedCascadeFailures": [],
+      "actualFailedGates": [
+        "S5-P3",
+        "S5-P5"
+      ],
+      "expectedFailedClosures": [
+        "C2"
+      ],
+      "actualFailedClosures": [
+        "C2"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "P3 fails when plate inserted",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC4",
+      "mutation": {
+        "blockReceiver": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P5"
+      ],
+      "allowedCascadeContract": [
+        "S5-P3",
+        "C2"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P3",
+        "C2"
+      ],
+      "actualFailedGates": [
+        "S5-P3",
+        "S5-P5"
+      ],
+      "expectedFailedClosures": [],
+      "actualFailedClosures": [
+        "C2"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "P5/P6 fail when receiver blocked",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-LOCK1",
+      "mutation": {
+        "removeLock": "PORT"
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7"
+      ],
+      "allowedCascadeContract": [
+        "S5-P8",
+        "S5-P9",
+        "S5-P10",
+        "S5-P14",
+        "C4",
+        "C6",
+        "C8",
+        "C13",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P8",
+        "S5-P9",
+        "S5-P10",
+        "S5-P14",
+        "C4",
+        "C6",
+        "C8",
+        "C13",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P8",
+        "S5-P9",
+        "S5-P10",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [],
+      "actualFailedClosures": [
+        "C4",
+        "C6",
+        "C8",
+        "C13",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "P7/P9/P12 fail",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC6",
+      "mutation": {
+        "bottomDog": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P8"
+      ],
+      "allowedCascadeContract": [],
+      "allowedCascadeFailures": [],
+      "actualFailedGates": [
+        "S5-P8"
+      ],
+      "expectedFailedClosures": [],
+      "actualFailedClosures": [],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "P8 fails",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-SHOULDER-FLOAT",
+      "mutation": {
+        "floatShoulder": "PORT"
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P9"
+      ],
+      "allowedCascadeContract": [
+        "S5-P7",
+        "S5-P10",
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C13",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P7",
+        "S5-P10",
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C13",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P9",
+        "S5-P10",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C13",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "retained=true p9=false ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-TRACK-FLOAT",
+      "mutation": {
+        "trackFloat": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7"
+      ],
+      "allowedCascadeContract": [
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C14",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "retained=true supp=false p7=false ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-OPEN-CAM",
+      "mutation": {
+        "openCam": "PORT"
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "allowedCascadeContract": [
+        "S5-P14",
+        "C6",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P14",
+        "C6",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [
+        "C8",
+        "C14",
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "incomplete lock/track inventory missing=S5_LOCK_RAIL_B_PORT_CAM,S5_LOCK_RAIL_B_PORT_CAM_ENTRY,S5_LOCK_RAIL_B_PORT_CAM_EXIT,S5_LOCK_RAIL_B_PORT_CAPTURE,S5_LOCK_RAIL_B_PORT_LEAD,S5_LOCK_RAIL_B_PORT_MOUTH,S5_LOCK_RAIL_B_PORT_TRANSITION unclassified= invalid= conflicting=",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-SOLID-GUIDE",
+      "mutation": {
+        "solidGuide": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7"
+      ],
+      "allowedCascadeContract": [
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "internalHits=S5_LOCK_PIN_PORT∩S5_CAN_PORT_GUIDE_PLUG_VIS@PREREQUISITE p7=false ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-ZERO-RETAINED-MARGIN",
+      "mutation": {
+        "zeroMargin": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [],
+      "allowedCascadeContract": [
+        "S5-P7",
+        "S5-P12",
+        "C8",
+        "C14",
+        "C18",
+        "C21",
+        "C23"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P7",
+        "S5-P12",
+        "C8",
+        "C14",
+        "C18",
+        "C21"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "expectedFailedClosures": [
+        "C17"
+      ],
+      "actualFailedClosures": [
+        "C8",
+        "C14",
+        "C17",
+        "C18",
+        "C21"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "retained=true portMar=-0.005615 p7=false ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-CAM-GAP",
+      "mutation": {
+        "camGap": "PORT"
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7"
+      ],
+      "allowedCascadeContract": [
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C16",
+        "C17",
+        "C18",
+        "C21",
+        "C22",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C16",
+        "C17",
+        "C18",
+        "C21",
+        "C22",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C14",
+        "C16",
+        "C17",
+        "C18",
+        "C21",
+        "C22",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "c14=false p7=false p12=false ready=false S5_LOCK_PIN_PORT[AUTHORITY_ROW_00006T]∩S5_CAN_PORT[AUTHORITY_ROW_000066]@FORWARD:1.00000 sep=-Infinity",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-NONCURRENT-RAIL-INTRUSION",
+      "mutation": {
+        "railIntrude": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7"
+      ],
+      "allowedCascadeContract": [
+        "S5-P12",
+        "C8",
+        "C23"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P12",
+        "C8",
+        "C23"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "expectedFailedClosures": [
+        "C14",
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C8",
+        "C14",
+        "C18",
+        "C23"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "c14=false firstHit=S5_LOCK_RAIL_INTRUDE_PORT_VIS[AUTHORITY_ROW_00008E]∩S5_LOCK_RAIL_A_PORT_CAM[AUTHORITY_ROW_000082]@PREREQUISITE:1.00000 sep=-0.0013129 pairs=3109888 ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-BACKING-PLUG",
+      "mutation": {
+        "backingPlug": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P6",
+        "S5-P7"
+      ],
+      "allowedCascadeContract": [
+        "S5-P12",
+        "C8",
+        "C14",
+        "C18",
+        "C23"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P12",
+        "C8",
+        "C14",
+        "C18"
+      ],
+      "actualFailedGates": [
+        "S5-P6",
+        "S5-P7",
+        "S5-P12"
+      ],
+      "expectedFailedClosures": [],
+      "actualFailedClosures": [
+        "C8",
+        "C14",
+        "C18"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "p6=false p7=false ready=false hit=S5_LOCK_PIN_PORT[AUTHORITY_ROW_00006T]∩S5_LOCK_BACKING_PLUG_PORT_VIS[AUTHORITY_ROW_00008G]@PREREQUISITE:1.00000 sep=-0.0180000",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-NAMED-TRACK-INTRUDER",
+      "mutation": {
+        "namedIntrude": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [],
+      "allowedCascadeContract": [
+        "S5-P7",
+        "S5-P12",
+        "C8",
+        "C14",
+        "C23"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P7",
+        "S5-P12",
+        "C8",
+        "C14",
+        "C23"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "expectedFailedClosures": [
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C8",
+        "C14",
+        "C18",
+        "C23"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "c18=false firstHit=S5_NC_TRACK_WEDGE_VIS[AUTHORITY_ROW_00008F]∩S5_LOCK_RAIL_A_PORT_CAM[AUTHORITY_ROW_000082]@PREREQUISITE:1.00000 sep=-0.0022770 ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-UNCLASSIFIED-SOLID",
+      "mutation": {
+        "unclassifiedIntrude": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [],
+      "allowedCascadeContract": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "complete=false unclassified= ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-ENTRY-BLOCK",
+      "mutation": {
+        "entryBlock": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "allowedCascadeContract": [
+        "C8",
+        "C14",
+        "C18"
+      ],
+      "allowedCascadeFailures": [
+        "C8",
+        "C14",
+        "C18"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "expectedFailedClosures": [
+        "C23"
+      ],
+      "actualFailedClosures": [
+        "C8",
+        "C14",
+        "C18",
+        "C23"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "entry=false hit=S5_NC_ENTRY_MOUTH_BLOCK_VIS[AUTHORITY_ROW_00008H]∩S5_LOCK_RAIL_A_PORT_MOUTH[AUTHORITY_ROW_00007Y]@PREREQUISITE:1.00000 sep=-0.0000004 ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-REVERSE-JAM",
+      "mutation": {
+        "reverseJam": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "allowedCascadeContract": [
+        "C8",
+        "C14",
+        "C18",
+        "C21",
+        "C23"
+      ],
+      "allowedCascadeFailures": [
+        "C8",
+        "C14",
+        "C18",
+        "C21"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [
+        "C6",
+        "C22",
+        "C25"
+      ],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C14",
+        "C18",
+        "C21",
+        "C22",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "reverse=false leads=-0.006626,-0.006626,-Infinity,-Infinity ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-MISSING-TRACK-PIECE",
+      "mutation": {
+        "missingTrackPiece": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "allowedCascadeContract": [
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "missing=S5_LOCK_RAIL_B_PORT_CAM p7=false p12=false ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-MISSING-B-FACES",
+      "mutation": {
+        "missingBFaces": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "allowedCascadeContract": [
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "missingB=S5_LOCK_RAIL_B_PORT_CAM,S5_LOCK_RAIL_B_PORT_CAM_ENTRY,S5_LOCK_RAIL_B_PORT_CAM_EXIT,S5_LOCK_RAIL_B_PORT_CAPTURE,S5_LOCK_RAIL_B_PORT_LEAD,S5_LOCK_RAIL_B_PORT_TRANSITION ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-UNTAGGED-CORRIDOR-SOLID",
+      "mutation": {
+        "untaggedCorridorSolid": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "allowedCascadeContract": [
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "relevant=true unclassified=S5_NC_UNCLASSIFIED_INTRUDER_VIS ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-MIDDLE-PATH-INTRUDER",
+      "mutation": {
+        "middlePathIntruder": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "allowedCascadeContract": [
+        "C8",
+        "C14",
+        "C23"
+      ],
+      "allowedCascadeFailures": [
+        "C8",
+        "C14",
+        "C23"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "expectedFailedClosures": [
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C8",
+        "C14",
+        "C18",
+        "C23"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "firstHit=S5_LOCK_RAIL_INTRUDE_PORT_VIS[AUTHORITY_ROW_00008E]∩S5_LOCK_RAIL_A_PORT_CAM[AUTHORITY_ROW_000082]@PREREQUISITE:1.00000 sep=-0.0013129 scope=true ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-PATH-MOVING-UNTAGGED",
+      "mutation": {
+        "pathMovingUntagged": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "allowedCascadeContract": [
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "C8",
+        "C14",
+        "C23"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "expectedFailedClosures": [
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C8",
+        "C14",
+        "C18",
+        "C23"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "pathAdded=true hit=S5_NC_PATH_MOVING_UNTAGGED_VIS[AUTHORITY_ROW_0000AL]∩S5_LOCK_RAIL_A_PORT_CAM[AUTHORITY_ROW_000082]@FORWARD:0.98244 sep=-0.0000081 unclassified=S5_NC_PATH_MOVING_UNTAGGED_VIS ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-FORGED-SURROUNDING-FAMILY",
+      "mutation": {
+        "forgedSurroundingFamily": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "S5-P7",
+        "S5-P12"
+      ],
+      "allowedCascadeContract": [
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C14",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "relevant=true approved=false hit=S5_NC_FORGED_SURROUNDING_VIS[AUTHORITY_ROW_0000AM]∩S5_LOCK_RAIL_A_PORT_CAM[AUTHORITY_ROW_000082]@PREREQUISITE:1.00000 sep=-0.0056881 ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-MIDPATH-TRANSIENT-ROW",
+      "mutation": {
+        "midpathTransientRow": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [],
+      "allowedCascadeContract": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C15",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P7",
+        "C8",
+        "C14",
+        "C15",
+        "C23"
+      ],
+      "actualFailedGates": [
+        "S5-P7"
+      ],
+      "expectedFailedClosures": [
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C8",
+        "C14",
+        "C15",
+        "C18",
+        "C23"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "retained=true hit=S5_NC_MIDPATH_TRANSIENT_VIS[AUTHORITY_ROW_0000AN]∩S5_LOCK_RAIL_A_PORT_CAM[AUTHORITY_ROW_000082]@FORWARD:0.98470 sep=-0.0056881 ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-DUPLICATE-AUTHORITY-NAME",
+      "mutation": {
+        "duplicateAuthorityName": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [],
+      "allowedCascadeContract": [
+        "S5-P3",
+        "S5-P4",
+        "S5-P5",
+        "S5-P7",
+        "S5-P8",
+        "S5-P9",
+        "S5-P10",
+        "S5-P11",
+        "S5-P12",
+        "S5-P14",
+        "C2",
+        "C3",
+        "C4",
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P3",
+        "S5-P4",
+        "S5-P5",
+        "S5-P7",
+        "S5-P8",
+        "S5-P9",
+        "S5-P10",
+        "S5-P11",
+        "S5-P14",
+        "C2",
+        "C3",
+        "C4",
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P3",
+        "S5-P4",
+        "S5-P5",
+        "S5-P7",
+        "S5-P8",
+        "S5-P9",
+        "S5-P10",
+        "S5-P11",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C2",
+        "C3",
+        "C4",
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "namesUnique=false duplicates=S5_LOCK_PIN_PORT:AUTHORITY_ROW_00006T|AUTHORITY_ROW_0000AO ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-DUPLICATE-MOVING-ROW",
+      "mutation": {
+        "duplicateMovingRow": true
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [],
+      "allowedCascadeContract": [
+        "S5-P7",
+        "S5-P12",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C15",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "allowedCascadeFailures": [
+        "S5-P7",
+        "S5-P14",
+        "C6",
+        "C8",
+        "C14",
+        "C15",
+        "C17",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "actualFailedGates": [
+        "S5-P7",
+        "S5-P14"
+      ],
+      "expectedFailedClosures": [
+        "C18"
+      ],
+      "actualFailedClosures": [
+        "C6",
+        "C8",
+        "C14",
+        "C15",
+        "C17",
+        "C18",
+        "C19",
+        "C21",
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "PASS",
+      "authorityNcRowStatus": "PASS",
+      "authorityNcDetail": "movingMoving=36 hit=S5_LOCK_PIN_PORT[AUTHORITY_ROW_00006T]∩S5_NC_DUPLICATE_MOVING_ROW_VIS[AUTHORITY_ROW_0000AP]@PREREQUISITE:1.00000 sep=-0.0200000 ready=false",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    },
+    {
+      "id": "NC-CERTIFICATE-ABSENT",
+      "mutation": {
+        "certificate": "ABSENT"
+      },
+      "mutationApplied": true,
+      "expectedFailingGates": [
+        "evaluate==false",
+        "raw==false",
+        "getter==false"
+      ],
+      "allowedCascadeContract": [],
+      "allowedCascadeFailures": [],
+      "actualFailedGates": [
+        "evaluate==false",
+        "raw==false",
+        "getter==false"
+      ],
+      "expectedFailedClosures": [],
+      "actualFailedClosures": [],
+      "publicReadyExpectation": false,
+      "actualPublicReady": false,
+      "expectedAuthorityNcRowStatus": "NOT_APPLICABLE_API_CONTROL",
+      "authorityNcRowStatus": "NOT_APPLICABLE_API_CONTROL",
+      "unexpectedFailures": [],
+      "baselineRestorationVerified": true,
+      "restorationReadiness": {
+        "raw": true,
+        "evaluate": true,
+        "getter": true,
+        "certificate": true
+      },
+      "finalControlResult": "PASS"
+    }
+  ]
+}

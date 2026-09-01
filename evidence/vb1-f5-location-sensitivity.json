@@ -1,0 +1,3673 @@
+{
+  "freezeId": "MT1-VB1-AR1",
+  "status": "PENDING_DIRECTOR_ASSUMPTION_DISPOSITION",
+  "computed_disposition_after_F5": "BALANCE_CONCEPT_SURVIVES_WITH_CAUTION",
+  "analyst_disposition": "BALANCE_CONCEPT_SURVIVES_WITH_CAUTION",
+  "externally_adjudicated_disposition": "BALANCE_CONCEPT_SURVIVES_WITH_CAUTION",
+  "disposition_provenance": {
+    "tag": "RECORD",
+    "analyst_disposition": "BALANCE_CONCEPT_SURVIVES_WITH_CAUTION",
+    "externally_adjudicated_disposition": "BALANCE_CONCEPT_SURVIVES_WITH_CAUTION",
+    "computed_from_internal_robust_red_predicate": false,
+    "note": "Disposition is not the output of an internal robust-RED boolean. It is the existing VB1 analyst disposition, independently confirmed by Codex rule adjudication of VB1+AR1. Location-sensitivity observations (including F5_AFT NOMINAL aft-of-rear) remain reported facts; they do not auto-promote RED."
+  },
+  "originalDisposition": "BALANCE_CONCEPT_SURVIVES_WITH_CAUTION",
+  "sourceS4aSha256": "95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8",
+  "originalVb1ZipSha256": "56957e0fd649f44add2761ff950e23127359631fa14183bc7a457b7743997d9e",
+  "inventory": {
+    "tag": "GEOMETRY_FACT",
+    "members": [
+      {
+        "name": "BULKHEAD_Z3p35",
+        "role": "keel",
+        "center": {
+          "x_lat": 0,
+          "y_vert": 0.8100000023841858,
+          "z_long": 3.3499999046325684
+        },
+        "zMin": 3.3099999046325683,
+        "zMax": 3.3899999046325684,
+        "band": "forward-central"
+      },
+      {
+        "name": "DORSAL_LONGERON",
+        "role": "keel",
+        "center": {
+          "x_lat": 0,
+          "y_vert": 1.5199999809265137,
+          "z_long": 1.4249999523162842
+        },
+        "zMin": -1.7000000476837158,
+        "zMax": 4.549999952316284,
+        "band": "forward-central"
+      },
+      {
+        "name": "BULKHEAD_Z1p15",
+        "role": "keel",
+        "center": {
+          "x_lat": 0,
+          "y_vert": 0.8100000023841858,
+          "z_long": 1.149999976158142
+        },
+        "zMin": 1.109999976158142,
+        "zMax": 1.1899999761581421,
+        "band": "forward-central"
+      },
+      {
+        "name": "VENTRAL_KEEL",
+        "role": "keel",
+        "center": {
+          "x_lat": 0,
+          "y_vert": 0.10000000149011612,
+          "z_long": -0.20000000298023224
+        },
+        "zMin": -4.950000002980232,
+        "zMax": 4.549999997019768,
+        "band": "spanning"
+      },
+      {
+        "name": "BULKHEAD_Z-1p70",
+        "role": "keel",
+        "center": {
+          "x_lat": 0,
+          "y_vert": 0.8100000023841858,
+          "z_long": -1.7000000476837158
+        },
+        "zMin": -1.7400000476837159,
+        "zMax": -1.6600000476837158,
+        "band": "aft-central/bay"
+      },
+      {
+        "name": "BAY_WALL_PORT",
+        "role": "keel",
+        "center": {
+          "x_lat": -0.6700000166893005,
+          "y_vert": 0.7799999713897705,
+          "z_long": -3.25
+        },
+        "zMin": -4.8,
+        "zMax": -1.7000000000000002,
+        "band": "aft-central/bay"
+      },
+      {
+        "name": "BAY_WALL_STBD",
+        "role": "keel",
+        "center": {
+          "x_lat": 0.6700000166893005,
+          "y_vert": 0.7799999713897705,
+          "z_long": -3.25
+        },
+        "zMin": -4.8,
+        "zMax": -1.7000000000000002,
+        "band": "aft-central/bay"
+      },
+      {
+        "name": "AFT_POST_PORT",
+        "role": "keel",
+        "center": {
+          "x_lat": -0.6499999761581421,
+          "y_vert": 0.7799999713897705,
+          "z_long": -4.800000190734863
+        },
+        "zMin": -4.850000190734863,
+        "zMax": -4.7500001907348635,
+        "band": "aft-central/bay"
+      },
+      {
+        "name": "AFT_POST_STBD",
+        "role": "keel",
+        "center": {
+          "x_lat": 0.6499999761581421,
+          "y_vert": 0.7799999713897705,
+          "z_long": -4.800000190734863
+        },
+        "zMin": -4.850000190734863,
+        "zMax": -4.7500001907348635,
+        "band": "aft-central/bay"
+      }
+    ],
+    "names": [
+      "AFT_POST_PORT",
+      "AFT_POST_STBD",
+      "BAY_WALL_PORT",
+      "BAY_WALL_STBD",
+      "BULKHEAD_Z-1p70",
+      "BULKHEAD_Z1p15",
+      "BULKHEAD_Z3p35",
+      "DORSAL_LONGERON",
+      "VENTRAL_KEEL"
+    ],
+    "foreign": [],
+    "occupied": {
+      "zMin": -4.950000002980232,
+      "zMax": 4.549999997019768,
+      "yMin": 0.030000001490116113,
+      "yMax": 1.5949999809265136
+    }
+  },
+  "proxies": {
+    "tag": "GEOMETRY_FACT",
+    "base": {
+      "x_lat": 0,
+      "y_vert": 0.8124999912083148,
+      "z_long": -0.20000000298023224
+    },
+    "forward": {
+      "x_lat": 0,
+      "y_vert": 0.8174999916553497,
+      "z_long": 1.4249999523162842
+    },
+    "aft": {
+      "x_lat": 0,
+      "y_vert": 0.8100000023841858,
+      "z_long": -3.2550001192092894
+    },
+    "extremeForward": {
+      "x_lat": 0,
+      "y_vert": 0.8124999912083148,
+      "z_long": 4.549999997019768
+    },
+    "extremeAft": {
+      "x_lat": 0,
+      "y_vert": 0.8124999912083148,
+      "z_long": -4.950000002980232
+    },
+    "forwardMembers": [
+      "DORSAL_LONGERON",
+      "BULKHEAD_Z3p35",
+      "BULKHEAD_Z1p15"
+    ],
+    "aftMembers": [
+      "BULKHEAD_Z-1p70",
+      "AFT_POST_PORT",
+      "AFT_POST_STBD",
+      "BAY_WALL_PORT",
+      "BAY_WALL_STBD"
+    ],
+    "spanningMembers": [
+      "VENTRAL_KEEL"
+    ],
+    "occupiedZ": {
+      "min": -4.950000002980232,
+      "max": 4.549999997019768
+    },
+    "locationTag": "ASSUMPTION",
+    "note": "geometry-derived candidate positions; not manufactured centroids"
+  },
+  "baseline": {
+    "SPREAD": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.4966000074446202,
+      "z_long": -0.3212834421616326,
+      "verticalThrustArm": 0.7166000074446202,
+      "verticalThrustArmNorm": 0.24753022709658729
+    },
+    "STRUCTURAL_READY": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.2779290598378379,
+      "z_long": -0.8337707677657029,
+      "verticalThrustArm": 0.49792905983783786,
+      "verticalThrustArmNorm": 0.1719962210147972
+    },
+    "DRIVE": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.2779290598378379,
+      "z_long": -1.1893645480448622,
+      "verticalThrustArm": 0.49792905983783786,
+      "verticalThrustArmNorm": 0.1719962210147972
+    }
+  },
+  "baselineReproduction": {
+    "SPREAD": 5.551115123125783e-17,
+    "STRUCTURAL_READY": 0,
+    "DRIVE": 0
+  },
+  "primary": {
+    "F5_BASE": {
+      "LOW": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.556086965378212,
+            "z_long": -0.3318298281774066,
+            "verticalThrustArm": 0.7760869653782119,
+            "verticalThrustArmNorm": 0.2680783990943737
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 12,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 1.9308226515220113e-17,
+            "y_vert": 1.5269938620786179,
+            "z_long": -0.3278141880481094,
+            "verticalThrustArm": 0.7469938620786178,
+            "verticalThrustArmNorm": 0.2580289679028041
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 12
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 9.654113257610057e-18,
+            "y_vert": 1.4538090315154004,
+            "z_long": -0.8891385032871655,
+            "verticalThrustArm": 0.6738090315154004,
+            "verticalThrustArmNorm": 0.23274923368407613
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 12
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": -1.9308226515220113e-17,
+            "y_vert": 1.3184011527621442,
+            "z_long": -0.888983176149171,
+            "verticalThrustArm": 0.5384011527621442,
+            "verticalThrustArmNorm": 0.18597621857068883
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 12
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3184011527621442,
+            "z_long": -0.888881269051396,
+            "verticalThrustArm": 0.5384011527621442,
+            "verticalThrustArmNorm": 0.18597621857068883
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 12
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3184011527621442,
+            "z_long": -1.2753962476156997,
+            "verticalThrustArm": 0.5384011527621442,
+            "verticalThrustArmNorm": 0.18597621857068883
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 12
+        }
+      },
+      "NOMINAL": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.4966000074446202,
+            "z_long": -0.3212834421616326,
+            "verticalThrustArm": 0.7166000074446202,
+            "verticalThrustArmNorm": 0.24753022709658729
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 20,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 1.7763568394002505e-17,
+            "y_vert": 1.4698343524089938,
+            "z_long": -0.3175890532426792,
+            "verticalThrustArm": 0.6898343524089938,
+            "verticalThrustArmNorm": 0.23828475040034328
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 20
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 8.881784197001253e-18,
+            "y_vert": 1.4025043082908337,
+            "z_long": -0.8340074232626108,
+            "verticalThrustArm": 0.6225043082908337,
+            "verticalThrustArmNorm": 0.21502739491911355
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 20
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": -1.7763568394002505e-17,
+            "y_vert": 1.2779290598378379,
+            "z_long": -0.8338645222956559,
+            "verticalThrustArm": 0.49792905983783786,
+            "verticalThrustArmNorm": 0.1719962210147972
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 20
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2779290598378379,
+            "z_long": -0.8337707677657029,
+            "verticalThrustArm": 0.49792905983783786,
+            "verticalThrustArmNorm": 0.1719962210147972
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 20
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2779290598378379,
+            "z_long": -1.1893645480448622,
+            "verticalThrustArm": 0.49792905983783786,
+            "verticalThrustArmNorm": 0.1719962210147972
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 20
+        }
+      },
+      "HIGH": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.4344090968776833,
+            "z_long": -0.3102576749633235,
+            "verticalThrustArm": 0.6544090968776832,
+            "verticalThrustArmNorm": 0.2260480472807196
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 30,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 1.6148698540002276e-17,
+            "y_vert": 1.410076683208932,
+            "z_long": -0.30689913958245674,
+            "verticalThrustArm": 0.630076683208932,
+            "verticalThrustArmNorm": 0.21764306846595233
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 30
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 8.074349270001138e-18,
+            "y_vert": 1.348867552192423,
+            "z_long": -0.7763703850551219,
+            "verticalThrustArm": 0.5688675521924229,
+            "verticalThrustArmNorm": 0.19650001802847078
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 30
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": -1.6148698540002276e-17,
+            "y_vert": 1.235617326326063,
+            "z_long": -0.7762404750851628,
+            "verticalThrustArm": 0.455617326326063,
+            "verticalThrustArmNorm": 0.1573807690245468
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 30
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.235617326326063,
+            "z_long": -0.7761552436942964,
+            "verticalThrustArm": 0.455617326326063,
+            "verticalThrustArmNorm": 0.1573807690245468
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 30
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.235617326326063,
+            "z_long": -1.0994223166753505,
+            "verticalThrustArm": 0.455617326326063,
+            "verticalThrustArmNorm": 0.1573807690245468
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0
+          },
+          "f5Rmu": 30
+        }
+      }
+    },
+    "F5_FORWARD_PROXY": {
+      "LOW": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.5567391393495644,
+            "z_long": -0.11987331226916531,
+            "verticalThrustArm": 0.7767391393495644,
+            "verticalThrustArmNorm": 0.26830367507756975
+          },
+          "dFromBase": {
+            "y_vert": 0.0006521739713525321,
+            "z_long": 0.21195651590824127
+          },
+          "f5Rmu": 12,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 1.9308226515220113e-17,
+            "y_vert": 1.5276460360499704,
+            "z_long": -0.11585767213986811,
+            "verticalThrustArm": 0.7476460360499704,
+            "verticalThrustArmNorm": 0.2582542438860001
+          },
+          "dFromBase": {
+            "y_vert": 0.0006521739713525321,
+            "z_long": 0.2119565159082413
+          },
+          "f5Rmu": 12
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 9.654113257610057e-18,
+            "y_vert": 1.454461205486753,
+            "z_long": -0.6771819873789242,
+            "verticalThrustArm": 0.6744612054867529,
+            "verticalThrustArmNorm": 0.23297450966727218
+          },
+          "dFromBase": {
+            "y_vert": 0.0006521739713525321,
+            "z_long": 0.21195651590824127
+          },
+          "f5Rmu": 12
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": -1.9308226515220113e-17,
+            "y_vert": 1.3190533267334965,
+            "z_long": -0.6770266602409297,
+            "verticalThrustArm": 0.5390533267334965,
+            "verticalThrustArmNorm": 0.1862014945538848
+          },
+          "dFromBase": {
+            "y_vert": 0.00065217397135231,
+            "z_long": 0.21195651590824127
+          },
+          "f5Rmu": 12
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3190533267334965,
+            "z_long": -0.6769247531431547,
+            "verticalThrustArm": 0.5390533267334965,
+            "verticalThrustArmNorm": 0.1862014945538848
+          },
+          "dFromBase": {
+            "y_vert": 0.00065217397135231,
+            "z_long": 0.21195651590824127
+          },
+          "f5Rmu": 12
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3190533267334965,
+            "z_long": -1.0634397317074584,
+            "verticalThrustArm": 0.5390533267334965,
+            "verticalThrustArmNorm": 0.1862014945538848
+          },
+          "dFromBase": {
+            "y_vert": 0.00065217397135231,
+            "z_long": 0.21195651590824127
+          },
+          "f5Rmu": 12
+        }
+      },
+      "NOMINAL": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.4976000075340272,
+            "z_long": 0.0037165488976706484,
+            "verticalThrustArm": 0.7176000075340272,
+            "verticalThrustArmNorm": 0.24787565027082115
+          },
+          "dFromBase": {
+            "y_vert": 0.0010000000894070382,
+            "z_long": 0.3249999910593033
+          },
+          "f5Rmu": 20,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 1.7763568394002505e-17,
+            "y_vert": 1.4708343524984009,
+            "z_long": 0.00741093781662407,
+            "verticalThrustArm": 0.6908343524984009,
+            "verticalThrustArmNorm": 0.23863017357457716
+          },
+          "dFromBase": {
+            "y_vert": 0.0010000000894070382,
+            "z_long": 0.3249999910593033
+          },
+          "f5Rmu": 20
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 8.881784197001253e-18,
+            "y_vert": 1.4035043083802408,
+            "z_long": -0.5090074322033076,
+            "verticalThrustArm": 0.6235043083802407,
+            "verticalThrustArmNorm": 0.2153728180933474
+          },
+          "dFromBase": {
+            "y_vert": 0.0010000000894070382,
+            "z_long": 0.3249999910593032
+          },
+          "f5Rmu": 20
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": -1.7763568394002505e-17,
+            "y_vert": 1.2789290599272447,
+            "z_long": -0.5088645312363527,
+            "verticalThrustArm": 0.4989290599272447,
+            "verticalThrustArmNorm": 0.17234164418903097
+          },
+          "dFromBase": {
+            "y_vert": 0.0010000000894068162,
+            "z_long": 0.3249999910593032
+          },
+          "f5Rmu": 20
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2789290599272447,
+            "z_long": -0.5087707767063996,
+            "verticalThrustArm": 0.4989290599272447,
+            "verticalThrustArmNorm": 0.17234164418903097
+          },
+          "dFromBase": {
+            "y_vert": 0.0010000000894068162,
+            "z_long": 0.32499999105930333
+          },
+          "f5Rmu": 20
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2789290599272447,
+            "z_long": -0.864364556985559,
+            "verticalThrustArm": 0.4989290599272447,
+            "verticalThrustArmNorm": 0.17234164418903097
+          },
+          "dFromBase": {
+            "y_vert": 0.0010000000894068162,
+            "z_long": 0.3249999910593032
+          },
+          "f5Rmu": 20
+        }
+      },
+      "HIGH": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.4357727333632382,
+            "z_long": 0.13292413102663553,
+            "verticalThrustArm": 0.6557727333632382,
+            "verticalThrustArmNorm": 0.22651907888194756
+          },
+          "dFromBase": {
+            "y_vert": 0.001363636485554931,
+            "z_long": 0.44318180598995904
+          },
+          "f5Rmu": 30,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 1.6148698540002276e-17,
+            "y_vert": 1.411440319694487,
+            "z_long": 0.13628266640750225,
+            "verticalThrustArm": 0.6314403196944869,
+            "verticalThrustArmNorm": 0.21811410006718027
+          },
+          "dFromBase": {
+            "y_vert": 0.001363636485554931,
+            "z_long": 0.443181805989959
+          },
+          "f5Rmu": 30
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 8.074349270001138e-18,
+            "y_vert": 1.3502311886779779,
+            "z_long": -0.3331885790651628,
+            "verticalThrustArm": 0.5702311886779778,
+            "verticalThrustArmNorm": 0.19697104962969875
+          },
+          "dFromBase": {
+            "y_vert": 0.001363636485554931,
+            "z_long": 0.4431818059899591
+          },
+          "f5Rmu": 30
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": -1.6148698540002276e-17,
+            "y_vert": 1.236980962811618,
+            "z_long": -0.3330586690952038,
+            "verticalThrustArm": 0.45698096281161793,
+            "verticalThrustArmNorm": 0.15785180062577475
+          },
+          "dFromBase": {
+            "y_vert": 0.001363636485554931,
+            "z_long": 0.443181805989959
+          },
+          "f5Rmu": 30
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.236980962811618,
+            "z_long": -0.33297343770433746,
+            "verticalThrustArm": 0.45698096281161793,
+            "verticalThrustArmNorm": 0.15785180062577475
+          },
+          "dFromBase": {
+            "y_vert": 0.001363636485554931,
+            "z_long": 0.443181805989959
+          },
+          "f5Rmu": 30
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.236980962811618,
+            "z_long": -0.6562405106853915,
+            "verticalThrustArm": 0.45698096281161793,
+            "verticalThrustArmNorm": 0.15785180062577475
+          },
+          "dFromBase": {
+            "y_vert": 0.001363636485554931,
+            "z_long": 0.44318180598995904
+          },
+          "f5Rmu": 30
+        }
+      }
+    },
+    "F5_AFT_PROXY": {
+      "LOW": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.5557608798794125,
+            "z_long": -0.7303081042072838,
+            "verticalThrustArm": 0.7757608798794124,
+            "verticalThrustArmNorm": 0.26796576161637736
+          },
+          "dFromBase": {
+            "y_vert": -0.00032608549879942217,
+            "z_long": -0.3984782760298772
+          },
+          "f5Rmu": 12,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 1.9308226515220113e-17,
+            "y_vert": 1.5266677765798184,
+            "z_long": -0.7262924640779864,
+            "verticalThrustArm": 0.7466677765798184,
+            "verticalThrustArmNorm": 0.2579163304248077
+          },
+          "dFromBase": {
+            "y_vert": -0.00032608549879942217,
+            "z_long": -0.398478276029877
+          },
+          "f5Rmu": 12
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 9.654113257610057e-18,
+            "y_vert": 1.453482946016601,
+            "z_long": -1.2876167793170425,
+            "verticalThrustArm": 0.673482946016601,
+            "verticalThrustArmNorm": 0.2326365962060798
+          },
+          "dFromBase": {
+            "y_vert": -0.00032608549879942217,
+            "z_long": -0.39847827602987707
+          },
+          "f5Rmu": 12
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": -1.9308226515220113e-17,
+            "y_vert": 1.3180750672633448,
+            "z_long": -1.2874614521790482,
+            "verticalThrustArm": 0.5380750672633448,
+            "verticalThrustArmNorm": 0.1858635810926925
+          },
+          "dFromBase": {
+            "y_vert": -0.00032608549879942217,
+            "z_long": -0.3984782760298772
+          },
+          "f5Rmu": 12
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3180750672633448,
+            "z_long": -1.2873595450812731,
+            "verticalThrustArm": 0.5380750672633448,
+            "verticalThrustArmNorm": 0.1858635810926925
+          },
+          "dFromBase": {
+            "y_vert": -0.00032608549879942217,
+            "z_long": -0.3984782760298772
+          },
+          "f5Rmu": 12
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3180750672633448,
+            "z_long": -1.6738745236455768,
+            "verticalThrustArm": 0.5380750672633448,
+            "verticalThrustArmNorm": 0.1858635810926925
+          },
+          "dFromBase": {
+            "y_vert": -0.00032608549879942217,
+            "z_long": -0.39847827602987707
+          },
+          "f5Rmu": 12
+        }
+      },
+      "NOMINAL": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.4961000096797943,
+            "z_long": -0.9322834654074441,
+            "verticalThrustArm": 0.7161000096797943,
+            "verticalThrustArmNorm": 0.24735751629699285
+          },
+          "dFromBase": {
+            "y_vert": -0.0004999977648258991,
+            "z_long": -0.6110000232458115
+          },
+          "f5Rmu": 20,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+            "aftOfRear": true,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 1.7763568394002505e-17,
+            "y_vert": 1.469334354644168,
+            "z_long": -0.9285890764884905,
+            "verticalThrustArm": 0.6893343546441679,
+            "verticalThrustArmNorm": 0.23811203960074884
+          },
+          "dFromBase": {
+            "y_vert": -0.0004999977648258991,
+            "z_long": -0.6110000232458113
+          },
+          "f5Rmu": 20
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 8.881784197001253e-18,
+            "y_vert": 1.4020043105260078,
+            "z_long": -1.4450074465084222,
+            "verticalThrustArm": 0.6220043105260078,
+            "verticalThrustArmNorm": 0.2148546841195191
+          },
+          "dFromBase": {
+            "y_vert": -0.0004999977648258991,
+            "z_long": -0.6110000232458114
+          },
+          "f5Rmu": 20
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": -1.7763568394002505e-17,
+            "y_vert": 1.277429062073012,
+            "z_long": -1.4448645455414675,
+            "verticalThrustArm": 0.49742906207301196,
+            "verticalThrustArmNorm": 0.17182351021520276
+          },
+          "dFromBase": {
+            "y_vert": -0.0004999977648258991,
+            "z_long": -0.6110000232458116
+          },
+          "f5Rmu": 20
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.277429062073012,
+            "z_long": -1.4447707910115144,
+            "verticalThrustArm": 0.49742906207301196,
+            "verticalThrustArmNorm": 0.17182351021520276
+          },
+          "dFromBase": {
+            "y_vert": -0.0004999977648258991,
+            "z_long": -0.6110000232458115
+          },
+          "f5Rmu": 20
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.277429062073012,
+            "z_long": -1.8003645712906737,
+            "verticalThrustArm": 0.49742906207301196,
+            "verticalThrustArmNorm": 0.17182351021520276
+          },
+          "dFromBase": {
+            "y_vert": -0.0004999977648258991,
+            "z_long": -0.6110000232458115
+          },
+          "f5Rmu": 20
+        }
+      },
+      "HIGH": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.4337272817438298,
+            "z_long": -1.1434395248439753,
+            "verticalThrustArm": 0.6537272817438298,
+            "verticalThrustArmNorm": 0.2258125325539999
+          },
+          "dFromBase": {
+            "y_vert": -0.0006818151338534584,
+            "z_long": -0.8331818498806518
+          },
+          "f5Rmu": 30,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+            "aftOfRear": true,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 1.6148698540002276e-17,
+            "y_vert": 1.4093948680750785,
+            "z_long": -1.1400809894631088,
+            "verticalThrustArm": 0.6293948680750785,
+            "verticalThrustArmNorm": 0.21740755373923265
+          },
+          "dFromBase": {
+            "y_vert": -0.0006818151338534584,
+            "z_long": -0.833181849880652
+          },
+          "f5Rmu": 30
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 8.074349270001138e-18,
+            "y_vert": 1.3481857370585695,
+            "z_long": -1.6095522349357736,
+            "verticalThrustArm": 0.5681857370585695,
+            "verticalThrustArmNorm": 0.1962645033017511
+          },
+          "dFromBase": {
+            "y_vert": -0.0006818151338534584,
+            "z_long": -0.8331818498806517
+          },
+          "f5Rmu": 30
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": -1.6148698540002276e-17,
+            "y_vert": 1.2349355111922096,
+            "z_long": -1.6094223249658148,
+            "verticalThrustArm": 0.45493551119220954,
+            "verticalThrustArmNorm": 0.15714525429782714
+          },
+          "dFromBase": {
+            "y_vert": -0.0006818151338534584,
+            "z_long": -0.833181849880652
+          },
+          "f5Rmu": 30
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.2349355111922096,
+            "z_long": -1.6093370935749485,
+            "verticalThrustArm": 0.45493551119220954,
+            "verticalThrustArmNorm": 0.15714525429782714
+          },
+          "dFromBase": {
+            "y_vert": -0.0006818151338534584,
+            "z_long": -0.833181849880652
+          },
+          "f5Rmu": 30
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.2349355111922096,
+            "z_long": -1.9326041665560023,
+            "verticalThrustArm": 0.45493551119220954,
+            "verticalThrustArmNorm": 0.15714525429782714
+          },
+          "dFromBase": {
+            "y_vert": -0.0006818151338534584,
+            "z_long": -0.8331818498806518
+          },
+          "f5Rmu": 30
+        }
+      }
+    },
+    "F5_SPLIT_50_50": {
+      "LOW": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.5562500096144882,
+            "z_long": -0.4250907082382245,
+            "verticalThrustArm": 0.7762500096144882,
+            "verticalThrustArmNorm": 0.26813471834697344
+          },
+          "dFromBase": {
+            "y_vert": 0.0001630442362763329,
+            "z_long": -0.0932608800608179
+          },
+          "f5Rmu": 12,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 1.9308226515220113e-17,
+            "y_vert": 1.5271569063148944,
+            "z_long": -0.4210750681089273,
+            "verticalThrustArm": 0.7471569063148944,
+            "verticalThrustArmNorm": 0.2580852871554039
+          },
+          "dFromBase": {
+            "y_vert": 0.00016304423627655495,
+            "z_long": -0.0932608800608179
+          },
+          "f5Rmu": 12
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 9.654113257610057e-18,
+            "y_vert": 1.4539720757516772,
+            "z_long": -0.9823993833479834,
+            "verticalThrustArm": 0.6739720757516772,
+            "verticalThrustArmNorm": 0.23280555293667604
+          },
+          "dFromBase": {
+            "y_vert": 0.000163044236276777,
+            "z_long": -0.0932608800608179
+          },
+          "f5Rmu": 12
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": -1.9308226515220113e-17,
+            "y_vert": 1.3185641969984208,
+            "z_long": -0.9822440562099889,
+            "verticalThrustArm": 0.5385641969984207,
+            "verticalThrustArmNorm": 0.18603253782328869
+          },
+          "dFromBase": {
+            "y_vert": 0.00016304423627655495,
+            "z_long": -0.0932608800608179
+          },
+          "f5Rmu": 12
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3185641969984208,
+            "z_long": -0.9821421491122139,
+            "verticalThrustArm": 0.5385641969984207,
+            "verticalThrustArmNorm": 0.18603253782328869
+          },
+          "dFromBase": {
+            "y_vert": 0.00016304423627655495,
+            "z_long": -0.0932608800608179
+          },
+          "f5Rmu": 12
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3185641969984208,
+            "z_long": -1.3686571276765176,
+            "verticalThrustArm": 0.5385641969984207,
+            "verticalThrustArmNorm": 0.18603253782328869
+          },
+          "dFromBase": {
+            "y_vert": 0.00016304423627655495,
+            "z_long": -0.0932608800608179
+          },
+          "f5Rmu": 12
+        }
+      },
+      "NOMINAL": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.4968500086069108,
+            "z_long": -0.4642834582548867,
+            "verticalThrustArm": 0.7168500086069107,
+            "verticalThrustArmNorm": 0.24761658328390698
+          },
+          "dFromBase": {
+            "y_vert": 0.00025000116229056957,
+            "z_long": -0.14300001609325408
+          },
+          "f5Rmu": 20,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 1.7763568394002505e-17,
+            "y_vert": 1.4700843535712844,
+            "z_long": -0.4605890693359333,
+            "verticalThrustArm": 0.6900843535712844,
+            "verticalThrustArmNorm": 0.238371106587663
+          },
+          "dFromBase": {
+            "y_vert": 0.00025000116229056957,
+            "z_long": -0.14300001609325408
+          },
+          "f5Rmu": 20
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 8.881784197001253e-18,
+            "y_vert": 1.4027543094531243,
+            "z_long": -0.9770074393558649,
+            "verticalThrustArm": 0.6227543094531243,
+            "verticalThrustArmNorm": 0.21511375110643324
+          },
+          "dFromBase": {
+            "y_vert": 0.00025000116229056957,
+            "z_long": -0.14300001609325408
+          },
+          "f5Rmu": 20
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": -1.7763568394002505e-17,
+            "y_vert": 1.2781790610001285,
+            "z_long": -0.97686453838891,
+            "verticalThrustArm": 0.49817906100012843,
+            "verticalThrustArmNorm": 0.1720825772021169
+          },
+          "dFromBase": {
+            "y_vert": 0.00025000116229056957,
+            "z_long": -0.14300001609325408
+          },
+          "f5Rmu": 20
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2781790610001285,
+            "z_long": -0.976770783858957,
+            "verticalThrustArm": 0.49817906100012843,
+            "verticalThrustArmNorm": 0.1720825772021169
+          },
+          "dFromBase": {
+            "y_vert": 0.00025000116229056957,
+            "z_long": -0.14300001609325408
+          },
+          "f5Rmu": 20
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2781790610001285,
+            "z_long": -1.3323645641381165,
+            "verticalThrustArm": 0.49817906100012843,
+            "verticalThrustArmNorm": 0.1720825772021169
+          },
+          "dFromBase": {
+            "y_vert": 0.00025000116229056957,
+            "z_long": -0.1430000160932543
+          },
+          "f5Rmu": 20
+        }
+      },
+      "HIGH": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.434750007553534,
+            "z_long": -0.50525769690867,
+            "verticalThrustArm": 0.654750007553534,
+            "verticalThrustArmNorm": 0.22616580571797373
+          },
+          "dFromBase": {
+            "y_vert": 0.0003409106758507363,
+            "z_long": -0.19500002194534644
+          },
+          "f5Rmu": 30,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 1.6148698540002276e-17,
+            "y_vert": 1.4104175938847827,
+            "z_long": -0.5018991615278032,
+            "verticalThrustArm": 0.6304175938847827,
+            "verticalThrustArmNorm": 0.21776082690320644
+          },
+          "dFromBase": {
+            "y_vert": 0.0003409106758507363,
+            "z_long": -0.1950000219453465
+          },
+          "f5Rmu": 30
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 8.074349270001138e-18,
+            "y_vert": 1.349208462868274,
+            "z_long": -0.9713704070004683,
+            "verticalThrustArm": 0.5692084628682739,
+            "verticalThrustArmNorm": 0.196617776465725
+          },
+          "dFromBase": {
+            "y_vert": 0.00034091067585095836,
+            "z_long": -0.19500002194534638
+          },
+          "f5Rmu": 30
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": -1.6148698540002276e-17,
+            "y_vert": 1.235958237001914,
+            "z_long": -0.9712404970305094,
+            "verticalThrustArm": 0.45595823700191396,
+            "verticalThrustArmNorm": 0.157498527461801
+          },
+          "dFromBase": {
+            "y_vert": 0.00034091067585095836,
+            "z_long": -0.1950000219453466
+          },
+          "f5Rmu": 30
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.235958237001914,
+            "z_long": -0.971155265639643,
+            "verticalThrustArm": 0.45595823700191396,
+            "verticalThrustArmNorm": 0.157498527461801
+          },
+          "dFromBase": {
+            "y_vert": 0.00034091067585095836,
+            "z_long": -0.1950000219453466
+          },
+          "f5Rmu": 30
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.235958237001914,
+            "z_long": -1.2944223386206968,
+            "verticalThrustArm": 0.45595823700191396,
+            "verticalThrustArmNorm": 0.157498527461801
+          },
+          "dFromBase": {
+            "y_vert": 0.00034091067585095836,
+            "z_long": -0.19500002194534627
+          },
+          "f5Rmu": 30
+        }
+      }
+    },
+    "F5_SPLIT_75F_25A": {
+      "LOW": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.5564945744820264,
+            "z_long": -0.2724820102536949,
+            "verticalThrustArm": 0.7764945744820264,
+            "verticalThrustArmNorm": 0.2682191967122716
+          },
+          "dFromBase": {
+            "y_vert": 0.0004076091038145435,
+            "z_long": 0.05934781792371169
+          },
+          "f5Rmu": 12,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 1.9308226515220113e-17,
+            "y_vert": 1.5274014711824324,
+            "z_long": -0.2684663701243977,
+            "verticalThrustArm": 0.7474014711824324,
+            "verticalThrustArmNorm": 0.25816976552070203
+          },
+          "dFromBase": {
+            "y_vert": 0.0004076091038145435,
+            "z_long": 0.05934781792371169
+          },
+          "f5Rmu": 12
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 9.654113257610057e-18,
+            "y_vert": 1.454216640619215,
+            "z_long": -0.8297906853634538,
+            "verticalThrustArm": 0.6742166406192149,
+            "verticalThrustArmNorm": 0.23289003130197408
+          },
+          "dFromBase": {
+            "y_vert": 0.0004076091038145435,
+            "z_long": 0.05934781792371169
+          },
+          "f5Rmu": 12
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": -1.9308226515220113e-17,
+            "y_vert": 1.3188087618659587,
+            "z_long": -0.8296353582254593,
+            "verticalThrustArm": 0.5388087618659587,
+            "verticalThrustArmNorm": 0.18611701618858678
+          },
+          "dFromBase": {
+            "y_vert": 0.0004076091038145435,
+            "z_long": 0.05934781792371169
+          },
+          "f5Rmu": 12
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3188087618659587,
+            "z_long": -0.8295334511276843,
+            "verticalThrustArm": 0.5388087618659587,
+            "verticalThrustArmNorm": 0.18611701618858678
+          },
+          "dFromBase": {
+            "y_vert": 0.0004076091038145435,
+            "z_long": 0.05934781792371169
+          },
+          "f5Rmu": 12
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3188087618659587,
+            "z_long": -1.216048429691988,
+            "verticalThrustArm": 0.5388087618659587,
+            "verticalThrustArmNorm": 0.18611701618858678
+          },
+          "dFromBase": {
+            "y_vert": 0.0004076091038145435,
+            "z_long": 0.05934781792371169
+          },
+          "f5Rmu": 12
+        }
+      },
+      "NOMINAL": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.4972250080704688,
+            "z_long": -0.23028345467860803,
+            "verticalThrustArm": 0.7172250080704687,
+            "verticalThrustArmNorm": 0.247746116777364
+          },
+          "dFromBase": {
+            "y_vert": 0.0006250006258485818,
+            "z_long": 0.0909999874830246
+          },
+          "f5Rmu": 20,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 1.7763568394002505e-17,
+            "y_vert": 1.4704593530348424,
+            "z_long": -0.2265890657596546,
+            "verticalThrustArm": 0.6904593530348424,
+            "verticalThrustArmNorm": 0.23850064008112
+          },
+          "dFromBase": {
+            "y_vert": 0.0006250006258485818,
+            "z_long": 0.09099998748302462
+          },
+          "f5Rmu": 20
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 8.881784197001253e-18,
+            "y_vert": 1.4031293089166825,
+            "z_long": -0.7430074357795863,
+            "verticalThrustArm": 0.6231293089166825,
+            "verticalThrustArmNorm": 0.21524328459989034
+          },
+          "dFromBase": {
+            "y_vert": 0.0006250006258488039,
+            "z_long": 0.09099998748302451
+          },
+          "f5Rmu": 20
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": -1.7763568394002505e-17,
+            "y_vert": 1.2785540604636865,
+            "z_long": -0.7428645348126313,
+            "verticalThrustArm": 0.49855406046368644,
+            "verticalThrustArmNorm": 0.1722121106955739
+          },
+          "dFromBase": {
+            "y_vert": 0.0006250006258485818,
+            "z_long": 0.09099998748302462
+          },
+          "f5Rmu": 20
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2785540604636865,
+            "z_long": -0.7427707802826782,
+            "verticalThrustArm": 0.49855406046368644,
+            "verticalThrustArmNorm": 0.1722121106955739
+          },
+          "dFromBase": {
+            "y_vert": 0.0006250006258485818,
+            "z_long": 0.09099998748302474
+          },
+          "f5Rmu": 20
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2785540604636865,
+            "z_long": -1.0983645605618377,
+            "verticalThrustArm": 0.49855406046368644,
+            "verticalThrustArmNorm": 0.1722121106955739
+          },
+          "dFromBase": {
+            "y_vert": 0.0006250006258485818,
+            "z_long": 0.09099998748302451
+          },
+          "f5Rmu": 20
+        }
+      },
+      "HIGH": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.4352613704583863,
+            "z_long": -0.1861667829410172,
+            "verticalThrustArm": 0.6552613704583863,
+            "verticalThrustArmNorm": 0.22634244229996073
+          },
+          "dFromBase": {
+            "y_vert": 0.0008522735807030557,
+            "z_long": 0.1240908920223063
+          },
+          "f5Rmu": 30,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 1.6148698540002276e-17,
+            "y_vert": 1.4109289567896348,
+            "z_long": -0.18280824756015046,
+            "verticalThrustArm": 0.6309289567896348,
+            "verticalThrustArmNorm": 0.21793746348519336
+          },
+          "dFromBase": {
+            "y_vert": 0.0008522735807028337,
+            "z_long": 0.12409089202230628
+          },
+          "f5Rmu": 30
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 8.074349270001138e-18,
+            "y_vert": 1.3497198257731258,
+            "z_long": -0.6522794930328155,
+            "verticalThrustArm": 0.5697198257731257,
+            "verticalThrustArmNorm": 0.19679441304771184
+          },
+          "dFromBase": {
+            "y_vert": 0.0008522735807028337,
+            "z_long": 0.12409089202230639
+          },
+          "f5Rmu": 30
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": -1.6148698540002276e-17,
+            "y_vert": 1.2364695999067659,
+            "z_long": -0.6521495830628565,
+            "verticalThrustArm": 0.45646959990676583,
+            "verticalThrustArmNorm": 0.15767516404378784
+          },
+          "dFromBase": {
+            "y_vert": 0.0008522735807028337,
+            "z_long": 0.12409089202230628
+          },
+          "f5Rmu": 30
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.2364695999067659,
+            "z_long": -0.6520643516719902,
+            "verticalThrustArm": 0.45646959990676583,
+            "verticalThrustArmNorm": 0.15767516404378784
+          },
+          "dFromBase": {
+            "y_vert": 0.0008522735807028337,
+            "z_long": 0.12409089202230628
+          },
+          "f5Rmu": 30
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.2364695999067659,
+            "z_long": -0.9753314246530441,
+            "verticalThrustArm": 0.45646959990676583,
+            "verticalThrustArmNorm": 0.15767516404378784
+          },
+          "dFromBase": {
+            "y_vert": 0.0008522735807028337,
+            "z_long": 0.12409089202230639
+          },
+          "f5Rmu": 30
+        }
+      }
+    },
+    "F5_SPLIT_25F_75A": {
+      "LOW": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.5560054447469505,
+            "z_long": -0.577699406222754,
+            "verticalThrustArm": 0.7760054447469504,
+            "verticalThrustArmNorm": 0.26805023998167543
+          },
+          "dFromBase": {
+            "y_vert": -0.00008152063126143361,
+            "z_long": -0.24586957804534737
+          },
+          "f5Rmu": 12,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 1.9308226515220113e-17,
+            "y_vert": 1.5269123414473567,
+            "z_long": -0.5736837660934568,
+            "verticalThrustArm": 0.7469123414473566,
+            "verticalThrustArmNorm": 0.2580008087901059
+          },
+          "dFromBase": {
+            "y_vert": -0.00008152063126121156,
+            "z_long": -0.24586957804534743
+          },
+          "f5Rmu": 12
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 9.654113257610057e-18,
+            "y_vert": 1.453727510884139,
+            "z_long": -1.135008081332513,
+            "verticalThrustArm": 0.673727510884139,
+            "verticalThrustArmNorm": 0.2327210745713779
+          },
+          "dFromBase": {
+            "y_vert": -0.00008152063126143361,
+            "z_long": -0.24586957804534748
+          },
+          "f5Rmu": 12
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": -1.9308226515220113e-17,
+            "y_vert": 1.3183196321308828,
+            "z_long": -1.1348527541945186,
+            "verticalThrustArm": 0.5383196321308827,
+            "verticalThrustArmNorm": 0.1859480594579906
+          },
+          "dFromBase": {
+            "y_vert": -0.00008152063126143361,
+            "z_long": -0.2458695780453476
+          },
+          "f5Rmu": 12
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3183196321308828,
+            "z_long": -1.1347508470967436,
+            "verticalThrustArm": 0.5383196321308827,
+            "verticalThrustArmNorm": 0.1859480594579906
+          },
+          "dFromBase": {
+            "y_vert": -0.00008152063126143361,
+            "z_long": -0.2458695780453476
+          },
+          "f5Rmu": 12
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3183196321308828,
+            "z_long": -1.521265825661047,
+            "verticalThrustArm": 0.5383196321308827,
+            "verticalThrustArmNorm": 0.1859480594579906
+          },
+          "dFromBase": {
+            "y_vert": -0.00008152063126143361,
+            "z_long": -0.24586957804534726
+          },
+          "f5Rmu": 12
+        }
+      },
+      "NOMINAL": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.4964750091433523,
+            "z_long": -0.6982834618311654,
+            "verticalThrustArm": 0.7164750091433523,
+            "verticalThrustArmNorm": 0.24748704979044983
+          },
+          "dFromBase": {
+            "y_vert": -0.0001249983012678868,
+            "z_long": -0.3770000196695328
+          },
+          "f5Rmu": 20,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 1.7763568394002505e-17,
+            "y_vert": 1.469709354107726,
+            "z_long": -0.694589072912212,
+            "verticalThrustArm": 0.6897093541077259,
+            "verticalThrustArmNorm": 0.23824157309420585
+          },
+          "dFromBase": {
+            "y_vert": -0.0001249983012678868,
+            "z_long": -0.3770000196695327
+          },
+          "f5Rmu": 20
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 8.881784197001253e-18,
+            "y_vert": 1.402379309989566,
+            "z_long": -1.2110074429321436,
+            "verticalThrustArm": 0.622379309989566,
+            "verticalThrustArmNorm": 0.21498421761297618
+          },
+          "dFromBase": {
+            "y_vert": -0.00012499830126766476,
+            "z_long": -0.3770000196695328
+          },
+          "f5Rmu": 20
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": -1.7763568394002505e-17,
+            "y_vert": 1.2778040615365702,
+            "z_long": -1.2108645419651887,
+            "verticalThrustArm": 0.4978040615365702,
+            "verticalThrustArmNorm": 0.17195304370865983
+          },
+          "dFromBase": {
+            "y_vert": -0.00012499830126766476,
+            "z_long": -0.3770000196695328
+          },
+          "f5Rmu": 20
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2778040615365702,
+            "z_long": -1.2107707874352358,
+            "verticalThrustArm": 0.4978040615365702,
+            "verticalThrustArmNorm": 0.17195304370865983
+          },
+          "dFromBase": {
+            "y_vert": -0.00012499830126766476,
+            "z_long": -0.3770000196695329
+          },
+          "f5Rmu": 20
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2778040615365702,
+            "z_long": -1.566364567714395,
+            "verticalThrustArm": 0.4978040615365702,
+            "verticalThrustArmNorm": 0.17195304370865983
+          },
+          "dFromBase": {
+            "y_vert": -0.00012499830126766476,
+            "z_long": -0.37700001966953267
+          },
+          "f5Rmu": 20
+        }
+      },
+      "HIGH": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.4342386446486821,
+            "z_long": -0.8243486108763226,
+            "verticalThrustArm": 0.6542386446486821,
+            "verticalThrustArmNorm": 0.2259891691359869
+          },
+          "dFromBase": {
+            "y_vert": -0.000170452229001139,
+            "z_long": -0.514090935912999
+          },
+          "f5Rmu": 30,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 1.6148698540002276e-17,
+            "y_vert": 1.4099062309799308,
+            "z_long": -0.820990075495456,
+            "verticalThrustArm": 0.6299062309799308,
+            "verticalThrustArmNorm": 0.21758419032121962
+          },
+          "dFromBase": {
+            "y_vert": -0.000170452229001139,
+            "z_long": -0.5140909359129993
+          },
+          "f5Rmu": 30
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 8.074349270001138e-18,
+            "y_vert": 1.3486970999634216,
+            "z_long": -1.2904613209681213,
+            "verticalThrustArm": 0.5686970999634215,
+            "verticalThrustArmNorm": 0.19644113988373801
+          },
+          "dFromBase": {
+            "y_vert": -0.00017045222900136103,
+            "z_long": -0.5140909359129994
+          },
+          "f5Rmu": 30
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": -1.6148698540002276e-17,
+            "y_vert": 1.2354468740970617,
+            "z_long": -1.290331410998162,
+            "verticalThrustArm": 0.45544687409706164,
+            "verticalThrustArmNorm": 0.15732189087981405
+          },
+          "dFromBase": {
+            "y_vert": -0.00017045222900136103,
+            "z_long": -0.5140909359129993
+          },
+          "f5Rmu": 30
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.2354468740970617,
+            "z_long": -1.2902461796072957,
+            "verticalThrustArm": 0.45544687409706164,
+            "verticalThrustArmNorm": 0.15732189087981405
+          },
+          "dFromBase": {
+            "y_vert": -0.00017045222900136103,
+            "z_long": -0.5140909359129993
+          },
+          "f5Rmu": 30
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.2354468740970617,
+            "z_long": -1.6135132525883498,
+            "verticalThrustArm": 0.45544687409706164,
+            "verticalThrustArmNorm": 0.15732189087981405
+          },
+          "dFromBase": {
+            "y_vert": -0.00017045222900136103,
+            "z_long": -0.5140909359129993
+          },
+          "f5Rmu": 30
+        }
+      }
+    },
+    "F5_GEOMETRIC_EXTREME_FORWARD": {
+      "LOW": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.556086965378212,
+            "z_long": 0.28773538921389774,
+            "verticalThrustArm": 0.7760869653782119,
+            "verticalThrustArmNorm": 0.2680783990943737
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.6195652173913043
+          },
+          "f5Rmu": 12,
+          "planform": {
+            "order": "frontPlanform → CG → combinedPlanform → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 1.9308226515220113e-17,
+            "y_vert": 1.5269938620786179,
+            "z_long": 0.29175102934319497,
+            "verticalThrustArm": 0.7469938620786178,
+            "verticalThrustArmNorm": 0.2580289679028041
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.6195652173913044
+          },
+          "f5Rmu": 12
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 9.654113257610057e-18,
+            "y_vert": 1.4538090315154004,
+            "z_long": -0.2695732858958611,
+            "verticalThrustArm": 0.6738090315154004,
+            "verticalThrustArmNorm": 0.23274923368407613
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.6195652173913044
+          },
+          "f5Rmu": 12
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": -1.9308226515220113e-17,
+            "y_vert": 1.3184011527621442,
+            "z_long": -0.26941795875786667,
+            "verticalThrustArm": 0.5384011527621442,
+            "verticalThrustArmNorm": 0.18597621857068883
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.6195652173913043
+          },
+          "f5Rmu": 12
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3184011527621442,
+            "z_long": -0.26931605166009165,
+            "verticalThrustArm": 0.5384011527621442,
+            "verticalThrustArmNorm": 0.18597621857068883
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.6195652173913043
+          },
+          "f5Rmu": 12
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3184011527621442,
+            "z_long": -0.6558310302243954,
+            "verticalThrustArm": 0.5384011527621442,
+            "verticalThrustArmNorm": 0.18597621857068883
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.6195652173913043
+          },
+          "f5Rmu": 12
+        }
+      },
+      "NOMINAL": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.4966000074446202,
+            "z_long": 0.6287165578383673,
+            "verticalThrustArm": 0.7166000074446202,
+            "verticalThrustArmNorm": 0.24753022709658729
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.95
+          },
+          "f5Rmu": 20,
+          "planform": {
+            "order": "frontPlanform → CG → combinedPlanform → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 1.7763568394002505e-17,
+            "y_vert": 1.4698343524089938,
+            "z_long": 0.6324109467573208,
+            "verticalThrustArm": 0.6898343524089938,
+            "verticalThrustArmNorm": 0.23828475040034328
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.95
+          },
+          "f5Rmu": 20
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 8.881784197001253e-18,
+            "y_vert": 1.4025043082908337,
+            "z_long": 0.11599257673738919,
+            "verticalThrustArm": 0.6225043082908337,
+            "verticalThrustArmNorm": 0.21502739491911355
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.95
+          },
+          "f5Rmu": 20
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": -1.7763568394002505e-17,
+            "y_vert": 1.2779290598378379,
+            "z_long": 0.11613547770434408,
+            "verticalThrustArm": 0.49792905983783786,
+            "verticalThrustArmNorm": 0.1719962210147972
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.95
+          },
+          "f5Rmu": 20
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2779290598378379,
+            "z_long": 0.11622923223429708,
+            "verticalThrustArm": 0.49792905983783786,
+            "verticalThrustArmNorm": 0.1719962210147972
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.95
+          },
+          "f5Rmu": 20
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2779290598378379,
+            "z_long": -0.23936454804486232,
+            "verticalThrustArm": 0.49792905983783786,
+            "verticalThrustArmNorm": 0.1719962210147972
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 0.95
+          },
+          "f5Rmu": 20
+        }
+      },
+      "HIGH": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.4344090968776833,
+            "z_long": 0.9851968704912218,
+            "verticalThrustArm": 0.6544090968776832,
+            "verticalThrustArmNorm": 0.2260480472807196
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 1.2954545454545454
+          },
+          "f5Rmu": 30,
+          "planform": {
+            "order": "frontPlanform → CG → combinedPlanform → rearPlanform (forward → aft)",
+            "aftOfRear": false,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 1.6148698540002276e-17,
+            "y_vert": 1.410076683208932,
+            "z_long": 0.9885554058720888,
+            "verticalThrustArm": 0.630076683208932,
+            "verticalThrustArmNorm": 0.21764306846595233
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 1.2954545454545454
+          },
+          "f5Rmu": 30
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 8.074349270001138e-18,
+            "y_vert": 1.348867552192423,
+            "z_long": 0.5190841603994236,
+            "verticalThrustArm": 0.5688675521924229,
+            "verticalThrustArmNorm": 0.19650001802847078
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 1.2954545454545454
+          },
+          "f5Rmu": 30
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": -1.6148698540002276e-17,
+            "y_vert": 1.235617326326063,
+            "z_long": 0.5192140703693826,
+            "verticalThrustArm": 0.455617326326063,
+            "verticalThrustArmNorm": 0.1573807690245468
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 1.2954545454545454
+          },
+          "f5Rmu": 30
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.235617326326063,
+            "z_long": 0.519299301760249,
+            "verticalThrustArm": 0.455617326326063,
+            "verticalThrustArmNorm": 0.1573807690245468
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 1.2954545454545454
+          },
+          "f5Rmu": 30
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.235617326326063,
+            "z_long": 0.19603222877919496,
+            "verticalThrustArm": 0.455617326326063,
+            "verticalThrustArmNorm": 0.1573807690245468
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": 1.2954545454545454
+          },
+          "f5Rmu": 30
+        }
+      }
+    },
+    "F5_GEOMETRIC_EXTREME_AFT": {
+      "LOW": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.556086965378212,
+            "z_long": -0.951395045568711,
+            "verticalThrustArm": 0.7760869653782119,
+            "verticalThrustArmNorm": 0.2680783990943737
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.6195652173913044
+          },
+          "f5Rmu": 12,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+            "aftOfRear": true,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 1.9308226515220113e-17,
+            "y_vert": 1.5269938620786179,
+            "z_long": -0.9473794054394137,
+            "verticalThrustArm": 0.7469938620786178,
+            "verticalThrustArmNorm": 0.2580289679028041
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.6195652173913042
+          },
+          "f5Rmu": 12
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 9.654113257610057e-18,
+            "y_vert": 1.4538090315154004,
+            "z_long": -1.50870372067847,
+            "verticalThrustArm": 0.6738090315154004,
+            "verticalThrustArmNorm": 0.23274923368407613
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.6195652173913044
+          },
+          "f5Rmu": 12
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": -1.9308226515220113e-17,
+            "y_vert": 1.3184011527621442,
+            "z_long": -1.5085483935404753,
+            "verticalThrustArm": 0.5384011527621442,
+            "verticalThrustArmNorm": 0.18597621857068883
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.6195652173913043
+          },
+          "f5Rmu": 12
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3184011527621442,
+            "z_long": -1.5084464864427003,
+            "verticalThrustArm": 0.5384011527621442,
+            "verticalThrustArmNorm": 0.18597621857068883
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.6195652173913043
+          },
+          "f5Rmu": 12
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 92,
+            "x_lat": 0,
+            "y_vert": 1.3184011527621442,
+            "z_long": -1.8949614650070041,
+            "verticalThrustArm": 0.5384011527621442,
+            "verticalThrustArmNorm": 0.18597621857068883
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.6195652173913044
+          },
+          "f5Rmu": 12
+        }
+      },
+      "NOMINAL": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.4966000074446202,
+            "z_long": -1.2712834421616328,
+            "verticalThrustArm": 0.7166000074446202,
+            "verticalThrustArmNorm": 0.24753022709658729
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.9500000000000002
+          },
+          "f5Rmu": 20,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+            "aftOfRear": true,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 1.7763568394002505e-17,
+            "y_vert": 1.4698343524089938,
+            "z_long": -1.2675890532426792,
+            "verticalThrustArm": 0.6898343524089938,
+            "verticalThrustArmNorm": 0.23828475040034328
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.95
+          },
+          "f5Rmu": 20
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 8.881784197001253e-18,
+            "y_vert": 1.4025043082908337,
+            "z_long": -1.7840074232626109,
+            "verticalThrustArm": 0.6225043082908337,
+            "verticalThrustArmNorm": 0.21502739491911355
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.9500000000000001
+          },
+          "f5Rmu": 20
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": -1.7763568394002505e-17,
+            "y_vert": 1.2779290598378379,
+            "z_long": -1.7838645222956557,
+            "verticalThrustArm": 0.49792905983783786,
+            "verticalThrustArmNorm": 0.1719962210147972
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.9499999999999998
+          },
+          "f5Rmu": 20
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2779290598378379,
+            "z_long": -1.7837707677657029,
+            "verticalThrustArm": 0.49792905983783786,
+            "verticalThrustArmNorm": 0.1719962210147972
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.95
+          },
+          "f5Rmu": 20
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 100,
+            "x_lat": 0,
+            "y_vert": 1.2779290598378379,
+            "z_long": -2.1393645480448624,
+            "verticalThrustArm": 0.49792905983783786,
+            "verticalThrustArmNorm": 0.1719962210147972
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -0.9500000000000002
+          },
+          "f5Rmu": 20
+        }
+      },
+      "HIGH": {
+        "SPREAD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.4344090968776833,
+            "z_long": -1.605712220417869,
+            "verticalThrustArm": 0.6544090968776832,
+            "verticalThrustArmNorm": 0.2260480472807196
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -1.2954545454545456
+          },
+          "f5Rmu": 30,
+          "planform": {
+            "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+            "aftOfRear": true,
+            "aheadOfFront": false
+          }
+        },
+        "MID_FOLD": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 1.6148698540002276e-17,
+            "y_vert": 1.410076683208932,
+            "z_long": -1.6023536850370022,
+            "verticalThrustArm": 0.630076683208932,
+            "verticalThrustArmNorm": 0.21764306846595233
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -1.2954545454545454
+          },
+          "f5Rmu": 30
+        },
+        "POST_YAW": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 8.074349270001138e-18,
+            "y_vert": 1.348867552192423,
+            "z_long": -2.0718249305096674,
+            "verticalThrustArm": 0.5688675521924229,
+            "verticalThrustArmNorm": 0.19650001802847078
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -1.2954545454545454
+          },
+          "f5Rmu": 30
+        },
+        "POST_HAUNCH_CANT": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": -1.6148698540002276e-17,
+            "y_vert": 1.235617326326063,
+            "z_long": -2.071695020539708,
+            "verticalThrustArm": 0.455617326326063,
+            "verticalThrustArmNorm": 0.1573807690245468
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -1.2954545454545454
+          },
+          "f5Rmu": 30
+        },
+        "STRUCTURAL_READY": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.235617326326063,
+            "z_long": -2.071609789148842,
+            "verticalThrustArm": 0.455617326326063,
+            "verticalThrustArmNorm": 0.1573807690245468
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -1.2954545454545454
+          },
+          "f5Rmu": 30
+        },
+        "DRIVE": {
+          "cg": {
+            "tag": "DERIVED_ESTIMATE",
+            "totalRmu": 110,
+            "x_lat": 0,
+            "y_vert": 1.235617326326063,
+            "z_long": -2.394876862129896,
+            "verticalThrustArm": 0.455617326326063,
+            "verticalThrustArmNorm": 0.1573807690245468
+          },
+          "dFromBase": {
+            "y_vert": 0,
+            "z_long": -1.2954545454545454
+          },
+          "f5Rmu": 30
+        }
+      }
+    }
+  },
+  "namedImpact": {
+    "F5_BASE": {
+      "ALL_LOW": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 46,
+          "x_lat": 0,
+          "y_vert": 1.5490217478767687,
+          "z_long": -0.3810689559429377,
+          "verticalThrustArm": 0.7690217478767687,
+          "verticalThrustArmNorm": 0.2656379094565695
+        },
+        "dZ_fromBase": 0,
+        "readyDrive_dZ": -0.21990491255469946,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "NOMINAL": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 100,
+          "x_lat": 0,
+          "y_vert": 1.4966000074446202,
+          "z_long": -0.3212834421616326,
+          "verticalThrustArm": 0.7166000074446202,
+          "verticalThrustArmNorm": 0.24753022709658729
+        },
+        "dZ_fromBase": 0,
+        "readyDrive_dZ": -0.35559378027915933,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "ALL_HIGH": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 182,
+          "x_lat": -3.9040809657148365e-17,
+          "y_vert": 1.4832692379398007,
+          "z_long": -0.2915752124176718,
+          "verticalThrustArm": 0.7032692379398007,
+          "verticalThrustArmNorm": 0.24292547079095014
+        },
+        "dZ_fromBase": 0,
+        "readyDrive_dZ": -0.4471154212951659,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_AFT_LIGHT_FORWARD": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 124,
+          "x_lat": -5.730183352904034e-17,
+          "y_vert": 1.4962903250850013,
+          "z_long": -1.528340088310963,
+          "verticalThrustArm": 0.7162903250850012,
+          "verticalThrustArmNorm": 0.24742325564248746
+        },
+        "dZ_fromBase": 0,
+        "readyDrive_dZ": -0.6562500538364535,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+          "aftOfRear": true,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_FORWARD_LIGHT_AFT": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 101,
+          "x_lat": 0,
+          "y_vert": 1.5105940731740233,
+          "z_long": 1.184240696481051,
+          "verticalThrustArm": 0.7305940731740233,
+          "verticalThrustArmNorm": 0.25236410126909264
+        },
+        "dZ_fromBase": 0,
+        "readyDrive_dZ": -0.10015471264867504,
+        "planform": {
+          "order": "frontPlanform → CG → combinedPlanform → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_DRIVE_MOVING": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 118,
+          "x_lat": 0,
+          "y_vert": 1.3872881375379482,
+          "z_long": -0.7680368153912142,
+          "verticalThrustArm": 0.6072881375379482,
+          "verticalThrustArmNorm": 0.20977137738789228
+        },
+        "dZ_fromBase": 0,
+        "readyDrive_dZ": -0.6903337411961314,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "LIGHT_DRIVE_MOVING": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 90,
+          "x_lat": 0,
+          "y_vert": 1.5762222336729368,
+          "z_long": 0.004129508709297072,
+          "verticalThrustArm": 0.7962222336729368,
+          "verticalThrustArmNorm": 0.27503358676094536
+        },
+        "dZ_fromBase": 0,
+        "readyDrive_dZ": -0.11177084578408136,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_COCKPIT": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 112,
+          "x_lat": 0,
+          "y_vert": 1.4701785780755539,
+          "z_long": 0.09349692153242987,
+          "verticalThrustArm": 0.6901785780755538,
+          "verticalThrustArmNorm": 0.2384036539121084
+        },
+        "dZ_fromBase": 0,
+        "readyDrive_dZ": -0.31749444667782095,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_WAIST_SYSTEMS": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 106,
+          "x_lat": 0,
+          "y_vert": 1.495377366863332,
+          "z_long": -0.31951268249914433,
+          "verticalThrustArm": 0.7153773668633319,
+          "verticalThrustArmNorm": 0.24710789874381067
+        },
+        "dZ_fromBase": 0,
+        "readyDrive_dZ": -0.33546583045203715,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      }
+    },
+    "F5_FORWARD_PROXY": {
+      "ALL_LOW": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 46,
+          "x_lat": 0,
+          "y_vert": 1.5503260958194733,
+          "z_long": 0.04284407587354483,
+          "verticalThrustArm": 0.7703260958194733,
+          "verticalThrustArmNorm": 0.26608846142296144
+        },
+        "dZ_fromBase": 0.42391303181648254,
+        "readyDrive_dZ": -0.21990491255469946,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "NOMINAL": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 100,
+          "x_lat": 0,
+          "y_vert": 1.4976000075340272,
+          "z_long": 0.0037165488976706484,
+          "verticalThrustArm": 0.7176000075340272,
+          "verticalThrustArmNorm": 0.24787565027082115
+        },
+        "dZ_fromBase": 0.3249999910593033,
+        "readyDrive_dZ": -0.35559378027915944,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "ALL_HIGH": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 182,
+          "x_lat": -3.9040809657148365e-17,
+          "y_vert": 1.4840934138376636,
+          "z_long": -0.02371807692923503,
+          "verticalThrustArm": 0.7040934138376636,
+          "verticalThrustArmNorm": 0.24321016022026376
+        },
+        "dZ_fromBase": 0.26785713548843676,
+        "readyDrive_dZ": -0.447115421295166,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_AFT_LIGHT_FORWARD": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 124,
+          "x_lat": -5.730183352904034e-17,
+          "y_vert": 1.4970967767700072,
+          "z_long": -1.266243321327654,
+          "verticalThrustArm": 0.7170967767700072,
+          "verticalThrustArmNorm": 0.24770182271848262
+        },
+        "dZ_fromBase": 0.26209676698330897,
+        "readyDrive_dZ": -0.6562500538364535,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+          "aftOfRear": true,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_FORWARD_LIGHT_AFT": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 101,
+          "x_lat": 0,
+          "y_vert": 1.5115841722724463,
+          "z_long": 1.5060228658466979,
+          "verticalThrustArm": 0.7315841722724463,
+          "verticalThrustArmNorm": 0.25270610441189856
+        },
+        "dZ_fromBase": 0.32178216936564685,
+        "readyDrive_dZ": -0.10015471264867493,
+        "planform": {
+          "order": "frontPlanform → CG → combinedPlanform → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_DRIVE_MOVING": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 118,
+          "x_lat": 0,
+          "y_vert": 1.3881355952408354,
+          "z_long": -0.4926130941545165,
+          "verticalThrustArm": 0.6081355952408354,
+          "verticalThrustArmNorm": 0.21006410889148028
+        },
+        "dZ_fromBase": 0.27542372123669767,
+        "readyDrive_dZ": -0.6903337411961314,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "LIGHT_DRIVE_MOVING": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 90,
+          "x_lat": 0,
+          "y_vert": 1.577333344883389,
+          "z_long": 0.3652406098863007,
+          "verticalThrustArm": 0.797333344883389,
+          "verticalThrustArmNorm": 0.2754173902878719
+        },
+        "dZ_fromBase": 0.3611111011770036,
+        "readyDrive_dZ": -0.11177084578408136,
+        "planform": {
+          "order": "frontPlanform → CG → combinedPlanform → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_COCKPIT": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 112,
+          "x_lat": 0,
+          "y_vert": 1.4710714352982386,
+          "z_long": 0.3836754849782364,
+          "verticalThrustArm": 0.6910714352982386,
+          "verticalThrustArmNorm": 0.23871206746053145
+        },
+        "dZ_fromBase": 0.2901785634458065,
+        "readyDrive_dZ": -0.3174944466778209,
+        "planform": {
+          "order": "frontPlanform → CG → combinedPlanform → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_WAIST_SYSTEMS": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 106,
+          "x_lat": 0,
+          "y_vert": 1.4963207631740931,
+          "z_long": -0.012908917348858188,
+          "verticalThrustArm": 0.7163207631740931,
+          "verticalThrustArmNorm": 0.24743376966289918
+        },
+        "dZ_fromBase": 0.30660376515028614,
+        "readyDrive_dZ": -0.33546583045203715,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      }
+    },
+    "F5_AFT_PROXY": {
+      "ALL_LOW": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 46,
+          "x_lat": 0,
+          "y_vert": 1.5483695768791699,
+          "z_long": -1.1780255080026918,
+          "verticalThrustArm": 0.7683695768791698,
+          "verticalThrustArmNorm": 0.2654126345005768
+        },
+        "dZ_fromBase": -0.7969565520597541,
+        "readyDrive_dZ": -0.21990491255469946,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+          "aftOfRear": true,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": true,
+        "newlyAheadOfFront": false
+      },
+      "NOMINAL": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 100,
+          "x_lat": 0,
+          "y_vert": 1.4961000096797943,
+          "z_long": -0.9322834654074441,
+          "verticalThrustArm": 0.7161000096797943,
+          "verticalThrustArmNorm": 0.24735751629699285
+        },
+        "dZ_fromBase": -0.6110000232458115,
+        "readyDrive_dZ": -0.35559378027915933,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+          "aftOfRear": true,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": true,
+        "newlyAheadOfFront": false
+      },
+      "ALL_HIGH": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 182,
+          "x_lat": -3.9040809657148365e-17,
+          "y_vert": 1.4828571518698892,
+          "z_long": -0.795146660147736,
+          "verticalThrustArm": 0.7028571518698892,
+          "verticalThrustArmNorm": 0.24278312672535032
+        },
+        "dZ_fromBase": -0.5035714477300642,
+        "readyDrive_dZ": -0.447115421295166,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_AFT_LIGHT_FORWARD": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 124,
+          "x_lat": -5.730183352904034e-17,
+          "y_vert": 1.4958871010811097,
+          "z_long": -2.021082042541456,
+          "verticalThrustArm": 0.7158871010811096,
+          "verticalThrustArmNorm": 0.24728397273958883
+        },
+        "dZ_fromBase": -0.49274195423049294,
+        "readyDrive_dZ": -0.6562500538364535,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+          "aftOfRear": true,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_FORWARD_LIGHT_AFT": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 101,
+          "x_lat": 0,
+          "y_vert": 1.5100990258821168,
+          "z_long": 0.5792901784158913,
+          "verticalThrustArm": 0.7300990258821167,
+          "verticalThrustArmNorm": 0.2521931004774151
+        },
+        "dZ_fromBase": -0.6049505180651598,
+        "readyDrive_dZ": -0.10015471264867501,
+        "planform": {
+          "order": "frontPlanform → CG → combinedPlanform → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_DRIVE_MOVING": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 118,
+          "x_lat": 0,
+          "y_vert": 1.3868644106186043,
+          "z_long": -1.2858334452605458,
+          "verticalThrustArm": 0.6068644106186043,
+          "verticalThrustArmNorm": 0.20962501230349026
+        },
+        "dZ_fromBase": -0.5177966298693316,
+        "readyDrive_dZ": -0.690333741196131,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+          "aftOfRear": true,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": true,
+        "newlyAheadOfFront": false
+      },
+      "LIGHT_DRIVE_MOVING": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 90,
+          "x_lat": 0,
+          "y_vert": 1.575666680600908,
+          "z_long": -0.6747594060082711,
+          "verticalThrustArm": 0.7956666806009081,
+          "verticalThrustArmNorm": 0.2748416858725071
+        },
+        "dZ_fromBase": -0.6788889147175682,
+        "readyDrive_dZ": -0.11177084578408136,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_COCKPIT": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 112,
+          "x_lat": 0,
+          "y_vert": 1.4697321514998163,
+          "z_long": -0.45203881350847314,
+          "verticalThrustArm": 0.6897321514998163,
+          "verticalThrustArmNorm": 0.23824944784104188
+        },
+        "dZ_fromBase": -0.545535735040903,
+        "readyDrive_dZ": -0.3174944466778209,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_WAIST_SYSTEMS": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 106,
+          "x_lat": 0,
+          "y_vert": 1.4949056708587791,
+          "z_long": -0.8959277987687778,
+          "verticalThrustArm": 0.7149056708587791,
+          "verticalThrustArmNorm": 0.2469449640272121
+        },
+        "dZ_fromBase": -0.5764151162696335,
+        "readyDrive_dZ": -0.33546583045203704,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+          "aftOfRear": true,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": true,
+        "newlyAheadOfFront": false
+      }
+    },
+    "F5_SPLIT_50_50": {
+      "ALL_LOW": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 46,
+          "x_lat": 0,
+          "y_vert": 1.5493478363493218,
+          "z_long": -0.5675907160645736,
+          "verticalThrustArm": 0.7693478363493218,
+          "verticalThrustArmNorm": 0.26575054796176917
+        },
+        "dZ_fromBase": -0.18652176012163585,
+        "readyDrive_dZ": -0.21990491255469946,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "NOMINAL": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 100,
+          "x_lat": 0,
+          "y_vert": 1.4968500086069108,
+          "z_long": -0.4642834582548867,
+          "verticalThrustArm": 0.7168500086069107,
+          "verticalThrustArmNorm": 0.24761658328390698
+        },
+        "dZ_fromBase": -0.14300001609325408,
+        "readyDrive_dZ": -0.35559378027915955,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "ALL_HIGH": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 182,
+          "x_lat": -3.9040809657148365e-17,
+          "y_vert": 1.4834752828537763,
+          "z_long": -0.4094323685384855,
+          "verticalThrustArm": 0.7034752828537763,
+          "verticalThrustArmNorm": 0.242996643472807
+        },
+        "dZ_fromBase": -0.11785715612081371,
+        "readyDrive_dZ": -0.4471154212951661,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_AFT_LIGHT_FORWARD": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 124,
+          "x_lat": -5.730183352904034e-17,
+          "y_vert": 1.4964919389255584,
+          "z_long": -1.643662681934555,
+          "verticalThrustArm": 0.7164919389255584,
+          "verticalThrustArmNorm": 0.2474928977290357
+        },
+        "dZ_fromBase": -0.11532259362359198,
+        "readyDrive_dZ": -0.6562500538364531,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+          "aftOfRear": true,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_FORWARD_LIGHT_AFT": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 101,
+          "x_lat": 0,
+          "y_vert": 1.5108415990772814,
+          "z_long": 1.0426565221312947,
+          "verticalThrustArm": 0.7308415990772814,
+          "verticalThrustArmNorm": 0.2524496024446568
+        },
+        "dZ_fromBase": -0.14158417434975634,
+        "readyDrive_dZ": -0.10015471264867504,
+        "planform": {
+          "order": "frontPlanform → CG → combinedPlanform → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_DRIVE_MOVING": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 118,
+          "x_lat": 0,
+          "y_vert": 1.38750000292972,
+          "z_long": -0.8892232697075312,
+          "verticalThrustArm": 0.60750000292972,
+          "verticalThrustArmNorm": 0.2098445605974853
+        },
+        "dZ_fromBase": -0.12118645431631703,
+        "readyDrive_dZ": -0.6903337411961312,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+          "aftOfRear": true,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": true,
+        "newlyAheadOfFront": false
+      },
+      "LIGHT_DRIVE_MOVING": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 90,
+          "x_lat": 0,
+          "y_vert": 1.5765000127421485,
+          "z_long": -0.1547593980609852,
+          "verticalThrustArm": 0.7965000127421484,
+          "verticalThrustArmNorm": 0.2751295380801894
+        },
+        "dZ_fromBase": -0.15888890677028228,
+        "readyDrive_dZ": -0.11177084578408136,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_COCKPIT": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 112,
+          "x_lat": 0,
+          "y_vert": 1.4704017933990274,
+          "z_long": -0.034181664265118386,
+          "verticalThrustArm": 0.6904017933990274,
+          "verticalThrustArmNorm": 0.23848075765078666
+        },
+        "dZ_fromBase": -0.12767858579754826,
+        "readyDrive_dZ": -0.3174944466778209,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      },
+      "HEAVY_WAIST_SYSTEMS": {
+        "spread": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 106,
+          "x_lat": 0,
+          "y_vert": 1.495613217016436,
+          "z_long": -0.454418358058818,
+          "verticalThrustArm": 0.715613217016436,
+          "verticalThrustArmNorm": 0.2471893668450556
+        },
+        "dZ_fromBase": -0.13490567555967364,
+        "readyDrive_dZ": -0.33546583045203726,
+        "planform": {
+          "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+          "aftOfRear": false,
+          "aheadOfFront": false
+        },
+        "newlyAftOfRear": false,
+        "newlyAheadOfFront": false
+      }
+    }
+  },
+  "corners": {
+    "F5_FORWARD_PROXY": {
+      "n": 512,
+      "minZ": {
+        "value": -1.6589469484565422,
+        "bits": "LLHLLHHLL"
+      },
+      "maxZ": {
+        "value": 1.6154353402190293,
+        "bits": "LHLHLLLHL"
+      },
+      "minY": {
+        "value": 1.1115151461928783,
+        "bits": "LLLLHHHLL"
+      },
+      "maxY": {
+        "value": 1.974488658715378,
+        "bits": "HHHLLLLLL"
+      }
+    },
+    "F5_AFT_PROXY": {
+      "n": 512,
+      "minZ": {
+        "value": -2.4377447276478845,
+        "bits": "LLHLHHHLL"
+      },
+      "maxZ": {
+        "value": 0.9772535122837237,
+        "bits": "LHLHLLLHL"
+      },
+      "minY": {
+        "value": 1.1092424221713135,
+        "bits": "LLLLHHHLL"
+      },
+      "maxY": {
+        "value": 1.9734659329056738,
+        "bits": "HHHLLLLLL"
+      }
+    }
+  },
+  "F5_MASS_RANGE_EFFECT": {
+    "tag": "DERIVED_ESTIMATE",
+    "high_minus_low_SPREAD": 0.021572153214083067,
+    "high_minus_low_y": -0.12167786850052864
+  },
+  "F5_LOCATION_EFFECT": {
+    "tag": "DERIVED_ESTIMATE",
+    "forward_vs_base": {
+      "y_vert": 0.0010000000894070382,
+      "z_long": 0.3249999910593033
+    },
+    "aft_vs_base": {
+      "y_vert": -0.0004999977648258991,
+      "z_long": -0.6110000232458115
+    },
+    "split50_vs_base": {
+      "y_vert": 0.00025000116229056957,
+      "z_long": -0.14300001609325408
+    },
+    "split75_vs_base": {
+      "y_vert": 0.0006250006258485818,
+      "z_long": 0.0909999874830246
+    },
+    "split25_vs_base": {
+      "y_vert": -0.0001249983012678868,
+      "z_long": -0.3770000196695328
+    },
+    "forward_vs_aft": 0.9360000143051148,
+    "maxPlausibleAbsDz": 0.6110000232458116
+  },
+  "comparison": {
+    "F6_DRIVE_MOVING_dZ": 0.7721663241005112,
+    "F8_COCKPIT_dZ": 0.7514137023443161,
+    "F1_REAR_BOOKS_dY": 0.23746118423245544,
+    "F5_location_forward_vs_aft": 0.9360000143051148,
+    "classification_vs_F6_F8": "larger"
+  },
+  "newlyCrossedPlanform": [
+    "F5_AFT_PROXY/ALL_LOW aft-of-rear",
+    "F5_AFT_PROXY/NOMINAL aft-of-rear",
+    "F5_AFT_PROXY/HEAVY_DRIVE_MOVING aft-of-rear",
+    "F5_AFT_PROXY/HEAVY_WAIST_SYSTEMS aft-of-rear",
+    "F5_SPLIT_50_50/HEAVY_DRIVE_MOVING aft-of-rear"
+  ],
+  "reds": [],
+  "nextSlice": "central-structure mass decomposition should precede or accompany drive work",
+  "conclusion": "Under the declared mass-family ranges, F5 longitudinal placement uncertainty does not create a robust first-order contradiction with the certified S4A arrangement. No flight, hover, stability, control-authority, or GEV capability is asserted.",
+  "gates": [
+    {
+      "id": "AR1-G1",
+      "name": "frozen S4A identity",
+      "pass": true,
+      "detail": "95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8"
+    },
+    {
+      "id": "AR1-G2",
+      "name": "original VB1 immutability",
+      "pass": true,
+      "detail": "candidate zip 56957e0fd649f44add2761ff950e23127359631fa14183bc7a457b7743997d9e (file hashes checked in node test)"
+    },
+    {
+      "id": "AR1-G3",
+      "name": "F5 membership truth",
+      "pass": true,
+      "detail": "AFT_POST_PORT,AFT_POST_STBD,BAY_WALL_PORT,BAY_WALL_STBD,BULKHEAD_Z-1p70,BULKHEAD_Z1p15,BULKHEAD_Z3p35,DORSAL_LONGERON,VENTRAL_KEEL"
+    },
+    {
+      "id": "AR1-G4",
+      "name": "baseline reproduction",
+      "pass": true,
+      "detail": "{\"SPREAD\":5.551115123125783e-17,\"STRUCTURAL_READY\":0,\"DRIVE\":0}"
+    },
+    {
+      "id": "AR1-G5",
+      "name": "total-F5 invariant",
+      "pass": true,
+      "detail": "F5 RMU unchanged by placement"
+    },
+    {
+      "id": "AR1-G6",
+      "name": "geometry-bounded proxies",
+      "pass": true,
+      "detail": "occupied z∈[-4.950,4.550]"
+    },
+    {
+      "id": "AR1-G7",
+      "name": "no implicit density",
+      "pass": true,
+      "detail": "split fractions are explicit assumptions"
+    },
+    {
+      "id": "AR1-G8",
+      "name": "bilateral symmetry",
+      "pass": true,
+      "detail": "x_lat≈0"
+    },
+    {
+      "id": "AR1-G9",
+      "name": "arithmetic traceability",
+      "pass": true,
+      "detail": "BASE SPREAD recomputable"
+    },
+    {
+      "id": "AR1-G10",
+      "name": "claim ceiling",
+      "pass": true,
+      "detail": "no prohibited claim"
+    }
+  ],
+  "planform": {
+    "PLANFORM_PROXY_SET": [
+      "FL_INNER_ARMOR_0",
+      "FL_INNER_ARMOR_1",
+      "FL_INNER_ARMOR_2",
+      "FL_INNER_ARMOR_3",
+      "FL_OUTER_ARMOR_0",
+      "FL_OUTER_ARMOR_1",
+      "FL_OUTER_ARMOR_2",
+      "FL_OUTER_ARMOR_3",
+      "FR_INNER_ARMOR_0",
+      "FR_INNER_ARMOR_1",
+      "FR_INNER_ARMOR_2",
+      "FR_INNER_ARMOR_3",
+      "FR_OUTER_ARMOR_0",
+      "FR_OUTER_ARMOR_1",
+      "FR_OUTER_ARMOR_2",
+      "FR_OUTER_ARMOR_3",
+      "RL_INNER_ARMOR",
+      "RL_OUTER_ARMOR",
+      "RR_INNER_ARMOR",
+      "RR_OUTER_ARMOR"
+    ],
+    "rearPort": 10.1088,
+    "rearStbd": 10.108800000000002,
+    "rearTotal": 20.217600000000004,
+    "frontPort": 2.875300000000003,
+    "frontStbd": 2.875300000000003,
+    "frontTotal": 5.750600000000006,
+    "combined": 25.96820000000001,
+    "frontCentroid": {
+      "x_lat": 0,
+      "y_vert": 2.1700000762939453,
+      "z_long": 3.8239569601645935
+    },
+    "rearCentroid": {
+      "x_lat": 0,
+      "y_vert": 2.720000028610229,
+      "z_long": -0.7999999523162837
+    },
+    "combinedCentroid": {
+      "x_lat": 0,
+      "y_vert": 2.5982037652654446,
+      "z_long": 0.2239649979271889
+    },
+    "handCalc": {
+      "rearInner": 5.4432,
+      "rearOuter": 4.6656,
+      "rearOneSide": 10.1088,
+      "frontInner": 1.87,
+      "frontOuter": 1.6500000000000001,
+      "frontOneSide": 3.5200000000000005
+    },
+    "inflated": false
+  },
+  "thrustY": 0.78,
+  "machineHeight": 2.895,
+  "keelFacts": {
+    "zFwd": 4.55,
+    "zAft": -4.95,
+    "bayZFwd": -1.7,
+    "bayZAft": -4.8
+  },
+  "options": {},
+  "nomSpreadBase": {
+    "tag": "DERIVED_ESTIMATE",
+    "totalRmu": 100,
+    "x_lat": 0,
+    "y_vert": 1.4966000074446202,
+    "z_long": -0.3212834421616326,
+    "verticalThrustArm": 0.7166000074446202,
+    "verticalThrustArmNorm": 0.24753022709658729
+  }
+}

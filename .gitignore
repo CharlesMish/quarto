@@ -1,0 +1,24 @@
+# Dependencies. The bare name also matches the exploration symlinks.
+node_modules
+
+# Generated builds, caches, and test output.
+dist/
+build/
+cache/
+.cache/
+coverage/
+test-results/
+playwright-report/
+.vite/
+*.tsbuildinfo
+*.log
+
+# Local configuration and operating-system metadata.
+.env
+.env.*
+.DS_Store
+*:Zone.Identifier
+
+# Local handoff/snapshot bundles duplicate material preserved in the tree.
+/*.zip
+/explore/*.zip

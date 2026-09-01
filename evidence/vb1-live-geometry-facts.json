@@ -1,0 +1,346 @@
+{
+  "tag": "GEOMETRY_FACT",
+  "sourceS4aSha256": "95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8",
+  "coordinate": {
+    "tag": "GEOMETRY_FACT",
+    "lateral": "+X starboard",
+    "vertical": "+Y up",
+    "longitudinal": "+Z forward/nose",
+    "aft": "−Z",
+    "thrustAxisDirection": "+Z forward"
+  },
+  "drive": {
+    "tag": "GEOMETRY_FACT",
+    "thrustAxis": {
+      "x_lat": 0,
+      "y_vert": 0.78,
+      "direction": "+Z_forward"
+    },
+    "stowed": {
+      "x_lat": 0,
+      "y_vert": 0.7799999713897705,
+      "z_long": -3.25
+    },
+    "deployed": {
+      "x_lat": 0,
+      "y_vert": 0.7799999713897705,
+      "z_long": -5.800000190734863
+    },
+    "deploymentDirection": "−Z_aft",
+    "deploymentDelta_z_long": -2.5500001907348633,
+    "strokeParam": 2.55,
+    "stowedZParam": -3.25
+  },
+  "cockpit": {
+    "tag": "GEOMETRY_FACT",
+    "center": {
+      "x_lat": 0,
+      "y_vert": 1.25,
+      "z_long": 3.549999952316284
+    },
+    "half": {
+      "x_lat": 0.68,
+      "y_vert": 0.95,
+      "z_long": 1.05
+    },
+    "faces": {
+      "fwd": {
+        "x_lat": 0,
+        "y_vert": 1.25,
+        "z_long": 4.599999952316284
+      },
+      "aft": {
+        "x_lat": 0,
+        "y_vert": 1.25,
+        "z_long": 2.4999999523162844
+      },
+      "up": {
+        "x_lat": 0,
+        "y_vert": 2.2,
+        "z_long": 3.549999952316284
+      },
+      "down": {
+        "x_lat": 0,
+        "y_vert": 0.30000000000000004,
+        "z_long": 3.549999952316284
+      }
+    }
+  },
+  "waist": {
+    "tag": "GEOMETRY_FACT",
+    "port": {
+      "center": {
+        "x_lat": -1.5243817567825317,
+        "y_vert": 1.475000023841858,
+        "z_long": -0.2900000214576721
+      },
+      "half": {
+        "x_lat": 0.7143817628306766,
+        "y_vert": 0.875,
+        "z_long": 1.3400000023841856
+      }
+    },
+    "stbd": {
+      "center": {
+        "x_lat": 1.5243817567825317,
+        "y_vert": 1.475000023841858,
+        "z_long": -0.2900000214576721
+      },
+      "half": {
+        "x_lat": 0.7143817628306766,
+        "y_vert": 0.875,
+        "z_long": 1.3400000023841856
+      }
+    }
+  },
+  "planform": {
+    "tag": "GEOMETRY_FACT",
+    "PLANFORM_PROXY_SET": [
+      "FL_INNER_ARMOR_0",
+      "FL_INNER_ARMOR_1",
+      "FL_INNER_ARMOR_2",
+      "FL_INNER_ARMOR_3",
+      "FL_OUTER_ARMOR_0",
+      "FL_OUTER_ARMOR_1",
+      "FL_OUTER_ARMOR_2",
+      "FL_OUTER_ARMOR_3",
+      "FR_INNER_ARMOR_0",
+      "FR_INNER_ARMOR_1",
+      "FR_INNER_ARMOR_2",
+      "FR_INNER_ARMOR_3",
+      "FR_OUTER_ARMOR_0",
+      "FR_OUTER_ARMOR_1",
+      "FR_OUTER_ARMOR_2",
+      "FR_OUTER_ARMOR_3",
+      "RL_INNER_ARMOR",
+      "RL_OUTER_ARMOR",
+      "RR_INNER_ARMOR",
+      "RR_OUTER_ARMOR"
+    ],
+    "rearPort": 10.1088,
+    "rearStbd": 10.108800000000002,
+    "rearTotal": 20.217600000000004,
+    "frontPort": 2.875300000000003,
+    "frontStbd": 2.875300000000003,
+    "frontTotal": 5.750600000000006,
+    "combined": 25.96820000000001,
+    "frontCentroid": {
+      "x_lat": 0,
+      "y_vert": 2.1700000762939453,
+      "z_long": 3.8239569601645935
+    },
+    "rearCentroid": {
+      "x_lat": 0,
+      "y_vert": 2.720000028610229,
+      "z_long": -0.7999999523162837
+    },
+    "combinedCentroid": {
+      "x_lat": 0,
+      "y_vert": 2.5982037652654446,
+      "z_long": 0.2239649979271889
+    },
+    "handCalc": {
+      "rearInner": 5.4432,
+      "rearOuter": 4.6656,
+      "rearOneSide": 10.1088,
+      "frontInner": 1.87,
+      "frontOuter": 1.6500000000000001,
+      "frontOneSide": 3.5200000000000005
+    },
+    "inflated": false
+  },
+  "familyLocationsSpread": {
+    "tag": "GEOMETRY_FACT",
+    "F3_REAR_FIXED": {
+      "x_lat": 0,
+      "y_vert": 2.2000000071525574,
+      "z_long": -3.0750000333786014
+    },
+    "F4_FRONT_CARRY_FIXED": {
+      "x_lat": 0,
+      "y_vert": 1.6400000023841859,
+      "z_long": 2.329999988079071
+    },
+    "F5_CENTRAL_STRUCTURE": {
+      "x_lat": 0,
+      "y_vert": 0.8124999912083148,
+      "z_long": -0.20000000298023224
+    },
+    "F7_DRIVE_FIXED": {
+      "x_lat": 0,
+      "y_vert": 0.3100000023841858,
+      "z_long": -4.454999923706055
+    },
+    "F6_DRIVE_MOVING": {
+      "x_lat": 0,
+      "y_vert": 0.7799999713897705,
+      "z_long": -3.25
+    },
+    "F6_DRIVE_MOVING_DEPLOYED": {
+      "x_lat": 0,
+      "y_vert": 0.7799999713897705,
+      "z_long": -5.800000190734863
+    },
+    "cockpit": {
+      "x_lat": 0,
+      "y_vert": 1.25,
+      "z_long": 3.549999952316284
+    },
+    "waistPort": {
+      "x_lat": -1.5243817567825317,
+      "y_vert": 1.475000023841858,
+      "z_long": -0.2900000214576721
+    },
+    "waistStbd": {
+      "x_lat": 1.5243817567825317,
+      "y_vert": 1.475000023841858,
+      "z_long": -0.2900000214576721
+    }
+  },
+  "envelopes": {
+    "tag": "GEOMETRY_FACT",
+    "spread": {
+      "w": 13.31999984741211,
+      "h": 2.894999884068966,
+      "l": 11.699999920725823,
+      "min": {
+        "x": -6.659999923706055,
+        "y": 0.030000001490116113,
+        "z": -7.149999923706055
+      },
+      "max": {
+        "x": 6.659999923706055,
+        "y": 2.924999885559082,
+        "z": 4.549999997019768
+      }
+    },
+    "ready": {
+      "min": {
+        "x": -2.2999999713897705,
+        "y": 0.030000001490116113,
+        "z": -7.149999923706055
+      },
+      "max": {
+        "x": 2.2999999713897705,
+        "y": 2.924999885559082,
+        "z": 4.549999997019768
+      }
+    },
+    "drive": {
+      "w": 4.599999942779541,
+      "min": {
+        "x": -2.2999999713897705,
+        "y": 0.030000001490116113,
+        "z": -7.149999923706055
+      },
+      "max": {
+        "x": 2.2999999713897705,
+        "y": 2.924999885559082,
+        "z": 4.549999997019768
+      }
+    },
+    "machineHeight": 2.895,
+    "machineLength": 11.7
+  },
+  "bookLeavesSpread": {
+    "tag": "GEOMETRY_FACT",
+    "leaves": [
+      {
+        "id": "RL_INNER",
+        "side": "port",
+        "leaf": "inner",
+        "station": "rear",
+        "center": {
+          "x_lat": -3.2400000095367427,
+          "y_vert": 2.7200000286102295,
+          "z_long": -0.799999952316284
+        },
+        "area": 5.443199999999999
+      },
+      {
+        "id": "RL_OUTER",
+        "side": "port",
+        "leaf": "outer",
+        "station": "rear",
+        "center": {
+          "x_lat": -5.579999923706054,
+          "y_vert": 2.7200000286102295,
+          "z_long": -0.7999999523162841
+        },
+        "area": 4.665600000000001
+      },
+      {
+        "id": "RR_INNER",
+        "side": "stbd",
+        "leaf": "inner",
+        "station": "rear",
+        "center": {
+          "x_lat": 3.2400000095367427,
+          "y_vert": 2.7200000286102295,
+          "z_long": -0.7999999523162842
+        },
+        "area": 5.443199999999999
+      },
+      {
+        "id": "RR_OUTER",
+        "side": "stbd",
+        "leaf": "outer",
+        "station": "rear",
+        "center": {
+          "x_lat": 5.579999923706053,
+          "y_vert": 2.7200000286102295,
+          "z_long": -0.799999952316284
+        },
+        "area": 4.665600000000002
+      },
+      {
+        "id": "FL_INNER",
+        "side": "port",
+        "leaf": "inner",
+        "station": "front",
+        "center": {
+          "x_lat": -2.756684453815855,
+          "y_vert": 2.1700000762939453,
+          "z_long": 3.895805584364847
+        },
+        "area": 1.2288999999999994
+      },
+      {
+        "id": "FL_OUTER",
+        "side": "port",
+        "leaf": "outer",
+        "station": "front",
+        "center": {
+          "x_lat": -4.228797169595924,
+          "y_vert": 2.1700000762939453,
+          "z_long": 3.770327967040388
+        },
+        "area": 1.6464000000000034
+      },
+      {
+        "id": "FR_INNER",
+        "side": "stbd",
+        "leaf": "inner",
+        "station": "front",
+        "center": {
+          "x_lat": 2.7566844538158555,
+          "y_vert": 2.1700000762939453,
+          "z_long": 3.895805584364846
+        },
+        "area": 1.2288999999999994
+      },
+      {
+        "id": "FR_OUTER",
+        "side": "stbd",
+        "leaf": "outer",
+        "station": "front",
+        "center": {
+          "x_lat": 4.228797169595924,
+          "y_vert": 2.1700000762939453,
+          "z_long": 3.770327967040388
+        },
+        "area": 1.6464000000000034
+      }
+    ]
+  }
+}

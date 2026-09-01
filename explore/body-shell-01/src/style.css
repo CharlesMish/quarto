@@ -1,0 +1,77 @@
+:root {
+  color-scheme: dark;
+  font-family: "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
+  --ink: #d7d9d2;
+  --muted: #8e999a;
+  --line: rgba(178, 194, 190, 0.24);
+  --panel: rgba(8, 12, 15, 0.84);
+  --amber: #e6a93c;
+  --cyan: #81c8c6;
+}
+
+* { box-sizing: border-box; }
+html, body, #view { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+body { background: #080b0e; }
+#view { display: block; outline: none; touch-action: none; }
+button, input { font: inherit; }
+
+.topbar {
+  position: fixed; inset: 16px 18px auto 18px; display: flex;
+  align-items: flex-start; justify-content: space-between; pointer-events: none;
+}
+.identity { border-left: 3px solid var(--amber); padding-left: 11px; text-shadow: 0 2px 10px #000; }
+.eyebrow { color: var(--amber); font-size: 10px; letter-spacing: .22em; font-weight: 800; }
+.title { color: var(--ink); font-size: 20px; letter-spacing: .07em; font-weight: 700; margin-top: 3px; }
+.subtitle { color: var(--muted); font-size: 10px; letter-spacing: .12em; margin-top: 3px; }
+.provenance { color: var(--cyan); font-size: 9px; letter-spacing: .08em; margin-top: 5px; }
+.state-readout { text-align: right; text-shadow: 0 2px 10px #000; }
+.state-name { color: var(--ink); font-size: 18px; letter-spacing: .12em; font-weight: 800; }
+.state-value { color: var(--cyan); font-size: 11px; letter-spacing: .14em; margin-top: 3px; }
+
+.control-deck {
+  position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%);
+  width: min(980px, calc(100vw - 24px)); padding: 12px 14px 11px;
+  border: 1px solid var(--line); border-top-color: rgba(230,169,60,.55);
+  background: linear-gradient(180deg, rgba(18,24,27,.92), var(--panel));
+}
+.h1-sequence { margin-top: 8px; color: rgba(190,199,197,.68); font-size: 9px; letter-spacing: .07em; }
+.h1-sequence b { color: var(--amber); margin-right: 8px; }
+.slider-row { display: grid; grid-template-columns: 64px 1fr 64px; align-items: center; gap: 10px; }
+.slider-row.rear-slider { margin-top: 6px; opacity: 0.82; }
+.end-label { font-size: 10px; color: var(--muted); letter-spacing: .14em; font-weight: 700; }
+.end-label:last-child { text-align: right; }
+input[type="range"] { width: 100%; accent-color: var(--amber); cursor: ew-resize; }
+.button-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 9px; flex-wrap: wrap; }
+.presets, .actions { display: flex; gap: 5px; flex-wrap: wrap; }
+button {
+  min-width: 40px; height: 28px; padding: 0 8px; color: var(--muted); cursor: pointer;
+  border: 1px solid var(--line); background: rgba(4,7,9,.58); letter-spacing: .06em; font-size: 10px;
+}
+button:hover, button:focus-visible { color: var(--ink); border-color: rgba(230,169,60,.62); outline: none; }
+button.active { color: #17130b; border-color: var(--amber); background: var(--amber); font-weight: 800; }
+
+.help {
+  position: fixed; left: 18px; bottom: 148px; color: rgba(190,199,197,.55);
+  font-size: 9px; letter-spacing: .07em; line-height: 1.55; pointer-events: none;
+}
+.debug-panel {
+  position: fixed; top: 78px; right: 16px; width: min(360px, calc(100vw - 32px)); max-height: calc(100vh - 220px);
+  overflow: auto; padding: 10px 11px; color: #a9d0ca; border: 1px solid rgba(100,209,194,.32);
+  background: rgba(4,12,13,.9); font: 10px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.debug-panel[hidden] { display: none; }
+.inspect-panel {
+  position: fixed; top: 92px; left: 18px; width: min(360px, calc(100vw - 36px));
+  max-height: calc(100vh - 250px); overflow: auto; padding: 11px 12px;
+  color: #c8d6d3; border: 1px solid rgba(230,169,60,.46);
+  background: rgba(8,12,15,.94); font: 10px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.inspect-panel[hidden] { display: none; }
+.inspect-head { color: var(--amber); letter-spacing: .14em; font-weight: 800; margin-bottom: 7px; }
+.inspect-row { display: grid; grid-template-columns: 76px 1fr; gap: 8px; padding: 2px 0; border-top: 1px solid rgba(230,169,60,.1); }
+.inspect-row span { color: #758481; }
+.inspect-row b { color: #d5dad6; overflow-wrap: anywhere; font-weight: 600; }
+.inspect-purpose { color: #9cb4af; margin-top: 8px; padding-top: 7px; border-top: 1px solid rgba(230,169,60,.24); }
+.debug-head { color: var(--cyan); letter-spacing: .12em; font-weight: 800; margin-bottom: 8px; }
+.debug-item { display: grid; grid-template-columns: 1fr auto; gap: 8px; border-top: 1px solid rgba(100,209,194,.11); padding: 3px 0; }
+.debug-note { color: #6f8583; margin-top: 8px; }

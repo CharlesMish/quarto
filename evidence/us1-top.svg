@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380">
+  <rect width="900" height="380" fill="#0e1214"/>
+  <text x="16" y="20" fill="#e6a93c" font-size="12" font-family="monospace">US1 TOP · centerline zoning · +X stbd right · +Z forward up · diagnostic only</text>
+  <line x1="465" y1="330" x2="465" y2="30" stroke="#81c8c6" stroke-dasharray="3 3"/>
+  <rect x="356.5" y="60.0" width="217.1" height="45.0" fill="#7c3aed" fill-opacity="0.28" stroke="#7c3aed"/>
+  <rect x="441.1" y="61.1" width="47.9" height="203.6" fill="#6b7280" fill-opacity="0.28" stroke="#6b7280"/>
+  <rect x="445.8" y="61.1" width="38.3" height="133.9" fill="#6b7280" fill-opacity="0.28" stroke="#6b7280"/>
+  <rect x="345.3" y="85.9" width="239.4" height="4.0" fill="#ca8a04" fill-opacity="0.28" stroke="#ca8a04"/>
+  <rect x="345.3" y="133.1" width="239.4" height="4.0" fill="#ca8a04" fill-opacity="0.28" stroke="#ca8a04"/>
+  <rect x="345.3" y="194.1" width="239.4" height="4.0" fill="#ca8a04" fill-opacity="0.28" stroke="#ca8a04"/>
+  <rect x="433.1" y="109.3" width="63.8" height="83.6" fill="#0e7490" fill-opacity="0.28" stroke="#0e7490"/>
+  <rect x="107.8" y="136.1" width="714.4" height="57.4" fill="#0e7490" fill-opacity="0.28" stroke="#0e7490"/>
+  <rect x="346.9" y="195.0" width="236.2" height="66.4" fill="#6b7280" fill-opacity="0.28" stroke="#6b7280"/>
+  <rect x="409.1" y="214.4" width="111.7" height="38.6" fill="#b45309" fill-opacity="0.28" stroke="#b45309"/>
+  <rect x="385.2" y="200.9" width="159.6" height="109.3" fill="#b45309" fill-opacity="0.28" stroke="#b45309"/>
+  <rect x="353.3" y="278.6" width="223.5" height="17.1" fill="#0e7490" fill-opacity="0.28" stroke="#0e7490"/>
+  <rect x="345.3" y="112.5" width="239.4" height="42.9" fill="#4d7c0f" fill-opacity="0.28" stroke="#4d7c0f"/>
+  <text x="16" y="364" fill="#8e999a" font-size="9" font-family="monospace">waist shown as protected empty (cyan). Book flanks are outside this spine map.</text>
+</svg>

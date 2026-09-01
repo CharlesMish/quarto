@@ -1,0 +1,2044 @@
+{
+  "tag": "DERIVED_ESTIMATE",
+  "status": "VB1_CANDIDATE_PENDING_DIRECTOR_ASSUMPTION_REVIEW",
+  "computed_disposition": "BALANCE_CONCEPT_SURVIVES_WITH_CAUTION",
+  "conclusion": "Under the declared mass-family ranges, the certified S4A arrangement does not place the SPREAD CG band in a grossly implausible relationship to the geometric planform-area centroids of the front and rear books or to the certified thrust-line datum; and the SPREAD→DRIVE CG migration is not large enough relative to the machine's own length/height to indicate an obvious first-order rebalance requirement. No flight, hover, stability, control-authority, or GEV capability is asserted.",
+  "nextSlice": "drive/propulsion internal mass architecture next",
+  "named": {
+    "ALL_LOW": {
+      "SPREAD": {
+        "machineT": 0,
+        "state": "SPREAD",
+        "scenario": "ALL_LOW",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 46,
+          "x_lat": 0,
+          "y_vert": 1.5490217478767687,
+          "z_long": -0.3810689559429377,
+          "verticalThrustArm": 0.7690217478767687,
+          "verticalThrustArmNorm": 0.2656379094565695
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        },
+        "dFromReady": null
+      },
+      "MID_FOLD": {
+        "machineT": 0.15,
+        "state": "MID_FOLD",
+        "scenario": "ALL_LOW",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 46,
+          "x_lat": 1.9308226515220113e-17,
+          "y_vert": 1.5199286445771747,
+          "z_long": -0.37705331581364054,
+          "verticalThrustArm": 0.7399286445771747,
+          "verticalThrustArmNorm": 0.25558847826499986
+        },
+        "dFromSpread": {
+          "x_lat": 1.9308226515220113e-17,
+          "y_vert": -0.029093103299594025,
+          "z_long": 0.004015640129297171
+        },
+        "dFromReady": null
+      },
+      "POST_YAW": {
+        "machineT": 0.54,
+        "state": "POST_YAW",
+        "scenario": "ALL_LOW",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 46,
+          "x_lat": 9.654113257610057e-18,
+          "y_vert": 1.4467438140139572,
+          "z_long": -0.9383776310526967,
+          "verticalThrustArm": 0.6667438140139572,
+          "verticalThrustArmNorm": 0.2303087440462719
+        },
+        "dFromSpread": {
+          "x_lat": 9.654113257610057e-18,
+          "y_vert": -0.10227793386281148,
+          "z_long": -0.5573086751097589
+        },
+        "dFromReady": null
+      },
+      "POST_HAUNCH_CANT": {
+        "machineT": 0.7,
+        "state": "POST_HAUNCH_CANT",
+        "scenario": "ALL_LOW",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 46,
+          "x_lat": -1.4481169886415085e-17,
+          "y_vert": 1.3113359352607008,
+          "z_long": -0.9382223039147021,
+          "verticalThrustArm": 0.5313359352607008,
+          "verticalThrustArmNorm": 0.18353572893288456
+        },
+        "dFromSpread": {
+          "x_lat": -1.4481169886415085e-17,
+          "y_vert": -0.23768581261606792,
+          "z_long": -0.5571533479717643
+        },
+        "dFromReady": null
+      },
+      "STRUCTURAL_READY": {
+        "machineT": 0.84,
+        "state": "STRUCTURAL_READY",
+        "scenario": "ALL_LOW",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 46,
+          "x_lat": 4.827056628805028e-18,
+          "y_vert": 1.3113359352607008,
+          "z_long": -0.938100015397372,
+          "verticalThrustArm": 0.5313359352607008,
+          "verticalThrustArmNorm": 0.18353572893288456
+        },
+        "dFromSpread": {
+          "x_lat": 4.827056628805028e-18,
+          "y_vert": -0.23768581261606792,
+          "z_long": -0.5570310594544343
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        }
+      },
+      "DRIVE": {
+        "machineT": 1,
+        "state": "DRIVE",
+        "scenario": "ALL_LOW",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 46,
+          "x_lat": 4.827056628805028e-18,
+          "y_vert": 1.3113359352607008,
+          "z_long": -1.1580049279520714,
+          "verticalThrustArm": 0.5313359352607008,
+          "verticalThrustArmNorm": 0.18353572893288456
+        },
+        "dFromSpread": {
+          "x_lat": 4.827056628805028e-18,
+          "y_vert": -0.23768581261606792,
+          "z_long": -0.7769359720091338
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": -0.21990491255469946
+        }
+      }
+    },
+    "NOMINAL": {
+      "SPREAD": {
+        "machineT": 0,
+        "state": "SPREAD",
+        "scenario": "NOMINAL",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 100,
+          "x_lat": 0,
+          "y_vert": 1.4966000074446202,
+          "z_long": -0.3212834421616327,
+          "verticalThrustArm": 0.7166000074446202,
+          "verticalThrustArmNorm": 0.24753022709658729
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        },
+        "dFromReady": null
+      },
+      "MID_FOLD": {
+        "machineT": 0.15,
+        "state": "MID_FOLD",
+        "scenario": "NOMINAL",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 100,
+          "x_lat": 1.7763568394002505e-17,
+          "y_vert": 1.4698343524089938,
+          "z_long": -0.31758905324267916,
+          "verticalThrustArm": 0.6898343524089938,
+          "verticalThrustArmNorm": 0.23828475040034328
+        },
+        "dFromSpread": {
+          "x_lat": 1.7763568394002505e-17,
+          "y_vert": -0.026765655035626335,
+          "z_long": 0.0036943889189535173
+        },
+        "dFromReady": null
+      },
+      "POST_YAW": {
+        "machineT": 0.54,
+        "state": "POST_YAW",
+        "scenario": "NOMINAL",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 100,
+          "x_lat": 8.881784197001253e-18,
+          "y_vert": 1.4025043082908337,
+          "z_long": -0.8340074232626108,
+          "verticalThrustArm": 0.6225043082908337,
+          "verticalThrustArmNorm": 0.21502739491911355
+        },
+        "dFromSpread": {
+          "x_lat": 8.881784197001253e-18,
+          "y_vert": -0.09409569915378646,
+          "z_long": -0.512723981100978
+        },
+        "dFromReady": null
+      },
+      "POST_HAUNCH_CANT": {
+        "machineT": 0.7,
+        "state": "POST_HAUNCH_CANT",
+        "scenario": "NOMINAL",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 100,
+          "x_lat": -1.7763568394002505e-17,
+          "y_vert": 1.2779290598378379,
+          "z_long": -0.8338645222956559,
+          "verticalThrustArm": 0.49792905983783786,
+          "verticalThrustArmNorm": 0.1719962210147972
+        },
+        "dFromSpread": {
+          "x_lat": -1.7763568394002505e-17,
+          "y_vert": -0.2186709476067823,
+          "z_long": -0.5125810801340231
+        },
+        "dFromReady": null
+      },
+      "STRUCTURAL_READY": {
+        "machineT": 0.84,
+        "state": "STRUCTURAL_READY",
+        "scenario": "NOMINAL",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 100,
+          "x_lat": 0,
+          "y_vert": 1.2779290598378379,
+          "z_long": -0.8337707677657029,
+          "verticalThrustArm": 0.49792905983783786,
+          "verticalThrustArmNorm": 0.1719962210147972
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.2186709476067823,
+          "z_long": -0.5124873256040703
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        }
+      },
+      "DRIVE": {
+        "machineT": 1,
+        "state": "DRIVE",
+        "scenario": "NOMINAL",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 100,
+          "x_lat": 0,
+          "y_vert": 1.2779290598378379,
+          "z_long": -1.1893645480448622,
+          "verticalThrustArm": 0.49792905983783786,
+          "verticalThrustArmNorm": 0.1719962210147972
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.2186709476067823,
+          "z_long": -0.8680811058832296
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": -0.35559378027915933
+        }
+      }
+    },
+    "ALL_HIGH": {
+      "SPREAD": {
+        "machineT": 0,
+        "state": "SPREAD",
+        "scenario": "ALL_HIGH",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 182,
+          "x_lat": -3.9040809657148365e-17,
+          "y_vert": 1.4832692379398003,
+          "z_long": -0.2915752124176718,
+          "verticalThrustArm": 0.7032692379398002,
+          "verticalThrustArmNorm": 0.24292547079095
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        },
+        "dFromReady": null
+      },
+      "MID_FOLD": {
+        "machineT": 0.15,
+        "state": "MID_FOLD",
+        "scenario": "ALL_HIGH",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 182,
+          "x_lat": -1.9520404828574182e-17,
+          "y_vert": 1.4544761485958826,
+          "z_long": -0.28751544437486587,
+          "verticalThrustArm": 0.6744761485958826,
+          "verticalThrustArmNorm": 0.23297967136299916
+        },
+        "dFromSpread": {
+          "x_lat": 1.9520404828574182e-17,
+          "y_vert": -0.028793089343917666,
+          "z_long": 0.004059768042805945
+        },
+        "dFromReady": null
+      },
+      "POST_YAW": {
+        "machineT": 0.54,
+        "state": "POST_YAW",
+        "scenario": "ALL_HIGH",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 182,
+          "x_lat": -9.760202414287091e-18,
+          "y_vert": 1.3860158158704565,
+          "z_long": -0.8017560840385765,
+          "verticalThrustArm": 0.6060158158704565,
+          "verticalThrustArmNorm": 0.20933188803815422
+        },
+        "dFromSpread": {
+          "x_lat": 2.928060724286127e-17,
+          "y_vert": -0.09725342206934373,
+          "z_long": -0.5101808716209046
+        },
+        "dFromReady": null
+      },
+      "POST_HAUNCH_CANT": {
+        "machineT": 0.7,
+        "state": "POST_HAUNCH_CANT",
+        "scenario": "ALL_HIGH",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 182,
+          "x_lat": -1.9520404828574182e-17,
+          "y_vert": 1.2662126845376696,
+          "z_long": -0.8015966855738161,
+          "verticalThrustArm": 0.4862126845376695,
+          "verticalThrustArmNorm": 0.16794911382993766
+        },
+        "dFromSpread": {
+          "x_lat": 1.9520404828574182e-17,
+          "y_vert": -0.2170565534021307,
+          "z_long": -0.5100214731561443
+        },
+        "dFromReady": null
+      },
+      "STRUCTURAL_READY": {
+        "machineT": 0.84,
+        "state": "STRUCTURAL_READY",
+        "scenario": "ALL_HIGH",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 182,
+          "x_lat": 1.9520404828574182e-17,
+          "y_vert": 1.2662126845376696,
+          "z_long": -0.8015142640090224,
+          "verticalThrustArm": 0.4862126845376695,
+          "verticalThrustArmNorm": 0.16794911382993766
+        },
+        "dFromSpread": {
+          "x_lat": 5.856121448572254e-17,
+          "y_vert": -0.2170565534021307,
+          "z_long": -0.5099390515913506
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        }
+      },
+      "DRIVE": {
+        "machineT": 1,
+        "state": "DRIVE",
+        "scenario": "ALL_HIGH",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 182,
+          "x_lat": 1.9520404828574182e-17,
+          "y_vert": 1.2662126845376696,
+          "z_long": -1.2486296853041883,
+          "verticalThrustArm": 0.4862126845376695,
+          "verticalThrustArmNorm": 0.16794911382993766
+        },
+        "dFromSpread": {
+          "x_lat": 5.856121448572254e-17,
+          "y_vert": -0.2170565534021307,
+          "z_long": -0.9570544728865165
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": -0.4471154212951659
+        }
+      }
+    },
+    "HEAVY_AFT_LIGHT_FORWARD": {
+      "SPREAD": {
+        "machineT": 0,
+        "state": "SPREAD",
+        "scenario": "HEAVY_AFT_LIGHT_FORWARD",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 124,
+          "x_lat": -5.730183352904034e-17,
+          "y_vert": 1.4962903250850013,
+          "z_long": -1.528340088310963,
+          "verticalThrustArm": 0.7162903250850012,
+          "verticalThrustArmNorm": 0.24742325564248746
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        },
+        "dFromReady": null
+      },
+      "MID_FOLD": {
+        "machineT": 0.15,
+        "state": "MID_FOLD",
+        "scenario": "HEAVY_AFT_LIGHT_FORWARD",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 124,
+          "x_lat": -5.0139104337910294e-17,
+          "y_vert": 1.4809497889201453,
+          "z_long": -1.5268504153597724,
+          "verticalThrustArm": 0.7009497889201453,
+          "verticalThrustArmNorm": 0.2421242794197393
+        },
+        "dFromSpread": {
+          "x_lat": 7.162729191130042e-18,
+          "y_vert": -0.015340536164855978,
+          "z_long": 0.0014896729511906237
+        },
+        "dFromReady": null
+      },
+      "POST_YAW": {
+        "machineT": 0.54,
+        "state": "POST_YAW",
+        "scenario": "HEAVY_AFT_LIGHT_FORWARD",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 124,
+          "x_lat": 0,
+          "y_vert": 1.4132268571142539,
+          "z_long": -2.1258851446093816,
+          "verticalThrustArm": 0.6332268571142539,
+          "verticalThrustArmNorm": 0.21873121143842966
+        },
+        "dFromSpread": {
+          "x_lat": 5.730183352904034e-17,
+          "y_vert": -0.08306346797074737,
+          "z_long": -0.5975450562984186
+        },
+        "dFromReady": null
+      },
+      "POST_HAUNCH_CANT": {
+        "machineT": 0.7,
+        "state": "POST_HAUNCH_CANT",
+        "scenario": "HEAVY_AFT_LIGHT_FORWARD",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 124,
+          "x_lat": -2.865091676452017e-17,
+          "y_vert": 1.237556200962564,
+          "z_long": -2.1258448751547783,
+          "verticalThrustArm": 0.457556200962564,
+          "verticalThrustArmNorm": 0.15805050119604974
+        },
+        "dFromSpread": {
+          "x_lat": 2.865091676452017e-17,
+          "y_vert": -0.25873412412243724,
+          "z_long": -0.5975047868438152
+        },
+        "dFromReady": null
+      },
+      "STRUCTURAL_READY": {
+        "machineT": 0.84,
+        "state": "STRUCTURAL_READY",
+        "scenario": "HEAVY_AFT_LIGHT_FORWARD",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 124,
+          "x_lat": 2.865091676452017e-17,
+          "y_vert": 1.2375562009625642,
+          "z_long": -2.125723901567742,
+          "verticalThrustArm": 0.4575562009625642,
+          "verticalThrustArmNorm": 0.15805050119604983
+        },
+        "dFromSpread": {
+          "x_lat": 8.59527502935605e-17,
+          "y_vert": -0.258734124122437,
+          "z_long": -0.597383813256779
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        }
+      },
+      "DRIVE": {
+        "machineT": 1,
+        "state": "DRIVE",
+        "scenario": "HEAVY_AFT_LIGHT_FORWARD",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 124,
+          "x_lat": 2.865091676452017e-17,
+          "y_vert": 1.2375562009625642,
+          "z_long": -2.7819739554041956,
+          "verticalThrustArm": 0.4575562009625642,
+          "verticalThrustArmNorm": 0.15805050119604983
+        },
+        "dFromSpread": {
+          "x_lat": 8.59527502935605e-17,
+          "y_vert": -0.258734124122437,
+          "z_long": -1.2536338670932325
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": -0.6562500538364535
+        }
+      }
+    },
+    "HEAVY_FORWARD_LIGHT_AFT": {
+      "SPREAD": {
+        "machineT": 0,
+        "state": "SPREAD",
+        "scenario": "HEAVY_FORWARD_LIGHT_AFT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 101,
+          "x_lat": 0,
+          "y_vert": 1.5105940731740233,
+          "z_long": 1.184240696481051,
+          "verticalThrustArm": 0.7305940731740233,
+          "verticalThrustArmNorm": 0.25236410126909264
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        },
+        "dFromReady": null
+      },
+      "MID_FOLD": {
+        "machineT": 0.15,
+        "state": "MID_FOLD",
+        "scenario": "HEAVY_FORWARD_LIGHT_AFT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 101,
+          "x_lat": 3.51753829584208e-17,
+          "y_vert": 1.4642930976499418,
+          "z_long": 1.191556318102741,
+          "verticalThrustArm": 0.6842930976499417,
+          "verticalThrustArmNorm": 0.23637067276336501
+        },
+        "dFromSpread": {
+          "x_lat": 3.51753829584208e-17,
+          "y_vert": -0.04630097552408152,
+          "z_long": 0.007315621621690083
+        },
+        "dFromReady": null
+      },
+      "POST_YAW": {
+        "machineT": 0.54,
+        "state": "POST_YAW",
+        "scenario": "HEAVY_FORWARD_LIGHT_AFT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 101,
+          "x_lat": 0,
+          "y_vert": 1.390742214303358,
+          "z_long": 0.7447007884706585,
+          "verticalThrustArm": 0.6107422143033581,
+          "verticalThrustArmNorm": 0.21096449544157447
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.11985185887066518,
+          "z_long": -0.43953990801039255
+        },
+        "dFromReady": null
+      },
+      "POST_HAUNCH_CANT": {
+        "machineT": 0.7,
+        "state": "POST_HAUNCH_CANT",
+        "scenario": "HEAVY_FORWARD_LIGHT_AFT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 101,
+          "x_lat": -8.7938457396052e-18,
+          "y_vert": 1.328863293883482,
+          "z_long": 0.7450093246742556,
+          "verticalThrustArm": 0.5488632938834819,
+          "verticalThrustArmNorm": 0.18959008424299892
+        },
+        "dFromSpread": {
+          "x_lat": -8.7938457396052e-18,
+          "y_vert": -0.18173077929054138,
+          "z_long": -0.4392313718067954
+        },
+        "dFromReady": null
+      },
+      "STRUCTURAL_READY": {
+        "machineT": 0.84,
+        "state": "STRUCTURAL_READY",
+        "scenario": "HEAVY_FORWARD_LIGHT_AFT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 101,
+          "x_lat": 8.7938457396052e-18,
+          "y_vert": 1.328863293883482,
+          "z_long": 0.7450650204346237,
+          "verticalThrustArm": 0.5488632938834819,
+          "verticalThrustArmNorm": 0.18959008424299892
+        },
+        "dFromSpread": {
+          "x_lat": 8.7938457396052e-18,
+          "y_vert": -0.18173077929054138,
+          "z_long": -0.43917567604642727
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        }
+      },
+      "DRIVE": {
+        "machineT": 1,
+        "state": "DRIVE",
+        "scenario": "HEAVY_FORWARD_LIGHT_AFT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 101,
+          "x_lat": 8.7938457396052e-18,
+          "y_vert": 1.328863293883482,
+          "z_long": 0.6449103077859487,
+          "verticalThrustArm": 0.5488632938834819,
+          "verticalThrustArmNorm": 0.18959008424299892
+        },
+        "dFromSpread": {
+          "x_lat": 8.7938457396052e-18,
+          "y_vert": -0.18173077929054138,
+          "z_long": -0.5393303886951023
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": -0.10015471264867504
+        }
+      }
+    },
+    "HEAVY_DRIVE_MOVING": {
+      "SPREAD": {
+        "machineT": 0,
+        "state": "SPREAD",
+        "scenario": "HEAVY_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 118,
+          "x_lat": 0,
+          "y_vert": 1.3872881375379482,
+          "z_long": -0.7680368153912142,
+          "verticalThrustArm": 0.6072881375379482,
+          "verticalThrustArmNorm": 0.20977137738789228
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        },
+        "dFromReady": null
+      },
+      "MID_FOLD": {
+        "machineT": 0.15,
+        "state": "MID_FOLD",
+        "scenario": "HEAVY_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 118,
+          "x_lat": 1.5053871520341106e-17,
+          "y_vert": 1.36460537903318,
+          "z_long": -0.7649059773243043,
+          "verticalThrustArm": 0.58460537903318,
+          "verticalThrustArmNorm": 0.2019362276453126
+        },
+        "dFromSpread": {
+          "x_lat": 1.5053871520341106e-17,
+          "y_vert": -0.022682758504768197,
+          "z_long": 0.0031308380669098357
+        },
+        "dFromReady": null
+      },
+      "POST_YAW": {
+        "machineT": 0.54,
+        "state": "POST_YAW",
+        "scenario": "HEAVY_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 118,
+          "x_lat": 7.526935760170553e-18,
+          "y_vert": 1.3075460196110105,
+          "z_long": -1.2025486637818736,
+          "verticalThrustArm": 0.5275460196110104,
+          "verticalThrustArmNorm": 0.18222660435613486
+        },
+        "dFromSpread": {
+          "x_lat": 7.526935760170553e-18,
+          "y_vert": -0.07974211792693775,
+          "z_long": -0.4345118483906595
+        },
+        "dFromReady": null
+      },
+      "POST_HAUNCH_CANT": {
+        "machineT": 0.7,
+        "state": "POST_HAUNCH_CANT",
+        "scenario": "HEAVY_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 118,
+          "x_lat": -1.5053871520341106e-17,
+          "y_vert": 1.2019737751593191,
+          "z_long": -1.2024275612675048,
+          "verticalThrustArm": 0.4219737751593191,
+          "verticalThrustArmNorm": 0.14575950782705324
+        },
+        "dFromSpread": {
+          "x_lat": -1.5053871520341106e-17,
+          "y_vert": -0.18531436237862908,
+          "z_long": -0.4343907458762907
+        },
+        "dFromReady": null
+      },
+      "STRUCTURAL_READY": {
+        "machineT": 0.84,
+        "state": "STRUCTURAL_READY",
+        "scenario": "HEAVY_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 118,
+          "x_lat": 0,
+          "y_vert": 1.2019737751593191,
+          "z_long": -1.2023481082760192,
+          "verticalThrustArm": 0.4219737751593191,
+          "verticalThrustArmNorm": 0.14575950782705324
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.18531436237862908,
+          "z_long": -0.4343112928848051
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        }
+      },
+      "DRIVE": {
+        "machineT": 1,
+        "state": "DRIVE",
+        "scenario": "HEAVY_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 118,
+          "x_lat": 0,
+          "y_vert": 1.2019737751593191,
+          "z_long": -1.8926818494721507,
+          "verticalThrustArm": 0.4219737751593191,
+          "verticalThrustArmNorm": 0.14575950782705324
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.18531436237862908,
+          "z_long": -1.1246450340809364
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": -0.6903337411961314
+        }
+      }
+    },
+    "LIGHT_DRIVE_MOVING": {
+      "SPREAD": {
+        "machineT": 0,
+        "state": "SPREAD",
+        "scenario": "LIGHT_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 90,
+          "x_lat": 0,
+          "y_vert": 1.5762222336729368,
+          "z_long": 0.004129508709297072,
+          "verticalThrustArm": 0.7962222336729368,
+          "verticalThrustArmNorm": 0.27503358676094536
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        },
+        "dFromReady": null
+      },
+      "MID_FOLD": {
+        "machineT": 0.15,
+        "state": "MID_FOLD",
+        "scenario": "LIGHT_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 90,
+          "x_lat": 1.973729821555834e-17,
+          "y_vert": 1.5464826169666852,
+          "z_long": 0.008234385285911985,
+          "verticalThrustArm": 0.7664826169666852,
+          "verticalThrustArmNorm": 0.26476083487622976
+        },
+        "dFromSpread": {
+          "x_lat": 1.973729821555834e-17,
+          "y_vert": -0.02973961670625158,
+          "z_long": 0.004104876576614913
+        },
+        "dFromReady": null
+      },
+      "POST_YAW": {
+        "machineT": 0.54,
+        "state": "POST_YAW",
+        "scenario": "LIGHT_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 90,
+          "x_lat": 9.86864910777917e-18,
+          "y_vert": 1.4716714568353964,
+          "z_long": -0.5655638036251232,
+          "verticalThrustArm": 0.6916714568353963,
+          "verticalThrustArmNorm": 0.23891932878597455
+        },
+        "dFromSpread": {
+          "x_lat": 9.86864910777917e-18,
+          "y_vert": -0.10455077683754044,
+          "z_long": -0.5696933123344202
+        },
+        "dFromReady": null
+      },
+      "POST_HAUNCH_CANT": {
+        "machineT": 0.7,
+        "state": "POST_HAUNCH_CANT",
+        "scenario": "LIGHT_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 90,
+          "x_lat": -1.973729821555834e-17,
+          "y_vert": 1.3332545141098453,
+          "z_long": -0.5654050247729511,
+          "verticalThrustArm": 0.5532545141098453,
+          "verticalThrustArmNorm": 0.19110691333673413
+        },
+        "dFromSpread": {
+          "x_lat": -1.973729821555834e-17,
+          "y_vert": -0.2429677195630915,
+          "z_long": -0.5695345334822481
+        },
+        "dFromReady": null
+      },
+      "STRUCTURAL_READY": {
+        "machineT": 0.84,
+        "state": "STRUCTURAL_READY",
+        "scenario": "LIGHT_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 90,
+          "x_lat": 0,
+          "y_vert": 1.3332545141098453,
+          "z_long": -0.5653008530730033,
+          "verticalThrustArm": 0.5532545141098453,
+          "verticalThrustArmNorm": 0.19110691333673413
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.2429677195630915,
+          "z_long": -0.5694303617823003
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        }
+      },
+      "DRIVE": {
+        "machineT": 1,
+        "state": "DRIVE",
+        "scenario": "LIGHT_DRIVE_MOVING",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 90,
+          "x_lat": 0,
+          "y_vert": 1.3332545141098453,
+          "z_long": -0.6770716988570846,
+          "verticalThrustArm": 0.5532545141098453,
+          "verticalThrustArmNorm": 0.19110691333673413
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.2429677195630915,
+          "z_long": -0.6812012075663817
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": -0.11177084578408136
+        }
+      }
+    },
+    "HEAVY_COCKPIT": {
+      "SPREAD": {
+        "machineT": 0,
+        "state": "SPREAD",
+        "scenario": "HEAVY_COCKPIT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 112,
+          "x_lat": 0,
+          "y_vert": 1.4701785780755539,
+          "z_long": 0.09349692153242982,
+          "verticalThrustArm": 0.6901785780755538,
+          "verticalThrustArmNorm": 0.2384036539121084
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        },
+        "dFromReady": null
+      },
+      "MID_FOLD": {
+        "machineT": 0.15,
+        "state": "MID_FOLD",
+        "scenario": "HEAVY_COCKPIT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 112,
+          "x_lat": 1.586032892321652e-17,
+          "y_vert": 1.4462806717937444,
+          "z_long": 0.09679548306720978,
+          "verticalThrustArm": 0.6662806717937444,
+          "verticalThrustArmNorm": 0.23014876400474762
+        },
+        "dFromSpread": {
+          "x_lat": 1.586032892321652e-17,
+          "y_vert": -0.023897906281809433,
+          "z_long": 0.003298561534779962
+        },
+        "dFromReady": null
+      },
+      "POST_YAW": {
+        "machineT": 0.54,
+        "state": "POST_YAW",
+        "scenario": "HEAVY_COCKPIT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 112,
+          "x_lat": 7.93016446160826e-18,
+          "y_vert": 1.3861645609739586,
+          "z_long": -0.3642923473077292,
+          "verticalThrustArm": 0.6061645609739585,
+          "verticalThrustArmNorm": 0.2093832680393639
+        },
+        "dFromSpread": {
+          "x_lat": 7.93016446160826e-18,
+          "y_vert": -0.08401401710159528,
+          "z_long": -0.457789268840159
+        },
+        "dFromReady": null
+      },
+      "POST_HAUNCH_CANT": {
+        "machineT": 0.7,
+        "state": "POST_HAUNCH_CANT",
+        "scenario": "HEAVY_COCKPIT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 112,
+          "x_lat": -1.586032892321652e-17,
+          "y_vert": 1.274936660569498,
+          "z_long": -0.3641647571586623,
+          "verticalThrustArm": 0.49493666056949803,
+          "verticalThrustArmNorm": 0.1709625770533672
+        },
+        "dFromSpread": {
+          "x_lat": -1.586032892321652e-17,
+          "y_vert": -0.1952419175060558,
+          "z_long": -0.45766167869109214
+        },
+        "dFromReady": null
+      },
+      "STRUCTURAL_READY": {
+        "machineT": 0.84,
+        "state": "STRUCTURAL_READY",
+        "scenario": "HEAVY_COCKPIT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 112,
+          "x_lat": 0,
+          "y_vert": 1.274936660569498,
+          "z_long": -0.3640810477569186,
+          "verticalThrustArm": 0.49493666056949803,
+          "verticalThrustArmNorm": 0.1709625770533672
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.1952419175060558,
+          "z_long": -0.4575779692893484
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        }
+      },
+      "DRIVE": {
+        "machineT": 1,
+        "state": "DRIVE",
+        "scenario": "HEAVY_COCKPIT",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 112,
+          "x_lat": 0,
+          "y_vert": 1.274936660569498,
+          "z_long": -0.6815754944347395,
+          "verticalThrustArm": 0.49493666056949803,
+          "verticalThrustArmNorm": 0.1709625770533672
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.1952419175060558,
+          "z_long": -0.7750724159671694
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": -0.31749444667782095
+        }
+      }
+    },
+    "HEAVY_WAIST_SYSTEMS": {
+      "SPREAD": {
+        "machineT": 0,
+        "state": "SPREAD",
+        "scenario": "HEAVY_WAIST_SYSTEMS",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 106,
+          "x_lat": 0,
+          "y_vert": 1.495377366863332,
+          "z_long": -0.3195126824991444,
+          "verticalThrustArm": 0.7153773668633319,
+          "verticalThrustArmNorm": 0.24710789874381067
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        },
+        "dFromReady": null
+      },
+      "MID_FOLD": {
+        "machineT": 0.15,
+        "state": "MID_FOLD",
+        "scenario": "HEAVY_WAIST_SYSTEMS",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 106,
+          "x_lat": 1.67580833905684e-17,
+          "y_vert": 1.4701267489051937,
+          "z_long": -0.31602740993409384,
+          "verticalThrustArm": 0.6901267489051937,
+          "verticalThrustArmNorm": 0.23838575091716532
+        },
+        "dFromSpread": {
+          "x_lat": 1.67580833905684e-17,
+          "y_vert": -0.02525061795813821,
+          "z_long": 0.0034852725650505456
+        },
+        "dFromReady": null
+      },
+      "POST_YAW": {
+        "machineT": 0.54,
+        "state": "POST_YAW",
+        "scenario": "HEAVY_WAIST_SYSTEMS",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 106,
+          "x_lat": 0,
+          "y_vert": 1.4066078393597596,
+          "z_long": -0.8032145514623312,
+          "verticalThrustArm": 0.6266078393597596,
+          "verticalThrustArmNorm": 0.2164448495197788
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.08876952750357225,
+          "z_long": -0.48370186896318684
+        },
+        "dFromReady": null
+      },
+      "POST_HAUNCH_CANT": {
+        "machineT": 0.7,
+        "state": "POST_HAUNCH_CANT",
+        "scenario": "HEAVY_WAIST_SYSTEMS",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 106,
+          "x_lat": -1.67580833905684e-17,
+          "y_vert": 1.2890840200644804,
+          "z_long": -0.8030797392293549,
+          "verticalThrustArm": 0.5090840200644804,
+          "verticalThrustArmNorm": 0.17584940244023503
+        },
+        "dFromSpread": {
+          "x_lat": -1.67580833905684e-17,
+          "y_vert": -0.20629334679885147,
+          "z_long": -0.48356705673021055
+        },
+        "dFromReady": null
+      },
+      "STRUCTURAL_READY": {
+        "machineT": 0.84,
+        "state": "STRUCTURAL_READY",
+        "scenario": "HEAVY_WAIST_SYSTEMS",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 106,
+          "x_lat": 0,
+          "y_vert": 1.2890840200644804,
+          "z_long": -0.8029912915595879,
+          "verticalThrustArm": 0.5090840200644804,
+          "verticalThrustArmNorm": 0.17584940244023503
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.20629334679885147,
+          "z_long": -0.48347860906044354
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": 0
+        }
+      },
+      "DRIVE": {
+        "machineT": 1,
+        "state": "DRIVE",
+        "scenario": "HEAVY_WAIST_SYSTEMS",
+        "cg": {
+          "tag": "DERIVED_ESTIMATE",
+          "totalRmu": 106,
+          "x_lat": 0,
+          "y_vert": 1.2890840200644804,
+          "z_long": -1.138457122011625,
+          "verticalThrustArm": 0.5090840200644804,
+          "verticalThrustArmNorm": 0.17584940244023503
+        },
+        "dFromSpread": {
+          "x_lat": 0,
+          "y_vert": -0.20629334679885147,
+          "z_long": -0.8189444395124807
+        },
+        "dFromReady": {
+          "x_lat": 0,
+          "y_vert": 0,
+          "z_long": -0.33546583045203715
+        }
+      }
+    }
+  },
+  "spreadCgs": {
+    "ALL_LOW": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 46,
+      "x_lat": 0,
+      "y_vert": 1.5490217478767687,
+      "z_long": -0.3810689559429377,
+      "verticalThrustArm": 0.7690217478767687,
+      "verticalThrustArmNorm": 0.2656379094565695
+    },
+    "NOMINAL": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.4966000074446202,
+      "z_long": -0.3212834421616327,
+      "verticalThrustArm": 0.7166000074446202,
+      "verticalThrustArmNorm": 0.24753022709658729
+    },
+    "ALL_HIGH": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 182,
+      "x_lat": -3.9040809657148365e-17,
+      "y_vert": 1.4832692379398003,
+      "z_long": -0.2915752124176718,
+      "verticalThrustArm": 0.7032692379398002,
+      "verticalThrustArmNorm": 0.24292547079095
+    },
+    "HEAVY_AFT_LIGHT_FORWARD": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 124,
+      "x_lat": -5.730183352904034e-17,
+      "y_vert": 1.4962903250850013,
+      "z_long": -1.528340088310963,
+      "verticalThrustArm": 0.7162903250850012,
+      "verticalThrustArmNorm": 0.24742325564248746
+    },
+    "HEAVY_FORWARD_LIGHT_AFT": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 101,
+      "x_lat": 0,
+      "y_vert": 1.5105940731740233,
+      "z_long": 1.184240696481051,
+      "verticalThrustArm": 0.7305940731740233,
+      "verticalThrustArmNorm": 0.25236410126909264
+    },
+    "HEAVY_DRIVE_MOVING": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 118,
+      "x_lat": 0,
+      "y_vert": 1.3872881375379482,
+      "z_long": -0.7680368153912142,
+      "verticalThrustArm": 0.6072881375379482,
+      "verticalThrustArmNorm": 0.20977137738789228
+    },
+    "LIGHT_DRIVE_MOVING": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 90,
+      "x_lat": 0,
+      "y_vert": 1.5762222336729368,
+      "z_long": 0.004129508709297072,
+      "verticalThrustArm": 0.7962222336729368,
+      "verticalThrustArmNorm": 0.27503358676094536
+    },
+    "HEAVY_COCKPIT": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 112,
+      "x_lat": 0,
+      "y_vert": 1.4701785780755539,
+      "z_long": 0.09349692153242982,
+      "verticalThrustArm": 0.6901785780755538,
+      "verticalThrustArmNorm": 0.2384036539121084
+    },
+    "HEAVY_WAIST_SYSTEMS": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 106,
+      "x_lat": 0,
+      "y_vert": 1.495377366863332,
+      "z_long": -0.3195126824991444,
+      "verticalThrustArm": 0.7153773668633319,
+      "verticalThrustArmNorm": 0.24710789874381067
+    }
+  },
+  "scenarioOrder": {
+    "ALL_LOW": {
+      "front_z_long": 3.8239569601645935,
+      "cg_z_long": -0.3810689559429377,
+      "combined_z_long": 0.2239649979271889,
+      "rear_z_long": -0.7999999523162837,
+      "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+      "aheadOfFront": false,
+      "aftOfRear": false
+    },
+    "NOMINAL": {
+      "front_z_long": 3.8239569601645935,
+      "cg_z_long": -0.3212834421616327,
+      "combined_z_long": 0.2239649979271889,
+      "rear_z_long": -0.7999999523162837,
+      "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+      "aheadOfFront": false,
+      "aftOfRear": false
+    },
+    "ALL_HIGH": {
+      "front_z_long": 3.8239569601645935,
+      "cg_z_long": -0.2915752124176718,
+      "combined_z_long": 0.2239649979271889,
+      "rear_z_long": -0.7999999523162837,
+      "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+      "aheadOfFront": false,
+      "aftOfRear": false
+    },
+    "HEAVY_AFT_LIGHT_FORWARD": {
+      "front_z_long": 3.8239569601645935,
+      "cg_z_long": -1.528340088310963,
+      "combined_z_long": 0.2239649979271889,
+      "rear_z_long": -0.7999999523162837,
+      "order": "frontPlanform → combinedPlanform → rearPlanform → CG (forward → aft)",
+      "aheadOfFront": false,
+      "aftOfRear": true
+    },
+    "HEAVY_FORWARD_LIGHT_AFT": {
+      "front_z_long": 3.8239569601645935,
+      "cg_z_long": 1.184240696481051,
+      "combined_z_long": 0.2239649979271889,
+      "rear_z_long": -0.7999999523162837,
+      "order": "frontPlanform → CG → combinedPlanform → rearPlanform (forward → aft)",
+      "aheadOfFront": false,
+      "aftOfRear": false
+    },
+    "HEAVY_DRIVE_MOVING": {
+      "front_z_long": 3.8239569601645935,
+      "cg_z_long": -0.7680368153912142,
+      "combined_z_long": 0.2239649979271889,
+      "rear_z_long": -0.7999999523162837,
+      "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+      "aheadOfFront": false,
+      "aftOfRear": false
+    },
+    "LIGHT_DRIVE_MOVING": {
+      "front_z_long": 3.8239569601645935,
+      "cg_z_long": 0.004129508709297072,
+      "combined_z_long": 0.2239649979271889,
+      "rear_z_long": -0.7999999523162837,
+      "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+      "aheadOfFront": false,
+      "aftOfRear": false
+    },
+    "HEAVY_COCKPIT": {
+      "front_z_long": 3.8239569601645935,
+      "cg_z_long": 0.09349692153242982,
+      "combined_z_long": 0.2239649979271889,
+      "rear_z_long": -0.7999999523162837,
+      "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+      "aheadOfFront": false,
+      "aftOfRear": false
+    },
+    "HEAVY_WAIST_SYSTEMS": {
+      "front_z_long": 3.8239569601645935,
+      "cg_z_long": -0.3195126824991444,
+      "combined_z_long": 0.2239649979271889,
+      "rear_z_long": -0.7999999523162837,
+      "order": "frontPlanform → combinedPlanform → CG → rearPlanform (forward → aft)",
+      "aheadOfFront": false,
+      "aftOfRear": false
+    }
+  },
+  "traces": {
+    "NOMINAL": [
+      {
+        "machineT": 0,
+        "y_vert": 1.4966000074446202,
+        "z_long": -0.3212834421616327,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.05,
+        "y_vert": 1.4966000074446202,
+        "z_long": -0.3212834421616327,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.1,
+        "y_vert": 1.4933649569216578,
+        "z_long": -0.3213151545930097,
+        "x_lat": -1.7763568394002505e-17
+      },
+      {
+        "machineT": 0.15,
+        "y_vert": 1.4698343524089938,
+        "z_long": -0.31758905324267916,
+        "x_lat": 1.7763568394002505e-17
+      },
+      {
+        "machineT": 0.2,
+        "y_vert": 1.4206700055065051,
+        "z_long": -0.32131515459300997,
+        "x_lat": 1.7763568394002505e-17
+      },
+      {
+        "machineT": 0.25,
+        "y_vert": 1.4038061029638316,
+        "z_long": -0.3212834421616324,
+        "x_lat": -8.881784197001253e-18
+      },
+      {
+        "machineT": 0.3,
+        "y_vert": 1.4380444468120772,
+        "z_long": -0.334688544699156,
+        "x_lat": -1.7763568394002505e-17
+      },
+      {
+        "machineT": 0.35,
+        "y_vert": 1.4380444468120772,
+        "z_long": -0.3826899561051958,
+        "x_lat": -2.6645352591003756e-17
+      },
+      {
+        "machineT": 0.4,
+        "y_vert": 1.4380444468120772,
+        "z_long": -0.507693757951641,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.45,
+        "y_vert": 1.4375841862599037,
+        "z_long": -0.6790706998628605,
+        "x_lat": 5.329070518200751e-17
+      },
+      {
+        "machineT": 0.5,
+        "y_vert": 1.4192230033570803,
+        "z_long": -0.8020492687703031,
+        "x_lat": -1.7763568394002505e-17
+      },
+      {
+        "machineT": 0.55,
+        "y_vert": 1.3908515189144461,
+        "z_long": -0.833974241113048,
+        "x_lat": -1.7763568394002505e-17
+      },
+      {
+        "machineT": 0.6,
+        "y_vert": 1.3080901354298788,
+        "z_long": -0.8338645222956559,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.65,
+        "y_vert": 1.2782343882069784,
+        "z_long": -0.8338645222956559,
+        "x_lat": 1.7763568394002505e-17
+      },
+      {
+        "machineT": 0.7,
+        "y_vert": 1.2779290598378379,
+        "z_long": -0.8338645222956559,
+        "x_lat": -1.7763568394002505e-17
+      },
+      {
+        "machineT": 0.75,
+        "y_vert": 1.2779290598378379,
+        "z_long": -0.8338645222956559,
+        "x_lat": 1.7763568394002505e-17
+      },
+      {
+        "machineT": 0.8,
+        "y_vert": 1.2779290598378379,
+        "z_long": -0.8338645222956559,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.85,
+        "y_vert": 1.2779290598378379,
+        "z_long": -0.8327512362772843,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.9,
+        "y_vert": 1.2779290598378379,
+        "z_long": -0.8918645146662614,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.95,
+        "y_vert": 1.2779290598378379,
+        "z_long": -1.0406145480448623,
+        "x_lat": 0
+      },
+      {
+        "machineT": 1,
+        "y_vert": 1.2779290598378379,
+        "z_long": -1.1893645480448622,
+        "x_lat": 0
+      }
+    ],
+    "HEAVY_DRIVE_MOVING": [
+      {
+        "machineT": 0,
+        "y_vert": 1.3872881375379482,
+        "z_long": -0.7680368153912142,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.05,
+        "y_vert": 1.3872881375379482,
+        "z_long": -0.7680368153912142,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.1,
+        "y_vert": 1.3845465692981496,
+        "z_long": -0.7680636903330591,
+        "x_lat": -1.5053871520341106e-17
+      },
+      {
+        "machineT": 0.15,
+        "y_vert": 1.36460537903318,
+        "z_long": -0.7649059773243043,
+        "x_lat": 1.5053871520341106e-17
+      },
+      {
+        "machineT": 0.2,
+        "y_vert": 1.322940678268359,
+        "z_long": -0.7680636903330593,
+        "x_lat": 1.5053871520341106e-17
+      },
+      {
+        "machineT": 0.25,
+        "y_vert": 1.308649235435585,
+        "z_long": -0.7680368153912139,
+        "x_lat": -7.526935760170553e-18
+      },
+      {
+        "machineT": 0.3,
+        "y_vert": 1.3376647810696913,
+        "z_long": -0.7793970717789458,
+        "x_lat": -1.5053871520341106e-17
+      },
+      {
+        "machineT": 0.35,
+        "y_vert": 1.3376647810696913,
+        "z_long": -0.8200762339874542,
+        "x_lat": -2.258080728051166e-17
+      },
+      {
+        "machineT": 0.4,
+        "y_vert": 1.3376647810696913,
+        "z_long": -0.9260116592810516,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.45,
+        "y_vert": 1.3372747297542902,
+        "z_long": -1.0712463558159835,
+        "x_lat": 4.516161456102332e-17
+      },
+      {
+        "machineT": 0.5,
+        "y_vert": 1.321714405260372,
+        "z_long": -1.1754654820087316,
+        "x_lat": -1.5053871520341106e-17
+      },
+      {
+        "machineT": 0.55,
+        "y_vert": 1.2976707743767837,
+        "z_long": -1.2025205433161426,
+        "x_lat": -1.5053871520341106e-17
+      },
+      {
+        "machineT": 0.6,
+        "y_vert": 1.2275340087118962,
+        "z_long": -1.2024275612675048,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.65,
+        "y_vert": 1.202232528014523,
+        "z_long": -1.2024275612675048,
+        "x_lat": 1.5053871520341106e-17
+      },
+      {
+        "machineT": 0.7,
+        "y_vert": 1.2019737751593191,
+        "z_long": -1.2024275612675048,
+        "x_lat": -1.5053871520341106e-17
+      },
+      {
+        "machineT": 0.75,
+        "y_vert": 1.2019737751593191,
+        "z_long": -1.2024275612675048,
+        "x_lat": 1.5053871520341106e-17
+      },
+      {
+        "machineT": 0.8,
+        "y_vert": 1.2019737751593191,
+        "z_long": -1.2024275612675048,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.85,
+        "y_vert": 1.2019737751593191,
+        "z_long": -1.2014840985400714,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.9,
+        "y_vert": 1.2019737751593191,
+        "z_long": -1.3164105983755867,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.95,
+        "y_vert": 1.2019737751593191,
+        "z_long": -1.6045462562518116,
+        "x_lat": 0
+      },
+      {
+        "machineT": 1,
+        "y_vert": 1.2019737751593191,
+        "z_long": -1.8926818494721507,
+        "x_lat": 0
+      }
+    ],
+    "HEAVY_COCKPIT": [
+      {
+        "machineT": 0,
+        "y_vert": 1.4701785780755539,
+        "z_long": 0.09349692153242982,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.05,
+        "y_vert": 1.4701785780755539,
+        "z_long": 0.09349692153242982,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.1,
+        "y_vert": 1.4672901401086231,
+        "z_long": 0.09346860686155749,
+        "x_lat": -1.586032892321652e-17
+      },
+      {
+        "machineT": 0.15,
+        "y_vert": 1.4462806717937444,
+        "z_long": 0.09679548306720978,
+        "x_lat": 1.586032892321652e-17
+      },
+      {
+        "machineT": 0.2,
+        "y_vert": 1.4023839334879509,
+        "z_long": 0.09346860686155724,
+        "x_lat": 1.586032892321652e-17
+      },
+      {
+        "machineT": 0.25,
+        "y_vert": 1.3873268776462784,
+        "z_long": 0.09349692153243007,
+        "x_lat": -7.93016446160826e-18
+      },
+      {
+        "machineT": 0.3,
+        "y_vert": 1.417896827510783,
+        "z_long": 0.08152807998106974,
+        "x_lat": -1.586032892321652e-17
+      },
+      {
+        "machineT": 0.35,
+        "y_vert": 1.417896827510783,
+        "z_long": 0.038669676939962754,
+        "x_lat": -2.3790493384824782e-17
+      },
+      {
+        "machineT": 0.4,
+        "y_vert": 1.417896827510783,
+        "z_long": -0.07294086042293468,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.45,
+        "y_vert": 1.4174858805891997,
+        "z_long": -0.22595598712938067,
+        "x_lat": 4.7580986769649563e-17
+      },
+      {
+        "machineT": 0.5,
+        "y_vert": 1.4010919672831075,
+        "z_long": -0.33575828079674025,
+        "x_lat": -1.586032892321652e-17
+      },
+      {
+        "machineT": 0.55,
+        "y_vert": 1.3757602847450412,
+        "z_long": -0.3642627203884767,
+        "x_lat": -1.586032892321652e-17
+      },
+      {
+        "machineT": 0.6,
+        "y_vert": 1.301866192348106,
+        "z_long": -0.3641647571586623,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.65,
+        "y_vert": 1.275209275184802,
+        "z_long": -0.3641647571586623,
+        "x_lat": 1.586032892321652e-17
+      },
+      {
+        "machineT": 0.7,
+        "y_vert": 1.274936660569498,
+        "z_long": -0.3641647571586623,
+        "x_lat": -1.586032892321652e-17
+      },
+      {
+        "machineT": 0.75,
+        "y_vert": 1.274936660569498,
+        "z_long": -0.3641647571586623,
+        "x_lat": 1.586032892321652e-17
+      },
+      {
+        "machineT": 0.8,
+        "y_vert": 1.274936660569498,
+        "z_long": -0.3641647571586623,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.85,
+        "y_vert": 1.274936660569498,
+        "z_long": -0.36317075178511626,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.9,
+        "y_vert": 1.274936660569498,
+        "z_long": -0.4159504646324172,
+        "x_lat": 0
+      },
+      {
+        "machineT": 0.95,
+        "y_vert": 1.274936660569498,
+        "z_long": -0.5487629944347395,
+        "x_lat": 0
+      },
+      {
+        "machineT": 1,
+        "y_vert": 1.274936660569498,
+        "z_long": -0.6815754944347395,
+        "x_lat": 0
+      }
+    ]
+  },
+  "sensitivity": {
+    "tag": "DERIVED_ESTIMATE",
+    "oneAtATime": [
+      {
+        "family": "F1_REAR_BOOKS",
+        "dZ": -0.09291857728157055,
+        "dY": 0.23746118423245544,
+        "dReadyDriveZ": 0.06902053188648283
+      },
+      {
+        "family": "F2_FRONT_BOOKS",
+        "dZ": 0.4797731947136837,
+        "dY": 0.07793982278348688,
+        "dReadyDriveZ": 0.041156687532310166
+      },
+      {
+        "family": "F3_REAR_FIXED",
+        "dZ": -0.2706089417469505,
+        "dY": 0.06912342764425472,
+        "dReadyDriveZ": 0.03632628189036702
+      },
+      {
+        "family": "F4_FRONT_CARRY_FIXED",
+        "dZ": 0.2605427899214527,
+        "dY": 0.01409198063478434,
+        "dReadyDriveZ": 0.03494435733875367
+      },
+      {
+        "family": "F5_CENTRAL_STRUCTURE",
+        "dZ": 0.021572153214083067,
+        "dY": -0.12167786850052864,
+        "dReadyDriveZ": 0.06324790558324966
+      },
+      {
+        "family": "F6_DRIVE_MOVING",
+        "dZ": -0.7721663241005112,
+        "dY": -0.18893409613498857,
+        "dReadyDriveZ": -0.5785628954120501
+      },
+      {
+        "family": "F7_DRIVE_FIXED",
+        "dZ": -0.2868359969350809,
+        "dY": -0.08233743096176682,
+        "dReadyDriveZ": 0.02467442963872024
+      },
+      {
+        "family": "F8_COCKPIT_ALLOWANCE",
+        "dZ": 0.7514137023443161,
+        "dY": -0.04786490827729417,
+        "dReadyDriveZ": 0.06902053188648266
+      },
+      {
+        "family": "F9_WAIST_SYSTEMS_ALLOWANCE",
+        "dZ": 0.0034172554890125606,
+        "dY": -0.002359481823539067,
+        "dReadyDriveZ": 0.038843411947077966
+      }
+    ],
+    "strongestZ": {
+      "family": "F6_DRIVE_MOVING",
+      "dZ": -0.7721663241005112,
+      "dY": -0.18893409613498857,
+      "dReadyDriveZ": -0.5785628954120501
+    },
+    "strongestY": {
+      "family": "F1_REAR_BOOKS",
+      "dZ": -0.09291857728157055,
+      "dY": 0.23746118423245544,
+      "dReadyDriveZ": 0.06902053188648283
+    },
+    "strongestDriveWalk": {
+      "family": "F6_DRIVE_MOVING",
+      "dZ": -0.7721663241005112,
+      "dY": -0.18893409613498857,
+      "dReadyDriveZ": -0.5785628954120501
+    }
+  },
+  "corners": {
+    "tag": "DERIVED_ESTIMATE",
+    "n": 512,
+    "minX": {
+      "value": -1.0765799026668185e-16,
+      "bits": "HLLLLLLLL"
+    },
+    "maxX": {
+      "value": 0,
+      "bits": "LLLLLLLLL"
+    },
+    "minY": {
+      "value": 1.1099999945422616,
+      "bits": "LLLLHHHLL"
+    },
+    "maxY": {
+      "value": 1.9738068404726006,
+      "bits": "HHHLLLLLL"
+    },
+    "minZ": {
+      "value": -1.8732326568472917,
+      "bits": "LLHLLHHLL"
+    },
+    "maxZ": {
+      "value": 1.3938444372240497,
+      "bits": "LHLHLLLHL"
+    }
+  },
+  "readyDrive": {
+    "tag": "DERIVED_ESTIMATE",
+    "envelopeSame": true,
+    "cgShift": {
+      "x_lat": 0,
+      "y_vert": 0,
+      "z_long": -0.35559378027915933
+    },
+    "note": "STRUCTURAL_READY and DRIVE share outer W/H/L within 0.05 m but CG walks with F6 aft."
+  },
+  "bands": {
+    "tag": "DERIVED_ESTIMATE",
+    "x_lat": {
+      "min": -5.730183352904034e-17,
+      "max": 3.51753829584208e-17
+    },
+    "y_vert": {
+      "min": 1.2019737751593191,
+      "max": 1.5762222336729368
+    },
+    "z_long": {
+      "min": -2.7819739554041956,
+      "max": 1.191556318102741
+    }
+  },
+  "reds": [],
+  "leafSplitDelta": {
+    "tag": "DERIVED_ESTIMATE",
+    "x_lat": 1.7763568394002505e-17,
+    "y_vert": 0,
+    "z_long": 0.000728785243041985,
+    "negligible": true
+  },
+  "cockpitLocationSensitivity": {
+    "tag": "DERIVED_ESTIMATE",
+    "center": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.4966000074446202,
+      "z_long": -0.3212834421616327,
+      "verticalThrustArm": 0.7166000074446202,
+      "verticalThrustArmNorm": 0.24753022709658729
+    },
+    "fwd": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.4966000074446202,
+      "z_long": -0.2162834421616327,
+      "verticalThrustArm": 0.7166000074446202,
+      "verticalThrustArmNorm": 0.24753022709658729
+    },
+    "aft": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.4966000074446202,
+      "z_long": -0.4262834421616327,
+      "verticalThrustArm": 0.7166000074446202,
+      "verticalThrustArmNorm": 0.24753022709658729
+    },
+    "up": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.5916000074446202,
+      "z_long": -0.3212834421616327,
+      "verticalThrustArm": 0.8116000074446201,
+      "verticalThrustArmNorm": 0.2803454257148947
+    },
+    "down": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.4016000074446202,
+      "z_long": -0.3212834421616327,
+      "verticalThrustArm": 0.6216000074446202,
+      "verticalThrustArmNorm": 0.21471502847827986
+    }
+  },
+  "waistLocationSensitivity": {
+    "tag": "DERIVED_ESTIMATE",
+    "center": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.4966000074446202,
+      "z_long": -0.3212834421616327,
+      "verticalThrustArm": 0.7166000074446202,
+      "verticalThrustArmNorm": 0.24753022709658729
+    },
+    "fwd": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.4966000074446202,
+      "z_long": -0.24088344201858156,
+      "verticalThrustArm": 0.7166000074446202,
+      "verticalThrustArmNorm": 0.24753022709658729
+    },
+    "aft": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.4966000074446202,
+      "z_long": -0.40168344230468395,
+      "verticalThrustArm": 0.7166000074446202,
+      "verticalThrustArmNorm": 0.24753022709658729
+    },
+    "up": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.5491000074446202,
+      "z_long": -0.3212834421616327,
+      "verticalThrustArm": 0.7691000074446201,
+      "verticalThrustArmNorm": 0.26566494212249403
+    },
+    "down": {
+      "tag": "DERIVED_ESTIMATE",
+      "totalRmu": 100,
+      "x_lat": 0,
+      "y_vert": 1.4441000074446202,
+      "z_long": -0.3212834421616327,
+      "verticalThrustArm": 0.6641000074446202,
+      "verticalThrustArmNorm": 0.22939551207068054
+    }
+  },
+  "solidBilletAbsurdity": {
+    "label": "NOT AN INPUT — SOLID-BILLET ABSURDITY CHECK",
+    "physicalEnvelopeVolume_m3": 12.222792033206861,
+    "solidAluminum_kg": 33001.538489658524
+  },
+  "gates": [
+    {
+      "id": "VB1-G1",
+      "name": "S4A identity",
+      "pass": true,
+      "detail": "input 95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8"
+    },
+    {
+      "id": "VB1-G2",
+      "name": "coordinate truth",
+      "pass": true,
+      "detail": "thrust +Z through (x_lat=0, y_vert=0.78); deploy −Z_aft Δz_long=-2.550"
+    },
+    {
+      "id": "VB1-G3",
+      "name": "family membership",
+      "pass": true,
+      "detail": "all physical assigned"
+    },
+    {
+      "id": "VB1-G4",
+      "name": "no implicit density",
+      "pass": true,
+      "detail": "production masses are explicit RMU assumptions"
+    },
+    {
+      "id": "VB1-G5",
+      "name": "fact/estimate tagging",
+      "pass": true,
+      "detail": "GEOMETRY_FACT / ASSUMPTION / DERIVED_ESTIMATE"
+    },
+    {
+      "id": "VB1-G6",
+      "name": "scale invariance",
+      "pass": true,
+      "detail": "×2 masses leave CG unchanged"
+    },
+    {
+      "id": "VB1-G7",
+      "name": "nominal bilateral symmetry",
+      "pass": true,
+      "detail": "max |x_lat|=5.73e-17"
+    },
+    {
+      "id": "VB1-G8",
+      "name": "pose truth",
+      "pass": true,
+      "detail": "positions from rig.applyMachine (certified S4A maps)"
+    },
+    {
+      "id": "VB1-G9",
+      "name": "drive-motion distinction",
+      "pass": true,
+      "detail": "READY→DRIVE Δz_long=-0.3556; deploy −Z_aft"
+    },
+    {
+      "id": "VB1-G10",
+      "name": "planform-proxy truth",
+      "pass": true,
+      "detail": "rear extracted 20.218 vs hand 20.218"
+    },
+    {
+      "id": "VB1-G11",
+      "name": "scenario arithmetic",
+      "pass": true,
+      "detail": "CG recomputable from points"
+    },
+    {
+      "id": "VB1-G12",
+      "name": "claim ceiling",
+      "pass": true,
+      "detail": "no prohibited aero/performance claim"
+    }
+  ]
+}

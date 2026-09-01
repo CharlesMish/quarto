@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="920" height="360">
+  <rect width="920" height="360" fill="#0e1214"/>
+  <text x="14" y="18" fill="#e6a93c" font-size="12" font-family="monospace">KC1 TOP · diagnostic only · waist shown as OUTBOARD cells, not a center box</text>
+  <rect x="443.1" y="60.0" width="53.8" height="196.8" fill="none" stroke="#6b7280" />
+  <rect x="448.5" y="60.0" width="43.0" height="129.5" fill="none" stroke="#9ca3af" />
+  <rect x="335.6" y="84.1" width="268.8" height="2.0" fill="none" stroke="#ca8a04" />
+  <rect x="335.6" y="129.6" width="268.8" height="2.0" fill="none" stroke="#ca8a04" />
+  <rect x="335.6" y="188.7" width="268.8" height="2.0" fill="none" stroke="#ca8a04" />
+  <rect x="348.2" y="59.0" width="243.7" height="43.5" fill="none" stroke="#7c3aed" stroke-dasharray="3 2"/>
+  <rect x="434.2" y="106.6" width="71.7" height="80.8" fill="none" stroke="#0e7490" stroke-dasharray="3 2"/>
+  <rect x="68.7" y="132.5" width="256.2" height="55.5" fill="none" stroke="#0e7490" />
+  <rect x="615.1" y="132.5" width="256.2" height="55.5" fill="none" stroke="#0e7490" />
+  <rect x="380.4" y="195.3" width="179.2" height="105.6" fill="none" stroke="#b45309" />
+  <polyline points="441.3333333333333,61.071428571428555 441.3333333333333,255.78571428571428" fill="none" stroke="#4d7c0f" stroke-width="2"/>
+  <polyline points="498.6666666666667,61.071428571428555 498.6666666666667,255.78571428571428" fill="none" stroke="#4d7c0f" stroke-width="2"/>
+  <text x="14" y="346" fill="#8e999a" font-size="9" font-family="monospace">green=VK side lanes · cyan filled=certified waist outboard · violet=KEEP_COCKPIT · amber=can corridor</text>
+</svg>

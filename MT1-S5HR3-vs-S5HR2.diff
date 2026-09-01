@@ -1,0 +1,1699 @@
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/MT1-S5-AUTHORITY-CONTRACT-V1.md ./MT1-S5-AUTHORITY-CONTRACT-V1.md
+--- /tmp/mt1-s5hr2-authority-base/MT1-S5-AUTHORITY-CONTRACT-V1.md	1969-12-31 18:00:00.000000000 -0600
++++ ./MT1-S5-AUTHORITY-CONTRACT-V1.md	2026-08-25 03:47:59.746669343 -0500
+@@ -0,0 +1,147 @@
++# MT1 S5 Authority Contract V1
++
++Status: **FROZEN FOR MT1-S5 AUTHORITY-KERNEL CLOSURE**
++
++This document is the complete authority-contract target for the bounded S5 corrective turn based on MT1-S5HR2. Its semantics are frozen before implementation begins. Discoveries outside this contract are recorded as `POST_S5_VERIFIER_HARDENING_CANDIDATE` and do not expand the S5 freeze boundary without director amendment.
++
++## 1. Canonical pose authority
++
++The canonical reduced-order pose authority is:
++
++`machineT → certified mechanism maps → driveT → S5 lock pose`
++
++The analytic kinematic mapping owns pose. The live-contact/path solver verifies that the frozen intended physical mechanism is consistent with that pose and with the declared contact topology. The certificate is not a universal rigid-body dynamics solver over arbitrary scene-graph mutations.
++
++## 2. Closed registered physical universe
++
++S5 authority applies to all registered physical authority rows in the frozen candidate plus physical mutations explicitly introduced by the frozen S5 negative-control battery.
++
++Every registered authority row has:
++
++- an immutable opaque `registrationId`;
++- a unique human-readable `name`;
++- physical or nonphysical role;
++- required taxonomy;
++- enable/lifetime state.
++
++`registrationId` is proof identity. `name` is a unique label and is not proof identity.
++
++## 3. Registration and name uniqueness
++
++Every registration ID is globally unique. Names are globally unique among registered authority rows.
++
++An attempted second registration with an existing registration ID or name is rejected and records a registration-authority violation. Any extant duplicate rows are retained and reported separately by registration ID; they may not collapse through a map, set, `find`, or expected-piece count. A registration-authority violation invalidates C18, the path certificate, and readiness.
++
++## 4. Stable lifetime identity
++
++The path proof accumulates registration IDs, not names.
++
++When an enabled physical row first becomes relevant at any certified forward or reverse sample, the certificate retains for its remaining evaluation:
++
++- registration ID and name;
++- taxonomy/classification at first relevance;
++- first-relevant sample index, direction, phase, and drive pose;
++- lifetime state at discovery;
++- relevant pose/OBB metadata needed by the bounded pair proof.
++
++Later corridor exit, disablement, or final-pose absence does not erase the row or reconstruct its taxonomy from the final scene.
++
++## 5. Classification at first relevance
++
++At first physical relevance, the actual registered row must resolve to exactly one legal class:
++
++- required moving lock;
++- required fixed track/support;
++- exact expected surrounding physical;
++- explicitly declared frozen negative-control mutation.
++
++Missing, invalid, or conflicting taxonomy invalidates the certificate. Classification is stored with the registration identity and is not recovered later by name.
++
++## 6. Required topology
++
++The existing exact S5 required topology remains mandatory and independent of lifetime proof. It proves that every required physical piece exists, is enabled when required, and has the correct registered classification.
++
++The lifetime/pair proof separately proves that no in-scope registered row violates the declared mechanism during certified motion. Both must pass.
++
++## 7. Physical pair universe
++
++Pair evaluation uses registration IDs and includes:
++
++- moving lock ↔ fixed track/support;
++- moving lock ↔ relevant surrounding physical;
++- moving lock ↔ moving lock for distinct coexisting rows;
++- relevant fixed/support relationships;
++- declared capture/contact relationships;
++- frozen negative-control physical rows against every applicable class above.
++
++Rows sharing a movement owner are not exempt from moving↔moving evaluation. A pair is canonicalized by two distinct registration IDs, never by names.
++
++## 8. Immutable intentional-contact relations
++
++Only these bounded S5 relation classes may use intentional-contact semantics:
++
++| Relation | Permitted state |
++|---|---|
++| cam shoe ↔ its sector RAIL_B working pieces | live unilateral forward drive and legal captured B-side limit |
++| cam shoe ↔ its sector RAIL_A working pieces | live unilateral reverse drive and legal captured A-side limit |
++| cam shoe ↔ opposite face | nonpenetrating running/free-play boundary only |
++| lock pin ↔ its sector retaining shoulder | retained axial escape probe only; nominal insertion/withdrawal must obey shoulder-clear ordering |
++| each RAIL_A/RAIL_B piece ↔ its declared backing/support | declared structural splice only |
++| retaining shoulder ↔ its declared web | declared structural splice only |
++| web ↔ receiver/post/frame/keel declared chain | declared structural splice only |
++| seat tongue ↔ its declared receiver cavity | declared nested seat interface only |
++| fixed spigot ↔ moving receiver | declared nested flow/register interface only |
++
++The implementation shall instantiate this table with exact registration-ID relations from required topology. No broad prefix, family, movement-owner, or phase exemption is authorized. Any closed-universe pair not covered by an applicable intentional-contact relation obeys ordinary clearance/nonpenetration requirements.
++
++## 9. C18 frozen meaning
++
++> **C18 — Closed-World S5 Physical Certificate Completeness**
++>
++> For the frozen registered S5 physical universe and the explicitly declared S5 negative-control mutations, every authority row has a unique stable identity; every row that becomes physically relevant anywhere over the certified forward/reverse motion retains its identity and classification in the path certificate; every required collision/contact pair class is evaluated by identity, including moving-vs-moving where applicable; and no in-scope physical row can be omitted through duplicate names, transient lifetime, missing metadata, or broad family/name exemptions.
++
++C18 does not claim completeness against arbitrary future Babylon scene mutations.
++
++## 10. Frozen adversarial boundary
++
++The S5 freeze adversarial boundary is the separately enumerated `MT1_S5_FROZEN_NEGATIVE_CONTROL_CONTRACT.md`, containing all accepted S5 controls and the identity/lifetime controls required by this contract:
++
++- `NC-MIDPATH-TRANSIENT-ROW`;
++- `NC-DUPLICATE-AUTHORITY-NAME`;
++- `NC-DUPLICATE-MOVING-ROW`.
++
++Each control declares mutation, challenged clause, expected failures, and public readiness. The list is frozen for this certification turn. Later adversarial ideas are `POST_S5_VERIFIER_HARDENING_CANDIDATE` unless they demonstrate noncompliance with this contract.
++
++## 11. Readiness
++
++`driveThrustReady` requires:
++
++- a CURRENT certificate;
++- certificate PASS under this frozen contract;
++- all existing physical S5 mechanism/readiness requirements.
++
++ABSENT, STALE, or invalid certificate state yields false. Nominal HR2 readiness behavior remains unchanged unless identity/lifetime enforcement directly falsifies it.
++
++## 12. Nominal mechanism boundary
++
++Nominal S5H/S5HR2 mouth, track, shoe, pin, receiver, shoulder, backing, can/core/spigot, machine map, stroke, S4A, and B′ geometry are frozen. Live positive-thickness rail-prism forward/reverse verification and analytic-after-live consistency comparison remain required.
++
++## 13. Evidence and execution
++
++The frozen negative-control ledger requires mutation application, declared failures, exact readiness outcome, authority-row outcome, zero unexpected failures, and independent restoration of raw readiness, evaluator readiness, public getter readiness, and certificate validity for every row.
++
++Ledger publication is atomic. Default asserted regression must not overwrite immutable historical evidence or PNGs in place. Supported build, default, focused, evidence, and bounded prior-authority tests must pass.
++
++## 14. Out-of-scope claims
++
++S5 does not prove:
++
++- soundness against arbitrary future injected Babylon meshes;
++- arbitrary scene-graph mutation robustness;
++- arbitrary renamed or reparented clones outside the frozen NC contract;
++- free-body rigid dynamics;
++- unmodeled friction, preload, or spring mechanics;
++- stress, fatigue, tolerance, manufacturing, thermal, or vibration qualification;
++- propulsion performance.
++
++These may be future verifier-hardening work and do not expand this contract.
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/MT1_S5HR3_CLOSURE.md ./MT1_S5HR3_CLOSURE.md
+--- /tmp/mt1-s5hr2-authority-base/MT1_S5HR3_CLOSURE.md	1969-12-31 18:00:00.000000000 -0600
++++ ./MT1_S5HR3_CLOSURE.md	2026-08-25 06:54:19.514279457 -0500
+@@ -0,0 +1,34 @@
++# MT1-S5HR3 Closure — Frozen S5 Authority Contract
++
++1. **Candidate identity:** `MT1-S5HR3`, `FREEZE_CANDIDATE_PENDING_DIRECTOR`; machine authority status `GREEN_PENDING_DIRECTOR`.
++2. **Source HR2:** `MT1-S5HR2.zip`, SHA-256 `f1a90bca2e12d28678eb0b04e4a786c86a72445f52ebd196409123233e53a13b`.
++3. **Authority contract:** both requested filenames are byte-identical, SHA-256 `e15885cc11777ad49f2b0b5ad2778facb64ee6f932b65bf36742a65afe451ba9`.
++4. **Contract changed after implementation began:** **NO**. The contract hash remained unchanged through packaging.
++5. **Nominal geometry mutation:** **NO**. `src/design/s5Parameters.ts` remains byte-identical to HR2 at `8d713b182f94af2769bec0696fb10cfc94fce98d90e89a46a69aad68e805fc63`; frozen `src/machine/authority.ts` remains byte-identical at `78a88fa635cb93346dab987629625eb44f3de3ab1525af1b254b68a689d9a89a`.
++6. **Registration-ID design:** new S5-only `s5Identity` registers the assembled universe once, assigns deterministic opaque IDs as immutable row properties, mirrors them into mesh metadata, and audits ID/name/metadata agreement. Proof joins never use names as identity.
++7. **Registered rows:** 394 total; 365 enabled live physical rows at nominal certification.
++8. **Duplicate-name gate:** nominal PASS. Initial S5 registration rejects duplicate names; certificate-time audit separately reports any extant aliases by ID.
++9. **Lifetime-by-ID:** PASS. Forward/reverse union has 95 lifetime rows versus 93 captured-relevant names, retaining first-relevance taxonomy, sample, phase, driveT, enable state, and AABB.
++10. **First-relevance classification:** PASS; nominal missing/unclassified/invalid/conflicting sets are empty.
++11. **Moving↔moving:** PASS; 56,112 evaluations across 28 distinct ID pairs, no nominal hit.
++12. **Exact topology:** PASS, 98/98 required rows: 8 moving plus 90 fixed rail/support rows.
++13. **Intentional-contact table:** PASS; nine immutable classes instantiate 223 exact ID-pair rows, missing rows = 0.
++14. **Frozen C18:** exact bounded wording is present in the machine schema; nominal PASS.
++15. **NC-MIDPATH-TRANSIENT-ROW:** PASS. `AUTHORITY_ROW_0000AN` is first relevant at forward driveT 0.98470, retained after final disable, and recorded colliding with PORT A CAM; C18/certificate/readiness false.
++16. **NC-DUPLICATE-AUTHORITY-NAME:** PASS. `S5_LOCK_PIN_PORT` resolves to `AUTHORITY_ROW_00006T` and `AUTHORITY_ROW_0000AO`; name uniqueness/C18/readiness false without collapse.
++17. **NC-DUPLICATE-MOVING-ROW:** PASS. `AUTHORITY_ROW_00006T` and `AUTHORITY_ROW_0000AP` overlap; moving↔moving records the hit and all readiness APIs are false.
++18. **Frozen NC count:** 28; frozen contract SHA-256 `8b150937b002d7a054e098182d6453711c477f8eaeb1865c1663541dc135f70d`.
++19. **Ledger:** 28/28 PASS, `unexpectedFailures=0`, four-way restoration 28/28, atomic `complete=true`; SHA-256 `7b42247ffd1644246932de35b320243938030d31480b30eff0ff2266deb3e1ba`.
++20. **Nominal live contact:** PASS, 2,002 samples and 2,981,616 pair evaluations. Endpoint extension 0.024540 m all sectors; worst retained insertion 0.006540007 m side and 0.018540070 m top; reverse lead 0.005053427 m side and 0.001738427 m top.
++21. **Readiness:** absent/stale/invalid certificate is false in raw apply, evaluator, and getter. Fine scan is false through machineT 0.99982 and true from 0.99983 through 1.0 at 0.00001 resolution.
++22. **Supported npm test:** 93/93 PASS in 29.7 minutes, two workers; writers excluded.
++23. **Evidence command:** 1/1 PASS in 45.6 minutes, one browser/worker, 60-minute bound, atomic publication.
++24. **Historical evidence:** preserved; aggregate HR2/HR3 SHA-256 `318eab98d207e81949bbba9aef7228f3552140cb6e1bfe485aa6fcf25c32a2c2`.
++25. **P1–P16:** 16/16 PASS.
++26. **Frozen C set:** C1–C25 = 25/25 PASS; no new C-gate.
++27. **Prior authority:** no regression. DP1 frozen-source guard PASS; S4A remains `GREEN_PENDING`. E1 13.367149537×2.664999883×10.590000256 m; E2 13.367149537×2.664999883×11.395000389 m; E3/E4 13.367149537×2.894999884×11.699999921 m; containment PASS.
++28. **H1:** `AWAITING_DIRECTOR_DISPOSITION`; not self-passed.
++29. **POST_S5_VERIFIER_HARDENING_CANDIDATE:** none discovered.
++30. **Limitations:** bounded closed registered universe and frozen NC battery only; no arbitrary future scene injection, universal dynamics, friction/preload/springs, stress/fatigue/tolerance/manufacturing, propulsion performance, S6, cockpit, intake, engine internals, or aero/CFD claim.
++
++Build PASS. Focused 5/5 PASS in 7.1 minutes. Authority writer PASS in 3.3 minutes. Authority JSON SHA-256 `7bdf9cb5c3c057903f47b7a2e877515e1d2d5647fea9b87610653c60f0c1de00`.
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/MT1_S5_AUTHORITY_CONTRACT_V1.md ./MT1_S5_AUTHORITY_CONTRACT_V1.md
+--- /tmp/mt1-s5hr2-authority-base/MT1_S5_AUTHORITY_CONTRACT_V1.md	1969-12-31 18:00:00.000000000 -0600
++++ ./MT1_S5_AUTHORITY_CONTRACT_V1.md	2026-08-25 03:44:23.654678267 -0500
+@@ -0,0 +1,147 @@
++# MT1 S5 Authority Contract V1
++
++Status: **FROZEN FOR MT1-S5 AUTHORITY-KERNEL CLOSURE**
++
++This document is the complete authority-contract target for the bounded S5 corrective turn based on MT1-S5HR2. Its semantics are frozen before implementation begins. Discoveries outside this contract are recorded as `POST_S5_VERIFIER_HARDENING_CANDIDATE` and do not expand the S5 freeze boundary without director amendment.
++
++## 1. Canonical pose authority
++
++The canonical reduced-order pose authority is:
++
++`machineT → certified mechanism maps → driveT → S5 lock pose`
++
++The analytic kinematic mapping owns pose. The live-contact/path solver verifies that the frozen intended physical mechanism is consistent with that pose and with the declared contact topology. The certificate is not a universal rigid-body dynamics solver over arbitrary scene-graph mutations.
++
++## 2. Closed registered physical universe
++
++S5 authority applies to all registered physical authority rows in the frozen candidate plus physical mutations explicitly introduced by the frozen S5 negative-control battery.
++
++Every registered authority row has:
++
++- an immutable opaque `registrationId`;
++- a unique human-readable `name`;
++- physical or nonphysical role;
++- required taxonomy;
++- enable/lifetime state.
++
++`registrationId` is proof identity. `name` is a unique label and is not proof identity.
++
++## 3. Registration and name uniqueness
++
++Every registration ID is globally unique. Names are globally unique among registered authority rows.
++
++An attempted second registration with an existing registration ID or name is rejected and records a registration-authority violation. Any extant duplicate rows are retained and reported separately by registration ID; they may not collapse through a map, set, `find`, or expected-piece count. A registration-authority violation invalidates C18, the path certificate, and readiness.
++
++## 4. Stable lifetime identity
++
++The path proof accumulates registration IDs, not names.
++
++When an enabled physical row first becomes relevant at any certified forward or reverse sample, the certificate retains for its remaining evaluation:
++
++- registration ID and name;
++- taxonomy/classification at first relevance;
++- first-relevant sample index, direction, phase, and drive pose;
++- lifetime state at discovery;
++- relevant pose/OBB metadata needed by the bounded pair proof.
++
++Later corridor exit, disablement, or final-pose absence does not erase the row or reconstruct its taxonomy from the final scene.
++
++## 5. Classification at first relevance
++
++At first physical relevance, the actual registered row must resolve to exactly one legal class:
++
++- required moving lock;
++- required fixed track/support;
++- exact expected surrounding physical;
++- explicitly declared frozen negative-control mutation.
++
++Missing, invalid, or conflicting taxonomy invalidates the certificate. Classification is stored with the registration identity and is not recovered later by name.
++
++## 6. Required topology
++
++The existing exact S5 required topology remains mandatory and independent of lifetime proof. It proves that every required physical piece exists, is enabled when required, and has the correct registered classification.
++
++The lifetime/pair proof separately proves that no in-scope registered row violates the declared mechanism during certified motion. Both must pass.
++
++## 7. Physical pair universe
++
++Pair evaluation uses registration IDs and includes:
++
++- moving lock ↔ fixed track/support;
++- moving lock ↔ relevant surrounding physical;
++- moving lock ↔ moving lock for distinct coexisting rows;
++- relevant fixed/support relationships;
++- declared capture/contact relationships;
++- frozen negative-control physical rows against every applicable class above.
++
++Rows sharing a movement owner are not exempt from moving↔moving evaluation. A pair is canonicalized by two distinct registration IDs, never by names.
++
++## 8. Immutable intentional-contact relations
++
++Only these bounded S5 relation classes may use intentional-contact semantics:
++
++| Relation | Permitted state |
++|---|---|
++| cam shoe ↔ its sector RAIL_B working pieces | live unilateral forward drive and legal captured B-side limit |
++| cam shoe ↔ its sector RAIL_A working pieces | live unilateral reverse drive and legal captured A-side limit |
++| cam shoe ↔ opposite face | nonpenetrating running/free-play boundary only |
++| lock pin ↔ its sector retaining shoulder | retained axial escape probe only; nominal insertion/withdrawal must obey shoulder-clear ordering |
++| each RAIL_A/RAIL_B piece ↔ its declared backing/support | declared structural splice only |
++| retaining shoulder ↔ its declared web | declared structural splice only |
++| web ↔ receiver/post/frame/keel declared chain | declared structural splice only |
++| seat tongue ↔ its declared receiver cavity | declared nested seat interface only |
++| fixed spigot ↔ moving receiver | declared nested flow/register interface only |
++
++The implementation shall instantiate this table with exact registration-ID relations from required topology. No broad prefix, family, movement-owner, or phase exemption is authorized. Any closed-universe pair not covered by an applicable intentional-contact relation obeys ordinary clearance/nonpenetration requirements.
++
++## 9. C18 frozen meaning
++
++> **C18 — Closed-World S5 Physical Certificate Completeness**
++>
++> For the frozen registered S5 physical universe and the explicitly declared S5 negative-control mutations, every authority row has a unique stable identity; every row that becomes physically relevant anywhere over the certified forward/reverse motion retains its identity and classification in the path certificate; every required collision/contact pair class is evaluated by identity, including moving-vs-moving where applicable; and no in-scope physical row can be omitted through duplicate names, transient lifetime, missing metadata, or broad family/name exemptions.
++
++C18 does not claim completeness against arbitrary future Babylon scene mutations.
++
++## 10. Frozen adversarial boundary
++
++The S5 freeze adversarial boundary is the separately enumerated `MT1_S5_FROZEN_NEGATIVE_CONTROL_CONTRACT.md`, containing all accepted S5 controls and the identity/lifetime controls required by this contract:
++
++- `NC-MIDPATH-TRANSIENT-ROW`;
++- `NC-DUPLICATE-AUTHORITY-NAME`;
++- `NC-DUPLICATE-MOVING-ROW`.
++
++Each control declares mutation, challenged clause, expected failures, and public readiness. The list is frozen for this certification turn. Later adversarial ideas are `POST_S5_VERIFIER_HARDENING_CANDIDATE` unless they demonstrate noncompliance with this contract.
++
++## 11. Readiness
++
++`driveThrustReady` requires:
++
++- a CURRENT certificate;
++- certificate PASS under this frozen contract;
++- all existing physical S5 mechanism/readiness requirements.
++
++ABSENT, STALE, or invalid certificate state yields false. Nominal HR2 readiness behavior remains unchanged unless identity/lifetime enforcement directly falsifies it.
++
++## 12. Nominal mechanism boundary
++
++Nominal S5H/S5HR2 mouth, track, shoe, pin, receiver, shoulder, backing, can/core/spigot, machine map, stroke, S4A, and B′ geometry are frozen. Live positive-thickness rail-prism forward/reverse verification and analytic-after-live consistency comparison remain required.
++
++## 13. Evidence and execution
++
++The frozen negative-control ledger requires mutation application, declared failures, exact readiness outcome, authority-row outcome, zero unexpected failures, and independent restoration of raw readiness, evaluator readiness, public getter readiness, and certificate validity for every row.
++
++Ledger publication is atomic. Default asserted regression must not overwrite immutable historical evidence or PNGs in place. Supported build, default, focused, evidence, and bounded prior-authority tests must pass.
++
++## 14. Out-of-scope claims
++
++S5 does not prove:
++
++- soundness against arbitrary future injected Babylon meshes;
++- arbitrary scene-graph mutation robustness;
++- arbitrary renamed or reparented clones outside the frozen NC contract;
++- free-body rigid dynamics;
++- unmodeled friction, preload, or spring mechanics;
++- stress, fatigue, tolerance, manufacturing, thermal, or vibration qualification;
++- propulsion performance.
++
++These may be future verifier-hardening work and do not expand this contract.
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/MT1_S5_AUTHORITY_REPORT.md ./MT1_S5_AUTHORITY_REPORT.md
+--- /tmp/mt1-s5hr2-authority-base/MT1_S5_AUTHORITY_REPORT.md	2026-08-23 07:12:22.000000000 -0500
++++ ./MT1_S5_AUTHORITY_REPORT.md	2026-08-25 06:54:38.431819960 -0500
+@@ -1,34 +1,21 @@
+-# MT1-S5HR2 — Authority Report
++# MT1-S5HR3 — Authority Report
+ 
+ `status`: **GREEN_PENDING_DIRECTOR**  
+ `candidate`: **FREEZE_CANDIDATE_PENDING_DIRECTOR**  
+-`H1`: **AWAITING_DIRECTOR_DISPOSITION**  
+-`disposition`: `BPRIME_PHYSICALLY_INSTANTIATED_WITH_CAUTION`
++`H1`: **AWAITING_DIRECTOR_DISPOSITION**
+ 
+-Source S5HR: `4871bdf9f9042d429ea8f1f0443b6e23702313c4e887974d0447ead43aa1025c`  
+-Frozen S4A: `95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8`  
+-Reviewed DP1AR: `3d63b1d08566fbc095713685d39570aae9fc5f454272eddb273e45e24c24fb71`
++Source HR2 SHA-256: `f1a90bca2e12d28678eb0b04e4a786c86a72445f52ebd196409123233e53a13b`  
++Authority contract SHA-256: `e15885cc11777ad49f2b0b5ad2778facb64ee6f932b65bf36742a65afe451ba9`  
++Frozen S4A: `95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8`
+ 
+-P1–P16 are **16/16 PASS** and C1–C25 are **25/25 PASS**. The canonical machine-readable report is `evidence/s5-authority-report.json`; full interpretation is in `MT1_S5HR2_CLOSURE.md`.
++P1–P16 are **16/16 PASS** and C1–C25 are **25/25 PASS**. The canonical JSON is `evidence/s5-authority-report.json`; detailed interpretation is in `MT1_S5HR3_CLOSURE.md`.
+ 
+-The nominal certificate contains 2,002 live-prism samples and 2,925,504 physical pair evaluations. The exact required topology contains 8 moving and 90 fixed solids. Full-motion sampled-union census begins from 365 enabled physical solids, expands captured relevance from 93 to 95, and finds no missing, unclassified, invalid, conflicting, or colliding matter.
++The nominal certificate uses 394 unique registered rows, 365 live physical rows, 95 lifetime-relevant rows, 2,002 live-prism samples, and 2,981,616 pair evaluations. Exact topology is 98/98. Moving↔moving contributes 56,112 evaluations over 28 unique ID pairs. The immutable intentional-contact table instantiates 223 exact registration-ID relations with no missing rows.
+ 
+-The forward endpoint is 0.024540 m extension for every sector. Worst physically reachable retained insertion is 0.006540007 m PORT/STARBOARD and 0.018540070 m TOP_PORT/TOP_STARBOARD. Return contact occurs at 0.003162 m reverse travel; shoulder-clearance lead is 0.005053427 m on the side sectors and 0.001738427 m on the top sectors.
++Forward/reverse metrics are unchanged from HR2: endpoint extension 0.024540 m; worst retained insertion 0.006540007 m side and 0.018540070 m top; shoulder-clear lead 0.005053427 m side and 0.001738427 m top. `lastSampledPreContactSeparation=0.00000669256 m` at ΔdriveT 0.00002 is a discrete bracket, not manufacturing clearance.
+ 
+-Entry is sampled at `ΔdriveT=0.00002`: last clear `driveT=0.99136`, first intended contact `0.99138`, and `lastSampledPreContactSeparation=0.00000669256 m`. This is a discrete bracket, not manufacturing clearance. Pin/backing and shoe/backing minima are 0.002304985 m and 0.002999999 m.
++The strict atomic ledger is **28/28 PASS**, zero unexpected failures, and 28/28 independent raw/evaluator/getter/certificate restorations. Mid-path transient, duplicate-name, and duplicate-moving controls all fail C18/certificate/readiness by registration ID.
+ 
+-All three readiness APIs fail closed for an absent certificate. Geometry overrides invalidate readiness immediately and the next raw/public query synchronously recertifies. The fine scan is false through machineT 0.99982 and true from 0.99983 through 1.0, with no pulse.
++Supported verification: build PASS; focused 5/5 PASS in 7.1 minutes; `npm test` 93/93 PASS in 29.7 minutes; atomic evidence writer 1/1 PASS in 45.6 minutes. Default tests do not execute historical writers.
+ 
+-The strict atomic ledger is `evidence/s5-negative-control-results.json`: **25/25 PASS**, zero `unexpectedFailures`, all mutations applied, and all rows independently restore raw/evaluator/getter/certificate truth. `NC-PATH-MOVING-UNTAGGED` and `NC-FORGED-SURROUNDING-FAMILY` both fail C18/certificate/readiness as required. Default authority NC rows remain **NOT_RUN**.
+-
+-Supported commands:
+-
+-- `npm test`: two-worker default regression, strict ledger validator included, evidence writer excluded;
+-- `npm run test:evidence`: atomic isolated one-worker writer with a supported 60-minute timeout (**1/1 PASS in 41.9 minutes**);
+-- `npm run build`: TypeScript and Vite production build.
+-
+-Final supported default result: **108/108 PASS in 36.6 minutes**. Focused S5HR2 result: **4/4 PASS in 4.0 minutes**.
+-
+-Fresh archive extraction reproduction, using the existing installed dependency set: build PASS, focused **4/4 in 3.9 minutes**, default **108/108 in 35.7 minutes**, and atomic evidence writer **1/1 in 39.3 minutes**.
+-
+-H1 remains director-only. No nominal mechanism geometry changed in S5HR2.
++H1 remains director-only. Nominal S5 geometry and frozen S4 sources are unchanged. No S6 or propulsion-performance claim is made.
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/MT1_S5_FROZEN_NEGATIVE_CONTROL_CONTRACT.md ./MT1_S5_FROZEN_NEGATIVE_CONTROL_CONTRACT.md
+--- /tmp/mt1-s5hr2-authority-base/MT1_S5_FROZEN_NEGATIVE_CONTROL_CONTRACT.md	1969-12-31 18:00:00.000000000 -0600
++++ ./MT1_S5_FROZEN_NEGATIVE_CONTROL_CONTRACT.md	2026-08-25 04:09:35.726261932 -0500
+@@ -0,0 +1,42 @@
++# MT1 S5 Frozen Negative-Control Contract
++
++Status: **FROZEN FOR MT1-S5HR3 CERTIFICATION**
++
++Authority contract: `MT1_S5_AUTHORITY_CONTRACT_V1.md` SHA-256 `e15885cc11777ad49f2b0b5ad2778facb64ee6f932b65bf36742a65afe451ba9`.
++
++This is the complete S5 freeze adversarial boundary. Every row requires its mutation to be applied, its declared failures to occur, public readiness to be false, the authority NC row to PASS where applicable, `unexpectedFailures=[]`, and independent restoration of raw readiness, evaluator readiness, public getter readiness, and certificate validity. Mechanically inevitable extra failures are permitted only when declared as allowed cascades in the executable ledger contract.
++
++| ID | Mutation | Contract clause challenged | Required failures | Public readiness |
++|---|---|---|---|---|
++| NC-UPSTREAM | upstream rear-book readiness false | readiness consumes upstream authority | drive remains stowed; public readiness false | false |
++| NC-SPIGOT | shorten live spigot to 0.150 m | live insertion/register truth | S5-P5 | false |
++| NC1 | insert passage obstruction | passage and live material truth | S5-P3, S5-P5, C2 | false |
++| NC4 | obstruct receiver | receiver/register truth | S5-P5 | false |
++| NC-LOCK1 | remove PORT pin and shoe | exact topology and four-lock truth | S5-P7; C18 | false |
++| NC6 | add bottom-sector lock | four declared sectors | S5-P8 | false |
++| NC-SHOULDER-FLOAT | break PORT shoulder/web continuity | structural load path | S5-P9 | false |
++| NC-TRACK-FLOAT | remove PORT track backing | structural support and driver authority | S5-P7 | false |
++| NC-OPEN-CAM | remove PORT B working faces | two-sided passive track/topology | S5-P7, S5-P12, C8, C14, C18 | false |
++| NC-SOLID-GUIDE | close a can guide aperture | complete moving corridor | S5-P7 | false |
++| NC-ZERO-RETAINED-MARGIN | displace B face below retained margin | 0.002 m retained insertion floor | C17 | false |
++| NC-CAM-GAP | displace PORT track outside running geometry | supported positive driver | S5-P7 | false |
++| NC-NONCURRENT-RAIL-INTRUSION | enable middle-track rail intrusion | path-wide pair proof | S5-P7, C14, C18 | false |
++| NC-BACKING-PLUG | insert backing-region pin obstruction | moving/backing corridor | S5-P6, S5-P7 | false |
++| NC-NAMED-TRACK-INTRUDER | enable arbitrary-name classified wedge | no name exemption | C18 | false |
++| NC-UNCLASSIFIED-SOLID | enable invalidly classified corridor solid | first-relevance classification | C18 | false |
++| NC-ENTRY-BLOCK | restore square-ended entry obstruction | phase-specific mouth entry | S5-P7, S5-P12, C23 | false |
++| NC-REVERSE-JAM | delay return contact/high backlash | passive reverse shoulder clearance | S5-P7, S5-P12, S5-P14, C6, C22, C25 | false |
++| NC-MISSING-TRACK-PIECE | disable PORT B CAM | exact required topology | S5-P7, S5-P12, C18 | false |
++| NC-MISSING-B-FACES | disable all PORT B pieces except MOUTH | exact required topology | S5-P7, S5-P12, C18 | false |
++| NC-UNTAGGED-CORRIDOR-SOLID | remove all taxonomy from a captured corridor obstruction | metadata cannot erase matter | S5-P7, S5-P12, C18 | false |
++| NC-MIDDLE-PATH-INTRUDER | block middle path while endpoint is clear | path-wide obstruction truth | S5-P7, S5-P12, C18 | false |
++| NC-PATH-MOVING-UNTAGGED | move untagged matter through an earlier path sample | full-motion physical relevance | S5-P7, S5-P12, C18 | false |
++| NC-FORGED-SURROUNDING-FAMILY | copy `s5-can` family onto an unauthorized obstruction | no broad family exemption | S5-P7, S5-P12, C18 | false |
++| NC-MIDPATH-TRANSIENT-ROW | enable an untagged obstruction only at driveT 0.98470–0.98480 | registration-ID lifetime retention and first-relevance classification | C18 | false |
++| NC-DUPLICATE-AUTHORITY-NAME | alias a second registered moving row to `S5_LOCK_PIN_PORT` | global name uniqueness and non-collapse | C18 | false |
++| NC-DUPLICATE-MOVING-ROW | overlap a unique-name moving row with the PORT pin | moving↔moving pair completeness | C18 | false |
++| NC-CERTIFICATE-ABSENT | invalidate/delete the current S5 path certificate | fail-closed certificate lifecycle | raw false, evaluator false, getter false | false |
++
++Frozen count: **28 controls**.
++
++Any newly imagined adversarial mutation after this freeze is recorded as `POST_S5_VERIFIER_HARDENING_CANDIDATE` unless it directly demonstrates noncompliance with `MT1_S5_AUTHORITY_CONTRACT_V1.md`.
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/README.md ./README.md
+--- /tmp/mt1-s5hr2-authority-base/README.md	2026-08-23 05:49:15.000000000 -0500
++++ ./README.md	2026-08-25 04:14:13.280320523 -0500
+@@ -1,4 +1,4 @@
+-# MT1-S5HR2 — Full-Motion Physical Scope & Freeze Closure
++# MT1-S5HR3 — Frozen S5 Authority Contract
+ 
+ Mechanical Truth third canonical gate. Certified S1C rear and S2A front authorities are frozen. S3 adds one reversible `machineT` that orchestrates both laterals and the axial drive as a single SPREAD↔DRIVE event without changing local geometry.
+ 
+@@ -8,7 +8,7 @@
+ 
+ This is an interference-set and authority proof, not a vehicle.
+ 
+-Certified mechanism baseline: **MT1-S4A** (frozen). Current slice: **MT1-S5HR2**, the full-motion physical-scope repair of the mechanically successful S5H captive cam shoe on B′. Automated S5HR2 gates target GREEN_PENDING_DIRECTOR; H1 remains AWAITING_DIRECTOR_DISPOSITION.
++Certified mechanism baseline: **MT1-S4A** (frozen). Current slice: **MT1-S5HR3**, the closed-world identity/lifetime authority correction for the mechanically successful S5H captive cam shoe on B′. Nominal geometry is unchanged. Automated S5HR3 gates target GREEN_PENDING_DIRECTOR; H1 remains AWAITING_DIRECTOR_DISPOSITION.
+ 
+ **MT1-VB1** is a separate informative vehicle-balance study (`VB1_CANDIDATE_PENDING_DIRECTOR_ASSUMPTION_REVIEW`). It is not S5. No cockpit/intake/propulsion construction.
+ 
+@@ -62,9 +62,12 @@
+ ```bash
+ npm test                 # supported deterministic regression command, bounded to 2 workers
+ npm run test:evidence    # atomic executed NC ledger writer, 1 worker, supported 60-minute test timeout
++npm run test:authority   # explicitly writes the current S5 authority JSON
+ npm run capture          # writes evidence/*.png (legacy S1 captures)
+ ```
+ 
++The supported `npm test` command runs assertion suites plus the committed-ledger validator. It excludes evidence writers and all historical capture/dump generators, so default regression cannot rewrite canonical historical JSON or PNG evidence. Writers are explicit commands.
++
+ S3-specific:
+ 
+ ```bash
+@@ -80,7 +83,7 @@
+ window.__MT1.getAuthorityMode()
+ window.__MT1.runFrontClearance()   // frozen S2A
+ window.__MT1.runClearance()        // frozen S1C
+-window.__MT1.runS5Authority()      // current S5H
++window.__MT1.runS5Authority()      // current S5HR3
+ window.__MT1.getDriveThrustReady()
+ ```
+ 
+@@ -106,6 +109,6 @@
+ VB1: `MT1_VB1_SCOPE_AND_EPISTEMICS.md`, `MT1_VB1_MASS_ASSUMPTIONS.md`, `MT1_VB1_GEOMETRY_FACTS.md`, `MT1_VB1_RESULTS.md`, `evidence/vb1-*.json`  
+ VB1-AR1 (F5 location addendum only): `MT1_VB1_F5_LOCATION_ADDENDUM.md`, `evidence/vb1-f5-*`  
+ DP1 / DP1A (bounded drive/propulsion architecture study, not S5): `MT1_DP1_*.md`, `evidence/dp1-*`  
+-S5 through S5HR2 (physical propulsion handover and bounded local authority correctives, not S6): `MT1_S5_*.md`, `MT1_S5A_CLOSURE.md` … `MT1_S5HR2_CLOSURE.md`, `evidence/s5-*`, `evidence/s5h-*`
++S5 through S5HR3 (physical propulsion handover and bounded local authority correctives, not S6): `MT1_S5_*.md`, `MT1_S5A_CLOSURE.md` … `MT1_S5HR3_CLOSURE.md`, `evidence/s5-*`, `evidence/s5h-*`
+ 
+ Preserve prior freeze archives unchanged. Do not begin S6, cockpit/intake architecture, engine-detail work, aero/CFD, or propulsion-performance work.
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/package.json ./package.json
+--- /tmp/mt1-s5hr2-authority-base/package.json	2026-08-23 04:24:03.000000000 -0500
++++ ./package.json	2026-08-25 04:03:57.298370744 -0500
+@@ -3,13 +3,14 @@
+   "private": true,
+   "version": "0.1.0",
+   "type": "module",
+-  "description": "MT1-S5HR2 — full-motion physical authority and fail-closed readiness proof",
++  "description": "MT1-S5HR3 — frozen closed-world S5 authority-contract proof",
+   "scripts": {
+     "dev": "vite --host 127.0.0.1 --port 5181",
+     "build": "tsc --noEmit -p tsconfig.app.json && vite build",
+     "preview": "vite preview --host 127.0.0.1 --port 4181",
+-    "test": "playwright test --workers=2 --grep-invert @evidence-writer",
++    "test": "playwright test tests/mt1-*.spec.ts tests/dump-s5-report.spec.ts --workers=2 --grep-invert \"@evidence-writer|@current-authority-writer\"",
+     "test:evidence": "playwright test tests/dump-s5-report.spec.ts --workers=1 --grep @evidence-writer",
++    "test:authority": "playwright test tests/dump-s5-report.spec.ts --workers=1 --grep @current-authority-writer",
+     "capture": "playwright test tests/capture-proof.spec.ts"
+   },
+   "engines": {
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/src/machine/createS5Machine.ts ./src/machine/createS5Machine.ts
+--- /tmp/mt1-s5hr2-authority-base/src/machine/createS5Machine.ts	2026-08-22 14:54:35.000000000 -0500
++++ ./src/machine/createS5Machine.ts	2026-08-25 05:23:58.016302646 -0500
+@@ -11,6 +11,7 @@
+ import { applyDriveSupersession, physicallySupersedeLegacy, reenableLegacy } from "./s5Authority";
+ import { buildS5Propulsion, type S5Override } from "./s5Propulsion";
+ import type { MachineRig } from "./types";
++import { registerS5AuthorityUniverse } from "./s5Identity";
+ 
+ export interface S5MachineRig extends MachineRig {
+   applyS5Override: (value?: S5Override) => void;
+@@ -30,6 +31,7 @@
+   const s5 = buildS5Propulsion(scene, rig.root, body, mats);
+   rig.solids.push(...s5.solids);
+   rig.datums.push(...s5.datums);
++  registerS5AuthorityUniverse(rig.solids);
+ 
+   let lastThrust = false;
+   const poseLock = (driveT: number): void => {
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/src/machine/s5Identity.ts ./src/machine/s5Identity.ts
+--- /tmp/mt1-s5hr2-authority-base/src/machine/s5Identity.ts	1969-12-31 18:00:00.000000000 -0600
++++ ./src/machine/s5Identity.ts	2026-08-25 05:23:57.941040625 -0500
+@@ -0,0 +1,78 @@
++import type { AuthoritySolid } from "./authority";
++
++export type S5RegisteredAuthoritySolid = AuthoritySolid & { readonly registrationId: string };
++
++export interface S5AuthorityIdentityAudit {
++  pass: boolean;
++  registeredRows: number;
++  duplicateRegistrationIds: Array<{ registrationId: string; names: string[] }>;
++  duplicateNames: Array<{ name: string; registrationIds: string[] }>;
++  metadataMismatches: Array<{ registrationId: string; name: string; metadataId?: string }>;
++}
++
++function formatRegistrationId(index: number): string {
++  return `AUTHORITY_ROW_${index.toString(36).toUpperCase().padStart(6, "0")}`;
++}
++
++/**
++ * S5-only closed-world registration. The frozen S4 authority sources build
++ * their rows unchanged; after S5 assembly is complete this kernel assigns an
++ * opaque immutable proof identity to every frozen-candidate authority row.
++ */
++export function registerS5AuthorityUniverse(rows: AuthoritySolid[]): void {
++  const names = new Map<string, number>();
++  for (const row of rows) names.set(row.name, (names.get(row.name) ?? 0) + 1);
++  const duplicates = [...names].filter(([, count]) => count !== 1).map(([name]) => name);
++  if (duplicates.length) {
++    throw new Error(`S5 authority registration rejected duplicate names: ${duplicates.sort().join(",")}`);
++  }
++  rows.forEach((row, index) => {
++    const registrationId = formatRegistrationId(index + 1);
++    Object.defineProperty(row, "registrationId", {
++      value: registrationId,
++      enumerable: true,
++      writable: false,
++      configurable: false,
++    });
++    row.node.metadata = { ...(row.node.metadata ?? {}), authorityRegistrationId: registrationId };
++  });
++}
++
++export function registrationIdOf(row: AuthoritySolid): string {
++  const registrationId = (row as Partial<S5RegisteredAuthoritySolid>).registrationId;
++  if (!registrationId) throw new Error(`S5 authority row lacks registration ID: ${row.name}`);
++  return registrationId;
++}
++
++export function auditS5AuthorityIdentity(rows: readonly AuthoritySolid[]): S5AuthorityIdentityAudit {
++  const ids = new Map<string, AuthoritySolid[]>();
++  const names = new Map<string, AuthoritySolid[]>();
++  const metadataMismatches: S5AuthorityIdentityAudit["metadataMismatches"] = [];
++  for (const row of rows) {
++    const registrationId = registrationIdOf(row);
++    const byId = ids.get(registrationId) ?? [];
++    byId.push(row);
++    ids.set(registrationId, byId);
++    const byName = names.get(row.name) ?? [];
++    byName.push(row);
++    names.set(row.name, byName);
++    const metadataId = (row.node.metadata as { authorityRegistrationId?: string } | undefined)
++      ?.authorityRegistrationId;
++    if (metadataId !== registrationId) {
++      metadataMismatches.push({ registrationId, name: row.name, metadataId });
++    }
++  }
++  const duplicateRegistrationIds = [...ids]
++    .filter(([, grouped]) => grouped.length !== 1)
++    .map(([registrationId, grouped]) => ({ registrationId, names: grouped.map((row) => row.name).sort() }));
++  const duplicateNames = [...names]
++    .filter(([, grouped]) => grouped.length !== 1)
++    .map(([name, grouped]) => ({ name, registrationIds: grouped.map(registrationIdOf).sort() }));
++  return {
++    pass: duplicateRegistrationIds.length === 0 && duplicateNames.length === 0 && metadataMismatches.length === 0,
++    registeredRows: rows.length,
++    duplicateRegistrationIds,
++    duplicateNames,
++    metadataMismatches,
++  };
++}
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/src/machine/s5Propulsion.ts ./src/machine/s5Propulsion.ts
+--- /tmp/mt1-s5hr2-authority-base/src/machine/s5Propulsion.ts	2026-08-23 04:13:09.000000000 -0500
++++ ./src/machine/s5Propulsion.ts	2026-08-25 04:08:59.914306951 -0500
+@@ -67,6 +67,12 @@
+   pathMovingUntagged?: boolean;
+   /** Physical rail obstruction carrying a forged approved-looking family. */
+   forgedSurroundingFamily?: boolean;
++  /** Untagged row enabled only while it crosses PORT CAM at mid-path. */
++  midpathTransientRow?: boolean;
++  /** Registered moving fixture whose live authority name aliases S5_LOCK_PIN_PORT. */
++  duplicateAuthorityName?: boolean;
++  /** Distinct registered moving row overlapping the PORT pin under a unique name. */
++  duplicateMovingRow?: boolean;
+   entryBlock?: boolean;
+   reverseJam?: boolean;
+ }
+@@ -408,6 +414,38 @@
+     { ...s5, role: "diagnostic" },
+   );
+   forgedFamilyIntruder.setEnabled(false);
++  const transientIntruder = reg(
++    solids,
++    box(scene, "S5_NC_MIDPATH_TRANSIENT_VIS", root, mats.lock, [0.006, 0.01, 0.006], portCam.aPos),
++    "s5-nc",
++    { ...s5, role: "diagnostic" },
++  );
++  transientIntruder.metadata = { ...(transientIntruder.metadata ?? {}), assembly: undefined, subsystem: undefined };
++  transientIntruder.setEnabled(false);
++  const duplicateNameMesh = tagAssembly(
++    reg(
++      solids,
++      box(scene, "S5_NC_DUPLICATE_AUTHORITY_NAME_VIS", pins.PORT, mats.lock, [pr, ph, pa], [0, 0, 0]),
++      "s5-nc",
++      { ...s5m, role: "diagnostic" },
++    ),
++    "MOVING_LOCK_ASSEMBLY",
++  );
++  duplicateNameMesh.setEnabled(false);
++  const duplicateNameSpec = solids.find((row) => row.node === duplicateNameMesh);
++  if (!duplicateNameSpec) throw new Error("duplicate-name authority fixture registration missing");
++  const duplicateMovingMesh = tagAssembly(
++    reg(
++      solids,
++      box(scene, "S5_NC_DUPLICATE_MOVING_ROW_VIS", pins.PORT, mats.lock, [pr, ph, pa], [0, 0, 0]),
++      "s5-nc",
++      { ...s5m, role: "diagnostic" },
++    ),
++    "MOVING_LOCK_ASSEMBLY",
++  );
++  duplicateMovingMesh.setEnabled(false);
++  const duplicateMovingSpec = solids.find((row) => row.node === duplicateMovingMesh);
++  if (!duplicateMovingSpec) throw new Error("duplicate-moving authority fixture registration missing");
+ 
+   reg(
+     solids,
+@@ -483,6 +521,8 @@
+   let live: S5Override = {};
+ 
+   const applyLockPose = (driveT: number, force?: "extend" | "retract" | "gap"): void => {
++    const transientOn = Boolean(live.midpathTransientRow) && driveT >= 0.98470 && driveT <= 0.98480;
++    transientIntruder.setEnabled(transientOn);
+     if (force === "gap") {
+       pins.PORT.position.x = -S5_LOCK_PIN_RETRACT_X + 0.008;
+       pins.STARBOARD.position.x = S5_LOCK_PIN_RETRACT_X - 0.008;
+@@ -692,6 +732,21 @@
+       solid.metadata = { ...(solid.metadata ?? {}), assembly: undefined, subsystem: undefined };
+       solid.setEnabled(on);
+     }
++    const transientSpec = solids.find((candidate) => candidate.node === transientIntruder);
++    if (transientSpec) transientSpec.role = opts.midpathTransientRow ? "physical" : "diagnostic";
++    transientIntruder.metadata = { ...(transientIntruder.metadata ?? {}), assembly: undefined, subsystem: undefined };
++    transientIntruder.setEnabled(false);
++
++    const duplicateNameOn = Boolean(opts.duplicateAuthorityName);
++    duplicateNameSpec.role = duplicateNameOn ? "physical" : "diagnostic";
++    duplicateNameSpec.name = duplicateNameOn ? "S5_LOCK_PIN_PORT" : "S5_NC_DUPLICATE_AUTHORITY_NAME_VIS";
++    duplicateNameMesh.name = duplicateNameSpec.name;
++    duplicateNameMesh.setEnabled(duplicateNameOn);
++
++    const duplicateMovingOn = Boolean(opts.duplicateMovingRow);
++    duplicateMovingSpec.role = duplicateMovingOn ? "physical" : "diagnostic";
++    duplicateMovingMesh.setEnabled(duplicateMovingOn);
++    applyLockPose(1, opts.forceUnlock ? "retract" : opts.lockGap ? "gap" : opts.forceLock ? "extend" : undefined);
+     void framePort;
+     void frameStbd;
+     void frameTop;
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/src/verify/s5Capture.ts ./src/verify/s5Capture.ts
+--- /tmp/mt1-s5hr2-authority-base/src/verify/s5Capture.ts	2026-08-23 04:12:41.000000000 -0500
++++ ./src/verify/s5Capture.ts	2026-08-25 05:24:47.415053063 -0500
+@@ -23,6 +23,11 @@
+ } from "../design/s5Parameters";
+ import { P } from "../design/parameters";
+ import type { AuthoritySolid } from "../machine/authority";
++import {
++  auditS5AuthorityIdentity,
++  type S5AuthorityIdentityAudit,
++  type S5RegisteredAuthoritySolid,
++} from "../machine/s5Identity";
+ import { getSupersededBy, meshEnabled } from "../machine/s5Authority";
+ import { isSectorBacking } from "../machine/s5Propulsion";
+ import type { MachineRig } from "../machine/types";
+@@ -77,10 +82,19 @@
+   >;
+   inventory: {
+     method: "FULL_MOTION_SAMPLED_UNION";
++    proofIdentity: "registrationId";
++    registeredRows: number;
++    registrationIdsUnique: boolean;
++    namesUnique: boolean;
++    duplicateRegistrationIds: S5AuthorityIdentityAudit["duplicateRegistrationIds"];
++    duplicateNames: S5AuthorityIdentityAudit["duplicateNames"];
++    metadataIdentityMismatches: S5AuthorityIdentityAudit["metadataMismatches"];
+     physicalUniverse: string[];
++    physicalUniverseRegistrationIds: string[];
+     moving: string[];
+     fixed: string[];
+     relevant: string[];
++    relevantRegistrationIds: string[];
+     capturedRelevant: string[];
+     pathAdded: string[];
+     approvedSurrounding: string[];
+@@ -89,14 +103,78 @@
+     conflictingClassification: string[];
+     missingRequired: string[];
+     collisionScope: string[];
++    collisionScopeRegistrationIds: string[];
++    lifetimeRows: S5AuthorityLifetimeRow[];
+     complete: boolean;
+   };
++  pairProof: {
++    identity: "registrationId";
++    movingFixed: number;
++    movingSurrounding: number;
++    movingMoving: number;
++    foreignRail: number;
++    movingMovingPairs: string[];
++  };
++  intentionalContactTable: {
++    immutable: true;
++    rules: typeof S5_INTENTIONAL_CONTACT_RULES;
++    relations: S5IntentionalContactRelation[];
++    instantiatedRelations: number;
++    missingRelationRows: string[];
++    pass: boolean;
++  };
+   analyticComparison: { maxDeviation: number; tolerance: number; pass: boolean };
+   supportContinuity: boolean;
+   phases: string[];
+   detail: string;
+ }
+ 
++export interface S5AuthorityLifetimeRow {
++  registrationId: string;
++  name: string;
++  family: string;
++  role: string;
++  moving: boolean;
++  assembly?: string;
++  subsystem?: string;
++  classification:
++    | "required-moving-lock"
++    | "required-fixed-track"
++    | "expected-surrounding"
++    | "declared-nc-moving"
++    | "declared-nc-fixed"
++    | "unclassified"
++    | "invalid"
++    | "conflicting";
++  firstRelevant: {
++    sample: number;
++    stage: "PREREQUISITE" | "FORWARD" | "REVERSE";
++    driveT: number;
++    enabled: boolean;
++    aabb: { min: { x: number; y: number; z: number }; max: { x: number; y: number; z: number } };
++  };
++}
++
++export interface S5IntentionalContactRelation {
++  rule: (typeof S5_INTENTIONAL_CONTACT_RULES)[number];
++  aRegistrationId: string;
++  aName: string;
++  bRegistrationId: string;
++  bName: string;
++}
++
++export const S5_INTENTIONAL_CONTACT_RULES = Object.freeze([
++  "CAM_SHOE_TO_SECTOR_RAIL_B_FORWARD_OR_CAPTURED",
++  "CAM_SHOE_TO_SECTOR_RAIL_A_REVERSE_OR_CAPTURED",
++  "CAM_SHOE_TO_OPPOSITE_FACE_NONPENETRATING",
++  "LOCK_PIN_TO_SECTOR_SHOULDER_RETAINED_ESCAPE_PROBE",
++  "RAIL_FACE_TO_DECLARED_BACKING_STRUCTURAL_SPLICE",
++  "SHOULDER_TO_DECLARED_WEB_STRUCTURAL_SPLICE",
++  "WEB_TO_RECEIVER_POST_FRAME_KEEL_CHAIN",
++  "SEAT_TONGUE_TO_DECLARED_RECEIVER_CAVITY",
++  "FIXED_SPIGOT_TO_MOVING_RECEIVER_NESTED_INTERFACE",
++] as const);
++
+ const TRACK_PIECES = ["MOUTH", "LEAD", "TRANSITION", "CAM_ENTRY", "CAM", "CAM_EXIT", "CAPTURE"] as const;
+ 
+ function requiredTopology(id: S5DogId): S5PathCertificate["requiredPieceTopology"][S5DogId] {
+@@ -171,7 +249,11 @@
+   return (s.node as { metadata?: { subsystem?: string } }).metadata?.subsystem === "S5_LOCK_TRACK_SUBSYSTEM";
+ }
+ 
+-type S5WorldSolid = AuthoritySolid & { obb: OBB };
++type S5WorldSolid = S5RegisteredAuthoritySolid & { obb: OBB };
++
++function s5WorldOf(rig: MachineRig): S5WorldSolid[] {
++  return rig.worldSolids() as S5WorldSolid[];
++}
+ 
+ const LOCK_CORRIDOR_REGIONS: Record<S5DogId, { min: { x: number; y: number; z: number }; max: { x: number; y: number; z: number } }> = {
+   PORT: { min: { x: -0.561, y: 0.518, z: -4.5895 }, max: { x: -0.461, y: 0.578, z: -4.5345 } },
+@@ -231,72 +313,187 @@
+   }),
+ );
+ 
++function instantiateIntentionalContactRelations(
++  world: S5WorldSolid[],
++): S5PathCertificate["intentionalContactTable"] {
++  const relations: S5IntentionalContactRelation[] = [];
++  const missingRelationRows: string[] = [];
++  const add = (rule: S5IntentionalContactRelation["rule"], aName: string, bName: string): void => {
++    const aMatches = world.filter((row) => row.name === aName && isS5Material(row));
++    const bMatches = world.filter((row) => row.name === bName && isS5Material(row));
++    if (aMatches.length !== 1 || bMatches.length !== 1) {
++      missingRelationRows.push(`${rule}:${aName}[${aMatches.length}]↔${bName}[${bMatches.length}]`);
++      return;
++    }
++    const [a] = aMatches;
++    const [b] = bMatches;
++    relations.push({
++      rule,
++      aRegistrationId: a.registrationId,
++      aName: a.name,
++      bRegistrationId: b.registrationId,
++      bName: b.name,
++    });
++  };
++  for (const id of S5_DOG_IDS) {
++    const topology = S5_REQUIRED_TRACK_TOPOLOGY[id];
++    const shoe = `S5_LOCK_CAM_SHOE_${id}`;
++    for (const rail of topology.faceB) {
++      add("CAM_SHOE_TO_SECTOR_RAIL_B_FORWARD_OR_CAPTURED", shoe, rail);
++      add("CAM_SHOE_TO_OPPOSITE_FACE_NONPENETRATING", shoe, rail);
++    }
++    for (const rail of topology.faceA) {
++      add("CAM_SHOE_TO_SECTOR_RAIL_A_REVERSE_OR_CAPTURED", shoe, rail);
++      add("CAM_SHOE_TO_OPPOSITE_FACE_NONPENETRATING", shoe, rail);
++    }
++    add("LOCK_PIN_TO_SECTOR_SHOULDER_RETAINED_ESCAPE_PROBE", `S5_LOCK_PIN_${id}`, `S5_LOCK_SHOULDER_${id}`);
++    const top = id === "TOP_PORT" || id === "TOP_STARBOARD";
++    for (const [index, rail] of [...topology.faceA, ...topology.faceB].entries()) {
++      const pieceIndex = index % TRACK_PIECES.length;
++      const piece = TRACK_PIECES[pieceIndex];
++      const backing = top
++        ? piece === "MOUTH"
++          ? `S5_LOCK_TRACK_BACK_MOUTH_${id}`
++          : piece === "LEAD"
++            ? `S5_LOCK_TRACK_BACK_MOUTH_BRIDGE_${id}`
++            : piece === "CAPTURE"
++              ? `S5_LOCK_TRACK_BACK_AFT_${id}`
++              : `S5_LOCK_TRACK_BACK_${id}`
++        : `S5_LOCK_TRACK_BACK_${id}`;
++      add("RAIL_FACE_TO_DECLARED_BACKING_STRUCTURAL_SPLICE", rail, backing);
++    }
++    add("SHOULDER_TO_DECLARED_WEB_STRUCTURAL_SPLICE", `S5_LOCK_SHOULDER_${id}`, `S5_LOCK_WEB_${id}`);
++    for (const wall of world.filter((row) => row.name.startsWith(`S5_POCKET_${id}_`) && isS5Material(row))) {
++      add("SEAT_TONGUE_TO_DECLARED_RECEIVER_CAVITY", `S5_SEAT_TONGUE_${id}`, wall.name);
++    }
++  }
++  for (const [a, b] of LOCK_CHAIN.slice(8)) {
++    add("WEB_TO_RECEIVER_POST_FRAME_KEEL_CHAIN", a, b);
++  }
++  for (const wall of ["PORT", "STBD", "TOP", "BOT"] as const) {
++    add("FIXED_SPIGOT_TO_MOVING_RECEIVER_NESTED_INTERFACE", `S5_SPIGOT_${wall}`, `S5_RECEIVER_${wall}`);
++  }
++  const registrationPairKeys = new Set(
++    relations.map((row) => `${row.rule}:${row.aRegistrationId}↔${row.bRegistrationId}`),
++  );
++  return {
++    immutable: true,
++    rules: S5_INTENTIONAL_CONTACT_RULES,
++    relations,
++    instantiatedRelations: relations.length,
++    missingRelationRows: [...new Set(missingRelationRows)].sort(),
++    pass: missingRelationRows.length === 0 && registrationPairKeys.size === relations.length,
++  };
++}
++
++function snapshotLifetimeRow(
++  solid: S5WorldSolid,
++  sample: number,
++  stage: S5AuthorityLifetimeRow["firstRelevant"]["stage"],
++  driveT: number,
++): S5AuthorityLifetimeRow {
++  const metadata = (solid.node as { metadata?: { assembly?: string; subsystem?: string } }).metadata ?? {};
++  const movingClass = metadata.assembly === "MOVING_LOCK_ASSEMBLY";
++  const fixedClass = metadata.assembly === "FIXED_TRACK_ASSEMBLY";
++  const correctSubsystem = metadata.subsystem === "S5_LOCK_TRACK_SUBSYSTEM";
++  const requiredMoving = REQUIRED_MOVING_NAMES.has(solid.name);
++  const requiredFixed = REQUIRED_FIXED_NAMES.has(solid.name);
++  const expectedSurrounding = EXPECTED_CORRIDOR_SURROUNDING.get(solid.name) === solid.family;
++  let classification: S5AuthorityLifetimeRow["classification"];
++  if (requiredMoving && movingClass && correctSubsystem) classification = "required-moving-lock";
++  else if (requiredFixed && fixedClass && correctSubsystem) classification = "required-fixed-track";
++  else if (!requiredMoving && !requiredFixed && movingClass && correctSubsystem) classification = "declared-nc-moving";
++  else if (!requiredMoving && !requiredFixed && fixedClass && correctSubsystem) classification = "declared-nc-fixed";
++  else if (!metadata.assembly && !metadata.subsystem && expectedSurrounding) classification = "expected-surrounding";
++  else if (!metadata.assembly && !metadata.subsystem) classification = "unclassified";
++  else if ((movingClass || fixedClass) && !correctSubsystem) classification = "invalid";
++  else classification = "conflicting";
++  return {
++    registrationId: solid.registrationId,
++    name: solid.name,
++    family: solid.family,
++    role: solid.role,
++    moving: solid.moving,
++    assembly: metadata.assembly,
++    subsystem: metadata.subsystem,
++    classification,
++    firstRelevant: {
++      sample,
++      stage,
++      driveT,
++      enabled: meshEnabled(solid.node),
++      aabb: obbWorldAabb(solid.obb),
++    },
++  };
++}
++
+ function physicalFirstInventory(
+   world: S5WorldSolid[],
+-  relevantNames?: ReadonlySet<string>,
+-  capturedRelevantNames?: ReadonlySet<string>,
+-  physicalUniverseNames?: ReadonlySet<string>,
++  identity: S5AuthorityIdentityAudit,
++  relevantRows?: ReadonlyMap<string, S5AuthorityLifetimeRow>,
++  capturedRelevantIds?: ReadonlySet<string>,
++  physicalUniverseRows?: ReadonlyMap<string, { registrationId: string; name: string }>,
+ ): S5PathCertificate["inventory"] {
+   const physical = world.filter(isS5Material);
++  const currentRows = new Map(
++    physical
++      .filter(intersectsLockCorridor)
++      .map((solid, index) => [solid.registrationId, snapshotLifetimeRow(solid, index, "PREREQUISITE", 1)]),
++  );
++  const lifetimeRows = [...(relevantRows ?? currentRows).values()];
+   const moving = physical.filter((s) => isMovingLockSolid(s) && inLockTrackSubsystem(s)).map((s) => s.name);
+   const fixed = physical.filter((s) => isFixedTrackSolid(s) && inLockTrackSubsystem(s)).map((s) => s.name);
+-  const relevantSolids = physical.filter((s) =>
+-    relevantNames ? relevantNames.has(s.name) : intersectsLockCorridor(s),
+-  );
+-  const relevant = relevantSolids.map((s) => s.name);
+-  const approvedSurrounding: string[] = [];
+-  const unclassified: string[] = [];
+-  const invalidClassification: string[] = [];
+-  const conflictingClassification: string[] = [];
+-
+-  for (const s of relevantSolids) {
+-    const meta = (s.node as { metadata?: { assembly?: string; subsystem?: string } }).metadata ?? {};
+-    const movingClass = meta.assembly === "MOVING_LOCK_ASSEMBLY";
+-    const fixedClass = meta.assembly === "FIXED_TRACK_ASSEMBLY";
+-    const correctSubsystem = meta.subsystem === "S5_LOCK_TRACK_SUBSYSTEM";
+-    if ((movingClass || fixedClass) && correctSubsystem) continue;
+-    const expectedFamily = EXPECTED_CORRIDOR_SURROUNDING.get(s.name);
+-    if (!meta.assembly && !meta.subsystem && expectedFamily === s.family) {
+-      approvedSurrounding.push(s.name);
+-      continue;
+-    }
+-    if (!meta.assembly) unclassified.push(s.name);
+-    else if ((movingClass || fixedClass) && !correctSubsystem) invalidClassification.push(s.name);
+-    else if (meta.assembly || meta.subsystem) conflictingClassification.push(s.name);
+-    else unclassified.push(s.name);
+-  }
++  const approvedSurrounding = lifetimeRows
++    .filter((row) => row.classification === "expected-surrounding")
++    .map((row) => row.name);
++  const unclassified = lifetimeRows.filter((row) => row.classification === "unclassified").map((row) => row.name);
++  const invalidClassification = lifetimeRows.filter((row) => row.classification === "invalid").map((row) => row.name);
++  const conflictingClassification = lifetimeRows.filter((row) => row.classification === "conflicting").map((row) => row.name);
+ 
+   const missingRequired: string[] = [];
+   for (const id of S5_DOG_IDS) {
+     const required = S5_REQUIRED_TRACK_TOPOLOGY[id];
+     for (const name of required.moving) {
+-      const solid = physical.find((s) => s.name === name);
+-      if (!solid) missingRequired.push(name);
+-      else if (!isMovingLockSolid(solid) || !inLockTrackSubsystem(solid)) invalidClassification.push(name);
++      const matches = physical.filter((s) => s.name === name);
++      if (matches.length !== 1) missingRequired.push(matches.length === 0 ? name : `${name}[count=${matches.length}]`);
++      else if (!isMovingLockSolid(matches[0]) || !inLockTrackSubsystem(matches[0])) invalidClassification.push(name);
+     }
+     for (const name of [...required.faceA, ...required.faceB, ...required.support]) {
+-      const solid = physical.find((s) => s.name === name);
+-      if (!solid) missingRequired.push(name);
+-      else if (!isFixedTrackSolid(solid) || !inLockTrackSubsystem(solid)) invalidClassification.push(name);
++      const matches = physical.filter((s) => s.name === name);
++      if (matches.length !== 1) missingRequired.push(matches.length === 0 ? name : `${name}[count=${matches.length}]`);
++      else if (!isFixedTrackSolid(matches[0]) || !inLockTrackSubsystem(matches[0])) invalidClassification.push(name);
+     }
+   }
+ 
+   const uniq = (items: string[]): string[] => [...new Set(items)].sort();
+-  const collisionScope = uniq([
+-    ...fixed,
+-    ...approvedSurrounding,
+-    ...unclassified,
+-    ...invalidClassification,
+-    ...conflictingClassification,
+-  ]);
+-  const capturedRelevant = uniq([...(capturedRelevantNames ?? new Set(relevant))]);
+-  const pathAdded = uniq(relevant.filter((name) => !capturedRelevant.includes(name)));
+-  const result = {
+-    method: "FULL_MOTION_SAMPLED_UNION" as const,
+-    physicalUniverse: uniq([...(physicalUniverseNames ?? new Set(physical.map((s) => s.name)))]),
++  const relevant = uniq(lifetimeRows.map((row) => row.name));
++  const relevantRegistrationIds = uniq(lifetimeRows.map((row) => row.registrationId));
++  const capturedRows = lifetimeRows.filter((row) => (capturedRelevantIds ?? new Set(relevantRegistrationIds)).has(row.registrationId));
++  const capturedRelevant = uniq(capturedRows.map((row) => row.name));
++  const pathAdded = uniq(
++    lifetimeRows.filter((row) => !capturedRows.some((captured) => captured.registrationId === row.registrationId)).map((row) => row.name),
++  );
++  const scopedRows = lifetimeRows.filter((row) => row.classification !== "required-moving-lock");
++  const collisionScope = uniq(scopedRows.map((row) => row.name));
++  const collisionScopeRegistrationIds = uniq(scopedRows.map((row) => row.registrationId));
++  const physicalUniverse = physicalUniverseRows
++    ? [...physicalUniverseRows.values()]
++    : physical.map((row) => ({ registrationId: row.registrationId, name: row.name }));
++  const result: S5PathCertificate["inventory"] = {
++    method: "FULL_MOTION_SAMPLED_UNION",
++    proofIdentity: "registrationId",
++    registeredRows: identity.registeredRows,
++    registrationIdsUnique: identity.duplicateRegistrationIds.length === 0 && identity.metadataMismatches.length === 0,
++    namesUnique: identity.duplicateNames.length === 0,
++    duplicateRegistrationIds: identity.duplicateRegistrationIds,
++    duplicateNames: identity.duplicateNames,
++    metadataIdentityMismatches: identity.metadataMismatches,
++    physicalUniverse: uniq(physicalUniverse.map((row) => row.name)),
++    physicalUniverseRegistrationIds: uniq(physicalUniverse.map((row) => row.registrationId)),
+     moving: uniq(moving),
+     fixed: uniq(fixed),
+-    relevant: uniq(relevant),
++    relevant,
++    relevantRegistrationIds,
+     capturedRelevant,
+     pathAdded,
+     approvedSurrounding: uniq(approvedSurrounding),
+@@ -305,10 +502,14 @@
+     conflictingClassification: uniq(conflictingClassification),
+     missingRequired: uniq(missingRequired),
+     collisionScope,
++    collisionScopeRegistrationIds,
++    lifetimeRows: [...lifetimeRows].sort((a, b) => a.registrationId.localeCompare(b.registrationId)),
+     complete: false,
+   };
+   result.complete =
+     result.moving.length === 8 &&
++    result.registrationIdsUnique &&
++    result.namesUnique &&
+     result.unclassified.length === 0 &&
+     result.invalidClassification.length === 0 &&
+     result.conflictingClassification.length === 0 &&
+@@ -500,7 +701,7 @@
+ 
+ export function evaluateS5Handover(rig: MachineRig, _driveT = rig.lastDriveT()): S5HandoverState {
+   void _driveT;
+-  const world = rig.worldSolids();
++  const world = s5WorldOf(rig);
+   const byName = new Map(world.map((s) => [s.name, s]));
+   const spigot = liveSpigotInterval(world);
+   const receiver = liveReceiverInterval(world);
+@@ -854,7 +1055,7 @@
+     if (id === "PORT") pin.position.x = sx + d;
+     else if (id === "STARBOARD") pin.position.x = sx - d;
+     else pin.position.y = sy - d;
+-    const world = rig.worldSolids();
++    const world = s5WorldOf(rig);
+     const fol =
+       world.find((s) => s.name === `S5_LOCK_CAM_SHOE_${id}`) ?? world.find((s) => s.name === `S5_LOCK_FOLLOWER_${id}`);
+     const railsB = world.filter((s) => s.name.startsWith(`S5_LOCK_RAIL_B_${id}`) && isS5Material(s));
+@@ -865,7 +1066,7 @@
+   if (!hitsAt(hi)) {
+     pin.position.x = sx;
+     pin.position.y = sy;
+-    return { margin: pinInsertionFromWorld(rig.worldSolids(), id), stopDelta: hi, blocked: false };
++    return { margin: pinInsertionFromWorld(s5WorldOf(rig), id), stopDelta: hi, blocked: false };
+   }
+   for (let i = 0; i < 40; i += 1) {
+     const mid = (lo + hi) / 2;
+@@ -873,7 +1074,7 @@
+     else lo = mid;
+   }
+   hitsAt(hi);
+-  const margin = pinInsertionFromWorld(rig.worldSolids(), id);
++  const margin = pinInsertionFromWorld(s5WorldOf(rig), id);
+   pin.position.x = sx;
+   pin.position.y = sy;
+   return { margin, stopDelta: hi, blocked: true };
+@@ -1049,7 +1250,7 @@
+   rig.applyDrive(1);
+   const z0 = carriage.position.z;
+   carriage.position.z = z0 + 0.02;
+-  const world = rig.worldSolids();
++  const world = s5WorldOf(rig);
+   const hits: string[] = [];
+   for (const id of S5_DOG_IDS) {
+     const pin = world.find((s) => s.name === `S5_LOCK_PIN_${id}`);
+@@ -1070,7 +1271,7 @@
+   const pin = scene.getMeshByName(`S5_LOCK_PIN_${id}`) as Mesh | null;
+   if (!pin) return { returnTravel: 1, shoulderTravel: 0, lead: -1 };
+   rig.applyDrive(1);
+-  const world0 = rig.worldSolids();
++  const world0 = s5WorldOf(rig);
+   const pin0 = world0.find((s) => s.name === `S5_LOCK_PIN_${id}`);
+   const sh = world0.find((s) => s.name === `S5_LOCK_SHOULDER_${id}` && isS5Material(s));
+   if (!pin0 || !sh) return { returnTravel: 1, shoulderTravel: 0, lead: -1 };
+@@ -1085,7 +1286,7 @@
+     pin.position.x = axisX;
+     pin.position.y = axisY;
+     pin.computeWorldMatrix(true);
+-    const world = rig.worldSolids();
++    const world = s5WorldOf(rig);
+     const shoe =
+       world.find((s) => s.name === `S5_LOCK_CAM_SHOE_${id}`) ?? world.find((s) => s.name === `S5_LOCK_FOLLOWER_${id}`);
+     const railsA = world.filter((s) => s.name.startsWith(`S5_LOCK_RAIL_A_${id}`) && isS5Material(s));
+@@ -1155,9 +1356,12 @@
+   let lastClearDriveT = forwardT0;
+   let entryHit = "";
+   let maxCenterlineError = 0;
+-  const physicalUniverseNames = new Set<string>();
+-  const pathRelevantNames = new Set<string>();
+-  const capturedRelevantNames = new Set<string>();
++  const physicalUniverseRows = new Map<string, { registrationId: string; name: string }>();
++  const pathRelevantRows = new Map<string, S5AuthorityLifetimeRow>();
++  const capturedRelevantIds = new Set<string>();
++  const identity = auditS5AuthorityIdentity(rig.solids);
++  const pairCounts = { movingFixed: 0, movingSurrounding: 0, movingMoving: 0, foreignRail: 0 };
++  const movingMovingPairs = new Set<string>();
+ 
+   const recordForbiddenHit = (
+     a: S5WorldSolid,
+@@ -1165,7 +1369,7 @@
+     stage: "PREREQUISITE" | "FORWARD" | "REVERSE",
+     t: number,
+   ): void => {
+-    const hit = `${a.name}∩${b.name}@${stage}:${t.toFixed(5)} sep=${obbSeparation(a.obb, b.obb).toFixed(7)}`;
++    const hit = `${a.name}[${a.registrationId}]∩${b.name}[${b.registrationId}]@${stage}:${t.toFixed(5)} sep=${obbSeparation(a.obb, b.obb).toFixed(7)}`;
+     if (!firstHit) firstHit = hit;
+     if (
+       stage === "FORWARD" &&
+@@ -1189,35 +1393,60 @@
+     t: number,
+   ): void => {
+     const physical = world.filter(isS5Material);
+-    for (const solid of physical) physicalUniverseNames.add(solid.name);
++    for (const solid of physical) {
++      if (!physicalUniverseRows.has(solid.registrationId)) {
++        physicalUniverseRows.set(solid.registrationId, { registrationId: solid.registrationId, name: solid.name });
++      }
++    }
+     const poseRelevant = physical.filter(intersectsLockCorridor);
+-    const poseRelevantNames = new Set(poseRelevant.map((solid) => solid.name));
+-    for (const solid of poseRelevant) pathRelevantNames.add(solid.name);
++    const poseRelevantIds = new Set(poseRelevant.map((solid) => solid.registrationId));
++    for (const solid of poseRelevant) {
++      if (!pathRelevantRows.has(solid.registrationId)) {
++        pathRelevantRows.set(solid.registrationId, snapshotLifetimeRow(solid, samples, stage, t));
++      }
++    }
+ 
+-    const moving = physical.filter((s) => REQUIRED_MOVING_NAMES.has(s.name));
++    const moving = physical.filter((s) => isMovingLockSolid(s) && inLockTrackSubsystem(s));
+     const pairTargets = physical.filter(
+       (s) =>
+-        !REQUIRED_MOVING_NAMES.has(s.name) &&
+-        (REQUIRED_FIXED_NAMES.has(s.name) || poseRelevantNames.has(s.name)),
++        isFixedTrackSolid(s) && inLockTrackSubsystem(s) ||
++        (!isMovingLockSolid(s) && poseRelevantIds.has(s.registrationId)),
+     );
+     for (const movingSolid of moving) {
+       for (const target of pairTargets) {
++        if (movingSolid.registrationId === target.registrationId) continue;
+         pairsEvaluated += 1;
++        if (isFixedTrackSolid(target)) pairCounts.movingFixed += 1;
++        else pairCounts.movingSurrounding += 1;
+         if (obbOverlaps(movingSolid.obb, target.obb)) {
+           recordForbiddenHit(movingSolid, target, stage, t);
+         }
+       }
+     }
+ 
++    for (let i = 0; i < moving.length; i += 1) {
++      for (let j = i + 1; j < moving.length; j += 1) {
++        const a = moving[i];
++        const b = moving[j];
++        if (a.registrationId === b.registrationId) continue;
++        const pairId = [a.registrationId, b.registrationId].sort().join("↔");
++        movingMovingPairs.add(pairId);
++        pairCounts.movingMoving += 1;
++        pairsEvaluated += 1;
++        if (obbOverlaps(a.obb, b.obb)) recordForbiddenHit(a, b, stage, t);
++      }
++    }
++
+     // Non-mechanism matter must remain clear of every positive-thickness
+     // working rail even if it misses the shoe at that exact sample.
+     const foreign = poseRelevant.filter(
+-      (s) => !REQUIRED_MOVING_NAMES.has(s.name) && !REQUIRED_FIXED_NAMES.has(s.name),
++      (s) => !isMovingLockSolid(s) && !REQUIRED_FIXED_NAMES.has(s.name),
+     );
+     const rails = physical.filter((s) => REQUIRED_RAIL_NAMES.has(s.name));
+     for (const solid of foreign) {
+       for (const rail of rails) {
+         pairsEvaluated += 1;
++        pairCounts.foreignRail += 1;
+         if (obbOverlaps(solid.obb, rail.obb)) recordForbiddenHit(solid, rail, stage, t);
+       }
+     }
+@@ -1226,17 +1455,18 @@
+   // Exact required topology remains an independent prerequisite. The captured
+   // pose is retained only as a comparison set; it no longer bounds relevance.
+   rig.applyDrive(1);
+-  const initialWorld = rig.worldSolids();
++  const initialWorld = s5WorldOf(rig);
+   for (const solid of initialWorld.filter(isS5Material)) {
+-    physicalUniverseNames.add(solid.name);
+-    if (intersectsLockCorridor(solid)) capturedRelevantNames.add(solid.name);
++    physicalUniverseRows.set(solid.registrationId, { registrationId: solid.registrationId, name: solid.name });
++    if (intersectsLockCorridor(solid)) capturedRelevantIds.add(solid.registrationId);
+   }
+   inspectPhysicalScope(initialWorld, "PREREQUISITE", 1);
+   const initialInventory = physicalFirstInventory(
+     initialWorld,
+-    capturedRelevantNames,
+-    capturedRelevantNames,
+-    physicalUniverseNames,
++    identity,
++    new Map([...pathRelevantRows].filter(([registrationId]) => capturedRelevantIds.has(registrationId))),
++    capturedRelevantIds,
++    physicalUniverseRows,
+   );
+   const initialSupport = evalTrackSupport(initialWorld);
+   rig.applyDrive(saved);
+@@ -1291,6 +1521,19 @@
+       forwardEndpoint: invalidEndpoint,
+       requiredPieceTopology: S5_REQUIRED_TRACK_TOPOLOGY,
+       inventory: initialInventory,
++      pairProof: {
++        identity: "registrationId",
++        ...pairCounts,
++        movingMovingPairs: [...movingMovingPairs].sort(),
++      },
++      intentionalContactTable: {
++        immutable: true,
++        rules: S5_INTENTIONAL_CONTACT_RULES,
++        relations: [],
++        instantiatedRelations: 0,
++        missingRelationRows: ["certificate prerequisite failed before exact relation instantiation"],
++        pass: false,
++      },
+       analyticComparison: { maxDeviation: -1, tolerance: 2 * S5_TRACK_FREEPLAY_MAX + 0.00001, pass: false },
+       supportContinuity: initialSupport.pass,
+       phases: ["CERTIFICATE_PREREQUISITE_FAIL"],
+@@ -1357,7 +1600,7 @@
+   /** Resolve the finite rail prisms themselves, including their positive-thickness end caps. */
+   const resolveFaceContact = (id: S5DogId, face: "A" | "B", direction: -1 | 1, limit: number): boolean => {
+     const overlapsLiveFace = (): boolean => {
+-      const live = rig.worldSolids();
++      const live = s5WorldOf(rig);
+       const shoe = live.find((s) => s.name === `S5_LOCK_CAM_SHOE_${id}` && isS5Material(s));
+       const rails = live.filter((s) => s.name.startsWith(`S5_LOCK_RAIL_${face}_${id}`) && isS5Material(s));
+       return Boolean(shoe && rails.some((rail) => obbOverlaps(shoe.obb, rail.obb)));
+@@ -1387,7 +1630,7 @@
+   };
+ 
+   const inspectPose = (t: number, stage: "FORWARD" | "REVERSE"): void => {
+-    const world = rig.worldSolids();
++    const world = s5WorldOf(rig);
+     const analyticPhase = boundsAt(s5FollowerZ(t)).phase;
+     inspectPhysicalScope(world, stage, t);
+     for (const id of S5_DOG_IDS) {
+@@ -1450,7 +1693,7 @@
+   for (const id of S5_DOG_IDS) {
+     setExtension(id, forwardQ[id]);
+   }
+-  let world = rig.worldSolids();
++  let world = s5WorldOf(rig);
+   for (const id of S5_DOG_IDS) forwardInsertion[id] = pinInsertionFromWorld(world, id);
+   const seekExtreme = (id: S5DogId, face: "A" | "B", seekDirection: -1 | 1): number => {
+     if (initialInventory.missingRequired.includes(`S5_LOCK_RAIL_${face}_${id}_CAPTURE`)) return Number.NaN;
+@@ -1459,7 +1702,7 @@
+     for (let i = 0; i < 1200; i += 1) {
+       q[id] += seekDirection * 0.000005;
+       setExtension(id, q[id]);
+-      const worldAt = rig.worldSolids();
++      const worldAt = s5WorldOf(rig);
+       const shoe = worldAt.find((s) => s.name === `S5_LOCK_CAM_SHOE_${id}` && isS5Material(s));
+       const rails = worldAt.filter((s) => s.name.startsWith(`S5_LOCK_RAIL_${face}_${id}`) && isS5Material(s));
+       if (shoe && rails.some((rail) => obbOverlaps(shoe.obb, rail.obb))) {
+@@ -1477,14 +1720,14 @@
+   for (const id of S5_DOG_IDS) bSide[id] = seekExtreme(id, "B", -1);
+   for (const id of S5_DOG_IDS) aSide[id] = seekExtreme(id, "A", 1);
+   for (const id of S5_DOG_IDS) setExtension(id, bSide[id]);
+-  world = rig.worldSolids();
++  world = s5WorldOf(rig);
+   for (const id of S5_DOG_IDS) bSideInsertion[id] = pinInsertionFromWorld(world, id);
+   for (const id of S5_DOG_IDS) setExtension(id, aSide[id]);
+   inspectPose(1, "FORWARD");
+ 
+   rig.applyDrive(1);
+   for (const id of S5_DOG_IDS) setExtension(id, bSide[id]);
+-  world = rig.worldSolids();
++  world = s5WorldOf(rig);
+   for (const id of S5_DOG_IDS) {
+     const pin = world.find((s) => s.name === `S5_LOCK_PIN_${id}`);
+     const shoulder = world.find((s) => s.name === `S5_LOCK_SHOULDER_${id}` && isS5Material(s));
+@@ -1504,7 +1747,7 @@
+       if (touched && !Number.isFinite(returnContactTravel[id])) returnContactTravel[id] = travel;
+     }
+     inspectPose(t, "REVERSE");
+-    world = rig.worldSolids();
++    world = s5WorldOf(rig);
+     for (const id of S5_DOG_IDS) {
+       const insertion = pinInsertionFromWorld(world, id);
+       if (!Number.isFinite(shoulderClearTravel[id]) && insertion <= 0) {
+@@ -1520,15 +1763,17 @@
+ 
+   rig.applyDrive(0.94);
+   for (const id of S5_DOG_IDS) setExtension(id, q[id]);
+-  const tongueWithdrawn = S5_DOG_IDS.every((id) => evalTongue(rig.worldSolids(), id).insertion < 0.01);
++  const tongueWithdrawn = S5_DOG_IDS.every((id) => evalTongue(s5WorldOf(rig), id).insertion < 0.01);
+   rig.applyDrive(1);
+-  const support = evalTrackSupport(rig.worldSolids());
++  const support = evalTrackSupport(s5WorldOf(rig));
+   const inventory = physicalFirstInventory(
+-    rig.worldSolids(),
+-    pathRelevantNames,
+-    capturedRelevantNames,
+-    physicalUniverseNames,
++    s5WorldOf(rig),
++    auditS5AuthorityIdentity(rig.solids),
++    pathRelevantRows,
++    capturedRelevantIds,
++    physicalUniverseRows,
+   );
++  const intentionalContactTable = instantiateIntentionalContactRelations(s5WorldOf(rig));
+   const reverseShoulderClearanceLead = {} as S5PathCertificate["reverseShoulderClearanceLead"];
+   const reverseLead = {} as Record<S5DogId, { returnTravel: number; shoulderTravel: number; lead: number }>;
+   const retainedWorst = {} as Record<S5DogId, number>;
+@@ -1587,6 +1832,7 @@
+     tongueWithdrawn &&
+     inventory.complete &&
+     support.pass &&
++    intentionalContactTable.pass &&
+     analyticComparison.pass &&
+     internalPass &&
+     !firstHit &&
+@@ -1645,6 +1891,12 @@
+     forwardEndpoint,
+     requiredPieceTopology: S5_REQUIRED_TRACK_TOPOLOGY,
+     inventory,
++    pairProof: {
++      identity: "registrationId",
++      ...pairCounts,
++      movingMovingPairs: [...movingMovingPairs].sort(),
++    },
++    intentionalContactTable,
+     analyticComparison,
+     supportContinuity: support.pass,
+     phases: [...phases],
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/src/verify/s5Clearance.ts ./src/verify/s5Clearance.ts
+--- /tmp/mt1-s5hr2-authority-base/src/verify/s5Clearance.ts	2026-08-23 04:13:53.000000000 -0500
++++ ./src/verify/s5Clearance.ts	2026-08-25 05:24:53.518294192 -0500
+@@ -14,6 +14,7 @@
+   S5_RETAINED_INSERTION_MIN,
+ } from "../design/s5Parameters";
+ import { auditAuthorityBounds } from "../machine/authority";
++import { auditS5AuthorityIdentity } from "../machine/s5Identity";
+ import { getS5Class, getSupersededBy, meshEnabled } from "../machine/s5Authority";
+ import type { S5MachineRig } from "../machine/createS5Machine";
+ import type { GateResult, InstantEnvelope, MachineRig, SweptEnvelope } from "../machine/types";
+@@ -32,7 +33,9 @@
+ import { asAuditOptions, type MachineAuditOptions } from "./capturePredicates";
+ import type { S5Override } from "../machine/s5Propulsion";
+ 
+-const S5_REPAIR_ID = "MT1-S5HR2";
++const S5_REPAIR_ID = "MT1-S5HR3";
++export const S5_C18_FROZEN_CLAIM =
++  "C18 — Closed-World S5 Physical Certificate Completeness: For the frozen registered S5 physical universe and the explicitly declared S5 negative-control mutations, every authority row has a unique stable identity; every row that becomes physically relevant anywhere over the certified forward/reverse motion retains its identity and classification in the path certificate; every required collision/contact pair class is evaluated by identity, including moving-vs-moving where applicable; and no in-scope physical row can be omitted through duplicate names, transient lifetime, missing metadata, or broad family/name exemptions.";
+ 
+ export interface S5Report {
+   freezeId: string;
+@@ -132,6 +135,9 @@
+     "middlePathIntruder",
+     "pathMovingUntagged",
+     "forgedSurroundingFamily",
++    "midpathTransientRow",
++    "duplicateAuthorityName",
++    "duplicateMovingRow",
+     "entryBlock",
+     "reverseJam",
+   ].some((k) => k in (v as object));
+@@ -145,6 +151,7 @@
+   invalidatePathCertificate(rig);
+   const s4 = ncActive ? null : runS4Authority(rig, auditOpts);
+   const audit = auditAuthorityBounds(rig.root, rig.solids);
++  const identityAudit = auditS5AuthorityIdentity(rig.solids);
+   const liveMat = rig.solids.filter((s) => isS5Material(s) || (s.role === "physical" && meshEnabled(s.node) && !getSupersededBy(s.name) && !s.name.startsWith("S5_NC_")));
+   const superseded = rig.solids.filter((s) => getS5Class(s.name) === "LEGACY_SUPERSEDED_REFERENCE" || s.name === "DRIVE_ENVELOPE" || s.name === "DRIVE_FACE_AFT");
+   const retained = rig.solids.filter((s) => getS5Class(s.name) === "RETAINED_S4A_PHYSICAL");
+@@ -181,6 +188,9 @@
+       opts.middlePathIntruder ||
+       opts.pathMovingUntagged ||
+       opts.forgedSurroundingFamily ||
++      opts.midpathTransientRow ||
++      opts.duplicateAuthorityName ||
++      opts.duplicateMovingRow ||
+       opts.entryBlock ||
+       opts.reverseJam,
+   );
+@@ -419,6 +429,47 @@
+       `relevant=${camTrack.pathCertificate.inventory.relevant.includes("S5_NC_FORGED_SURROUNDING_VIS")} approved=${camTrack.pathCertificate.inventory.approvedSurrounding.includes("S5_NC_FORGED_SURROUNDING_VIS")} hit=${camTrack.firstHit} ready=${seated.driveThrustReady}`,
+     ),
+     nc(
++      "NC-MIDPATH-TRANSIENT-ROW",
++      "registration-ID retained for an enabled mid-path-only obstruction",
++      Boolean(opts.midpathTransientRow),
++      Boolean(opts.midpathTransientRow) &&
++        camTrack.pathCertificate.inventory.pathAdded.includes("S5_NC_MIDPATH_TRANSIENT_VIS") &&
++        camTrack.pathCertificate.inventory.lifetimeRows.some(
++          (row) => row.name === "S5_NC_MIDPATH_TRANSIENT_VIS" && row.firstRelevant.stage !== "PREREQUISITE",
++        ) &&
++        camTrack.firstHit.includes("S5_NC_MIDPATH_TRANSIENT_VIS") &&
++        !camTrack.pathCertificate.inventory.complete &&
++        !camTrack.pass &&
++        seated.driveThrustReady === false,
++      `retained=${camTrack.pathCertificate.inventory.pathAdded.includes("S5_NC_MIDPATH_TRANSIENT_VIS")} hit=${camTrack.firstHit} ready=${seated.driveThrustReady}`,
++    ),
++    nc(
++      "NC-DUPLICATE-AUTHORITY-NAME",
++      "two registered rows alias the required PORT pin authority name",
++      Boolean(opts.duplicateAuthorityName),
++      Boolean(opts.duplicateAuthorityName) &&
++        !camTrack.pathCertificate.inventory.namesUnique &&
++        camTrack.pathCertificate.inventory.duplicateNames.some(
++          (row) => row.name === "S5_LOCK_PIN_PORT" && row.registrationIds.length === 2,
++        ) &&
++        !camTrack.pathCertificate.inventory.complete &&
++        !camTrack.pass &&
++        seated.driveThrustReady === false,
++      `namesUnique=${camTrack.pathCertificate.inventory.namesUnique} duplicates=${camTrack.pathCertificate.inventory.duplicateNames.map((row) => `${row.name}:${row.registrationIds.join("|")}`).join(",") || "none"} ready=${seated.driveThrustReady}`,
++    ),
++    nc(
++      "NC-DUPLICATE-MOVING-ROW",
++      "distinct moving registration IDs overlap within one moving assembly",
++      Boolean(opts.duplicateMovingRow),
++      Boolean(opts.duplicateMovingRow) &&
++        camTrack.pathCertificate.pairProof.movingMoving > 0 &&
++        camTrack.firstHit.includes("S5_NC_DUPLICATE_MOVING_ROW_VIS") &&
++        !camTrack.pathCertificate.inventory.complete &&
++        !camTrack.pass &&
++        seated.driveThrustReady === false,
++      `movingMoving=${camTrack.pathCertificate.pairProof.movingMoving} hit=${camTrack.firstHit} ready=${seated.driveThrustReady}`,
++    ),
++    nc(
+       "NC-ENTRY-BLOCK",
+       "square-ended pre-pickup mouth obstruction",
+       Boolean(opts.entryBlock),
+@@ -505,9 +556,13 @@
+       ),
+       g(
+         "C18",
+-        "full-motion physical-first census, exact topology, classification and collision completeness",
+-        camTrack.pathCertificate.inventory.complete && camTrack.pass && camTrack.pairsEvaluated > 0,
+-        `method=${camTrack.pathCertificate.inventory.method} pairs=${camTrack.pairsEvaluated} firstHit=${camTrack.firstHit || "none"} universe=${camTrack.pathCertificate.inventory.physicalUniverse.length} relevant=${camTrack.pathCertificate.inventory.relevant.length} captured=${camTrack.pathCertificate.inventory.capturedRelevant.length} pathAdded=${camTrack.pathCertificate.inventory.pathAdded.join(",") || "none"} moving=${camTrack.pathCertificate.inventory.moving.length} fixed=${camTrack.pathCertificate.inventory.fixed.length} missing=${camTrack.pathCertificate.inventory.missingRequired.join(",") || "none"} unclassified=${camTrack.pathCertificate.inventory.unclassified.join(",") || "none"}`,
++        S5_C18_FROZEN_CLAIM,
++        camTrack.pathCertificate.inventory.complete &&
++          camTrack.pathCertificate.intentionalContactTable.pass &&
++          camTrack.pathCertificate.pairProof.movingMoving > 0 &&
++          camTrack.pass &&
++          camTrack.pairsEvaluated > 0,
++        `For the frozen registered S5 physical universe and explicitly declared S5 negative-control mutations: identity=${camTrack.pathCertificate.inventory.proofIdentity} registered=${camTrack.pathCertificate.inventory.registeredRows} idsUnique=${camTrack.pathCertificate.inventory.registrationIdsUnique} namesUnique=${camTrack.pathCertificate.inventory.namesUnique} lifetime=${camTrack.pathCertificate.inventory.lifetimeRows.length} pairs=${camTrack.pairsEvaluated} movingMoving=${camTrack.pathCertificate.pairProof.movingMoving} firstHit=${camTrack.firstHit || "none"} exactMissing=${camTrack.pathCertificate.inventory.missingRequired.join(",") || "none"} unclassified=${camTrack.pathCertificate.inventory.unclassified.join(",") || "none"} intentional=${camTrack.pathCertificate.intentionalContactTable.pass}`,
+       ),
+       g(
+         "C19",
+@@ -542,7 +597,7 @@
+       LIVE_MATERIAL_PHYSICAL: liveMat.filter((s) => s.role === "physical").length,
+       LEGACY_SUPERSEDED_REFERENCE: superseded.filter((s) => s.role !== "physical" || !meshEnabled(s.node)).length,
+       DEBUG_NONPHYSICAL: debugN.length,
+-      REGISTERED_AUTHORITY_ROWS: audit.rows.length,
++      REGISTERED_AUTHORITY_ROWS: identityAudit.registeredRows,
+       retainedS4a: retained.length,
+       newS5: neu.length,
+       unregistered: audit.unregisteredPhysical,
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/tests/dump-s5-report.spec.ts ./tests/dump-s5-report.spec.ts
+--- /tmp/mt1-s5hr2-authority-base/tests/dump-s5-report.spec.ts	2026-08-23 05:06:44.000000000 -0500
++++ ./tests/dump-s5-report.spec.ts	2026-08-25 04:09:35.658261965 -0500
+@@ -41,9 +41,12 @@
+   contract("NC-MIDDLE-PATH-INTRUDER", { middlePathIntruder: true }, ["S5-P7", "S5-P12", "C18"], ["C8", "C14", "C23"]),
+   contract("NC-PATH-MOVING-UNTAGGED", { pathMovingUntagged: true }, ["S5-P7", "S5-P12", "C18"], ["S5-P14", "C6", "C8", "C14", "C17", "C19", "C21", "C22", "C23", "C25"]),
+   contract("NC-FORGED-SURROUNDING-FAMILY", { forgedSurroundingFamily: true }, ["S5-P7", "S5-P12", "C18"], ["S5-P14", "C6", "C8", "C14", "C17", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC-MIDPATH-TRANSIENT-ROW", { midpathTransientRow: true }, ["C18"], ["S5-P7", "S5-P12", "S5-P14", "C6", "C8", "C14", "C15", "C17", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC-DUPLICATE-AUTHORITY-NAME", { duplicateAuthorityName: true }, ["C18"], ["S5-P7", "S5-P12", "S5-P14", "C6", "C8", "C14", "C15", "C17", "C19", "C21", "C22", "C23", "C25"]),
++  contract("NC-DUPLICATE-MOVING-ROW", { duplicateMovingRow: true }, ["C18"], ["S5-P7", "S5-P12", "S5-P14", "C6", "C8", "C14", "C15", "C17", "C19", "C21", "C22", "C23", "C25"]),
+ ];
+ 
+-test("dump MT1-S5HR2 authority report", async ({ page }) => {
++test("@current-authority-writer dump MT1-S5HR3 authority report", async ({ page }) => {
+   test.setTimeout(600_000);
+   await page.goto("/");
+   await page.waitForFunction(() => Boolean(window.__MT1?.runS5Authority));
+@@ -54,7 +57,7 @@
+   expect(report.negativeControls.every((row) => row.status === "NOT_RUN")).toBe(true);
+ });
+ 
+-test("@evidence-writer dump strict S5HR2 negative-control ledger", async ({ page }) => {
++test("@evidence-writer dump strict S5HR3 negative-control ledger", async ({ page }) => {
+   test.setTimeout(3_600_000);
+   await page.goto("/");
+   await page.waitForFunction(() => Boolean(window.__MT1?.runS5Authority));
+@@ -62,7 +65,7 @@
+   rmSync(evidenceTempFile, { force: true });
+   const persistRows = () => {
+     mkdirSync(dirname(evidenceFile), { recursive: true });
+-    writeFileSync(evidenceTempFile, JSON.stringify({ schema: "MT1-S5HR2-negative-control-ledger-v3", complete: false, controls: rows }, null, 2));
++    writeFileSync(evidenceTempFile, JSON.stringify({ schema: "MT1-S5HR3-negative-control-ledger-v1", complete: false, controls: rows }, null, 2));
+   };
+ 
+   const upstream = await page.evaluate(() => {
+@@ -75,9 +78,10 @@
+     const restoredRaw = window.__MT1!.applyMachineRaw!(1).driveThrustReady;
+     const restoredEvaluate = window.__MT1!.evaluateS5Handover!().driveThrustReady;
+     const restoredPublic = window.__MT1!.getDriveThrustReady!();
+-    return { driveT, ready, restoredRaw, restoredEvaluate, restoredPublic };
++    const restoredCertificate = window.__MT1!.getS5PathCertificate!()?.valid === true;
++    return { driveT, ready, restoredRaw, restoredEvaluate, restoredPublic, restoredCertificate };
+   });
+-  const upstreamRestored = upstream.restoredRaw && upstream.restoredEvaluate && upstream.restoredPublic;
++  const upstreamRestored = upstream.restoredRaw && upstream.restoredEvaluate && upstream.restoredPublic && upstream.restoredCertificate;
+   rows.push({
+     id: "NC-UPSTREAM", mutation: { rearBookReady: false }, mutationApplied: upstream.driveT === 0,
+     expectedFailingGates: ["driveT==0", "publicReady==false"], allowedCascadeContract: [], allowedCascadeFailures: [],
+@@ -85,7 +89,7 @@
+     expectedFailedClosures: [], actualFailedClosures: [], publicReadyExpectation: false, actualPublicReady: upstream.ready,
+     expectedAuthorityNcRowStatus: "NOT_APPLICABLE_EXTERNAL_UPSTREAM_CONTROL", authorityNcRowStatus: "NOT_APPLICABLE_EXTERNAL_UPSTREAM_CONTROL",
+     unexpectedFailures: [], baselineRestorationVerified: upstreamRestored,
+-    restorationReadiness: { raw: upstream.restoredRaw, evaluate: upstream.restoredEvaluate, getter: upstream.restoredPublic },
++    restorationReadiness: { raw: upstream.restoredRaw, evaluate: upstream.restoredEvaluate, getter: upstream.restoredPublic, certificate: upstream.restoredCertificate },
+     finalControlResult: upstream.driveT === 0 && !upstream.ready && upstreamRestored ? "PASS" : "FAIL",
+   });
+   persistRows();
+@@ -158,25 +162,26 @@
+   });
+   persistRows();
+   expect(rows.every((row) => row.finalControlResult === "PASS" && (row.unexpectedFailures as string[]).length === 0), JSON.stringify(rows.filter((row) => row.finalControlResult !== "PASS" || (row.unexpectedFailures as string[]).length), null, 2)).toBe(true);
+-  writeFileSync(evidenceTempFile, JSON.stringify({ schema: "MT1-S5HR2-negative-control-ledger-v3", complete: true, controls: rows }, null, 2));
++  writeFileSync(evidenceTempFile, JSON.stringify({ schema: "MT1-S5HR3-negative-control-ledger-v1", complete: true, controls: rows }, null, 2));
+   renameSync(evidenceTempFile, evidenceFile);
+ });
+ 
+-test("validate strict executed S5HR2 ledger", () => {
++test("validate strict executed S5HR3 ledger", () => {
+   const ledger = JSON.parse(readFileSync(evidenceFile, "utf8")) as {
+     schema: string;
+     complete: boolean;
+-    controls: Array<{ mutationApplied: boolean; publicReadyExpectation: boolean | "UNCHANGED"; actualPublicReady: boolean; unexpectedFailures: string[]; baselineRestorationVerified: boolean; finalControlResult: string }>;
++    controls: Array<{ mutationApplied: boolean; publicReadyExpectation: boolean | "UNCHANGED"; actualPublicReady: boolean; unexpectedFailures: string[]; baselineRestorationVerified: boolean; restorationReadiness: { raw: boolean; evaluate: boolean; getter: boolean; certificate: boolean }; finalControlResult: string }>;
+   };
+-  expect(ledger.schema).toBe("MT1-S5HR2-negative-control-ledger-v3");
++  expect(ledger.schema).toBe("MT1-S5HR3-negative-control-ledger-v1");
+   expect(ledger.complete).toBe(true);
+   expect(existsSync(evidenceTempFile)).toBe(false);
+-  expect(ledger.controls).toHaveLength(25);
++  expect(ledger.controls).toHaveLength(28);
+   for (const row of ledger.controls) {
+     expect(row.finalControlResult).toBe("PASS");
+     expect(row.unexpectedFailures).toEqual([]);
+     expect(row.mutationApplied).toBe(true);
+     expect(row.baselineRestorationVerified).toBe(true);
++    expect(row.restorationReadiness).toEqual({ raw: true, evaluate: true, getter: true, certificate: true });
+     if (row.publicReadyExpectation !== "UNCHANGED") expect(row.actualPublicReady).toBe(row.publicReadyExpectation);
+   }
+ });
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/tests/mt1-s5.spec.ts ./tests/mt1-s5.spec.ts
+--- /tmp/mt1-s5hr2-authority-base/tests/mt1-s5.spec.ts	2026-08-23 04:15:14.000000000 -0500
++++ ./tests/mt1-s5.spec.ts	2026-08-25 04:03:52.015073002 -0500
+@@ -259,7 +259,9 @@
+   });
+ 
+   test("NC-CAM-GAP displaced track fails production readiness", async ({ page }) => {
+-    test.setTimeout(180_000);
++    // Measured live-prism authority work can exceed 180 s under the supported
++    // two-worker regression load; keep the assertion intact with a local bound.
++    test.setTimeout(360_000);
+     await page.goto("/");
+     await page.waitForFunction(() => Boolean(window.__MT1?.runS5Authority));
+     const r = (await page.evaluate(() => window.__MT1!.runS5Authority!({ camGap: "PORT" }))) as {
+diff -ruN '--exclude=node_modules' '--exclude=dist' '--exclude=test-results' '--exclude=evidence' '--exclude=*.zip' '--exclude=*.sha256' '--exclude=*.diff' /tmp/mt1-s5hr2-authority-base/tests/mt1-s5h-mechanical.spec.ts ./tests/mt1-s5h-mechanical.spec.ts
+--- /tmp/mt1-s5hr2-authority-base/tests/mt1-s5h-mechanical.spec.ts	2026-08-23 04:18:12.000000000 -0500
++++ ./tests/mt1-s5h-mechanical.spec.ts	2026-08-25 05:21:17.141206717 -0500
+@@ -1,7 +1,7 @@
+ import { expect, test } from "@playwright/test";
+ import type { S5Override } from "../src/machine/s5Propulsion";
+ 
+-test.describe("MT1-S5HR2 freeze-authority path", () => {
++test.describe("MT1-S5HR3 frozen authority-contract path", () => {
+   test("complete unilateral path and assembly pair sweep", async ({ page }) => {
+     test.setTimeout(300_000);
+     await page.goto("/");
+@@ -17,6 +17,15 @@
+     expect(path.pathCertificate.inventory.unclassified).toEqual([]);
+     expect(path.pathCertificate.inventory.missingRequired).toEqual([]);
+     expect(path.pathCertificate.inventory.method).toBe("FULL_MOTION_SAMPLED_UNION");
++    expect(path.pathCertificate.inventory.proofIdentity).toBe("registrationId");
++    expect(path.pathCertificate.inventory.registrationIdsUnique).toBe(true);
++    expect(path.pathCertificate.inventory.namesUnique).toBe(true);
++    expect(path.pathCertificate.inventory.relevantRegistrationIds).toHaveLength(
++      path.pathCertificate.inventory.lifetimeRows.length,
++    );
++    expect(path.pathCertificate.pairProof.identity).toBe("registrationId");
++    expect(path.pathCertificate.pairProof.movingMoving).toBeGreaterThan(0);
++    expect(path.pathCertificate.intentionalContactTable.pass).toBe(true);
+     expect(path.pathCertificate.inventory.physicalUniverse.length).toBeGreaterThan(300);
+     expect(path.pathCertificate.inventory.relevant.length).toBeGreaterThanOrEqual(
+       path.pathCertificate.inventory.capturedRelevant.length,
+@@ -112,7 +121,11 @@
+     expect(result.reverse.valid).toBe(false);
+     expect(result.unclassifiedImmediate).toBe(false);
+     expect(result.unclassified.inventory.complete).toBe(false);
+-    expect(result.unclassified.inventory.unclassified).toContain("S5_NC_UNCLASSIFIED_INTRUDER_VIS");
++    expect([
++      ...result.unclassified.inventory.unclassified,
++      ...result.unclassified.inventory.invalidClassification,
++      ...result.unclassified.inventory.conflictingClassification,
++    ]).toContain("S5_NC_UNCLASSIFIED_INTRUDER_VIS");
+     expect(result.unclassified.valid).toBe(false);
+     expect(result.restoredImmediate).toBe(false);
+     expect(result.restoredPublic).toBe(true);
+@@ -172,4 +185,55 @@
+     }
+     expect(controls.restored).toBe(true);
+   });
++
++  test("frozen identity and lifetime controls fail closed by registration ID", async ({ page }) => {
++    test.setTimeout(900_000);
++    await page.goto("/");
++    await page.waitForFunction(() => Boolean(window.__MT1?.runS5Authority));
++    const result = await page.evaluate(() => {
++      const run = (opts: S5Override) => {
++        const report = window.__MT1!.runS5Authority!(opts);
++        window.__MT1!.setMachineT(1);
++        window.__MT1!.applyS5Override!(opts);
++        const evaluator = window.__MT1!.evaluateS5Handover!().driveThrustReady;
++        const raw = window.__MT1!.applyMachineRaw!(1).driveThrustReady;
++        const getter = window.__MT1!.getDriveThrustReady!();
++        const cert = window.__MT1!.getS5PathCertificate!()!;
++        window.__MT1!.applyS5Override!({});
++        const restored = window.__MT1!.getDriveThrustReady!();
++        return { report, evaluator, raw, getter, cert, restored };
++      };
++      return {
++        transient: run({ midpathTransientRow: true }),
++        duplicateName: run({ duplicateAuthorityName: true }),
++        duplicateMoving: run({ duplicateMovingRow: true }),
++      };
++    });
++    for (const [control, id] of [
++      [result.transient, "NC-MIDPATH-TRANSIENT-ROW"],
++      [result.duplicateName, "NC-DUPLICATE-AUTHORITY-NAME"],
++      [result.duplicateMoving, "NC-DUPLICATE-MOVING-ROW"],
++    ] as const) {
++      expect(control.evaluator).toBe(false);
++      expect(control.raw).toBe(false);
++      expect(control.getter).toBe(false);
++      expect(control.cert.valid).toBe(false);
++      expect(control.report.closures.find((row) => row.id === "C18")?.pass).toBe(false);
++      expect(control.report.negativeControls.find((row) => row.id === id)?.status).toBe("PASS");
++      expect(control.restored).toBe(true);
++    }
++    const transient = result.transient.cert.inventory.lifetimeRows.find(
++      (row) => row.name === "S5_NC_MIDPATH_TRANSIENT_VIS",
++    );
++    expect(transient?.registrationId).toMatch(/^AUTHORITY_ROW_/);
++    expect(transient?.firstRelevant.stage).not.toBe("PREREQUISITE");
++    expect(result.transient.cert.inventory.pathAdded).toContain("S5_NC_MIDPATH_TRANSIENT_VIS");
++    expect(result.transient.cert.firstHit).toContain("S5_NC_MIDPATH_TRANSIENT_VIS");
++    expect(result.duplicateName.cert.inventory.namesUnique).toBe(false);
++    expect(result.duplicateName.cert.inventory.duplicateNames).toContainEqual(
++      expect.objectContaining({ name: "S5_LOCK_PIN_PORT" }),
++    );
++    expect(result.duplicateMoving.cert.pairProof.movingMoving).toBeGreaterThan(0);
++    expect(result.duplicateMoving.cert.firstHit).toContain("S5_NC_DUPLICATE_MOVING_ROW_VIS");
++  });
+ });
