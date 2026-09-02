@@ -51,7 +51,7 @@ const MASSES = [
   "open stern collar",
 ] as const;
 
-type Kind = "hull" | "accent" | "pocket";
+type Kind = "hull" | "accent" | "pocket" | "sternLip" | "sternThroat";
 
 function markConcept(node: TransformNode, purpose: string, mass: string): void {
   node.metadata = {
@@ -104,8 +104,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
   hull.transparencyMode = StandardMaterial.MATERIAL_ALPHABLEND;
   hull.backFaceCulling = false;
 
-  // FO1/SO1: accent is opening-frame language (station lips/sill/web + stern
-  // opening lip), not a jewelry stripe along the chine or a hoop around the can.
+  // FO1: accent is station-frame language (lips/sill/web). Unchanged by SO1.
   const accent = hull.clone("matBodyShell03Accent");
   accent.diffuseColor = new Color3(0.33, 0.26, 0.13);
   accent.emissiveColor = new Color3(0.032, 0.016, 0.004);
@@ -117,13 +116,28 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
   pocket.specularColor = new Color3(0.05, 0.05, 0.045);
   pocket.alpha = 0.92;
 
+  // SO1 director revision: collar-only values. Darker throat / brighter lip so
+  // the portal reads in stock DRIVE 3/4 and rear. FO1 station materials stay put.
+  const sternThroat = hull.clone("matBodyShell03SternThroat");
+  sternThroat.diffuseColor = new Color3(0.035, 0.038, 0.042);
+  sternThroat.emissiveColor = new Color3(0.001, 0.002, 0.002);
+  sternThroat.specularColor = new Color3(0.03, 0.03, 0.032);
+  sternThroat.alpha = 0.96;
+
+  const sternLip = hull.clone("matBodyShell03SternLip");
+  sternLip.diffuseColor = new Color3(0.5, 0.36, 0.12);
+  sternLip.emissiveColor = new Color3(0.06, 0.03, 0.006);
+  sternLip.specularColor = new Color3(0.16, 0.11, 0.04);
+  sternLip.alpha = 0.96;
+
   const created: Mesh[] = [];
   const meshes: string[] = [];
   const propGhostMeshes: string[] = [];
   const sectionMeshes: string[] = [];
 
   const add = (mesh: Mesh, kind: Kind, mass: string, purpose: string, ghost = false): void => {
-    mesh.material = kind === "accent" ? accent : kind === "pocket" ? pocket : hull;
+    mesh.material =
+      kind === "sternLip" ? sternLip : kind === "sternThroat" ? sternThroat : kind === "accent" ? accent : kind === "pocket" ? pocket : hull;
     markConcept(mesh, purpose, mass);
     created.push(mesh);
     meshes.push(mesh.name);
@@ -311,7 +325,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         xOut,
         xIn,
       ),
-      "pocket",
+      "sternThroat",
       "open stern collar",
       "Recessed stern-throat side; the chine becomes a portal here, not a hoop around the can.",
       true,
@@ -331,7 +345,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         xOut,
         xIn,
       ),
-      "accent",
+      "sternLip",
       "open stern collar",
       "Accent lip of the open stern frame; owns the opening, does not cover the handover.",
       true,
@@ -351,7 +365,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         1.26,
         1.4,
       ),
-      "pocket",
+      "sternThroat",
       "open stern collar",
       "Recessed stern-throat lintel; header of the portal, thickened upward away from the can.",
       true,
@@ -371,7 +385,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         1.26,
         1.4,
       ),
-      "accent",
+      "sternLip",
       "open stern collar",
       "Accent lintel lip above the open throat; propulsion handover stays visible below.",
       true,
@@ -391,7 +405,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         0.12,
         0.26,
       ),
-      "pocket",
+      "sternThroat",
       "open stern collar",
       "Recessed stern-throat sill joining the ventral hull to the portal.",
       true,
@@ -411,7 +425,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         0.12,
         0.26,
       ),
-      "accent",
+      "sternLip",
       "open stern collar",
       "Accent sill lip of the open stern frame.",
       true,
