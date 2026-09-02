@@ -34,8 +34,9 @@ const COLLAR_Z = P.drive.stowedZ - P.drive.stroke - 0.18;
 const COLLAR_Z_AFT = COLLAR_Z - 0.05;
 /** FO1-scale accent lip at the opening. */
 const COLLAR_LIP_Z = 0.09;
-/** Recessed throat depth forward of the lip; frames bay/posts, does not follow the can aft. */
-const COLLAR_THROAT_Z = 0.26;
+/** Recessed throat depth forward of the lip; frames bay/posts, does not follow the can aft.
+ *  Director revision: +120 mm forward only after contrast-alone still left stock 3/4/rear quiet. */
+const COLLAR_THROAT_Z = 0.38;
 const COLLAR_Z_LIP = COLLAR_Z_AFT + COLLAR_LIP_Z;
 const COLLAR_Z_FWD = COLLAR_Z_LIP + COLLAR_THROAT_Z;
 const BAY_Z = P.bay.zFwd;
@@ -122,13 +123,13 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
   sternThroat.diffuseColor = new Color3(0.035, 0.038, 0.042);
   sternThroat.emissiveColor = new Color3(0.001, 0.002, 0.002);
   sternThroat.specularColor = new Color3(0.03, 0.03, 0.032);
-  sternThroat.alpha = 0.96;
+  sternThroat.alpha = 1;
 
   const sternLip = hull.clone("matBodyShell03SternLip");
-  sternLip.diffuseColor = new Color3(0.5, 0.36, 0.12);
-  sternLip.emissiveColor = new Color3(0.06, 0.03, 0.006);
-  sternLip.specularColor = new Color3(0.16, 0.11, 0.04);
-  sternLip.alpha = 0.96;
+  sternLip.diffuseColor = new Color3(0.56, 0.4, 0.13);
+  sternLip.emissiveColor = new Color3(0.08, 0.042, 0.008);
+  sternLip.specularColor = new Color3(0.18, 0.12, 0.045);
+  sternLip.alpha = 0.98;
 
   const created: Mesh[] = [];
   const meshes: string[] = [];
