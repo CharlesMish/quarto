@@ -18,7 +18,9 @@ Read, not rewritten: `docs/CURRENT_STATE.md`, `docs/NOMENCLATURE.md`, `AGENTS.md
 
 SO1 was consulted from unmerged `origin/cursor/mt1-so1-fa96` (`MT1_SO1_RESULTS.md`). That geometry is **not** in this branch and is **not** promoted.
 
-Live BODY ON / BODY OFF in SPREAD and DRIVE, plus accepted captures:
+Live BODY ON / BODY OFF in SPREAD and DRIVE, plus accepted captures.
+
+Live viewer at `http://127.0.0.1:5185/` (BODY-SHELL-03.1 + FO1, no SO1 geometry): SPREAD and DRIVE, 3/4 / side / rear / front / top, BODY SECTION. BODY OFF removes prow, chine, dorsal-deck breadth, C-sockets, and stern collar. What remains is the carrier: four folios, four roots, keel, longeron, bulkheads, bay, posts, core, can. That corroborates interpretation A and the region classes below. Empty SPREAD shoulders stay FO1 presentation over real roots, not missing fuselage. The prow’s disappearance confirms an unearned nose enclosure, not a profession. No flight, payload, or station-id rewrite from the live pass. No new PNG dump.
 
 | View | Capture |
 | --- | --- |
@@ -308,6 +310,6 @@ Negative result (useful): Quarto’s “unfinished body” appearance under BODY
 
 - **Changed files:** `explore/body-shell-03/MT1_BA1_SCOPE_AND_EPISTEMICS.md`; `explore/body-shell-03/MT1_BA1_RESULTS.md`; `evidence/ba1-body-map.json`; `evidence/ba1-body-map.svg`; `tests/mt1-ba1.spec.ts`; `explore/body-shell-03/README.md` (pointer only). No `src/`, no `bodyShellConcept.ts`, no cameras, no frozen geometry.
 - **Tests:** `MT1_BASE_URL=http://127.0.0.1:5185 npx playwright test tests/mt1-ba1.spec.ts` — passed (decision map rows/columns, class legality, interpretation A, no professions, no geometry, next slice ≠ BODY-SHELL-04/SO1/SR1). `npm --prefix explore/body-shell-03 run build` — passed. `MT1_BASE_URL=http://127.0.0.1:5185 npm --prefix explore/body-shell-03 test` — passed (isolation + 101-sample presentation-fit, 0 defects, `participatesInAuthority: false`). Canonical root `npm test` not required (no `src/` change); the BA1 gate is the added `tests/mt1-ba1.spec.ts`.
-- **Evidence:** new diagnostic map only. Consulted FO1 after-set, BODY-SHELL-03 captures, US1/GE1/KS1/DP1, unmerged SO1 report. No giant dump. No regenerated fit.
+- **Evidence:** new diagnostic map only. Consulted FO1 after-set, BODY-SHELL-03 captures, US1/GE1/KS1/DP1, unmerged SO1 report, and a live BODY ON/OFF pass on the FO1 viewer. No giant dump. No regenerated fit.
 - **Authority participation:** none.
 - **Remaining unknowns / negatives:** listed in §11. SO1 remains negative. FO1 remains accepted.
