@@ -55,7 +55,19 @@ Review cameras `fo1FwdRoot` / `fo1AftRoot` are inspection-only (starboard, match
 
 ## Fit result
 
-Pending the BODY presentation-fit sweep on this revision. Expected: zero defects, `participatesInAuthority: false`, dock-face X unchanged. Recorded after the sweep.
+`explore/body-shell-03/evidence/fo1/fo1-fit-report.json`
+
+- method: `triangle-obb`
+- samples: 101 (`ΔmachineT = 0.01`)
+- defects: **0**
+- `participatesInAuthority: false`
+- pass: **true**
+- dock-face X unchanged vs accepted 03.1: front ±0.84 m, rear ±0.90 m
+- front face gutter: 33 mm (readability)
+- rear X-projection gutter ~0 (no 3D triangle intersection)
+
+`npm --prefix explore/body-shell-03 test` — both isolation and presentation-fit tests passed.  
+`npm --prefix explore/body-shell-03 run build` — TypeScript + Vite production build passed.
 
 ## Reject list
 
@@ -75,14 +87,18 @@ Tempting changes that would over-own or hide the mechanism:
 
 ## Recommendation
 
-**ACCEPT FO1**, contingent on a zero-defect presentation-fit sweep and after-evidence that shows the same lip–recess–sill–web transition at all four roots.
+**ACCEPT FO1.**
+
+A reviewer can identify the same lip–recess–sill–web transition at all four roots without being told which meshes moved. Front stays lower/shorter; rear stays higher/larger. Folios stay proud. Frozen roots stay visible. BODY OFF is the same mechanism.
 
 A no-geometry result was considered. Existing C-sockets already supported the rule in construction; they failed in composition because the chine used the same bronze as the frame. The value change is the ownership move. Lip/sill/web proportion is a bounded clarification of that same frame, not a new mass.
 
+ONE BOUNDED REVISION would be warranted only if a director still reads the empty SPREAD bays as maintenance cutouts. The next legal move would be a stronger frame value on lips/sill/web only — not reach, not flush, not a new mass.
+
 ## Task report
 
-- **Changed files:** `explore/body-shell-03/src/scene/bodyShellConcept.ts` (presentation materials, chine value, pocket frame proportions); `explore/body-shell-03/src/scene/createScene.ts` (FO1 review cameras); `explore/body-shell-03/tests/capture-fo1.spec.ts`; `explore/body-shell-03/package.json` (`capture:fo1`); this report; `explore/body-shell-03/evidence/fo1/**`.
-- **Tests:** body-shell-03 isolation/fit and FO1 capture; results recorded after the sweep.
+- **Changed files:** `explore/body-shell-03/src/scene/bodyShellConcept.ts` (presentation materials, chine value, pocket frame proportions); `explore/body-shell-03/src/scene/createScene.ts` (FO1 review cameras); `explore/body-shell-03/tests/capture-fo1.spec.ts`; `explore/body-shell-03/tests/dump-fo1-fit.spec.ts`; `explore/body-shell-03/package.json` (`capture:fo1`, `dump:fo1-fit`); this report; `explore/body-shell-03/evidence/fo1/**`.
+- **Tests:** `npm --prefix explore/body-shell-03 test` (isolation + 101-sample fit) passed; `capture:fo1` before/after passed; `dump:fo1-fit` passed; `npm --prefix explore/body-shell-03 run build` passed. Canonical root `npm test` was not required (no `src/` change).
 - **Evidence:** FO1 before/after set above; consulted `BODY_SHELL_03_COMPLETION.md`, `BODY_SHELL_03_1_POCKET_CORRECTION.md`, `evidence/body-shell-03-fit-report.json`.
 - **Authority participation:** none.
 - **Remaining unknowns / negatives:** whether a later reviewer still wants a local chine-wall notch (rejected here: concave `extrudeYZ` fan and interior hole). SPREAD will remain less dense than DRIVE; that is intended. H1 director disposition is unchanged.
