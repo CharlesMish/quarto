@@ -1,6 +1,6 @@
 # Quarto current state
 
-Fast handoff for the accepted repository baseline through KS1.
+Fast handoff for the accepted repository baseline through KS1, plus accepted FO1, negative SO1, and accepted BA1 (exposed-carrier). SR1 is parked.
 
 ## Identity and freeze
 
@@ -20,9 +20,11 @@ Primary records: [authority report](../MT1_S5HR3R1_AUTHORITY_REPORT.md), [closur
 - **BODY ON** = accepted presentation shell.
 - The shell is a long faceted open-stern hull with a rising chine and four C-sockets. Folios remain proud in DRIVE.
 - BODY-SHELL-03.1 is non-authoritative and creates no structure, keepout, reservation, or volume rights.
+- It remains explanatory presentation / review skin, not a structural hull awaiting promotion.
 - Its current triangle–OBB fit is a 101-sample pass with zero defects and `participatesInAuthority: false`.
+- **FO1 accepted:** presentation successfully clarifies folio-station ownership. Ownership rule remains: chine → receiving shoulder → frozen root → folio.
 
-Primary records: [completion report](../explore/body-shell-03/BODY_SHELL_03_COMPLETION.md), [03.1 pocket correction](../explore/body-shell-03/BODY_SHELL_03_1_POCKET_CORRECTION.md), [fit report](../explore/body-shell-03/evidence/body-shell-03-fit-report.json), and [baseline-03 lineage](../explore/body-shell-03/baseline-03/).
+Primary records: [completion report](../explore/body-shell-03/BODY_SHELL_03_COMPLETION.md), [03.1 pocket correction](../explore/body-shell-03/BODY_SHELL_03_1_POCKET_CORRECTION.md), [fit report](../explore/body-shell-03/evidence/body-shell-03-fit-report.json), [baseline-03 lineage](../explore/body-shell-03/baseline-03/), and [FO1 results](../explore/body-shell-03/MT1_FO1_RESULTS.md).
 
 ## Accepted architecture-study chain
 
@@ -53,6 +55,15 @@ The ventral keel is the current service-carrier candidate; no hollow longitudina
 
 No sleeve or structural cut is required or authorized. The three bounded sleeve candidates remain documented backup architecture hypotheses only.
 
+## Post-KS1 accepted closeout — FO1 / SO1 / BA1
+
+- **FO1 accepted.** Presentation successfully clarifies folio-station ownership. Ownership rule remains: chine → receiving shoulder → frozen root → folio. Record: [MT1_FO1_RESULTS.md](../explore/body-shell-03/MT1_FO1_RESULTS.md) (on `main`; this PR does not re-implement FO1).
+- **SO1 negative.** Ownership rule retained (the frame owns the opening; it does not own the can), but there is no bounded presentation solution under current frozen geometry. [PR #2](https://github.com/CharlesMish/quarto/pull/2) remains unmerged/archival. Do not promote SO1 geometry.
+- **BA1 accepted.** Quarto is an **EXPOSED-CARRIER VEHICLE**. Records: [scope](../explore/body-shell-03/MT1_BA1_SCOPE_AND_EPISTEMICS.md), [results](../explore/body-shell-03/MT1_BA1_RESULTS.md), [decision map](../evidence/ba1-body-map.json).
+- Mid-body carrier, handover, root hardware, and the open stern remain intentionally exposed.
+- The front reservation remains intentionally unassigned. `KEEP_COCKPIT` stays a historical identifier only.
+- No current body-architecture promotion candidates.
+
 ## Protected facts and unknowns
 
 - Preserve `KEEP_COCKPIT` (historical name for an unassigned protected front reservation), `KEEP_DORSAL`, the DRIVE waist, can/core corridor, folio/root sweeps, and the open stern.
@@ -62,6 +73,6 @@ No sleeve or structural cut is required or authorized. The three bounded sleeve 
 
 ## Next intended slice
 
-**MT1-SR1 — generic service-route reservation / architecture on the proven skeleton.**
+**None yet — wait for a functional requirement that creates a new physical relationship.**
 
-SR1 has not begun. It may reserve a generic longitudinal route on the proven keel-side/dogleg topology, including the Z−1.70 offset handoff if the local dorsal lane is retained. It must not assign cable, fuel, coolant, hydraulics, battery, avionics, data, life-support, weapon, operator, or any other utility profession unless the task explicitly reopens that decision.
+SR1 is parked, not invalidated. KS1 routing topology remains valid evidence. Do not reserve a generic service corridor until a real functional requirement needs one.
