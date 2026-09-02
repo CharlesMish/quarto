@@ -11,7 +11,9 @@
     "test": "playwright test tests/body-shell-03.spec.ts --workers=1",
     "capture:body": "playwright test tests/capture-body-shell-03.spec.ts --workers=1",
     "capture:fo1": "playwright test tests/capture-fo1.spec.ts --workers=1",
-    "dump:fo1-fit": "playwright test tests/dump-fo1-fit.spec.ts --workers=1"
+    "dump:fo1-fit": "playwright test tests/dump-fo1-fit.spec.ts --workers=1",
+    "capture:so1": "playwright test tests/capture-so1.spec.ts --workers=1",
+    "dump:so1-fit": "playwright test tests/dump-so1-fit.spec.ts --workers=1"
   },
   "engines": {
     "node": ">=20.19"

@@ -72,6 +72,8 @@ const CAMERAS: Record<string, { alpha: number; beta: number; radius: number; tar
   // FO1 station-family review. Starboard to match BODY 3/4. Inspection only.
   fo1FwdRoot: { alpha: 0.82, beta: 1.12, radius: 3.35, target: [0.88, 1.68, 3.22] },
   fo1AftRoot: { alpha: 0.96, beta: 1.08, radius: 3.7, target: [0.92, 2.12, -1.88] },
+  // SO1 stern-ownership review. Starboard-aft into the open collar/throat. Inspection only.
+  so1Throat: { alpha: 1.18, beta: 1.06, radius: 2.85, target: [0.08, 0.78, -5.72] },
 };
 
 export function createApp(canvas: HTMLCanvasElement): App {
