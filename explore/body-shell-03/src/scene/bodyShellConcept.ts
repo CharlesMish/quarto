@@ -30,6 +30,14 @@ const BELLY_Y0 = 0.08;
 const BELLY_Y1 = 0.2;
 const PROW_Z = P.keel.zFwd + 0.48;
 const COLLAR_Z = P.drive.stowedZ - P.drive.stroke - 0.18;
+/** Aft face of the open stern frame. Do not move further into the can stroke. */
+const COLLAR_Z_AFT = COLLAR_Z - 0.05;
+/** FO1-scale accent lip at the opening. */
+const COLLAR_LIP_Z = 0.09;
+/** Recessed throat depth forward of the lip; frames bay/posts, does not follow the can aft. */
+const COLLAR_THROAT_Z = 0.26;
+const COLLAR_Z_LIP = COLLAR_Z_AFT + COLLAR_LIP_Z;
+const COLLAR_Z_FWD = COLLAR_Z_LIP + COLLAR_THROAT_Z;
 const BAY_Z = P.bay.zFwd;
 const HANDS = [-1, 1] as const;
 
@@ -96,8 +104,8 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
   hull.transparencyMode = StandardMaterial.MATERIAL_ALPHABLEND;
   hull.backFaceCulling = false;
 
-  // FO1: accent is opening-frame language (station lips/sill/web + stern collar),
-  // not a continuous jewelry stripe along the whole chine.
+  // FO1/SO1: accent is opening-frame language (station lips/sill/web + stern
+  // opening lip), not a jewelry stripe along the chine or a hoop around the can.
   const accent = hull.clone("matBodyShell03Accent");
   accent.diffuseColor = new Color3(0.33, 0.26, 0.13);
   accent.emissiveColor = new Color3(0.032, 0.016, 0.004);
@@ -138,8 +146,8 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         root,
         hull,
         [
-          [0, COLLAR_Z],
-          [xOut, COLLAR_Z],
+          [0, COLLAR_Z_AFT],
+          [xOut, COLLAR_Z_AFT],
           [xOut, 4.15],
           [xProwTip, PROW_Z],
           [0, PROW_Z],
@@ -182,26 +190,26 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         root,
         hull,
         [
-          [BELLY_Y0, COLLAR_Z],
+          [BELLY_Y0, COLLAR_Z_FWD],
           [BELLY_Y0, BAY_Z],
           [bayY, BAY_Z],
           [2.16, P.rl.z],
           [1.62, -3.45],
-          [1.3, COLLAR_Z],
+          [gunwaleY(COLLAR_Z_FWD), COLLAR_Z_FWD],
         ],
         xOut,
         xIn,
       ),
       "hull",
       "chine walls",
-      "Aft chine: quiet spine through the higher rear station, then dropping into the open stern.",
+      "Aft chine: quiet spine through the higher rear station, then terminating into the open stern portal.",
       true,
     );
 
     const deckFwd: V3t[][] = [];
     const deckAft: V3t[][] = [];
     const zFwdDeck = [PROW_Z, 4.2, P.fl.z, 0.55, BAY_Z];
-    const zAftDeck = [BAY_Z, P.rl.z, -3.45, COLLAR_Z];
+    const zAftDeck = [BAY_Z, P.rl.z, -3.45, COLLAR_Z_FWD];
     for (const z of zFwdDeck) {
       const y = gunwaleY(z) + 0.02;
       deckFwd.push([
@@ -286,24 +294,46 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
       "Rear receiving shoulder: same lip–recess–sill family at the higher frozen rear hinge station.",
     );
 
+    // SO1: same conceptual mass. Throat is the recessed portal; lip is the
+    // opening frame. Deepens forward only. Opening X/Y toward the can is unchanged.
     add(
       extrudeYZ(
         scene,
         sideName("COLLAR_SIDE", hand),
         root,
+        pocket,
+        [
+          [0.22, COLLAR_Z_LIP],
+          [0.22, COLLAR_Z_FWD],
+          [1.34, COLLAR_Z_FWD],
+          [1.34, COLLAR_Z_LIP],
+        ],
+        xOut,
+        xIn,
+      ),
+      "pocket",
+      "open stern collar",
+      "Recessed stern-throat side; the chine becomes a portal here, not a hoop around the can.",
+      true,
+    );
+    add(
+      extrudeYZ(
+        scene,
+        sideName("COLLAR_SIDE_LIP", hand),
+        root,
         accent,
         [
-          [0.22, COLLAR_Z - 0.05],
-          [0.22, COLLAR_Z + 0.1],
-          [1.32, COLLAR_Z + 0.1],
-          [1.32, COLLAR_Z - 0.05],
+          [0.22, COLLAR_Z_AFT],
+          [0.22, COLLAR_Z_LIP],
+          [1.34, COLLAR_Z_LIP],
+          [1.34, COLLAR_Z_AFT],
         ],
         xOut,
         xIn,
       ),
       "accent",
       "open stern collar",
-      "Open stern collar side; frames the seated-can mouth without capping it.",
+      "Accent lip of the open stern frame; owns the opening, does not cover the handover.",
       true,
     );
     add(
@@ -311,19 +341,39 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         scene,
         sideName("COLLAR_LINTEL", hand),
         root,
-        accent,
+        pocket,
         [
-          [0, COLLAR_Z - 0.05],
-          [xOut, COLLAR_Z - 0.05],
-          [xOut, COLLAR_Z + 0.1],
-          [0, COLLAR_Z + 0.1],
+          [0, COLLAR_Z_LIP],
+          [xOut, COLLAR_Z_LIP],
+          [xOut, COLLAR_Z_FWD],
+          [0, COLLAR_Z_FWD],
         ],
         1.26,
-        1.36,
+        1.4,
+      ),
+      "pocket",
+      "open stern collar",
+      "Recessed stern-throat lintel; header of the portal, thickened upward away from the can.",
+      true,
+    );
+    add(
+      extrudeXZ(
+        scene,
+        sideName("COLLAR_LINTEL_LIP", hand),
+        root,
+        accent,
+        [
+          [0, COLLAR_Z_AFT],
+          [xOut, COLLAR_Z_AFT],
+          [xOut, COLLAR_Z_LIP],
+          [0, COLLAR_Z_LIP],
+        ],
+        1.26,
+        1.4,
       ),
       "accent",
       "open stern collar",
-      "Open stern collar lintel above the can; propulsion handover stays visible below.",
+      "Accent lintel lip above the open throat; propulsion handover stays visible below.",
       true,
     );
     add(
@@ -331,19 +381,39 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         scene,
         sideName("COLLAR_SILL", hand),
         root,
+        pocket,
+        [
+          [0, COLLAR_Z_LIP],
+          [xOut, COLLAR_Z_LIP],
+          [xOut, COLLAR_Z_FWD],
+          [0, COLLAR_Z_FWD],
+        ],
+        0.12,
+        0.26,
+      ),
+      "pocket",
+      "open stern collar",
+      "Recessed stern-throat sill joining the ventral hull to the portal.",
+      true,
+    );
+    add(
+      extrudeXZ(
+        scene,
+        sideName("COLLAR_SILL_LIP", hand),
+        root,
         accent,
         [
-          [0, COLLAR_Z - 0.05],
-          [xOut, COLLAR_Z - 0.05],
-          [xOut, COLLAR_Z + 0.1],
-          [0, COLLAR_Z + 0.1],
+          [0, COLLAR_Z_AFT],
+          [xOut, COLLAR_Z_AFT],
+          [xOut, COLLAR_Z_LIP],
+          [0, COLLAR_Z_LIP],
         ],
-        0.18,
+        0.12,
         0.26,
       ),
       "accent",
       "open stern collar",
-      "Open stern collar sill joining the ventral hull to the propulsion frame.",
+      "Accent sill lip of the open stern frame.",
       true,
     );
   }
