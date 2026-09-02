@@ -1,6 +1,6 @@
 # MT1-SO1 — Stern / handover ownership
 
-Status: **PRESENTATION STUDY · RECOMMEND ACCEPT SO1**  
+Status: **PRESENTATION STUDY · NO PRESENTATION SOLUTION UNDER CURRENT FROZEN GEOMETRY**  
 Date: 2026-09-02  
 Package: `explore/body-shell-03/` (BODY-SHELL-03.1 + FO1 lineage)  
 Source mechanism: **MT1-S5HR3R1** (unchanged)  
@@ -8,7 +8,11 @@ Authority participation: **none**
 
 Does not start BODY-SHELL-04. Does not reopen S5 or FO1. Does not start S6. Does not design an engine cycle. Stop after SO1.
 
+This file records the accepted ownership rule, the first candidate, and the **one director revision** (value contrast, plus a hair of forward throat after contrast-alone stayed quiet). It is not a second concept.
+
 ## Ownership rule
+
+Accepted by director.
 
 The aft chine becomes one open terminal frame: a recessed throat with an accent lintel–side–sill lip. Through that frame the frozen bay and posts stay visible, then the fixed core, then the hollow can occupying or leaving the same aperture. The frame owns the opening; it does not own the can.
 
@@ -29,7 +33,7 @@ Stations that matter:
 | Capture / lock review | cameras target `z ≈ -4.57`, just forward of the posts |
 | Can stowed | center `z = -3.25`, length 2.55 m, section 1.00 × 0.82 m |
 | Can seated | center `z = -5.80`; occupies `z ≈ -7.08 … -4.53` |
-| Presentation collar (before) | `COLLAR_Z = -5.98`; Z depth **150 mm**; whole volume accent |
+| Presentation collar (before SO1) | `COLLAR_Z = -5.98`; Z depth **150 mm**; whole volume accent |
 
 ### A. What currently makes the stern feel owned by Quarto
 
@@ -45,8 +49,6 @@ The weakness is **frame continuity and throat depth**, not missing mass and not 
 4. **Chine, deck, and collar abutted at one plane** (`COLLAR_Z`) instead of the last chine facet becoming the frame. The hull stopped; a hoop started; the can continued ~1.1 m aft of that hoop.
 5. **Sectional hierarchy was timid** (lintel 100 mm, sill 80 mm). Thickening toward the can would be a sleeve. That remains rejected.
 
-This is not a camera-only failure. The stock REAR / PROP cameras already told the same story. `so1Throat` is a review lens, not a substitute for a frame.
-
 ### C. What must remain optically exposed
 
 Fixed core; hollow translating can; can leaving the bay; can reaching the handover / capture region; registers, tongues, rails, locks, shoes; aft posts and bay walls; open stern in SPREAD, STOWED, and DRIVE. PROP SECTION meaning stays: ghost the can and aft shell, keep locks readable.
@@ -55,32 +57,39 @@ Fixed core; hollow translating can; can leaving the bay; can reaching the handov
 
 **Frame continuity and throat depth**, with a secondary **value-hierarchy** error (accent used for the whole hoop). Not collar X-section into the can, not chine height, not folio stations, not a missing eighth mass, not a boat-tail.
 
-A no-geometry result was considered. FO1 already gave the collar accent; that was not enough. The hoop was still too short and too uniformly bronze to read as the chine’s terminal frame.
-
 ## Exact bounded changes
 
 Presentation-only, in `explore/body-shell-03/src/scene/bodyShellConcept.ts`. No eighth mass. Same conceptual mass: **open stern collar**. FO1 dock-face X unchanged. Frozen root / can / core / posts / bay walls untouched. Aft face of the collar not moved further into the can stroke.
 
-1. **Forward throat, not an aft boat-tail.** Existing collar Z span 150 mm → 350 mm by deepening **forward** only (`COLLAR_THROAT_Z = 0.26` plus a 90 mm lip). Aft face stays at `COLLAR_Z - 0.05`. The can still exits the frame; the body does not follow the stroke.
-2. **FO1 lip / face recipe, used once at the stern.** The same collar mass splits into a darker recessed throat (`pocket` value: `COLLAR_SIDE` / `LINTEL` / `SILL`) and an accent opening lip (`COLLAR_*_LIP`). Accent is no longer a hoop around the can.
-3. **Chine and dorsal deck terminate at the portal’s forward face** so the last facet becomes the frame instead of running through a timid ring. Ventral hull continues to the sill so the belly still meets the opening.
-4. **Section away from the can only.** Lintel top 1.36 → 1.40 (up into the deck). Sill bottom 0.18 → 0.12 (down toward the belly). Opening toward the can is unchanged: inner X ±0.61 m, opening Y 0.26–1.26 m.
+### First candidate (construction; accepted)
 
-The new `*_LIP` meshes are a segmentation of the existing seventh mass so the opening can render as a faceted frame. They are not a new body idea.
+1. **Forward throat, not an aft boat-tail.** Collar Z span 150 mm → 350 mm by deepening **forward** only (`COLLAR_THROAT_Z = 0.26` plus a 90 mm lip). Aft face stays at `COLLAR_Z - 0.05`.
+2. **FO1 lip / face recipe, used once at the stern.** Same collar mass splits into a recessed throat and an opening lip. Chine and dorsal deck terminate at the portal’s forward face.
+3. **Section away from the can only.** Lintel top 1.36 → 1.40. Sill bottom 0.18 → 0.12. Opening toward the can unchanged: inner X ±0.61 m, opening Y 0.26–1.26 m.
+
+Director critique of that candidate: the thesis was readable in `so1Throat` and somewhat in side / seated. Stock **DRIVE 3/4** and **rear DRIVE** were almost unchanged. SO1 must land in those cameras without depending on a flattering close-up.
+
+### One director revision (value contrast; not a second concept)
+
+1. **Collar-only materials.** FO1 station accent / pocket values were left alone. The stern throat uses a dedicated darker, more opaque recess (`matBodyShell03SternThroat`). The stern lip uses a dedicated brighter opening rim (`matBodyShell03SternLip`) so lip vs throat can contrast at DRIVE distance.
+2. **Contrast-alone was recaptured first.** Stock DRIVE 3/4 and rear still could not hold the portal.
+3. **Hair more forward throat**, allowed only after that: `COLLAR_THROAT_Z` 0.26 → 0.38 (+120 mm, forward only). Aft face, opening X/Y toward the can, and FO1 stations unchanged. Total collar Z is now 470 mm. Forward face remains well aft of the posts (`z ≈ -5.56` vs posts at `-4.80`).
+
+No mass was added. No sleeve, cowling, boat-tail, or can-following.
 
 ## What was deliberately NOT changed
 
 - Frozen MT1-S5HR3R1 geometry, transforms, IDs, certificates, gates.
 - Can stroke, fixed core, aft posts, bay walls, rails, locks, shoes, registers, tongues.
-- FO1 station family, dock-face X, 70° haunch, proud dock, front/lower vs rear/higher folio relationship.
-- BODY OFF mechanism. Before/after BODY OFF PNGs are byte-identical in size and show the same machine.
+- FO1 station family, dock-face X, 70° haunch, proud dock, front/lower vs rear/higher folio relationship, FO1 accent / pocket materials.
+- BODY OFF mechanism. Before/after BODY OFF PNGs remain byte-identical (238245 / 191060).
 - Seven-mass language. No eighth mass, nacelle, boat-tail, intake, nozzle, turbine, or closed stern.
-- Can material / color. The teal can remaining visually unusual is desirable.
+- Can material / color.
 - Folio stations, utility professions, cockpit / ground / aero work, S6, BODY-SHELL-04.
 
 ## Before / after evidence
 
-`explore/body-shell-03/evidence/so1/before/` and `.../after/`. Review camera `so1Throat` is inspection-only (starboard-aft into the collar).
+`explore/body-shell-03/evidence/so1/before/` is the FO1 stern before any SO1 geometry. `.../after/` is this director revision.
 
 | View | Before | After |
 | --- | --- | --- |
@@ -96,7 +105,17 @@ The new `*_LIP` meshes are a segmentation of the existing seventh mass so the op
 | SPREAD 3/4 and rear | `so1-before-spread-*.png` | `so1-after-spread-*.png` |
 | BODY OFF 3/4 and rear | `so1-before-body-off-*.png` | `so1-after-body-off-*.png` |
 
-PROP SECTION meaning is preserved: can and aft shell ghost; locks stay readable. SPREAD uses the same portal; the empty throat is a frame around a stowed mechanism, not a broken hole.
+File-size delta after this revision vs the original before set:
+
+| View | Before bytes | After bytes | Δ |
+| --- | --- | --- | --- |
+| DRIVE 3/4 | 279992 | 279995 | +3 |
+| Rear DRIVE | 208139 | 208359 | +220 |
+| Side DRIVE | 199470 | 200221 | +751 |
+| BODY OFF 3/4 | 238245 | 238245 | 0 |
+| BODY OFF rear | 191060 | 191060 | 0 |
+
+PROP SECTION meaning is preserved. SPREAD uses the same portal.
 
 ## Fit result
 
@@ -113,13 +132,13 @@ PROP SECTION meaning is preserved: can and aft shell ghost; locks stay readable.
 
 `npm --prefix explore/body-shell-03 test` — isolation and presentation-fit passed.  
 `npm --prefix explore/body-shell-03 run build` — TypeScript + Vite production build passed.  
-`capture:so1` before/after and `dump:so1-fit` passed.
+`capture:so1` after the director revision and `dump:so1-fit` passed.
 
 Canonical root `npm test` was not required (no `src/` change).
 
 ## Reject list
 
-Tempting changes that would over-own or hide the mechanism:
+Tempting changes that would over-own or hide the mechanism, and that remain rejected after the director revision:
 
 - Move the collar aft to hug the seated can (follows the stroke; makes a nacelle).
 - Close or cap the stern; surround the can in a fake engine cowling.
@@ -131,31 +150,33 @@ Tempting changes that would over-own or hide the mechanism:
 - Raise the stern until it outweighs the folios.
 - Change can color into a generic sci-fi engine.
 - Revise FO1 stations because SO1 is nearby.
+- Depend on `so1Throat` as the proof camera.
 - Assign a propulsion profession or start S6 / BODY-SHELL-04.
 
-## Remaining weaknesses outside SO1
+## Remaining weaknesses — why the stock DRIVE cameras cannot carry this
 
-- In far DRIVE 3/4 / REAR the can still occupies a lot of the picture aft of the frame. That is the frozen stroke, not a presentation defect. The handover is supposed to stay unusual.
-- `so1Throat` is close; the stock PROP SEATED / AFT PROP cameras remain the mechanical review pair.
-- H1 director disposition is unchanged.
-- No engine cycle, intake, or performance claim is made or implied.
+The accepted construction is a 470 mm open frame whose aft face sits around the seated can’s mid-body. The frozen can still occupies `z ≈ -7.08 … -4.53` and continues ~1.1 m aft of that frame. Stock DRIVE 3/4 (`driveBody`, radius 15.2) and rear DRIVE (`rear`, radius 15) look at the whole machine. In those pictures the portal is a few tens of pixels at the far stern; the can stroke and the long hull are the picture.
+
+Value contrast and +120 mm of forward throat are the legal revision. They make the lip/throat readable in PROP / throat / stowed close views. They do not make stock DRIVE 3/4 or rear DRIVE show the portal as a terminal frame. The DRIVE 3/4 PNG changed by **3 bytes**. Rear changed by 220. Side is better (+751) but still not an unambiguous portal against the seated can.
+
+Side / rear / throat / stowed are therefore **not** all unambiguous. Throat and stowed can show the frame. Stock rear and DRIVE 3/4 cannot, because the frozen stroke dominates those cameras.
+
+Making those two cameras carry the thesis would require a larger visual event at the stern: more mass, a nacelle, or following the can aft. All three are forbidden. Changing the stock cameras to flatter the stern would be photographing the machine better instead of owning the stern. That was also refused.
 
 ## Recommendation
 
-**ACCEPT SO1.**
+**NO PRESENTATION SOLUTION UNDER CURRENT FROZEN GEOMETRY.**
 
-A reviewer can identify the same lip–recess–sill portal at the stern without being told which meshes moved: darker throat, bronze opening lip, chine ending into that frame, can still passing through it. STOWED and SPREAD still read as an intentional open mouth, not a missing piece. BODY OFF is the same mechanism. Fit is a 101-sample pass with FO1 gutters unchanged.
+The ownership rule is correct. The construction is correct. The one director revision (collar-only contrast, then a hair of forward throat) was applied and recaptured. Fit is a 101-sample pass. BODY OFF is identical. FO1 and MT1-S5HR3R1 are untouched.
 
-The can remaining a distinct teal object inside an open frame is the correct story. SO1 fails if that story is hidden; it is not hidden here.
-
-ONE BOUNDED REVISION would be warranted only if a director still reads the far DRIVE views as a jewelry hoop. The next legal move would be a slightly deeper forward throat or a stronger lip/throat value contrast — not reach aft, not a nacelle, not a new mass.
+SO1 still fails the review that matters: stock DRIVE 3/4 and rear DRIVE do not show the portal. That is not a materials miss. It is the frozen can stroke and the whole-machine review cameras. No further presentation revision is recommended.
 
 ## Task report
 
-- **Changed files:** `explore/body-shell-03/src/scene/bodyShellConcept.ts` (collar throat / lip, chine and deck termination); `explore/body-shell-03/src/scene/createScene.ts` (`so1Throat` review camera); `explore/body-shell-03/tests/capture-so1.spec.ts`; `explore/body-shell-03/tests/dump-so1-fit.spec.ts`; `explore/body-shell-03/package.json` (`capture:so1`, `dump:so1-fit`); this report; `explore/body-shell-03/evidence/so1/**`.
-- **Tests:** `npm --prefix explore/body-shell-03 test` (isolation + 101-sample fit) passed; `capture:so1` before/after passed; `dump:so1-fit` passed; `npm --prefix explore/body-shell-03 run build` passed. Canonical root `npm test` not required (no `src/` change).
-- **Evidence:** SO1 before/after set above; consulted `MT1_FO1_RESULTS.md`, `BODY_SHELL_03_COMPLETION.md`, `BODY_SHELL_03_1_POCKET_CORRECTION.md`, `evidence/body-shell-03-fit-report.json`, `docs/CURRENT_STATE.md`, `docs/NOMENCLATURE.md`.
+- **Changed files:** `explore/body-shell-03/src/scene/bodyShellConcept.ts` (first-candidate collar geometry; director-revision collar-only materials and +120 mm forward throat); `explore/body-shell-03/src/scene/createScene.ts` (`so1Throat`); `explore/body-shell-03/tests/capture-so1.spec.ts`; `explore/body-shell-03/tests/dump-so1-fit.spec.ts`; `explore/body-shell-03/package.json`; this report; `explore/body-shell-03/evidence/so1/**`.
+- **Tests:** `npm --prefix explore/body-shell-03 test` (isolation + 101-sample fit) passed; `capture:so1` after the director revision passed; `dump:so1-fit` passed; `npm --prefix explore/body-shell-03 run build` passed. Canonical root `npm test` not required (no `src/` change).
+- **Evidence:** SO1 before/after set above, recaptured after the director revision; consulted `MT1_FO1_RESULTS.md`, `BODY_SHELL_03_COMPLETION.md`, `BODY_SHELL_03_1_POCKET_CORRECTION.md`, `evidence/body-shell-03-fit-report.json`, `docs/CURRENT_STATE.md`, `docs/NOMENCLATURE.md`.
 - **Authority participation:** none.
-- **Remaining unknowns / negatives:** whether a later reviewer still wants more throat depth in far DRIVE cameras (rejected here as following the can or adding mass). The open stern will remain visually unusual. That is intended.
+- **Remaining unknowns / negatives:** stock DRIVE 3/4 and rear cannot show a 0.47 m open frame against a 2.55 m frozen can stroke without adding mass or following the can. That is a negative result, not an invitation to another revision.
 
 Canonical `src/` is untouched. BODY OFF is mechanism truth.
