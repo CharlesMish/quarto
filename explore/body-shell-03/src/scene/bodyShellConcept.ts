@@ -96,16 +96,18 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
   hull.transparencyMode = StandardMaterial.MATERIAL_ALPHABLEND;
   hull.backFaceCulling = false;
 
+  // FO1: accent is opening-frame language (station lips/sill/web + stern collar),
+  // not a continuous jewelry stripe along the whole chine.
   const accent = hull.clone("matBodyShell03Accent");
-  accent.diffuseColor = new Color3(0.42, 0.32, 0.14);
-  accent.emissiveColor = new Color3(0.05, 0.025, 0.005);
-  accent.alpha = 0.92;
+  accent.diffuseColor = new Color3(0.33, 0.26, 0.13);
+  accent.emissiveColor = new Color3(0.032, 0.016, 0.004);
+  accent.alpha = 0.9;
 
   const pocket = hull.clone("matBodyShell03Pocket");
-  pocket.diffuseColor = new Color3(0.26, 0.25, 0.22);
-  pocket.emissiveColor = new Color3(0.018, 0.014, 0.01);
-  pocket.specularColor = new Color3(0.1, 0.09, 0.07);
-  pocket.alpha = 0.9;
+  pocket.diffuseColor = new Color3(0.1, 0.1, 0.095);
+  pocket.emissiveColor = new Color3(0.006, 0.005, 0.004);
+  pocket.specularColor = new Color3(0.05, 0.05, 0.045);
+  pocket.alpha = 0.92;
 
   const created: Mesh[] = [];
   const meshes: string[] = [];
@@ -155,7 +157,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         scene,
         sideName("CHINE_FWD", hand),
         root,
-        accent,
+        hull,
         [
           [BELLY_Y0, BAY_Z],
           [BELLY_Y0, P.fl.z],
@@ -168,9 +170,9 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         xOut,
         xIn,
       ),
-      "accent",
+      "hull",
       "chine walls",
-      "Forward chine / gunwale from the wedge prow through the lower front book station to the bay mouth.",
+      "Forward chine / gunwale: quiet spine through the lower front station; the station frame, not this wall, marks the receiving opening.",
     );
 
     add(
@@ -178,7 +180,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         scene,
         sideName("CHINE_AFT", hand),
         root,
-        accent,
+        hull,
         [
           [BELLY_Y0, COLLAR_Z],
           [BELLY_Y0, BAY_Z],
@@ -190,9 +192,9 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         xOut,
         xIn,
       ),
-      "accent",
+      "hull",
       "chine walls",
-      "Aft chine rising through the higher rear book station, then dropping into the open stern.",
+      "Aft chine: quiet spine through the higher rear station, then dropping into the open stern.",
       true,
     );
 
@@ -265,7 +267,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
       0.36,
       1.18,
       0.16,
-      "Forward book pocket grown along the chine at the frozen front hinge station.",
+      "Forward receiving shoulder: lip–recess–sill frame at the frozen front hinge station.",
     );
     addPocket(
       scene,
@@ -281,7 +283,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
       0.4,
       1.5,
       0.22,
-      "Rear book pocket grown along the chine at the frozen rear hinge station.",
+      "Rear receiving shoulder: same lip–recess–sill family at the higher frozen rear hinge station.",
     );
 
     add(
@@ -406,7 +408,10 @@ function addPocket(
   const yTop = hingeY - 0.12;
   const z0 = z - aftExtent;
   const z1 = z + fwdExtent;
-  const lipZ = 0.07;
+  const lipZ = 0.09;
+  const sillH = 0.07;
+  const span = fwdExtent + aftExtent;
+  const webHalf = Math.max(0.1, span * 0.5 - lipZ);
 
   add(
     extrudeYZ(
@@ -425,7 +430,7 @@ function addPocket(
     ),
     "accent",
     mass,
-    `${purpose} Forward chine lip of the socket.`,
+    `${purpose} Forward lip of the receiving frame; continues the chine into the station.`,
   );
   add(
     extrudeYZ(
@@ -444,7 +449,7 @@ function addPocket(
     ),
     "accent",
     mass,
-    `${purpose} Aft chine lip of the socket.`,
+    `${purpose} Aft lip of the receiving frame.`,
   );
   const face = extrudeYZ(
     scene,
@@ -452,8 +457,8 @@ function addPocket(
     root,
     lining,
     [
-      [yBot + 0.05, z0 + lipZ],
-      [yBot + 0.05, z1 - lipZ],
+      [yBot + sillH, z0 + lipZ],
+      [yBot + sillH, z1 - lipZ],
       [yTop, z1 - lipZ],
       [yTop, z0 + lipZ],
     ],
@@ -461,7 +466,7 @@ function addPocket(
     xFace,
   );
   face.metadata = { ...(face.metadata ?? {}), dockX: xFace };
-  add(face, "pocket", mass, `${purpose} Recessed dock face; books remain proud of the chine lip.`);
+  add(face, "pocket", mass, `${purpose} Recessed bay face; folios remain proud of the lip.`);
   add(
     extrudeYZ(
       scene,
@@ -471,17 +476,16 @@ function addPocket(
       [
         [yBot, z0 + lipZ],
         [yBot, z1 - lipZ],
-        [yBot + 0.05, z1 - lipZ],
-        [yBot + 0.05, z0 + lipZ],
+        [yBot + sillH, z1 - lipZ],
+        [yBot + sillH, z0 + lipZ],
       ],
       xFace,
       xLip,
     ),
     "accent",
     mass,
-    `${purpose} Socket sill joining the two chine lips.`,
+    `${purpose} Sill joining the two lips; the lower datum of the bay.`,
   );
-  const webHalf = Math.min(0.14, (fwdExtent + aftExtent) * 0.22);
   add(
     wedge(
       scene,
@@ -499,8 +503,8 @@ function addPocket(
         [xFace * 0.55 + xChine * 0.45, hingeY - 0.03, z],
       ],
     ),
-    "pocket",
+    "accent",
     mass,
-    `${purpose} Short wedge web to the frozen hinge; does not replace certified structure.`,
+    `${purpose} Short frame web to the frozen hinge; presents the root, does not replace it.`,
   );
 }

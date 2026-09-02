@@ -1,0 +1,62 @@
+{
+  "kind": "presentation-fit",
+  "participatesInAuthority": false,
+  "method": "triangle-obb",
+  "gutter": {
+    "min": 0.08,
+    "max": 0.12,
+    "design": 0.1
+  },
+  "samples": 101,
+  "step": 0.01,
+  "defects": [],
+  "expectedClose": [
+    {
+      "class": "expected-close",
+      "t": 1,
+      "body": "BODY_FWD_FACE_PORT_VIS",
+      "solid": "FL_*",
+      "separation": 0.032566008470980234,
+      "detail": "Pocket dock face vs nested-book inboard face; gutter 0.033 m (readability, not a collision exemption)."
+    },
+    {
+      "class": "expected-close",
+      "t": 1,
+      "body": "BODY_FWD_FACE_STBD_VIS",
+      "solid": "FR_*",
+      "separation": 0.032566008470980234,
+      "detail": "Pocket dock face vs nested-book inboard face; gutter 0.033 m (readability, not a collision exemption)."
+    }
+  ],
+  "pocketGutters": [
+    {
+      "pocket": "BODY_FWD_FACE_PORT_VIS",
+      "bookPrefix": "FL_",
+      "dockX": -0.84,
+      "bookInboardX": -0.8725660084709802,
+      "gutter": 0.032566008470980234
+    },
+    {
+      "pocket": "BODY_AFT_FACE_PORT_VIS",
+      "bookPrefix": "RL_",
+      "dockX": -0.9,
+      "bookInboardX": -0.898596808735009,
+      "gutter": -0.0014031912649909994
+    },
+    {
+      "pocket": "BODY_FWD_FACE_STBD_VIS",
+      "bookPrefix": "FR_",
+      "dockX": 0.84,
+      "bookInboardX": 0.8725660084709802,
+      "gutter": 0.032566008470980234
+    },
+    {
+      "pocket": "BODY_AFT_FACE_STBD_VIS",
+      "bookPrefix": "RR_",
+      "dockX": 0.9,
+      "bookInboardX": 0.898596808735009,
+      "gutter": -0.0014031912649909994
+    }
+  ],
+  "pass": true
+}

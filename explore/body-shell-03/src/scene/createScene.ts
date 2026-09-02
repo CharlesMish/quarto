@@ -69,6 +69,9 @@ const CAMERAS: Record<string, { alpha: number; beta: number; radius: number; tar
   lockStarboard: { alpha: 0.92, beta: 1.04, radius: 0.16, target: [0.54, 0.53, -4.57] },
   lockTopPort: { alpha: 1.92, beta: 0.62, radius: 0.17, target: [-0.393, 1.224, -4.57] },
   lockTopStarboard: { alpha: 1.22, beta: 0.62, radius: 0.17, target: [0.393, 1.224, -4.57] },
+  // FO1 station-family review. Starboard to match BODY 3/4. Inspection only.
+  fo1FwdRoot: { alpha: 0.82, beta: 1.12, radius: 3.35, target: [0.88, 1.68, 3.22] },
+  fo1AftRoot: { alpha: 0.96, beta: 1.08, radius: 3.7, target: [0.92, 2.12, -1.88] },
 };
 
 export function createApp(canvas: HTMLCanvasElement): App {
