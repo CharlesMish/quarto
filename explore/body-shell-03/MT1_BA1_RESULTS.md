@@ -307,7 +307,7 @@ Negative result (useful): Quarto’s “unfinished body” appearance under BODY
 ## Task report
 
 - **Changed files:** `explore/body-shell-03/MT1_BA1_SCOPE_AND_EPISTEMICS.md`; `explore/body-shell-03/MT1_BA1_RESULTS.md`; `evidence/ba1-body-map.json`; `evidence/ba1-body-map.svg`; `tests/mt1-ba1.spec.ts`; `explore/body-shell-03/README.md` (pointer only). No `src/`, no `bodyShellConcept.ts`, no cameras, no frozen geometry.
-- **Tests:** `tests/mt1-ba1.spec.ts` gates the decision map (classes, required rows/columns, interpretation A, no professions, no geometry, next slice ≠ BODY-SHELL-04/SO1/SR1). Canonical mechanism tests are not required for this study; they are run if the suite is invoked.
+- **Tests:** `MT1_BASE_URL=http://127.0.0.1:5185 npx playwright test tests/mt1-ba1.spec.ts` — passed (decision map rows/columns, class legality, interpretation A, no professions, no geometry, next slice ≠ BODY-SHELL-04/SO1/SR1). `npm --prefix explore/body-shell-03 run build` — passed. `MT1_BASE_URL=http://127.0.0.1:5185 npm --prefix explore/body-shell-03 test` — passed (isolation + 101-sample presentation-fit, 0 defects, `participatesInAuthority: false`). Canonical root `npm test` not required (no `src/` change); the BA1 gate is the added `tests/mt1-ba1.spec.ts`.
 - **Evidence:** new diagnostic map only. Consulted FO1 after-set, BODY-SHELL-03 captures, US1/GE1/KS1/DP1, unmerged SO1 report. No giant dump. No regenerated fit.
 - **Authority participation:** none.
 - **Remaining unknowns / negatives:** listed in §11. SO1 remains negative. FO1 remains accepted.
