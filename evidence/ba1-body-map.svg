@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" width="1400" height="820">
+  <rect width="1400" height="820" fill="#0e1214"/>
+  <text x="16" y="22" fill="#e6a93c" font-size="13" font-family="monospace">MT1-BA1 BODY MAP · diagnostic only · non-authoritative · no volume rights · BODY-SHELL-03.1 ghosted</text>
+  <text x="16" y="40" fill="#8e999a" font-size="11" font-family="monospace">A EXPOSED-CARRIER VEHICLE · +Z forward right · +Y up · FO1 accepted · SO1 negative presentation · authority participation none</text>
+
+  <!-- floor -->
+  <line x1="56" y1="268" x2="1336" y2="268" stroke="#81c8c6" stroke-width="1"/>
+  <text x="56" y="282" fill="#81c8c6" font-size="9" font-family="monospace">y=0 fold datum</text>
+
+  <!-- can stroke (seated) intentionally exposed -->
+  <rect x="68" y="198" width="266" height="58" fill="#b45309" fill-opacity="0.28" stroke="#b45309"/>
+  <text x="76" y="232" fill="#fdba74" font-size="10" font-family="monospace">CAN stroke (exposed mechanism)</text>
+
+  <!-- bay -->
+  <rect x="306" y="178" width="322" height="84" fill="#6b7280" fill-opacity="0.28" stroke="#9ca3af"/>
+  <text x="314" y="198" fill="#d1d5db" font-size="10" font-family="monospace">BAY + posts + core</text>
+
+  <!-- keel -->
+  <rect x="292" y="248" width="988" height="12" fill="#6b7280" fill-opacity="0.7" stroke="#9ca3af"/>
+  <text x="700" y="258" fill="#e5e7eb" font-size="9" font-family="monospace">VENTRAL_KEEL</text>
+
+  <!-- dorsal longeron -->
+  <rect x="628" y="154" width="652" height="12" fill="#6b7280" fill-opacity="0.7" stroke="#9ca3af"/>
+  <text x="880" y="164" fill="#e5e7eb" font-size="9" font-family="monospace">DORSAL_LONGERON</text>
+
+  <!-- bulkheads -->
+  <rect x="624" y="154" width="8" height="106" fill="#ca8a04" fill-opacity="0.55" stroke="#eab308"/>
+  <rect x="920" y="154" width="8" height="106" fill="#ca8a04" fill-opacity="0.55" stroke="#eab308"/>
+  <rect x="1148" y="154" width="8" height="106" fill="#ca8a04" fill-opacity="0.55" stroke="#eab308"/>
+
+  <!-- KEEP_COCKPIT unassigned -->
+  <rect x="1060" y="132" width="220" height="132" fill="#7c3aed" fill-opacity="0.22" stroke="#a78bfa" stroke-dasharray="4 3"/>
+  <text x="1070" y="148" fill="#ddd6fe" font-size="10" font-family="monospace">KEEP_COCKPIT unassigned</text>
+
+  <!-- presentation chine ghost -->
+  <path d="M80 248 L80 188 L300 168 L624 148 L920 138 L1148 168 L1328 188 L1328 248" fill="none" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="2"/>
+  <text x="400" y="142" fill="#67e8f9" font-size="10" font-family="monospace">03.1 chine/deck ghost (presentation only)</text>
+
+  <!-- folio stations -->
+  <rect x="598" y="118" width="44" height="40" fill="#4d7c0f" fill-opacity="0.45" stroke="#86efac"/>
+  <text x="572" y="112" fill="#bbf7d0" font-size="9" font-family="monospace">rear root z=-1.88</text>
+  <rect x="1132" y="128" width="40" height="36" fill="#4d7c0f" fill-opacity="0.45" stroke="#86efac"/>
+  <text x="1108" y="122" fill="#bbf7d0" font-size="9" font-family="monospace">fwd root z=3.22</text>
+
+  <!-- mid-body label -->
+  <text x="730" y="198" fill="#f9a8d4" font-size="11" font-family="monospace">MID-BODY = exposed carrier (beam)</text>
+
+  <!-- stern label -->
+  <text x="76" y="188" fill="#fdba74" font-size="10" font-family="monospace">OPEN STERN</text>
+  <text x="1268" y="178" fill="#ddd6fe" font-size="10" font-family="monospace">PROW skin</text>
+
+  <!-- z ticks -->
+  <text x="70" y="298" fill="#8e999a" font-size="9" font-family="monospace">z -7.1 seated can</text>
+  <text x="300" y="298" fill="#8e999a" font-size="9" font-family="monospace">-4.8 posts</text>
+  <text x="620" y="298" fill="#8e999a" font-size="9" font-family="monospace">-1.7 bay mouth</text>
+  <text x="918" y="298" fill="#8e999a" font-size="9" font-family="monospace">+1.15</text>
+  <text x="1140" y="298" fill="#8e999a" font-size="9" font-family="monospace">+3.35</text>
+  <text x="1288" y="298" fill="#8e999a" font-size="9" font-family="monospace">+5.0 prow</text>
+
+  <!-- legend -->
+  <text x="16" y="326" fill="#e6a93c" font-size="11" font-family="monospace">CLASS COLOUR</text>
+  <rect x="16" y="336" width="12" height="12" fill="#4d7c0f"/><text x="34" y="346" fill="#d7d9d2" font-size="10" font-family="monospace">ALREADY_REAL_BODY_ARCHITECTURE</text>
+  <rect x="300" y="336" width="12" height="12" fill="#0e7490"/><text x="318" y="346" fill="#d7d9d2" font-size="10" font-family="monospace">PRESENTATION_SUFFICIENT</text>
+  <rect x="560" y="336" width="12" height="12" fill="#155e75"/><text x="578" y="346" fill="#d7d9d2" font-size="10" font-family="monospace">PRESENTATION_LANGUAGE_ONLY</text>
+  <rect x="16" y="356" width="12" height="12" fill="#b45309"/><text x="34" y="366" fill="#d7d9d2" font-size="10" font-family="monospace">INTENTIONALLY_EXPOSED</text>
+  <rect x="300" y="356" width="12" height="12" fill="#7c3aed"/><text x="318" y="366" fill="#d7d9d2" font-size="10" font-family="monospace">INTENTIONALLY_UNASSIGNED</text>
+  <rect x="560" y="356" width="12" height="12" fill="#6b7280"/><text x="578" y="366" fill="#d7d9d2" font-size="10" font-family="monospace">structure / bay (frozen)</text>
+  <text x="860" y="346" fill="#8e999a" font-size="10" font-family="monospace">no REAL_ARCHITECTURE_REQUIRED row · no UNKNOWN row · no promotions</text>
+  <text x="860" y="366" fill="#8e999a" font-size="10" font-family="monospace">next slice: none yet; wait for functional requirements</text>
+
+  <!-- decision table header -->
+  <text x="16" y="400" fill="#e6a93c" font-size="12" font-family="monospace">DECISION MAP · full text in MT1_BA1_RESULTS.md and ba1-body-map.json</text>
+  <line x1="16" y1="408" x2="1384" y2="408" stroke="#334155"/>
+
+  <text x="16" y="428" fill="#94a3b8" font-size="10" font-family="monospace">ROW</text>
+  <text x="200" y="428" fill="#94a3b8" font-size="10" font-family="monospace">CLASS</text>
+  <text x="520" y="428" fill="#94a3b8" font-size="10" font-family="monospace">SPREAD / DRIVE</text>
+  <text x="900" y="428" fill="#94a3b8" font-size="10" font-family="monospace">DO NOT TOUCH</text>
+
+  <rect x="16" y="438" width="12" height="12" fill="#4d7c0f"/>
+  <text x="36" y="448" fill="#e5e7eb" font-size="11" font-family="monospace">folio faces</text>
+  <text x="200" y="448" fill="#86efac" font-size="11" font-family="monospace">ALREADY_REAL_BODY_ARCHITECTURE</text>
+  <text x="520" y="448" fill="#cbd5e1" font-size="10" font-family="monospace">wide envelope / proud side-body</text>
+  <text x="900" y="448" fill="#94a3b8" font-size="10" font-family="monospace">no profession · no BOOK rename · no flush</text>
+
+  <rect x="16" y="458" width="12" height="12" fill="#4d7c0f"/>
+  <text x="36" y="468" fill="#e5e7eb" font-size="11" font-family="monospace">folio roots</text>
+  <text x="200" y="468" fill="#86efac" font-size="11" font-family="monospace">ALREADY_REAL_BODY_ARCHITECTURE</text>
+  <text x="520" y="468" fill="#cbd5e1" font-size="10" font-family="monospace">visible origin / visible under flank</text>
+  <text x="900" y="468" fill="#94a3b8" font-size="10" font-family="monospace">no frozen root edits</text>
+
+  <rect x="16" y="478" width="12" height="12" fill="#0e7490"/>
+  <text x="36" y="488" fill="#e5e7eb" font-size="11" font-family="monospace">FO1 shoulder</text>
+  <text x="200" y="488" fill="#67e8f9" font-size="11" font-family="monospace">PRESENTATION_SUFFICIENT</text>
+  <text x="520" y="488" fill="#cbd5e1" font-size="10" font-family="monospace">empty bay owned / proud seat</text>
+  <text x="900" y="488" fill="#94a3b8" font-size="10" font-family="monospace">no eighth mass · no reach · no promotion</text>
+
+  <rect x="16" y="498" width="12" height="12" fill="#155e75"/>
+  <text x="36" y="508" fill="#e5e7eb" font-size="11" font-family="monospace">chine</text>
+  <text x="200" y="508" fill="#22d3ee" font-size="11" font-family="monospace">PRESENTATION_LANGUAGE_ONLY</text>
+  <text x="520" y="508" fill="#cbd5e1" font-size="10" font-family="monospace">explain carrier / quiet gaps</text>
+  <text x="900" y="508" fill="#94a3b8" font-size="10" font-family="monospace">not the keel · no fuselage thicken</text>
+
+  <rect x="16" y="518" width="12" height="12" fill="#4d7c0f"/>
+  <text x="36" y="528" fill="#e5e7eb" font-size="11" font-family="monospace">keel</text>
+  <text x="200" y="528" fill="#86efac" font-size="11" font-family="monospace">ALREADY_REAL_BODY_ARCHITECTURE</text>
+  <text x="520" y="528" fill="#cbd5e1" font-size="10" font-family="monospace">chassis both states</text>
+  <text x="900" y="528" fill="#94a3b8" font-size="10" font-family="monospace">no hollow keel · belly ` contact</text>
+
+  <rect x="16" y="538" width="12" height="12" fill="#4d7c0f"/>
+  <text x="36" y="548" fill="#e5e7eb" font-size="11" font-family="monospace">dorsal member</text>
+  <text x="200" y="548" fill="#86efac" font-size="11" font-family="monospace">ALREADY_REAL_BODY_ARCHITECTURE</text>
+  <text x="520" y="548" fill="#cbd5e1" font-size="10" font-family="monospace">member enough / keep clear</text>
+  <text x="900" y="548" fill="#94a3b8" font-size="10" font-family="monospace">no roof promotion · no KEEP_DORSAL</text>
+
+  <rect x="16" y="558" width="12" height="12" fill="#b45309"/>
+  <text x="36" y="568" fill="#e5e7eb" font-size="11" font-family="monospace">mid-body</text>
+  <text x="200" y="568" fill="#fdba74" font-size="11" font-family="monospace">INTENTIONALLY_EXPOSED</text>
+  <text x="520" y="568" fill="#cbd5e1" font-size="10" font-family="monospace">sparse OK / do not disguise as hull</text>
+  <text x="900" y="568" fill="#94a3b8" font-size="10" font-family="monospace">do not fill the middle</text>
+
+  <rect x="16" y="578" width="12" height="12" fill="#7c3aed"/>
+  <text x="36" y="588" fill="#e5e7eb" font-size="11" font-family="monospace">prow/front reservation</text>
+  <text x="200" y="588" fill="#c4b5fd" font-size="11" font-family="monospace">INTENTIONALLY_UNASSIGNED</text>
+  <text x="520" y="588" fill="#cbd5e1" font-size="10" font-family="monospace">not a completed nose</text>
+  <text x="900" y="588" fill="#94a3b8" font-size="10" font-family="monospace">no cockpit · no BODY_PROW promotion</text>
+
+  <rect x="16" y="598" width="12" height="12" fill="#4d7c0f"/>
+  <text x="36" y="608" fill="#e5e7eb" font-size="11" font-family="monospace">bay</text>
+  <text x="200" y="608" fill="#86efac" font-size="11" font-family="monospace">ALREADY_REAL_BODY_ARCHITECTURE</text>
+  <text x="520" y="608" fill="#cbd5e1" font-size="10" font-family="monospace">keep open both states</text>
+  <text x="900" y="608" fill="#94a3b8" font-size="10" font-family="monospace">no engine room · no S6</text>
+
+  <rect x="16" y="618" width="12" height="12" fill="#b45309"/>
+  <text x="36" y="628" fill="#e5e7eb" font-size="11" font-family="monospace">stern opening</text>
+  <text x="200" y="628" fill="#fdba74" font-size="11" font-family="monospace">INTENTIONALLY_EXPOSED</text>
+  <text x="520" y="628" fill="#cbd5e1" font-size="10" font-family="monospace">same throat / can may dominate</text>
+  <text x="900" y="628" fill="#94a3b8" font-size="10" font-family="monospace">no SO1 retry · doctrine only</text>
+
+  <rect x="16" y="638" width="12" height="12" fill="#b45309"/>
+  <text x="36" y="648" fill="#e5e7eb" font-size="11" font-family="monospace">can</text>
+  <text x="200" y="648" fill="#fdba74" font-size="11" font-family="monospace">INTENTIONALLY_EXPOSED</text>
+  <text x="520" y="648" fill="#cbd5e1" font-size="10" font-family="monospace">inspectable / not owned by body</text>
+  <text x="900" y="648" fill="#94a3b8" font-size="10" font-family="monospace">no cowling · no internals</text>
+
+  <line x1="16" y1="662" x2="1384" y2="662" stroke="#334155"/>
+  <text x="16" y="686" fill="#e6a93c" font-size="11" font-family="monospace">DO NOT PROMOTE</text>
+  <text x="16" y="704" fill="#94a3b8" font-size="10" font-family="monospace">03.1 seven masses · chine · ventral hull · dorsal deck-as-roof · wedge prow · FO1 C-socket · stern collar / SO1 throat · fuselage fill · nacelle/boat-tail</text>
+  <text x="16" y="728" fill="#e6a93c" font-size="11" font-family="monospace">REMAIN EXPOSED</text>
+  <text x="16" y="746" fill="#94a3b8" font-size="10" font-family="monospace">mid-body carrier · open stern · core/can/handover · aft posts · root hardware · DRIVE waist · KEEP_DORSAL</text>
+  <text x="16" y="770" fill="#e6a93c" font-size="11" font-family="monospace">WHY FO1 WORKED / SO1 DID NOT</text>
+  <text x="16" y="788" fill="#94a3b8" font-size="10" font-family="monospace">FO1 explained an existing local root+folio relationship that already was the picture. SO1 tried to make a short presentation frame own a 2.55 m exposed can stroke. Doctrine only; no geometry.</text>
+  <text x="16" y="810" fill="#64748b" font-size="9" font-family="monospace">Stations schematic, not to millimetre authority. Consult frozen parameters / US1 / FO1 / SO1 reports for numbers.</text>
+</svg>
