@@ -12,7 +12,8 @@
     "test:evidence": "playwright test tests/dump-s5-report.spec.ts --workers=1 --grep @evidence-writer",
     "test:authority": "playwright test tests/dump-s5-report.spec.ts --workers=1 --grep @current-authority-writer",
     "capture": "playwright test tests/capture-proof.spec.ts",
-    "capture:h1": "playwright test tests/capture-s5-h1-review.spec.ts --workers=1"
+    "capture:h1": "playwright test tests/capture-s5-h1-review.spec.ts --workers=1",
+    "cf:dry-run": "wrangler deploy --dry-run --strict"
   },
   "engines": {
     "node": ">=20.19"
@@ -24,6 +25,7 @@
     "@playwright/test": "^1.62.1",
     "@types/node": "^24.3.0",
     "typescript": "^5.9.2",
-    "vite": "^7.1.2"
+    "vite": "^7.1.2",
+    "wrangler": "^4.128.0"
   }
 }
