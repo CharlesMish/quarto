@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const REQUIRED_ROWS = [
@@ -106,4 +106,20 @@ test("MT1-BA1 decision map is complete, non-authoritative, and does not start a 
   expect(map.remainExposed.length).toBeGreaterThanOrEqual(6);
   expect(map.doNotPromotePresentationLanguage.join(" ")).toMatch(/chine/i);
   expect(map.remainExposed.join(" ")).toMatch(/open stern/i);
+});
+
+test("handoff docs record FO1 live hero, park SR1, and keep the SO1 negative note", async () => {
+  const readme = readFileSync(resolve("README.md"), "utf8");
+  const current = readFileSync(resolve("docs/CURRENT_STATE.md"), "utf8");
+  const so1 = readFileSync(resolve("explore/body-shell-03/MT1_SO1_NEGATIVE_RESULT.md"), "utf8");
+  expect(readme).toContain("explore/body-shell-03/evidence/fo1/after/fo1-after-drive-three.png");
+  expect(readme).not.toMatch(/Next planned slice\s*\|\s*\*\*MT1-SR1/);
+  expect(current).toMatch(/EXPOSED-CARRIER VEHICLE/);
+  expect(current).toContain("SR1 is parked, not invalidated");
+  expect(current).toContain("None yet — wait for a functional requirement that creates a new physical relationship");
+  expect(current).toContain("MT1_SO1_NEGATIVE_RESULT.md");
+  expect(so1).toMatch(/CLOSED NEGATIVE PRESENTATION RESULT/);
+  expect(existsSync(resolve("explore/body-shell-03/evidence/README.md"))).toBe(true);
+  expect(existsSync(resolve("explore/body-shell-03/evidence/fo1/after/fo1-after-drive-three.png"))).toBe(true);
+  expect(existsSync(resolve("explore/body-shell-03/evidence/body-shell-03-drive-three.png"))).toBe(true);
 });

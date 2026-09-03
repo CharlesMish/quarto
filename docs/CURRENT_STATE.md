@@ -58,7 +58,7 @@ No sleeve or structural cut is required or authorized. The three bounded sleeve 
 ## Post-KS1 accepted closeout — FO1 / SO1 / BA1
 
 - **FO1 accepted.** Presentation successfully clarifies folio-station ownership. Ownership rule remains: chine → receiving shoulder → frozen root → folio. Record: [MT1_FO1_RESULTS.md](../explore/body-shell-03/MT1_FO1_RESULTS.md) (on `main`; this PR does not re-implement FO1).
-- **SO1 negative.** Ownership rule retained (the frame owns the opening; it does not own the can), but there is no bounded presentation solution under current frozen geometry. [PR #2](https://github.com/CharlesMish/quarto/pull/2) remains unmerged/archival. Do not promote SO1 geometry.
+- **SO1 negative.** Ownership rule retained (the frame owns the opening; it does not own the can), but there is no bounded presentation solution under current frozen geometry. Durable record: [MT1_SO1_NEGATIVE_RESULT.md](../explore/body-shell-03/MT1_SO1_NEGATIVE_RESULT.md). [PR #2](https://github.com/CharlesMish/quarto/pull/2) remains unmerged/archival. Do not promote SO1 geometry.
 - **BA1 accepted.** Quarto is an **EXPOSED-CARRIER VEHICLE**. Records: [scope](../explore/body-shell-03/MT1_BA1_SCOPE_AND_EPISTEMICS.md), [results](../explore/body-shell-03/MT1_BA1_RESULTS.md), [decision map](../evidence/ba1-body-map.json).
 - Mid-body carrier, handover, root hardware, and the open stern remain intentionally exposed.
 - The front reservation remains intentionally unassigned. `KEEP_COCKPIT` stays a historical identifier only.
