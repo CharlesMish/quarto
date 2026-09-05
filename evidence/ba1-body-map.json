@@ -1,0 +1,251 @@
+{
+  "studyId": "MT1-BA1",
+  "title": "Body Architecture Boundary",
+  "status": "STUDY_ONLY",
+  "freezeId": "MT1-S5HR3R1",
+  "presentationSkin": "BODY-SHELL-03.1",
+  "fo1Status": "ACCEPTED",
+  "so1Status": "NEGATIVE_PRESENTATION_RESULT",
+  "so1RuleRetainedAs": "design-doctrine-only",
+  "so1GeometryPromoted": false,
+  "participatesInAuthority": false,
+  "addsVehicleGeometry": false,
+  "authorityParticipation": "none",
+  "professionsAssigned": [],
+  "reopensS5": false,
+  "startsBodyShell04": false,
+  "retriesSo1": false,
+  "bodyOnVsBodyOff": {
+    "identityThatDisappearsWithBodyOff": "Long faceted hull silhouette: wedge prow, chine walls, ventral hull skin, dorsal deck breadth, FO1 C-sockets, stern collar.",
+    "identityThatRemains": "Four physical folios, four root stations, ventral keel, dorsal longeron, three bulkheads, bay walls, aft posts, fixed core, hollow can, handover hardware.",
+    "lossClassification": {
+      "fo1Shoulders": "useful presentation explanation",
+      "chineAndDecks": "cosmetic mass wrapping a real carrier",
+      "prow": "presentation language over an unassigned reservation; not earned front enclosure",
+      "sternCollar": "failed presentation restatement of an already-exposed opening",
+      "midBodySparseness": "intentionally exposed mechanism / carrier identity",
+      "handover": "intentionally exposed mechanism"
+    }
+  },
+  "topLevelInterpretation": {
+    "code": "A",
+    "name": "EXPOSED-CARRIER VEHICLE",
+    "sentence": "Quarto is four folios on a frozen keel/bay/post chassis with an inspectable open-stern handover. BODY-SHELL-03.1 is explanatory presentation around that machine, not an unfinished fuselage and not a structural body waiting to be promoted.",
+    "rejected": {
+      "B": "Partial physical body would invite promoting presentation interfaces that are already honest as skin, or filling regions that are intentionally exposed or unassigned.",
+      "C": "Structural body required assumes a conventional fuselage obligation the frozen machine does not have. Filling the mid-body would invent an interior US1 showed does not exist.",
+      "D": "Presentation already sufficient overclaims. 03.1 is not finished body architecture; SO1 is a negative presentation result.",
+      "E": "Frozen geometry plus FO1/SO1 is enough to judge. Remaining unknowns are professions and later functional requirements, not the body type."
+    }
+  },
+  "promotionCandidates": [],
+  "doNotPromotePresentationLanguage": [
+    "BODY-SHELL-03.1 seven masses as a set",
+    "chine walls (BODY_CHINE_FWD_*, BODY_CHINE_AFT_*)",
+    "ventral hull / belly (BODY_VENTRAL_HULL_*)",
+    "dorsal deck as a hull roof (BODY_DORSAL_DECK_*)",
+    "wedge prow (BODY_PROW_*)",
+    "FO1 lip–recess–sill–web receiving shoulders",
+    "open stern collar (BODY_COLLAR_*) including unmerged SO1 throat geometry",
+    "any mid-body volume fill or conventional fuselage",
+    "any nacelle, cowling, boat-tail, or can-following sleeve"
+  ],
+  "remainExposed": [
+    "mid-body carrier: VENTRAL_KEEL, DORSAL_LONGERON, BULKHEAD_Z1p15 and interstitial faces",
+    "open stern / service throat",
+    "fixed propulsion core, hollow can, receiver, capture, locks, shoes, rails",
+    "AFT_POST_PORT/STBD and bay interior",
+    "folio root hardware: hinges, socket rails, nest pins, catches",
+    "DRIVE waist empty occupancy",
+    "KEEP_DORSAL corridor"
+  ],
+  "intentionallyUnassigned": [
+    "KEEP_COCKPIT (historical name only) front reserved volume"
+  ],
+  "nextSlice": {
+    "id": "none-yet-wait-for-functional-requirements",
+    "label": "none yet; wait for functional requirements",
+    "why": "BA1 finds no missing fuselage and no body-architecture hole that presentation or a new shell can honestly fill. A later slice may exist if a functional requirement creates a new physical relationship. BA1 does not create that requirement.",
+    "explicitlyNot": [
+      "BODY-SHELL-04",
+      "SO1.1",
+      "SR1",
+      "cockpit",
+      "ground-gear",
+      "folio-profession",
+      "engine-internals"
+    ],
+    "noteOnSr1": "CURRENT_STATE still lists MT1-SR1 as the architecture-chain next slice. BA1 does not authorize, start, or replace SR1. SR1 is utilities-on-proven-skeleton, not body."
+  },
+  "so1DoctrineOnly": {
+    "rule": "The frame owns the opening; it does not own the can.",
+    "geometry": "none. Do not turn the rule into a collar, throat, nacelle, or terminal frame in this slice.",
+    "whyFo1WorkedAndSo1DidNot": "FO1 explained an existing local physical relationship (root + folio) that already was the visual event in whole-machine cameras. SO1 tried to make a short presentation frame own a 2.55 m can stroke that continues past the hull cut; the visual event in DRIVE 3/4 and rear is the can, which is supposed to remain exposed."
+  },
+  "consulted": [
+    "docs/CURRENT_STATE.md",
+    "docs/NOMENCLATURE.md",
+    "AGENTS.md",
+    "explore/body-shell-03/MT1_FO1_RESULTS.md",
+    "origin/cursor/mt1-so1-fa96:explore/body-shell-03/MT1_SO1_RESULTS.md",
+    "explore/body-shell-03/BODY_SHELL_03_COMPLETION.md",
+    "explore/body-shell-03/BODY_SHELL_03_1_POCKET_CORRECTION.md",
+    "MT1_US1_RESULTS.md",
+    "MT1_GE1_RESULTS.md",
+    "MT1_KC1_RESULTS.md",
+    "MT1_KS1_RESULTS.md",
+    "MT1_DP1_RESULTS.md",
+    "explore/body-shell-03/src/scene/bodyShellConcept.ts (read-only)",
+    "explore/body-shell-03/src/machine/keel.ts (read-only)",
+    "explore/body-shell-03/src/design/parameters.ts (read-only)",
+    "explore/body-shell-03/evidence/fo1/after/*",
+    "explore/body-shell-03/evidence/body-shell-03-*.png"
+  ],
+  "ba1Classes": [
+    "ALREADY_REAL_BODY_ARCHITECTURE",
+    "PRESENTATION_SUFFICIENT",
+    "PRESENTATION_LANGUAGE_ONLY",
+    "REAL_ARCHITECTURE_REQUIRED_FOR_STRONG_OWNERSHIP",
+    "INTENTIONALLY_EXPOSED",
+    "INTENTIONALLY_UNASSIGNED",
+    "UNKNOWN"
+  ],
+  "decisionMap": [
+    {
+      "row": "folio faces",
+      "physicalReality": "Four physical folio (book) armor/underside stacks with frozen span, chord, thickness, and 70° haunch. Front pair lower/shorter at P.fl; rear pair higher/larger at P.rl.",
+      "currentPresentationClaim": "In DRIVE, proud docked side panels of a chine hull. In SPREAD, outboard planform leaving empty C-sockets.",
+      "ba1Class": "ALREADY_REAL_BODY_ARCHITECTURE",
+      "spreadObligation": "Remain the wide envelope. Do not add hull mass to equalize density with DRIVE. Empty stations are FO1's job, not folio reskinning.",
+      "driveObligation": "Primary side-body. Stay proud of the chine. Do not bury flush.",
+      "futureArchitectureImplication": "None for body type. Profession remains unassigned and is not required to read folios as body faces.",
+      "doNotTouch": "Do not rename BOOK/book identities. Do not assign wing/shield/radiator/tank. Do not change 70° haunch, spans, or authority solids.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "row": "folio roots",
+      "physicalReality": "Four registered keel-meeting stations: hinges, socket rails, nest receivers, pins, catches. BODY OFF shows roots with no presentation sockets.",
+      "currentPresentationClaim": "Short FO1 webs present the frozen hinge; they do not replace it.",
+      "ba1Class": "ALREADY_REAL_BODY_ARCHITECTURE",
+      "spreadObligation": "Roots stay visible as the physical origin of the empty bay.",
+      "driveObligation": "Roots stay visible under/behind the proud folio. Hardware is not jewelry to hide.",
+      "futureArchitectureImplication": "Physical station already exists. A future seal/load lip would be a new requirement, not a promotion of FO1 mesh.",
+      "doNotTouch": "Do not change frozen root geometry, nest/socket families, or registration IDs to make presentation prettier.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "row": "FO1 shoulder",
+      "physicalReality": "No physical C-socket. Reach 0.16 m front / 0.22 m rear is presentation only. Dock-face X front ±0.84 m, rear ±0.90 m.",
+      "currentPresentationClaim": "Chine becomes a repeated lip–recess–sill–web receiving shoulder. SPREAD empty bay still reads as the flank that left. ACCEPTED.",
+      "ba1Class": "PRESENTATION_SUFFICIENT",
+      "spreadObligation": "Empty shoulders must read as owned receiving locations, not maintenance cutouts.",
+      "driveObligation": "Folio seats proud as flank in that shoulder. Front lower/shorter; rear higher/larger.",
+      "futureArchitectureImplication": "Do not promote the C-socket into structure. Presentation already solved station ownership.",
+      "doNotTouch": "No eighth mass, no reach increase, no flush dock, no chine-wall window, no station humps.",
+      "tag": "ACCEPTED_PRESENTATION"
+    },
+    {
+      "row": "chine",
+      "physicalReality": "None. Chine is BODY-SHELL-03.1 faceted presentation shoulder at |x|=P.keel.halfWidth. Not the ventral keel.",
+      "currentPresentationClaim": "Long rising faceted hull side; quiet spine through stations after FO1 value split (hull vs accent frame).",
+      "ba1Class": "PRESENTATION_LANGUAGE_ONLY",
+      "spreadObligation": "May explain the long carrier; must not impersonate a fuselage that owns the deployed folios.",
+      "driveObligation": "May quiet the gap between packed folios; must not claim to be the side-body (folios are).",
+      "futureArchitectureImplication": "Do not freeze chine as structure, keepout, or volume. Removing BODY ON must leave a complete machine.",
+      "doNotTouch": "Do not thicken the chine into a fuselage. Do not confuse chine with VENTRAL_KEEL.",
+      "tag": "ACCEPTED_PRESENTATION"
+    },
+    {
+      "row": "keel",
+      "physicalReality": "VENTRAL_KEEL occupied structure, z∈[-4.95, 4.55], AABB minY 0.030 m. US1 carrier; KS1 ventral-face route candidate.",
+      "currentPresentationClaim": "Ventral hull / belly skins the bar into a faceted hull bottom.",
+      "ba1Class": "ALREADY_REAL_BODY_ARCHITECTURE",
+      "spreadObligation": "Chassis remains the centerline of the wide machine. No extra belly volume required.",
+      "driveObligation": "Same member. Presentation belly is optional explanation, not a new ground-contact claim (GE1 closed).",
+      "futureArchitectureImplication": "Keel is already the chassis. Routes may ride faces (SR1 is a separate later question). No fuselage needed to 'complete' it.",
+      "doNotTouch": "Do not hollow the keel. Do not delete GE1 minY structure. Do not treat presentation belly as authority.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "row": "dorsal member",
+      "physicalReality": "DORSAL_LONGERON occupied structure, ~0.24×0.15 m, keel nose to bay mouth. KEEP_DORSAL sits above. Truncated; not a full-length roof.",
+      "currentPresentationClaim": "Continuous dorsal deck from prow to stern split, with a centerline service slot over propulsion.",
+      "ba1Class": "ALREADY_REAL_BODY_ARCHITECTURE",
+      "spreadObligation": "Physical longeron is enough dorsal identity. Deck breadth is presentation.",
+      "driveObligation": "Same. Deck must not consume KEEP_DORSAL.",
+      "futureArchitectureImplication": "Do not promote deck skin into a structural roof or an interior ceiling. Longeron is the real dorsal member.",
+      "doNotTouch": "Do not occupy KEEP_DORSAL. Do not extend a structural deck over the can corridor.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "row": "mid-body",
+      "physicalReality": "Long carrier between P.fl (z=3.22) and bay mouth (z=-1.70): keel + longeron + BULKHEAD_Z1.15 + interstitial faces. US1: occupying as a room is UNKNOWN; no empty spine.",
+      "currentPresentationClaim": "Continuous chine hull / ventral / deck spanning the gap, reading as a conventional long body.",
+      "ba1Class": "INTENTIONALLY_EXPOSED",
+      "spreadObligation": "Sparse beam-with-stations is legitimate SPREAD identity. Do not equalize with DRIVE by adding hull.",
+      "driveObligation": "Packed folios are the side-body; the centerline may remain a visible carrier. 03.1 hull here is disguise, not completion.",
+      "futureArchitectureImplication": "Adding mass would invent an interior. Missing-fuselage is the wrong diagnosis. No promotion.",
+      "doNotTouch": "Do not fill the middle because it looks sparse. No eighth mass. No bulkhead cuts (KS1).",
+      "tag": "DERIVED_OBLIGATION"
+    },
+    {
+      "row": "prow/front reservation",
+      "physicalReality": "KEEP_COCKPIT protected box cz=3.55, hx=0.68, hy=0.95, hz=1.05. Unclaimed. Protects BULKHEAD_Z3.35. Keel nose at z=4.55. No front enclosure solids.",
+      "currentPresentationClaim": "Wedge prow occupying the reserved front volume; not a canopy or intake.",
+      "ba1Class": "INTENTIONALLY_UNASSIGNED",
+      "spreadObligation": "Do not read the wedge as a completed nose. Reservation stays protected and empty of profession.",
+      "driveObligation": "Same. Prow is a presentation terminator of the chine, not earned front architecture.",
+      "futureArchitectureImplication": "A front enclosure would be a new functional requirement plus occupancy study. Not BA1, not cockpit-by-default.",
+      "doNotTouch": "Do not assign cockpit/crew/payload/sensors. Do not shrink KEEP_COCKPIT. Do not promote BODY_PROW_*.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "row": "bay",
+      "physicalReality": "BAY_WALL_PORT/STBD, AFT_POST_*, BULKHEAD_Z-1.70, fixed core supports. z=-1.70…-4.80. Load path to ventral keel (DP1/S5).",
+      "currentPresentationClaim": "Aft chine and split dorsal deck open into the bay; collar frames the mouth further aft.",
+      "ba1Class": "ALREADY_REAL_BODY_ARCHITECTURE",
+      "spreadObligation": "Bay remains the real aft body volume (can stowed). Presentation must not close it.",
+      "driveObligation": "Bay remains visible around the translating can. Rear folio station sits just forward (P.rl.z=-1.88).",
+      "futureArchitectureImplication": "Bay is already physical architecture. Do not convert it into a closed engine room.",
+      "doNotTouch": "Do not hide bay walls or posts. Do not occupy the can corridor. Do not start S6.",
+      "tag": "FROZEN_FACT"
+    },
+    {
+      "row": "stern opening",
+      "physicalReality": "MUST_REMAIN_CLEAR open throat. Aft posts at z=-4.80. No physical terminal hull frame. US1: access only.",
+      "currentPresentationClaim": "Open stern collar (150 mm hoop at COLLAR_Z≈-5.98) frames the seated-can mouth. SO1: no presentation solution in stock DRIVE 3/4 / rear.",
+      "ba1Class": "INTENTIONALLY_EXPOSED",
+      "spreadObligation": "Same open stern. Not a DRIVE-only cap.",
+      "driveObligation": "Can may sit in/through the opening. Frame-owns-opening-not-can is doctrine only, not new geometry.",
+      "futureArchitectureImplication": "Strong hull-ownership of the stern is not a current requirement. A future physical terminal frame would need a new requirement, not another collar study.",
+      "doNotTouch": "Do not retry SO1. Do not promote SO1 throat. No nacelle, boat-tail, sleeve, closed stern, or camera cheat.",
+      "tag": "NEGATIVE_PRESENTATION"
+    },
+    {
+      "row": "can",
+      "physicalReality": "Hollow positive-thickness thrust can, 1.00×0.82×2.55 m, stroke 2.55 m, stowed z=-3.25, seated center z=-5.80 occupying ≈-7.08…-4.53. Not a complete engine.",
+      "currentPresentationClaim": "Visible through the open collar; PROP SECTION ghosts can and aft shell.",
+      "ba1Class": "INTENTIONALLY_EXPOSED",
+      "spreadObligation": "Stowed can remains inspectable in the bay/throat.",
+      "driveObligation": "Seated can is allowed to dominate the rear picture. That is handover identity, not a body defect.",
+      "futureArchitectureImplication": "Do not own the can with body. Do not follow the stroke with hull.",
+      "doNotTouch": "Do not change can stroke, color-as-engine, internals, intake, nozzle, or performance claims.",
+      "tag": "FROZEN_FACT"
+    }
+  ],
+  "configurationAudit": [
+    {
+      "row": "overall SPREAD",
+      "ba1Class": "INTENTIONALLY_EXPOSED",
+      "sparseRead": "acceptable identity of an exposed-carrier vehicle with four deployed folios",
+      "not": "unfinished fuselage, or unjudgeable until folio profession is known"
+    },
+    {
+      "row": "overall DRIVE",
+      "ba1Class": "PRESENTATION_SUFFICIENT",
+      "note": "FO1 makes packed folios readable as proud side-body. Remaining open stern and visible carrier are identity, not incomplete DRIVE. SO1 negative does not reopen DRIVE as unfinished."
+    }
+  ],
+  "regionsRequiringRealArchitectureForStrongOwnership": [],
+  "unknownRegions": []
+}

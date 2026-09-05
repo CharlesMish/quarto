@@ -2,7 +2,7 @@
 
 Quarto is a long, dual-envelope, open-stern machine built in Babylon.js so that transformation can be inspected rather than hidden. Four articulated folios (legacy/source: books) deploy outboard in SPREAD and return to proud sockets along the presentation shell's chine in DRIVE. The larger rear pair packs at a higher aft station, taking on the characteristic 70° haunch above the smaller forward pair. At the stern, a hollow thrust can translates around a fixed core into a visible receiver, capture, and lock handover.
 
-![Quarto in DRIVE with the accepted BODY-SHELL-03.1 presentation shell](explore/body-shell-03/evidence/body-shell-03-drive-three.png)
+![Quarto in DRIVE with BODY-SHELL-03.1 + accepted FO1 presentation refinement](explore/body-shell-03/evidence/fo1/after/fo1-after-drive-three.png)
 
 **QUARTO is the whole machine.** **MT1 is its engineering-development lineage.** The current frozen mechanism identifier remains **MT1-S5HR3R1**; existing MT1 slice names, registration IDs, source identifiers, reports, evidence, and hashes retain their original identities.
 
@@ -17,9 +17,13 @@ Quarto does not yet claim a vehicle profession. Nothing here establishes flight,
 | Frozen current mechanism | **MT1-S5HR3R1** |
 | Authority record | `GREEN_PENDING_DIRECTOR`; `FREEZE_CANDIDATE_PENDING_DIRECTOR` |
 | H1 presentation/director status | `AWAITING_DIRECTOR_DISPOSITION`; not self-passed |
-| Accepted presentation shell | **BODY-SHELL-03.1**, non-authoritative |
+| Accepted review skin lineage | **BODY-SHELL-03.1**, non-authoritative |
+| Accepted live presentation refinement | **FO1** |
+| BA1 body interpretation | **A — EXPOSED-CARRIER VEHICLE** (not authority) |
+| SO1 | Negative presentation result; ownership doctrine retained; geometry not promoted |
 | Accepted architecture-study chain | **VA1 → GE1 → US1 → KC1 → KS1** |
-| Next planned slice | **MT1-SR1**, generic service-route reservation / architecture; not begun |
+| Next intended slice | **None yet** — wait for a functional requirement that creates a new physical relationship |
+| SR1 | **Parked**, not invalidated |
 
 The concise handoff is [docs/CURRENT_STATE.md](docs/CURRENT_STATE.md). The mandatory vocabulary and operator contracts are [docs/NOMENCLATURE.md](docs/NOMENCLATURE.md) and [AGENTS.md](AGENTS.md).
 
@@ -74,11 +78,13 @@ The centerline propulsion study is deliberately legible. A fixed core remains mo
 
 The stern stays open so the can, receiver, capture, locks, and reverse release can be inspected. The can is not promoted into a complete engine, and the model makes no flow-rate, thrust, sealing, aero, or propulsion-performance claim.
 
-### 5. Accepted BODY-SHELL-03.1
+### 5. Accepted BODY-SHELL-03.1 and FO1
 
-BODY-SHELL-03.1 is a long, faceted, open-stern hull with a rising chine and four presentation C-sockets grown along that chine. In SPREAD the sockets read as owned receiving locations; in DRIVE the folios dock visibly proud rather than being buried flush. The stern collar continues to frame, not conceal, the propulsion handover.
+BODY-SHELL-03.1 is the presentation-language baseline: a long, faceted, open-stern hull with a rising chine and four C-sockets. **FO1** is the accepted live refinement. Ownership rule: chine → receiving shoulder → frozen root → folio. In SPREAD the empty shoulders still read as owned receiving locations; in DRIVE the folios dock visibly proud rather than being buried flush. The stern collar continues to frame, not conceal, the propulsion handover.
 
-The shell is presentation only. Its 101-sample triangle–OBB fit reports zero defects, but it does not participate in authority and creates no volume rights. The accepted live exploration is [explore/body-shell-03](explore/body-shell-03/); its preserved predecessor is [explore/body-shell-03/baseline-03](explore/body-shell-03/baseline-03/).
+The shell remains non-authoritative. Its 101-sample triangle–OBB fit reports zero defects, but it does not participate in authority and creates no volume rights. Do not treat package-root `explore/body-shell-03/evidence/body-shell-03-*.png` images as the current live appearance; those are BODY-SHELL-03.1 / pre-FO1 historical evidence. The current accepted live review image is [fo1-after-drive-three.png](explore/body-shell-03/evidence/fo1/after/fo1-after-drive-three.png). See the [package evidence index](explore/body-shell-03/evidence/README.md).
+
+The accepted live exploration is [explore/body-shell-03](explore/body-shell-03/); its preserved predecessor is [explore/body-shell-03/baseline-03](explore/body-shell-03/baseline-03/). FO1 record: [MT1_FO1_RESULTS.md](explore/body-shell-03/MT1_FO1_RESULTS.md).
 
 ### 6. Vehicle-architecture study chain
 
@@ -92,7 +98,15 @@ The shell is presentation only. Its 101-sample triangle–OBB fit reports zero d
 
 KS1 screens complete C/dogleg bypasses clear at `BULKHEAD_Z3.35`, `BULKHEAD_Z1.15`, and `BULKHEAD_Z-1.70`. The Z−1.70 station also has a clear local offset surface handoff for the truncated dorsal lane. No hollow longitudinal spine exists; the ventral keel is the service-carrier candidate. No sleeve or bulkhead cut is required. The bounded sleeve candidates remain documented backup architecture hypotheses only.
 
-The next intended slice is **MT1-SR1 — generic service-route reservation / architecture on the proven skeleton**. It has not started, and no utility profession is assigned.
+Post-KS1 closeout (not a new architecture chain, and not BODY-SHELL-04):
+
+| Slice | Result |
+| --- | --- |
+| **FO1** | **Accepted.** Presentation clarifies folio-station ownership. Rule: chine → receiving shoulder → frozen root → folio. [FO1 results](explore/body-shell-03/MT1_FO1_RESULTS.md). |
+| **SO1** | **Negative.** Doctrine retained: the frame owns the opening; it does not own the can. No bounded presentation solution under current frozen geometry. [PR #2](https://github.com/CharlesMish/quarto/pull/2) is archival/unmerged. Do not promote SO1 geometry. Do not retry SO1. [Negative record](explore/body-shell-03/MT1_SO1_NEGATIVE_RESULT.md). |
+| **BA1** | **Accepted A — EXPOSED-CARRIER VEHICLE.** Folios + carrier + bay/posts + exposed handover. BODY-SHELL-03.1 is explanatory presentation, not an unfinished fuselage. [BA1 results](explore/body-shell-03/MT1_BA1_RESULTS.md). |
+
+**Next intended slice: none yet** — wait for a functional requirement that creates a new physical relationship. **SR1 is parked, not invalidated.** KS1 routing topology remains valid evidence. Do not reserve a generic service corridor until a real functional requirement needs one.
 
 ## Hush Basin
 
@@ -191,7 +205,8 @@ docs/                               current-state and human nomenclature handoff
 Start with these records:
 
 - mechanism and H1: [MT1_S5HR3R1_AUTHORITY_REPORT.md](MT1_S5HR3R1_AUTHORITY_REPORT.md), [MT1_S5HR3R1_CLOSURE.md](MT1_S5HR3R1_CLOSURE.md), [MT1_S5HR3R1_H1_PRESENTATION_REPORT.md](MT1_S5HR3R1_H1_PRESENTATION_REPORT.md);
-- accepted shell: [BODY_SHELL_03_COMPLETION.md](explore/body-shell-03/BODY_SHELL_03_COMPLETION.md), [BODY_SHELL_03_1_POCKET_CORRECTION.md](explore/body-shell-03/BODY_SHELL_03_1_POCKET_CORRECTION.md);
+- accepted shell lineage: [BODY_SHELL_03_COMPLETION.md](explore/body-shell-03/BODY_SHELL_03_COMPLETION.md), [BODY_SHELL_03_1_POCKET_CORRECTION.md](explore/body-shell-03/BODY_SHELL_03_1_POCKET_CORRECTION.md), [package evidence index](explore/body-shell-03/evidence/README.md);
+- FO1 / SO1 / BA1: [FO1 results](explore/body-shell-03/MT1_FO1_RESULTS.md), [SO1 negative record](explore/body-shell-03/MT1_SO1_NEGATIVE_RESULT.md), [BA1 results](explore/body-shell-03/MT1_BA1_RESULTS.md);
 - architecture chain: [MT1_GE1_RESULTS.md](MT1_GE1_RESULTS.md), [MT1_US1_RESULTS.md](MT1_US1_RESULTS.md), [MT1_KC1_RESULTS.md](MT1_KC1_RESULTS.md), [MT1_KS1_RESULTS.md](MT1_KS1_RESULTS.md).
 
 Historical reports are design evidence. Their MT1, `book`, Mechanical Truth, District Zero, filenames, hashes, and identifiers remain intact.
