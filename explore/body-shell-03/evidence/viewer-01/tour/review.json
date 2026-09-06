@@ -1,0 +1,938 @@
+{
+  "sourceHashes": {
+    "src/presentation/palette.ts": "4842c2f84b2db322b81d2386f61c6e2dc38163653ad12a8df8530d171165d71e",
+    "src/presentation/viewerState.ts": "d77583a6877c5c18bc775f194f25ed38cb3b1b3465ab624c7902200ec25cf8af",
+    "src/presentation/fitCamera.ts": "25c060f4884504588e7c7b3ba3c1ea3194aa88189d723bf5fc64f5de050fbf27",
+    "src/scene/createScene.ts": "ec3724256a0af89181064718bbd239b5a937227f256ca2cd53e794dfd19c652e",
+    "src/ui/createUI.ts": "833c5646a8152445daef40c78d0fb6cdd33808774511733453c1acf17a0c26e2",
+    "src/style.css": "78f46abdf2f4cacb62defb2c78615497ddf7cf48e1b3a0e621dde652a2b01cbf"
+  },
+  "provenance": {
+    "build": {
+      "candidateId": "MT1-S5HR3R1",
+      "freezeId": "MT1-S5HR3R1",
+      "candidateSha256": "6df6ddd8086d12329e87b9695c8e309995b2e81c6e72eacea240215ca3a646a3",
+      "candidateSha256Scope": "MT1-S5HR3R1.zip authority candidate; dev tree adds presentation-only inspection plumbing",
+      "sourceCandidateId": "MT1-S5HR3R",
+      "sourceCandidateSha256": "072d936e4bef77c097b464f6aaf414feb630cafaba6a533f9dfbb9e5c4256018",
+      "authorityContractSha256": "e15885cc11777ad49f2b0b5ad2778facb64ee6f932b65bf36742a65afe451ba9",
+      "frozenNegativeControlContractSha256": "8b150937b002d7a054e098182d6453711c477f8eaeb1865c1663541dc135f70d",
+      "nominalGeometryAuthority": {
+        "id": "MT1-S5H",
+        "version": "frozen S5H mechanism geometry carried unchanged through HR3R1",
+        "parametersSha256": "8d713b182f94af2769bec0696fb10cfc94fce98d90e89a46a69aad68e805fc63"
+      },
+      "frozenS4aSha256": "95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8",
+      "inspectionSurface": "presentation-only-v1"
+    },
+    "state": {
+      "candidateId": "MT1-S5HR3R1",
+      "machineT": 0,
+      "driveT": 0,
+      "requestedDriveT": 0,
+      "mode": "MACHINE",
+      "preview": false,
+      "driveThrustReadyCached": false,
+      "certificate": {
+        "state": "STALE",
+        "present": false,
+        "valid": false,
+        "samples": null,
+        "pairsEvaluated": null
+      }
+    }
+  },
+  "cases": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "name": "handover",
+      "step": 4,
+      "expanded": false,
+      "observation": {
+        "camera": {
+          "alpha": -1.12,
+          "beta": 1.15,
+          "radius": 8.8,
+          "target": [
+            0,
+            1,
+            -4.3
+          ]
+        },
+        "canvas": {
+          "x": 0,
+          "y": 70,
+          "width": 1440,
+          "height": 712,
+          "bottom": 782,
+          "right": 1440
+        },
+        "card": {
+          "x": 18,
+          "y": 82,
+          "width": 330,
+          "height": 272.15625,
+          "bottom": 354.15625,
+          "right": 348
+        },
+        "controls": [
+          {
+            "id": "autoBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "reverseBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "bodyConceptBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "paletteSelect",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "fitBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Cameras",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Inspection",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Diagnostics",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Folio previews",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Details & help",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourPrevBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourNextBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          }
+        ],
+        "body": true,
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": 4,
+          "automatic": false,
+          "direction": 1,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.94,
+          "driveT": 0.49999999999999956,
+          "requestedDriveT": 0.49999999999999956,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "CURRENT",
+            "present": true,
+            "valid": true,
+            "samples": 2002,
+            "pairsEvaluated": 2981632
+          }
+        },
+        "detailsExpanded": "false",
+        "horizontalOverflow": false
+      },
+      "image": "tour-handover-1440.png"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "name": "seated",
+      "step": 5,
+      "expanded": false,
+      "observation": {
+        "camera": {
+          "alpha": -1.12,
+          "beta": 1.18,
+          "radius": 6.5,
+          "target": [
+            0,
+            0.9,
+            -5.5
+          ]
+        },
+        "canvas": {
+          "x": 0,
+          "y": 70,
+          "width": 1440,
+          "height": 712,
+          "bottom": 782,
+          "right": 1440
+        },
+        "card": {
+          "x": 18,
+          "y": 82,
+          "width": 330,
+          "height": 290.75,
+          "bottom": 372.75,
+          "right": 348
+        },
+        "controls": [
+          {
+            "id": "autoBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "reverseBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "bodyConceptBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "paletteSelect",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "fitBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Cameras",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Inspection",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Diagnostics",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Folio previews",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Details & help",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourPrevBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourNextBtn",
+            "disabled": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ],
+        "body": true,
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": 5,
+          "automatic": false,
+          "direction": 1,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 1,
+          "driveT": 1,
+          "requestedDriveT": 1,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": true,
+          "certificate": {
+            "state": "CURRENT",
+            "present": true,
+            "valid": true,
+            "samples": 2002,
+            "pairsEvaluated": 2981632
+          }
+        },
+        "detailsExpanded": "false",
+        "horizontalOverflow": false
+      },
+      "image": "tour-seated-1440.png"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "handover",
+      "step": 4,
+      "expanded": false,
+      "observation": {
+        "camera": {
+          "alpha": -1.12,
+          "beta": 1.15,
+          "radius": 9.240000000000002,
+          "target": [
+            0,
+            1,
+            -4.3
+          ]
+        },
+        "canvas": {
+          "x": 0,
+          "y": 171,
+          "width": 390,
+          "height": 455,
+          "bottom": 626,
+          "right": 390
+        },
+        "card": {
+          "x": 12,
+          "y": 47,
+          "width": 366,
+          "height": 116,
+          "bottom": 163,
+          "right": 378
+        },
+        "controls": [
+          {
+            "id": "autoBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "reverseBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "bodyConceptBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "paletteSelect",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "fitBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Cameras",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Inspection",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Diagnostics",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Folio previews",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Details & help",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourPrevBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourDetailsBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourNextBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          }
+        ],
+        "body": true,
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": 4,
+          "automatic": false,
+          "direction": 1,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.94,
+          "driveT": 0.49999999999999956,
+          "requestedDriveT": 0.49999999999999956,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "CURRENT",
+            "present": true,
+            "valid": true,
+            "samples": 2002,
+            "pairsEvaluated": 2981632
+          }
+        },
+        "detailsExpanded": "false",
+        "horizontalOverflow": false
+      },
+      "image": "tour-handover-390.png"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "handover",
+      "step": 4,
+      "expanded": true,
+      "observation": {
+        "camera": {
+          "alpha": -1.12,
+          "beta": 1.15,
+          "radius": 9.240000000000002,
+          "target": [
+            0,
+            1,
+            -4.3
+          ]
+        },
+        "canvas": {
+          "x": 0,
+          "y": 221,
+          "width": 390,
+          "height": 405,
+          "bottom": 626,
+          "right": 390
+        },
+        "card": {
+          "x": 12,
+          "y": 47,
+          "width": 366,
+          "height": 166,
+          "bottom": 213,
+          "right": 378
+        },
+        "controls": [
+          {
+            "id": "autoBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "reverseBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "bodyConceptBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "paletteSelect",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "fitBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Cameras",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Inspection",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Diagnostics",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Folio previews",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Details & help",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourPrevBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourDetailsBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourNextBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          }
+        ],
+        "body": true,
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": 4,
+          "automatic": false,
+          "direction": 1,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.94,
+          "driveT": 0.49999999999999956,
+          "requestedDriveT": 0.49999999999999956,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "CURRENT",
+            "present": true,
+            "valid": true,
+            "samples": 2002,
+            "pairsEvaluated": 2981632
+          }
+        },
+        "detailsExpanded": "true",
+        "horizontalOverflow": false
+      },
+      "image": "tour-handover-390-details.png"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "seated",
+      "step": 5,
+      "expanded": false,
+      "observation": {
+        "camera": {
+          "alpha": -1.12,
+          "beta": 1.18,
+          "radius": 6.5,
+          "target": [
+            0,
+            0.9,
+            -5.5
+          ]
+        },
+        "canvas": {
+          "x": 0,
+          "y": 171,
+          "width": 390,
+          "height": 455,
+          "bottom": 626,
+          "right": 390
+        },
+        "card": {
+          "x": 12,
+          "y": 47,
+          "width": 366,
+          "height": 116,
+          "bottom": 163,
+          "right": 378
+        },
+        "controls": [
+          {
+            "id": "autoBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "reverseBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "bodyConceptBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "paletteSelect",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "fitBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Cameras",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Inspection",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Diagnostics",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Folio previews",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Details & help",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourPrevBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourDetailsBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourNextBtn",
+            "disabled": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ],
+        "body": true,
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": 5,
+          "automatic": false,
+          "direction": 1,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 1,
+          "driveT": 1,
+          "requestedDriveT": 1,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": true,
+          "certificate": {
+            "state": "CURRENT",
+            "present": true,
+            "valid": true,
+            "samples": 2002,
+            "pairsEvaluated": 2981632
+          }
+        },
+        "detailsExpanded": "false",
+        "horizontalOverflow": false
+      },
+      "image": "tour-seated-390.png"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "seated",
+      "step": 5,
+      "expanded": true,
+      "observation": {
+        "camera": {
+          "alpha": -1.12,
+          "beta": 1.18,
+          "radius": 6.5,
+          "target": [
+            0,
+            0.9,
+            -5.5
+          ]
+        },
+        "canvas": {
+          "x": 0,
+          "y": 221,
+          "width": 390,
+          "height": 405,
+          "bottom": 626,
+          "right": 390
+        },
+        "card": {
+          "x": 12,
+          "y": 47,
+          "width": 366,
+          "height": 166,
+          "bottom": 213,
+          "right": 378
+        },
+        "controls": [
+          {
+            "id": "autoBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "reverseBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "bodyConceptBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "paletteSelect",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "fitBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Cameras",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Inspection",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Diagnostics",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Folio previews",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "Details & help",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourPrevBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourDetailsBtn",
+            "disabled": false,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "id": "tourNextBtn",
+            "disabled": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ],
+        "body": true,
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": 5,
+          "automatic": false,
+          "direction": 1,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 1,
+          "driveT": 1,
+          "requestedDriveT": 1,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": true,
+          "certificate": {
+            "state": "CURRENT",
+            "present": true,
+            "valid": true,
+            "samples": 2002,
+            "pairsEvaluated": 2981632
+          }
+        },
+        "detailsExpanded": "true",
+        "horizontalOverflow": false
+      },
+      "image": "tour-seated-390-details.png"
+    }
+  ],
+  "errors": [],
+  "authorityParticipation": "none",
+  "scope": "Actual integrated tour cameras and UI; no camera, lighting or visibility overrides."
+}

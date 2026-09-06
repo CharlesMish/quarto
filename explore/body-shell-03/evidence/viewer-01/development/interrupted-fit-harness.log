@@ -1,0 +1,13 @@
+
+> mt1-body-shell-03-exploration@0.1.0 test
+> playwright test tests/body-shell-03.spec.ts tests/viewer-readability.spec.ts --workers=1 --grep fit camera|inspect pick
+
+
+Running 2 tests using 1 worker
+
+(node:277092) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/2] tests/viewer-readability.spec.ts:360:1 › fit camera is presentation-only and keeps the inspected pose
+Terminated

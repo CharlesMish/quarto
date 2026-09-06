@@ -1,0 +1,47 @@
+
+> mt1-body-shell-03-exploration@0.1.0 test
+> playwright test tests/body-shell-03.spec.ts tests/viewer-readability.spec.ts --workers=1 --grep fit camera|inspect pick
+
+
+Running 2 tests using 1 worker
+
+(node:278022) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/2] tests/viewer-readability.spec.ts:360:1 › fit camera is presentation-only and keeps the inspected pose
+tests/viewer-readability.spec.ts:360:1 › fit camera is presentation-only and keeps the inspected pose
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0,"preset":"body","alpha":0.78,"beta":1.14,"radius":13.75098259674516,"extrema":[{"min":0.25641211205141157,"max":0.7416998103190584},{"min":0.2769305558112931,"max":0.9385965746830053},{"min":0.9992636990161284,"max":0.9997286576411952}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.461626350116916,"extrema":[{"min":0.24317027176101097,"max":0.7622805539287644},{"min":0.2896724189828863,"max":0.9385965084253304},{"min":0.9992283083342589,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.24,"preset":"body","alpha":0.78,"beta":1.14,"radius":12.639311890242528,"extrema":[{"min":0.32557699639950477,"max":0.7455462055304223},{"min":0.2897554956541688,"max":0.9385964746988932},{"min":0.999247947091028,"max":0.9997112044189871}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.24,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.461626350116916,"extrema":[{"min":0.33281436039018875,"max":0.7352604798112885},{"min":0.31247062089930466,"max":0.9385965084253304},{"min":0.9993163312243631,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.6,"preset":"body","alpha":0.78,"beta":1.14,"radius":12.639311890242528,"extrema":[{"min":0.3278971861504094,"max":0.7380708740216698},{"min":0.29013113290540987,"max":0.9385964746988932},{"min":0.9993698638618758,"max":0.9997112044189871}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.6,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.461626350116916,"extrema":[{"min":0.34634030761428536,"max":0.705054467520345},{"min":0.30375353298569907,"max":0.9385965084253304},{"min":0.9993967909164274,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":1,"preset":"body","alpha":0.78,"beta":1.14,"radius":12.639311890242528,"extrema":[{"min":0.3736662435656175,"max":0.7380708740216698},{"min":0.2969376058078836,"max":0.9385964746988932},{"min":0.9993698638618758,"max":0.9997112044189871}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":1,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.461626350116916,"extrema":[{"min":0.3889821929186046,"max":0.705054467520345},{"min":0.3089976741265966,"max":0.9385965084253304},{"min":0.9993967909164274,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0,"preset":"body","alpha":0.78,"beta":1.14,"radius":29.861646709412454,"extrema":[{"min":0.1379344071458367,"max":0.9385964806603011},{"min":0.3821851971755874,"max":0.6488414896454484},{"min":0.9997821098449496,"max":0.999855569620621}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0,"preset":"prop","alpha":0.92,"beta":1.16,"radius":30.362399492442815,"extrema":[{"min":0.119492804668432,"max":0.9385965043226747},{"min":0.3937952747409514,"max":0.6541718268458323},{"min":0.9997865728796393,"max":0.999859625014704}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.24,"preset":"body","alpha":0.78,"beta":1.14,"radius":26.607694709870728,"extrema":[{"min":0.21072963458729074,"max":0.9385964931408414},{"min":0.3893254626904976,"max":0.6700696560272977},{"min":0.9997578837543275,"max":0.9998404702077089}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.24,"preset":"prop","alpha":0.92,"beta":1.16,"radius":26.418279140301767,"extrema":[{"min":0.18906907048024774,"max":0.9385965043771453},{"min":0.39541201582680263,"max":0.6816644537559149},{"min":0.9997537315095355,"max":0.9998420189450136}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.6,"preset":"body","alpha":0.78,"beta":1.14,"radius":23.185106262572223,"extrema":[{"min":0.12452886640374736,"max":0.9385964797254689},{"min":0.37507737205399105,"max":0.7000851878099801},{"min":0.9997297891840113,"max":0.9998207814994252}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.6,"preset":"prop","alpha":0.92,"beta":1.16,"radius":21.503957409662902,"extrema":[{"min":0.10784677082756676,"max":0.9385964849554198},{"min":0.36812113308480815,"max":0.7335588077257772},{"min":0.9996941976059774,"max":0.9998128053107078}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":1,"preset":"body","alpha":0.78,"beta":1.14,"radius":23.185106262572223,"extrema":[{"min":0.19711719159391652,"max":0.9385964797254689},{"min":0.3801187601104469,"max":0.7000851878099801},{"min":0.9997297891840113,"max":0.9998207814994252}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":1,"preset":"prop","alpha":0.92,"beta":1.16,"radius":21.503957409662902,"extrema":[{"min":0.20941033570531487,"max":0.9385964849554198},{"min":0.3723338758967878,"max":0.7335588077257772},{"min":0.9996941976059774,"max":0.9998128053107078}]}
+
+[2/2] tests/viewer-readability.spec.ts:404:1 › inspect pick identifies the visible part after responsive canvas offsets
+  2 passed (54.4s)

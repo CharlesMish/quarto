@@ -1,0 +1,64 @@
+{
+  "provenance": {
+    "build": {
+      "candidateId": "MT1-S5HR3R1",
+      "freezeId": "MT1-S5HR3R1",
+      "candidateSha256": "6df6ddd8086d12329e87b9695c8e309995b2e81c6e72eacea240215ca3a646a3",
+      "candidateSha256Scope": "MT1-S5HR3R1.zip authority candidate; dev tree adds presentation-only inspection plumbing",
+      "sourceCandidateId": "MT1-S5HR3R",
+      "sourceCandidateSha256": "072d936e4bef77c097b464f6aaf414feb630cafaba6a533f9dfbb9e5c4256018",
+      "authorityContractSha256": "e15885cc11777ad49f2b0b5ad2778facb64ee6f932b65bf36742a65afe451ba9",
+      "frozenNegativeControlContractSha256": "8b150937b002d7a054e098182d6453711c477f8eaeb1865c1663541dc135f70d",
+      "nominalGeometryAuthority": {
+        "id": "MT1-S5H",
+        "version": "frozen S5H mechanism geometry carried unchanged through HR3R1",
+        "parametersSha256": "8d713b182f94af2769bec0696fb10cfc94fce98d90e89a46a69aad68e805fc63"
+      },
+      "frozenS4aSha256": "95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8",
+      "inspectionSurface": "presentation-only-v1"
+    },
+    "inspection": {
+      "candidateId": "MT1-S5HR3R1",
+      "machineT": 0,
+      "driveT": 0,
+      "requestedDriveT": 0,
+      "mode": "MACHINE",
+      "preview": false,
+      "driveThrustReadyCached": false,
+      "certificate": {
+        "state": "STALE",
+        "present": false,
+        "valid": false,
+        "samples": null,
+        "pairsEvaluated": null
+      }
+    }
+  },
+  "poses": [
+    {
+      "pose": "spread",
+      "t": 0,
+      "camera": "body",
+      "paletteInventoryAndInspectionUnchanged": true
+    },
+    {
+      "pose": "fold",
+      "t": 0.24,
+      "camera": "body",
+      "paletteInventoryAndInspectionUnchanged": true
+    },
+    {
+      "pose": "drive",
+      "t": 1,
+      "camera": "body",
+      "paletteInventoryAndInspectionUnchanged": true
+    },
+    {
+      "pose": "stern",
+      "t": 1,
+      "camera": "propSeated",
+      "paletteInventoryAndInspectionUnchanged": true
+    }
+  ],
+  "errors": []
+}

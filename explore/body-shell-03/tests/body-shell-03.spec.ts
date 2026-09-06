@@ -7,14 +7,18 @@ test("body shell 03 is separate, toggleable, and non-authoritative", async ({ pa
   });
   await page.goto("/");
   await page.waitForFunction(() => Boolean(window.__MT1?.getBodyConceptState));
-  await expect(page).toHaveTitle("MT1-BODY-SHELL-03 / NON-AUTHORITATIVE CONCEPT");
+  await expect(page).toHaveTitle("Quarto / Mechanism viewer");
+  await page.locator('[data-panel="details"]').click();
   await expect(page.locator(".eyebrow")).toContainText("MT1-BODY-SHELL-03 / NON-AUTHORITATIVE CONCEPT");
+  await page.locator('[data-panel="inspection"]').click();
   await expect(page.getByRole("button", { name: "BODY ON", exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "BODY SECTION", exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "PROP SECTION", exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "SECTION", exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "INSPECT PICK", exact: true })).toBeVisible();
+  await page.locator('[data-panel="cameras"]').click();
   await expect(page.getByRole("button", { name: "DRIVE 3/4", exact: true })).toBeVisible();
+  await page.locator('[data-panel="inspection"]').click();
 
   const before = await page.evaluate(() => window.__MT1!.getInspectionState());
   const inventory = await page.evaluate(() => window.__MT1!.getRenderInventory().filter((row) => row.semanticName.startsWith("BODY_")));
@@ -61,6 +65,14 @@ test("body shell 03 is separate, toggleable, and non-authoritative", async ({ pa
   expect(sectioned.section).toBe(true);
   expect(sectioned.stbdEnabled.every((on) => on === false)).toBe(true);
   expect(sectioned.portEnabled.every((on) => on === true)).toBe(true);
+  expect(await page.evaluate(() => window.__MT1!.getInspectionState())).toEqual(before);
+  await page.getByRole("button", { name: "PROP SECTION", exact: true }).click();
+  await expect(page.locator("#propSectionBtn")).toHaveAttribute("aria-pressed", "true");
+  expect(await page.evaluate(() => window.__MT1!.getInspectionState())).toEqual(before);
+  await page.getByRole("button", { name: "PROP SECTION", exact: true }).click();
+  await expect(page.locator("#propSectionBtn")).toHaveAttribute("aria-pressed", "false");
+  await page.getByRole("button", { name: "SECTION", exact: true }).click();
+  await expect(page.locator("#sectionBtn")).toHaveAttribute("aria-pressed", "true");
   expect(await page.evaluate(() => window.__MT1!.getInspectionState())).toEqual(before);
   expect(shaderErrors).toEqual([]);
 });

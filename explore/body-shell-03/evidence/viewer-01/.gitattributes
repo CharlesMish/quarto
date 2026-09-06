@@ -1,0 +1,2 @@
+# Preserve raw tool output, including its diagnostic line spacing.
+*.log -whitespace

@@ -8,6 +8,7 @@ declare global {
       getBuildInfo: () => Readonly<import("./buildInfo").Mt1BuildInfo>;
       getInspectionState: () => import("./buildInfo").Mt1InspectionState;
       getRenderInventory: () => import("./scene/directorInspection").DirectorRenderRow[];
+      presentation: import("./presentation/viewerState").PresentationHooks;
       setBodyConcept?: (on: boolean) => void;
       setBodySection?: (on: boolean) => void;
       getBodyConceptState?: () => {

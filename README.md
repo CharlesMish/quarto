@@ -10,6 +10,12 @@ Quarto does not yet claim a vehicle profession. Nothing here establishes flight,
 
 ## Current baseline
 
+The `feature/quarto-viewer-readability` branch adds a presentation candidate over
+the accepted shell: live Hush Basin/accepted palette comparison, compact controls,
+visible-vehicle framing and an optional mechanism tour. See
+[Quarto viewer 01](docs/QUARTO_VIEWER_01.md) for launch instructions, validation and
+boundaries. The accepted mechanism and architecture records below remain intact.
+
 | Item | Current record |
 | --- | --- |
 | Human-facing machine name | **Quarto** |
@@ -98,7 +104,7 @@ The next intended slice is **MT1-SR1 — generic service-route reservation / arc
 
 **Hush Basin** is the current name of the Godot sister project: the gameplay realization and semantic reference. **Quarto** is the detailed Babylon.js mechanism and vehicle-architecture exploration.
 
-They are not literal 1:1 geometry exports. Quarto may learn state and readability obligations from Hush Basin; Hush Basin may later inherit simplified mechanics and semantics from Quarto. Historical material that says “District Zero” remains archival evidence and is not rewritten. No external Hush Basin repository URL is asserted here because none is recorded locally.
+They are not literal 1:1 geometry exports. Quarto may learn state and readability obligations from Hush Basin; Hush Basin inherits simplified mechanics and semantics from Quarto through the [native vehicle candidate](https://github.com/CharlesMish/hush-basin/tree/feature/quarto-native-vehicle-v1), delivered at commit `0b0cc10`. Its native Godot validation remains a separate task. Historical material that says “District Zero” remains archival evidence and is not rewritten.
 
 ## Run and inspect
 

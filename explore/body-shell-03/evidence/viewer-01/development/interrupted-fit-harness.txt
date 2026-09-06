@@ -1,0 +1,8 @@
+Focused viewer run interrupted after about four minutes in the first Fit test.
+The harness constructed a Playwright assertion step for every coordinate of every
+projected mesh bounding-box corner; that synchronous assertion overhead delayed
+the normal timeout and prevented the INSPECT PICK case from starting.
+The original log is retained as quarto-viewer-shell-validation-focused.test.log.
+The next run computes extrema over every projected corner and checks the same
+bounds with a fixed number of assertions, while adding poses .24 and .60 and
+both body/prop camera presets. No bounds tolerance is relaxed.
