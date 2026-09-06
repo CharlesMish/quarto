@@ -22,3 +22,6 @@ playwright-report/
 # Local handoff/snapshot bundles duplicate material preserved in the tree.
 /*.zip
 /explore/*.zip
+
+# Wrangler local state (never commit auth/cache)
+.wrangler/
