@@ -19,6 +19,7 @@ declare global {
         propGhostMeshes: string[];
         masses: string[];
         conceptId: string;
+        surfaceRevision: "BODY-SHELL-03.2";
       };
       runBodyShellFit?: () => import("./verify/bodyShellFit").BodyShellFitReport;
       runVb1Study?: (opts?: import("./study/vb1/runStudy").Vb1StudyOptions) => Record<string, unknown>;

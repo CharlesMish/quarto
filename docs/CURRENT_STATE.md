@@ -2,9 +2,11 @@
 
 Fast handoff for the accepted repository baseline through KS1.
 
-The current task branch adds [Quarto viewer 01](QUARTO_VIEWER_01.md), a presentation
-candidate for the existing BODY-SHELL-03.1 viewer. It does not change the accepted
-mechanism, shell geometry, architecture chain or dispositions recorded below.
+The current task branch carries [Quarto viewer 01](QUARTO_VIEWER_01.md) forward
+with the [BODY-SHELL-03.2 surface candidate](QUARTO_BODY_SURFACE_01.md): opaque
+normal presentation, corrected panel surfaces and repaired body seams.
+The accepted mechanism, BODY-SHELL-03.1 record, architecture chain and
+dispositions below remain unchanged.
 
 ## Identity and freeze
 

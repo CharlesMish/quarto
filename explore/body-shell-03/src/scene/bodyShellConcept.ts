@@ -6,7 +6,8 @@ import type { Material } from "@babylonjs/core/Materials/material";
 import type { Scene } from "@babylonjs/core/scene";
 import { P } from "../design/parameters";
 import { BODY_CONCEPT_INFO } from "../bodyConceptInfo";
-import { extrudeXZ, extrudeYZ, facetStrip, trap, wedge, type V3t } from "./primitives";
+import { extrudeXZ, extrudeYZ, trap, type V3t } from "./primitives";
+import { bodyClosedLoft, bodyPyramid, finishBodySurface } from "./bodyShellGeometry";
 
 export const BODY_GUTTER = 0.1;
 
@@ -29,6 +30,12 @@ const SLOT_X = 0.36;
 const BELLY_Y0 = 0.08;
 const BELLY_Y1 = 0.2;
 const PROW_Z = P.keel.zFwd + 0.48;
+const BELLY_TAPER_Z = 4.15;
+const PROW_TIP_X = 0.44;
+const PROW_UPPER_X = 0.38;
+const PROW_BEVEL = 0.04;
+const FLANGE_START_Z = BELLY_TAPER_Z + WALL_T / (CHINE_X - PROW_TIP_X) * (PROW_Z - BELLY_TAPER_Z);
+const FRONT_RETURN_Z = PROW_Z - 2 * PROW_BEVEL;
 const COLLAR_Z = P.drive.stowedZ - P.drive.stroke - 0.18;
 const BAY_Z = P.bay.zFwd;
 const HANDS = [-1, 1] as const;
@@ -53,6 +60,7 @@ function markConcept(node: TransformNode, purpose: string, mass: string): void {
     authorityStage: "body-shell exploration",
     family: "body-shell-concept",
     conceptId: BODY_CONCEPT_INFO.conceptId,
+    surfaceRevision: BODY_CONCEPT_INFO.surfaceRevision,
     mass,
     purpose,
   };
@@ -84,6 +92,36 @@ function gunwaleY(z: number): number {
   return 1.7;
 }
 
+/** One continuous chine boundary, including only the local forebody returns. */
+function forwardChineRows(hand: number): V3t[][] {
+  const xOut = hand * CHINE_X;
+  const xIn = hand * (CHINE_X - WALL_T);
+  const rows: V3t[][] = [[
+    [hand * PROW_TIP_X, BELLY_Y0 + 0.04, PROW_Z],
+    [xOut, BELLY_Y0 + 0.04, PROW_Z],
+    [xOut, gunwaleY(PROW_Z), PROW_Z],
+    [hand * PROW_UPPER_X, gunwaleY(PROW_Z - PROW_BEVEL), PROW_Z - PROW_BEVEL],
+    [hand * PROW_TIP_X, BELLY_Y1, PROW_Z],
+    [hand * PROW_TIP_X, BELLY_Y1, PROW_Z],
+  ]];
+  for (const z of [FRONT_RETURN_Z, FLANGE_START_Z, BELLY_TAPER_Z, P.fl.z, 0.55, BAY_Z]) {
+    const floorY = BELLY_Y0 + Math.max(0, (z - P.fl.z) / (PROW_Z - P.fl.z)) * 0.04;
+    const bellyX = CHINE_X - (CHINE_X - PROW_TIP_X) * (z - BELLY_TAPER_Z) / (PROW_Z - BELLY_TAPER_Z);
+    // Use the exact common corner at the flange start, rather than leaving a
+    // floating-point sliver between the vertical wall and the new return.
+    const xBottom = z <= FLANGE_START_Z ? xIn : hand * bellyX;
+    rows.push([
+      [xBottom, floorY, z],
+      [xOut, floorY, z],
+      [xOut, gunwaleY(z), z],
+      [xIn, gunwaleY(z), z],
+      [xIn, BELLY_Y1, z],
+      [xBottom, BELLY_Y1, z],
+    ]);
+  }
+  return rows;
+}
+
 export function createBodyShellConcept(scene: Scene): BodyShellConcept {
   const root = new TransformNode("BODY_SHELL_03_PRESENTATION_ROOT", scene);
   markConcept(root, "Toggleable non-authoritative open-stern chine hull.", "root");
@@ -92,27 +130,30 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
   hull.diffuseColor = new Color3(0.16, 0.21, 0.24);
   hull.emissiveColor = new Color3(0.01, 0.02, 0.025);
   hull.specularColor = new Color3(0.07, 0.1, 0.11);
-  hull.alpha = 0.88;
-  hull.transparencyMode = StandardMaterial.MATERIAL_ALPHABLEND;
-  hull.backFaceCulling = false;
+  hull.alpha = 1;
+  // Automatic classification keeps normal BODY opaque while explicit PROP
+  // SECTION can still ghost selected meshes through their visibility value.
+  hull.transparencyMode = null;
+  hull.backFaceCulling = true;
 
   const accent = hull.clone("matBodyShell03Accent");
   accent.diffuseColor = new Color3(0.42, 0.32, 0.14);
   accent.emissiveColor = new Color3(0.05, 0.025, 0.005);
-  accent.alpha = 0.92;
+  accent.alpha = 1;
 
   const pocket = hull.clone("matBodyShell03Pocket");
   pocket.diffuseColor = new Color3(0.26, 0.25, 0.22);
   pocket.emissiveColor = new Color3(0.018, 0.014, 0.01);
   pocket.specularColor = new Color3(0.1, 0.09, 0.07);
-  pocket.alpha = 0.9;
+  pocket.alpha = 1;
 
   const created: Mesh[] = [];
   const meshes: string[] = [];
   const propGhostMeshes: string[] = [];
   const sectionMeshes: string[] = [];
 
-  const add = (mesh: Mesh, kind: Kind, mass: string, purpose: string, ghost = false): void => {
+  const add = (mesh: Mesh, kind: Kind, mass: string, purpose: string, ghost = false, reverseWinding = false): void => {
+    finishBodySurface(mesh, reverseWinding);
     mesh.material = kind === "accent" ? accent : kind === "pocket" ? pocket : hull;
     markConcept(mesh, purpose, mass);
     created.push(mesh);
@@ -127,7 +168,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
     const xOut = hand * CHINE_X;
     const xIn = hand * (CHINE_X - WALL_T);
     const xSlot = hand * SLOT_X;
-    const xProwTip = hand * 0.44;
+    const xProwTip = hand * PROW_TIP_X;
 
     add(
       extrudeXZ(
@@ -138,7 +179,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
         [
           [0, COLLAR_Z],
           [xOut, COLLAR_Z],
-          [xOut, 4.15],
+          [xOut, BELLY_TAPER_Z],
           [xProwTip, PROW_Z],
           [0, PROW_Z],
         ],
@@ -148,29 +189,29 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
       "hull",
       "ventral hull",
       "Ventral hull / belly in the same faceted language as the chine, tapering at the prow.",
+      false,
+      hand < 0,
     );
 
+    const forwardChine = bodyClosedLoft(scene, sideName("CHINE_FWD", hand), root, accent, forwardChineRows(hand), 1);
+    forwardChine.metadata = {
+      ...(forwardChine.metadata ?? {}),
+      forebodyJoin: {
+        bellyTaperStartZ: BELLY_TAPER_Z,
+        flangeStartZ: FLANGE_START_Z,
+        returnStartZ: FRONT_RETURN_Z,
+        upperNoseZ: PROW_Z - PROW_BEVEL,
+        lowerNoseZ: PROW_Z,
+        bellyContactY: BELLY_Y1,
+      },
+    };
     add(
-      extrudeYZ(
-        scene,
-        sideName("CHINE_FWD", hand),
-        root,
-        accent,
-        [
-          [BELLY_Y0, BAY_Z],
-          [BELLY_Y0, P.fl.z],
-          [BELLY_Y0 + 0.04, PROW_Z],
-          [1.34, PROW_Z],
-          [1.7, P.fl.z],
-          [1.9, 0.55],
-          [bayY, BAY_Z],
-        ],
-        xOut,
-        xIn,
-      ),
+      forwardChine,
       "accent",
       "chine walls",
-      "Forward chine / gunwale from the wedge prow through the lower front book station to the bay mouth.",
+      "Forward chine with bounded belly and nose returns joining the prow to the deck; the side cavity remains open aft of the return.",
+      false,
+      hand < 0,
     );
 
     add(
@@ -201,54 +242,59 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
     const zFwdDeck = [PROW_Z, 4.2, P.fl.z, 0.55, BAY_Z];
     const zAftDeck = [BAY_Z, P.rl.z, -3.45, COLLAR_Z];
     for (const z of zFwdDeck) {
-      const y = gunwaleY(z) + 0.02;
+      const y = gunwaleY(z);
       deckFwd.push([
         [0, y, z],
         [xOut, y, z],
-        [xOut, y + 0.12, z],
-        [0, y + 0.12, z],
+        [xOut, y + 0.14, z],
+        [0, y + 0.14, z],
       ]);
     }
     for (const z of zAftDeck) {
-      const y = gunwaleY(z) + 0.02;
+      const y = gunwaleY(z);
       deckAft.push([
         [xSlot, y, z],
         [xOut, y, z],
-        [xOut, y + 0.12, z],
-        [xSlot, y + 0.12, z],
+        [xOut, y + 0.14, z],
+        [xSlot, y + 0.14, z],
       ]);
     }
     add(
-      facetStrip(scene, sideName("DORSAL_DECK_FWD", hand), root, hull, deckFwd),
+      bodyClosedLoft(scene, sideName("DORSAL_DECK_FWD", hand), root, hull, deckFwd),
       "hull",
       "dorsal deck",
       "Dorsal deck from prow to bay mouth; one continuous top surface with the chine.",
+      false,
+      hand < 0,
     );
     add(
-      facetStrip(scene, sideName("DORSAL_DECK_AFT", hand), root, hull, deckAft),
+      bodyClosedLoft(scene, sideName("DORSAL_DECK_AFT", hand), root, hull, deckAft),
       "hull",
       "dorsal deck",
       "Split dorsal shoulder over propulsion, leaving a centerline service opening.",
       true,
+      hand < 0,
     );
 
     const prowAft: [V3t, V3t, V3t, V3t] = [
       [0, BELLY_Y1, P.keel.zFwd],
       [xOut, BELLY_Y1, P.keel.zFwd],
       [xOut, gunwaleY(P.keel.zFwd), P.keel.zFwd],
-      [0, gunwaleY(P.keel.zFwd) - 0.06, P.keel.zFwd],
+      [0, gunwaleY(P.keel.zFwd), P.keel.zFwd],
     ];
     const prowFwd: [V3t, V3t, V3t, V3t] = [
-      [0, BELLY_Y1 + 0.04, PROW_Z],
-      [xProwTip, BELLY_Y1 + 0.04, PROW_Z],
-      [hand * 0.38, 1.28, PROW_Z - 0.04],
-      [0, 1.26, PROW_Z - 0.04],
+      [0, BELLY_Y1, PROW_Z],
+      [xProwTip, BELLY_Y1, PROW_Z],
+      [hand * PROW_UPPER_X, gunwaleY(PROW_Z - PROW_BEVEL), PROW_Z - PROW_BEVEL],
+      [0, gunwaleY(PROW_Z - PROW_BEVEL), PROW_Z - PROW_BEVEL],
     ];
     add(
       trap(scene, sideName("PROW", hand), root, hull, prowAft, prowFwd),
       "hull",
       "wedge prow",
       "Wedge prow occupying the reserved front volume; not a canopy or intake.",
+      false,
+      hand < 0,
     );
 
     addPocket(
@@ -323,6 +369,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
       "open stern collar",
       "Open stern collar lintel above the can; propulsion handover stays visible below.",
       true,
+      hand < 0,
     );
     add(
       extrudeXZ(
@@ -343,6 +390,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
       "open stern collar",
       "Open stern collar sill joining the ventral hull to the propulsion frame.",
       true,
+      hand < 0,
     );
   }
 
@@ -386,7 +434,7 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
 function addPocket(
   scene: Scene,
   root: TransformNode,
-  add: (mesh: Mesh, kind: Kind, mass: string, purpose: string, ghost?: boolean) => void,
+  add: (mesh: Mesh, kind: Kind, mass: string, purpose: string, ghost?: boolean, reverseWinding?: boolean) => void,
   lining: Material,
   hand: number,
   stem: "FWD" | "AFT",
@@ -483,7 +531,7 @@ function addPocket(
   );
   const webHalf = Math.min(0.14, (fwdExtent + aftExtent) * 0.22);
   add(
-    wedge(
+    bodyPyramid(
       scene,
       sideName(`${stem}_WEB`, hand),
       root,
@@ -491,16 +539,15 @@ function addPocket(
       [
         [xChine, yTop, z - webHalf],
         [xFace, yTop, z - webHalf],
-        [xFace * 0.55 + xChine * 0.45, hingeY - 0.03, z],
-      ],
-      [
-        [xChine, yTop, z + webHalf],
         [xFace, yTop, z + webHalf],
-        [xFace * 0.55 + xChine * 0.45, hingeY - 0.03, z],
+        [xChine, yTop, z + webHalf],
       ],
+      [xFace * 0.55 + xChine * 0.45, hingeY - 0.03, z],
     ),
     "pocket",
     mass,
     `${purpose} Short wedge web to the frozen hinge; does not replace certified structure.`,
+    false,
+    hand < 0,
   );
 }

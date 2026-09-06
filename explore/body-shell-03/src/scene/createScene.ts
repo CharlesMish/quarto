@@ -448,6 +448,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
       propGhostMeshes: [...bodyConcept.propGhostMeshes],
       masses: [...bodyConcept.masses],
       conceptId: BODY_CONCEPT_INFO.conceptId,
+      surfaceRevision: BODY_CONCEPT_INFO.surfaceRevision,
     }),
     runBodyShellFit: () => runBodyShellFit(
       rig,

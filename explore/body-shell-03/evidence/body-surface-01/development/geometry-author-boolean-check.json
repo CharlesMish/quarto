@@ -1,0 +1,379 @@
+BJS - [03:17:42]: Babylon.js v8.56.2 - Null engine
+{
+  "meshCount": 38,
+  "errors": [],
+  "ghostErrors": [
+    "BODY_VENTRAL_HULL_PORT_VIS",
+    "BODY_CHINE_FWD_PORT_VIS",
+    "BODY_DORSAL_DECK_FWD_PORT_VIS",
+    "BODY_PROW_PORT_VIS",
+    "BODY_FWD_LIP_FWD_PORT_VIS",
+    "BODY_FWD_LIP_AFT_PORT_VIS",
+    "BODY_FWD_FACE_PORT_VIS",
+    "BODY_FWD_SILL_PORT_VIS",
+    "BODY_FWD_WEB_PORT_VIS",
+    "BODY_AFT_LIP_FWD_PORT_VIS",
+    "BODY_AFT_LIP_AFT_PORT_VIS",
+    "BODY_AFT_FACE_PORT_VIS",
+    "BODY_AFT_SILL_PORT_VIS",
+    "BODY_AFT_WEB_PORT_VIS",
+    "BODY_VENTRAL_HULL_STBD_VIS",
+    "BODY_CHINE_FWD_STBD_VIS",
+    "BODY_DORSAL_DECK_FWD_STBD_VIS",
+    "BODY_PROW_STBD_VIS",
+    "BODY_FWD_LIP_FWD_STBD_VIS",
+    "BODY_FWD_LIP_AFT_STBD_VIS",
+    "BODY_FWD_FACE_STBD_VIS",
+    "BODY_FWD_SILL_STBD_VIS",
+    "BODY_FWD_WEB_STBD_VIS",
+    "BODY_AFT_LIP_FWD_STBD_VIS",
+    "BODY_AFT_LIP_AFT_STBD_VIS",
+    "BODY_AFT_FACE_STBD_VIS",
+    "BODY_AFT_SILL_STBD_VIS",
+    "BODY_AFT_WEB_STBD_VIS"
+  ],
+  "report": [
+    {
+      "name": "BODY_VENTRAL_HULL_PORT_VIS",
+      "triangles": 16,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.9745320570693022,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_CHINE_FWD_PORT_VIS",
+      "triangles": 68,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -1.6247574401913714,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_CHINE_AFT_PORT_VIS",
+      "triangles": 20,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.9388072331191532,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "triangles": 36,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.7066500554144381,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "triangles": 28,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.23368798830413645,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_PROW_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.31451317207251667,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.010304026476862961,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.010303991381643871,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_FWD_FACE_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.02818797986412496,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_FWD_SILL_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.0012600023794179418,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_FWD_WEB_PORT_VIS",
+      "triangles": 6,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.0005940009112356322,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.017863986608501865,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.01786398660850194,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_AFT_FACE_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.07326000669479198,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_AFT_SILL_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.0015399998855579532,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_AFT_WEB_PORT_VIS",
+      "triangles": 6,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.0011483988501548945,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_COLLAR_SIDE_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.023100013452767326,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.011250009834768093,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_COLLAR_SILL_PORT_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.009000003844498394,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_VENTRAL_HULL_STBD_VIS",
+      "triangles": 16,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.9745320570693022,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_CHINE_FWD_STBD_VIS",
+      "triangles": 68,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -1.6247574401913714,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_CHINE_AFT_STBD_VIS",
+      "triangles": 20,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.9388072331191532,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "triangles": 36,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.7066500554144381,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "triangles": 28,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.23368798830413645,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_PROW_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.31451317207251667,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.010304026476862961,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.010303991381643871,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_FWD_FACE_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.02818797986412496,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_FWD_SILL_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.001260002379417942,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_FWD_WEB_STBD_VIS",
+      "triangles": 6,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.0005940009112356322,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.017863986608501865,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.017863986608501928,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_AFT_FACE_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.07326000669479198,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_AFT_SILL_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.0015399998855579532,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_AFT_WEB_STBD_VIS",
+      "triangles": 6,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.0011483988501548945,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_COLLAR_SIDE_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.023100013452767326,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.011250009834768093,
+      "alpha": 1
+    },
+    {
+      "name": "BODY_COLLAR_SILL_STBD_VIS",
+      "triangles": 12,
+      "degenerate": 0,
+      "badNormals": 0,
+      "badEdges": 0,
+      "volume": -0.009000003844498394,
+      "alpha": 1
+    }
+  ]
+}

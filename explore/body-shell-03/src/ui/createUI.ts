@@ -111,7 +111,7 @@ export function createUI(root: HTMLElement, actions: UIActions): PresentationUI 
       <label class="preview-label" for="slider">Rear folios · preview</label><input id="slider" type="range" min="0" max="1" value="0" step="0.001" />`;
     return `<p class="panel-note">Orbit by dragging, pan with a right-drag and zoom with the wheel. Use FIT to frame the whole machine. Playback takes 12 seconds between endpoints.</p>
       <p class="help">SPACE play/pause · R reset camera · D debug · S section · B body · 1–9 machine poses · ESC close a panel</p>
-      <h3>Presentation and provenance</h3><p>BODY ON shows the accepted BODY-SHELL-03.1 presentation shell. BODY OFF exposes the frozen inspectable mechanism. The Hush Basin palette is a presentation study; it changes no mechanism or authority.</p>
+      <h3>Presentation and provenance</h3><p>BODY ON shows the solid ${BODY_CONCEPT_INFO.surfaceRevision} surface refinement over the accepted BODY-SHELL-03.1 shell. BODY SECTION opens one side; PROP SECTION ghosts the aft shell for inspection. BODY OFF exposes the frozen inspectable mechanism. Both color palettes use the same repaired shell.</p>
       <p class="eyebrow">${BODY_CONCEPT_INFO.conceptId} / ${BODY_CONCEPT_INFO.status}</p><p class="provenance">SOURCE ${MT1_BUILD_INFO.candidateId} · ARCHIVE ${MT1_BUILD_INFO.candidateSha256.slice(0, 12)}… · ${BODY_CONCEPT_INFO.scope}</p>
       <p class="panel-note">H1 remains awaiting director disposition. Hush Basin is the Godot gameplay realization, with its own simplified native vehicle.</p>`;
   }

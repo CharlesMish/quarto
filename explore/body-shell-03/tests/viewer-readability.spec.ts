@@ -61,17 +61,23 @@ async function cameraObservation(page: Page) {
   }, await viewerModuleUrls(page));
 }
 
-test("readability changes leave the frozen mechanism and shell geometry byte-identical", () => {
+test("body surface refinement preserves the frozen mechanism, shared primitives and shaders", () => {
   const root = resolve(process.cwd(), "../..");
   const acceptedBaseline = "9321de4";
   const frozen = [
     "src",
+    "tests",
+    "package.json",
+    "package-lock.json",
+    "playwright.config.ts",
     "explore/body-shell-03/src/design",
     "explore/body-shell-03/src/machine",
     "explore/body-shell-03/src/math",
     "explore/body-shell-03/src/verify",
     "explore/body-shell-03/src/scene/h1Presentation.ts",
-    "explore/body-shell-03/src/scene/bodyShellConcept.ts",
+    // BODY-SHELL-03.2 reopens only body geometry and body-only helpers. The
+    // shared constructors used by the frozen mechanism remain byte-identical.
+    "explore/body-shell-03/src/scene/primitives.ts",
     "explore/body-shell-03/src/scene/materials.ts",
   ];
   const changed = execFileSync("git", ["diff", "--name-only", acceptedBaseline, "--", ...frozen], { cwd: root, encoding: "utf8" }).trim();

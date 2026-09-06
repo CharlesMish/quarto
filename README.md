@@ -10,11 +10,12 @@ Quarto does not yet claim a vehicle profession. Nothing here establishes flight,
 
 ## Current baseline
 
-The `feature/quarto-viewer-readability` branch adds a presentation candidate over
-the accepted shell: live Hush Basin/accepted palette comparison, compact controls,
-visible-vehicle framing and an optional mechanism tour. See
-[Quarto viewer 01](docs/QUARTO_VIEWER_01.md) for launch instructions, validation and
-boundaries. The accepted mechanism and architecture records below remain intact.
+The `feature/quarto-body-surface-refinement` branch carries the
+[Quarto viewer 01](docs/QUARTO_VIEWER_01.md) controls and palette comparison forward
+with the **BODY-SHELL-03.2** solid-body surface candidate. See the
+[body refinement handoff](docs/QUARTO_BODY_SURFACE_01.md) for repaired panels,
+inspection behavior and validation. The accepted mechanism, BODY-SHELL-03.1
+record and architecture dispositions below remain intact.
 
 | Item | Current record |
 | --- | --- |

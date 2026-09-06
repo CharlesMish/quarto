@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { writeFileSync } from "node:fs";
 
 test("body shell 03 is separate, toggleable, and non-authoritative", async ({ page }) => {
   const shaderErrors: string[] = [];
@@ -28,6 +29,7 @@ test("body shell 03 is separate, toggleable, and non-authoritative", async ({ pa
 
   const state = await page.evaluate(() => window.__MT1!.getBodyConceptState?.());
   expect(state?.conceptId).toBe("MT1-BODY-SHELL-03");
+  expect(state?.surfaceRevision).toBe("BODY-SHELL-03.2");
   expect(state?.enabled).toBe(true);
   expect(state?.section).toBe(false);
   expect(state?.masses).toEqual([
@@ -77,16 +79,19 @@ test("body shell 03 is separate, toggleable, and non-authoritative", async ({ pa
   expect(shaderErrors).toEqual([]);
 });
 
-test("body shell 03 presentation-fit does not participate in authority", async ({ page }) => {
+test("body shell 03 presentation-fit does not participate in authority", async ({ page }, testInfo) => {
   test.setTimeout(180_000);
   await page.goto("/");
   await page.waitForFunction(() => Boolean(window.__MT1?.runBodyShellFit));
   const before = await page.evaluate(() => window.__MT1!.getInspectionState());
   const report = await page.evaluate(() => window.__MT1!.runBodyShellFit?.());
+  const reportPath = testInfo.outputPath("body-shell-03.2-fit-report.json");
+  writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`, { flag: "wx" });
+  await testInfo.attach("body-shell-03.2-fit-report", { path: reportPath, contentType: "application/json" });
   expect(report?.kind).toBe("presentation-fit");
   expect(report?.participatesInAuthority).toBe(false);
   expect(report?.method).toBe("triangle-obb");
-  expect(report?.samples).toBeGreaterThanOrEqual(100);
+  expect(report?.samples).toBe(101);
   if (report && report.defects.length) {
     const summary = report.defects
       .slice(0, 40)
