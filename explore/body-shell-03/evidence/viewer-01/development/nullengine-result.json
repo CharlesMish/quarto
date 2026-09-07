@@ -1,0 +1,17 @@
+{
+  "pass": true,
+  "checks": [
+    "Hush Basin default with no mesh additions",
+    "Shared source and role reuse one clone",
+    "Original colors and presentation properties remain unchanged",
+    "Clones retain transparency, culling and opposite H1 depth bias",
+    "Diagnostic materials remain original",
+    "Core, receiver and joint roles cannot recolor one another",
+    "Direct, reverse and repeated scalar posing agree",
+    "Nonfinite values are ignored and finite values clamp",
+    "A hundred palette/scalar toggles allocate no new materials",
+    "Accepted mode restores exact original object identities",
+    "Disposal restores originals and releases only owned clones"
+  ],
+  "authorityParticipation": "none"
+}

@@ -1,0 +1,10 @@
+
+Running 2 tests using 1 worker
+
+(node:638975) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/2] tests/mt1-ba1.spec.ts:39:1 › MT1-BA1 decision map is complete, non-authoritative, and does not start a body slice
+[2/2] tests/mt1-ba1.spec.ts:111:1 › handoff docs record FO1 live hero, park SR1, and keep the SO1 negative note
+  2 passed (847ms)

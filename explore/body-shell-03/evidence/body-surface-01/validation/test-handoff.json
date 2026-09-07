@@ -1,0 +1,139 @@
+{
+  "kind": "body-surface-test-handoff",
+  "authorityParticipation": "none",
+  "changedFiles": [
+    "explore/body-shell-03/package.json",
+    "explore/body-shell-03/tests/body-shell-03.spec.ts",
+    "explore/body-shell-03/tests/body-surface.spec.ts",
+    "explore/body-shell-03/tests/viewer-readability.spec.ts",
+    "explore/body-shell-03/tools/verify-body-surface.mjs"
+  ],
+  "fileSha256": {
+    "explore/body-shell-03/package.json": "c6fd5d7f08d360247176c89f09ab147be8cd77a629d2244f6054de01913a0d2a",
+    "explore/body-shell-03/tests/body-shell-03.spec.ts": "3f2ca6bde3a83f7e20a4c9987762dc899c180f6938c266921146fc9b4fbe8fcc",
+    "explore/body-shell-03/tests/body-surface.spec.ts": "48375ee6b5931c1155ba95d67247f425cb1583e6e0c0025b22a64eaf3e3f855a",
+    "explore/body-shell-03/tests/viewer-readability.spec.ts": "6bf306d31b4d2ceec8b8baa7f54843d676687254dc48516dec5cc05a706cdd22",
+    "explore/body-shell-03/tools/verify-body-surface.mjs": "e96eb8ba6006fbfd56060aac19aaa9904e4fb8ba306ce8e12a8c82934811c5e0"
+  },
+  "builds": [
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "log": "/tmp/quarto-body-surface-build-root.log"
+    },
+    {
+      "command": "npm --prefix explore/body-shell-03 run build",
+      "exitCode": 0,
+      "owner": "viewer_next_review",
+      "log": "/tmp/quarto-body-surface-shell-build.log"
+    }
+  ],
+  "runs": [
+    {
+      "command": "MT1_BASE_URL=http://127.0.0.1:5195 npm --prefix explore/body-shell-03 test",
+      "passed": 14,
+      "failed": 1,
+      "exitCode": 1,
+      "elapsedMinutes": 5.8,
+      "log": "/tmp/quarto-body-surface-shell-tests.log"
+    },
+    {
+      "command": "MT1_BASE_URL=http://127.0.0.1:5195 npm --prefix explore/body-shell-03 test -- --grep 'presentation-fit|actual surfaces|surface verifier|opaque BODY'",
+      "passed": 4,
+      "failed": 0,
+      "exitCode": 0,
+      "elapsedMinutes": 1.3,
+      "log": "/tmp/quarto-body-surface-focused-tests.log"
+    }
+  ],
+  "currentCaseCoverage": {
+    "supportedCases": 15,
+    "casesWithFinalPassingExecution": 15,
+    "singleFinalFullSuiteRun": false
+  },
+  "rootRegression": "Not rerun per approved plan. Existing 103-pass result is reused with frozen source/test equivalence; final equivalence artifact is owned by viewer_next_review.",
+  "negativeResults": [
+    "Ideal decimal nose-edge probe fell just outside a Float32 triangle and selected a farther surface. Final probe validates nominal endpoints within 1 micrometre, then interpolates the verified stored edge; 2 micrometre gap limit unchanged. No runtime fix.",
+    "Initial inline Playwright attachments were not persisted by the line reporter. Explicit output files fixed this; one approved isolated fit repeat supplied its JSON.",
+    "Initial opaque classification compared undefined strictly against false. Boolean normalization matches Babylon truthiness while preserving required ghost blending.",
+    "Immutable 3780e02 intentionally fails actual topology, flat-normal, seam and opacity checks."
+  ],
+  "remainingLimits": [
+    "No new authority or whole-assembly volume/watertightness claim. The verifier checks individual presentation surfaces and bounded joins.",
+    "Builds retain the existing large-bundle warning."
+  ],
+  "artifacts": [
+    {
+      "path": "/tmp/quarto-body-surface-build-root.log",
+      "role": "Root production build PASS"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-shell-build.log",
+      "role": "Geometry owner shell production build PASS"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-shell-tests.log",
+      "role": "Full 15-case run: 14 passed, 1 nominal-edge harness failure"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-shell-tests-results",
+      "role": "Preserved first-run failure context"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-focused-tests.log",
+      "role": "Corrected fit plus 3 surface cases: 4 passed"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-focused-results",
+      "role": "Persisted final JSON reports and attachments"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-fit-report.json",
+      "role": "Final 101-pose triangle-OBB fit: PASS, 0 defects"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-verification.json",
+      "role": "Final 38-mesh, 72-seam verifier: PASS"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-baseline-negative.json",
+      "role": "Final immutable 3780e02 negative: expected FAIL"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-baseline-first.log",
+      "role": "Initial sandbox child-process EPERM; no verification result"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-baseline-second.log",
+      "role": "First successful baseline negative verifier output"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-baseline-first.json",
+      "role": "First successful baseline negative result"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-candidate-development.log",
+      "role": "Initial candidate harness result before Boolean normalization"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-candidate-development.json",
+      "role": "Geometry passed; opaque undefined-vs-false classification was a harness error"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-candidate-final.log",
+      "role": "Intermediate 62-seam verifier PASS; superseded by final 72-seam evidence"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-candidate-final.json",
+      "role": "Intermediate 62-seam verifier PASS; superseded by final 72-seam evidence"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-baseline-final.log",
+      "role": "Intermediate 62-seam baseline expected-negative output"
+    },
+    {
+      "path": "/tmp/quarto-body-surface-baseline-final.json",
+      "role": "Intermediate 62-seam baseline expected-negative result"
+    }
+  ]
+}

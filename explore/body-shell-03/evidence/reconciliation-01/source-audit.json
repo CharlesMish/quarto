@@ -1,0 +1,32 @@
+{
+  "pass": true,
+  "authorityParticipation": "none",
+  "acceptedMain": "e56a4c09330119827e5a6c9757bf5cbc448dd29d",
+  "viewerParent": "954045359c60cb519f463d9223de193d860e6017",
+  "frozenScopesCompared": [
+    "src",
+    "tests",
+    "package.json",
+    "package-lock.json",
+    "playwright.config.ts",
+    "tsconfig.json",
+    "vite.config.ts",
+    "wrangler.jsonc",
+    "explore/body-shell-03/src/design",
+    "explore/body-shell-03/src/machine",
+    "explore/body-shell-03/src/math",
+    "explore/body-shell-03/src/verify",
+    "explore/body-shell-03/src/scene/primitives.ts",
+    "explore/body-shell-03/src/scene/materials.ts",
+    "explore/body-shell-03/src/scene/h1Presentation.ts"
+  ],
+  "changedFrozenFiles": [],
+  "existingDependencyVersionOrIntegrityChanges": [],
+  "rootChangesSincePrior103TestRun": [
+    "tests/mt1-ba1.spec.ts"
+  ],
+  "priorRootSuiteSha256": "ae5832408fc057b558412c988e824208fae62e42f25dea3a9bd5fc585aaede73",
+  "priorRootSuiteReused": true,
+  "freshRootTests": "2 BA1 cases passed",
+  "oldViewerAndSurfaceEvidenceUnchanged": true
+}

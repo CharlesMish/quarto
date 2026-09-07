@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { writeFileSync } from "node:fs";
 
 test("body shell 03 is separate, toggleable, and non-authoritative", async ({ page }) => {
   const shaderErrors: string[] = [];
@@ -7,14 +8,18 @@ test("body shell 03 is separate, toggleable, and non-authoritative", async ({ pa
   });
   await page.goto("/");
   await page.waitForFunction(() => Boolean(window.__MT1?.getBodyConceptState));
-  await expect(page).toHaveTitle("MT1-BODY-SHELL-03 / NON-AUTHORITATIVE CONCEPT");
+  await expect(page).toHaveTitle("Quarto / Mechanism viewer");
+  await page.locator('[data-panel="details"]').click();
   await expect(page.locator(".eyebrow")).toContainText("MT1-BODY-SHELL-03 / NON-AUTHORITATIVE CONCEPT");
+  await page.locator('[data-panel="inspection"]').click();
   await expect(page.getByRole("button", { name: "BODY ON", exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "BODY SECTION", exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "PROP SECTION", exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "SECTION", exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "INSPECT PICK", exact: true })).toBeVisible();
+  await page.locator('[data-panel="cameras"]').click();
   await expect(page.getByRole("button", { name: "DRIVE 3/4", exact: true })).toBeVisible();
+  await page.locator('[data-panel="inspection"]').click();
 
   const before = await page.evaluate(() => window.__MT1!.getInspectionState());
   const inventory = await page.evaluate(() => window.__MT1!.getRenderInventory().filter((row) => row.semanticName.startsWith("BODY_")));
@@ -24,6 +29,7 @@ test("body shell 03 is separate, toggleable, and non-authoritative", async ({ pa
 
   const state = await page.evaluate(() => window.__MT1!.getBodyConceptState?.());
   expect(state?.conceptId).toBe("MT1-BODY-SHELL-03");
+  expect(state?.surfaceRevision).toBe("BODY-SHELL-03.2");
   expect(state?.enabled).toBe(true);
   expect(state?.section).toBe(false);
   expect(state?.masses).toEqual([
@@ -62,19 +68,30 @@ test("body shell 03 is separate, toggleable, and non-authoritative", async ({ pa
   expect(sectioned.stbdEnabled.every((on) => on === false)).toBe(true);
   expect(sectioned.portEnabled.every((on) => on === true)).toBe(true);
   expect(await page.evaluate(() => window.__MT1!.getInspectionState())).toEqual(before);
+  await page.getByRole("button", { name: "PROP SECTION", exact: true }).click();
+  await expect(page.locator("#propSectionBtn")).toHaveAttribute("aria-pressed", "true");
+  expect(await page.evaluate(() => window.__MT1!.getInspectionState())).toEqual(before);
+  await page.getByRole("button", { name: "PROP SECTION", exact: true }).click();
+  await expect(page.locator("#propSectionBtn")).toHaveAttribute("aria-pressed", "false");
+  await page.getByRole("button", { name: "SECTION", exact: true }).click();
+  await expect(page.locator("#sectionBtn")).toHaveAttribute("aria-pressed", "true");
+  expect(await page.evaluate(() => window.__MT1!.getInspectionState())).toEqual(before);
   expect(shaderErrors).toEqual([]);
 });
 
-test("body shell 03 presentation-fit does not participate in authority", async ({ page }) => {
+test("body shell 03 presentation-fit does not participate in authority", async ({ page }, testInfo) => {
   test.setTimeout(180_000);
   await page.goto("/");
   await page.waitForFunction(() => Boolean(window.__MT1?.runBodyShellFit));
   const before = await page.evaluate(() => window.__MT1!.getInspectionState());
   const report = await page.evaluate(() => window.__MT1!.runBodyShellFit?.());
+  const reportPath = testInfo.outputPath("body-shell-03.2-fit-report.json");
+  writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`, { flag: "wx" });
+  await testInfo.attach("body-shell-03.2-fit-report", { path: reportPath, contentType: "application/json" });
   expect(report?.kind).toBe("presentation-fit");
   expect(report?.participatesInAuthority).toBe(false);
   expect(report?.method).toBe("triangle-obb");
-  expect(report?.samples).toBeGreaterThanOrEqual(100);
+  expect(report?.samples).toBe(101);
   if (report && report.defects.length) {
     const summary = report.defects
       .slice(0, 40)

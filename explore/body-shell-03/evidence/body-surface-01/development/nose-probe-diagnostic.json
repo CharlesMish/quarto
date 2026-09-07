@@ -1,0 +1,127 @@
+{
+  "kind": "body-surface-nose-probe-diagnostic",
+  "generatedAt": "2026-09-06T08:38:18.041915+00:00",
+  "method": "Read-only isolated NullEngine inspection of actual Float32 positions and triangle indices; barycentric x-line probes independently calculated in tool transcript. No browser, authority or runtime mutation.",
+  "babylonVersion": "8.56.2",
+  "runtimeSourceSha256": {
+    "explore/body-shell-03/src/scene/bodyShellConcept.ts": "9031a8935b66d39f0215b1330bce747a1c546e886b2269734044b14bdf314777",
+    "explore/body-shell-03/src/scene/bodyShellGeometry.ts": "1f2b2eb47c02d3d7390768d95457882b696bb645fb38b55127aa27d35e8aad68"
+  },
+  "initialNegative": {
+    "code": "BODY_JOIN_GAP",
+    "seams": [
+      "NOSE_RETURN_PORT",
+      "NOSE_RETURN_STBD"
+    ],
+    "nominalStarboardProbe": [
+      0.395,
+      1.0609668508287293,
+      5.0
+    ],
+    "reportedGapMeters": 0.07750117897878972,
+    "dimensionlessBarycentricTolerance": 1e-06,
+    "gapToleranceMeters": 2e-06
+  },
+  "actualStarboardEndpoints": {
+    "lower": [
+      0.4399999976158142,
+      0.20000000298023224,
+      5.03000020980835
+    ],
+    "upper": [
+      0.3799999952316284,
+      1.3479558229446411,
+      4.989999771118164
+    ],
+    "exactlyIdenticalInChineAndProw": true,
+    "portRelationship": "Identical Y/Z, reflected X"
+  },
+  "nominalEndpointDistancesMeters": {
+    "lower": 2.0984305942175635e-07,
+    "upper": 2.2997087515153892e-07,
+    "acceptanceLimit": 1e-06
+  },
+  "idealRayBarycentricsStarboard": [
+    {
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "triangle": 6,
+      "s": 0.25000149756744205,
+      "t": -1.4826497864632279e-06,
+      "remainder": 0.7499999850823444,
+      "x": 0.3949997446722458,
+      "accepted": false
+    },
+    {
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "triangle": 64,
+      "s": 0.25004553035420796,
+      "t": 0.7499970198004459,
+      "remainder": -4.255015465381984e-05,
+      "x": 0.39498698409161104,
+      "accepted": false
+    },
+    {
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "triangle": 62,
+      "s": 0.7499970198004459,
+      "t": 0.01639642889584939,
+      "remainder": 0.23360655130370475,
+      "x": 0.47250109909757054,
+      "accepted": true
+    },
+    {
+      "mesh": "BODY_PROW_STBD_VIS",
+      "triangle": 6,
+      "s": 0.25000026202718073,
+      "t": 0.7499999850823444,
+      "remainder": -2.471095251754818e-07,
+      "x": 0.3949999201187808,
+      "accepted": true
+    }
+  ],
+  "diagnosis": "The independent ideal-decimal ray is just outside the actual stored boundary after Float32 rounding. The chine edge triangles are rejected, so the test selects a farther cap triangle and reports a false 77.5 mm gap. The two meshes share the same actual edge; no runtime gap was found.",
+  "actualEdgeProbeResults": [
+    {
+      "hand": "PORT",
+      "fractionFromLower": 0.25,
+      "gapMeters": 0.0,
+      "boundaryBarycentric": 0.0
+    },
+    {
+      "hand": "PORT",
+      "fractionFromLower": 0.5,
+      "gapMeters": 0.0,
+      "boundaryBarycentric": 0.0
+    },
+    {
+      "hand": "PORT",
+      "fractionFromLower": 0.75,
+      "gapMeters": 0.0,
+      "boundaryBarycentric": 0.0
+    },
+    {
+      "hand": "STBD",
+      "fractionFromLower": 0.25,
+      "gapMeters": 0.0,
+      "boundaryBarycentric": 0.0
+    },
+    {
+      "hand": "STBD",
+      "fractionFromLower": 0.5,
+      "gapMeters": 0.0,
+      "boundaryBarycentric": 0.0
+    },
+    {
+      "hand": "STBD",
+      "fractionFromLower": 0.75,
+      "gapMeters": 0.0,
+      "boundaryBarycentric": 0.0
+    }
+  ],
+  "recommendedTestCorrection": "First require both actual endpoints within 1 micrometer of the independent nominal acceptance positions and verify the common endpoints. Interpolate those verified actual endpoints for the quarter/midpoint rays. Keep the original 2 micrometer gap threshold and barycentric tolerance.",
+  "runtimeChangeRequired": false,
+  "toleranceRelaxationRequired": false,
+  "changedRepositoryFiles": [],
+  "authorityParticipation": "none",
+  "evidenceOrigin": "Barycentric and actual-edge probe commands/results retained in the agent tool transcript; this JSON records their measured output without rerunning them."
+}

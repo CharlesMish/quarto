@@ -1,0 +1,45 @@
+
+> mt1-body-shell-03-exploration@0.1.0 test
+> playwright test tests/body-shell-03.spec.ts tests/viewer-readability.spec.ts --workers=1
+
+
+Running 11 tests using 1 worker
+
+(node:271434) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/11] tests/body-shell-03.spec.ts:3:1 › body shell 03 is separate, toggleable, and non-authoritative
+[2/11] tests/body-shell-03.spec.ts:80:1 › body shell 03 presentation-fit does not participate in authority
+[3/11] tests/viewer-readability.spec.ts:25:1 › readability changes leave the frozen mechanism and shell geometry byte-identical
+[4/11] tests/viewer-readability.spec.ts:43:1 › initial presentation and reversible palettes preserve inspection and render identity
+[5/11] tests/viewer-readability.spec.ts:81:1 › responsive disclosures reserve a usable canvas and keep controls within the viewport
+[6/11] tests/viewer-readability.spec.ts:125:1 › slider events commit their latest value and cannot overwrite a later explicit pose
+  1) tests/viewer-readability.spec.ts:125:1 › slider events commit their latest value and cannot overwrite a later explicit pose 
+
+    Error: Timeout 5000ms exceeded while waiting on the predicate
+
+      132 |       slider.dispatchEvent(new Event("input", { bubbles: true }));
+      133 |     }
+    > 134 |   });
+          |      ^
+      135 |   await expect.poll(() => pose(page)).toBeCloseTo(0.337, 3);
+      136 |
+      137 |   for (const [event, value] of [["change", 0.281], ["pointerup", 0.423], ["blur", 0.562]] as const) {
+        at /home/cmish/MECHA/MT1/explore/body-shell-03/tests/viewer-readability.spec.ts:134:39
+
+    Error Context: test-results/viewer-readability-slider--e7e0f-write-a-later-explicit-pose/error-context.md
+
+
+(node:272411) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[7/11] tests/viewer-readability.spec.ts:168:1 › folio sliders remain explicit noncanonical previews
+[8/11] tests/viewer-readability.spec.ts:191:1 › keyboard range input stays local and global playback remains controllable
+[9/11] tests/viewer-readability.spec.ts:215:1 › tour visits six canonical poses and exits without resetting the inspected pose
+[10/11] tests/viewer-readability.spec.ts:256:1 › reverse playback reaches both endpoints and interruptions stop automatic motion
+[11/11] tests/viewer-readability.spec.ts:291:1 › fit camera is presentation-only and keeps the inspected pose
+  1 failed
+    tests/viewer-readability.spec.ts:125:1 › slider events commit their latest value and cannot overwrite a later explicit pose 
+  10 passed (4.4m)

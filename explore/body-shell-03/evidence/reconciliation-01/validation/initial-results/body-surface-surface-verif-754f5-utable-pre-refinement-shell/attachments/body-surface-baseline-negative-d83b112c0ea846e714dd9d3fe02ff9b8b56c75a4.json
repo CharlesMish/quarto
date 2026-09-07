@@ -1,0 +1,4281 @@
+{
+  "kind": "body-surface-verification",
+  "sourceRef": "3780e0241d4ee6610baf849e33f0348ce32adb33",
+  "surfaceRevision": null,
+  "stationRevision": null,
+  "participatesInAuthority": false,
+  "authorityParticipation": "none",
+  "pass": false,
+  "meshCount": 38,
+  "triangleCount": 524,
+  "weldToleranceMeters": 0.000001,
+  "sources": {
+    "src/scene/bodyShellConcept.ts": "70208747601c7f7bef9ba063201fdd38de7b0753fc3a4292a166969c67788569",
+    "src/design/parameters.ts": "573eb96a8a9a767b0ec69752e49246c7784b250b77ac081f3ffe55543928dc93",
+    "src/bodyConceptInfo.ts": "dda341341f7a47a77852eee307df068ccb671d028248df367903a8f8ff40c8c9",
+    "src/scene/primitives.ts": "04571d070b051aac8eb5abdd07ab14684102a0aaf0b3f0830ad11b3aa00ba866",
+    "src/presentation/palette.ts": "4842c2f84b2db322b81d2386f61c6e2dc38163653ad12a8df8530d171165d71e",
+    "src/presentation/hushBasinPalette.json": "9cda6d84855006a39e92bd9a5695160369465f4009e118ba1c01f20606228a2c"
+  },
+  "meshes": [
+    {
+      "name": "BODY_VENTRAL_HULL_PORT_VIS",
+      "vertices": 10,
+      "weldedVertices": 10,
+      "triangles": 16,
+      "minimumArea": 0.026400000000000003,
+      "signedVolume": 0.9745319999999998,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 16
+    },
+    {
+      "name": "BODY_CHINE_FWD_PORT_VIS",
+      "vertices": 14,
+      "weldedVertices": 14,
+      "triangles": 24,
+      "minimumArea": 0.08540000000000002,
+      "signedVolume": -1.6139806666666665,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 24
+    },
+    {
+      "name": "BODY_CHINE_AFT_PORT_VIS",
+      "vertices": 12,
+      "weldedVertices": 12,
+      "triangles": 20,
+      "minimumArea": 0.012671917906511043,
+      "signedVolume": -0.9388073333333335,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 20
+    },
+    {
+      "name": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "vertices": 20,
+      "weldedVertices": 20,
+      "triangles": 24,
+      "minimumArea": 0.0497999999999999,
+      "signedVolume": 0.4037999999999998,
+      "boundaryEdges": 14,
+      "inconsistentEdges": 14,
+      "degenerates": 0,
+      "normalFailures": 24
+    },
+    {
+      "name": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "vertices": 16,
+      "weldedVertices": 16,
+      "triangles": 18,
+      "minimumArea": 0.010800000000000006,
+      "signedVolume": 0.19516799999999962,
+      "boundaryEdges": 12,
+      "inconsistentEdges": 12,
+      "degenerates": 0,
+      "normalFailures": 18
+    },
+    {
+      "name": "BODY_PROW_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.08761270243017043,
+      "signedVolume": 0.29636474401473256,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.005599999999999989,
+      "signedVolume": -0.010304000000000205,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.005599999999999989,
+      "signedVolume": -0.01030400000000043,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_FWD_FACE_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.01620000000000001,
+      "signedVolume": -0.02818800000000001,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_FWD_SILL_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.001750000000000003,
+      "signedVolume": -0.0012600000000002212,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_FWD_WEB_PORT_VIS",
+      "vertices": 6,
+      "weldedVertices": 5,
+      "triangles": 8,
+      "minimumArea": 0,
+      "signedVolume": 0.000593999999999932,
+      "boundaryEdges": 2,
+      "inconsistentEdges": 0,
+      "degenerates": 2,
+      "normalFailures": 6
+    },
+    {
+      "name": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.007700000000000006,
+      "signedVolume": -0.017863999999999887,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.007700000000000006,
+      "signedVolume": -0.017864000000000185,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_AFT_FACE_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.033,
+      "signedVolume": -0.07325999999999988,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_AFT_SILL_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.0017500000000000003,
+      "signedVolume": -0.0015399999999999399,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_AFT_WEB_PORT_VIS",
+      "vertices": 6,
+      "weldedVertices": 5,
+      "triangles": 8,
+      "minimumArea": 0,
+      "signedVolume": 0.001148400000000012,
+      "boundaryEdges": 2,
+      "inconsistentEdges": 0,
+      "degenerates": 2,
+      "normalFailures": 6
+    },
+    {
+      "name": "BODY_COLLAR_SIDE_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.010499999999999964,
+      "signedVolume": -0.023099999999999603,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.00749999999999998,
+      "signedVolume": 0.011250000000000242,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_COLLAR_SILL_PORT_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.00599999999999998,
+      "signedVolume": 0.008999999999999956,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_VENTRAL_HULL_STBD_VIS",
+      "vertices": 10,
+      "weldedVertices": 10,
+      "triangles": 16,
+      "minimumArea": 0.026400000000000003,
+      "signedVolume": -0.9745319999999998,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 16
+    },
+    {
+      "name": "BODY_CHINE_FWD_STBD_VIS",
+      "vertices": 14,
+      "weldedVertices": 14,
+      "triangles": 24,
+      "minimumArea": 0.08540000000000002,
+      "signedVolume": -1.6139806666666665,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 24
+    },
+    {
+      "name": "BODY_CHINE_AFT_STBD_VIS",
+      "vertices": 12,
+      "weldedVertices": 12,
+      "triangles": 20,
+      "minimumArea": 0.012671917906511043,
+      "signedVolume": -0.9388073333333335,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 20
+    },
+    {
+      "name": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "vertices": 20,
+      "weldedVertices": 20,
+      "triangles": 24,
+      "minimumArea": 0.0497999999999999,
+      "signedVolume": -0.4037999999999998,
+      "boundaryEdges": 14,
+      "inconsistentEdges": 14,
+      "degenerates": 0,
+      "normalFailures": 24
+    },
+    {
+      "name": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "vertices": 16,
+      "weldedVertices": 16,
+      "triangles": 18,
+      "minimumArea": 0.010800000000000006,
+      "signedVolume": -0.19516799999999962,
+      "boundaryEdges": 12,
+      "inconsistentEdges": 12,
+      "degenerates": 0,
+      "normalFailures": 18
+    },
+    {
+      "name": "BODY_PROW_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.08761270243017043,
+      "signedVolume": -0.29636474401473256,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.005599999999999989,
+      "signedVolume": -0.010304000000000205,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.005599999999999989,
+      "signedVolume": -0.01030400000000043,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_FWD_FACE_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.01620000000000001,
+      "signedVolume": -0.02818800000000001,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_FWD_SILL_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.001750000000000003,
+      "signedVolume": -0.0012600000000002212,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_FWD_WEB_STBD_VIS",
+      "vertices": 6,
+      "weldedVertices": 5,
+      "triangles": 8,
+      "minimumArea": 0,
+      "signedVolume": -0.000593999999999932,
+      "boundaryEdges": 2,
+      "inconsistentEdges": 0,
+      "degenerates": 2,
+      "normalFailures": 6
+    },
+    {
+      "name": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.007700000000000006,
+      "signedVolume": -0.017863999999999887,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.007700000000000006,
+      "signedVolume": -0.017864000000000158,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_AFT_FACE_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.033,
+      "signedVolume": -0.07325999999999988,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_AFT_SILL_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.0017500000000000003,
+      "signedVolume": -0.0015399999999999399,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_AFT_WEB_STBD_VIS",
+      "vertices": 6,
+      "weldedVertices": 5,
+      "triangles": 8,
+      "minimumArea": 0,
+      "signedVolume": -0.001148400000000012,
+      "boundaryEdges": 2,
+      "inconsistentEdges": 0,
+      "degenerates": 2,
+      "normalFailures": 6
+    },
+    {
+      "name": "BODY_COLLAR_SIDE_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.010499999999999964,
+      "signedVolume": -0.023099999999999603,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.00749999999999998,
+      "signedVolume": -0.011250000000000242,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    },
+    {
+      "name": "BODY_COLLAR_SILL_STBD_VIS",
+      "vertices": 8,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.00599999999999998,
+      "signedVolume": -0.008999999999999956,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 12
+    }
+  ],
+  "dimensions": {
+    "mirroredPairs": 19,
+    "deckTopRows": [
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+        "z": 5.029999999999999,
+        "top": 1.48,
+        "bottom": 1.36
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+        "z": 4.2,
+        "top": 1.6450828729281768,
+        "bottom": 1.5250828729281767
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+        "z": 3.22,
+        "top": 1.8399999999999999,
+        "bottom": 1.72
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+        "z": 0.55,
+        "top": 2.04,
+        "bottom": 1.92
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+        "z": -1.7,
+        "top": 2.280740740740741,
+        "bottom": 2.160740740740741
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+        "z": -1.7,
+        "top": 2.280740740740741,
+        "bottom": 2.160740740740741
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+        "z": -1.88,
+        "top": 2.3000000000000003,
+        "bottom": 2.18
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+        "z": -3.45,
+        "top": 1.7600000000000002,
+        "bottom": 1.6400000000000001
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+        "z": -5.9799999999999995,
+        "top": 1.44,
+        "bottom": 1.32
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+        "z": 5.029999999999999,
+        "top": 1.48,
+        "bottom": 1.36
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+        "z": 4.2,
+        "top": 1.6450828729281768,
+        "bottom": 1.5250828729281767
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+        "z": 3.22,
+        "top": 1.8399999999999999,
+        "bottom": 1.72
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+        "z": 0.55,
+        "top": 2.04,
+        "bottom": 1.92
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+        "z": -1.7,
+        "top": 2.280740740740741,
+        "bottom": 2.160740740740741
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+        "z": -1.7,
+        "top": 2.280740740740741,
+        "bottom": 2.160740740740741
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+        "z": -1.88,
+        "top": 2.3000000000000003,
+        "bottom": 2.18
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+        "z": -3.45,
+        "top": 1.7600000000000002,
+        "bottom": 1.6400000000000001
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+        "z": -5.9799999999999995,
+        "top": 1.44,
+        "bottom": 1.32
+      }
+    ],
+    "aftSlot": [
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+        "innerX": 0.36
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+        "innerX": 0.36
+      }
+    ],
+    "pockets": [
+      {
+        "stem": "FWD",
+        "hand": "PORT",
+        "reach": 0.16000000000000003
+      },
+      {
+        "stem": "FWD",
+        "hand": "STBD",
+        "reach": 0.16000000000000003
+      },
+      {
+        "stem": "AFT",
+        "hand": "PORT",
+        "reach": 0.21999999999999997
+      },
+      {
+        "stem": "AFT",
+        "hand": "STBD",
+        "reach": 0.21999999999999997
+      }
+    ]
+  },
+  "seams": [
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        5.01
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        4.96
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        4.85
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        4.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        4.2
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        3.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        2.4
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        1
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        0
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        -1.2
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        -1.8
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        -2.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        -4
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "PORT",
+      "point": [
+        -0.68,
+        0,
+        -5.6
+      ],
+      "gap": 0.019999999999999796
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "PORT",
+      "point": [
+        -0.1,
+        0,
+        4.6
+      ],
+      "gap": 0.07517679558011059
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "PORT",
+      "point": [
+        -0.1,
+        0,
+        4.6
+      ],
+      "gap": 0.004166666666666652
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "PORT",
+      "point": [
+        -0.1,
+        0,
+        4.75
+      ],
+      "gap": 0.08470718232044216
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "PORT",
+      "point": [
+        -0.1,
+        0,
+        4.75
+      ],
+      "gap": 0.01666666666666669
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "PORT",
+      "point": [
+        -0.1,
+        0,
+        4.9
+      ],
+      "gap": 0.09423756906077374
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "PORT",
+      "point": [
+        -0.1,
+        0,
+        4.9
+      ],
+      "gap": 0.029166666666666757
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "PORT",
+      "point": [
+        -0.1,
+        0,
+        4.98
+      ],
+      "gap": 0.10159077691717999
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "PORT",
+      "point": [
+        -0.1,
+        0,
+        4.98
+      ],
+      "gap": 0.03583333333333341
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "PORT",
+      "point": [
+        -0.3,
+        0,
+        4.6
+      ],
+      "gap": 0.059176795580110575
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "PORT",
+      "point": [
+        -0.3,
+        0,
+        4.6
+      ],
+      "gap": 0.004166666666666652
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "PORT",
+      "point": [
+        -0.3,
+        0,
+        4.75
+      ],
+      "gap": 0.06870718232044215
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "PORT",
+      "point": [
+        -0.3,
+        0,
+        4.75
+      ],
+      "gap": 0.01666666666666669
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "PORT",
+      "point": [
+        -0.3,
+        0,
+        4.9
+      ],
+      "gap": 0.08224953078326158
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "PORT",
+      "point": [
+        -0.3,
+        0,
+        4.9
+      ],
+      "gap": 0.029166666666666757
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "PORT",
+      "point": [
+        -0.3,
+        0,
+        4.98
+      ],
+      "gap": 0.0910644611277065
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "PORT",
+      "point": [
+        -0.3,
+        0,
+        4.98
+      ],
+      "gap": 0.03583333333333344
+    },
+    {
+      "seam": "CHINE_BELLY_FLANGE",
+      "hand": "PORT",
+      "point": [
+        0,
+        0.16,
+        4.6
+      ],
+      "gap": 0.01852272727272719
+    },
+    {
+      "seam": "CHINE_BELLY_FLANGE",
+      "hand": "PORT",
+      "point": [
+        0,
+        0.16,
+        4.75
+      ],
+      "gap": 0.07136363636363652
+    },
+    {
+      "seam": "CHINE_BELLY_FLANGE",
+      "hand": "PORT",
+      "point": [
+        0,
+        0.16,
+        4.9
+      ],
+      "gap": 0.12420454545454573
+    },
+    {
+      "seam": "NOSE_RETURN",
+      "hand": "PORT",
+      "point": [
+        -0.425,
+        0.4869889502762431,
+        5.0200000000000005
+      ],
+      "gap": 0.18392960213934023
+    },
+    {
+      "seam": "NOSE_RETURN",
+      "hand": "PORT",
+      "point": [
+        -0.41000000000000003,
+        0.7739779005524863,
+        5.01
+      ],
+      "gap": null
+    },
+    {
+      "seam": "NOSE_RETURN",
+      "hand": "PORT",
+      "point": [
+        -0.395,
+        1.0609668508287293,
+        5
+      ],
+      "gap": null
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        5.01
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        4.96
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        4.85
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        4.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        4.2
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        3.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        2.4
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        1
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        0
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        -1.2
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        -1.8
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        -2.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        -4
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "seam": "DECK_CHINE",
+      "hand": "STBD",
+      "point": [
+        0.68,
+        0,
+        -5.6
+      ],
+      "gap": 0.019999999999999796
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "STBD",
+      "point": [
+        0.1,
+        0,
+        4.6
+      ],
+      "gap": 0.07517679558011059
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "STBD",
+      "point": [
+        0.1,
+        0,
+        4.6
+      ],
+      "gap": 0.004166666666666652
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "STBD",
+      "point": [
+        0.1,
+        0,
+        4.75
+      ],
+      "gap": 0.08470718232044216
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "STBD",
+      "point": [
+        0.1,
+        0,
+        4.75
+      ],
+      "gap": 0.01666666666666669
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "STBD",
+      "point": [
+        0.1,
+        0,
+        4.9
+      ],
+      "gap": 0.09423756906077374
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "STBD",
+      "point": [
+        0.1,
+        0,
+        4.9
+      ],
+      "gap": 0.029166666666666757
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "STBD",
+      "point": [
+        0.1,
+        0,
+        4.98
+      ],
+      "gap": 0.10159077691717999
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "STBD",
+      "point": [
+        0.1,
+        0,
+        4.98
+      ],
+      "gap": 0.03583333333333341
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "STBD",
+      "point": [
+        0.3,
+        0,
+        4.6
+      ],
+      "gap": 0.059176795580110575
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "STBD",
+      "point": [
+        0.3,
+        0,
+        4.6
+      ],
+      "gap": 0.004166666666666652
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "STBD",
+      "point": [
+        0.3,
+        0,
+        4.75
+      ],
+      "gap": 0.06870718232044215
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "STBD",
+      "point": [
+        0.3,
+        0,
+        4.75
+      ],
+      "gap": 0.01666666666666669
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "STBD",
+      "point": [
+        0.3,
+        0,
+        4.9
+      ],
+      "gap": 0.08224953078326158
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "STBD",
+      "point": [
+        0.3,
+        0,
+        4.9
+      ],
+      "gap": 0.029166666666666757
+    },
+    {
+      "seam": "PROW_DECK",
+      "hand": "STBD",
+      "point": [
+        0.3,
+        0,
+        4.98
+      ],
+      "gap": 0.0910644611277065
+    },
+    {
+      "seam": "PROW_BELLY",
+      "hand": "STBD",
+      "point": [
+        0.3,
+        0,
+        4.98
+      ],
+      "gap": 0.03583333333333344
+    },
+    {
+      "seam": "CHINE_BELLY_FLANGE",
+      "hand": "STBD",
+      "point": [
+        0,
+        0.16,
+        4.6
+      ],
+      "gap": 0.01852272727272719
+    },
+    {
+      "seam": "CHINE_BELLY_FLANGE",
+      "hand": "STBD",
+      "point": [
+        0,
+        0.16,
+        4.75
+      ],
+      "gap": 0.07136363636363652
+    },
+    {
+      "seam": "CHINE_BELLY_FLANGE",
+      "hand": "STBD",
+      "point": [
+        0,
+        0.16,
+        4.9
+      ],
+      "gap": 0.12420454545454573
+    },
+    {
+      "seam": "NOSE_RETURN",
+      "hand": "STBD",
+      "point": [
+        0.425,
+        0.4869889502762431,
+        5.0200000000000005
+      ],
+      "gap": 0.18392960213934023
+    },
+    {
+      "seam": "NOSE_RETURN",
+      "hand": "STBD",
+      "point": [
+        0.41000000000000003,
+        0.7739779005524863,
+        5.01
+      ],
+      "gap": null
+    },
+    {
+      "seam": "NOSE_RETURN",
+      "hand": "STBD",
+      "point": [
+        0.395,
+        1.0609668508287293,
+        5
+      ],
+      "gap": null
+    }
+  ],
+  "presentation": [
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 38,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 38,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 19,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 19,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": true,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 38,
+      "ghostCount": 0
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": true,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 38,
+      "ghostCount": 10
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": true,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 19,
+      "ghostCount": 0
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": true,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 19,
+      "ghostCount": 10
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": false,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": false,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": false,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": false,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 38,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 38,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 19,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 19,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    }
+  ],
+  "failures": [
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "count": 16
+    },
+    {
+      "code": "NONOUTWARD_VOLUME",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "signedVolume": 0.9745319999999998
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "count": 24
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "count": 20
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "count": 24
+    },
+    {
+      "code": "OPEN_OR_NONMANIFOLD_EDGE",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "count": 14
+    },
+    {
+      "code": "INCONSISTENT_EDGE_WINDING",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "count": 14
+    },
+    {
+      "code": "NONOUTWARD_VOLUME",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "signedVolume": 0.4037999999999998
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "count": 18
+    },
+    {
+      "code": "OPEN_OR_NONMANIFOLD_EDGE",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "INCONSISTENT_EDGE_WINDING",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONOUTWARD_VOLUME",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "signedVolume": 0.19516799999999962
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONOUTWARD_VOLUME",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "signedVolume": 0.29636474401473256
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "DEGENERATE_TRIANGLE",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "count": 2
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "count": 6
+    },
+    {
+      "code": "OPEN_OR_NONMANIFOLD_EDGE",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "count": 2
+    },
+    {
+      "code": "NONOUTWARD_VOLUME",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "signedVolume": 0.000593999999999932
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "DEGENERATE_TRIANGLE",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "count": 2
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "count": 6
+    },
+    {
+      "code": "OPEN_OR_NONMANIFOLD_EDGE",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "count": 2
+    },
+    {
+      "code": "NONOUTWARD_VOLUME",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "signedVolume": 0.001148400000000012
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONOUTWARD_VOLUME",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "signedVolume": 0.011250000000000242
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONOUTWARD_VOLUME",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "signedVolume": 0.008999999999999956
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "count": 16
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "count": 24
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "count": 20
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "count": 24
+    },
+    {
+      "code": "OPEN_OR_NONMANIFOLD_EDGE",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "count": 14
+    },
+    {
+      "code": "INCONSISTENT_EDGE_WINDING",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "count": 14
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "count": 18
+    },
+    {
+      "code": "OPEN_OR_NONMANIFOLD_EDGE",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "INCONSISTENT_EDGE_WINDING",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "DEGENERATE_TRIANGLE",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "count": 2
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "count": 6
+    },
+    {
+      "code": "OPEN_OR_NONMANIFOLD_EDGE",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "count": 2
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "DEGENERATE_TRIANGLE",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "count": 2
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "count": 6
+    },
+    {
+      "code": "OPEN_OR_NONMANIFOLD_EDGE",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "count": 2
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "NONFLAT_OR_INWARD_NORMAL",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "count": 12
+    },
+    {
+      "code": "ASYMMETRIC_NORMALS",
+      "mesh": "VENTRAL_HULL"
+    },
+    {
+      "code": "ASYMMETRIC_NORMALS",
+      "mesh": "DORSAL_DECK_FWD"
+    },
+    {
+      "code": "ASYMMETRIC_NORMALS",
+      "mesh": "DORSAL_DECK_AFT"
+    },
+    {
+      "code": "ASYMMETRIC_NORMALS",
+      "mesh": "PROW"
+    },
+    {
+      "code": "ASYMMETRIC_NORMALS",
+      "mesh": "FWD_WEB"
+    },
+    {
+      "code": "ASYMMETRIC_NORMALS",
+      "mesh": "AFT_WEB"
+    },
+    {
+      "code": "ASYMMETRIC_NORMALS",
+      "mesh": "COLLAR_LINTEL"
+    },
+    {
+      "code": "ASYMMETRIC_NORMALS",
+      "mesh": "COLLAR_SILL"
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "z": 5.029999999999999,
+      "top": 1.48,
+      "bottom": 1.36
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "z": 4.2,
+      "top": 1.6450828729281768,
+      "bottom": 1.5250828729281767
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "z": 3.22,
+      "top": 1.8399999999999999,
+      "bottom": 1.72
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "z": 0.55,
+      "top": 2.04,
+      "bottom": 1.92
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "z": -1.7,
+      "top": 2.280740740740741,
+      "bottom": 2.160740740740741
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "z": -1.7,
+      "top": 2.280740740740741,
+      "bottom": 2.160740740740741
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "z": -1.88,
+      "top": 2.3000000000000003,
+      "bottom": 2.18
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "z": -3.45,
+      "top": 1.7600000000000002,
+      "bottom": 1.6400000000000001
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "z": -5.9799999999999995,
+      "top": 1.44,
+      "bottom": 1.32
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "z": 5.029999999999999,
+      "top": 1.48,
+      "bottom": 1.36
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "z": 4.2,
+      "top": 1.6450828729281768,
+      "bottom": 1.5250828729281767
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "z": 3.22,
+      "top": 1.8399999999999999,
+      "bottom": 1.72
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "z": 0.55,
+      "top": 2.04,
+      "bottom": 1.92
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "z": -1.7,
+      "top": 2.280740740740741,
+      "bottom": 2.160740740740741
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "z": -1.7,
+      "top": 2.280740740740741,
+      "bottom": 2.160740740740741
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "z": -1.88,
+      "top": 2.3000000000000003,
+      "bottom": 2.18
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "z": -3.45,
+      "top": 1.7600000000000002,
+      "bottom": 1.6400000000000001
+    },
+    {
+      "code": "DECK_THICKNESS",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "z": -5.9799999999999995,
+      "top": 1.44,
+      "bottom": 1.32
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        5.01
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        4.96
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        4.85
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        4.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        4.2
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        3.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        2.4
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        1
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        0
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        -1.2
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        -1.8
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        -2.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        -4
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_PORT",
+      "point": [
+        -0.68,
+        0,
+        -5.6
+      ],
+      "gap": 0.019999999999999796
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_PORT",
+      "point": [
+        -0.1,
+        0,
+        4.6
+      ],
+      "gap": 0.07517679558011059
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_PORT",
+      "point": [
+        -0.1,
+        0,
+        4.6
+      ],
+      "gap": 0.004166666666666652
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_PORT",
+      "point": [
+        -0.1,
+        0,
+        4.75
+      ],
+      "gap": 0.08470718232044216
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_PORT",
+      "point": [
+        -0.1,
+        0,
+        4.75
+      ],
+      "gap": 0.01666666666666669
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_PORT",
+      "point": [
+        -0.1,
+        0,
+        4.9
+      ],
+      "gap": 0.09423756906077374
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_PORT",
+      "point": [
+        -0.1,
+        0,
+        4.9
+      ],
+      "gap": 0.029166666666666757
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_PORT",
+      "point": [
+        -0.1,
+        0,
+        4.98
+      ],
+      "gap": 0.10159077691717999
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_PORT",
+      "point": [
+        -0.1,
+        0,
+        4.98
+      ],
+      "gap": 0.03583333333333341
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_PORT",
+      "point": [
+        -0.3,
+        0,
+        4.6
+      ],
+      "gap": 0.059176795580110575
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_PORT",
+      "point": [
+        -0.3,
+        0,
+        4.6
+      ],
+      "gap": 0.004166666666666652
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_PORT",
+      "point": [
+        -0.3,
+        0,
+        4.75
+      ],
+      "gap": 0.06870718232044215
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_PORT",
+      "point": [
+        -0.3,
+        0,
+        4.75
+      ],
+      "gap": 0.01666666666666669
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_PORT",
+      "point": [
+        -0.3,
+        0,
+        4.9
+      ],
+      "gap": 0.08224953078326158
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_PORT",
+      "point": [
+        -0.3,
+        0,
+        4.9
+      ],
+      "gap": 0.029166666666666757
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_PORT",
+      "point": [
+        -0.3,
+        0,
+        4.98
+      ],
+      "gap": 0.0910644611277065
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_PORT",
+      "point": [
+        -0.3,
+        0,
+        4.98
+      ],
+      "gap": 0.03583333333333344
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "CHINE_BELLY_FLANGE_PORT",
+      "point": [
+        0,
+        0.16,
+        4.6
+      ],
+      "gap": 0.01852272727272719
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "CHINE_BELLY_FLANGE_PORT",
+      "point": [
+        0,
+        0.16,
+        4.75
+      ],
+      "gap": 0.07136363636363652
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "CHINE_BELLY_FLANGE_PORT",
+      "point": [
+        0,
+        0.16,
+        4.9
+      ],
+      "gap": 0.12420454545454573
+    },
+    {
+      "code": "NOSE_EDGE_NOT_SHARED",
+      "mesh": "PORT",
+      "point": [
+        -0.38,
+        1.3479558011049724,
+        4.99
+      ]
+    },
+    {
+      "code": "NOSE_EDGE_NOT_SHARED",
+      "mesh": "PORT",
+      "point": [
+        -0.44,
+        0.2,
+        5.03
+      ]
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "NOSE_RETURN_PORT",
+      "point": [
+        -0.425,
+        0.4869889502762431,
+        5.0200000000000005
+      ],
+      "gap": 0.18392960213934023
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "NOSE_RETURN_PORT",
+      "point": [
+        -0.41000000000000003,
+        0.7739779005524863,
+        5.01
+      ],
+      "gap": null
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "NOSE_RETURN_PORT",
+      "point": [
+        -0.395,
+        1.0609668508287293,
+        5
+      ],
+      "gap": null
+    },
+    {
+      "code": "NOSE_JOIN_VERTEX_MISSING",
+      "mesh": "CHINE_FWD_PORT",
+      "point": [
+        -0.38,
+        1.3479558011049724,
+        4.99
+      ]
+    },
+    {
+      "code": "NOSE_JOIN_VERTEX_MISSING",
+      "mesh": "CHINE_FWD_PORT",
+      "point": [
+        -0.44,
+        0.2,
+        5.03
+      ]
+    },
+    {
+      "code": "NOSE_JOIN_VERTEX_MISSING",
+      "mesh": "PROW_PORT",
+      "point": [
+        -0.38,
+        1.3479558011049724,
+        4.99
+      ]
+    },
+    {
+      "code": "NOSE_JOIN_VERTEX_MISSING",
+      "mesh": "PROW_PORT",
+      "point": [
+        -0.44,
+        0.2,
+        5.03
+      ]
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        5.01
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        4.96
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        4.85
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        4.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        4.2
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        3.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        2.4
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        1
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        0
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        -1.2
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        -1.8
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        -2.6
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        -4
+      ],
+      "gap": 0.020000000000000018
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "DECK_CHINE_STBD",
+      "point": [
+        0.68,
+        0,
+        -5.6
+      ],
+      "gap": 0.019999999999999796
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_STBD",
+      "point": [
+        0.1,
+        0,
+        4.6
+      ],
+      "gap": 0.07517679558011059
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_STBD",
+      "point": [
+        0.1,
+        0,
+        4.6
+      ],
+      "gap": 0.004166666666666652
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_STBD",
+      "point": [
+        0.1,
+        0,
+        4.75
+      ],
+      "gap": 0.08470718232044216
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_STBD",
+      "point": [
+        0.1,
+        0,
+        4.75
+      ],
+      "gap": 0.01666666666666669
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_STBD",
+      "point": [
+        0.1,
+        0,
+        4.9
+      ],
+      "gap": 0.09423756906077374
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_STBD",
+      "point": [
+        0.1,
+        0,
+        4.9
+      ],
+      "gap": 0.029166666666666757
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_STBD",
+      "point": [
+        0.1,
+        0,
+        4.98
+      ],
+      "gap": 0.10159077691717999
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_STBD",
+      "point": [
+        0.1,
+        0,
+        4.98
+      ],
+      "gap": 0.03583333333333341
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_STBD",
+      "point": [
+        0.3,
+        0,
+        4.6
+      ],
+      "gap": 0.059176795580110575
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_STBD",
+      "point": [
+        0.3,
+        0,
+        4.6
+      ],
+      "gap": 0.004166666666666652
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_STBD",
+      "point": [
+        0.3,
+        0,
+        4.75
+      ],
+      "gap": 0.06870718232044215
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_STBD",
+      "point": [
+        0.3,
+        0,
+        4.75
+      ],
+      "gap": 0.01666666666666669
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_STBD",
+      "point": [
+        0.3,
+        0,
+        4.9
+      ],
+      "gap": 0.08224953078326158
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_STBD",
+      "point": [
+        0.3,
+        0,
+        4.9
+      ],
+      "gap": 0.029166666666666757
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_DECK_STBD",
+      "point": [
+        0.3,
+        0,
+        4.98
+      ],
+      "gap": 0.0910644611277065
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "PROW_BELLY_STBD",
+      "point": [
+        0.3,
+        0,
+        4.98
+      ],
+      "gap": 0.03583333333333344
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "CHINE_BELLY_FLANGE_STBD",
+      "point": [
+        0,
+        0.16,
+        4.6
+      ],
+      "gap": 0.01852272727272719
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "CHINE_BELLY_FLANGE_STBD",
+      "point": [
+        0,
+        0.16,
+        4.75
+      ],
+      "gap": 0.07136363636363652
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "CHINE_BELLY_FLANGE_STBD",
+      "point": [
+        0,
+        0.16,
+        4.9
+      ],
+      "gap": 0.12420454545454573
+    },
+    {
+      "code": "NOSE_EDGE_NOT_SHARED",
+      "mesh": "STBD",
+      "point": [
+        0.38,
+        1.3479558011049724,
+        4.99
+      ]
+    },
+    {
+      "code": "NOSE_EDGE_NOT_SHARED",
+      "mesh": "STBD",
+      "point": [
+        0.44,
+        0.2,
+        5.03
+      ]
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "NOSE_RETURN_STBD",
+      "point": [
+        0.425,
+        0.4869889502762431,
+        5.0200000000000005
+      ],
+      "gap": 0.18392960213934023
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "NOSE_RETURN_STBD",
+      "point": [
+        0.41000000000000003,
+        0.7739779005524863,
+        5.01
+      ],
+      "gap": null
+    },
+    {
+      "code": "BODY_JOIN_GAP",
+      "mesh": "NOSE_RETURN_STBD",
+      "point": [
+        0.395,
+        1.0609668508287293,
+        5
+      ],
+      "gap": null
+    },
+    {
+      "code": "NOSE_JOIN_VERTEX_MISSING",
+      "mesh": "CHINE_FWD_STBD",
+      "point": [
+        0.38,
+        1.3479558011049724,
+        4.99
+      ]
+    },
+    {
+      "code": "NOSE_JOIN_VERTEX_MISSING",
+      "mesh": "CHINE_FWD_STBD",
+      "point": [
+        0.44,
+        0.2,
+        5.03
+      ]
+    },
+    {
+      "code": "NOSE_JOIN_VERTEX_MISSING",
+      "mesh": "PROW_STBD",
+      "point": [
+        0.38,
+        1.3479558011049724,
+        4.99
+      ]
+    },
+    {
+      "code": "NOSE_JOIN_VERTEX_MISSING",
+      "mesh": "PROW_STBD",
+      "point": [
+        0.44,
+        0.2,
+        5.03
+      ]
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "accepted"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.88,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.9,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    },
+    {
+      "code": "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "alpha": 0.92,
+      "transparencyMode": 2
+    },
+    {
+      "code": "BODY_BACKFACE_CULLING_DISABLED",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "hush-basin"
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false,
+      "actual": true
+    }
+  ]
+}

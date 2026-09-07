@@ -1,0 +1,5571 @@
+{
+  "kind": "body-surface-verification",
+  "sourceRef": "working-tree",
+  "surfaceRevision": "BODY-SHELL-03.2",
+  "participatesInAuthority": false,
+  "authorityParticipation": "none",
+  "pass": false,
+  "meshCount": 38,
+  "triangleCount": 648,
+  "weldToleranceMeters": 0.000001,
+  "sources": {
+    "src/scene/bodyShellConcept.ts": "9031a8935b66d39f0215b1330bce747a1c546e886b2269734044b14bdf314777",
+    "src/design/parameters.ts": "573eb96a8a9a767b0ec69752e49246c7784b250b77ac081f3ffe55543928dc93",
+    "src/bodyConceptInfo.ts": "c79d8d4c927d1fbb3d12892fb4e87c9a788df48571378fbee1a3abd29a7e4445",
+    "src/scene/primitives.ts": "04571d070b051aac8eb5abdd07ab14684102a0aaf0b3f0830ad11b3aa00ba866",
+    "src/scene/bodyShellGeometry.ts": "1f2b2eb47c02d3d7390768d95457882b696bb645fb38b55127aa27d35e8aad68",
+    "src/presentation/palette.ts": "4842c2f84b2db322b81d2386f61c6e2dc38163653ad12a8df8530d171165d71e",
+    "src/presentation/hushBasinPalette.json": "9cda6d84855006a39e92bd9a5695160369465f4009e118ba1c01f20606228a2c"
+  },
+  "meshes": [
+    {
+      "name": "BODY_VENTRAL_HULL_PORT_VIS",
+      "vertices": 48,
+      "weldedVertices": 10,
+      "triangles": 16,
+      "minimumArea": 0.026400000905990595,
+      "signedVolume": -0.9745320570693022,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_CHINE_FWD_PORT_VIS",
+      "vertices": 204,
+      "weldedVertices": 36,
+      "triangles": 68,
+      "minimumArea": 0.0033927640994233068,
+      "signedVolume": -1.6247574401913714,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_CHINE_AFT_PORT_VIS",
+      "vertices": 60,
+      "weldedVertices": 12,
+      "triangles": 20,
+      "minimumArea": 0.012671914402387062,
+      "signedVolume": -0.9388072331191532,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "vertices": 108,
+      "weldedVertices": 20,
+      "triangles": 36,
+      "minimumArea": 0.05249999463558197,
+      "signedVolume": -0.7066500554144381,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "vertices": 84,
+      "weldedVertices": 16,
+      "triangles": 28,
+      "minimumArea": 0.012599984312060997,
+      "signedVolume": -0.23368798830413645,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_PROW_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.08523745848326873,
+      "signedVolume": -0.31451317207251667,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.005600014650823937,
+      "signedVolume": -0.010304026476862961,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.005599995577334482,
+      "signedVolume": -0.010303991381643871,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_FWD_FACE_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.016199990558625643,
+      "signedVolume": -0.02818797986412496,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_FWD_SILL_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.0017500038146991415,
+      "signedVolume": -0.0012600023794179418,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_FWD_WEB_PORT_VIS",
+      "vertices": 18,
+      "weldedVertices": 5,
+      "triangles": 6,
+      "minimumArea": 0.006395700512380974,
+      "signedVolume": -0.0005940009112356322,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.007699993658064841,
+      "signedVolume": -0.017863986608501865,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.007699993658064841,
+      "signedVolume": -0.01786398660850194,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_AFT_FACE_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.032999999046325,
+      "signedVolume": -0.07326000669479198,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_AFT_SILL_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.0017499996423708808,
+      "signedVolume": -0.0015399998855579532,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_AFT_WEB_PORT_VIS",
+      "vertices": 18,
+      "weldedVertices": 5,
+      "triangles": 6,
+      "minimumArea": 0.011710986479975679,
+      "signedVolume": -0.0011483988501548945,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_COLLAR_SIDE_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.010500005602835927,
+      "signedVolume": -0.023100013452767326,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.007500006556512062,
+      "signedVolume": -0.011250009834768093,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_COLLAR_SILL_PORT_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.0060000025629989295,
+      "signedVolume": -0.009000003844498394,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_VENTRAL_HULL_STBD_VIS",
+      "vertices": 48,
+      "weldedVertices": 10,
+      "triangles": 16,
+      "minimumArea": 0.026400000905990595,
+      "signedVolume": -0.9745320570693022,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_CHINE_FWD_STBD_VIS",
+      "vertices": 204,
+      "weldedVertices": 36,
+      "triangles": 68,
+      "minimumArea": 0.0033927640994233068,
+      "signedVolume": -1.6247574401913714,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_CHINE_AFT_STBD_VIS",
+      "vertices": 60,
+      "weldedVertices": 12,
+      "triangles": 20,
+      "minimumArea": 0.012671914402387062,
+      "signedVolume": -0.9388072331191532,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "vertices": 108,
+      "weldedVertices": 20,
+      "triangles": 36,
+      "minimumArea": 0.05249999463558197,
+      "signedVolume": -0.7066500554144381,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "vertices": 84,
+      "weldedVertices": 16,
+      "triangles": 28,
+      "minimumArea": 0.012599984312060997,
+      "signedVolume": -0.23368798830413645,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_PROW_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.08523745848326873,
+      "signedVolume": -0.31451317207251667,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.005600014650823937,
+      "signedVolume": -0.010304026476862961,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.005599995577334482,
+      "signedVolume": -0.010303991381643871,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_FWD_FACE_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.016199990558625643,
+      "signedVolume": -0.02818797986412496,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_FWD_SILL_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.0017500038146991415,
+      "signedVolume": -0.001260002379417942,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_FWD_WEB_STBD_VIS",
+      "vertices": 18,
+      "weldedVertices": 5,
+      "triangles": 6,
+      "minimumArea": 0.006395700512380974,
+      "signedVolume": -0.0005940009112356322,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.007699993658064841,
+      "signedVolume": -0.017863986608501865,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.007699993658064841,
+      "signedVolume": -0.017863986608501928,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_AFT_FACE_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.032999999046325,
+      "signedVolume": -0.07326000669479198,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_AFT_SILL_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.0017499996423708808,
+      "signedVolume": -0.0015399998855579532,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_AFT_WEB_STBD_VIS",
+      "vertices": 18,
+      "weldedVertices": 5,
+      "triangles": 6,
+      "minimumArea": 0.011710986479975679,
+      "signedVolume": -0.0011483988501548945,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_COLLAR_SIDE_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.010500005602835927,
+      "signedVolume": -0.023100013452767326,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.007500006556512062,
+      "signedVolume": -0.011250009834768093,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    },
+    {
+      "name": "BODY_COLLAR_SILL_STBD_VIS",
+      "vertices": 36,
+      "weldedVertices": 8,
+      "triangles": 12,
+      "minimumArea": 0.0060000025629989295,
+      "signedVolume": -0.009000003844498394,
+      "boundaryEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerates": 0,
+      "normalFailures": 0
+    }
+  ],
+  "dimensions": {
+    "mirroredPairs": 19,
+    "deckTopRows": [
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+        "z": 5.03000020980835,
+        "top": 1.4800000190734863,
+        "bottom": 1.340000033378601
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+        "z": 4.199999809265137,
+        "top": 1.6450828313827515,
+        "bottom": 1.5050828456878662
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+        "z": 3.2200000286102295,
+        "top": 1.840000033378601,
+        "bottom": 1.7000000476837158
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+        "z": 0.550000011920929,
+        "top": 2.0399999618530273,
+        "bottom": 1.899999976158142
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+        "z": -1.7000000476837158,
+        "top": 2.280740737915039,
+        "bottom": 2.1407406330108643
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+        "z": -1.7000000476837158,
+        "top": 2.280740737915039,
+        "bottom": 2.1407406330108643
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+        "z": -1.8799999952316284,
+        "top": 2.299999952316284,
+        "bottom": 2.1600000858306885
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+        "z": -3.450000047683716,
+        "top": 1.7599999904632568,
+        "bottom": 1.6200000047683716
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+        "z": -5.980000019073486,
+        "top": 1.440000057220459,
+        "bottom": 1.2999999523162842
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+        "z": 5.03000020980835,
+        "top": 1.4800000190734863,
+        "bottom": 1.340000033378601
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+        "z": 4.199999809265137,
+        "top": 1.6450828313827515,
+        "bottom": 1.5050828456878662
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+        "z": 3.2200000286102295,
+        "top": 1.840000033378601,
+        "bottom": 1.7000000476837158
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+        "z": 0.550000011920929,
+        "top": 2.0399999618530273,
+        "bottom": 1.899999976158142
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+        "z": -1.7000000476837158,
+        "top": 2.280740737915039,
+        "bottom": 2.1407406330108643
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+        "z": -1.7000000476837158,
+        "top": 2.280740737915039,
+        "bottom": 2.1407406330108643
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+        "z": -1.8799999952316284,
+        "top": 2.299999952316284,
+        "bottom": 2.1600000858306885
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+        "z": -3.450000047683716,
+        "top": 1.7599999904632568,
+        "bottom": 1.6200000047683716
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+        "z": -5.980000019073486,
+        "top": 1.440000057220459,
+        "bottom": 1.2999999523162842
+      }
+    ],
+    "aftSlot": [
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+        "innerX": 0.36000001430511475
+      },
+      {
+        "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+        "innerX": 0.36000001430511475
+      }
+    ],
+    "pockets": [
+      {
+        "stem": "FWD",
+        "hand": "PORT",
+        "reach": 0.1600000262260437
+      },
+      {
+        "stem": "FWD",
+        "hand": "STBD",
+        "reach": 0.1600000262260437
+      },
+      {
+        "stem": "AFT",
+        "hand": "PORT",
+        "reach": 0.2200000286102295
+      },
+      {
+        "stem": "AFT",
+        "hand": "STBD",
+        "reach": 0.2200000286102295
+      }
+    ]
+  },
+  "presentation": [
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 38,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 38,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 19,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 19,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": true,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 38,
+      "ghostCount": 0
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": true,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 38,
+      "ghostCount": 10
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": true,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 19,
+      "ghostCount": 0
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": true,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 19,
+      "ghostCount": 10
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": false,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": false,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": false,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "hush-basin",
+      "enabled": false,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 38,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 38,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 19,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": true,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 19,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": false,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": false,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": true,
+      "ghost": false,
+      "enabledCount": 0,
+      "ghostCount": 0
+    },
+    {
+      "palette": "accepted",
+      "enabled": false,
+      "section": true,
+      "ghost": true,
+      "enabledCount": 0,
+      "ghostCount": 10
+    }
+  ],
+  "failures": [
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "hush-basin",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SIDE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_LINTEL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_PORT_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_CHINE_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_PROW_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_FWD_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_FWD_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_LIP_AFT_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_FACE_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_SILL_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    },
+    {
+      "code": "BODY_BLEND_CLASSIFICATION",
+      "mesh": "BODY_AFT_WEB_STBD_VIS",
+      "paletteName": "accepted",
+      "expectedGhost": false
+    }
+  ]
+}

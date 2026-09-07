@@ -8,6 +8,7 @@ declare global {
       getBuildInfo: () => Readonly<import("./buildInfo").Mt1BuildInfo>;
       getInspectionState: () => import("./buildInfo").Mt1InspectionState;
       getRenderInventory: () => import("./scene/directorInspection").DirectorRenderRow[];
+      presentation: import("./presentation/viewerState").PresentationHooks;
       setBodyConcept?: (on: boolean) => void;
       setBodySection?: (on: boolean) => void;
       getBodyConceptState?: () => {
@@ -18,6 +19,8 @@ declare global {
         propGhostMeshes: string[];
         masses: string[];
         conceptId: string;
+        surfaceRevision: "BODY-SHELL-03.2";
+        stationRevision: "MT1-FO1";
       };
       runBodyShellFit?: () => import("./verify/bodyShellFit").BodyShellFitReport;
       runVb1Study?: (opts?: import("./study/vb1/runStudy").Vb1StudyOptions) => Record<string, unknown>;

@@ -1,0 +1,311 @@
+
+> mt1-mechanical-truth@0.1.0 test
+> playwright test tests/mt1-*.spec.ts tests/dump-s5-report.spec.ts --workers=1 --grep-invert "@evidence-writer|@current-authority-writer"
+
+[WebServer] (node:267617) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+
+Running 103 tests using 1 worker
+
+(node:267692) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/103] tests/dump-s5-report.spec.ts:169:1 › validate strict executed S5HR3R1 ledger
+[2/103] tests/mt1-build-inspection.spec.ts:6:3 › MT1-S5HR3R1 lightweight build inspection › dev-page identity has no stale stage labels
+[3/103] tests/mt1-build-inspection.spec.ts:16:3 › MT1-S5HR3R1 lightweight build inspection › build and cached inspection getters return without authority work
+[4/103] tests/mt1-dp1.spec.ts:25:3 › MT1-DP1A flow/structural handover closure › DP1-G1 S4A sources unchanged + station signs
+[5/103] tests/mt1-dp1.spec.ts:43:3 › MT1-DP1A flow/structural handover closure › allowance-range eight-corner core envelopes
+[6/103] tests/mt1-dp1.spec.ts:57:3 › MT1-DP1A flow/structural handover closure › C1 flow insertion is interval overlap, not bay engagement
+[7/103] tests/mt1-dp1.spec.ts:83:3 › MT1-DP1A flow/structural handover closure › C9 README does not retain the pre-DP1 drive prohibition
+[8/103] tests/mt1-dp1.spec.ts:89:3 › MT1-DP1A flow/structural handover closure › DP1-G1–G10 production study
+[9/103] tests/mt1-dp1.spec.ts:159:3 › MT1-DP1A flow/structural handover closure › NC1 inverted engagement sign fails G3
+[10/103] tests/mt1-dp1.spec.ts:169:3 › MT1-DP1A flow/structural handover closure › NC2 oversized core fails G4
+[11/103] tests/mt1-dp1.spec.ts:179:3 › MT1-DP1A flow/structural handover closure › NC3 solid can fails G5
+[12/103] tests/mt1-dp1.spec.ts:189:3 › MT1-DP1A flow/structural handover closure › NC4 / NC-STRUCT1 no seat fails G7 and G8
+[13/103] tests/mt1-dp1.spec.ts:200:3 › MT1-DP1A flow/structural handover closure › NC-FLOW1 prior 0.150 m spigot fails G6 with marginal insertion
+[14/103] tests/mt1-dp1.spec.ts:219:3 › MT1-DP1A flow/structural handover closure › NC-FLOW2 receiver removed fails G6
+[15/103] tests/mt1-dp1.spec.ts:232:3 › MT1-DP1A flow/structural handover closure › NC-FLOW3 blocked passage fails G5 and G6
+[16/103] tests/mt1-dp1.spec.ts:245:3 › MT1-DP1A flow/structural handover closure › NC-STRUCT2 handover frame disconnected fails G7
+[17/103] tests/mt1-dp1.spec.ts:255:3 › MT1-DP1A flow/structural handover closure › NC-STRUCT3 rails-only path fails G8
+[18/103] tests/mt1-dp1.spec.ts:267:3 › MT1-DP1A flow/structural handover closure › NC-STRUCT4 lug intersects rail sector fails G7
+[19/103] tests/mt1-ge1.spec.ts:3:1 › MT1-GE1 is a study, not a contact architecture
+[20/103] tests/mt1-h1-presentation.spec.ts:6:3 › MT1-S5HR3R1 H1 presentation plumbing › presentation layer is explicit and authority geometry remains outside it
+[21/103] tests/mt1-h1-presentation.spec.ts:16:3 › MT1-S5HR3R1 H1 presentation plumbing › director inventory, picking, cameras, and shader runtime are lightweight
+[22/103] tests/mt1-kc1.spec.ts:3:1 › MT1-KC1 does not invent a hollow spine or authorize penetrations
+[23/103] tests/mt1-ks1.spec.ts:3:1 › MT1-KS1 screens crossings without authorizing cuts
+[24/103] tests/mt1-s1.spec.ts:4:3 › MT1-S1C authority closure › loads without page errors
+[25/103] tests/mt1-s1.spec.ts:15:3 › MT1-S1C authority closure › latch capture is throat/jaw, not solid interpenetration
+[26/103] tests/mt1-s1.spec.ts:26:3 › MT1-S1C authority closure › nest pin uses a real bore and stays captured
+[27/103] tests/mt1-s1.spec.ts:38:3 › MT1-S1C authority closure › authority volumes do not underbound physical meshes
+[28/103] tests/mt1-s1.spec.ts:58:3 › MT1-S1C authority closure › envelopes exclude keep-outs and contain sampled solids
+[29/103] tests/mt1-s1.spec.ts:81:3 › MT1-S1C authority closure › diagnostics restore canonical transformT
+[30/103] tests/mt1-s1.spec.ts:108:3 › MT1-S1C authority closure › canonical poses, reverse, and G1–G12
+[31/103] tests/mt1-s1.spec.ts:141:3 › MT1-S1C authority closure › socket remains a real +X stroke
+[32/103] tests/mt1-s2.spec.ts:4:3 › MT1-S2 front-left carry + strake › loads without page errors
+[33/103] tests/mt1-s2.spec.ts:15:3 › MT1-S2 front-left carry + strake › rear S1C parameters remain frozen
+[34/103] tests/mt1-s2.spec.ts:31:3 › MT1-S2 front-left carry + strake › front book pin captures before yaw and nest is a separate +X bore
+[35/103] tests/mt1-s2.spec.ts:43:3 › MT1-S2 front-left carry + strake › passive catch engages without an actuator
+[36/103] tests/mt1-s2.spec.ts:52:3 › MT1-S2 front-left carry + strake › front yaw is aft and socket is pure +X
+[37/103] tests/mt1-s2.spec.ts:75:3 › MT1-S2 front-left carry + strake › front envelopes and GF1–GF12
+[38/103] tests/mt1-s2.spec.ts:93:3 › MT1-S2 front-left carry + strake › frontT is reversible and diagnostics restore it
+[39/103] tests/mt1-s2.spec.ts:120:3 › MT1-S2 front-left carry + strake › rear G1–G12 still pass on frozen mechanism
+[40/103] tests/mt1-s2a.spec.ts:4:3 › MT1-S2A receiving-lane & capture authority › C1–C7 and GF1–GF12 close F01–F07
+[41/103] tests/mt1-s2a.spec.ts:28:3 › MT1-S2A receiving-lane & capture authority › rear S1C still GREEN after S2A carry repair
+[42/103] tests/mt1-s3.spec.ts:5:3 › MT1-S3 machine authority › maps are deterministic and monotonic
+[43/103] tests/mt1-s3.spec.ts:18:3 › MT1-S3 machine authority › machineT reversibility and scene matches maps
+[44/103] tests/mt1-s3.spec.ts:48:3 › MT1-S3 machine authority › S1C and S2A still GREEN under machine authority
+[45/103] tests/mt1-s3.spec.ts:61:3 › MT1-S3 machine authority › GI1–GI11 and drive barrier
+[46/103] tests/mt1-s3.spec.ts:79:3 › MT1-S3 machine authority › negative-control drive barrier
+[47/103] tests/mt1-s3.spec.ts:91:3 › MT1-S3 machine authority › preview mode restores on setMachineT
+[48/103] tests/mt1-s3.spec.ts:119:3 › MT1-S3 machine authority › certified parameters immutable
+[49/103] tests/mt1-s3a.spec.ts:5:3 › MT1-S3A authority repair › maps unchanged from frozen S3
+[50/103] tests/mt1-s3a.spec.ts:12:3 › MT1-S3A authority repair › C1 NC1/NC2/NC3 production gate leaves drive stowed
+[51/103] tests/mt1-s3a.spec.ts:46:3 › MT1-S3A authority repair › bypass of production clamp fails GI6
+[52/103] tests/mt1-s3a.spec.ts:69:3 › MT1-S3A authority repair › GI1–GI11 C1–C8 GREEN_CANDIDATE
+[53/103] tests/mt1-s3a.spec.ts:93:3 › MT1-S3A authority repair › waist negative control detects occupancy
+[54/103] tests/mt1-s3a.spec.ts:104:3 › MT1-S3A authority repair › cant and haunch preview disclose and restore
+[55/103] tests/mt1-s4.spec.ts:7:3 › MT1-S4 bilateral completion › frozen maps and mirrored stations
+[56/103] tests/mt1-s4.spec.ts:19:3 › MT1-S4 bilateral completion › B1–B13 GREEN_PENDING_DIRECTOR
+[57/103] tests/mt1-s4.spec.ts:42:3 › MT1-S4 bilateral completion › wrong-fold sign fails B2/C3
+[58/103] tests/mt1-s4.spec.ts:54:3 › MT1-S4 bilateral completion › four-capture NC and bypass
+[59/103] tests/mt1-s4.spec.ts:92:3 › MT1-S4 bilateral completion › starboard preview restores
+[60/103] tests/mt1-s4.spec.ts:122:3 › MT1-S4 bilateral completion › symmetry negative controls
+[61/103] tests/mt1-s5.spec.ts:12:3 › MT1-S5H captive cam shoe › S4A sources unchanged + insertion arithmetic + historical evidence
+[62/103] tests/mt1-s5.spec.ts:27:3 › MT1-S5H captive cam shoe › S5-P1–P16 production
+[63/103] tests/mt1-s5.spec.ts:60:3 › MT1-S5H captive cam shoe › legacy brick is actually disabled
+[64/103] tests/mt1-s5.spec.ts:73:3 › MT1-S5H captive cam shoe › NC-MAT1 re-enable envelope fails P3
+[65/103] tests/mt1-s5.spec.ts:83:3 › MT1-S5H captive cam shoe › NC-SPIGOT live 0.150 uses production readiness
+[66/103] tests/mt1-s5.spec.ts:104:3 › MT1-S5H captive cam shoe › NC1 blocked passage fails P3
+[67/103] tests/mt1-s5.spec.ts:114:3 › MT1-S5H captive cam shoe › NC-LOCK1 one lock removed fails P7
+[68/103] tests/mt1-s5.spec.ts:124:3 › MT1-S5H captive cam shoe › NC-LOCK2 engaged escape is blocked by shoulders
+[69/103] tests/mt1-s5.spec.ts:160:3 › MT1-S5H captive cam shoe › NC-LOCK3 retracted escape is clear
+[70/103] tests/mt1-s5.spec.ts:172:3 › MT1-S5H captive cam shoe › NC-LOCK-GAP S5A proximity is not a lock
+[71/103] tests/mt1-s5.spec.ts:195:3 › MT1-S5H captive cam shoe › NC-REGISTER mismatched scalar does not seat
+[72/103] tests/mt1-s5.spec.ts:210:3 › MT1-S5H captive cam shoe › NC-FRAME old top frame fails P6
+[73/103] tests/mt1-s5.spec.ts:220:3 › MT1-S5H captive cam shoe › NC-UPSTREAM lateral false keeps can stowed
+[74/103] tests/mt1-s5.spec.ts:233:3 › MT1-S5H captive cam shoe › NC-HIST does not overwrite historical S4 evidence
+[75/103] tests/mt1-s5.spec.ts:238:3 › MT1-S5H captive cam shoe › NC-SHOULDER-FLOAT local lock without structural splice
+[76/103] tests/mt1-s5.spec.ts:261:3 › MT1-S5H captive cam shoe › NC-CAM-GAP displaced track fails production readiness
+[77/103] tests/mt1-s5.spec.ts:290:3 › MT1-S5H captive cam shoe › NC-OPEN-CAM one-sided ramp fails retraction constraint
+[78/103] tests/mt1-s5.spec.ts:310:3 › MT1-S5H captive cam shoe › NC-SOLID-GUIDE unsliced wall fails pin path
+[79/103] tests/mt1-s5.spec.ts:332:3 › MT1-S5H captive cam shoe › NC-TRACK-FLOAT floating track fails production readiness
+[80/103] tests/mt1-s5.spec.ts:356:3 › MT1-S5H captive cam shoe › NC-ZERO-RETAINED-MARGIN stop at disengagement fails C17
+[81/103] tests/mt1-s5.spec.ts:380:3 › MT1-S5H captive cam shoe › NC-NONCURRENT-RAIL-INTRUSION all-rail sweep catches extra corridor solid
+[82/103] tests/mt1-s5.spec.ts:402:3 › MT1-S5H captive cam shoe › NC-BACKING-PLUG pin sweep hits restored backing
+[83/103] tests/mt1-s5.spec.ts:420:3 › MT1-S5H captive cam shoe › NC-NAMED-TRACK-INTRUDER arbitrary registered name fails C18
+[84/103] tests/mt1-s5.spec.ts:434:3 › MT1-S5H captive cam shoe › override cache is live without extra applyMachine
+[85/103] tests/mt1-s5h-mechanical.spec.ts:7:3 › MT1-S5HR3R1 frozen authority-contract path › proof-semantic row selection has no live-name projection
+[86/103] tests/mt1-s5h-mechanical.spec.ts:40:3 › MT1-S5HR3R1 frozen authority-contract path › complete unilateral path and assembly pair sweep
+tests/mt1-s5h-mechanical.spec.ts:40:3 › MT1-S5HR3R1 frozen authority-contract path › complete unilateral path and assembly pair sweep
+{
+  "samples": 2002,
+  "pairs": 2981632,
+  "minPinBacking": 0.0023049845695495286,
+  "minShoeBacking": 0.0029999985694885156,
+  "entry": {
+    "driveT0": 0.98,
+    "driveT1": 0.9913799999999999,
+    "sampleStep": 0.00002,
+    "lastClearDriveT": 0.99136,
+    "firstContactDriveT": 0.9913799999999999,
+    "lastSampledPreContactSeparation": 0.0000066925600029334985
+  },
+  "forward": {
+    "PORT": {
+      "extension": 0.024540000000000964,
+      "insertion": 0.006540006637573259,
+      "aSide": 0.026695000000001624,
+      "bSide": 0.024540000000000964
+    },
+    "STARBOARD": {
+      "extension": 0.024540000000000964,
+      "insertion": 0.006540006637573259,
+      "aSide": 0.026695000000001624,
+      "bSide": 0.024540000000000964
+    },
+    "TOP_PORT": {
+      "extension": 0.024540000000000964,
+      "insertion": 0.018540069580078145,
+      "aSide": 0.026700000000001625,
+      "bSide": 0.024540000000000964
+    },
+    "TOP_STARBOARD": {
+      "extension": 0.024540000000000964,
+      "insertion": 0.018540069580078145,
+      "aSide": 0.026700000000001625,
+      "bSide": 0.024540000000000964
+    }
+  },
+  "reverse": {
+    "PORT": {
+      "returnContactTravel": 0.003162000000000048,
+      "shoulderClearTravel": 0.0049470000000001344,
+      "shoulderConflictTravel": 0.01000042724609429,
+      "lead": 0.0050534272460941556,
+      "clearInsertion": -0.0000799832344055007,
+      "tongueInsertionAtClear": 0.10005273818969673,
+      "exitTravel": 0.027285000000000108,
+      "finalExtension": 0.000015000000000505359
+    },
+    "STARBOARD": {
+      "returnContactTravel": 0.003162000000000048,
+      "shoulderClearTravel": 0.0049470000000001344,
+      "shoulderConflictTravel": 0.01000042724609429,
+      "lead": 0.0050534272460941556,
+      "clearInsertion": -0.0000799832344055007,
+      "tongueInsertionAtClear": 0.10005273818969673,
+      "exitTravel": 0.027285000000000108,
+      "finalExtension": 0.000015000000000505359
+    },
+    "TOP_PORT": {
+      "returnContactTravel": 0.003162000000000048,
+      "shoulderClearTravel": 0.008262000000000052,
+      "shoulderConflictTravel": 0.01000042724609429,
+      "lead": 0.0017384272460942377,
+      "clearInsertion": -0.00013501930236814452,
+      "tongueInsertionAtClear": 0.09673776626586861,
+      "exitTravel": 0.027285000000000108,
+      "finalExtension": 0.00002000000000050536
+    },
+    "TOP_STARBOARD": {
+      "returnContactTravel": 0.003162000000000048,
+      "shoulderClearTravel": 0.008262000000000052,
+      "shoulderConflictTravel": 0.01000042724609429,
+      "lead": 0.0017384272460942377,
+      "clearInsertion": -0.00013501930236814452,
+      "tongueInsertionAtClear": 0.09673776626586861,
+      "exitTravel": 0.027285000000000108,
+      "finalExtension": 0.00002000000000050536
+    }
+  },
+  "retained": {
+    "PORT": 0.006540006637573259,
+    "STARBOARD": 0.006540006637573259,
+    "TOP_PORT": 0.018540069580078145,
+    "TOP_STARBOARD": 0.018540069580078145
+  }
+}
+
+[87/103] tests/mt1-s5h-mechanical.spec.ts:93:3 › MT1-S5HR3R1 frozen authority-contract path › readiness scan diagnostics and certificate fail-closed behavior
+tests/mt1-s5h-mechanical.spec.ts:93:3 › MT1-S5HR3R1 frozen authority-contract path › readiness scan diagnostics and certificate fail-closed behavior
+{
+  "out": [
+    {
+      "machineT": 0.998,
+      "ready": false,
+      "driveT": 0.9833333333333333,
+      "insertion": 0.16249986648559567,
+      "retained": -0.01800000047683714,
+      "tongues": true,
+      "locks": false,
+      "register": true,
+      "drivers": true,
+      "cert": true
+    },
+    {
+      "machineT": 0.999,
+      "ready": false,
+      "driveT": 0.9916666666666667,
+      "insertion": 0.1412500953674316,
+      "retained": -0.017336183547973616,
+      "tongues": true,
+      "locks": false,
+      "register": true,
+      "drivers": true,
+      "cert": true
+    },
+    {
+      "machineT": 0.9995,
+      "ready": false,
+      "driveT": 0.9958333333333338,
+      "insertion": 0.13062520980834957,
+      "retained": -0.013306015491485579,
+      "tongues": true,
+      "locks": false,
+      "register": true,
+      "drivers": true,
+      "cert": true
+    },
+    {
+      "machineT": 0.9999,
+      "ready": true,
+      "driveT": 0.9991666666666668,
+      "insertion": 0.12212511062622067,
+      "retained": 0.006540006637573259,
+      "tongues": true,
+      "locks": true,
+      "register": true,
+      "drivers": true,
+      "cert": true
+    },
+    {
+      "machineT": 0.99999,
+      "ready": true,
+      "driveT": 0.999916666666667,
+      "insertion": 0.12021251678466793,
+      "retained": 0.006540006637573259,
+      "tongues": true,
+      "locks": true,
+      "register": true,
+      "drivers": true,
+      "cert": true
+    },
+    {
+      "machineT": 1,
+      "ready": true,
+      "driveT": 1,
+      "insertion": 0.11999984741210934,
+      "retained": 0.006540006637573259,
+      "tongues": true,
+      "locks": true,
+      "register": true,
+      "drivers": true,
+      "cert": true
+    }
+  ],
+  "transitions": [
+    {
+      "machineT": 0.998,
+      "ready": false,
+      "retained": -0.01800000047683714
+    },
+    {
+      "machineT": 0.99983,
+      "ready": true,
+      "retained": 0.002136385679245012
+    }
+  ],
+  "absentEvaluate": false,
+  "absentRaw": false,
+  "absentGetter": false,
+  "explicitlyRecertified": true
+}
+
+[88/103] tests/mt1-s5h-mechanical.spec.ts:131:3 › MT1-S5HR3R1 frozen authority-contract path › corrective negative controls and immediate override consistency
+[89/103] tests/mt1-s5h-mechanical.spec.ts:174:3 › MT1-S5HR3R1 frozen authority-contract path › required pieces and physical-first corridor controls fail every readiness path
+[90/103] tests/mt1-s5h-mechanical.spec.ts:229:3 › MT1-S5HR3R1 frozen authority-contract path › frozen identity and lifetime controls fail closed by registration ID
+[91/103] tests/mt1-s5h-mechanical.spec.ts:304:3 › MT1-S5HR3R1 frozen authority-contract path › exact contact authority rejects wrong-sector registered interface
+[92/103] tests/mt1-us1.spec.ts:3:1 › MT1-US1 zones the frozen spine without assigning occupants
+[93/103] tests/mt1-vb1-ar1.spec.ts:13:3 › MT1-VB1-AR1 F5 location addendum › AR1-G1/G2 frozen identities
+tests/mt1-vb1-ar1.spec.ts:13:3 › MT1-VB1-AR1 F5 location addendum › AR1-G1/G2 frozen identities
+
+
+[94/103] tests/mt1-vb1-ar1.spec.ts:32:3 › MT1-VB1-AR1 F5 location addendum › AR1-G1–G10 production addendum
+[95/103] tests/mt1-vb1-ar1.spec.ts:60:3 › MT1-VB1-AR1 F5 location addendum › NC-AR1-1 mass invariant fails G5
+[96/103] tests/mt1-vb1-ar1.spec.ts:70:3 › MT1-VB1-AR1 F5 location addendum › NC-AR1-2 out-of-geometry fails G6
+[97/103] tests/mt1-vb1-ar1.spec.ts:80:3 › MT1-VB1-AR1 F5 location addendum › NC-AR1-3 volume-weighted split fails G7
+[98/103] tests/mt1-vb1.spec.ts:13:3 › MT1-VB1 bounded vehicle balance study › VB1-G1 S4A mechanism sources unchanged
+[99/103] tests/mt1-vb1.spec.ts:23:3 › MT1-VB1 bounded vehicle balance study › VB1-G1–G12 production study
+[100/103] tests/mt1-vb1.spec.ts:51:3 › MT1-VB1 bounded vehicle balance study › NC1 lateral symmetry fails G7
+[101/103] tests/mt1-vb1.spec.ts:63:3 › MT1-VB1 bounded vehicle balance study › NC2 frozen drive fails G9
+[102/103] tests/mt1-vb1.spec.ts:75:3 › MT1-VB1 bounded vehicle balance study › NC3 duplicate planform fails G10
+[103/103] tests/mt1-vb1.spec.ts:88:3 › MT1-VB1 bounded vehicle balance study › NC4 volume mass model fails G4
+  Slow test file: tests/mt1-s5.spec.ts (20.9m)
+  Slow test file: tests/mt1-s5h-mechanical.spec.ts (11.5m)
+  Slow test file: tests/mt1-s4.spec.ts (7.9m)
+  Slow test file: tests/mt1-s3a.spec.ts (5.8m)
+  Slow test file: tests/mt1-dp1.spec.ts (5.1m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  103 passed (1.1h)

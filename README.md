@@ -10,6 +10,13 @@ Quarto does not yet claim a vehicle profession. Nothing here establishes flight,
 
 ## Current baseline
 
+The `feature/quarto-reconciled-viewer` candidate combines accepted **FO1**
+receiving shoulders with **BODY-SHELL-03.2** solid surfaces and the
+[Quarto viewer 01](docs/QUARTO_VIEWER_01.md) controls and Hush Basin palette.
+See the [reconciliation handoff](docs/QUARTO_RECONCILIATION_01.md) for both parent
+histories, conflict resolutions and combined validation. The accepted mechanism,
+FO1/SO1/BA1 records, hosting setup and architecture dispositions below remain intact.
+
 | Item | Current record |
 | --- | --- |
 | Human-facing machine name | **Quarto** |
@@ -112,7 +119,7 @@ Post-KS1 closeout (not a new architecture chain, and not BODY-SHELL-04):
 
 **Hush Basin** is the current name of the Godot sister project: the gameplay realization and semantic reference. **Quarto** is the detailed Babylon.js mechanism and vehicle-architecture exploration.
 
-They are not literal 1:1 geometry exports. Quarto may learn state and readability obligations from Hush Basin; Hush Basin may later inherit simplified mechanics and semantics from Quarto. Historical material that says “District Zero” remains archival evidence and is not rewritten. No external Hush Basin repository URL is asserted here because none is recorded locally.
+They are not literal 1:1 geometry exports. Quarto may learn state and readability obligations from Hush Basin; Hush Basin inherits simplified mechanics and semantics from Quarto through the [native vehicle candidate](https://github.com/CharlesMish/hush-basin/tree/feature/quarto-native-vehicle-v1), delivered at commit `0b0cc10`. Its native Godot validation remains a separate task. Historical material that says “District Zero” remains archival evidence and is not rewritten.
 
 ## Run and inspect
 
@@ -133,7 +140,7 @@ npm run dev
 
 Vite serves it at `http://127.0.0.1:5181/`.
 
-Run the accepted BODY-SHELL-03.1 presentation viewer:
+Run the reconciled Quarto presentation viewer:
 
 ```bash
 npm --prefix explore/body-shell-03 ci

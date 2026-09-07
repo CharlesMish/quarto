@@ -2,6 +2,12 @@
 
 Fast handoff for the accepted repository baseline through KS1, plus accepted FO1, negative SO1, and accepted BA1 (exposed-carrier). SR1 is parked.
 
+The [reconciled viewer candidate](QUARTO_RECONCILIATION_01.md) combines accepted
+FO1 receiving shoulders with BODY-SHELL-03.2 opaque surfaces, corrected panels,
+repaired seams, and Quarto viewer 01 controls/palette. It includes both the
+accepted main history at `e56a4c0` and the reviewed viewer branch at `9540453`.
+The accepted mechanism, FO1/SO1/BA1 records and dispositions below remain unchanged.
+
 ## Identity and freeze
 
 - Public/human name: **Quarto**.

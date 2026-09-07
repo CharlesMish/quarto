@@ -1,0 +1,297 @@
+{
+  "kind": "presentation-viewer-review",
+  "authorityParticipation": "none added",
+  "generatedAt": "2026-09-06T03:14:23.901Z",
+  "browser": "151.0.7922.34",
+  "note": "Canonical pose commands use the unchanged frozen certification path. No authority or accepted-evidence writer is invoked. Timing is local browser evidence, not a device-independent performance guarantee.",
+  "timings": [],
+  "captures": [
+    {
+      "name": "spread",
+      "t": 0,
+      "camera": "body",
+      "fit": true,
+      "palette": "accepted",
+      "filename": "spread-accepted.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "spread",
+      "t": 0,
+      "camera": "body",
+      "fit": true,
+      "palette": "hush-basin",
+      "filename": "spread-hush-basin.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "fold",
+      "t": 0.24,
+      "camera": "body",
+      "fit": true,
+      "palette": "accepted",
+      "filename": "fold-accepted.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "fold",
+      "t": 0.24,
+      "camera": "body",
+      "fit": true,
+      "palette": "hush-basin",
+      "filename": "fold-hush-basin.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "reorient",
+      "t": 0.6,
+      "camera": "body",
+      "fit": true,
+      "palette": "accepted",
+      "filename": "reorient-accepted.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "reorient",
+      "t": 0.6,
+      "camera": "body",
+      "fit": true,
+      "palette": "hush-basin",
+      "filename": "reorient-hush-basin.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "seat",
+      "t": 0.86,
+      "camera": "driveBody",
+      "fit": true,
+      "palette": "accepted",
+      "filename": "seat-accepted.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "seat",
+      "t": 0.86,
+      "camera": "driveBody",
+      "fit": true,
+      "palette": "hush-basin",
+      "filename": "seat-hush-basin.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "handover",
+      "t": 0.94,
+      "camera": "tourHandover",
+      "fit": false,
+      "palette": "accepted",
+      "filename": "handover-accepted.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "handover",
+      "t": 0.94,
+      "camera": "tourHandover",
+      "fit": false,
+      "palette": "hush-basin",
+      "filename": "handover-hush-basin.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "drive",
+      "t": 1,
+      "camera": "driveBody",
+      "fit": true,
+      "palette": "accepted",
+      "filename": "drive-accepted.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "drive",
+      "t": 1,
+      "camera": "driveBody",
+      "fit": true,
+      "palette": "hush-basin",
+      "filename": "drive-hush-basin.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "stern",
+      "t": 1,
+      "camera": "tourSeated",
+      "fit": false,
+      "palette": "accepted",
+      "filename": "stern-accepted.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "stern",
+      "t": 1,
+      "camera": "tourSeated",
+      "fit": false,
+      "palette": "hush-basin",
+      "filename": "stern-hush-basin.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "released",
+      "t": 0.998,
+      "camera": "tourSeated",
+      "fit": false,
+      "palette": "accepted",
+      "filename": "released-accepted.png",
+      "inventoryAndInspectionPreserved": true
+    },
+    {
+      "name": "released",
+      "t": 0.998,
+      "camera": "tourSeated",
+      "fit": false,
+      "palette": "hush-basin",
+      "filename": "released-hush-basin.png",
+      "inventoryAndInspectionPreserved": true
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1600,
+      "height": 900,
+      "canvas": {
+        "x": 0,
+        "y": 70,
+        "width": 1600,
+        "height": 652,
+        "top": 70,
+        "right": 1600,
+        "bottom": 722,
+        "left": 0
+      },
+      "deck": {
+        "x": 240,
+        "y": 730,
+        "width": 1120,
+        "height": 158,
+        "top": 730,
+        "right": 1360,
+        "bottom": 888,
+        "left": 240
+      },
+      "canvasHeightFraction": 0.7244444444444444,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "canvas": {
+        "x": 0,
+        "y": 70,
+        "width": 1280,
+        "height": 472,
+        "top": 70,
+        "right": 1280,
+        "bottom": 542,
+        "left": 0
+      },
+      "deck": {
+        "x": 80,
+        "y": 550,
+        "width": 1120,
+        "height": 158,
+        "top": 550,
+        "right": 1200,
+        "bottom": 708,
+        "left": 80
+      },
+      "canvasHeightFraction": 0.6555555555555556,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 700,
+      "height": 900,
+      "canvas": {
+        "x": 0,
+        "y": 70,
+        "width": 700,
+        "height": 649,
+        "top": 70,
+        "right": 700,
+        "bottom": 719,
+        "left": 0
+      },
+      "deck": {
+        "x": 12,
+        "y": 727.21875,
+        "width": 676,
+        "height": 160.78125,
+        "top": 727.21875,
+        "right": 688,
+        "bottom": 888,
+        "left": 12
+      },
+      "canvasHeightFraction": 0.7211111111111111,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "canvas": {
+        "x": 0,
+        "y": 47,
+        "width": 390,
+        "height": 579,
+        "top": 47,
+        "right": 390,
+        "bottom": 626,
+        "left": 0
+      },
+      "deck": {
+        "x": 12,
+        "y": 634,
+        "width": 366,
+        "height": 202,
+        "top": 634,
+        "right": 378,
+        "bottom": 836,
+        "left": 12
+      },
+      "canvasHeightFraction": 0.6860189573459715,
+      "horizontalOverflow": false
+    }
+  ],
+  "errors": [],
+  "provenance": {
+    "build": {
+      "candidateId": "MT1-S5HR3R1",
+      "freezeId": "MT1-S5HR3R1",
+      "candidateSha256": "6df6ddd8086d12329e87b9695c8e309995b2e81c6e72eacea240215ca3a646a3",
+      "candidateSha256Scope": "MT1-S5HR3R1.zip authority candidate; dev tree adds presentation-only inspection plumbing",
+      "sourceCandidateId": "MT1-S5HR3R",
+      "sourceCandidateSha256": "072d936e4bef77c097b464f6aaf414feb630cafaba6a533f9dfbb9e5c4256018",
+      "authorityContractSha256": "e15885cc11777ad49f2b0b5ad2778facb64ee6f932b65bf36742a65afe451ba9",
+      "frozenNegativeControlContractSha256": "8b150937b002d7a054e098182d6453711c477f8eaeb1865c1663541dc135f70d",
+      "nominalGeometryAuthority": {
+        "id": "MT1-S5H",
+        "version": "frozen S5H mechanism geometry carried unchanged through HR3R1",
+        "parametersSha256": "8d713b182f94af2769bec0696fb10cfc94fce98d90e89a46a69aad68e805fc63"
+      },
+      "frozenS4aSha256": "95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8",
+      "inspectionSurface": "presentation-only-v1"
+    },
+    "inspection": {
+      "candidateId": "MT1-S5HR3R1",
+      "machineT": 0,
+      "driveT": 0,
+      "requestedDriveT": 0,
+      "mode": "MACHINE",
+      "preview": false,
+      "driveThrustReadyCached": false,
+      "certificate": {
+        "state": "STALE",
+        "present": false,
+        "valid": false,
+        "samples": null,
+        "pairsEvaluated": null
+      }
+    }
+  },
+  "pass": true
+}

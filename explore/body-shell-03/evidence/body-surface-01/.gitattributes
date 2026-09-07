@@ -1,0 +1,3 @@
+# Preserve raw tool formatting.
+*.log -whitespace
+development/nose-probe-error-context.md -whitespace

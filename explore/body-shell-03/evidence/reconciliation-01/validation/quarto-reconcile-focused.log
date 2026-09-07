@@ -1,0 +1,20 @@
+
+Running 1 test using 1 worker
+
+(node:639785) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/1] tests/body-surface.spec.ts:105:1 › reconciliation retains accepted FO1 station geometry and frame hierarchy
+tests/body-surface.spec.ts:105:1 › reconciliation retains accepted FO1 station geometry and frame hierarchy
+
+
+
+
+BJS - [13:41:56]: Babylon.js v8.56.2 - Null engine
+
+BJS - [13:41:56]: Babylon.js v8.56.2 - Null engine
+
+BJS - [13:41:56]: Babylon.js v8.56.2 - Null engine
+
+  1 passed (1.3s)

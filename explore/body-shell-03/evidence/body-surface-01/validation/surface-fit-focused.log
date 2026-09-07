@@ -1,0 +1,26 @@
+
+> mt1-body-shell-03-exploration@0.1.0 test
+> playwright test tests/body-shell-03.spec.ts tests/body-surface.spec.ts tests/viewer-readability.spec.ts --workers=1 --grep presentation-fit|actual surfaces|surface verifier|opaque BODY
+
+
+Running 4 tests using 1 worker
+
+(node:457216) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/4] tests/body-shell-03.spec.ts:82:1 › body shell 03 presentation-fit does not participate in authority
+[2/4] tests/body-surface.spec.ts:8:1 › BODY-SHELL-03.2 actual surfaces are closed, outward, flat and within the bounded joins
+tests/body-surface.spec.ts:8:1 › BODY-SHELL-03.2 actual surfaces are closed, outward, flat and within the bounded joins
+BJS - [03:34:47]: Babylon.js v8.56.2 - Null engine
+
+[3/4] tests/body-surface.spec.ts:23:1 › surface verifier rejects known defects in the immutable pre-refinement shell
+tests/body-surface.spec.ts:23:1 › surface verifier rejects known defects in the immutable pre-refinement shell
+
+
+
+
+BJS - [03:34:47]: Babylon.js v8.56.2 - Null engine
+
+[4/4] tests/body-surface.spec.ts:37:1 › opaque BODY and explicit section ghosting survive live palette and visibility combinations
+  4 passed (1.3m)
