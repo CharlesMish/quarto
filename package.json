@@ -6,14 +6,17 @@
   "description": "MT1-S5HR3R1 — final V1 proof-identity migration",
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 5181",
-    "build": "tsc --noEmit -p tsconfig.app.json && vite build",
+    "build": "npm run build:authority && npm run build:public",
+    "build:authority": "tsc --noEmit -p tsconfig.app.json && vite build",
+    "build:public": "npm --prefix explore/body-shell-03 ci && npm --prefix explore/body-shell-03 run build",
     "preview": "vite preview --host 127.0.0.1 --port 4181",
     "test": "playwright test tests/mt1-*.spec.ts tests/dump-s5-report.spec.ts --workers=1 --grep-invert \"@evidence-writer|@current-authority-writer\"",
     "test:evidence": "playwright test tests/dump-s5-report.spec.ts --workers=1 --grep @evidence-writer",
     "test:authority": "playwright test tests/dump-s5-report.spec.ts --workers=1 --grep @current-authority-writer",
     "capture": "playwright test tests/capture-proof.spec.ts",
     "capture:h1": "playwright test tests/capture-s5-h1-review.spec.ts --workers=1",
-    "cf:dry-run": "wrangler deploy --dry-run --strict"
+    "cf:dry-run": "npm run build && wrangler deploy --dry-run --strict",
+    "cf:deploy": "npm run build && wrangler deploy"
   },
   "engines": {
     "node": ">=20.19"

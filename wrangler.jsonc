@@ -5,7 +5,7 @@
   "workers_dev": true,
   "preview_urls": true,
   "assets": {
-    "directory": "./dist",
+    "directory": "./explore/body-shell-03/dist",
     "html_handling": "drop-trailing-slash"
   }
 }
