@@ -1,0 +1,3 @@
+quarto-public-target=explore/body-shell-03
+expected-title=Quarto / Mechanism viewer
+purpose=deployment sanity marker; this file is copied into the public Vite dist and should be reachable at /deploy-target.txt
