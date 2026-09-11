@@ -5,25 +5,30 @@ Quarto contains two Babylon.js applications with different purposes:
 - the repository root is the MT1-S5HR3R1 engineering / authority viewer;
 - `explore/body-shell-03/` is the reconciled Quarto presentation viewer intended for the public web edition.
 
-The public Worker must serve the presentation viewer, not the root authority build.
+The public Worker serves the presentation viewer, not the root authority build.
 
 ## Cloudflare Workers Builds
 
-GitHub-connected Cloudflare Workers Builds for the public `quarto` Worker should use:
+GitHub-connected Cloudflare Workers Builds for the public `quarto` Worker can keep the existing settings:
 
-1. Build command: `npm run build:public`
+1. Build command: `npm run build`
 2. Deploy command: `npx wrangler deploy`
 
-`npm run build:public` installs the presentation package with `npm ci` and builds its `dist/`. `wrangler.jsonc` serves `./explore/body-shell-03/dist` with `html_handling: "drop-trailing-slash"`.
+The root `build` script now builds both applications: first the engineering / authority viewer, then the presentation package. The presentation step installs its own locked dependencies with `npm ci` and produces `explore/body-shell-03/dist/`. `wrangler.jsonc` serves that presentation directory with `html_handling: "drop-trailing-slash"`.
 
-For an explicit local deployment, run:
+For focused local work:
+
+```bash
+npm run build:authority
+npm run build:public
+```
+
+For an explicit local public deployment:
 
 ```bash
 npm ci
 npm run cf:deploy
 ```
-
-The root command `npm run build` still builds the engineering / authority viewer and is intentionally not the public deployment target.
 
 ## URLs
 
