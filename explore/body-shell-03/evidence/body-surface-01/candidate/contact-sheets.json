@@ -1,0 +1,57 @@
+{
+  "currentReviewSha256": "2b379d338588e5b6ad1d46441b49a258c5e2750011f043c723b68f201e02183c",
+  "priorReviewSha256": "9a87daf0a0383b68a24b6218d00331ad2f9d90ee35c437dca8172ed34eeebc05",
+  "toolSha256": "997756ecbc117712ca5e969ccaaa15501a05301f94c1fe54c3dfe7f8c7fd0b64",
+  "method": "Browser rendering of unedited original review images in a labeled comparison layout.",
+  "sheets": [
+    {
+      "filename": "forebody-contact-sheet.png",
+      "rows": [
+        [
+          "spread-nose-port-hush-basin.png",
+          "SPREAD · nose from port · Hush Basin"
+        ],
+        [
+          "spread-nose-starboard-hush-basin.png",
+          "SPREAD · nose from starboard · Hush Basin"
+        ],
+        [
+          "spread-low-underside-hush-basin.png",
+          "SPREAD · low underside · Hush Basin"
+        ],
+        [
+          "drive-nose-port-accepted.png",
+          "DRIVE · nose from port · accepted palette"
+        ]
+      ],
+      "sha256": "704dcdc3e0f46ebb710894deb4a2fb5cc30e9bd7d9dc218cf50f226b9a136c86"
+    },
+    {
+      "filename": "inspection-contact-sheet.png",
+      "rows": [
+        [
+          "drive-top-hush-basin.png",
+          "DRIVE · top and intentional service opening"
+        ],
+        [
+          "drive-stern-hush-basin.png",
+          "DRIVE · open stern"
+        ],
+        [
+          "drive-body-off-hush-basin.png",
+          "DRIVE · BODY OFF"
+        ],
+        [
+          "drive-body-section-hush-basin.png",
+          "DRIVE · BODY SECTION"
+        ],
+        [
+          "handover-prop-section-hush-basin.png",
+          "Handover · PROP SECTION"
+        ]
+      ],
+      "sha256": "8ae729ac337d59ba1306e39dcff134ecc18cd1115b6f22eb95baf44f89d5e161"
+    }
+  ],
+  "errors": []
+}

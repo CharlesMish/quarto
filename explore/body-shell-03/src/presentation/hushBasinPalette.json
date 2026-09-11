@@ -1,0 +1,228 @@
+{
+  "sourceArchive": "Hush-Basin-Vehicle-Reference-20260905.zip",
+  "sourceArchiveSha256": "13f48b7b5347528b48424df12ed6bf9ac24ba1528a61fd3864dc2422b8a85914",
+  "sourceScene": "Hush-Basin-Vehicle-Reference-20260905/godot/scenes/vehicle_visual.tscn",
+  "sourceRig": "Hush-Basin-Vehicle-Reference-20260905/godot/scripts/vehicle_visual_rig.gd",
+  "scope": "Read-only extraction of the supplied Hush Basin presentation palette for a nonphysical, unregistered Quarto bridge study. Authority participation: none.",
+  "materials": {
+    "structure": {
+      "albedo": [
+        0.105,
+        0.165,
+        0.195,
+        1.0
+      ],
+      "metallic": 0.48,
+      "roughness": 0.38,
+      "emission": [
+        0.015,
+        0.025,
+        0.03,
+        1.0
+      ],
+      "emissionEnergy": 0.3
+    },
+    "shell": {
+      "albedo": [
+        0.16,
+        0.25,
+        0.3,
+        1.0
+      ],
+      "metallic": 0.3,
+      "roughness": 0.4,
+      "emission": [
+        0.025,
+        0.04,
+        0.05,
+        1.0
+      ],
+      "emissionEnergy": 0.32
+    },
+    "lift": {
+      "albedo": [
+        0.18,
+        0.72,
+        0.68,
+        1.0
+      ],
+      "metallic": 0.18,
+      "roughness": 0.34,
+      "emission": [
+        0.035,
+        0.2,
+        0.18,
+        1.0
+      ],
+      "emissionEnergy": 0.68
+    },
+    "lift_edge": {
+      "albedo": [
+        0.31,
+        0.97,
+        0.91,
+        1.0
+      ],
+      "metallic": 0.28,
+      "roughness": 0.25,
+      "emission": [
+        0.04,
+        0.32,
+        0.28,
+        1.0
+      ],
+      "emissionEnergy": 0.75
+    },
+    "energy": {
+      "albedo": [
+        1.0,
+        0.58,
+        0.16,
+        1.0
+      ],
+      "metallic": 0.2,
+      "roughness": 0.24,
+      "emission": [
+        0.65,
+        0.15,
+        0.02,
+        1.0
+      ],
+      "emissionEnergy": 1.2
+    },
+    "can": {
+      "albedo": [
+        0.08,
+        0.55,
+        0.62,
+        1.0
+      ],
+      "metallic": 0.62,
+      "roughness": 0.24,
+      "emission": [
+        0.015,
+        0.19,
+        0.23,
+        1.0
+      ],
+      "emissionEnergy": 0.45
+    },
+    "joint": {
+      "albedo": [
+        0.15,
+        0.27,
+        0.3,
+        1.0
+      ],
+      "metallic": 0.55,
+      "roughness": 0.31,
+      "emission": [
+        0.018,
+        0.04,
+        0.045,
+        1.0
+      ],
+      "emissionEnergy": 0.28
+    },
+    "lift_underlay": {
+      "albedo": [
+        0.09,
+        0.38,
+        0.38,
+        1.0
+      ],
+      "metallic": 0.34,
+      "roughness": 0.4,
+      "emission": [
+        0.025,
+        0.16,
+        0.15,
+        1.0
+      ],
+      "emissionEnergy": 0.65
+    },
+    "panel_seam": {
+      "albedo": [
+        0.32,
+        0.9,
+        0.85,
+        1.0
+      ],
+      "metallic": 0.3,
+      "roughness": 0.27,
+      "emission": [
+        0.06,
+        0.24,
+        0.22,
+        1.0
+      ],
+      "emissionEnergy": 0.65
+    },
+    "nozzle": {
+      "albedo": [
+        0.2,
+        0.95,
+        1.0,
+        1.0
+      ],
+      "metallic": 0.38,
+      "roughness": 0.22,
+      "emission": [
+        0.13,
+        0.62,
+        0.7,
+        1.0
+      ],
+      "emissionEnergy": 0.25
+    },
+    "bore": {
+      "albedo": [
+        0.012,
+        0.025,
+        0.032,
+        1.0
+      ],
+      "metallic": 0.25,
+      "roughness": 0.48
+    }
+  },
+  "stateColors": {
+    "spread": [
+      1.0,
+      0.58,
+      0.16,
+      1.0
+    ],
+    "drive": [
+      0.2,
+      0.95,
+      1.0,
+      1.0
+    ],
+    "caution": [
+      1.0,
+      0.72,
+      0.12,
+      1.0
+    ],
+    "strike": [
+      1.0,
+      0.12,
+      0.08,
+      1.0
+    ]
+  },
+  "notes": [
+    "Values preserve the source Godot Color and scalar literals numerically. No renderer conversion, tone mapping, or photographic color matching is implied.",
+    "The source defines 11 named StandardMaterial3D resources. The exported GLB inventory reports 12 materials because runtime material instances are exported separately.",
+    "All listed emission properties have emission_enabled = true in the source scene. The bore resource declares no emission properties; none are inferred here.",
+    "Scene resource defaults for energy and nozzle materials are overridden by VehicleVisualRig._apply_energy() after the rig initializes.",
+    "Runtime form_amount is clamped to [0, 1]. Base state color = SPREAD_ENERGY.lerp(DRIVE_ENERGY, form_amount), overridden by CAUTION_ENERGY for CAUTION and STRIKE_ENERGY for STRIKE.",
+    "Runtime EnergyCore and FixedCore materials: albedo_color = color; emission = color * 0.58; emission_energy_multiplier = lerpf(0.7, 1.35, form_amount).",
+    "Runtime propulsion_t: u = clampf((form_amount - 0.88) / maxf(1.00 - 0.88, 0.0001), 0.0, 1.0); propulsion_t = u * u * (3.0 - 2.0 * u).",
+    "Runtime NozzleRing material: albedo_color = color.lerp(Color.WHITE, 0.18); emission = color * 0.82; emission_energy_multiplier = lerpf(0.22, 1.45, propulsion_t). CanBody and NozzleBore retain their scene material settings.",
+    "The animated GLB contains transform animation only and holds SPREAD material state. Static GLBs contain their respective pose material states; dynamic state cues require the source runtime formulas.",
+    "Cross-renderer appearance remains unproven. Lighting, exposure, tone mapping, emission handling, and source color interpretation can change the rendered appearance.",
+    "This palette creates no frozen authority, physical geometry, keepout, reservation, structure, or volume rights. Accepted BODY-SHELL-03.1 materials and MT1-S5HR3R1 authority remain unchanged."
+  ]
+}

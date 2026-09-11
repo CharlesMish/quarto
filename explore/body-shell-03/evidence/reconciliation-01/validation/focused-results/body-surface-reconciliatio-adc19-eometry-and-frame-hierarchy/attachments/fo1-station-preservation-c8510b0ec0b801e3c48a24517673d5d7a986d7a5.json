@@ -1,0 +1,42 @@
+{
+  "pass": true,
+  "authorityParticipation": "none",
+  "acceptedRef": "e56a4c09330119827e5a6c9757bf5cbc448dd29d",
+  "comparedStations": [
+    "BODY_FWD_LIP_FWD_PORT_VIS",
+    "BODY_FWD_LIP_AFT_PORT_VIS",
+    "BODY_FWD_FACE_PORT_VIS",
+    "BODY_FWD_SILL_PORT_VIS",
+    "BODY_FWD_WEB_PORT_VIS",
+    "BODY_AFT_LIP_FWD_PORT_VIS",
+    "BODY_AFT_LIP_AFT_PORT_VIS",
+    "BODY_AFT_FACE_PORT_VIS",
+    "BODY_AFT_SILL_PORT_VIS",
+    "BODY_AFT_WEB_PORT_VIS",
+    "BODY_FWD_LIP_FWD_STBD_VIS",
+    "BODY_FWD_LIP_AFT_STBD_VIS",
+    "BODY_FWD_FACE_STBD_VIS",
+    "BODY_FWD_SILL_STBD_VIS",
+    "BODY_FWD_WEB_STBD_VIS",
+    "BODY_AFT_LIP_FWD_STBD_VIS",
+    "BODY_AFT_LIP_AFT_STBD_VIS",
+    "BODY_AFT_FACE_STBD_VIS",
+    "BODY_AFT_SILL_STBD_VIS",
+    "BODY_AFT_WEB_STBD_VIS"
+  ],
+  "materialMeshes": 38,
+  "coordinateToleranceMeters": 0.000001,
+  "acceptedSources": {
+    "src/scene/bodyShellConcept.ts": "441e857e24c335aa99b641ebb92dfa6ab6634ca2e816850e3b62dd0b2baa41b7",
+    "src/design/parameters.ts": "573eb96a8a9a767b0ec69752e49246c7784b250b77ac081f3ffe55543928dc93",
+    "src/bodyConceptInfo.ts": "dda341341f7a47a77852eee307df068ccb671d028248df367903a8f8ff40c8c9",
+    "src/scene/primitives.ts": "04571d070b051aac8eb5abdd07ab14684102a0aaf0b3f0830ad11b3aa00ba866"
+  },
+  "currentSources": {
+    "src/scene/bodyShellConcept.ts": "3bfcc747089a905d588c3b0e808f0fecbddb02358f7ed24b0fb12ea3c9e59f32",
+    "src/design/parameters.ts": "573eb96a8a9a767b0ec69752e49246c7784b250b77ac081f3ffe55543928dc93",
+    "src/bodyConceptInfo.ts": "0534dfe6d6f6270ebdc3d3b46fbe68e59ddf7740a3244ebba4ace63efb713f82",
+    "src/scene/primitives.ts": "04571d070b051aac8eb5abdd07ab14684102a0aaf0b3f0830ad11b3aa00ba866",
+    "src/scene/bodyShellGeometry.ts": "1f2b2eb47c02d3d7390768d95457882b696bb645fb38b55127aa27d35e8aad68"
+  }
+}

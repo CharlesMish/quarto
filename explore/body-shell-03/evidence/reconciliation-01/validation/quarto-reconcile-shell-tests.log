@@ -1,0 +1,106 @@
+
+> mt1-body-shell-03-exploration@0.1.0 test
+> playwright test tests/body-shell-03.spec.ts tests/body-surface.spec.ts tests/viewer-readability.spec.ts --workers=1
+
+
+Running 16 tests using 1 worker
+
+(node:638174) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/16] tests/body-shell-03.spec.ts:4:1 › body shell 03 is separate, toggleable, and non-authoritative
+[2/16] tests/body-shell-03.spec.ts:82:1 › body shell 03 presentation-fit does not participate in authority
+[3/16] tests/body-surface.spec.ts:8:1 › BODY-SHELL-03.2 actual surfaces are closed, outward, flat and within the bounded joins
+tests/body-surface.spec.ts:8:1 › BODY-SHELL-03.2 actual surfaces are closed, outward, flat and within the bounded joins
+BJS - [13:36:51]: Babylon.js v8.56.2 - Null engine
+
+[4/16] tests/body-surface.spec.ts:24:1 › surface verifier rejects known defects in the immutable pre-refinement shell
+tests/body-surface.spec.ts:24:1 › surface verifier rejects known defects in the immutable pre-refinement shell
+
+
+
+
+BJS - [13:36:52]: Babylon.js v8.56.2 - Null engine
+
+[5/16] tests/body-surface.spec.ts:38:1 › opaque BODY and explicit section ghosting survive live palette and visibility combinations
+[6/16] tests/body-surface.spec.ts:105:1 › reconciliation retains accepted FO1 station geometry and frame hierarchy
+tests/body-surface.spec.ts:105:1 › reconciliation retains accepted FO1 station geometry and frame hierarchy
+
+
+
+
+BJS - [13:37:09]: Babylon.js v8.56.2 - Null engine
+
+BJS - [13:37:09]: Babylon.js v8.56.2 - Null engine
+
+  1) tests/body-surface.spec.ts:105:1 › reconciliation retains accepted FO1 station geometry and frame hierarchy 
+
+    Error: expect(received).toHaveLength(expected)
+
+    Expected length: 24
+    Received length: 20
+    Received array:  ["BODY_FWD_LIP_FWD_PORT_VIS", "BODY_FWD_LIP_AFT_PORT_VIS", "BODY_FWD_FACE_PORT_VIS", "BODY_FWD_SILL_PORT_VIS", "BODY_FWD_WEB_PORT_VIS", "BODY_AFT_LIP_FWD_PORT_VIS", "BODY_AFT_LIP_AFT_PORT_VIS", "BODY_AFT_FACE_PORT_VIS", "BODY_AFT_SILL_PORT_VIS", "BODY_AFT_WEB_PORT_VIS", …]
+
+      126 |       checked.push(mesh.name);
+      127 |     }
+    > 128 |     expect(checked).toHaveLength(24);
+          |                     ^
+      129 |     const reportPath = testInfo.outputPath("fo1-station-preservation.json");
+      130 |     writeFileSync(reportPath, JSON.stringify({ pass: true, authorityParticipation: "none", acceptedRef: accepted.sourceRef,
+      131 |       comparedStations: checked, materialMeshes: current.scene.meshes.length,
+        at /tmp/quarto-reconciled-viewer/explore/body-shell-03/tests/body-surface.spec.ts:128:21
+
+    Error Context: test-results/body-surface-reconciliatio-adc19-eometry-and-frame-hierarchy/error-context.md
+
+
+(node:638375) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[7/16] tests/viewer-readability.spec.ts:64:1 › body surface refinement preserves the frozen mechanism, shared primitives and shaders
+[8/16] tests/viewer-readability.spec.ts:91:1 › initial presentation and reversible palettes preserve inspection and render identity
+[9/16] tests/viewer-readability.spec.ts:129:1 › responsive disclosures reserve a usable canvas and keep controls within the viewport
+[10/16] tests/viewer-readability.spec.ts:173:1 › slider events commit their latest value and cannot overwrite a later explicit pose
+[11/16] tests/viewer-readability.spec.ts:219:1 › folio sliders remain explicit noncanonical previews
+[12/16] tests/viewer-readability.spec.ts:242:1 › keyboard range input stays local and global playback remains controllable
+[13/16] tests/viewer-readability.spec.ts:266:1 › tour visits six canonical poses and exits without resetting the inspected pose
+[14/16] tests/viewer-readability.spec.ts:333:1 › reverse playback reaches both endpoints and interruptions stop automatic motion
+[15/16] tests/viewer-readability.spec.ts:368:1 › fit camera is presentation-only and keeps the inspected pose
+tests/viewer-readability.spec.ts:368:1 › fit camera is presentation-only and keeps the inspected pose
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0,"preset":"body","alpha":0.78,"beta":1.14,"radius":13.750982446637408,"extrema":[{"min":0.25641211205141157,"max":0.7416998103190584},{"min":0.2769305558112931,"max":0.9385965746830053},{"min":0.9992636990161284,"max":0.9997286576411952}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.46162652020984,"extrema":[{"min":0.24317027176101097,"max":0.7622805539287644},{"min":0.2896724189828863,"max":0.9385965245347346},{"min":0.9992283083342589,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.24,"preset":"body","alpha":0.78,"beta":1.14,"radius":12.639312043984496,"extrema":[{"min":0.32557699639950477,"max":0.7455462055304223},{"min":0.2897554956541688,"max":0.9385964897628418},{"min":0.999247947091028,"max":0.9997112044189871}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.24,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.46162652020984,"extrema":[{"min":0.33281436039018875,"max":0.7352604798112885},{"min":0.31247062089930466,"max":0.9385965245347346},{"min":0.9993163312243631,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.6,"preset":"body","alpha":0.78,"beta":1.14,"radius":12.639312043984496,"extrema":[{"min":0.3278971861504094,"max":0.7380708848889292},{"min":0.29013113290540987,"max":0.9385964897628418},{"min":0.9993698638513049,"max":0.9997112044189871}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.6,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.46162652020984,"extrema":[{"min":0.34634030761428536,"max":0.7050544770185162},{"min":0.30375353298569907,"max":0.9385965245347346},{"min":0.9993967909053547,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":1,"preset":"body","alpha":0.78,"beta":1.14,"radius":12.639312043984496,"extrema":[{"min":0.3736662435656175,"max":0.7380708848889292},{"min":0.2969376058078836,"max":0.9385964897628418},{"min":0.9993698638513049,"max":0.9997112044189871}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":1,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.46162652020984,"extrema":[{"min":0.3889821929186046,"max":0.7050544770185162},{"min":0.3089976741265966,"max":0.9385965245347346},{"min":0.9993967909053547,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0,"preset":"body","alpha":0.78,"beta":1.14,"radius":29.861646343837744,"extrema":[{"min":0.1379344071458367,"max":0.9385964806603011},{"min":0.3821851971755874,"max":0.6488414932756309},{"min":0.9997821098449496,"max":0.999855569620621}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0,"preset":"prop","alpha":0.92,"beta":1.16,"radius":30.362399161518695,"extrema":[{"min":0.119492804668432,"max":0.9385965043226747},{"min":0.3937952747409514,"max":0.6541718308461144},{"min":0.9997865728796393,"max":0.999859625014704}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.24,"preset":"body","alpha":0.78,"beta":1.14,"radius":26.60769434429602,"extrema":[{"min":0.21072963458729074,"max":0.9385964931408414},{"min":0.3893254626904976,"max":0.6700696602992773},{"min":0.9997578837543275,"max":0.9998404702077089}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.24,"preset":"prop","alpha":0.92,"beta":1.16,"radius":26.418278809377643,"extrema":[{"min":0.18906907048024774,"max":0.9385965043771453},{"min":0.39541201582680263,"max":0.6816644586588833},{"min":0.9997537315095355,"max":0.9998420189450136}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.6,"preset":"body","alpha":0.78,"beta":1.14,"radius":23.185106626966938,"extrema":[{"min":0.12452891047350663,"max":0.9385964685095484},{"min":0.3750773769634987,"max":0.7000851676723459},{"min":0.9997298924574661,"max":0.999820850050484}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.6,"preset":"prop","alpha":0.92,"beta":1.16,"radius":21.50395773945861,"extrema":[{"min":0.10784677082756676,"max":0.9385965018452295},{"min":0.36812113308480815,"max":0.7335588144888138},{"min":0.9996941976031272,"max":0.9998128053107078}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":1,"preset":"body","alpha":0.78,"beta":1.14,"radius":23.185106626966938,"extrema":[{"min":0.1971172242501048,"max":0.9385964685095484},{"min":0.38011876470557876,"max":0.7000851676723459},{"min":0.9997298924574661,"max":0.999820850050484}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":1,"preset":"prop","alpha":0.92,"beta":1.16,"radius":21.50395773945861,"extrema":[{"min":0.20941033570531487,"max":0.9385965018452295},{"min":0.3723338758967878,"max":0.7335588144888138},{"min":0.9996941976031272,"max":0.9998128053107078}]}
+
+[16/16] tests/viewer-readability.spec.ts:412:1 › inspect pick identifies the visible part after responsive canvas offsets
+  1 failed
+    tests/body-surface.spec.ts:105:1 › reconciliation retains accepted FO1 station geometry and frame hierarchy 
+  15 passed (4.0m)

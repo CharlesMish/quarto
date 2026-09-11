@@ -41,6 +41,9 @@ import { describeDirectorMesh, renderRow } from "./directorInspection";
 import { createH1Presentation } from "./h1Presentation";
 import { createBodyShellConcept } from "./bodyShellConcept";
 import { runBodyShellFit } from "../verify/bodyShellFit";
+import { createPresentationPalette } from "../presentation/palette";
+import { fitVisibleVehicle } from "../presentation/fitCamera";
+import { TOUR_STOPS, type PresentationPalette, type PresentationState } from "../presentation/viewerState";
 
 export interface App {
   setT(t: number): void;
@@ -65,6 +68,10 @@ const CAMERAS: Record<string, { alpha: number; beta: number; radius: number; tar
   propMid: { alpha: 1.42, beta: 1.18, radius: 4.8, target: [0, 0.82, -4.5] },
   propSeated: { alpha: 1.42, beta: 1.18, radius: 4.8, target: [0, 0.82, -5.65] },
   propReleased: { alpha: 1.42, beta: 1.18, radius: 4.8, target: [0, 0.82, -5.55] },
+  // External presentation angles keep the BODY ON stern inspectable. The
+  // legacy H1 camera entries above remain unchanged for their original review.
+  tourHandover: { alpha: -1.12, beta: 1.15, radius: 8.8, target: [0, 1, -4.3] },
+  tourSeated: { alpha: -1.12, beta: 1.18, radius: 6.5, target: [0, 0.9, -5.5] },
   lockPort: { alpha: 2.22, beta: 1.04, radius: 0.16, target: [-0.54, 0.53, -4.57] },
   lockStarboard: { alpha: 0.92, beta: 1.04, radius: 0.16, target: [0.54, 0.53, -4.57] },
   lockTopPort: { alpha: 1.92, beta: 0.62, radius: 0.17, target: [-0.393, 1.224, -4.57] },
@@ -107,10 +114,13 @@ export function createApp(canvas: HTMLCanvasElement): App {
   }
 
   const rig = createS5Machine(scene, mats);
-  createH1Presentation(scene, rig, mats);
+  const h1 = createH1Presentation(scene, rig, mats);
   const bodyConcept = createBodyShellConcept(scene);
+  const palette = createPresentationPalette(scene);
   const solidsByNode = new Map(rig.solids.map((solid) => [solid.node, solid]));
   const datumsByNode = new Map(rig.datums.map((datum) => [datum.node, datum]));
+  const presentationNames = new Set([...h1.presentationMeshes, ...bodyConcept.meshes]);
+  const fitMeshes = scene.meshes.filter((mesh) => solidsByNode.get(mesh)?.role === "physical" || presentationNames.has(mesh.name));
   const uiRoot = document.getElementById("ui");
   if (!uiRoot) throw new Error("missing #ui");
 
@@ -125,7 +135,57 @@ export function createApp(canvas: HTMLCanvasElement): App {
   let previewOn = false;
   let inspectPickOn = false;
   let lockFocusOn = false;
+  let tourStep: number | null = null;
+  let followFit = true;
+  let ui: ReturnType<typeof createUI>;
   let debug: ReturnType<typeof createDebugView>;
+
+  const presentationState = (): PresentationState => ({ palette: palette.getPalette(), tourStep, automatic, direction });
+  const syncPresentation = (): void => {
+    ui.setPresentation(presentationState());
+    ui.setViewState({
+      debug: debugOn, body: bodyConcept.isEnabled(), bodySection: bodyConcept.isSection(),
+      section: sectionOn, propSection: propSectionOn, lockFocus: lockFocusOn,
+    });
+  };
+  const leaveTour = (): void => {
+    if (tourStep === null) return;
+    tourStep = null;
+    syncPresentation();
+  };
+  const preparePoseCommand = (): void => {
+    ui.cancelPendingInput();
+    automatic = false;
+    leaveTour();
+  };
+  const fitCurrent = (): void => {
+    engine.resize();
+    fitVisibleVehicle(camera, fitMeshes, canvas.clientWidth / Math.max(1, canvas.clientHeight));
+  };
+  const fitCamera = (): void => {
+    ui.cancelPendingInput();
+    leaveTour();
+    followFit = true;
+    fitCurrent();
+  };
+  const setCamera = (preset: string): void => {
+    ui.cancelPendingInput();
+    leaveTour();
+    followFit = false;
+    applyCamera(preset, camera);
+  };
+  const setPalette = (value: PresentationPalette): void => {
+    if (value !== "hush-basin" && value !== "accepted") throw new RangeError("Unknown presentation palette");
+    ui.cancelPendingInput();
+    palette.setPalette(value);
+    syncPresentation();
+    // Preserve the current diagnostic values; changing a color scheme must not
+    // evaluate authority merely to update its explanatory legend.
+    const note = debugPanel().querySelector(".debug-note");
+    if (note) note.textContent = value === "hush-basin"
+      ? "Red = protected corridor. Amber = empty occupancy. Carry is muted teal. RGB axes at datums. Core color is decorative, not readiness."
+      : "Red = protected corridor. Amber = empty occupancy. Carry is ochre. RGB axes at datums.";
+  };
 
   const setLockFocus = (on: boolean): void => {
     if (lockFocusOn === on) return;
@@ -148,6 +208,9 @@ export function createApp(canvas: HTMLCanvasElement): App {
   };
 
   const refreshDebug = (): void => {
+    // Guard before constructing arguments: readiness getters may certify a
+    // stale path. Hidden presentation diagnostics have no work to display.
+    if (!debugOn) return;
     debug.update(frontT, rig.evaluateFront(frontT), transformT, rig.evaluate(transformT), {
       machineT,
       driveT: rig.lastDriveT(),
@@ -160,9 +223,13 @@ export function createApp(canvas: HTMLCanvasElement): App {
       driveThrustReady: rig.lastDriveThrustReady(),
       s5: evaluateS5Handover(rig),
     });
+    if (palette.getPalette() === "hush-basin") {
+      const note = debugPanel().querySelector(".debug-note");
+      if (note) note.textContent = "Red = protected corridor. Amber = empty occupancy. Carry is muted teal. RGB axes at datums. Core color is decorative, not readiness.";
+    }
   };
 
-  const setMachineT = (value: number): void => {
+  const applyCanonicalPose = (value: number): void => {
     previewOn = false;
     machineT = clamp01(value);
     const mapped = rig.applyMachine(machineT);
@@ -171,30 +238,65 @@ export function createApp(canvas: HTMLCanvasElement): App {
     ui.setMachineT(machineT, automatic, "MACHINE");
     ui.setFrontT(frontT, automatic);
     ui.setTransform(transformT, automatic);
+    palette.setForm(machineT);
+    syncPresentation();
     refreshDebug();
   };
 
+  const setMachineT = (value: number): void => {
+    preparePoseCommand();
+    applyCanonicalPose(value);
+  };
+
   const setT = (value: number): void => {
+    preparePoseCommand();
     previewOn = true;
     transformT = clamp01(value);
     rig.apply(transformT);
     rig.setAuthorityMode("REAR_PREVIEW");
     ui.setTransform(transformT, automatic);
     ui.setMachineT(machineT, automatic, "REAR_PREVIEW");
+    syncPresentation();
     refreshDebug();
   };
 
   const setFrontT = (value: number): void => {
+    preparePoseCommand();
     previewOn = true;
     frontT = clamp01(value);
     rig.applyFront(frontT);
     rig.setAuthorityMode("FRONT_PREVIEW");
     ui.setFrontT(frontT, automatic);
     ui.setMachineT(machineT, automatic, "FRONT_PREVIEW");
+    syncPresentation();
     refreshDebug();
   };
 
-  const ui = createUI(uiRoot, {
+  const reverseAutomatic = (): void => {
+    ui.cancelPendingInput();
+    leaveTour();
+    direction = machineT <= 0 ? 1 : machineT >= 1 ? -1 : -direction;
+    automatic = true;
+    ui.setMachineT(machineT, automatic, rig.authorityMode());
+    syncPresentation();
+  };
+
+  const setTourStep = (value: number | null): void => {
+    if (value !== null && (!Number.isInteger(value) || !TOUR_STOPS[value])) throw new RangeError("Unknown tour stop");
+    ui.cancelPendingInput();
+    if (value === null) { leaveTour(); return; }
+    automatic = false;
+    tourStep = value;
+    const stop = TOUR_STOPS[value];
+    applyCanonicalPose(stop.t);
+    applyCamera(stop.camera, camera);
+    followFit = value < 4;
+    if (followFit) fitCurrent();
+    else camera.radius *= Math.max(1, 0.9 / (canvas.clientWidth / Math.max(1, canvas.clientHeight)));
+    syncPresentation();
+  };
+
+  ui = createUI(uiRoot, {
     setMachineT(value) {
       automatic = false;
       setMachineT(value);
@@ -208,20 +310,20 @@ export function createApp(canvas: HTMLCanvasElement): App {
       setFrontT(value);
     },
     toggleAutomatic() {
+      ui.cancelPendingInput();
+      leaveTour();
       automatic = !automatic;
       direction = machineT >= 0.999 ? -1 : machineT <= 0.001 ? 1 : direction;
       ui.setMachineT(machineT, automatic, rig.authorityMode());
+      syncPresentation();
     },
-    setCamera(preset) {
-      applyCamera(preset, camera);
-    },
+    reverseAutomatic,
+    fitCamera,
+    setPalette,
+    setTourStep,
+    setCamera,
     resetCamera() {
-      camera.inertialAlphaOffset = 0;
-      camera.inertialBetaOffset = 0;
-      camera.inertialRadiusOffset = 0;
-      camera.inertialPanningX = 0;
-      camera.inertialPanningY = 0;
-      applyCamera("body", camera);
+      setCamera("body");
     },
     toggleDebug() {
       debugOn = !debugOn;
@@ -262,6 +364,10 @@ export function createApp(canvas: HTMLCanvasElement): App {
     },
   });
 
+  // Direct orbit/pan/zoom leaves guided framing without changing the pose.
+  canvas.addEventListener("pointerdown", () => { ui.cancelPendingInput(); leaveTour(); followFit = false; });
+  canvas.addEventListener("wheel", () => { ui.cancelPendingInput(); leaveTour(); followFit = false; }, { passive: true });
+
   canvas.addEventListener("pointerup", (event) => {
     if (!inspectPickOn) return;
     const bounds = canvas.getBoundingClientRect();
@@ -278,28 +384,42 @@ export function createApp(canvas: HTMLCanvasElement): App {
   ui.setMachineT(machineT, automatic, rig.authorityMode());
   ui.setFrontT(frontT, automatic);
   ui.setTransform(transformT, automatic);
+  syncPresentation();
 
   scene.registerBeforeRender(() => {
     if (!automatic) return;
     const dt = Math.min(engine.getDeltaTime() / 1000, 0.05);
     const next = machineT + direction * dt * (1 / 12);
     if (next >= 1) {
-      setMachineT(1);
       automatic = false;
+      applyCanonicalPose(1);
     } else if (next <= 0) {
-      setMachineT(0);
       automatic = false;
+      applyCanonicalPose(0);
     } else {
-      setMachineT(next);
+      applyCanonicalPose(next);
     }
   });
 
   engine.runRenderLoop(() => {
     scene.render();
   });
-  window.addEventListener("resize", () => engine.resize());
+  const resizeObserver = new ResizeObserver(() => {
+    engine.resize();
+    if (followFit) fitCurrent();
+  });
+  resizeObserver.observe(canvas);
+  scene.onDisposeObservable.add(() => { resizeObserver.disconnect(); palette.dispose(); });
+  fitCurrent();
 
   window.__MT1 = {
+    presentation: {
+      getState: () => ({ ...presentationState(), viewerId: "QUARTO-VIEWER-01" }),
+      setPalette,
+      setTourStep,
+      fitCamera,
+      reverse: reverseAutomatic,
+    },
     getBuildInfo,
     getInspectionState: (): Mt1InspectionState => {
       const certificate = getPathCertificate(rig);
@@ -321,8 +441,8 @@ export function createApp(canvas: HTMLCanvasElement): App {
       };
     },
     getRenderInventory: () => scene.meshes.map((mesh) => renderRow(mesh, solidsByNode, datumsByNode)),
-    setBodyConcept: (on: boolean) => bodyConcept.setEnabled(on),
-    setBodySection: (on: boolean) => bodyConcept.setSection(on),
+    setBodyConcept: (on: boolean) => { ui.cancelPendingInput(); bodyConcept.setEnabled(on); syncPresentation(); },
+    setBodySection: (on: boolean) => { ui.cancelPendingInput(); bodyConcept.setSection(on); syncPresentation(); },
     getBodyConceptState: () => ({
       enabled: bodyConcept.isEnabled(),
       section: bodyConcept.isSection(),
@@ -331,6 +451,8 @@ export function createApp(canvas: HTMLCanvasElement): App {
       propGhostMeshes: [...bodyConcept.propGhostMeshes],
       masses: [...bodyConcept.masses],
       conceptId: BODY_CONCEPT_INFO.conceptId,
+      surfaceRevision: BODY_CONCEPT_INFO.surfaceRevision,
+      stationRevision: BODY_CONCEPT_INFO.stationRevision,
     }),
     runBodyShellFit: () => runBodyShellFit(
       rig,
@@ -341,18 +463,22 @@ export function createApp(canvas: HTMLCanvasElement): App {
     setFrontT,
     getFrontT: () => frontT,
     setFrontStbdT: (value) => {
+      preparePoseCommand();
       previewOn = true;
       rig.applyFrontStbd(clamp01(value));
       rig.setAuthorityMode("FRONT_STBD_PREVIEW");
       ui.setMachineT(machineT, automatic, "FRONT_STBD_PREVIEW");
+      syncPresentation();
       refreshDebug();
     },
     getFrontStbdT: () => rig.lastFrontStbdT(),
     setRearStbdT: (value) => {
+      preparePoseCommand();
       previewOn = true;
       rig.applyRearStbd(clamp01(value));
       rig.setAuthorityMode("REAR_STBD_PREVIEW");
       ui.setMachineT(machineT, automatic, "REAR_STBD_PREVIEW");
+      syncPresentation();
       refreshDebug();
     },
     getRearStbdT: () => rig.lastRearStbdT(),
@@ -389,39 +515,51 @@ export function createApp(canvas: HTMLCanvasElement): App {
     getS5Override: () => rig.getS5Override(),
     probeLockEscape: (engaged) => rig.probeLockEscape(engaged),
     setPropSection: (on: boolean) => {
+      ui.cancelPendingInput();
       propSectionOn = on;
       for (const m of scene.meshes) {
         if (m.name.startsWith("S5_CAN_")) m.visibility = on ? 0.08 : 1;
       }
       bodyConcept.setPropGhost(on);
+      syncPresentation();
     },
     setLockStudyView: (on: boolean) => {
+      ui.cancelPendingInput();
       setLockFocus(on);
+      syncPresentation();
     },
     runHaunchStudy: () => rig.withPreservedPose(() => studyHaunch(rig)),
     runCantStudy: () => rig.withPreservedPose(() => studyCant(rig)),
-    setCamera: (preset) => applyCamera(preset, camera),
+    setCamera,
     setDebug: (on) => {
+      ui.cancelPendingInput();
       debugOn = on;
       debug.setEnabled(on);
       refreshDebug();
+      syncPresentation();
     },
     setSection: (on) => {
+      ui.cancelPendingInput();
       sectionOn = on;
       debug.setSection(on);
+      syncPresentation();
     },
     previewHaunch: (deg) => {
+      preparePoseCommand();
       previewOn = true;
       rig.apply(0.9, { haunchDeg: deg });
       rig.setAuthorityMode("HAUNCH_PREVIEW");
       ui.setMachineT(machineT, automatic, "HAUNCH_PREVIEW");
+      syncPresentation();
       refreshDebug();
     },
     previewCant: (deg) => {
+      preparePoseCommand();
       previewOn = true;
       rig.applyFront(1, { cantDeg: deg });
       rig.setAuthorityMode("CANT_PREVIEW");
       ui.setMachineT(machineT, automatic, "CANT_PREVIEW");
+      syncPresentation();
       refreshDebug();
     },
     clearPreview: () => {

@@ -1,0 +1,25 @@
+{
+  "authorityParticipation": "none",
+  "rootBuild": "passed",
+  "shellBuild": "passed",
+  "shellSuite": {
+    "initialPassed": 15,
+    "initialFailed": 1,
+    "reason": "new FO1 test incorrectly expected 24 pieces instead of 20",
+    "focusedCorrectedPassed": 1,
+    "totalCasesCovered": 16
+  },
+  "ba1Passed": 2,
+  "priorRoot103": "reused with source/dependency audit; not rerun",
+  "fitSamples": 101,
+  "fitDefects": 0,
+  "surfaceMeshes": 38,
+  "surfaceTriangles": 648,
+  "visualFrames": 16,
+  "visualPageErrors": [],
+  "limits": [
+    "Headless Chromium only",
+    "Existing first-pose certification delay and fine roof seam",
+    "No native Godot or deployment validation"
+  ]
+}

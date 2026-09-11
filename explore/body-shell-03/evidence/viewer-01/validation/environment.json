@@ -1,0 +1,12 @@
+{
+  "node": "v25.2.1",
+  "platform": "linux",
+  "kernel": "6.18.33.2-microsoft-standard-WSL2",
+  "architecture": "x64",
+  "cpu": "13th Gen Intel(R) Core(TM) i9-13950HX",
+  "logicalCpus": 32,
+  "memoryGiB": 27,
+  "babylon": "8.56.2",
+  "playwright": "1.62.1",
+  "vite": "7.3.6"
+}

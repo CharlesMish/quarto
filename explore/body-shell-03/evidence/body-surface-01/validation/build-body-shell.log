@@ -1,0 +1,46 @@
+
+> mt1-body-shell-03-exploration@0.1.0 build
+> tsc --noEmit -p tsconfig.app.json && vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 486 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                        0.52 kB │ gzip:   0.34 kB
+dist/assets/index-v7nzuVjl.css                         8.46 kB │ gzip:   2.48 kB
+dist/assets/pass.fragment-DEeDv9DO.js                  0.37 kB │ gzip:   0.29 kB │ map:     0.89 kB
+dist/assets/rgbdDecode.fragment-BjzA7j96.js            0.43 kB │ gzip:   0.33 kB │ map:     1.02 kB
+dist/assets/pass.fragment-IL2izjxu.js                  0.50 kB │ gzip:   0.33 kB │ map:     1.03 kB
+dist/assets/rgbdDecode.fragment-DnNNF3nM.js            0.61 kB │ gzip:   0.39 kB │ map:     1.17 kB
+dist/assets/color.fragment-Cu-WTIKK.js                 0.76 kB │ gzip:   0.39 kB │ map:     1.59 kB
+dist/assets/passCube.fragment-DBY7nTJ6.js              0.88 kB │ gzip:   0.39 kB │ map:     1.52 kB
+dist/assets/color.fragment-C51ieuzX.js                 0.90 kB │ gzip:   0.45 kB │ map:     1.71 kB
+dist/assets/mesh.vertexData.functions-ayNlGC5K.js      1.02 kB │ gzip:   0.54 kB │ map:     6.51 kB
+dist/assets/passCube.fragment-Cyh8cchm.js              1.19 kB │ gzip:   0.44 kB │ map:     1.84 kB
+dist/assets/color.vertex-DFhQo8cs.js                   1.20 kB │ gzip:   0.56 kB │ map:     2.43 kB
+dist/assets/color.vertex-DstGztxc.js                   1.23 kB │ gzip:   0.55 kB │ map:     2.53 kB
+dist/assets/ddsTextureLoader-DEgQVASw.js               1.35 kB │ gzip:   0.68 kB │ map:     5.72 kB
+dist/assets/fogFragment-BV-kqMl5.js                    2.36 kB │ gzip:   0.73 kB │ map:     4.72 kB
+dist/assets/logDepthDeclaration-0XI0-t9B.js            2.38 kB │ gzip:   0.78 kB │ map:     5.03 kB
+dist/assets/hdrTextureLoader-DgJmdFLC.js               2.47 kB │ gzip:   1.20 kB │ map:    16.15 kB
+dist/assets/iesTextureLoader-oz6QR_vN.js               2.76 kB │ gzip:   1.20 kB │ map:    12.29 kB
+dist/assets/dumpTools-BAIe1NgD.js                      3.17 kB │ gzip:   1.56 kB │ map:    15.28 kB
+dist/assets/tgaTextureLoader-B7yILanA.js               3.58 kB │ gzip:   1.41 kB │ map:    19.77 kB
+dist/assets/helperFunctions-DXiALkxa.js                5.92 kB │ gzip:   2.00 kB │ map:     6.93 kB
+dist/assets/envTextureLoader-C-rIiYa1.js               7.78 kB │ gzip:   3.15 kB │ map:    49.67 kB
+dist/assets/basisTextureLoader-BOsUafAK.js             8.24 kB │ gzip:   3.26 kB │ map:    39.78 kB
+dist/assets/dds-Bl0hHAJO.js                            9.75 kB │ gzip:   3.77 kB │ map:    68.13 kB
+dist/assets/vertexColorMixing-DLsPFWEY.js             11.36 kB │ gzip:   1.98 kB │ map:    17.93 kB
+dist/assets/exrTextureLoader-yHHdzk3V.js              15.58 kB │ gzip:   5.84 kB │ map:   104.72 kB
+dist/assets/ktxTextureLoader-7Akx-uyR.js              15.84 kB │ gzip:   4.65 kB │ map:    62.77 kB
+dist/assets/default.vertex-C_cqR6Yx.js                20.93 kB │ gzip:   4.10 kB │ map:    33.44 kB
+dist/assets/passPostProcess-XtcXRhSR.js               58.98 kB │ gzip:  14.59 kB │ map:   218.29 kB
+dist/assets/default.fragment-BIcAroxz.js             106.26 kB │ gzip:  19.45 kB │ map:   127.42 kB
+dist/assets/index-D-Hb4BH_.js                      1,626.80 kB │ gzip: 416.84 kB │ map: 6,554.39 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 7.59s

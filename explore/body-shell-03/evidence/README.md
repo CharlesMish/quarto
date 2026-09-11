@@ -2,6 +2,13 @@
 
 Diagnostic index only. Nothing here promotes presentation into authority or volume rights.
 
+## Reconciled viewer candidate
+
+The combined BODY-SHELL-03.2 + FO1 candidate has fresh evidence in
+[reconciliation-01](reconciliation-01/README.md). The prior `viewer-01/`,
+`body-surface-01/` and FO1 records below remain tied to their original sources;
+none alone validates the combined candidate.
+
 ## BODY-SHELL-03.1 baseline / pre-FO1 (historical — preserve)
 
 Package-root files are the BODY-SHELL-03.1 baseline review set from before FO1. **Do not treat them as the current live appearance.**

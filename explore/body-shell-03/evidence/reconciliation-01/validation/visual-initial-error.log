@@ -1,0 +1,13 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.evaluate: TypeError: a.setPalette is not a function
+    at eval (eval at evaluate (:311:30), <anonymous>:1:50)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at /tmp/quarto-reconciled-viewer/explore/body-shell-03/tools/review-reconciliation.mjs:21:12 {
+  log: []
+}
+
+Node.js v25.2.1

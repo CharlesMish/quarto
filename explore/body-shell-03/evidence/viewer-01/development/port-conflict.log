@@ -1,0 +1,6 @@
+
+> mt1-body-shell-03-exploration@0.1.0 test
+> playwright test tests/body-shell-03.spec.ts tests/viewer-readability.spec.ts --workers=1
+
+Error: http://127.0.0.1:5185 is already used, make sure that nothing is running on the port/url or set reuseExistingServer:true in config.webServer.
+

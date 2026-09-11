@@ -1,0 +1,21 @@
+{
+  "pass": true,
+  "scope": "Offline visual artifact integrity, independent of runtime tests and authority",
+  "authorityParticipation": "none",
+  "candidateCaptureImages": 50,
+  "staticPairs": 32,
+  "contactSheets": 2,
+  "originalFailedReportAndExecutingScriptsRetained": true,
+  "candidateFiles": {
+    "review-validated.json": "2b379d338588e5b6ad1d46441b49a258c5e2750011f043c723b68f201e02183c",
+    "review.json": "dc1b9024d676c02ff04a7137b25010ada7624b2c52ef52842643fc5c070464da",
+    "capture-tool.mjs": "209e77772c021be74669dd007c11e993d257532d8a92999dcc3f525138189250",
+    "seam-inspection.json": "8971346609e18c1fa855baeb04d8d975dd8bd2e400f640ad045f34dbe6cd7881",
+    "reproduce-seam-probes.mjs": "3f78a662445ed9828a006f3d223d9a73088c27d6671d44d3031b663811cb1981",
+    "VISUAL_REVIEW.md": "1402b652f2281e345ee3731d6abb5974a463b346cf3b9977c63f435c59927460",
+    "comparison.html": "4f6abf2385b5b79efe63541c12a0c88c7c852eab9091fbf6c5a50cd2a257743a",
+    "motion.html": "3a464332e37db6db387f100254da1d2db85012f84a314775fda913331f09ece5",
+    "contact-sheets.json": "85a3a1a6ef78f4b6aa115ceb2bdc987c5ecf4bc3639bbdb42f160258d79e80ae"
+  },
+  "finalReviewToolSha256": "997756ecbc117712ca5e969ccaaa15501a05301f94c1fe54c3dfe7f8c7fd0b64"
+}

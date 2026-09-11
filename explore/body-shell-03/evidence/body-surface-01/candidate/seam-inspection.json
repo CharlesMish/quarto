@@ -1,0 +1,833 @@
+{
+  "scope": "Body-only NullEngine source probe; no mechanism/authority builder or browser involved.",
+  "authorityParticipation": "none",
+  "sources": {
+    "src/scene/bodyShellConcept.ts": "9031a8935b66d39f0215b1330bce747a1c546e886b2269734044b14bdf314777",
+    "src/design/parameters.ts": "573eb96a8a9a767b0ec69752e49246c7784b250b77ac081f3ffe55543928dc93",
+    "src/bodyConceptInfo.ts": "c79d8d4c927d1fbb3d12892fb4e87c9a788df48571378fbee1a3abd29a7e4445",
+    "src/scene/primitives.ts": "04571d070b051aac8eb5abdd07ab14684102a0aaf0b3f0830ad11b3aa00ba866",
+    "src/scene/bodyShellGeometry.ts": "1f2b2eb47c02d3d7390768d95457882b696bb645fb38b55127aa27d35e8aad68",
+    "src/presentation/palette.ts": "4842c2f84b2db322b81d2386f61c6e2dc38163653ad12a8df8530d171165d71e",
+    "src/presentation/hushBasinPalette.json": "9cda6d84855006a39e92bd9a5695160369465f4009e118ba1c01f20606228a2c"
+  },
+  "roofSeamSharedVerticesExact": true,
+  "roofSeamVertices": [
+    [
+      0,
+      2.280740737915039,
+      -1.7000000476837158
+    ],
+    [
+      0,
+      2.0399999618530273,
+      0.550000011920929
+    ],
+    [
+      0,
+      1.840000033378601,
+      3.2200000286102295
+    ],
+    [
+      0,
+      1.6450828313827515,
+      4.199999809265137
+    ],
+    [
+      0,
+      1.4800000190734863,
+      5.03000020980835
+    ]
+  ],
+  "roofProbes": [
+    {
+      "x": -0.00001,
+      "z": 4.8,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 1.4742541217172487,
+          "point": [
+            -0.00001,
+            1.5257458782827513,
+            4.8
+          ]
+        },
+        {
+          "mesh": "BODY_PROW_PORT_VIS",
+          "distance": 1.6142541346239923,
+          "point": [
+            -0.00001,
+            1.3857458653760077,
+            4.8
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0,
+      "z": 4.8,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 1.4742541217172487,
+          "point": [
+            0,
+            1.5257458782827513,
+            4.8
+          ]
+        },
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 1.4742541217172487,
+          "point": [
+            0,
+            1.5257458782827513,
+            4.8
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.00001,
+      "z": 4.8,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 1.4742541217172487,
+          "point": [
+            0.00001,
+            1.5257458782827513,
+            4.8
+          ]
+        },
+        {
+          "mesh": "BODY_PROW_STBD_VIS",
+          "distance": 1.6142541346239923,
+          "point": [
+            0.00001,
+            1.3857458653760077,
+            4.8
+          ]
+        }
+      ]
+    },
+    {
+      "x": -0.00001,
+      "z": 4.2,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 1.3549172065534323,
+          "point": [
+            -0.00001,
+            1.6450827934465677,
+            4.2
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+          "distance": 2.7999999970197678,
+          "point": [
+            -0.00001,
+            0.20000000298023224,
+            4.2
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0,
+      "z": 4.2,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 1.3549172065534323,
+          "point": [
+            0,
+            1.6450827934465677,
+            4.2
+          ]
+        },
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 1.3549172065534323,
+          "point": [
+            0,
+            1.6450827934465677,
+            4.2
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.00001,
+      "z": 4.2,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 1.3549172065534323,
+          "point": [
+            0.00001,
+            1.6450827934465677,
+            4.2
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 2.7999999970197678,
+          "point": [
+            0.00001,
+            0.20000000298023224,
+            4.2
+          ]
+        }
+      ]
+    },
+    {
+      "x": -0.00001,
+      "z": 3.6,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 1.23558011739684,
+          "point": [
+            -0.00001,
+            1.76441988260316,
+            3.6
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+          "distance": 2.7999999970197678,
+          "point": [
+            -0.00001,
+            0.20000000298023224,
+            3.6
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0,
+      "z": 3.6,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 1.23558011739684,
+          "point": [
+            0,
+            1.76441988260316,
+            3.6
+          ]
+        },
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 1.23558011739684,
+          "point": [
+            0,
+            1.76441988260316,
+            3.6
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.00001,
+      "z": 3.6,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 1.23558011739684,
+          "point": [
+            0.00001,
+            1.76441988260316,
+            3.6
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 2.7999999970197678,
+          "point": [
+            0.00001,
+            0.20000000298023224,
+            3.6
+          ]
+        }
+      ]
+    },
+    {
+      "x": -0.00001,
+      "z": 2,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 1.068614229941369,
+          "point": [
+            -0.00001,
+            1.931385770058631,
+            2
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+          "distance": 2.7999999970197678,
+          "point": [
+            -0.00001,
+            0.20000000298023224,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0,
+      "z": 2,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 1.068614229941369,
+          "point": [
+            0,
+            1.931385770058631,
+            2
+          ]
+        },
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 1.068614229941369,
+          "point": [
+            0,
+            1.931385770058631,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.00001,
+      "z": 2,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 1.068614229941369,
+          "point": [
+            0.00001,
+            1.931385770058631,
+            2
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 2.7999999970197678,
+          "point": [
+            0.00001,
+            0.20000000298023224,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "x": -0.00001,
+      "z": 0,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 0.9011522931708122,
+          "point": [
+            -0.00001,
+            2.0988477068291878,
+            0
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+          "distance": 2.7999999970197678,
+          "point": [
+            -0.00001,
+            0.20000000298023224,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0,
+      "z": 0,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 0.9011522931708122,
+          "point": [
+            0,
+            2.0988477068291878,
+            0
+          ]
+        },
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 0.9011522931708122,
+          "point": [
+            0,
+            2.0988477068291878,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.00001,
+      "z": 0,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 0.9011522931708122,
+          "point": [
+            0.00001,
+            2.0988477068291878,
+            0
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 2.7999999970197678,
+          "point": [
+            0.00001,
+            0.20000000298023224,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "x": -0.00001,
+      "z": -1.2,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 0.7727572160057141,
+          "point": [
+            -0.00001,
+            2.227242783994286,
+            -1.2
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_PORT_VIS",
+          "distance": 2.7999999970197678,
+          "point": [
+            -0.00001,
+            0.20000000298023224,
+            -1.2
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0,
+      "z": -1.2,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_PORT_VIS",
+          "distance": 0.7727572160057141,
+          "point": [
+            0,
+            2.227242783994286,
+            -1.2
+          ]
+        },
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 0.7727572160057141,
+          "point": [
+            0,
+            2.227242783994286,
+            -1.2
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.00001,
+      "z": -1.2,
+      "hits": [
+        {
+          "mesh": "BODY_DORSAL_DECK_FWD_STBD_VIS",
+          "distance": 0.7727572160057141,
+          "point": [
+            0.00001,
+            2.227242783994286,
+            -1.2
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 2.7999999970197678,
+          "point": [
+            0.00001,
+            0.20000000298023224,
+            -1.2
+          ]
+        }
+      ]
+    }
+  ],
+  "lowerNoseProbes": [
+    {
+      "x": 0.43,
+      "y": 0.13,
+      "hits": [
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 0.9699997901916504,
+          "point": [
+            0.43,
+            0.13,
+            5.03000020980835
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.43,
+      "y": 0.19,
+      "hits": [
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 0.9699997901916504,
+          "point": [
+            0.43,
+            0.19,
+            5.03000020980835
+          ]
+        },
+        {
+          "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+          "distance": 11.880000114440918,
+          "point": [
+            0.43,
+            0.19,
+            -5.880000114440918
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.43,
+      "y": 0.205,
+      "hits": [
+        {
+          "mesh": "BODY_PROW_STBD_VIS",
+          "distance": 0.9701740147312732,
+          "point": [
+            0.43,
+            0.205,
+            5.029825985268727
+          ]
+        },
+        {
+          "mesh": "BODY_COLLAR_SILL_STBD_VIS",
+          "distance": 11.880000114440918,
+          "point": [
+            0.43,
+            0.205,
+            -5.880000114440918
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.45,
+      "y": 0.13,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9699997901916504,
+          "point": [
+            0.45,
+            0.13,
+            5.03000020980835
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 0.9983868972071752,
+          "point": [
+            0.45,
+            0.13,
+            5.001613102792825
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.45,
+      "y": 0.19,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9699997901916504,
+          "point": [
+            0.45,
+            0.19,
+            5.03000020980835
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 0.9983868972071752,
+          "point": [
+            0.45,
+            0.19,
+            5.001613102792825
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.45,
+      "y": 0.205,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9702675487393249,
+          "point": [
+            0.45,
+            0.205,
+            5.029732451260675
+          ]
+        },
+        {
+          "mesh": "BODY_PROW_STBD_VIS",
+          "distance": 0.9860625360216755,
+          "point": [
+            0.45,
+            0.205,
+            5.0139374639783245
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.5,
+      "y": 0.13,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9699997901916504,
+          "point": [
+            0.5,
+            0.13,
+            5.03000020980835
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 1.1403223984447415,
+          "point": [
+            0.5,
+            0.13,
+            4.8596776015552585
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.5,
+      "y": 0.19,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9701934878716756,
+          "point": [
+            0.5,
+            0.19,
+            5.029806512128324
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 1.1403223984447415,
+          "point": [
+            0.5,
+            0.19,
+            4.8596776015552585
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.5,
+      "y": 0.205,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9707233081305597,
+          "point": [
+            0.5,
+            0.205,
+            5.02927669186944
+          ]
+        },
+        {
+          "mesh": "BODY_PROW_STBD_VIS",
+          "distance": 1.0634818933413275,
+          "point": [
+            0.5,
+            0.205,
+            4.9365181066586725
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.6,
+      "y": 0.13,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9699997901916504,
+          "point": [
+            0.6,
+            0.13,
+            5.03000020980835
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 1.4241934009198722,
+          "point": [
+            0.6,
+            0.13,
+            4.575806599080128
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.6,
+      "y": 0.19,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9711050066541453,
+          "point": [
+            0.6,
+            0.19,
+            5.028894993345855
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 1.4241934009198722,
+          "point": [
+            0.6,
+            0.19,
+            4.575806599080128
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.6,
+      "y": 0.205,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9716348269130286,
+          "point": [
+            0.6,
+            0.205,
+            5.028365173086971
+          ]
+        },
+        {
+          "mesh": "BODY_PROW_STBD_VIS",
+          "distance": 1.2183206079806315,
+          "point": [
+            0.6,
+            0.205,
+            4.7816793920193685
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.7,
+      "y": 0.13,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9699997901916504,
+          "point": [
+            0.7,
+            0.13,
+            5.03000020980835
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 1.708064403395003,
+          "point": [
+            0.7,
+            0.13,
+            4.291935596604997
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.7,
+      "y": 0.19,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9720165254366142,
+          "point": [
+            0.7,
+            0.19,
+            5.027983474563386
+          ]
+        },
+        {
+          "mesh": "BODY_VENTRAL_HULL_STBD_VIS",
+          "distance": 1.708064403395003,
+          "point": [
+            0.7,
+            0.19,
+            4.291935596604997
+          ]
+        }
+      ]
+    },
+    {
+      "x": 0.7,
+      "y": 0.205,
+      "hits": [
+        {
+          "mesh": "BODY_CHINE_FWD_STBD_VIS",
+          "distance": 0.9725463456954984,
+          "point": [
+            0.7,
+            0.205,
+            5.027453654304502
+          ]
+        },
+        {
+          "mesh": "BODY_PROW_STBD_VIS",
+          "distance": 1.3731593226199355,
+          "point": [
+            0.7,
+            0.205,
+            4.6268406773800645
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "roof": "Matching exact centerline positions exclude a modeled gap there. Thin rendered dotted edge remains a raster/depth-coverage artifact at abutting separately capped meshes; precise GPU cause is inferred, not isolated by this geometry probe.",
+    "lower": "All selected frontward rays hit an authored BODY surface. Dark lower transitions correspond to the inset prow/return/belly interfaces; this sample does not prove a continuous universal clearance or enclosure.",
+    "hardwareTab": "DORSAL_LONGERON top is y=1.595. Its unchanged front end at z=4.55 sits about 19.5mm above the preserved deck top there; the small central roof tab is frozen hardware, distinct from the center seam."
+  }
+}

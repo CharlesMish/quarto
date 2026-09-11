@@ -1,0 +1,644 @@
+{
+  "id": "QUARTO-VIEWER-01",
+  "generatedAt": "2026-09-06T04:01:57.949982+00:00",
+  "branch": "feature/quarto-viewer-readability",
+  "acceptedBaseline": "9321de4ec6f5c520d8ba7d877bb2e9189667acf0",
+  "sourceIdentity": "Pre-commit working tree bound by SHA-256 below; frozen build-info hashes identify the authority archive, not these viewer edits.",
+  "authorityParticipation": "none",
+  "authorityNote": "Ordinary posing and supported regression tests retain existing certification/evaluators; no accepted-evidence or current-authority writer invoked. Frozen inputs, IDs, proof semantics and accepted results are unchanged.",
+  "environment": {
+    "node": "v25.2.1",
+    "platform": "linux",
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "architecture": "x64",
+    "cpu": "13th Gen Intel(R) Core(TM) i9-13950HX",
+    "logicalCpus": 32,
+    "memoryGiB": 27,
+    "babylon": "8.56.2",
+    "playwright": "1.62.1",
+    "vite": "7.3.6"
+  },
+  "changedFiles": [
+    "README.md",
+    "docs/CURRENT_STATE.md",
+    "docs/QUARTO_VIEWER_01.md",
+    "explore/body-shell-03/evidence/viewer-01/.gitattributes",
+    "explore/body-shell-03/evidence/viewer-01/.gitignore",
+    "explore/body-shell-03/evidence/viewer-01/README.md",
+    "explore/body-shell-03/evidence/viewer-01/development/REVIEW.md",
+    "explore/body-shell-03/evidence/viewer-01/development/browser-review.json",
+    "explore/body-shell-03/evidence/viewer-01/development/initial-shell-test.log",
+    "explore/body-shell-03/evidence/viewer-01/development/interrupted-fit-harness.log",
+    "explore/body-shell-03/evidence/viewer-01/development/interrupted-fit-harness.txt",
+    "explore/body-shell-03/evidence/viewer-01/development/nullengine-result.json",
+    "explore/body-shell-03/evidence/viewer-01/development/port-conflict.log",
+    "explore/body-shell-03/evidence/viewer-01/development/stern-hush-basin.png",
+    "explore/body-shell-03/evidence/viewer-01/development/tour-seated-390.png",
+    "explore/body-shell-03/evidence/viewer-01/files.sha256",
+    "explore/body-shell-03/evidence/viewer-01/final-review/drive-accepted.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/drive-body-off.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/drive-hush-basin.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/fold-accepted.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/fold-hush-basin.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/handover-accepted.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/handover-hush-basin.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/layout-1280.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/layout-1600.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/layout-390.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/layout-700.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/released-accepted.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/released-hush-basin.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/reorient-accepted.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/reorient-hush-basin.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/review.json",
+    "explore/body-shell-03/evidence/viewer-01/final-review/seat-accepted.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/seat-hush-basin.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/spread-accepted.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/spread-hush-basin.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/stern-accepted.png",
+    "explore/body-shell-03/evidence/viewer-01/final-review/stern-hush-basin.png",
+    "explore/body-shell-03/evidence/viewer-01/fit-independent-fixtures.command.sh",
+    "explore/body-shell-03/evidence/viewer-01/fit-independent-fixtures.json",
+    "explore/body-shell-03/evidence/viewer-01/timings/review.json",
+    "explore/body-shell-03/evidence/viewer-01/tour/REVIEW.md",
+    "explore/body-shell-03/evidence/viewer-01/tour/capture.mjs",
+    "explore/body-shell-03/evidence/viewer-01/tour/review.json",
+    "explore/body-shell-03/evidence/viewer-01/tour/tour-handover-1440.png",
+    "explore/body-shell-03/evidence/viewer-01/tour/tour-handover-390-details.png",
+    "explore/body-shell-03/evidence/viewer-01/tour/tour-handover-390.png",
+    "explore/body-shell-03/evidence/viewer-01/tour/tour-seated-1440.png",
+    "explore/body-shell-03/evidence/viewer-01/tour/tour-seated-390-details.png",
+    "explore/body-shell-03/evidence/viewer-01/tour/tour-seated-390.png",
+    "explore/body-shell-03/evidence/viewer-01/validation.json",
+    "explore/body-shell-03/evidence/viewer-01/validation/environment.json",
+    "explore/body-shell-03/evidence/viewer-01/validation/root-build.log",
+    "explore/body-shell-03/evidence/viewer-01/validation/root-suite.log",
+    "explore/body-shell-03/evidence/viewer-01/validation/shell-fit-pick.log",
+    "explore/body-shell-03/evidence/viewer-01/validation/shell-suite.log",
+    "explore/body-shell-03/package.json",
+    "explore/body-shell-03/src/main.ts",
+    "explore/body-shell-03/src/presentation/README.md",
+    "explore/body-shell-03/src/presentation/fitCamera.ts",
+    "explore/body-shell-03/src/presentation/hushBasinPalette.json",
+    "explore/body-shell-03/src/presentation/palette.ts",
+    "explore/body-shell-03/src/presentation/viewerState.ts",
+    "explore/body-shell-03/src/scene/createScene.ts",
+    "explore/body-shell-03/src/style.css",
+    "explore/body-shell-03/src/ui/createUI.ts",
+    "explore/body-shell-03/src/vite-env.d.ts",
+    "explore/body-shell-03/tests/body-shell-03.spec.ts",
+    "explore/body-shell-03/tests/viewer-readability.spec.ts",
+    "explore/body-shell-03/tools/review-viewer.mjs",
+    "explore/body-shell-03/tools/verify-palette.mjs"
+  ],
+  "sourceSha256": {
+    "explore/body-shell-03/package.json": "e913a6c5a578048dc57a86b34e3f55c76b026ea224f5e9c8cf3b9cba1fcef066",
+    "explore/body-shell-03/src/main.ts": "0aa858f41ad15a4b735826d439c75f33051c267f08176937f4ccc621b38f62c0",
+    "explore/body-shell-03/src/presentation/README.md": "a2c9eac9e382680454c1fcc7d98af87979698e41d9806fda15aa961abc53f101",
+    "explore/body-shell-03/src/presentation/fitCamera.ts": "25c060f4884504588e7c7b3ba3c1ea3194aa88189d723bf5fc64f5de050fbf27",
+    "explore/body-shell-03/src/presentation/hushBasinPalette.json": "9cda6d84855006a39e92bd9a5695160369465f4009e118ba1c01f20606228a2c",
+    "explore/body-shell-03/src/presentation/palette.ts": "4842c2f84b2db322b81d2386f61c6e2dc38163653ad12a8df8530d171165d71e",
+    "explore/body-shell-03/src/presentation/viewerState.ts": "d77583a6877c5c18bc775f194f25ed38cb3b1b3465ab624c7902200ec25cf8af",
+    "explore/body-shell-03/src/scene/createScene.ts": "ec3724256a0af89181064718bbd239b5a937227f256ca2cd53e794dfd19c652e",
+    "explore/body-shell-03/src/style.css": "78f46abdf2f4cacb62defb2c78615497ddf7cf48e1b3a0e621dde652a2b01cbf",
+    "explore/body-shell-03/src/ui/createUI.ts": "833c5646a8152445daef40c78d0fb6cdd33808774511733453c1acf17a0c26e2",
+    "explore/body-shell-03/src/vite-env.d.ts": "8473a951d31b35acfd20c2c53c7fa050c5e38571c46d54e8b78a4206a33a3a0e",
+    "explore/body-shell-03/tests/body-shell-03.spec.ts": "653a7aaf0c7a75f157a7191aaaae4e3b8791500a525cfc4ebe4a8e4648d1e734",
+    "explore/body-shell-03/tests/viewer-readability.spec.ts": "41dd61e307fb5f3d90617e2880ef26bbc83db9ee4d83ca136a73af94e2593b3c",
+    "explore/body-shell-03/tools/review-viewer.mjs": "42acde5bf3ed83da373ddf964b53f743a8b7787a4ce584f6df41c6ad7a1c6040",
+    "explore/body-shell-03/tools/verify-palette.mjs": "b2bd4fbabd50ae1114c6d7edf980af3864ae17257ef265441a19a4e021fe6a1a"
+  },
+  "paletteProvenance": {
+    "source": "dca5887:explore/hush-basin-bridge/palette.json",
+    "byteIdentical": true,
+    "sha256": "9cda6d84855006a39e92bd9a5695160369465f4009e118ba1c01f20606228a2c"
+  },
+  "frozenComparison": {
+    "baseline": "9321de4ec6f5c520d8ba7d877bb2e9189667acf0",
+    "paths": [
+      "src",
+      "tests",
+      "evidence",
+      "explore/body-shell-03/baseline-03",
+      "explore/body-shell-03/src/design",
+      "explore/body-shell-03/src/machine",
+      "explore/body-shell-03/src/math",
+      "explore/body-shell-03/src/verify",
+      "explore/body-shell-03/src/scene/materials.ts",
+      "explore/body-shell-03/src/scene/h1Presentation.ts",
+      "explore/body-shell-03/src/scene/bodyShellConcept.ts"
+    ],
+    "trackedDiff": [],
+    "newFiles": [],
+    "criticalSha256": {
+      "src/scene/materials.ts": "fe6be60e536d2271aee39d88b1ada522f113794ecc95a5a8a41ae7ace1a4727c",
+      "explore/body-shell-03/src/scene/materials.ts": "fe6be60e536d2271aee39d88b1ada522f113794ecc95a5a8a41ae7ace1a4727c",
+      "explore/body-shell-03/src/scene/bodyShellConcept.ts": "70208747601c7f7bef9ba063201fdd38de7b0753fc3a4292a166969c67788569",
+      "explore/body-shell-03/src/scene/h1Presentation.ts": "a485883a17ee20c1bb426255af6ad55277115ad7c63e365d62b436af3e923918"
+    }
+  },
+  "checks": [
+    {
+      "command": "npm run build",
+      "result": "PASS",
+      "log": "validation/root-build.log",
+      "note": "Existing large-bundle warning remains."
+    },
+    {
+      "command": "npm --prefix explore/body-shell-03 run build",
+      "result": "PASS",
+      "log": null,
+      "note": "PASS recorded in implementation tool output; no standalone log retained. Existing large-bundle warning remains."
+    },
+    {
+      "command": "npm test",
+      "result": "PASS",
+      "passed": 103,
+      "log": "validation/root-suite.log"
+    },
+    {
+      "command": "MT1_BASE_URL=http://127.0.0.1:5195 npm --prefix explore/body-shell-03 test",
+      "result": "10 PASS; 1 observation-helper failure before Fit assertions",
+      "log": "validation/shell-suite.log"
+    },
+    {
+      "command": "MT1_BASE_URL=http://127.0.0.1:5195 npm --prefix explore/body-shell-03 test -- --grep 'fit camera|inspect pick'",
+      "result": "PASS",
+      "passed": 2,
+      "seconds": 54.4,
+      "log": "validation/shell-fit-pick.log"
+    },
+    {
+      "command": "node explore/body-shell-03/tools/verify-palette.mjs",
+      "result": "PASS",
+      "checks": 11,
+      "evidence": "development/nullengine-result.json"
+    },
+    {
+      "command": "Archived original fit-independent-fixtures.command.sh",
+      "result": "PASS",
+      "cases": 48,
+      "evidence": "fit-independent-fixtures.json"
+    },
+    {
+      "command": "review-viewer.mjs --captures-only --url http://127.0.0.1:5195 --output <fresh directory>",
+      "result": "PASS",
+      "matchedPaletteImages": 16,
+      "layouts": 4,
+      "evidence": "final-review/review.json"
+    },
+    {
+      "command": "Archived original tour/capture.mjs",
+      "result": "PASS",
+      "cases": 6,
+      "evidence": "tour/review.json"
+    },
+    {
+      "command": "review-viewer.mjs --timings-only --url http://127.0.0.1:5195 --baseline-url http://127.0.0.1:5196 --output <fresh directory>",
+      "result": "PASS",
+      "evidence": "timings/review.json"
+    },
+    {
+      "command": "git diff --check; frozen source and old evidence comparison against accepted baseline",
+      "result": "PASS"
+    }
+  ],
+  "shellCoverage": {
+    "currentTests": 12,
+    "allHavePassingRelevantExecutions": true,
+    "singleTwelveTestPassInvocation": false,
+    "note": "Final full run: ten pass and one import-lookup harness failure. Corrected Fit and added picking test: two pass in focused follow-up; no runtime edits after final captures."
+  },
+  "actualVehicleFitCases": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "amount": 0,
+      "preset": "body",
+      "alpha": 0.78,
+      "beta": 1.14,
+      "radius": 13.75098259674516,
+      "extrema": [
+        {
+          "min": 0.25641211205141157,
+          "max": 0.7416998103190584
+        },
+        {
+          "min": 0.2769305558112931,
+          "max": 0.9385965746830053
+        },
+        {
+          "min": 0.9992636990161284,
+          "max": 0.9997286576411952
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "amount": 0,
+      "preset": "prop",
+      "alpha": 0.92,
+      "beta": 1.16,
+      "radius": 13.461626350116916,
+      "extrema": [
+        {
+          "min": 0.24317027176101097,
+          "max": 0.7622805539287644
+        },
+        {
+          "min": 0.2896724189828863,
+          "max": 0.9385965084253304
+        },
+        {
+          "min": 0.9992283083342589,
+          "max": 0.99973165404573
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "amount": 0.24,
+      "preset": "body",
+      "alpha": 0.78,
+      "beta": 1.14,
+      "radius": 12.639311890242528,
+      "extrema": [
+        {
+          "min": 0.32557699639950477,
+          "max": 0.7455462055304223
+        },
+        {
+          "min": 0.2897554956541688,
+          "max": 0.9385964746988932
+        },
+        {
+          "min": 0.999247947091028,
+          "max": 0.9997112044189871
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "amount": 0.24,
+      "preset": "prop",
+      "alpha": 0.92,
+      "beta": 1.16,
+      "radius": 13.461626350116916,
+      "extrema": [
+        {
+          "min": 0.33281436039018875,
+          "max": 0.7352604798112885
+        },
+        {
+          "min": 0.31247062089930466,
+          "max": 0.9385965084253304
+        },
+        {
+          "min": 0.9993163312243631,
+          "max": 0.99973165404573
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "amount": 0.6,
+      "preset": "body",
+      "alpha": 0.78,
+      "beta": 1.14,
+      "radius": 12.639311890242528,
+      "extrema": [
+        {
+          "min": 0.3278971861504094,
+          "max": 0.7380708740216698
+        },
+        {
+          "min": 0.29013113290540987,
+          "max": 0.9385964746988932
+        },
+        {
+          "min": 0.9993698638618758,
+          "max": 0.9997112044189871
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "amount": 0.6,
+      "preset": "prop",
+      "alpha": 0.92,
+      "beta": 1.16,
+      "radius": 13.461626350116916,
+      "extrema": [
+        {
+          "min": 0.34634030761428536,
+          "max": 0.705054467520345
+        },
+        {
+          "min": 0.30375353298569907,
+          "max": 0.9385965084253304
+        },
+        {
+          "min": 0.9993967909164274,
+          "max": 0.99973165404573
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "amount": 1,
+      "preset": "body",
+      "alpha": 0.78,
+      "beta": 1.14,
+      "radius": 12.639311890242528,
+      "extrema": [
+        {
+          "min": 0.3736662435656175,
+          "max": 0.7380708740216698
+        },
+        {
+          "min": 0.2969376058078836,
+          "max": 0.9385964746988932
+        },
+        {
+          "min": 0.9993698638618758,
+          "max": 0.9997112044189871
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "amount": 1,
+      "preset": "prop",
+      "alpha": 0.92,
+      "beta": 1.16,
+      "radius": 13.461626350116916,
+      "extrema": [
+        {
+          "min": 0.3889821929186046,
+          "max": 0.705054467520345
+        },
+        {
+          "min": 0.3089976741265966,
+          "max": 0.9385965084253304
+        },
+        {
+          "min": 0.9993967909164274,
+          "max": 0.99973165404573
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "amount": 0,
+      "preset": "body",
+      "alpha": 0.78,
+      "beta": 1.14,
+      "radius": 29.861646709412454,
+      "extrema": [
+        {
+          "min": 0.1379344071458367,
+          "max": 0.9385964806603011
+        },
+        {
+          "min": 0.3821851971755874,
+          "max": 0.6488414896454484
+        },
+        {
+          "min": 0.9997821098449496,
+          "max": 0.999855569620621
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "amount": 0,
+      "preset": "prop",
+      "alpha": 0.92,
+      "beta": 1.16,
+      "radius": 30.362399492442815,
+      "extrema": [
+        {
+          "min": 0.119492804668432,
+          "max": 0.9385965043226747
+        },
+        {
+          "min": 0.3937952747409514,
+          "max": 0.6541718268458323
+        },
+        {
+          "min": 0.9997865728796393,
+          "max": 0.999859625014704
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "amount": 0.24,
+      "preset": "body",
+      "alpha": 0.78,
+      "beta": 1.14,
+      "radius": 26.607694709870728,
+      "extrema": [
+        {
+          "min": 0.21072963458729074,
+          "max": 0.9385964931408414
+        },
+        {
+          "min": 0.3893254626904976,
+          "max": 0.6700696560272977
+        },
+        {
+          "min": 0.9997578837543275,
+          "max": 0.9998404702077089
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "amount": 0.24,
+      "preset": "prop",
+      "alpha": 0.92,
+      "beta": 1.16,
+      "radius": 26.418279140301767,
+      "extrema": [
+        {
+          "min": 0.18906907048024774,
+          "max": 0.9385965043771453
+        },
+        {
+          "min": 0.39541201582680263,
+          "max": 0.6816644537559149
+        },
+        {
+          "min": 0.9997537315095355,
+          "max": 0.9998420189450136
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "amount": 0.6,
+      "preset": "body",
+      "alpha": 0.78,
+      "beta": 1.14,
+      "radius": 23.185106262572223,
+      "extrema": [
+        {
+          "min": 0.12452886640374736,
+          "max": 0.9385964797254689
+        },
+        {
+          "min": 0.37507737205399105,
+          "max": 0.7000851878099801
+        },
+        {
+          "min": 0.9997297891840113,
+          "max": 0.9998207814994252
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "amount": 0.6,
+      "preset": "prop",
+      "alpha": 0.92,
+      "beta": 1.16,
+      "radius": 21.503957409662902,
+      "extrema": [
+        {
+          "min": 0.10784677082756676,
+          "max": 0.9385964849554198
+        },
+        {
+          "min": 0.36812113308480815,
+          "max": 0.7335588077257772
+        },
+        {
+          "min": 0.9996941976059774,
+          "max": 0.9998128053107078
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "amount": 1,
+      "preset": "body",
+      "alpha": 0.78,
+      "beta": 1.14,
+      "radius": 23.185106262572223,
+      "extrema": [
+        {
+          "min": 0.19711719159391652,
+          "max": 0.9385964797254689
+        },
+        {
+          "min": 0.3801187601104469,
+          "max": 0.7000851878099801
+        },
+        {
+          "min": 0.9997297891840113,
+          "max": 0.9998207814994252
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "amount": 1,
+      "preset": "prop",
+      "alpha": 0.92,
+      "beta": 1.16,
+      "radius": 21.503957409662902,
+      "extrema": [
+        {
+          "min": 0.20941033570531487,
+          "max": 0.9385964849554198
+        },
+        {
+          "min": 0.3723338758967878,
+          "max": 0.7335588077257772
+        },
+        {
+          "min": 0.9996941976059774,
+          "max": 0.9998128053107078
+        }
+      ]
+    }
+  ],
+  "captureSourceBinding": {
+    "final-review/review.json": "Same runtime sources as tour/review.json; all six recorded tour before/after hashes match sourceSha256."
+  },
+  "timingScope": "Same local headless Chromium browser, sequential accepted then candidate, 1600x900, other test browsers closed. Cold first canonical setter separated from 61 RAF-spaced warm setter durations per debug state. This is not FPS or input-to-paint latency; no real-device claim.",
+  "negativeResults": [
+    "Default port 5185 was occupied; first shell launch ran no tests. Used separate existing candidate server on 5195.",
+    "Warm slider poll initially included cold certification and timed out at 5s; explicit ordinary prewarm now separates concerns, with the original poll limit retained.",
+    "Fit observation initially could not find Engine in bounded resource-timing entries; resolves actual served module imports now.",
+    "First focused Fit harness was stopped for per-corner assertion overhead; equivalent all-corner extrema assertions pass without relaxed bounds.",
+    "Legacy stern camera occluded BODY ON handover; preserved that preset and added external tour angles.",
+    "Initial mobile tour card covered the mechanism; separate reserved card space and expandable details now pass."
+  ],
+  "remainingUnknowns": [
+    "Frozen synchronous first-pose certification cost remains.",
+    "H1 director disposition remains pending.",
+    "Native Godot validation remains in the separate Hush Basin task.",
+    "Physical device FPS and input-to-display latency were not measured.",
+    "Historical H1 presets can remain occluded with BODY ON; tour uses new external angles.",
+    "Dedicated stern close-ups may crop outer folio tips; Fit and existing lock/section controls cover different inspection needs."
+  ],
+  "evidenceConsulted": [
+    "README.md",
+    "docs/CURRENT_STATE.md",
+    "docs/NOMENCLATURE.md",
+    "Frozen S5 closure/contracts and H1 report",
+    "BODY-SHELL-03.1 pocket correction and existing fit evidence",
+    "Existing root and shell tests and viewer source",
+    "Bridge study dca5887 source palette",
+    "Hush Basin native candidate 0b0cc10 previews"
+  ]
+}
