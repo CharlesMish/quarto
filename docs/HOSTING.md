@@ -1,21 +1,34 @@
 # Hosting
 
-Quarto is a single-canvas Babylon.js static app. There is no client-side router and no SPA fallback.
+Quarto contains two Babylon.js applications with different purposes:
+
+- the repository root is the MT1-S5HR3R1 engineering / authority viewer;
+- `explore/body-shell-03/` is the reconciled Quarto presentation viewer intended for the public web edition.
+
+The public Worker must serve the presentation viewer, not the root authority build.
 
 ## Cloudflare Workers Builds
 
-GitHub-connected Cloudflare Workers Builds should:
+GitHub-connected Cloudflare Workers Builds for the public `quarto` Worker should use:
 
-1. `npm ci`
-2. `npm run build` (`tsc --noEmit -p tsconfig.app.json && vite build`)
-3. wrangler-deploy `dist/`
+1. Build command: `npm run build:public`
+2. Deploy command: `npx wrangler deploy`
 
-`wrangler.jsonc` serves `./dist` with `html_handling: "drop-trailing-slash"`. `workers_dev` is on so `main` has an https URL before any custom domain.
+`npm run build:public` installs the presentation package with `npm ci` and builds its `dist/`. `wrangler.jsonc` serves `./explore/body-shell-03/dist` with `html_handling: "drop-trailing-slash"`.
+
+For an explicit local deployment, run:
+
+```bash
+npm ci
+npm run cf:deploy
+```
+
+The root command `npm run build` still builds the engineering / authority viewer and is intentionally not the public deployment target.
 
 ## URLs
 
-- Preview URLs are the phone-test gate.
-- The intended future URL `https://quarto.cmish.dev/` is **not** attached. Do not add `custom_domain` or `routes`.
+- `https://quarto.cmish.dev/` is the public presentation URL.
+- `workers_dev` and preview URLs remain enabled for deployment checks.
 
 ## Secrets
 
