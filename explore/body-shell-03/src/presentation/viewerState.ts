@@ -13,6 +13,9 @@ export interface PresentationHooks {
   setTourStep(value: number | null): void;
   fitCamera(): void;
   reverse(): void;
+  /** Interactive pose path (slider/playback/tour). Never certifies. */
+  setPose(value: number): void;
+  getLighting(): import("./lighting").LightingState;
 }
 
 /** Reading the tour never evaluates a pose or an authority predicate. */
