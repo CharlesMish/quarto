@@ -3,6 +3,7 @@ import { MT1_BUILD_INFO } from "../buildInfo";
 import { BODY_CONCEPT_INFO } from "../bodyConceptInfo";
 import { TOUR_STOPS } from "../presentation/viewerState";
 import type { DirectorInspectionRow } from "../scene/directorInspection";
+import type { PlaybackProfile } from "../presentation/playbackClock";
 
 export interface UIActions {
   setMachineT(value: number): void;
@@ -14,6 +15,7 @@ export interface UIActions {
   resetCamera(): void;
   fitCamera(): void;
   setPalette(value: "hush-basin" | "accepted"): void;
+  setPlayback(value: PlaybackProfile): void;
   setTourStep(value: number | null): void;
   toggleDebug(): boolean;
   toggleSection(): boolean;
@@ -35,6 +37,7 @@ export interface PresentationUI {
     tourStep: number | null;
     automatic: boolean;
     direction: number;
+    playback: PlaybackProfile;
   }): void;
   setViewState(state: {
     debug: boolean;
@@ -73,6 +76,7 @@ export function createUI(root: HTMLElement, actions: UIActions): PresentationUI 
         <button id="autoBtn">PLAY ▶</button><button id="reverseBtn" title="Reverse transformation direction">REVERSE ↶</button>
         <button id="bodyConceptBtn" class="active" aria-pressed="true">BODY ON</button>
         <label class="palette-control" for="paletteSelect"><span class="sr-only">Color palette</span><select id="paletteSelect"><option value="hush-basin">Hush Basin</option><option value="accepted">Accepted palette</option></select></label>
+        <label class="speed-control" for="speedSelect"><span class="sr-only">Playback speed</span><select id="speedSelect" title="Playback speed"><option value="inspect">Inspect</option><option value="show">Show</option><option value="game">Game</option></select></label>
         <button id="fitBtn">FIT</button><button id="tourBtn" aria-expanded="false" aria-controls="tourCard">TAKE A TOUR</button>
       </div>
       <nav class="group-tabs" aria-label="Viewer tools">${GROUPS.map(([id, label]) => `<button data-panel="${id}" aria-expanded="false" aria-controls="${id}Panel">${label}</button>`).join("")}</nav>
@@ -131,6 +135,7 @@ export function createUI(root: HTMLElement, actions: UIActions): PresentationUI 
   const debugCard = element("#debugCard");
   const bodyConceptBtn = element<HTMLButtonElement>("#bodyConceptBtn");
   const paletteSelect = element<HTMLSelectElement>("#paletteSelect");
+  const speedSelect = element<HTMLSelectElement>("#speedSelect");
   const tourCard = element("#tourCard");
   const tourBtn = element<HTMLButtonElement>("#tourBtn");
   const tourPrevBtn = element<HTMLButtonElement>("#tourPrevBtn");
@@ -215,6 +220,10 @@ export function createUI(root: HTMLElement, actions: UIActions): PresentationUI 
   paletteSelect.addEventListener("change", () => {
     cancelPendingInput();
     actions.setPalette(paletteSelect.value as "hush-basin" | "accepted");
+  });
+  speedSelect.addEventListener("change", () => {
+    cancelPendingInput();
+    actions.setPlayback(speedSelect.value as PlaybackProfile);
   });
   click("#debugBtn", () => {
     closeInspect();
@@ -327,6 +336,7 @@ export function createUI(root: HTMLElement, actions: UIActions): PresentationUI 
     },
     setPresentation(state) {
       if (paletteSelect.value !== state.palette) paletteSelect.value = state.palette;
+      if (speedSelect.value !== state.playback) speedSelect.value = state.playback;
       setText(autoBtn, state.automatic ? "PAUSE ■" : "PLAY ▶");
       setPressed(reverseBtn, state.direction < 0);
       const directionTitle = state.direction < 0 ? "Direction: toward SPREAD; reverse toward DRIVE" : "Direction: toward DRIVE; reverse toward SPREAD";

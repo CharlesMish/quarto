@@ -45,6 +45,7 @@ import { createPresentationPalette } from "../presentation/palette";
 import { fitVisibleVehicle } from "../presentation/fitCamera";
 import { TOUR_STOPS, type PresentationPalette, type PresentationState } from "../presentation/viewerState";
 import { chooseLightingTier, createPresentationLighting, createStageFloor } from "../presentation/lighting";
+import { createPlaybackClock, PLAYBACK_PROFILES, type PlaybackClock, type PlaybackProfile } from "../presentation/playbackClock";
 
 export interface App {
   setT(t: number): void;
@@ -136,6 +137,8 @@ export function createApp(canvas: HTMLCanvasElement): App {
   let machineT = 0;
   let automatic = false;
   let direction = 1;
+  let playback: PlaybackProfile = "inspect";
+  let clock: PlaybackClock | null = null;
   let debugOn = false;
   let sectionOn = false;
   let propSectionOn = false;
@@ -147,7 +150,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
   let ui: ReturnType<typeof createUI>;
   let debug: ReturnType<typeof createDebugView>;
 
-  const presentationState = (): PresentationState => ({ palette: palette.getPalette(), tourStep, automatic, direction });
+  const presentationState = (): PresentationState => ({ palette: palette.getPalette(), tourStep, automatic, direction, playback });
   const syncPresentation = (): void => {
     ui.setPresentation(presentationState());
     ui.setViewState({
@@ -316,6 +319,14 @@ export function createApp(canvas: HTMLCanvasElement): App {
     syncPresentation();
   };
 
+  const setPlayback = (value: PlaybackProfile): void => {
+    if (!PLAYBACK_PROFILES.includes(value)) throw new RangeError("Unknown playback profile");
+    ui.cancelPendingInput();
+    // A running clock is rebuilt from the current pose on the next frame.
+    playback = value;
+    syncPresentation();
+  };
+
   const setTourStep = (value: number | null): void => {
     if (value !== null && (!Number.isInteger(value) || !TOUR_STOPS[value])) throw new RangeError("Unknown tour stop");
     ui.cancelPendingInput();
@@ -355,6 +366,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
     reverseAutomatic,
     fitCamera,
     setPalette,
+    setPlayback,
     setTourStep,
     setCamera,
     resetCamera() {
@@ -426,19 +438,25 @@ export function createApp(canvas: HTMLCanvasElement): App {
     debugOn || sectionOn || propSectionOn || lockFocusOn || bodyConcept.isSection();
   scene.onBeforeRenderObservable.add(() => lighting.setStudyView(studyViewActive()));
 
+  // Playback only chooses when each canonical pose is shown; the clock never
+  // leaves [0, 1] and every frame goes through the presentation pose path.
+  const reducedMotion = typeof matchMedia === "function" ? matchMedia("(prefers-reduced-motion: reduce)") : null;
+  let clockPose = -1;
   scene.registerBeforeRender(() => {
-    if (!automatic) return;
+    if (!automatic) { clock = null; return; }
     const dt = Math.min(engine.getDeltaTime() / 1000, 0.05);
-    const next = machineT + direction * dt * (1 / 12);
-    if (next >= 1) {
-      automatic = false;
-      applyCanonicalPose(1);
-    } else if (next <= 0) {
-      automatic = false;
-      applyCanonicalPose(0);
-    } else {
-      applyCanonicalPose(next);
+    const heading = direction < 0 ? -1 : 1;
+    // Any outside pose change, reverse or speed change restarts from here.
+    if (!clock || clock.direction !== heading || clock.profile !== playback || clockPose !== machineT) {
+      clock = createPlaybackClock(playback, machineT, heading, { reducedMotion: reducedMotion?.matches === true });
     }
+    const sample = clock.step(dt);
+    if (sample.done) {
+      automatic = false;
+      clock = null;
+    }
+    applyCanonicalPose(sample.machineT);
+    clockPose = machineT;
   });
 
   engine.runRenderLoop(() => {
@@ -459,6 +477,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
       setTourStep,
       fitCamera,
       reverse: reverseAutomatic,
+      setPlayback,
       // Same pose a visitor gets from the slider; never certifies.
       setPose: (value: number) => setMachineT(value),
       getLighting: () => lighting.getState(),

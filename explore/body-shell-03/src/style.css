@@ -55,11 +55,11 @@ input[type="range"] { width: 100%; min-width: 0; height: 44px; margin: 0; accent
 .slider-row { display: grid; grid-template-columns: 64px minmax(0, 1fr) 64px; gap: 12px; align-items: center; }
 .end-label { font-size: 11px; color: var(--muted); letter-spacing: .12em; font-weight: 650; }
 .end-label:last-child { text-align: right; }
-.primary-actions { display: grid; grid-template-columns: 1fr 1fr 1fr 1.7fr .75fr 1.3fr; gap: 8px; }
+.primary-actions { display: grid; grid-template-columns: 1fr 1fr 1fr 1.4fr 1.15fr .75fr 1.25fr; gap: 8px; }
 #autoBtn { color: #201809; border-color: var(--amber); background: var(--amber); font-weight: 700; }
 #autoBtn:hover { background: #f2bd6e; }
-.palette-control { min-width: 0; }
-.palette-control select { width: 100%; height: 100%; }
+.palette-control, .speed-control { min-width: 0; }
+.palette-control select, .speed-control select { width: 100%; height: 100%; padding-inline: 8px; }
 .group-tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; padding-top: 8px; }
 .group-tabs button { border-color: transparent; background: transparent; color: var(--muted); }
 .group-tabs button:hover { color: var(--ink); background: #203138; }
@@ -152,7 +152,11 @@ input[type="range"] { width: 100%; min-width: 0; height: 44px; margin: 0; accent
   .control-deck { padding: 6px 10px; bottom: max(8px, env(safe-area-inset-bottom)); }
   .slider-row { grid-template-columns: 56px minmax(0, 1fr) 48px; gap: 8px; }
   .end-label { font-size: 10px; }
-  .primary-actions { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  /* Two rows: PLAY REVERSE BODY FIT / palette speed TOUR. */
+  .primary-actions { grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 6px; }
+  .primary-actions > * { grid-column: span 2; }
+  #fitBtn { grid-row: 1; grid-column: 7 / span 2; }
+  .primary-actions .palette-control, #tourBtn { grid-column: span 3; }
   .primary-actions button, .primary-actions select { padding-inline: 7px; font-size: 11px; }
   .group-tabs { gap: 2px; padding-top: 6px; }
   .group-tabs button { padding: 6px 3px; font-size: 10px; letter-spacing: 0; }
