@@ -1,4 +1,5 @@
 import { execFileSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { expect, test, type Page } from "@playwright/test";
 
@@ -63,13 +64,13 @@ async function cameraObservation(page: Page) {
 
 test("body surface refinement preserves the frozen mechanism, shared primitives and shaders", () => {
   const root = resolve(process.cwd(), "../..");
-  // Reconciliation starts from accepted main, including its BA1 tests and
-  // hosting dependencies. Frozen source still compares byte-for-byte.
+  // Keep the original mechanism freeze. Only the root build/deploy scripts
+  // changed later, in accepted public-viewer deployment PR #7.
   const acceptedBaseline = "e56a4c09330119827e5a6c9757bf5cbc448dd29d";
+  const deploymentBaseline = "bea126427c9d1758d0a4d5d488028d885d0000f9";
   const frozen = [
     "src",
     "tests",
-    "package.json",
     "package-lock.json",
     "playwright.config.ts",
     "explore/body-shell-03/src/design",
@@ -82,20 +83,23 @@ test("body surface refinement preserves the frozen mechanism, shared primitives 
     "explore/body-shell-03/src/scene/primitives.ts",
     "explore/body-shell-03/src/scene/materials.ts",
   ];
-  // One reviewed, additive exception: the presentation pose path
-  // (applyMachinePose) may be added to the S5 machine wrapper. Every existing
-  // line there, and every other frozen file, stays byte-identical.
+  // The candidate's only exception is the exact additive presentation pose
+  // path from a50a979. Pin the whole wrapper: merely finding its method name
+  // in added lines would also admit unrelated authority changes. This test
+  // records the candidate under review, not director approval to merge it.
   const posePath = "explore/body-shell-03/src/machine/createS5Machine.ts";
   const changed = execFileSync("git", ["diff", "--name-only", acceptedBaseline, "--", ...frozen], { cwd: root, encoding: "utf8" })
     .trim().split("\n").filter((name) => name && name !== posePath).join("\n");
   const added = execFileSync("git", ["ls-files", "--others", "--exclude-standard", "--", ...frozen], { cwd: root, encoding: "utf8" }).trim();
   const poseDiff = execFileSync("git", ["diff", "-U0", acceptedBaseline, "--", posePath], { cwd: root, encoding: "utf8" }).split("\n");
   const removedLines = poseDiff.filter((line) => line.startsWith("-") && !line.startsWith("---"));
-  const addedLines = poseDiff.filter((line) => line.startsWith("+") && !line.startsWith("+++"));
   expect(removedLines, "existing S5 machine lines must remain byte-identical").toEqual([]);
-  if (addedLines.length) expect(addedLines.join("\n")).toContain("applyMachinePose");
+  const candidatePose = execFileSync("git", ["show", `a50a979d7d5d6dde299a8153e1097a28e09307fd:${posePath}`], { cwd: root, encoding: "utf8" });
+  expect(readFileSync(resolve(root, posePath), "utf8"), "S5 wrapper differs from the exact presentation-pose candidate").toBe(candidatePose);
   expect(changed, `frozen tracked source differs from accepted ${acceptedBaseline}`).toBe("");
   expect(added, "new source was added inside a frozen subsystem").toBe("");
+  const acceptedPackage = execFileSync("git", ["show", `${deploymentBaseline}:package.json`], { cwd: root, encoding: "utf8" });
+  expect(readFileSync(resolve(root, "package.json"), "utf8"), "root build/deploy scripts differ from accepted deployment").toBe(acceptedPackage);
 });
 
 test("initial presentation and reversible palettes preserve inspection and render identity", async ({ page }) => {

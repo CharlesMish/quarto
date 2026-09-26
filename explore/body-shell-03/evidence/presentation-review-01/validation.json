@@ -1,0 +1,44 @@
+{
+  "kind": "presentation-review",
+  "authorityParticipation": "none",
+  "participatesInAuthority": false,
+  "acceptedMain": "bea126427c9d1758d0a4d5d488028d885d0000f9",
+  "claudeCandidate": "89548456025ff4c19bd69dfffb5ea28129c31df5",
+  "runtimeChangesAfterCandidate": false,
+  "beforeFix": {
+    "test": "body surface refinement preserves the frozen mechanism, shared primitives and shaders",
+    "failure": "frozen tracked source differs from accepted e56a4c09330119827e5a6c9757bf5cbc448dd29d",
+    "received": "package.json",
+    "cause": "The accepted deployment scripts postdate the original freeze baseline."
+  },
+  "builds": {
+    "authority": "passed",
+    "presentation": "passed"
+  },
+  "presentationSuite": {
+    "passed": 46,
+    "failed": 0,
+    "durationReported": "4.6m",
+    "configuration": "Unchanged repository config with temporary Chromium executable/launch arguments and output directory overrides",
+    "log": "presentation-tests.txt",
+    "finalStricterSourceGuardRerun": { "passed": 1, "failed": 0 }
+  },
+  "environment": {
+    "node": "24.19.0",
+    "playwright": "1.62.1",
+    "chromium": "153.0.8010.0",
+    "renderer": "SwiftShader",
+    "browserSource": "@sparticuz/chromium installed outside the repository",
+    "limitation": "The standard Playwright download returned invalid archives; this is not verification on the project's bundled Chromium 151 or a real phone."
+  },
+  "productionSmoke": {
+    "tiers": ["studio", "lite", "flat"],
+    "pageAndConsoleErrors": 0,
+    "observations": "visual-smoke.json"
+  },
+  "rootAuthoritySuite": "not rerun; root source, tests, dependency files, and Playwright config unchanged from accepted main",
+  "frozenEvidenceRegenerated": false,
+  "whitespaceCheck": "passed",
+  "mergePerformed": false,
+  "deploymentPerformed": false
+}

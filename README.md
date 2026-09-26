@@ -23,12 +23,13 @@ Open **http://127.0.0.1:5185/** for the presentation viewer.
 
 - **Drag, right-drag, and scroll** to orbit, pan, and zoom.
 - Move the **machine slider** between **SPREAD** and **DRIVE**, or press **Space** to play/pause.
+- Choose **Inspect**, **Show**, or **Game** for playback speed; the slider stays direct.
 - Toggle **BODY ON / BODY OFF** to compare the presentation shell with the exposed mechanism.
 - Use the **section controls**, camera presets, and **INSPECT PICK** to look inside and identify parts.
 
 SPREAD and DRIVE are two required configurations of the same machine. The folios move from a roughly **13.32 m** spread to a **4.60 m** packed width; they fold and nest rather than shrinking or disappearing. At the open stern, a hollow thrust can moves around a fixed core into its receiver and locks. That handover is inspectable in both directions.
 
-The first pose change can pause while the existing certification path runs. This is a known inspection cost.
+Interactive posing and playback use the presentation pose path without running certification. Opening diagnostics runs the existing certification sweep, with a notice before its one-time pause. Programmatic authority/evidence posing retains the certified path.
 
 ## Where the project stands
 
