@@ -44,6 +44,8 @@ import { runBodyShellFit } from "../verify/bodyShellFit";
 import { createPresentationPalette } from "../presentation/palette";
 import { fitVisibleVehicle } from "../presentation/fitCamera";
 import { TOUR_STOPS, type PresentationPalette, type PresentationState } from "../presentation/viewerState";
+import { chooseLightingTier, createPresentationLighting, createStageFloor } from "../presentation/lighting";
+import { createPlaybackClock, PLAYBACK_PROFILES, type PlaybackClock, type PlaybackProfile } from "../presentation/playbackClock";
 
 export interface App {
   setT(t: number): void;
@@ -105,13 +107,18 @@ export function createApp(canvas: HTMLCanvasElement): App {
   sun.intensity = 0.75;
 
   const mats = createMaterials(scene);
-  const floor = MeshBuilder.CreateGround("floor", { width: 28, height: 28 }, scene);
-  floor.material = mats.floor;
-  floor.position.y = 0;
-  for (let i = -10; i <= 10; i += 1) {
-    box(scene, `gridX_${i}`, floor, mats.grid, [0.02, 0.01, 20], [i, 0.01, 0]);
-    box(scene, `gridZ_${i}`, floor, mats.grid, [20, 0.01, 0.02], [0, 0.01, i]);
-  }
+  const lightingTier = chooseLightingTier(engine);
+  const floor = createStageFloor(scene, engine, lightingTier, mats.floor.diffuseColor, mats.grid.diffuseColor, () => {
+    // Original viewer floor, kept verbatim for the flat tier.
+    const legacy = MeshBuilder.CreateGround("floor", { width: 28, height: 28 }, scene);
+    legacy.material = mats.floor;
+    legacy.position.y = 0;
+    for (let i = -10; i <= 10; i += 1) {
+      box(scene, `gridX_${i}`, legacy, mats.grid, [0.02, 0.01, 20], [i, 0.01, 0]);
+      box(scene, `gridZ_${i}`, legacy, mats.grid, [20, 0.01, 0.02], [0, 0.01, i]);
+    }
+    return legacy;
+  });
 
   const rig = createS5Machine(scene, mats);
   const h1 = createH1Presentation(scene, rig, mats);
@@ -121,6 +128,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
   const datumsByNode = new Map(rig.datums.map((datum) => [datum.node, datum]));
   const presentationNames = new Set([...h1.presentationMeshes, ...bodyConcept.meshes]);
   const fitMeshes = scene.meshes.filter((mesh) => solidsByNode.get(mesh)?.role === "physical" || presentationNames.has(mesh.name));
+  const lighting = createPresentationLighting({ scene, engine, camera, sun, hemi, floor, tier: lightingTier, casters: fitMeshes });
   const uiRoot = document.getElementById("ui");
   if (!uiRoot) throw new Error("missing #ui");
 
@@ -129,6 +137,8 @@ export function createApp(canvas: HTMLCanvasElement): App {
   let machineT = 0;
   let automatic = false;
   let direction = 1;
+  let playback: PlaybackProfile = "inspect";
+  let clock: PlaybackClock | null = null;
   let debugOn = false;
   let sectionOn = false;
   let propSectionOn = false;
@@ -140,7 +150,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
   let ui: ReturnType<typeof createUI>;
   let debug: ReturnType<typeof createDebugView>;
 
-  const presentationState = (): PresentationState => ({ palette: palette.getPalette(), tourStep, automatic, direction });
+  const presentationState = (): PresentationState => ({ palette: palette.getPalette(), tourStep, automatic, direction, playback });
   const syncPresentation = (): void => {
     ui.setPresentation(presentationState());
     ui.setViewState({
@@ -207,10 +217,30 @@ export function createApp(canvas: HTMLCanvasElement): App {
     }
   };
 
-  const refreshDebug = (): void => {
+  let debugCertificationScheduled = false;
+  const scheduleDebugCertification = (): void => {
+    // Diagnostics need the S5 path certificate. Its cold generation is a long
+    // synchronous sweep, so explain it and let that text paint before the
+    // main thread blocks. Interactive posing never starts this work.
+    if (debugCertificationScheduled) return;
+    debugCertificationScheduled = true;
+    debugPanel().innerHTML = `<div class="debug-head">${getBuildInfo().candidateId} DEBUG</div>`
+      + `<div class="debug-note">Certifying the stern capture path for diagnostics. This runs once per visit and can take several seconds.</div>`;
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      debugCertificationScheduled = false;
+      refreshDebug();
+    }));
+  };
+
+  const refreshDebug = (deferColdCertification = false): void => {
     // Guard before constructing arguments: readiness getters may certify a
     // stale path. Hidden presentation diagnostics have no work to display.
     if (!debugOn) return;
+    if (deferColdCertification && getPathCertificateState(rig) === "STALE") {
+      scheduleDebugCertification();
+      return;
+    }
+    if (debugCertificationScheduled) return;
     debug.update(frontT, rig.evaluateFront(frontT), transformT, rig.evaluate(transformT), {
       machineT,
       driveT: rig.lastDriveT(),
@@ -229,10 +259,18 @@ export function createApp(canvas: HTMLCanvasElement): App {
     }
   };
 
-  const applyCanonicalPose = (value: number): void => {
+  /**
+   * Canonical machine pose. Interactive presentation input (slider, playback,
+   * tour, number keys) uses the presentation-only pose path: identical maps,
+   * gate and lock pose, but no cold S5 path certification and no per-frame
+   * handover evaluation on the main thread. The programmatic
+   * window.__MT1.setMachineT keeps the certified path for authority, capture
+   * and evidence tooling. Certificate state is never written by the fast path.
+   */
+  const applyCanonicalPose = (value: number, certify = false): void => {
     previewOn = false;
     machineT = clamp01(value);
-    const mapped = rig.applyMachine(machineT);
+    const mapped = certify ? rig.applyMachine(machineT) : rig.applyMachinePose(machineT);
     frontT = mapped.frontT;
     transformT = mapped.rearT;
     ui.setMachineT(machineT, automatic, "MACHINE");
@@ -240,12 +278,12 @@ export function createApp(canvas: HTMLCanvasElement): App {
     ui.setTransform(transformT, automatic);
     palette.setForm(machineT);
     syncPresentation();
-    refreshDebug();
+    refreshDebug(!certify);
   };
 
-  const setMachineT = (value: number): void => {
+  const setMachineT = (value: number, certify = false): void => {
     preparePoseCommand();
-    applyCanonicalPose(value);
+    applyCanonicalPose(value, certify);
   };
 
   const setT = (value: number): void => {
@@ -278,6 +316,14 @@ export function createApp(canvas: HTMLCanvasElement): App {
     direction = machineT <= 0 ? 1 : machineT >= 1 ? -1 : -direction;
     automatic = true;
     ui.setMachineT(machineT, automatic, rig.authorityMode());
+    syncPresentation();
+  };
+
+  const setPlayback = (value: PlaybackProfile): void => {
+    if (!PLAYBACK_PROFILES.includes(value)) throw new RangeError("Unknown playback profile");
+    ui.cancelPendingInput();
+    // A running clock is rebuilt from the current pose on the next frame.
+    playback = value;
     syncPresentation();
   };
 
@@ -320,6 +366,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
     reverseAutomatic,
     fitCamera,
     setPalette,
+    setPlayback,
     setTourStep,
     setCamera,
     resetCamera() {
@@ -328,7 +375,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
     toggleDebug() {
       debugOn = !debugOn;
       debug.setEnabled(debugOn);
-      refreshDebug();
+      refreshDebug(true);
       return debugOn;
     },
     toggleSection() {
@@ -386,19 +433,30 @@ export function createApp(canvas: HTMLCanvasElement): App {
   ui.setTransform(transformT, automatic);
   syncPresentation();
 
+  // Study views read as the original flat engineering lighting.
+  const studyViewActive = (): boolean =>
+    debugOn || sectionOn || propSectionOn || lockFocusOn || bodyConcept.isSection();
+  scene.onBeforeRenderObservable.add(() => lighting.setStudyView(studyViewActive()));
+
+  // Playback only chooses when each canonical pose is shown; the clock never
+  // leaves [0, 1] and every frame goes through the presentation pose path.
+  const reducedMotion = typeof matchMedia === "function" ? matchMedia("(prefers-reduced-motion: reduce)") : null;
+  let clockPose = -1;
   scene.registerBeforeRender(() => {
-    if (!automatic) return;
+    if (!automatic) { clock = null; return; }
     const dt = Math.min(engine.getDeltaTime() / 1000, 0.05);
-    const next = machineT + direction * dt * (1 / 12);
-    if (next >= 1) {
-      automatic = false;
-      applyCanonicalPose(1);
-    } else if (next <= 0) {
-      automatic = false;
-      applyCanonicalPose(0);
-    } else {
-      applyCanonicalPose(next);
+    const heading = direction < 0 ? -1 : 1;
+    // Any outside pose change, reverse or speed change restarts from here.
+    if (!clock || clock.direction !== heading || clock.profile !== playback || clockPose !== machineT) {
+      clock = createPlaybackClock(playback, machineT, heading, { reducedMotion: reducedMotion?.matches === true });
     }
+    const sample = clock.step(dt);
+    if (sample.done) {
+      automatic = false;
+      clock = null;
+    }
+    applyCanonicalPose(sample.machineT);
+    clockPose = machineT;
   });
 
   engine.runRenderLoop(() => {
@@ -409,7 +467,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
     if (followFit) fitCurrent();
   });
   resizeObserver.observe(canvas);
-  scene.onDisposeObservable.add(() => { resizeObserver.disconnect(); palette.dispose(); });
+  scene.onDisposeObservable.add(() => { resizeObserver.disconnect(); palette.dispose(); lighting.dispose(); });
   fitCurrent();
 
   window.__MT1 = {
@@ -419,6 +477,10 @@ export function createApp(canvas: HTMLCanvasElement): App {
       setTourStep,
       fitCamera,
       reverse: reverseAutomatic,
+      setPlayback,
+      // Same pose a visitor gets from the slider; never certifies.
+      setPose: (value: number) => setMachineT(value),
+      getLighting: () => lighting.getState(),
     },
     getBuildInfo,
     getInspectionState: (): Mt1InspectionState => {
@@ -482,7 +544,8 @@ export function createApp(canvas: HTMLCanvasElement): App {
       refreshDebug();
     },
     getRearStbdT: () => rig.lastRearStbdT(),
-    setMachineT,
+    // Programmatic posing stays on the certified canonical path.
+    setMachineT: (value) => setMachineT(value, true),
     getMachineT: () => machineT,
     getDriveT: () => rig.lastDriveT(),
     getRequestedDriveT: () => rig.lastRequestedDriveT(),
@@ -563,7 +626,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
       refreshDebug();
     },
     clearPreview: () => {
-      setMachineT(machineT);
+      setMachineT(machineT, true);
     },
     isPreview: () => previewOn,
     auditAuthority: () => auditAuthorityBounds(rig.root, rig.solids),

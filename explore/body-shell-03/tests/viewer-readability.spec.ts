@@ -1,4 +1,5 @@
 import { execFileSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { expect, test, type Page } from "@playwright/test";
 
@@ -63,13 +64,13 @@ async function cameraObservation(page: Page) {
 
 test("body surface refinement preserves the frozen mechanism, shared primitives and shaders", () => {
   const root = resolve(process.cwd(), "../..");
-  // Reconciliation starts from accepted main, including its BA1 tests and
-  // hosting dependencies. Frozen source still compares byte-for-byte.
+  // Keep the original mechanism freeze. Only the root build/deploy scripts
+  // changed later, in accepted public-viewer deployment PR #7.
   const acceptedBaseline = "e56a4c09330119827e5a6c9757bf5cbc448dd29d";
+  const deploymentBaseline = "bea126427c9d1758d0a4d5d488028d885d0000f9";
   const frozen = [
     "src",
     "tests",
-    "package.json",
     "package-lock.json",
     "playwright.config.ts",
     "explore/body-shell-03/src/design",
@@ -82,10 +83,23 @@ test("body surface refinement preserves the frozen mechanism, shared primitives 
     "explore/body-shell-03/src/scene/primitives.ts",
     "explore/body-shell-03/src/scene/materials.ts",
   ];
-  const changed = execFileSync("git", ["diff", "--name-only", acceptedBaseline, "--", ...frozen], { cwd: root, encoding: "utf8" }).trim();
+  // The candidate's only exception is the exact additive presentation pose
+  // path from a50a979. Pin the whole wrapper: merely finding its method name
+  // in added lines would also admit unrelated authority changes. This test
+  // records the candidate under review, not director approval to merge it.
+  const posePath = "explore/body-shell-03/src/machine/createS5Machine.ts";
+  const changed = execFileSync("git", ["diff", "--name-only", acceptedBaseline, "--", ...frozen], { cwd: root, encoding: "utf8" })
+    .trim().split("\n").filter((name) => name && name !== posePath).join("\n");
   const added = execFileSync("git", ["ls-files", "--others", "--exclude-standard", "--", ...frozen], { cwd: root, encoding: "utf8" }).trim();
+  const poseDiff = execFileSync("git", ["diff", "-U0", acceptedBaseline, "--", posePath], { cwd: root, encoding: "utf8" }).split("\n");
+  const removedLines = poseDiff.filter((line) => line.startsWith("-") && !line.startsWith("---"));
+  expect(removedLines, "existing S5 machine lines must remain byte-identical").toEqual([]);
+  const candidatePose = execFileSync("git", ["show", `a50a979d7d5d6dde299a8153e1097a28e09307fd:${posePath}`], { cwd: root, encoding: "utf8" });
+  expect(readFileSync(resolve(root, posePath), "utf8"), "S5 wrapper differs from the exact presentation-pose candidate").toBe(candidatePose);
   expect(changed, `frozen tracked source differs from accepted ${acceptedBaseline}`).toBe("");
   expect(added, "new source was added inside a frozen subsystem").toBe("");
+  const acceptedPackage = execFileSync("git", ["show", `${deploymentBaseline}:package.json`], { cwd: root, encoding: "utf8" });
+  expect(readFileSync(resolve(root, "package.json"), "utf8"), "root build/deploy scripts differ from accepted deployment").toBe(acceptedPackage);
 });
 
 test("initial presentation and reversible palettes preserve inspection and render identity", async ({ page }) => {
@@ -120,8 +134,9 @@ test("initial presentation and reversible palettes preserve inspection and rende
       expect(await page.evaluate(() => window.__MT1!.getInspectionState())).toEqual(before.inspection);
       expect(await page.evaluate(() => window.__MT1!.getRenderInventory())).toEqual(before.inventory);
     }
-    // Canonical posing intentionally runs the unchanged frozen path machinery.
-    // Palette changes preserve the certificate that posing establishes.
+    // Programmatic canonical posing (window.__MT1.setMachineT) intentionally
+    // runs the unchanged frozen path machinery. Palette changes preserve the
+    // certificate that posing establishes.
     expect(before.inspection.certificate.state).toBe("CURRENT");
   }
 });
@@ -466,4 +481,86 @@ test("inspect pick identifies the visible part after responsive canvas offsets",
     expect(await page.evaluate(() => window.__MT1!.getRenderInventory())).toEqual(before.inventory);
     await page.locator("#inspectCloseBtn").click();
   }
+});
+
+test("interactive posing never runs the cold path certification", async ({ page }) => {
+  await ready(page);
+  const initial = await page.evaluate(() => window.__MT1!.getInspectionState());
+  expect(initial.certificate.state).toBe("STALE");
+  const elapsed = await page.locator("#machineSlider").evaluate((element) => {
+    const slider = element as HTMLInputElement;
+    const started = performance.now();
+    slider.value = "0.62";
+    slider.dispatchEvent(new Event("input", { bubbles: true }));
+    slider.dispatchEvent(new Event("change", { bubbles: true }));
+    return performance.now() - started;
+  });
+  await expect.poll(() => pose(page)).toBeCloseTo(0.62, 3);
+  // The certified path took ~30 s here on first touch; the pose path is milliseconds.
+  expect(elapsed).toBeLessThan(1_000);
+  for (const value of [0, 0.37, 0.86, 0.94, 1]) {
+    await page.evaluate((v) => window.__MT1!.presentation.setPose(v), value);
+    expect(await pose(page)).toBe(value);
+  }
+  await page.evaluate(() => window.__MT1!.presentation.setTourStep(4));
+  await page.evaluate(() => window.__MT1!.presentation.setTourStep(null));
+  await page.locator("#autoBtn").click();
+  await renderFrame(page);
+  await page.locator("#autoBtn").click();
+  expect((await page.evaluate(() => window.__MT1!.getInspectionState())).certificate).toEqual(initial.certificate);
+});
+
+test("presentation pose path matches the certified canonical pose exactly", async ({ page }) => {
+  test.setTimeout(300_000);
+  await ready(page);
+  for (const value of [0.3, 0.86, 0.94, 0.998, 1]) {
+    await page.evaluate((v) => window.__MT1!.presentation.setPose(v), value);
+    const fast = await page.evaluate(() => window.__MT1!.getRenderInventory());
+    await page.evaluate((v) => window.__MT1!.setMachineT(v), value);
+    const certified = await page.evaluate(() => window.__MT1!.getRenderInventory());
+    expect(fast, `pose ${value}`).toEqual(certified);
+  }
+  expect((await page.evaluate(() => window.__MT1!.getInspectionState())).certificate.state).toBe("CURRENT");
+});
+
+test("opening diagnostics explains the one-time certification before running it", async ({ page }) => {
+  test.setTimeout(300_000);
+  await ready(page);
+  await openPanel(page, "diagnostics");
+  // The note only needs to paint before the main thread blocks, so record
+  // every panel text the page produces rather than racing the sweep.
+  await page.evaluate(() => {
+    const seen: string[] = ((window as unknown as { __panelTexts: string[] }).__panelTexts = []);
+    const panel = document.querySelector("#debugPanel")!;
+    new MutationObserver(() => seen.push(panel.textContent ?? "")).observe(panel, { childList: true, subtree: true, characterData: true });
+  });
+  await page.locator("#debugBtn").click();
+  await expect.poll(async () => (await page.evaluate(() => window.__MT1!.getInspectionState())).certificate.state, { timeout: 240_000 }).toBe("CURRENT");
+  const texts = await page.evaluate(() => (window as unknown as { __panelTexts: string[] }).__panelTexts);
+  const noteIndex = texts.findIndex((text) => text.includes("Certifying the stern capture path"));
+  const dataIndex = texts.findIndex((text) => text.includes("driveThrustReady"));
+  expect(noteIndex, "certification note was shown").toBeGreaterThanOrEqual(0);
+  expect(dataIndex, "diagnostics rendered after the note").toBeGreaterThan(noteIndex);
+  await expect(page.locator("#debugPanel")).not.toContainText("Certifying the stern capture path");
+});
+
+test("presentation lighting yields to flat lighting in study views", async ({ page }) => {
+  await page.setViewportSize({ width: 640, height: 480 });
+  await page.goto("/?lighting=studio");
+  await page.waitForFunction(() => Boolean(window.__MT1?.presentation));
+  const errors: string[] = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await renderFrame(page);
+  expect(await page.evaluate(() => window.__MT1!.presentation.getLighting())).toEqual({ tier: "studio", studyView: false, shadows: true, ambientOcclusion: true });
+  const before = await page.evaluate(() => window.__MT1!.getInspectionState());
+  for (const [on, off] of [["setSection", "setSection"], ["setLockStudyView", "setLockStudyView"], ["setPropSection", "setPropSection"]] as const) {
+    await page.evaluate((name) => (window.__MT1 as unknown as Record<string, (v: boolean) => void>)[name](true), on);
+    await renderFrame(page);
+    expect(await page.evaluate(() => window.__MT1!.presentation.getLighting()), on).toMatchObject({ studyView: true, shadows: false, ambientOcclusion: false });
+    await page.evaluate((name) => (window.__MT1 as unknown as Record<string, (v: boolean) => void>)[name](false), off);
+    await renderFrame(page);
+    expect(await page.evaluate(() => window.__MT1!.presentation.getLighting()), off).toMatchObject({ studyView: false, shadows: true, ambientOcclusion: true });
+  }
+  expect(await page.evaluate(() => window.__MT1!.getInspectionState())).toEqual(before);
+  expect(errors).toEqual([]);
 });

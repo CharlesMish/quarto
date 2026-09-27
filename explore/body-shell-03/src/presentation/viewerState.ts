@@ -1,3 +1,5 @@
+import type { PlaybackProfile } from "./playbackClock";
+
 export type PresentationPalette = "hush-basin" | "accepted";
 
 export interface PresentationState {
@@ -5,6 +7,7 @@ export interface PresentationState {
   tourStep: number | null;
   automatic: boolean;
   direction: number;
+  playback: PlaybackProfile;
 }
 
 export interface PresentationHooks {
@@ -13,6 +16,11 @@ export interface PresentationHooks {
   setTourStep(value: number | null): void;
   fitCamera(): void;
   reverse(): void;
+  /** Play/Reverse timing only; scrubbing stays direct and linear. */
+  setPlayback(value: PlaybackProfile): void;
+  /** Interactive pose path (slider/playback/tour). Never certifies. */
+  setPose(value: number): void;
+  getLighting(): import("./lighting").LightingState;
 }
 
 /** Reading the tour never evaluates a pose or an authority predicate. */

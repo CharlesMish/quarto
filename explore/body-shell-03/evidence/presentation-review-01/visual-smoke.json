@@ -1,0 +1,92 @@
+[
+  {
+    "tier": "studio",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "errors": [],
+    "inspection": {
+      "candidateId": "MT1-S5HR3R1",
+      "machineT": 1,
+      "driveT": 1,
+      "requestedDriveT": 1,
+      "mode": "MACHINE",
+      "preview": false,
+      "driveThrustReadyCached": false,
+      "certificate": {
+        "state": "STALE",
+        "present": false,
+        "valid": false,
+        "samples": null,
+        "pairsEvaluated": null
+      }
+    },
+    "lighting": {
+      "tier": "studio",
+      "studyView": false,
+      "shadows": true,
+      "ambientOcclusion": true
+    }
+  },
+  {
+    "tier": "lite",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "inspection": {
+      "candidateId": "MT1-S5HR3R1",
+      "machineT": 1,
+      "driveT": 1,
+      "requestedDriveT": 1,
+      "mode": "MACHINE",
+      "preview": false,
+      "driveThrustReadyCached": false,
+      "certificate": {
+        "state": "STALE",
+        "present": false,
+        "valid": false,
+        "samples": null,
+        "pairsEvaluated": null
+      }
+    },
+    "lighting": {
+      "tier": "lite",
+      "studyView": false,
+      "shadows": true,
+      "ambientOcclusion": false
+    }
+  },
+  {
+    "tier": "flat",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "errors": [],
+    "inspection": {
+      "candidateId": "MT1-S5HR3R1",
+      "machineT": 1,
+      "driveT": 1,
+      "requestedDriveT": 1,
+      "mode": "MACHINE",
+      "preview": false,
+      "driveThrustReadyCached": false,
+      "certificate": {
+        "state": "STALE",
+        "present": false,
+        "valid": false,
+        "samples": null,
+        "pairsEvaluated": null
+      }
+    },
+    "lighting": {
+      "tier": "flat",
+      "studyView": false,
+      "shadows": false,
+      "ambientOcclusion": false
+    }
+  }
+]

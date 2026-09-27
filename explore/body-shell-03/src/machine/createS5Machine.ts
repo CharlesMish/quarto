@@ -20,6 +20,14 @@ import type { MachineRig } from "./types";
 import { registerS5AuthorityUniverse } from "./s5Identity";
 
 export interface S5MachineRig extends MachineRig {
+  /**
+   * Presentation-only pose path. Applies exactly the pose that applyMachine()
+   * applies (same maps, same structural gate, same lock pose) but does not
+   * certify a stale S5 path or evaluate the handover. Certificate state and the
+   * cached thrust-readiness value are left untouched. Never use this for
+   * authority, capture or evidence work; use applyMachine() there.
+   */
+  applyMachinePose: MachineRig["applyMachine"];
   applyS5Override: (value?: S5Override) => void;
   getS5Override: () => S5Override;
   lastDriveThrustReady: () => boolean;
@@ -79,6 +87,11 @@ export function createS5Machine(scene: Scene, mats: Materials): S5MachineRig {
   };
 
   const ext = rig as S5MachineRig;
+  ext.applyMachinePose = ((machineT, opts) => {
+    const r = innerApply(machineT, opts);
+    poseLock(r.appliedDriveT);
+    return r;
+  }) as MachineRig["applyMachine"];
   ext.applyS5Override = (value) => {
     physicallySupersedeLegacyByRegistrationId(rig, rig.solids);
     s5.applyOverride(value ?? {});
