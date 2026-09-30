@@ -6,13 +6,15 @@ Quarto is an interactive Babylon.js study of one vehicle transformation. Four si
 
 **[Open the public presentation →](https://quarto.cmish.dev/)**
 
-![Quarto folded into DRIVE, with the presentation body on](explore/body-shell-03/evidence/fo1/after/fo1-after-drive-three.png)
+![Quarto folded into DRIVE, with the presentation body on and the Hush Basin palette](docs/images/quarto-drive.png)
+
+Captured from the presentation build at [`acb4a451`](https://github.com/CharlesMish/quarto/commit/acb4a4513ccef85f5ffe71505cfd816df1d46b5d). The [earlier FO1 study image](explore/body-shell-03/evidence/fo1/after/fo1-after-drive-three.png) remains in the evidence record.
 
 The four side assemblies are called **folios**. The smaller front pair sits low. The larger rear pair folds into a higher, canted posture, the **haunch**, which gives Quarto its silhouette. The body frames the mechanism and leaves the roots, the central carrier, and the stern exposed on purpose.
 
 ## Explore it locally
 
-From a checkout of this repository, with Node.js **20.19+**:
+From a checkout of this repository, with Node.js **22.12+** (Node.js 24 recommended for the viewer and deployment tools):
 
 ```bash
 npm --prefix explore/body-shell-03 ci
@@ -29,7 +31,7 @@ Open **http://127.0.0.1:5185/** for the presentation viewer.
 
 SPREAD and DRIVE are the machine's two required configurations, about **13.32 m** and **4.60 m** wide. The folios fold and nest; they don't shrink or disappear. At the open stern, a hollow thrust can moves around a fixed core into its receiver and locks. This sequence is the **handover**, and you can inspect it in both directions.
 
-Dragging the slider and playing the transformation don't run the full geometry check. Opening diagnostics does: a notice appears, then the viewer pauses once while the check runs. Scripted evidence work still uses the checked path.
+Dragging the slider and playing the transformation don't run the full geometry check. Select **Diagnostics → DEBUG** to run it: a notice appears, then the viewer pauses once while the check runs. Scripted evidence work still uses the checked path. These checks cover modeled geometry and motion, not real-world dynamics, stress, or manufacturing tolerances.
 
 ## Where the project stands
 
@@ -45,9 +47,9 @@ For decisions and open questions, see **[Current state](docs/CURRENT_STATE.md)**
 
 ## For developers and reviewers
 
-**Quarto** is the machine and project name. **MT1** is the prefix used by the engineering record and code. The mechanism, **MT1-S5HR3R1**, is settled; changing it needs a task that explicitly reopens it. BODY ON is presentation only, and BODY OFF shows the mechanism. The presentation body creates no structure or reserved space.
+**Quarto** is the machine and project name. **MT1** is the prefix used by the engineering record and code. The mechanism, **MT1-S5HR3R1**, is held fixed for current work; changing it needs a task that explicitly reopens it. BODY ON is presentation only, and BODY OFF shows the mechanism. The presentation body creates no structure or reserved space. See [Current state](docs/CURRENT_STATE.md) for outstanding review decisions.
 
-No cockpit, ground contact, job, complete engine, or propulsion performance is assigned.
+No cockpit, ground-contact hardware, job, complete engine, or propulsion performance is assigned. Do not begin S6, cockpit/intake architecture, or a new physical study without an explicit task.
 
 | Start here | What it contains |
 | --- | --- |
@@ -88,8 +90,9 @@ For the public Worker build:
 
 ```bash
 npm run build:public
-npx wrangler deploy
 ```
+
+Deployment is a separate action; see [Hosting](docs/HOSTING.md).
 
 Capture and evidence-writer scripts are kept separate from these checks because they can regenerate recorded evidence. Historical reports and engineering identifiers keep their original names. Start changes on a task branch from `main`, and bring them back through a pull request for review.
 
