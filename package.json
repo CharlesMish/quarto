@@ -1,9 +1,9 @@
 {
-  "name": "mt1-mechanical-truth",
+  "name": "quarto",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "MT1-S5HR3R1 — final V1 proof-identity migration",
+  "description": "Quarto engineering viewer for the MT1-S5HR3R1 mechanism, and the build for the public presentation viewer",
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 5181",
     "build": "npm run build:authority && npm run build:public",

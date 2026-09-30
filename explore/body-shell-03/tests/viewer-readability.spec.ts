@@ -88,8 +88,20 @@ test("body surface refinement preserves the frozen mechanism, shared primitives 
   // in added lines would also admit unrelated authority changes. This test
   // records the candidate under review, not director approval to merge it.
   const posePath = "explore/body-shell-03/src/machine/createS5Machine.ts";
+  // Quarto rename: these pinned files may differ from their baseline only by
+  // the exact name/title substitutions listed here.
+  const renameOnly: Record<string, Array<[string, string]>> = {
+    "package-lock.json": [['"name": "mt1-mechanical-truth",', '"name": "quarto",']],
+    "src/main.ts": [["/ Mechanical Truth Authority`", "/ Quarto engineering viewer`"]],
+    "tests/mt1-build-inspection.spec.ts": [['"MT1-S5HR3R1 / Mechanical Truth Authority"', '"MT1-S5HR3R1 / Quarto engineering viewer"']],
+  };
+  const packageRename: Array<[string, string]> = [
+    ['"name": "mt1-mechanical-truth",', '"name": "quarto",'],
+    ['"description": "MT1-S5HR3R1 — final V1 proof-identity migration",', '"description": "Quarto engineering viewer for the MT1-S5HR3R1 mechanism, and the build for the public presentation viewer",'],
+  ];
+  const renamed = (text: string, pairs: Array<[string, string]>) => pairs.reduce((out, [from, to]) => out.split(from).join(to), text);
   const changed = execFileSync("git", ["diff", "--name-only", acceptedBaseline, "--", ...frozen], { cwd: root, encoding: "utf8" })
-    .trim().split("\n").filter((name) => name && name !== posePath).join("\n");
+    .trim().split("\n").filter((name) => name && name !== posePath && !(name in renameOnly)).join("\n");
   const added = execFileSync("git", ["ls-files", "--others", "--exclude-standard", "--", ...frozen], { cwd: root, encoding: "utf8" }).trim();
   const poseDiff = execFileSync("git", ["diff", "-U0", acceptedBaseline, "--", posePath], { cwd: root, encoding: "utf8" }).split("\n");
   const removedLines = poseDiff.filter((line) => line.startsWith("-") && !line.startsWith("---"));
@@ -98,8 +110,12 @@ test("body surface refinement preserves the frozen mechanism, shared primitives 
   expect(readFileSync(resolve(root, posePath), "utf8"), "S5 wrapper differs from the exact presentation-pose candidate").toBe(candidatePose);
   expect(changed, `frozen tracked source differs from accepted ${acceptedBaseline}`).toBe("");
   expect(added, "new source was added inside a frozen subsystem").toBe("");
+  for (const [path, pairs] of Object.entries(renameOnly)) {
+    const base = execFileSync("git", ["show", `${acceptedBaseline}:${path}`], { cwd: root, encoding: "utf8" });
+    expect(readFileSync(resolve(root, path), "utf8"), `${path} differs from ${acceptedBaseline} beyond the Quarto rename`).toBe(renamed(base, pairs));
+  }
   const acceptedPackage = execFileSync("git", ["show", `${deploymentBaseline}:package.json`], { cwd: root, encoding: "utf8" });
-  expect(readFileSync(resolve(root, "package.json"), "utf8"), "root build/deploy scripts differ from accepted deployment").toBe(acceptedPackage);
+  expect(readFileSync(resolve(root, "package.json"), "utf8"), "root build/deploy scripts differ from accepted deployment").toBe(renamed(acceptedPackage, packageRename));
 });
 
 test("initial presentation and reversible palettes preserve inspection and render identity", async ({ page }) => {
