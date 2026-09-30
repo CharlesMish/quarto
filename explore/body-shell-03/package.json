@@ -1,9 +1,9 @@
 {
-  "name": "mt1-body-shell-03-exploration",
+  "name": "quarto-presentation",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "MT1-BODY-SHELL-03 — open-stern chine hull presentation over MT1-S5HR3R1",
+  "description": "Quarto presentation viewer: open-stern body shell (BODY-SHELL-03) over the MT1-S5HR3R1 mechanism",
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 5185",
     "build": "tsc --noEmit -p tsconfig.app.json && vite build",
