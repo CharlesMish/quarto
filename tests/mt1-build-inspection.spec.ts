@@ -58,7 +58,7 @@ test.describe("MT1-S5HR3R1 lightweight build inspection", () => {
       certificate: { state: "STALE", present: false, valid: false, samples: null, pairsEvaluated: null },
     });
     expect(result.elapsedMs).toBeLessThan(50);
-    expect(result.title).toBe("MT1-S5HR3R1 / Quarto engineering viewer");
+    expect(result.title).toBe("MT1-S5HR3R1 / Mechanical Truth Authority");
     expect(shaderErrors).toEqual([]);
     expect(shaderHtmlFallbacks).toEqual([]);
     await expect(page.locator(".eyebrow")).toContainText("MT1-S5HR3R1");

@@ -8,7 +8,7 @@ Notable changes to Quarto are recorded here. The format follows [Keep a Changelo
 - Charter (`docs/CHARTER.md`), MIT license, and this changelog.
 
 ### Changed
-- Package names and page titles now use the name Quarto.
+- README updated for visitors, with current setup instructions, model limits, and a pinned viewer screenshot.
 
 ## [0.1.0] - 2026-09-27
 
