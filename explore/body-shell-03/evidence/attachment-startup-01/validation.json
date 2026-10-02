@@ -1,0 +1,99 @@
+{
+  "baseline": "f9c21adff3921f8e9bdea9266f51098c9c6f919d",
+  "implementationCommit": "d8fb34946ae280adeb871085abefd69831bb3afc",
+  "branch": "fix/quarto-rear-attachments-show-start",
+  "draftPullRequest": "https://github.com/CharlesMish/quarto/pull/11",
+  "authorityParticipation": "none",
+  "commands": [
+    {
+      "command": "npm run build",
+      "cwd": ".",
+      "exitCode": 0,
+      "evidence": "build.txt"
+    },
+    {
+      "command": "npm test",
+      "cwd": ".",
+      "exitCode": 0,
+      "passed": 105,
+      "durationMinutes": 36.4,
+      "evidence": "authority-tests.txt"
+    },
+    {
+      "command": "npm test",
+      "cwd": "explore/body-shell-03",
+      "exitCode": 0,
+      "passed": 49,
+      "durationMinutes": 4.5,
+      "evidence": "presentation-tests-final.txt"
+    },
+    {
+      "command": "npx playwright test tests/capture-attachment-review.spec.ts --grep production playback --workers=1",
+      "cwd": "explore/body-shell-03",
+      "exitCode": 0,
+      "viewports": [
+        [
+          1280,
+          720
+        ],
+        [
+          390,
+          844
+        ]
+      ],
+      "profiles": [
+        "inspect",
+        "show",
+        "game"
+      ],
+      "directions": [
+        "forward",
+        "reverse"
+      ],
+      "evidence": [
+        "production/smoke.json",
+        "ci-preview/smoke.json"
+      ]
+    }
+  ],
+  "presentationFit": {
+    "samples": 101,
+    "step": 0.01,
+    "defects": 0,
+    "evidence": "presentation-fit.json"
+  },
+  "surface": {
+    "closedOutwardFlatMeshes": 40,
+    "mirroredPairs": 20,
+    "existingSeamObservations": 72,
+    "evidence": "body-surface-verification.json"
+  },
+  "originalBodyGeometry": {
+    "meshes": 38,
+    "verticesNormalsIndicesUnchanged": true
+  },
+  "frozenSources": {
+    "unchanged": true,
+    "evidence": "frozen-source-guard.json"
+  },
+  "implementationCI": {
+    "check": "Workers Builds: quarto",
+    "conclusion": "success",
+    "preview": "https://4c5ea891-quarto.charlesmish.workers.dev/",
+    "evidence": "implementation-ci.json"
+  },
+  "libraryVisual": {
+    "filename": "/quarto-rear-attachment-startup-review.png",
+    "bytes": 506489,
+    "library_file_id": "libfile_1bf16bd83a5c8191a50b2a051964d367",
+    "file_id": "file_00000000711881f59e8b227901d9be6e"
+  },
+  "limits": [
+    "Sampled geometric screening is not a continuous or structural proof.",
+    "Existing rear AABB pocket gutter approximately -0.0014 m is unchanged.",
+    "Phone-sized headless browser checks do not establish physical-phone feel.",
+    "Live build API exposes authority/archive identity, not deployed Git SHA."
+  ],
+  "mainMerged": false,
+  "manualProductionDeployment": false
+}

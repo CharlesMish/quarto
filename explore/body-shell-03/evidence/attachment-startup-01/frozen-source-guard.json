@@ -1,0 +1,21 @@
+{
+  "baseline": "f9c21adff3921f8e9bdea9266f51098c9c6f919d",
+  "implementationCommit": "d8fb34946ae280adeb871085abefd69831bb3afc",
+  "authorityParticipation": "none",
+  "checkedPaths": [
+    "src",
+    "tests",
+    "package.json",
+    "package-lock.json",
+    "playwright.config.ts",
+    "explore/body-shell-03/src/design",
+    "explore/body-shell-03/src/machine",
+    "explore/body-shell-03/src/math",
+    "explore/body-shell-03/src/verify",
+    "explore/body-shell-03/src/scene/h1Presentation.ts",
+    "explore/body-shell-03/src/scene/primitives.ts",
+    "explore/body-shell-03/src/scene/materials.ts"
+  ],
+  "changedPaths": [],
+  "pass": true
+}

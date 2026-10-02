@@ -61,8 +61,14 @@ always reset to Inspect.
 - Built-production smoke passed: Inspect, Show and Game each reached both
   endpoints at 1280×720 and 390×844, kept certification stale, and produced no
   page or console errors. No horizontal overflow was observed.
-- Root authority regression suite: result to be recorded after the running
-  check completes.
+- Existing Cloudflare Workers Builds passed for implementation commit
+  `d8fb34946ae280adeb871085abefd69831bb3afc` and created
+  [this version preview](https://4c5ea891-quarto.charlesmish.workers.dev/).
+  The same desktop/mobile, all-speed smoke passed against that preview.
+  CI provisioned a candidate version; no manual production deployment was run.
+- Root authority regression suite: **105 passed (36.4 minutes)**. The full
+  root `npm test` result is retained in `authority-tests.txt`; no frozen
+  authority source or prior evidence was edited to obtain the result.
 
 Matched `before/` and `after/` screenshots include the aft frames at machineT
 0, 0.6 and 1, desktop startup/DRIVE, and 390×844 startup/DRIVE. `live/` records
@@ -87,7 +93,8 @@ ATTACHMENT_PHASE=before MT1_BASE_URL=http://127.0.0.1:5185 \
 ```
 
 Change `before` to `after` for the candidate. The production smoke uses
-`--grep 'production playback'` and the production preview URL. Live provenance
+`--grep 'production playback'` and the production preview URL. Set
+`SMOKE_SOURCE=ci-preview` to retain the CI version-preview result separately. Live provenance
 uses `--grep 'live viewer'` without invoking certification. Never reuse the
 normal test output directory for a concurrent evidence capture.
 

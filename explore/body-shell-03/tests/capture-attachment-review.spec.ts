@@ -66,7 +66,7 @@ test("record live viewer provenance without certification @evidence-writer", asy
 
 test("production playback and responsive smoke @evidence-writer", async ({ page }) => {
   test.setTimeout(180_000);
-  const dir = "evidence/attachment-startup-01/production";
+  const dir = `evidence/attachment-startup-01/${process.env.SMOKE_SOURCE === "ci-preview" ? "ci-preview" : "production"}`;
   mkdirSync(dir, { recursive: true });
   const errors: string[] = [];
   page.on("pageerror", error => errors.push(error.message));
@@ -94,5 +94,5 @@ test("production playback and responsive smoke @evidence-writer", async ({ page 
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(viewport.width);
   }
   expect(errors).toEqual([]);
-  writeFileSync(`${dir}/smoke.json`, `${JSON.stringify({ observations, errors }, null, 2)}\n`);
+  writeFileSync(`${dir}/smoke.json`, `${JSON.stringify({ url: page.url(), observations, errors }, null, 2)}\n`);
 });
