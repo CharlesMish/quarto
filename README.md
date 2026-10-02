@@ -2,17 +2,19 @@
 
 **A transforming machine you can take apart with your eyes.**
 
-Quarto is an interactive Babylon.js exploration of a vehicle transformation: four articulated lateral assemblies fold, turn, and settle into their receiving shoulders while the stern mechanism completes a visible capture-and-lock sequence. The aim is to make the motion satisfying—and let you look closely enough to understand it.
+Quarto is an interactive Babylon.js study of one vehicle transformation. Four side assemblies fold, turn, and settle against the body, and a mechanism at the stern captures and locks. The aim is to make the motion satisfying and to let you look closely enough to understand it.
 
 **[Open the public presentation →](https://quarto.cmish.dev/)**
 
-![Quarto in DRIVE — accepted FO1 receiving shoulders and BODY-SHELL-03.1 presentation](explore/body-shell-03/evidence/fo1/after/fo1-after-drive-three.png)
+![Quarto folded into DRIVE, with the presentation body on and the Hush Basin palette](docs/images/quarto-drive.png)
 
-The four assemblies are called **folios** (legacy/source: books). The smaller front pair sits low; the larger rear pair folds into the higher, canted **haunch** that gives Quarto its silhouette. The body frames the mechanism, with the roots, central carrier, and stern deliberately exposed.
+Captured from the presentation build at [`acb4a451`](https://github.com/CharlesMish/quarto/commit/acb4a4513ccef85f5ffe71505cfd816df1d46b5d). The [earlier FO1 study image](explore/body-shell-03/evidence/fo1/after/fo1-after-drive-three.png) remains in the evidence record.
+
+The four side assemblies are called **folios**. The smaller front pair sits low. The larger rear pair folds into a higher, canted posture, the **haunch**, which gives Quarto its silhouette. The body frames the mechanism and leaves the roots, the central carrier, and the stern exposed on purpose.
 
 ## Explore it locally
 
-From a checkout of this repository, with Node.js **20.19+**:
+From a checkout of this repository, with Node.js **22.12+** (Node.js 24 recommended for the viewer and deployment tools):
 
 ```bash
 npm --prefix explore/body-shell-03 ci
@@ -27,40 +29,38 @@ Open **http://127.0.0.1:5185/** for the presentation viewer.
 - Toggle **BODY ON / BODY OFF** to compare the presentation shell with the exposed mechanism.
 - Use the **section controls**, camera presets, and **INSPECT PICK** to look inside and identify parts.
 
-SPREAD and DRIVE are two required configurations of the same machine. The folios move from a roughly **13.32 m** spread to a **4.60 m** packed width; they fold and nest rather than shrinking or disappearing. At the open stern, a hollow thrust can moves around a fixed core into its receiver and locks. That handover is inspectable in both directions.
+SPREAD and DRIVE are the machine's two required configurations, about **13.32 m** and **4.60 m** wide. The folios fold and nest; they don't shrink or disappear. At the open stern, a hollow thrust can moves around a fixed core into its receiver and locks. This sequence is the **handover**, and you can inspect it in both directions.
 
-Interactive posing and playback use the presentation pose path without running certification. Opening diagnostics runs the existing certification sweep, with a notice before its one-time pause. Programmatic authority/evidence posing retains the certified path.
+Dragging the slider and playing the transformation don't run the full geometry check. Select **Diagnostics → DEBUG** to run it: a notice appears, then the viewer pauses once while the check runs. Scripted evidence work still uses the checked path. These checks cover modeled geometry and motion, not real-world dynamics, stress, or manufacturing tolerances.
 
 ## Where the project stands
 
-The current `main` presentation combines accepted **FO1 receiving shoulders** with the **BODY-SHELL-03.2 solid-body surface repair**, the Hush Basin palette, and the responsive Quarto viewer. The body-architecture decision remains an **exposed-carrier vehicle**: visible hardware and open spaces are part of the design.
+The current viewer combines the receiving shoulders from the FO1 study with a repaired solid body and the Hush Basin palette. Quarto is an **exposed-carrier vehicle**: visible hardware and open spaces are part of the design.
 
-The [reconciliation handoff](docs/QUARTO_RECONCILIATION_01.md) records the combined validation, preserved FO1 geometry, repaired surfaces, tour, and Fit controls. The [pause-and-return notes](docs/QUARTO_PAUSE_AND_RETURN.md) preserve possible future directions.
+No new study is scheduled. The next change should answer a concrete need from gameplay or inspection. An unsuccessful stern study (SO1) is kept as a negative result, and a service-routing study (SR1) is parked. Possible future directions are in the [pause-and-return notes](docs/QUARTO_PAUSE_AND_RETURN.md).
 
-There is no new architecture slice scheduled. The next useful input is a concrete need from gameplay or inspection; the service-route study **SR1 remains parked**. The unsuccessful stern presentation study **SO1 remains a recorded negative result**.
-
-For exact decisions, open questions, and engineering status, see **[Current state](docs/CURRENT_STATE.md)**.
+For decisions and open questions, see **[Current state](docs/CURRENT_STATE.md)**. For the project's scope, see the **[charter](docs/CHARTER.md)**.
 
 ## Quarto and Hush Basin
 
-[**Hush Basin**](https://github.com/CharlesMish/hush-basin) is the Godot gameplay realization and semantic reference. Quarto explores the transformation in mechanical detail; Hush Basin gives those ideas a playable setting. They inform one another through motion, shape, and readability, with a simplified native vehicle rig on the Godot side rather than a literal 1:1 geometry export.
-
-Letting the gameplay version develop is a useful next step before adding more detail here.
+[**Hush Basin**](https://github.com/CharlesMish/hush-basin) is a Godot game. Its vehicle was adapted from Quarto as a simplified rig, not a geometry export. Quarto explores the transformation in mechanical detail, and Hush Basin gives it a playable setting. The two inform each other through motion, shape, and readability. Findings from play are the most useful input for future changes here.
 
 ## For developers and reviewers
 
-**Quarto** is the machine name; **MT1** is the engineering-development lineage. The frozen mechanism remains **MT1-S5HR3R1**. BODY ON is presentation only; BODY OFF exposes the frozen mechanism. Presentation refinements do not create physical structure, reserved space, or authority rights.
+**Quarto** is the machine and project name. **MT1** is the prefix used by the engineering record and code. The mechanism, **MT1-S5HR3R1**, is held fixed for current work; changing it needs a task that explicitly reopens it. BODY ON is presentation only, and BODY OFF shows the mechanism. The presentation body creates no structure or reserved space. See [Current state](docs/CURRENT_STATE.md) for outstanding review decisions.
 
-The detailed [current-state record](docs/CURRENT_STATE.md) preserves the pending director dispositions. No cockpit, ground-contact hardware, utility profession, complete engine, or propulsion-performance claim is assigned.
+No cockpit, ground-contact hardware, job, complete engine, or propulsion performance is assigned. Do not begin S6, cockpit/intake architecture, or a new physical study without an explicit task.
 
 | Start here | What it contains |
 | --- | --- |
 | [Presentation package](explore/body-shell-03/) | Babylon viewer, body-shell lineage, and presentation tests |
-| [Current state](docs/CURRENT_STATE.md) | Accepted decisions, frozen status, and remaining unknowns |
+| [Current state](docs/CURRENT_STATE.md) | Accepted decisions and remaining unknowns |
 | [Evidence index](explore/body-shell-03/evidence/README.md) | Recorded presentation studies and review images |
-| [Nomenclature](docs/NOMENCLATURE.md) | Folio, haunch, chine, and preserved engineering identities |
-| [Operator contract](AGENTS.md) | Branch workflow and frozen boundaries for contributors and agents |
+| [Nomenclature](docs/NOMENCLATURE.md) | Quarto's terms and the engineering names they map to |
+| [Operator contract](AGENTS.md) | Branch workflow and fixed boundaries for contributors and agents |
 | [Hosting](docs/HOSTING.md) | Public presentation deployment versus the separate authority viewer |
+| [Charter](docs/CHARTER.md) | Purpose, scope, and voice |
+| [Changelog](CHANGELOG.md) | Notable changes |
 
 For the separate engineering/authority viewer at **http://127.0.0.1:5181/**:
 
@@ -69,7 +69,7 @@ npm ci
 npm run dev
 ```
 
-Use the lightweight APIs to identify a running build without initiating an authority evaluation:
+To identify a running build without running the geometry check, use:
 
 ```js
 window.__MT1.getBuildInfo()
@@ -90,7 +90,12 @@ For the public Worker build:
 
 ```bash
 npm run build:public
-npx wrangler deploy
 ```
 
-Capture and authority/evidence writers are separate from these checks because they can regenerate recorded evidence. Historical reports and frozen identifiers retain their original names. Start changes on a task branch from accepted `main` and bring them back through a reviewable pull request.
+Deployment is a separate action; see [Hosting](docs/HOSTING.md).
+
+Capture and evidence-writer scripts are kept separate from these checks because they can regenerate recorded evidence. Historical reports and engineering identifiers keep their original names. Start changes on a task branch from `main`, and bring them back through a pull request for review.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
