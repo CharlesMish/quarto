@@ -1,6 +1,6 @@
 # Changelog
 
-Notable changes to Quarto are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Quarto does not use tags.
+Notable changes to Quarto are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). The repository also retains the historical `quarto-ks1-accepted` tag.
 
 ## [Unreleased]
 

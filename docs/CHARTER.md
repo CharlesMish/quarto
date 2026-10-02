@@ -50,9 +50,10 @@ Quarto is released under the MIT License (see [LICENSE](../LICENSE)).
 ## 5. Versions and change record
 
 - `main` is the accepted baseline. Changes arrive from a task branch through a reviewed pull request.
-- Tags are not used. The one existing tag, `quarto-ks1-accepted`, is historical.
+- The repository retains the historical `quarto-ks1-accepted` tag.
 - Notable changes are recorded in [CHANGELOG.md](../CHANGELOG.md), in Keep a Changelog style. Both packages are version `0.1.0`. The changelog, not the version number, is the change record.
-- The mechanism is identified in `src/buildInfo.ts` by ID and SHA-256 hash. It is settled: a change needs a task that explicitly reopens it.
+- The mechanism is held fixed for current work; a change needs a task that explicitly reopens it. [Current state](CURRENT_STATE.md) records H1 presentation review as pending.
+- The IDs and hashes in [`src/buildInfo.ts`](../src/buildInfo.ts) record the mechanism's provenance. `candidateSha256` identifies the `MT1-S5HR3R1.zip` authority candidate archive, not the deployed viewer revision.
 - **Quarto** is the name of the machine and the project. **MT1** is the prefix of the engineering record, and existing MT1 identifiers are not renamed.
 
 ## 6. Relationship to other repos
@@ -60,4 +61,3 @@ Quarto is released under the MIT License (see [LICENSE](../LICENSE)).
 - [Hush Basin](https://github.com/CharlesMish/hush-basin) is a Godot game. Its README says its city "now uses the Quarto-derived native vehicle". That vehicle is a simplified rig, adapted as an intermediate step, not a geometry export.
 - The two projects inform each other through motion, shape, and readability. Neither pins a version of the other.
 - Findings from play are the most useful input for any future change to Quarto.
-- Outside the website, nothing else uses Quarto.
