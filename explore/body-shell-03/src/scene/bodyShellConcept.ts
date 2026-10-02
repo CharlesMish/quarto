@@ -240,6 +240,31 @@ export function createBodyShellConcept(scene: Scene): BodyShellConcept {
       true,
     );
 
+    // The frozen rear channel's aft frame begins above the descending chine.
+    // A small BODY-only return joins its inboard foot to the existing deck;
+    // the channel, receiving pockets and moving folios remain untouched.
+    const frameZ = P.channel.zAft;
+    const returnHalfZ = 0.06;
+    const returnMesh = extrudeXZ(
+      scene,
+      sideName("REAR_FRAME_RETURN", hand),
+      root,
+      hull,
+      [
+        [xIn, frameZ - returnHalfZ],
+        [hand * (CHINE_X + 0.16), frameZ - returnHalfZ],
+        [hand * (CHINE_X + 0.16), frameZ + returnHalfZ],
+        [xIn, frameZ + returnHalfZ],
+      ],
+      gunwaleY(frameZ - returnHalfZ),
+      P.channel.yBot + 0.04,
+    );
+    returnMesh.metadata = { ...(returnMesh.metadata ?? {}),
+      joinsFrame: hand < 0 ? "CHANNEL_FRAME_AFT" : "CHANNEL_FRAME_STBD_AFT" };
+    add(returnMesh, "hull", "chine walls",
+      "Presentation return connecting the aft channel frame's inboard foot to the chine and deck; no structural or authority claim.",
+      true, hand < 0);
+
     const deckFwd: V3t[][] = [];
     const deckAft: V3t[][] = [];
     const zFwdDeck = [PROW_Z, 4.2, P.fl.z, 0.55, BAY_Z];

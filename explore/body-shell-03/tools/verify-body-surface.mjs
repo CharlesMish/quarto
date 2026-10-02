@@ -14,10 +14,10 @@ const EPS = 1e-6;
 const stems = ["VENTRAL_HULL", "CHINE_FWD", "CHINE_AFT", "DORSAL_DECK_FWD", "DORSAL_DECK_AFT", "PROW",
   "FWD_LIP_FWD", "FWD_LIP_AFT", "FWD_FACE", "FWD_SILL", "FWD_WEB",
   "AFT_LIP_FWD", "AFT_LIP_AFT", "AFT_FACE", "AFT_SILL", "AFT_WEB", "COLLAR_SIDE", "COLLAR_LINTEL", "COLLAR_SILL"];
-const expectedNames = stems.flatMap(stem => ["PORT", "STBD"].map(hand => `BODY_${stem}_${hand}_VIS`)).sort();
-const expectedGhostNames = ["CHINE_AFT", "DORSAL_DECK_AFT", "COLLAR_SIDE", "COLLAR_LINTEL", "COLLAR_SILL"]
-  .flatMap(stem => ["PORT", "STBD"].map(hand => `BODY_${stem}_${hand}_VIS`)).sort();
-const expectedSectionNames = expectedNames.filter(name => name.includes("_STBD_"));
+const namesFor = stems => stems.flatMap(stem => ["PORT", "STBD"].map(hand => `BODY_${stem}_${hand}_VIS`)).sort();
+// Historical negative controls retain their original 38-mesh contract.
+const hasFrameReturns = fixture => fixture.info.detailRevision === "REAR-FRAME-01";
+const fixtureStems = fixture => hasFrameReturns(fixture) ? [...stems, "REAR_FRAME_RETURN"] : stems;
 const sub = (a, b) => a.map((v, i) => v - b[i]);
 const dot = (a, b) => a.reduce((sum, v, i) => sum + v * b[i], 0);
 const cross = (a, b) => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]];
@@ -140,10 +140,10 @@ function inspectMesh(data, fail) {
     minimumArea, signedVolume, boundaryEdges, inconsistentEdges, degenerates, normalFailures };
 }
 
-function surfaceContract(data, fail) {
+function surfaceContract(data, fail, checkedStems = stems) {
   const byName = new Map(data.map(mesh => [mesh.name, mesh]));
   const observations = { mirroredPairs: 0, deckTopRows: [], aftSlot: [], pockets: [] };
-  for (const stem of stems) {
+  for (const stem of checkedStems) {
     const port = byName.get(`BODY_${stem}_PORT_VIS`), stbd = byName.get(`BODY_${stem}_STBD_VIS`);
     if (!port || !stbd) continue;
     const mirrored = new Set(port.points.map(point => key([-point[0], point[1], point[2]])));
@@ -289,6 +289,9 @@ function seamContract(data, fail) {
 
 function presentationContract(fixture, fail) {
   const { body, scene, palette } = fixture;
+  const expectedSectionNames = namesFor(fixtureStems(fixture)).filter(name => name.includes("_STBD_"));
+  const expectedGhostNames = namesFor(["CHINE_AFT", "DORSAL_DECK_AFT", "COLLAR_SIDE", "COLLAR_LINTEL", "COLLAR_SILL",
+    ...(hasFrameReturns(fixture) ? ["REAR_FRAME_RETURN"] : [])]);
   const original = scene.meshes.map(mesh => ({ mesh, name: mesh.name, id: mesh.uniqueId, parent: mesh.parent, metadata: JSON.stringify(mesh.metadata), data: JSON.stringify(meshData(mesh)) }));
   const records = [];
   if (JSON.stringify([...body.propGhostMeshes].sort()) !== JSON.stringify(expectedGhostNames)) fail("PROP_GHOST_INVENTORY_CHANGED", "BODY", { actual: body.propGhostMeshes });
@@ -331,19 +334,35 @@ export async function verifyBodySurface(options = {}) {
   try {
     const data = fixture.scene.meshes.map(meshData);
     const actualNames = data.map(mesh => mesh.name).sort();
+    const expectedNames = namesFor(fixtureStems(fixture));
     if (JSON.stringify(actualNames) !== JSON.stringify(expectedNames)) fail("BODY_INVENTORY_CHANGED", "BODY", { actualNames });
     for (const mesh of fixture.scene.meshes) {
       if (mesh.metadata?.presentationOnly !== true || mesh.metadata?.physical !== false || mesh.metadata?.authorityRegistrationId != null) fail("BODY_AUTHORITY_METADATA", mesh.name);
     }
     const meshes = data.map(mesh => inspectMesh(mesh, fail));
-    const dimensions = surfaceContract(data, fail);
+    const dimensions = surfaceContract(data, fail, fixtureStems(fixture));
     const seams = seamContract(data, fail);
+    const attachments = [];
+    if (hasFrameReturns(fixture)) for (const [hand, sign] of [["PORT", -1], ["STBD", 1]]) {
+      const connector = data.find(mesh => mesh.name === `BODY_REAR_FRAME_RETURN_${hand}_VIS`);
+      const deck = data.find(mesh => mesh.name === `BODY_DORSAL_DECK_AFT_${hand}_VIS`);
+      // Test actual triangle intervals inside the deck/return, not their broad
+      // bounding boxes. The frozen frame's independent contact datum follows.
+      const point = [sign * 0.68, 0, -4.48];
+      const c = lineIntersections(connector, 1, point), d = lineIntersections(deck, 1, point);
+      const deckOverlap = Math.min(Math.max(...c), Math.max(...d)) - Math.max(Math.min(...c), Math.min(...d));
+      const framePoint = [sign * 0.8, 0, -4.48];
+      const atFrame = lineIntersections(connector, 1, framePoint);
+      const frameOverlap = Math.min(Math.max(...atFrame), 2.7) - Math.max(Math.min(...atFrame), 1.72);
+      if (!(deckOverlap > 0.1 && frameOverlap > 0.03)) fail("REAR_FRAME_RETURN_DISCONNECTED", hand, { deckOverlap, frameOverlap });
+      attachments.push({ hand, deckOverlap, frameOverlap });
+    }
     const presentation = presentationContract(fixture, fail);
     return { kind: "body-surface-verification", sourceRef: fixture.sourceRef, surfaceRevision: fixture.info.surfaceRevision ?? null,
       stationRevision: fixture.info.stationRevision ?? null,
       participatesInAuthority: false, authorityParticipation: "none", pass: failures.length === 0, meshCount: meshes.length,
       triangleCount: meshes.reduce((sum, mesh) => sum + mesh.triangles, 0), weldToleranceMeters: EPS,
-      sources: fixture.sources, meshes, dimensions, seams, presentation, failures };
+      sources: fixture.sources, meshes, dimensions, seams, attachments, presentation, failures };
   } finally { fixture.dispose(); }
 }
 

@@ -25,7 +25,7 @@ Open **http://127.0.0.1:5185/** for the presentation viewer.
 
 - **Drag, right-drag, and scroll** to orbit, pan, and zoom.
 - Move the **machine slider** between **SPREAD** and **DRIVE**, or press **Space** to play/pause.
-- Choose **Inspect**, **Show**, or **Game** for playback speed; the slider stays direct.
+- **Show** is the default playback speed (about four seconds). Choose **Inspect** for slower study or **Game** for a quick transformation; the slider stays direct.
 - Toggle **BODY ON / BODY OFF** to compare the presentation shell with the exposed mechanism.
 - Use the **section controls**, camera presets, and **INSPECT PICK** to look inside and identify parts.
 

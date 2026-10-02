@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 import { writeFileSync } from "node:fs";
 import { loadBodyFixture, verifyBodySurface } from "../tools/verify-body-surface.mjs";
 
-const ghostNames = ["CHINE_AFT", "DORSAL_DECK_AFT", "COLLAR_SIDE", "COLLAR_LINTEL", "COLLAR_SILL"]
+const ghostNames = ["CHINE_AFT", "DORSAL_DECK_AFT", "COLLAR_SIDE", "COLLAR_LINTEL", "COLLAR_SILL", "REAR_FRAME_RETURN"]
   .flatMap(stem => ["PORT", "STBD"].map(hand => `BODY_${stem}_${hand}_VIS`)).sort();
 
 test("BODY-SHELL-03.2 actual surfaces are closed, outward, flat and within the bounded joins", async ({}, testInfo) => {
@@ -10,12 +10,13 @@ test("BODY-SHELL-03.2 actual surfaces are closed, outward, flat and within the b
   const reportPath = testInfo.outputPath("body-surface-verification.json");
   writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`, { flag: "wx" });
   await testInfo.attach("body-surface-verification", { path: reportPath, contentType: "application/json" });
-  expect(report.meshCount).toBe(38);
+  expect(report.meshCount).toBe(40);
   expect(report.surfaceRevision).toBe("BODY-SHELL-03.2");
   expect(report.stationRevision).toBe("MT1-FO1");
   expect(report.participatesInAuthority).toBe(false);
   expect(report.authorityParticipation).toBe("none");
-  expect(report.dimensions.mirroredPairs).toBe(19);
+  expect(report.dimensions.mirroredPairs).toBe(20);
+  expect(report.attachments).toHaveLength(2);
   expect(report.seams.length).toBe(72);
   expect(report.failures, JSON.stringify(report.failures, null, 2)).toEqual([]);
   expect(report.pass).toBe(true);
@@ -35,6 +36,20 @@ test("surface verifier rejects known defects in the immutable pre-refinement she
   for (const code of ["NONFLAT_OR_INWARD_NORMAL", "NONOUTWARD_VOLUME", "BODY_MATERIAL_NOT_AUTOMATIC_OPAQUE", "BODY_BLEND_CLASSIFICATION", "BODY_JOIN_GAP", "NOSE_JOIN_VERTEX_MISSING"]) expect(codes.has(code), code).toBe(true);
 });
 
+test("rear-frame returns are the only geometry added to the accepted shell", async () => {
+  const accepted = await loadBodyFixture({ ref: "f9c21adff3921f8e9bdea9266f51098c9c6f919d", geometryOnly: true });
+  const current = await loadBodyFixture({ geometryOnly: true });
+  try {
+    expect(current.scene.meshes.length - accepted.scene.meshes.length).toBe(2);
+    for (const original of accepted.scene.meshes) {
+      const mesh = current.scene.getMeshByName(original.name);
+      expect(mesh, original.name).toBeTruthy();
+      for (const kind of ["position", "normal"]) expect(Array.from(mesh.getVerticesData(kind)), `${original.name} ${kind}`).toEqual(Array.from(original.getVerticesData(kind)));
+      expect(Array.from(mesh.getIndices()), original.name).toEqual(Array.from(original.getIndices()));
+    }
+  } finally { accepted.dispose(); current.dispose(); }
+});
+
 test("opaque BODY and explicit section ghosting survive live palette and visibility combinations", async ({ page }) => {
   await page.goto("/");
   await page.waitForFunction(() => Boolean(window.__MT1?.presentation));
@@ -52,7 +67,7 @@ test("opaque BODY and explicit section ghosting survive live palette and visibil
   expect(before.body.surfaceRevision).toBe("BODY-SHELL-03.2");
   expect(before.body.stationRevision).toBe("MT1-FO1");
   expect([...before.body.propGhostMeshes].sort()).toEqual(ghostNames);
-  expect(before.body.meshes).toHaveLength(38);
+  expect(before.body.meshes).toHaveLength(40);
   const immutableInventory = rows => rows.map(({ enabled, visible, ...row }) => row);
 
   for (const palette of ["accepted", "hush-basin", "accepted"] as const) {
@@ -83,7 +98,7 @@ test("opaque BODY and explicit section ghosting survive live palette and visibil
         expect(observation.inspection).toEqual(before.inspection);
         expect(immutableInventory(observation.inventory)).toEqual(immutableInventory(before.inventory));
         const bodyMeshes = observation.meshes.filter(mesh => mesh.body);
-        expect(bodyMeshes).toHaveLength(38);
+        expect(bodyMeshes).toHaveLength(40);
         expect(observation.meshes.some(mesh => mesh.name.startsWith("S5_CAN_"))).toBe(true);
         const mismatches = observation.meshes.filter(mesh => mesh.body
           ? mesh.alpha !== 1 || mesh.transparencyMode !== null || mesh.backFaceCulling !== true
@@ -113,6 +128,9 @@ test("reconciliation retains accepted FO1 station geometry and frame hierarchy",
   const checked: string[] = [];
   try {
     for (const mesh of current.scene.meshes) {
+      // This task adds only the two aft-frame returns. All prior shell and
+      // FO1 station meshes retain the same geometry and material hierarchy.
+      if (mesh.name.startsWith("BODY_REAR_FRAME_RETURN_")) continue;
       const original = accepted.scene.getMeshByName(mesh.name);
       expect(original, mesh.name).toBeTruthy();
       for (const term of ["diffuseColor", "emissiveColor", "specularColor"]) {
