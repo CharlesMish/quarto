@@ -1,0 +1,10 @@
+{
+  "commit": "d8fb34946ae280adeb871085abefd69831bb3afc",
+  "name": "Workers Builds: quarto",
+  "status": "completed",
+  "conclusion": "success",
+  "startedAt": "2026-10-02T08:13:19Z",
+  "completedAt": "2026-10-02T08:13:19Z",
+  "detailsUrl": "https://dash.cloudflare.com/42060b766895d89df8d314ba8e5fa780/workers/services/view/quarto/production/builds/34d0b314-d9b8-4c8e-a60f-d6451f163285",
+  "summary": "\nBuild ID: [34d0b314-d9b8-4c8e-a60f-d6451f163285](https://dash.cloudflare.com/42060b766895d89df8d314ba8e5fa780/workers/services/view/quarto/production/builds/34d0b314-d9b8-4c8e-a60f-d6451f163285)\nScript: [quarto](https://dash.cloudflare.com/42060b766895d89df8d314ba8e5fa780/workers/services/view/quarto/production)\nVersion ID: 4c5ea891-9704-45b2-ba0d-72c8805082e2\nPreview URL: https://4c5ea891-quarto.charlesmish.workers.dev\nPreview Alias URL: https://fix-quarto-rear-attachments-show-start-quarto.charlesmish.workers.dev\n"
+}

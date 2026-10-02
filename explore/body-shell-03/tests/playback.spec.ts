@@ -30,16 +30,59 @@ async function recordPlayback(page: Page, start: () => void | Promise<void>) {
 test("speed select and hook choose the playback profile without touching pose or certificate", async ({ page }) => {
   await ready(page);
   const before = await page.evaluate(() => window.__MT1!.getInspectionState());
-  expect(await page.evaluate(() => window.__MT1!.presentation.getState().playback)).toBe("inspect");
-  await expect(page.locator("#speedSelect")).toHaveAccessibleName("Playback speed");
-  await page.locator("#speedSelect").selectOption("show");
   expect(await page.evaluate(() => window.__MT1!.presentation.getState().playback)).toBe("show");
+  await expect(page.locator("#speedSelect")).toHaveAccessibleName("Playback speed");
+  await page.locator("#speedSelect").selectOption("inspect");
+  expect(await page.evaluate(() => window.__MT1!.presentation.getState().playback)).toBe("inspect");
   await page.evaluate(() => window.__MT1!.presentation.setPlayback("game"));
   await expect(page.locator("#speedSelect")).toHaveValue("game");
   expect(await page.evaluate(() => {
     try { window.__MT1!.presentation.setPlayback("warp" as never); return "accepted"; } catch (error) { return (error as Error).name; }
   })).toBe("RangeError");
   expect(await page.evaluate(() => window.__MT1!.getInspectionState())).toEqual(before);
+});
+
+test("fresh loads and reloads start paused in Show and preserve explicit lighting URLs", async ({ page }) => {
+  for (const viewport of [{ width: 1280, height: 720 }, { width: 390, height: 844 }]) {
+    await page.setViewportSize(viewport);
+    await page.goto("/?lighting=flat");
+    await page.waitForFunction(() => Boolean(window.__MT1?.presentation));
+    await expect(page.locator("#speedSelect")).toHaveValue("show");
+    const initial = await page.evaluate(() => ({ state: window.__MT1!.presentation.getState(),
+      inspection: window.__MT1!.getInspectionState(), lighting: window.__MT1!.presentation.getLighting() }));
+    expect(initial.state.automatic).toBe(false);
+    expect(initial.inspection.machineT).toBe(0);
+    expect(initial.inspection.certificate.state).toBe("STALE");
+    expect(initial.lighting.tier).toBe("flat");
+    await page.locator("#speedSelect").selectOption("inspect");
+    await page.reload();
+    await page.waitForFunction(() => Boolean(window.__MT1?.presentation));
+    await expect(page.locator("#speedSelect")).toHaveValue("show");
+    expect(new URL(page.url()).search).toBe("?lighting=flat");
+  }
+});
+
+test("changing speeds during playback restarts from the same pose without certifying", async ({ page }) => {
+  await ready(page);
+  const initial = await page.evaluate(() => window.__MT1!.getInspectionState().certificate);
+  await page.locator("#autoBtn").click();
+  await expect.poll(() => page.evaluate(() => window.__MT1!.getMachineT())).toBeGreaterThan(0.1);
+  for (const profile of ["inspect", "show", "game"] as const) {
+    const transition = await page.evaluate(profile => {
+      const before = window.__MT1!.getMachineT();
+      window.__MT1!.presentation.setPlayback(profile);
+      return { before, after: window.__MT1!.getMachineT(), state: window.__MT1!.presentation.getState() };
+    }, profile);
+    expect(transition.after).toBe(transition.before);
+    expect(transition.state.playback).toBe(profile);
+    expect(transition.state.automatic).toBe(true);
+  }
+  await expect.poll(() => page.evaluate(() => window.__MT1!.getMachineT())).toBe(1);
+  expect(await page.evaluate(() => window.__MT1!.getInspectionState().certificate)).toEqual(initial);
+  await page.locator("#speedSelect").selectOption("inspect");
+  const reverse = await recordPlayback(page, () => page.locator("#autoBtn").click());
+  expect(reverse.at(-1)!.t).toBe(0);
+  for (let i = 1; i < reverse.length; i++) expect(reverse[i]!.t).toBeLessThanOrEqual(reverse[i - 1]!.t);
 });
 
 test("game-speed playback reaches DRIVE and returns to SPREAD at Hush Basin cadence", async ({ page }) => {
@@ -49,12 +92,14 @@ test("game-speed playback reaches DRIVE and returns to SPREAD at Hush Basin cade
   const forward = await recordPlayback(page, () => page.locator("#autoBtn").click());
   const moving = forward.filter((row) => row.t > 0);
   expect(forward.at(-1)!.t).toBe(1);
-  // Frame time is clamped at 50 ms, so budget in frames as well as seconds:
-  // 0.24 s of clock time plus two frames.
+  // Integrate each observed interval with the viewer's 50 ms clamp. A single
+  // slow frame must not stand in for every frame in a mixed-rate recording.
   const frames = forward.slice(1).map((row, i) => row.at - forward[i]!.at);
   const frame = Math.max(...frames);
-  const clockFrames = moving.length;
-  expect(clockFrames, `frames at ${frame.toFixed(1)} ms`).toBeLessThanOrEqual(Math.ceil(0.24 / Math.min(0.05, frame / 1000)) + 2);
+  const observedClock = frames.reduce((seconds, dt) => seconds + Math.min(0.05, dt / 1000), 0);
+  const frameBudget = 2 * Math.min(0.05, frame / 1000);
+  expect(observedClock, `clamped clock over ${frames.length} mixed-rate frames`).toBeLessThanOrEqual(0.24 + frameBudget);
+  expect(observedClock).toBeGreaterThanOrEqual(0.24 - frameBudget);
   if (frame <= 50) expect(moving.at(-1)!.at - moving[0]!.at).toBeLessThanOrEqual(240 + 2 * frame);
   for (let i = 1; i < forward.length; i += 1) expect(forward[i]!.t).toBeGreaterThanOrEqual(forward[i - 1]!.t);
 

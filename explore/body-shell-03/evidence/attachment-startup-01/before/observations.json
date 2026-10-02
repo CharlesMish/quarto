@@ -1,0 +1,196 @@
+{
+  "initial": {
+    "build": {
+      "candidateId": "MT1-S5HR3R1",
+      "freezeId": "MT1-S5HR3R1",
+      "candidateSha256": "6df6ddd8086d12329e87b9695c8e309995b2e81c6e72eacea240215ca3a646a3",
+      "candidateSha256Scope": "MT1-S5HR3R1.zip authority candidate; dev tree adds presentation-only inspection plumbing",
+      "sourceCandidateId": "MT1-S5HR3R",
+      "sourceCandidateSha256": "072d936e4bef77c097b464f6aaf414feb630cafaba6a533f9dfbb9e5c4256018",
+      "authorityContractSha256": "e15885cc11777ad49f2b0b5ad2778facb64ee6f932b65bf36742a65afe451ba9",
+      "frozenNegativeControlContractSha256": "8b150937b002d7a054e098182d6453711c477f8eaeb1865c1663541dc135f70d",
+      "nominalGeometryAuthority": {
+        "id": "MT1-S5H",
+        "version": "frozen S5H mechanism geometry carried unchanged through HR3R1",
+        "parametersSha256": "8d713b182f94af2769bec0696fb10cfc94fce98d90e89a46a69aad68e805fc63"
+      },
+      "frozenS4aSha256": "95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8",
+      "inspectionSurface": "presentation-only-v1"
+    },
+    "inspection": {
+      "candidateId": "MT1-S5HR3R1",
+      "machineT": 0,
+      "driveT": 0,
+      "requestedDriveT": 0,
+      "mode": "MACHINE",
+      "preview": false,
+      "driveThrustReadyCached": false,
+      "certificate": {
+        "state": "STALE",
+        "present": false,
+        "valid": false,
+        "samples": null,
+        "pairsEvaluated": null
+      }
+    },
+    "presentation": {
+      "palette": "hush-basin",
+      "tourStep": null,
+      "automatic": false,
+      "direction": 1,
+      "playback": "inspect",
+      "viewerId": "QUARTO-VIEWER-01"
+    }
+  },
+  "geometry": [
+    {
+      "name": "CHANNEL_FRAME_FWD",
+      "min": [
+        -1.549999976158142,
+        1.7200000381469724,
+        -1.7500000286102295
+      ],
+      "max": [
+        -0.7499999761581421,
+        2.700000038146973,
+        -1.6900000286102295
+      ],
+      "metadata": {
+        "size": [
+          0.8,
+          0.9800000000000002,
+          0.06
+        ],
+        "kind": "box",
+        "authorityRegistrationId": "AUTHORITY_ROW_00000A"
+      }
+    },
+    {
+      "name": "CHANNEL_FRAME_AFT",
+      "min": [
+        -1.549999976158142,
+        1.7200000381469724,
+        -4.510000019073487
+      ],
+      "max": [
+        -0.7499999761581421,
+        2.700000038146973,
+        -4.450000019073486
+      ],
+      "metadata": {
+        "size": [
+          0.8,
+          0.9800000000000002,
+          0.06
+        ],
+        "kind": "box",
+        "authorityRegistrationId": "AUTHORITY_ROW_00000B"
+      }
+    },
+    {
+      "name": "CHANNEL_FRAME_STBD_FWD",
+      "min": [
+        0.7499999761581421,
+        1.7200000381469724,
+        -1.7500000286102295
+      ],
+      "max": [
+        1.549999976158142,
+        2.700000038146973,
+        -1.6900000286102295
+      ],
+      "metadata": {
+        "size": [
+          0.8,
+          0.9800000000000002,
+          0.06
+        ],
+        "kind": "box",
+        "authorityRegistrationId": "AUTHORITY_ROW_00000L"
+      }
+    },
+    {
+      "name": "CHANNEL_FRAME_STBD_AFT",
+      "min": [
+        0.7499999761581421,
+        1.7200000381469724,
+        -4.510000019073487
+      ],
+      "max": [
+        1.549999976158142,
+        2.700000038146973,
+        -4.450000019073486
+      ],
+      "metadata": {
+        "size": [
+          0.8,
+          0.9800000000000002,
+          0.06
+        ],
+        "kind": "box",
+        "authorityRegistrationId": "AUTHORITY_ROW_00000M"
+      }
+    },
+    {
+      "name": "BODY_CHINE_AFT_PORT_VIS",
+      "min": [
+        -0.75,
+        0.07999999821186066,
+        -5.980000019073486
+      ],
+      "max": [
+        -0.6100000143051147,
+        2.1600000858306885,
+        -1.7000000476837158
+      ],
+      "metadata": {
+        "kind": "facet",
+        "size": [
+          0.14,
+          2.08,
+          4.279999999999999
+        ],
+        "presentationOnly": true,
+        "physical": false,
+        "authorityStage": "body-shell exploration",
+        "family": "body-shell-concept",
+        "conceptId": "MT1-BODY-SHELL-03",
+        "surfaceRevision": "BODY-SHELL-03.2",
+        "stationRevision": "MT1-FO1",
+        "mass": "chine walls",
+        "purpose": "Aft chine: quiet spine through the higher rear station, then dropping into the open stern."
+      }
+    },
+    {
+      "name": "BODY_CHINE_AFT_STBD_VIS",
+      "min": [
+        0.6100000143051147,
+        0.07999999821186066,
+        -5.980000019073486
+      ],
+      "max": [
+        0.75,
+        2.1600000858306885,
+        -1.7000000476837158
+      ],
+      "metadata": {
+        "kind": "facet",
+        "size": [
+          0.14,
+          2.08,
+          4.279999999999999
+        ],
+        "presentationOnly": true,
+        "physical": false,
+        "authorityStage": "body-shell exploration",
+        "family": "body-shell-concept",
+        "conceptId": "MT1-BODY-SHELL-03",
+        "surfaceRevision": "BODY-SHELL-03.2",
+        "stationRevision": "MT1-FO1",
+        "mass": "chine walls",
+        "purpose": "Aft chine: quiet spine through the higher rear station, then dropping into the open stern."
+      }
+    }
+  ],
+  "errors": []
+}

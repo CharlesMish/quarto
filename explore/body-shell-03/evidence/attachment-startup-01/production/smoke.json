@@ -1,0 +1,293 @@
+{
+  "observations": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "profile": "inspect",
+      "target": 1,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 1,
+        "driveT": 1,
+        "requestedDriveT": 1,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "profile": "inspect",
+      "target": 0,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 0,
+        "driveT": 0,
+        "requestedDriveT": 0,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "profile": "show",
+      "target": 1,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 1,
+        "driveT": 1,
+        "requestedDriveT": 1,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "profile": "show",
+      "target": 0,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 0,
+        "driveT": 0,
+        "requestedDriveT": 0,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "profile": "game",
+      "target": 1,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 1,
+        "driveT": 1,
+        "requestedDriveT": 1,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "profile": "game",
+      "target": 0,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 0,
+        "driveT": 0,
+        "requestedDriveT": 0,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "profile": "inspect",
+      "target": 1,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 1,
+        "driveT": 1,
+        "requestedDriveT": 1,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "profile": "inspect",
+      "target": 0,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 0,
+        "driveT": 0,
+        "requestedDriveT": 0,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "profile": "show",
+      "target": 1,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 1,
+        "driveT": 1,
+        "requestedDriveT": 1,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "profile": "show",
+      "target": 0,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 0,
+        "driveT": 0,
+        "requestedDriveT": 0,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "profile": "game",
+      "target": 1,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 1,
+        "driveT": 1,
+        "requestedDriveT": 1,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "profile": "game",
+      "target": 0,
+      "inspection": {
+        "candidateId": "MT1-S5HR3R1",
+        "machineT": 0,
+        "driveT": 0,
+        "requestedDriveT": 0,
+        "mode": "MACHINE",
+        "preview": false,
+        "driveThrustReadyCached": false,
+        "certificate": {
+          "state": "STALE",
+          "present": false,
+          "valid": false,
+          "samples": null,
+          "pairsEvaluated": null
+        }
+      }
+    }
+  ],
+  "errors": []
+}

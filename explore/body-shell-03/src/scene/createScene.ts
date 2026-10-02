@@ -137,7 +137,8 @@ export function createApp(canvas: HTMLCanvasElement): App {
   let machineT = 0;
   let automatic = false;
   let direction = 1;
-  let playback: PlaybackProfile = "inspect";
+  // Show reveals the sequence promptly; Inspect remains available for study.
+  let playback: PlaybackProfile = "show";
   let clock: PlaybackClock | null = null;
   let debugOn = false;
   let sectionOn = false;

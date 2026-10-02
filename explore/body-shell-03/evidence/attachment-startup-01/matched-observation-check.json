@@ -1,0 +1,31 @@
+{
+  "authorityParticipation": "none",
+  "buildIdentityUnchanged": true,
+  "initialInspectionUnchanged": true,
+  "priorFrameAndChineGeometryUnchanged": true,
+  "frameContact": [
+    {
+      "return": "BODY_REAR_FRAME_RETURN_PORT_VIS",
+      "frame": "CHANNEL_FRAME_AFT",
+      "overlapMeters": [
+        0.16000005006790163,
+        0.03999995231628439,
+        0.0600000000000005
+      ]
+    },
+    {
+      "return": "BODY_REAR_FRAME_RETURN_STBD_VIS",
+      "frame": "CHANNEL_FRAME_STBD_AFT",
+      "overlapMeters": [
+        0.16000005006790163,
+        0.03999995231628439,
+        0.0600000000000005
+      ]
+    }
+  ],
+  "startupPlayback": {
+    "before": "inspect",
+    "after": "show"
+  },
+  "pass": true
+}
