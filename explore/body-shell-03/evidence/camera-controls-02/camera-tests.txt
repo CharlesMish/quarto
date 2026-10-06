@@ -1,0 +1,10 @@
+
+Running 2 tests using 1 worker
+
+(node:96730) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/2] tests/camera-controls.spec.ts:55:3 › mouse orbit and pan are gentler across profiles, rates and distances, with zoom preserved
+[2/2] tests/camera-controls.spec.ts:55:3 › two-touch orbit and pan are gentler across profiles, rates and distances, with zoom preserved
+  2 passed (2.2m)

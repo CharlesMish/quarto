@@ -6,7 +6,6 @@ import { Vector3 } from "@babylonjs/core/Maths/math.vector";
 import { Color3, Color4 } from "@babylonjs/core/Maths/math.color";
 import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
 import { Scene } from "@babylonjs/core/scene";
-import { softenOrbitResponse } from "../presentation/cameraInputResponse";
 import "@babylonjs/core/Culling/ray";
 import { P } from "../design/parameters";
 import { BODY_CONCEPT_INFO } from "../bodyConceptInfo";
@@ -95,12 +94,15 @@ export function createApp(canvas: HTMLCanvasElement): App {
   camera.upperRadiusLimit = 42;
   camera.lowerBetaLimit = 0.05;
   camera.upperBetaLimit = Math.PI / 2 - 0.04;
-  // Twenty percent less zoom input; retain the existing inertia and limits.
-  camera.wheelPrecision = 50;
-  camera.pinchPrecision = 15;
-  // One third less pan input than the first camera-control preview.
+  camera.wheelPrecision = 40;
+  // One third less orbit/pan input than the first camera-control preview.
+  // These input gains are independent of playback, presets and inertia.
+  camera.angularSensibilityX = 1500;
+  camera.angularSensibilityY = 1500;
   camera.panningSensibility = 150;
-  softenOrbitResponse(camera);
+  // Babylon's pinch divisor also includes mean angular sensitivity.
+  // Keep that divisor at 12 * 1000 so pinch zoom does not slow with orbit.
+  camera.pinchPrecision = 12 * 1000 / 1500;
   camera.minZ = 0.005;
   applyCamera("body", camera);
 

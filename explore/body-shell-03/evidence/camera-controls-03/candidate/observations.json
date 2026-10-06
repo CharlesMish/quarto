@@ -1,0 +1,7084 @@
+{
+  "capturedAt": "2026-10-06T01:45:34.757Z",
+  "sourceHead": "a3f858bcd52cec1b4f264f58238c045ae2c5f608",
+  "phase": "candidate",
+  "baseURL": "http://127.0.0.1:5187",
+  "note": "Same browser input traces; touch is emulated, not a physical phone. Candidate may be an uncommitted diff from sourceHead.",
+  "errors": [],
+  "observations": [
+    {
+      "key": "mouse/inspect/standard/zoom/1",
+      "touch": false,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 14.132141931848421,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/inspect/standard/zoom/-1",
+      "touch": false,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.369822961426395,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/inspect/slower-input/zoom/1",
+      "touch": false,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 14.132141931848421,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/inspect/slower-input/zoom/-1",
+      "touch": false,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.369822961426395,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/inspect/near/zoom/1",
+      "touch": false,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 8.938138590314315,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 9.319298075525328,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/inspect/near/zoom/-1",
+      "touch": false,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 8.938138590314315,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 8.556979105103302,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/inspect/far/zoom/1",
+      "touch": false,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.25,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 17.18872805829676,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 17.56988754350778,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/inspect/far/zoom/-1",
+      "touch": false,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.25,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 17.18872805829676,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 16.807568573085742,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/inspect/far-limit/zoom/1",
+      "touch": false,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "far-limit",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 18.563826302960504,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 18.944985788171522,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/inspect/far-limit/zoom/-1",
+      "touch": false,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "far-limit",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 18.563826302960504,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 18.182666817749485,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/standard/zoom/1",
+      "touch": false,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 14.132141931848421,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/standard/zoom/-1",
+      "touch": false,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.369822961426395,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/standard/orbit-x/1",
+      "touch": false,
+      "profile": "show",
+      "kind": "orbit-x",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.4661458884784968,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": -0.3138541115215032,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/standard/orbit-y/1",
+      "touch": false,
+      "profile": "show",
+      "kind": "orbit-y",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 0.9864247630274172,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": -0.15357523697258268,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/standard/pan-x/1",
+      "touch": false,
+      "profile": "show",
+      "kind": "pan-x",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          1.1112120480628027,
+          1.4774999648948133,
+          -2.183274119732105
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-8,
+          -1.1232742627832524
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/standard/pan-y/1",
+      "touch": false,
+      "profile": "show",
+      "kind": "pan-y",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          -0.4690731314635683,
+          2.9131803783637285,
+          -1.5240358819833946
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.5800434633802856,
+        "target": [
+          -0.4690731314635683,
+          1.4356804348391292,
+          -0.4640360250345419
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/slower-input/zoom/1",
+      "touch": false,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 14.132141931848421,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/slower-input/zoom/-1",
+      "touch": false,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.369822961426395,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/near/zoom/1",
+      "touch": false,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 8.938138590314315,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 9.319298075525328,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/near/zoom/-1",
+      "touch": false,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 8.938138590314315,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 8.556979105103302,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/far/zoom/1",
+      "touch": false,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.25,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 17.18872805829676,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 17.56988754350778,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/far/zoom/-1",
+      "touch": false,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.25,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 17.18872805829676,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 16.807568573085742,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/far-limit/zoom/1",
+      "touch": false,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "far-limit",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 18.563826302960504,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 18.944985788171522,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "mouse/show/far-limit/zoom/-1",
+      "touch": false,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "far-limit",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 18.563826302960504,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 18.182666817749485,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 0,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "touch/inspect/standard/zoom/1",
+      "touch": true,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 27.044051207910112,
+        "target": [
+          -0.009599998722891015,
+          1.4774999433399774,
+          -1.0502956501712404
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276326,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/inspect/standard/zoom/-1",
+      "touch": true,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 31.91338016920695,
+        "target": [
+          0.009599998722891015,
+          1.477499943709221,
+          -1.069704063726465
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0517338253692046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/inspect/slower-input/zoom/1",
+      "touch": true,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 27.043077226027357,
+        "target": [
+          -0.009599998722891015,
+          1.4774999433399774,
+          -1.0502956501712404
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8185691178103873,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/inspect/slower-input/zoom/-1",
+      "touch": true,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 31.91334190312975,
+        "target": [
+          0.009599998722891015,
+          1.477499943709221,
+          -1.069704063726465
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.051695559292007,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/inspect/near/zoom/1",
+      "touch": true,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 19.410070123494535,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 16.592474987566902,
+        "target": [
+          -0.009599998722891015,
+          1.4774999433399774,
+          -1.0502956501712404
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276326,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/inspect/near/zoom/-1",
+      "touch": true,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 19.410070123494535,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 21.460644785301827,
+        "target": [
+          0.009599998722891015,
+          1.477499943709221,
+          -1.069704063726465
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0505746618072926,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/inspect/far/zoom/1",
+      "touch": true,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.25,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 37.32705792979718,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 34.50946279386957,
+        "target": [
+          -0.009599998722891015,
+          1.4774999433399774,
+          -1.0502956501712404
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276112,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/inspect/far/zoom/-1",
+      "touch": true,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.25,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 37.32705792979718,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 39.37879175516639,
+        "target": [
+          0.009599998722891015,
+          1.477499943709221,
+          -1.069704063726465
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0517338253692117,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/inspect/far-limit/zoom/1",
+      "touch": true,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "far-limit",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 40.313222564180954,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 37.49562742825334,
+        "target": [
+          -0.009599998722891015,
+          1.4774999433399774,
+          -1.0502956501712404
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276112,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/inspect/far-limit/zoom/-1",
+      "touch": true,
+      "profile": "inspect",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "far-limit",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 40.313222564180954,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 42,
+        "target": [
+          0.009599998722891015,
+          1.477499943709221,
+          -1.069704063726465
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "inspect",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 1.686777435819046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/show/standard/zoom/1",
+      "touch": true,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 27.044051207910112,
+        "target": [
+          -0.009599998722891015,
+          1.4774999433399774,
+          -1.0502956501712404
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276326,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/show/standard/zoom/-1",
+      "touch": true,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 31.91338016920695,
+        "target": [
+          0.009599998722891015,
+          1.477499943709221,
+          -1.069704063726465
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0517338253692046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/show/standard/orbit-x/1",
+      "touch": true,
+      "profile": "show",
+      "kind": "orbit-x",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.46659513816991427,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": -0.31340486183008576,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "touch/show/standard/orbit-y/1",
+      "touch": true,
+      "profile": "show",
+      "kind": "orbit-y",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 0.9860547181753817,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": -0.1539452818246182,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "touch/show/standard/pan-x/1",
+      "touch": true,
+      "profile": "show",
+      "kind": "pan-x",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861913010504413,
+        "target": [
+          1.0655187578242395,
+          1.4774999640160646,
+          -2.1370848285015596
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.00026666666666841365,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-8,
+          -1.0770849715527069
+        ]
+      }
+    },
+    {
+      "key": "touch/show/standard/pan-y/1",
+      "touch": true,
+      "profile": "show",
+      "kind": "pan-y",
+      "direction": 1,
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861913010504413,
+        "target": [
+          -0.4497847384188368,
+          2.8541448748220817,
+          -1.5049546158919975
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.00026666666666841365,
+        "targetDistance": 1.5150717195194765,
+        "target": [
+          -0.4497847384188368,
+          1.3766449312974824,
+          -0.44495475894314485
+        ]
+      }
+    },
+    {
+      "key": "touch/show/slower-input/zoom/1",
+      "touch": true,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 27.043077226027357,
+        "target": [
+          -0.009599998722891015,
+          1.4774999433399774,
+          -1.0502956501712404
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8185691178103873,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/show/slower-input/zoom/-1",
+      "touch": true,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 29.861646343837744,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 31.91334190312975,
+        "target": [
+          0.009599998722891015,
+          1.477499943709221,
+          -1.069704063726465
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.051695559292007,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/show/near/zoom/1",
+      "touch": true,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 19.410070123494535,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 16.592474987566902,
+        "target": [
+          -0.009599998722891015,
+          1.4774999433399774,
+          -1.0502956501712404
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276326,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/show/near/zoom/-1",
+      "touch": true,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 19.410070123494535,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 21.46180394886374,
+        "target": [
+          0.009599998722891015,
+          1.477499943709221,
+          -1.069704063726465
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0517338253692046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/show/far/zoom/1",
+      "touch": true,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.25,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 37.32705792979718,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 34.50946279386957,
+        "target": [
+          -0.009599998722891015,
+          1.4774999433399774,
+          -1.0502956501712404
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276112,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/show/far/zoom/-1",
+      "touch": true,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.25,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 37.32705792979718,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 39.37879175516639,
+        "target": [
+          0.009599998722891015,
+          1.477499943709221,
+          -1.069704063726465
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0517338253692117,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/show/far-limit/zoom/1",
+      "touch": true,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": 1,
+      "variant": {
+        "name": "far-limit",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 40.313222564180954,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 37.49562742825334,
+        "target": [
+          -0.009599998722891015,
+          1.4774999433399774,
+          -1.0502956501712404
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276112,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      }
+    },
+    {
+      "key": "touch/show/far-limit/zoom/-1",
+      "touch": true,
+      "profile": "show",
+      "kind": "zoom",
+      "direction": -1,
+      "variant": {
+        "name": "far-limit",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "before": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 40.313222564180954,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "after": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 42,
+        "target": [
+          0.009599998722891015,
+          1.477499943709221,
+          -1.069704063726465
+        ],
+        "lowerRadiusLimit": 0.05,
+        "upperRadiusLimit": 42,
+        "panningSensibility": 150,
+        "angularSensibilityX": 1000,
+        "angularSensibilityY": 1000,
+        "inertia": 0.9,
+        "panningInertia": 0.9,
+        "wheelPrecision": 50,
+        "pinchPrecision": 15,
+        "pinchDeltaPercentage": 0,
+        "useNaturalPinchZoom": false,
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "lighting": {
+          "tier": "flat",
+          "studyView": false,
+          "shadows": false,
+          "ambientOcclusion": false
+        },
+        "maxTouchPoints": 2,
+        "residual": {
+          "alpha": 0,
+          "beta": 0,
+          "radius": 0,
+          "panX": 0,
+          "panY": 0
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "presentation": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "viewerId": "QUARTO-VIEWER-01"
+        }
+      },
+      "delta": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 1.686777435819046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      }
+    }
+  ],
+  "programmatic": [
+    {
+      "key": "false/body",
+      "pose": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 16.8,
+        "target": [
+          0,
+          1.05,
+          0.1
+        ]
+      }
+    },
+    {
+      "key": "false/prop",
+      "pose": {
+        "alpha": 0.92,
+        "beta": 1.16,
+        "radius": 4.6,
+        "target": [
+          0,
+          0.82,
+          -4.7
+        ]
+      }
+    },
+    {
+      "key": "false/0",
+      "pose": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 13.750982446637408,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ]
+      }
+    },
+    {
+      "key": "false/1",
+      "pose": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 12.639312043984496,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ]
+      }
+    },
+    {
+      "key": "false/2",
+      "pose": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 12.639312043984496,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ]
+      }
+    },
+    {
+      "key": "false/3",
+      "pose": {
+        "alpha": 0.98,
+        "beta": 1.18,
+        "radius": 13.638317583558758,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ]
+      }
+    },
+    {
+      "key": "false/4",
+      "pose": {
+        "alpha": -1.12,
+        "beta": 1.15,
+        "radius": 8.8,
+        "target": [
+          0,
+          1,
+          -4.3
+        ]
+      }
+    },
+    {
+      "key": "false/5",
+      "pose": {
+        "alpha": -1.12,
+        "beta": 1.18,
+        "radius": 6.5,
+        "target": [
+          0,
+          0.9,
+          -5.5
+        ]
+      }
+    },
+    {
+      "key": "true/body",
+      "pose": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 16.8,
+        "target": [
+          0,
+          1.05,
+          0.1
+        ]
+      }
+    },
+    {
+      "key": "true/prop",
+      "pose": {
+        "alpha": 0.92,
+        "beta": 1.16,
+        "radius": 4.6,
+        "target": [
+          0,
+          0.82,
+          -4.7
+        ]
+      }
+    },
+    {
+      "key": "true/0",
+      "pose": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 23.580153819351718,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ]
+      }
+    },
+    {
+      "key": "true/1",
+      "pose": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 21.23058623582221,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ]
+      }
+    },
+    {
+      "key": "true/2",
+      "pose": {
+        "alpha": 0.78,
+        "beta": 1.14,
+        "radius": 19.021256011826278,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ]
+      }
+    },
+    {
+      "key": "true/3",
+      "pose": {
+        "alpha": 0.98,
+        "beta": 1.18,
+        "radius": 17.22672228832708,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ]
+      }
+    },
+    {
+      "key": "true/4",
+      "pose": {
+        "alpha": -1.12,
+        "beta": 1.15,
+        "radius": 9.240000000000002,
+        "target": [
+          0,
+          1,
+          -4.3
+        ]
+      }
+    },
+    {
+      "key": "true/5",
+      "pose": {
+        "alpha": -1.12,
+        "beta": 1.18,
+        "radius": 6.825,
+        "target": [
+          0,
+          0.9,
+          -5.5
+        ]
+      }
+    }
+  ]
+}

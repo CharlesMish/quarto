@@ -1,0 +1,837 @@
+{
+  "baselineSourceSha": "11bfa39f45327197d516939046d48b1c7caefac0",
+  "candidateSourceSha256": {
+    "explore/body-shell-03/src/scene/createScene.ts": "28c51dd6b45c3dd665874d08feb14ab317bbb4a36294fb0ff5a12b93b4d308c0",
+    "explore/body-shell-03/src/ui/createUI.ts": "6ad9aea297534a927390bce045b005ddd615c65a625961a44f1954789ebb5832",
+    "explore/body-shell-03/src/presentation/viewerState.ts": "d4166248ae0205a591821b9703aa92de767ba5d399078ac936a0700c08b3954e"
+  },
+  "identicalInitialScreenshots": {
+    "desktop-start.png": true,
+    "touch-start.png": true
+  },
+  "authorityParticipation": "none",
+  "comparison": [
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.980114269604919,
+        "target": [
+          2.095853056059325,
+          4.030628231177502e-08,
+          -2.1186035559560565
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "travelRatio": 0.7987478164351834
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.9801143060005533,
+        "target": [
+          -0.8847171498969164,
+          2.707831715942762,
+          -0.8752166815377269
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.380359794645194,
+        "target": [
+          -0.7066658916429203,
+          2.162874670383218,
+          -0.6990774132859059
+        ]
+      },
+      "travelRatio": 0.7987478164351834
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4701392148680505,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.4703927132271564,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23070715505653394,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.2308862776033047,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.980114269604919,
+        "target": [
+          2.095853056059325,
+          4.030628231177502e-08,
+          -2.1186035559560565
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "travelRatio": 0.7987478164351834
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.9801143060005533,
+        "target": [
+          -0.8847171498969164,
+          2.707831715942762,
+          -0.8752166815377269
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.380359794645194,
+        "target": [
+          -0.7066658916429203,
+          2.162874670383218,
+          -0.6990774132859059
+        ]
+      },
+      "travelRatio": 0.7987478164351834
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.470047121953407,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.4707618352282792,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.2306092549423524,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.23044914013943352,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": false,
+      "profile": "game",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.980114269604919,
+        "target": [
+          2.095853056059325,
+          4.030628231177502e-08,
+          -2.1186035559560565
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "travelRatio": 0.7987478164351834
+    },
+    {
+      "touch": false,
+      "profile": "game",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.9801143060005533,
+        "target": [
+          -0.8847171498969164,
+          2.707831715942762,
+          -0.8752166815377269
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.380359794645194,
+        "target": [
+          -0.7066658916429203,
+          2.162874670383218,
+          -0.6990774132859059
+        ]
+      },
+      "travelRatio": 0.7987478164351834
+    },
+    {
+      "touch": false,
+      "profile": "game",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.470326235958134,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.47087300126628684,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": false,
+      "profile": "game",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23047140578793224,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.23003171629082775,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": false,
+      "profile": "game",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.856803178688202,
+        "target": [
+          2.009130902691001,
+          3.8638490185149976e-08,
+          -2.030940032993357
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.280030912673067,
+        "target": [
+          1.6034988339118592,
+          3.083759958499854e-08,
+          -1.6209048252096991
+        ]
+      },
+      "travelRatio": 0.7981057041948617
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.981732726520096,
+        "target": [
+          -0.8851976161617506,
+          2.7093022670567675,
+          -0.8756919883518295
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3819582346644945,
+        "target": [
+          -0.707140426225473,
+          2.164327066545197,
+          -0.6995468521146488
+        ]
+      },
+      "travelRatio": 0.7988503508308797
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.856803178688202,
+        "target": [
+          2.009130902691001,
+          3.8638490185149976e-08,
+          -2.030940032993357
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.280030912673067,
+        "target": [
+          1.6034988339118592,
+          3.083759958499854e-08,
+          -1.6209048252096991
+        ]
+      },
+      "travelRatio": 0.7981057041948617
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.981732726520096,
+        "target": [
+          -0.8851976161617506,
+          2.7093022670567675,
+          -0.8756919883518295
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3819582346644945,
+        "target": [
+          -0.707140426225473,
+          2.164327066545197,
+          -0.6995468521146488
+        ]
+      },
+      "travelRatio": 0.7988503508308797
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": true,
+      "profile": "game",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.856803178688202,
+        "target": [
+          2.009130902691001,
+          3.8638490185149976e-08,
+          -2.030940032993357
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.280030912673067,
+        "target": [
+          1.6034988339118592,
+          3.083759958499854e-08,
+          -1.6209048252096991
+        ]
+      },
+      "travelRatio": 0.7981057041948617
+    },
+    {
+      "touch": true,
+      "profile": "game",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.981732726520096,
+        "target": [
+          -0.8851976161617506,
+          2.7093022670567675,
+          -0.8756919883518295
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3819582346644945,
+        "target": [
+          -0.707140426225473,
+          2.164327066545197,
+          -0.6995468521146488
+        ]
+      },
+      "travelRatio": 0.7988503508308797
+    },
+    {
+      "touch": true,
+      "profile": "game",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": true,
+      "profile": "game",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "touch": true,
+      "profile": "game",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ]
+}

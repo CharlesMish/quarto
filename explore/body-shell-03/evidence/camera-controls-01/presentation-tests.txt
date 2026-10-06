@@ -1,0 +1,127 @@
+
+> mt1-body-shell-03-exploration@0.1.0 test
+> playwright test tests/body-shell-03.spec.ts tests/body-surface.spec.ts tests/viewer-readability.spec.ts tests/playback-clock.spec.ts tests/playback.spec.ts tests/camera-controls.spec.ts --workers=1 --output=/tmp/quarto-camera-regression
+
+
+Running 52 tests using 1 worker
+
+(node:91229) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/52] tests/body-shell-03.spec.ts:4:1 › body shell 03 is separate, toggleable, and non-authoritative
+[2/52] tests/body-shell-03.spec.ts:82:1 › body shell 03 presentation-fit does not participate in authority
+[3/52] tests/body-surface.spec.ts:8:1 › BODY-SHELL-03.2 actual surfaces are closed, outward, flat and within the bounded joins
+tests/body-surface.spec.ts:8:1 › BODY-SHELL-03.2 actual surfaces are closed, outward, flat and within the bounded joins
+BJS - [19:25:59]: Babylon.js v8.56.2 - Null engine
+
+[4/52] tests/body-surface.spec.ts:25:1 › surface verifier rejects known defects in the immutable pre-refinement shell
+tests/body-surface.spec.ts:25:1 › surface verifier rejects known defects in the immutable pre-refinement shell
+
+
+
+
+BJS - [19:26:00]: Babylon.js v8.56.2 - Null engine
+
+[5/52] tests/body-surface.spec.ts:39:1 › rear-frame returns are the only geometry added to the accepted shell
+tests/body-surface.spec.ts:39:1 › rear-frame returns are the only geometry added to the accepted shell
+
+
+
+
+BJS - [19:26:00]: Babylon.js v8.56.2 - Null engine
+
+BJS - [19:26:00]: Babylon.js v8.56.2 - Null engine
+
+[6/52] tests/body-surface.spec.ts:53:1 › opaque BODY and explicit section ghosting survive live palette and visibility combinations
+[7/52] tests/body-surface.spec.ts:120:1 › reconciliation retains accepted FO1 station geometry and frame hierarchy
+tests/body-surface.spec.ts:120:1 › reconciliation retains accepted FO1 station geometry and frame hierarchy
+
+
+
+
+BJS - [19:26:11]: Babylon.js v8.56.2 - Null engine
+
+BJS - [19:26:11]: Babylon.js v8.56.2 - Null engine
+
+BJS - [19:26:11]: Babylon.js v8.56.2 - Null engine
+
+[8/52] tests/camera-controls.spec.ts:14:3 › mouse panning is gentler while orbit, zoom and playback profiles remain independent
+[9/52] tests/camera-controls.spec.ts:14:3 › two-touch panning is gentler while orbit, zoom and playback profiles remain independent
+[10/52] tests/playback-clock.spec.ts:42:7 › playback clock inspect forward: exact endpoint, bounded, one-way outside settles
+[11/52] tests/playback-clock.spec.ts:42:7 › playback clock inspect forward reduced-motion: exact endpoint, bounded, one-way outside settles
+[12/52] tests/playback-clock.spec.ts:66:5 › playback clock inspect forward: total near target
+[13/52] tests/playback-clock.spec.ts:42:7 › playback clock inspect reverse: exact endpoint, bounded, one-way outside settles
+[14/52] tests/playback-clock.spec.ts:42:7 › playback clock inspect reverse reduced-motion: exact endpoint, bounded, one-way outside settles
+[15/52] tests/playback-clock.spec.ts:66:5 › playback clock inspect reverse: total near target
+[16/52] tests/playback-clock.spec.ts:42:7 › playback clock show forward: exact endpoint, bounded, one-way outside settles
+[17/52] tests/playback-clock.spec.ts:42:7 › playback clock show forward reduced-motion: exact endpoint, bounded, one-way outside settles
+[18/52] tests/playback-clock.spec.ts:66:5 › playback clock show forward: total near target
+[19/52] tests/playback-clock.spec.ts:42:7 › playback clock show reverse: exact endpoint, bounded, one-way outside settles
+[20/52] tests/playback-clock.spec.ts:42:7 › playback clock show reverse reduced-motion: exact endpoint, bounded, one-way outside settles
+[21/52] tests/playback-clock.spec.ts:66:5 › playback clock show reverse: total near target
+[22/52] tests/playback-clock.spec.ts:42:7 › playback clock game forward: exact endpoint, bounded, one-way outside settles
+[23/52] tests/playback-clock.spec.ts:42:7 › playback clock game forward reduced-motion: exact endpoint, bounded, one-way outside settles
+[24/52] tests/playback-clock.spec.ts:66:5 › playback clock game forward: total near target
+[25/52] tests/playback-clock.spec.ts:42:7 › playback clock game reverse: exact endpoint, bounded, one-way outside settles
+[26/52] tests/playback-clock.spec.ts:42:7 › playback clock game reverse reduced-motion: exact endpoint, bounded, one-way outside settles
+[27/52] tests/playback-clock.spec.ts:66:5 › playback clock game reverse: total near target
+[28/52] tests/playback-clock.spec.ts:79:1 › playback clock starts mid-path without a jump, in both directions
+[29/52] tests/playback-clock.spec.ts:95:1 › playback clock at an endpoint in its own direction finishes immediately and exactly
+[30/52] tests/playback-clock.spec.ts:102:1 › playback clock settle points are real poses that read as not yet seated or locked
+[31/52] tests/playback-clock.spec.ts:114:1 › playback clock velocity is signed with direction and zero at rest
+[32/52] tests/playback.spec.ts:30:1 › speed select and hook choose the playback profile without touching pose or certificate
+[33/52] tests/playback.spec.ts:45:1 › fresh loads and reloads start paused in Show and preserve explicit lighting URLs
+[34/52] tests/playback.spec.ts:65:1 › changing speeds during playback restarts from the same pose without certifying
+[35/52] tests/playback.spec.ts:88:1 › game-speed playback reaches DRIVE and returns to SPREAD at Hush Basin cadence
+[36/52] tests/playback.spec.ts:112:1 › show-speed playback shows the declared settles and never leaves the canonical path
+[37/52] tests/playback.spec.ts:140:1 › scrubbing during playback stops it and stays direct and linear
+[38/52] tests/viewer-readability.spec.ts:65:1 › body surface refinement preserves the frozen mechanism, shared primitives and shaders
+[39/52] tests/viewer-readability.spec.ts:105:1 › initial presentation and reversible palettes preserve inspection and render identity
+[40/52] tests/viewer-readability.spec.ts:144:1 › responsive disclosures reserve a usable canvas and keep controls within the viewport
+[41/52] tests/viewer-readability.spec.ts:188:1 › slider events commit their latest value and cannot overwrite a later explicit pose
+[42/52] tests/viewer-readability.spec.ts:234:1 › folio sliders remain explicit noncanonical previews
+[43/52] tests/viewer-readability.spec.ts:259:1 › public phase labels retain the deploy/locked distinction and point to Diagnostics
+[44/52] tests/viewer-readability.spec.ts:273:1 › keyboard range input stays local and global playback remains controllable
+[45/52] tests/viewer-readability.spec.ts:297:1 › tour visits six canonical poses and exits without resetting the inspected pose
+[46/52] tests/viewer-readability.spec.ts:364:1 › reverse playback reaches both endpoints and interruptions stop automatic motion
+[47/52] tests/viewer-readability.spec.ts:399:1 › fit camera is presentation-only and keeps the inspected pose
+tests/viewer-readability.spec.ts:399:1 › fit camera is presentation-only and keeps the inspected pose
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0,"preset":"body","alpha":0.78,"beta":1.14,"radius":13.750982446637408,"extrema":[{"min":0.25589605621340533,"max":0.7422119234422098},{"min":0.27693050643066863,"max":0.9385964522636507},{"min":0.9992636990161284,"max":0.9997286576411952}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.46162652020984,"extrema":[{"min":0.24262614805748167,"max":0.7628362697378841},{"min":0.28967239792407434,"max":0.9385965128118671},{"min":0.9992283083342589,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.24,"preset":"body","alpha":0.78,"beta":1.14,"radius":12.639312043984496,"extrema":[{"min":0.3252074006228902,"max":0.7460664041137607},{"min":0.2897554948136923,"max":0.9385965065542033},{"min":0.999247947091028,"max":0.9997112044189871}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.24,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.46162652020984,"extrema":[{"min":0.33246016391994326,"max":0.7357589492273915},{"min":0.31247059826531143,"max":0.9385965128118671},{"min":0.9993163312243631,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.6,"preset":"body","alpha":0.78,"beta":1.14,"radius":12.639312043984496,"extrema":[{"min":0.3275325154469787,"max":0.7385752360498214},{"min":0.2901311319001787,"max":0.9385965065542033},{"min":0.9993698638513049,"max":0.9997112044189871}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.6,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.46162652020984,"extrema":[{"min":0.3460147649274094,"max":0.705488952846844},{"min":0.3037535108671025,"max":0.9385965128118671},{"min":0.9993967909053547,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":1,"preset":"body","alpha":0.78,"beta":1.14,"radius":12.639312043984496,"extrema":[{"min":0.37339854669833916,"max":0.7385752360498214},{"min":0.2969376047562437,"max":0.9385965065542033},{"min":0.9993698638513049,"max":0.9997112044189871}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":1,"preset":"prop","alpha":0.92,"beta":1.16,"radius":13.46162652020984,"extrema":[{"min":0.38874699491037457,"max":0.705488952846844},{"min":0.3089976516442425,"max":0.9385965128118671},{"min":0.9993967909053547,"max":0.99973165404573}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0,"preset":"body","alpha":0.78,"beta":1.14,"radius":29.861646343837744,"extrema":[{"min":0.1379344071458367,"max":0.9385964806603011},{"min":0.3821851971755874,"max":0.6488414932756309},{"min":0.9997821098449496,"max":0.999855569620621}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0,"preset":"prop","alpha":0.92,"beta":1.16,"radius":30.362399161518695,"extrema":[{"min":0.119492804668432,"max":0.9385965043226747},{"min":0.3937952747409514,"max":0.6541718308461144},{"min":0.9997865728796393,"max":0.999859625014704}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.24,"preset":"body","alpha":0.78,"beta":1.14,"radius":26.60769434429602,"extrema":[{"min":0.21072963458729074,"max":0.9385964931408414},{"min":0.3893254626904976,"max":0.6700696602992773},{"min":0.9997578837543275,"max":0.9998404702077089}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.24,"preset":"prop","alpha":0.92,"beta":1.16,"radius":26.418278809377643,"extrema":[{"min":0.18906907048024774,"max":0.9385965043771453},{"min":0.39541201582680263,"max":0.6816644586588833},{"min":0.9997537315095355,"max":0.9998420189450136}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.6,"preset":"body","alpha":0.78,"beta":1.14,"radius":23.185106626966938,"extrema":[{"min":0.12452891047350663,"max":0.9385964685095484},{"min":0.3750773769634987,"max":0.7000851676723459},{"min":0.9997298924574661,"max":0.999820850050484}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.6,"preset":"prop","alpha":0.92,"beta":1.16,"radius":21.50395773945861,"extrema":[{"min":0.10784677082756676,"max":0.9385965018452295},{"min":0.36812113308480815,"max":0.7335588144888138},{"min":0.9996941976031272,"max":0.9998128053107078}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":1,"preset":"body","alpha":0.78,"beta":1.14,"radius":23.185106626966938,"extrema":[{"min":0.1971172242501048,"max":0.9385964685095484},{"min":0.38011876470557876,"max":0.7000851676723459},{"min":0.9997298924574661,"max":0.999820850050484}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":1,"preset":"prop","alpha":0.92,"beta":1.16,"radius":21.50395773945861,"extrema":[{"min":0.20941033570531487,"max":0.9385965018452295},{"min":0.3723338758967878,"max":0.7335588144888138},{"min":0.9996941976031272,"max":0.9998128053107078}]}
+
+[48/52] tests/viewer-readability.spec.ts:443:1 › inspect pick identifies the visible part after responsive canvas offsets
+[49/52] tests/viewer-readability.spec.ts:502:1 › interactive posing never runs the cold path certification
+[50/52] tests/viewer-readability.spec.ts:529:1 › presentation pose path matches the certified canonical pose exactly
+[51/52] tests/viewer-readability.spec.ts:542:1 › opening diagnostics explains the one-time certification before running it
+[52/52] tests/viewer-readability.spec.ts:563:1 › presentation lighting yields to flat lighting in study views
+  52 passed (4.0m)

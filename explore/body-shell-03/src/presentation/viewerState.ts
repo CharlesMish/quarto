@@ -52,7 +52,7 @@ export const TOUR_STOPS = [
   },
   {
     title: "DRIVE · inspect the handover",
-    description: "The terminal receiver, capture and locks remain inspectable. Compare the released pose, or reverse the transformation to follow the sequence back. This tour describes motion; readiness remains in the inspection diagnostics.",
+    description: "The terminal receiver, capture and locks remain inspectable. Compare the released pose, or reverse the transformation to follow the sequence back. The tour shows motion only; readiness checks are under Diagnostics.",
     t: 1, camera: "tourSeated",
   },
 ] as const;

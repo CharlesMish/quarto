@@ -234,9 +234,9 @@ test("slider events commit their latest value and cannot overwrite a later expli
 test("folio sliders remain explicit noncanonical previews", async ({ page }) => {
   await ready(page);
   await openPanel(page, "folios");
-  for (const [selector, value, mode] of [
-    ["#frontSlider", 0.341, "FRONT_PREVIEW"],
-    ["#slider", 0.592, "REAR_PREVIEW"],
+  for (const [selector, value, mode, label] of [
+    ["#frontSlider", 0.341, "FRONT_PREVIEW", "FRONT PREVIEW"],
+    ["#slider", 0.592, "REAR_PREVIEW", "REAR PREVIEW"],
   ] as const) {
     await page.locator(selector).evaluate((element, amount) => {
       const slider = element as HTMLInputElement;
@@ -250,8 +250,24 @@ test("folio sliders remain explicit noncanonical previews", async ({ page }) => 
     }));
     expect(state.inspection.preview).toBe(true);
     expect(state.inspection.mode).toBe(mode);
+    await expect(page.locator("#stateName")).toHaveText(label);
+    await expect(page.locator("#stateValue")).toContainText(`MODE ${mode}`);
     expect(mode === "FRONT_PREVIEW" ? state.front : state.rear).toBe(value);
   }
+});
+
+test("public phase labels retain the deploy/locked distinction and point to Diagnostics", async ({ page }) => {
+  await ready(page);
+  for (const [pose, label] of [[0.87, "STRUCTURAL READY"], [0.94, "DRIVE DEPLOY"], [0.998, "DRIVE DEPLOY"], [1, "DRIVE"]] as const) {
+    await page.evaluate((value) => window.__MT1!.presentation.setPose(value), pose);
+    await expect(page.locator("#stateName")).toHaveText(label);
+    const inspection = await page.evaluate(() => window.__MT1!.getInspectionState());
+    expect(inspection.machineT).toBe(pose);
+    expect(inspection.mode).toBe("MACHINE");
+    expect(inspection.certificate.state).toBe("STALE");
+  }
+  await page.evaluate(() => window.__MT1!.presentation.setTourStep(5));
+  await expect(page.locator("#tourDescription")).toContainText("readiness checks are under Diagnostics.");
 });
 
 test("keyboard range input stays local and global playback remains controllable", async ({ page }) => {
