@@ -95,7 +95,9 @@ export function createApp(canvas: HTMLCanvasElement): App {
   camera.lowerBetaLimit = 0.05;
   camera.upperBetaLimit = Math.PI / 2 - 0.04;
   camera.wheelPrecision = 40;
-  camera.panningSensibility = 80;
+  // A larger divisor makes mouse/two-finger panning gentler. Keep orbit,
+  // pinch/wheel zoom and inertia independent of the playback profile.
+  camera.panningSensibility = 100;
   camera.minZ = 0.005;
   applyCamera("body", camera);
 

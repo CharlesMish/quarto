@@ -1,0 +1,30 @@
+{
+  "initial-one-touch-harness.json": {
+    "sha256": "9f17b3dad8a25f6d0dd5789a35d86023b38605d9380ee84f339702d717413850",
+    "bytes": 82689
+  },
+  "initial-along-axis-touch.json": {
+    "sha256": "b82d5c4f72dd86108d53ec8981af7185b79d368b5911cff66a878fa5eb4f19f9",
+    "bytes": 83566
+  },
+  "initial-shared-input-history.json": {
+    "sha256": "828e02fca85a30737780e94c172aa470c98def9139fedb5bda3b818f9dd87bb1",
+    "bytes": 101687
+  },
+  "initial-harness-assertion.txt": {
+    "sha256": "3770a65d7a5464ff07e2261e278bebfed78f7c8e98f69c3802174002663384e9",
+    "bytes": 3012
+  },
+  "capture-warning-first-run.txt": {
+    "sha256": "434d03669c6f5e8c427f7f0dd2b46257985f387e1ee62da60f26c502613e358c",
+    "bytes": 3016
+  },
+  "presentation-tests-first-run.txt": {
+    "sha256": "77e4b3f6a11af50b5eff93e6ad88af7d302aeff23775f5d31368d15fdabc8525",
+    "bytes": 14665
+  },
+  "presentation-tests-second-run.txt": {
+    "sha256": "824b7815ff45673ac460aba180d6a24ff94fac0521a2561b5c0673d87da91b95",
+    "bytes": 14674
+  }
+}

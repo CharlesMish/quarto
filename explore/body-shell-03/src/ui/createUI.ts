@@ -316,7 +316,9 @@ export function createUI(root: HTMLElement, actions: UIActions): PresentationUI 
     setMachineT(value, automatic, nextMode) {
       setSlider(machineSlider, value);
       const preview = nextMode !== "MACHINE";
-      setText(stateName, preview ? `PREVIEW ${nextMode}` : machinePhase(value));
+      // Format the public label only; keep raw mode/proof identities below.
+      const phaseLabel = preview ? nextMode : machinePhase(value);
+      setText(stateName, phaseLabel.replaceAll("_", " "));
       if (stateName.classList.contains("preview-state") !== preview) stateName.classList.toggle("preview-state", preview);
       setText(stateValue, `MACHINE ${value.toFixed(3)} · MODE ${nextMode}`);
       setText(autoBtn, automatic ? "PAUSE ■" : "PLAY ▶");
