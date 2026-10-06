@@ -1,0 +1,1310 @@
+{
+  "baseSha": "a3f858bcd52cec1b4f264f58238c045ae2c5f608",
+  "candidateSourceSha256": "b18ba72111c0b67be3373590d00eca0dd6ab3247a1f0716f0639c295e6788b5f",
+  "unchangedInitialPng": {
+    "desktop": true,
+    "touch": true
+  },
+  "zoomRatioRange": [
+    0.7925566243982615,
+    0.7990252232575867
+  ],
+  "comparisons": [
+    {
+      "key": "mouse/inspect/standard/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/inspect/standard/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/inspect/slower-input/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/inspect/slower-input/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/inspect/near/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/inspect/near/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/inspect/far/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.4809239787761648,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.7925566243982615,
+      "clipped": false
+    },
+    {
+      "key": "mouse/inspect/far/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.4809239787761648,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.7925566243982615,
+      "clipped": false
+    },
+    {
+      "key": "mouse/inspect/far-limit/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.4809239787761648,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.7925566243982615,
+      "clipped": false
+    },
+    {
+      "key": "mouse/inspect/far-limit/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.4809239787761648,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.7925566243982615,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/standard/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/standard/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/standard/orbit-x/1",
+      "before": {
+        "alpha": -0.31394424514115954,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3138541115215032,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": null,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/standard/orbit-y/1",
+      "before": {
+        "alpha": 0,
+        "beta": -0.15345773582888333,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15357523697258268,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": null,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/standard/pan-x/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-08,
+          -1.1232742627832524
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-08,
+          -1.1232742627832524
+        ]
+      },
+      "ratio": null,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/standard/pan-y/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.5800434633802856,
+        "target": [
+          -0.4690731314635683,
+          1.4356804348391292,
+          -0.4640360250345419
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.5800434633802856,
+        "target": [
+          -0.4690731314635683,
+          1.4356804348391292,
+          -0.4640360250345419
+        ]
+      },
+      "ratio": null,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/slower-input/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/slower-input/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/near/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/near/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.38115948521101295,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.792556624398262,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/far/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.4809239787761648,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.7925566243982615,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/far/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.4809239787761648,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.7925566243982615,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/far-limit/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.4809239787761648,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.7925566243982615,
+      "clipped": false
+    },
+    {
+      "key": "mouse/show/far-limit/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.4809239787761648,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -0.3811594852110183,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": 0.7925566243982615,
+      "clipped": false
+    },
+    {
+      "key": "touch/inspect/standard/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.526523408460058,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276326,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "ratio": 0.7989724750354071,
+      "clipped": false
+    },
+    {
+      "key": "touch/inspect/standard/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.5690054981863035,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0517338253692046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "ratio": 0.7986490596527378,
+      "clipped": false
+    },
+    {
+      "key": "touch/inspect/slower-input/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.527509565116379,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8185691178103873,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "ratio": 0.7990252232575867,
+      "clipped": false
+    },
+    {
+      "key": "touch/inspect/slower-input/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.568966753783169,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.051695559292007,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "ratio": 0.7986462091308085,
+      "clipped": false
+    },
+    {
+      "key": "touch/inspect/near/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.526523408460063,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276326,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "ratio": 0.7989724750354059,
+      "clipped": false
+    },
+    {
+      "key": "touch/inspect/near/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.569005498186332,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0505746618072926,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "ratio": 0.7981978486441382,
+      "clipped": false
+    },
+    {
+      "key": "touch/inspect/far/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.5265234084600863,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276112,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "ratio": 0.7989724750353947,
+      "clipped": false
+    },
+    {
+      "key": "touch/inspect/far/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.569005498186307,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0517338253692117,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "ratio": 0.7986490596527395,
+      "clipped": false
+    },
+    {
+      "key": "touch/inspect/far-limit/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.5265234084600863,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276112,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "ratio": 0.7989724750353947,
+      "clipped": false
+    },
+    {
+      "key": "touch/inspect/far-limit/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 1.686777435819046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 1.686777435819046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "ratio": 1.0,
+      "clipped": true
+    },
+    {
+      "key": "touch/show/standard/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.526523408460058,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276326,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "ratio": 0.7989724750354071,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/standard/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.5690054981863035,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0517338253692046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "ratio": 0.7986490596527378,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/standard/orbit-x/1",
+      "before": {
+        "alpha": -0.3138563457543275,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.31340486183008576,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": null,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/standard/orbit-y/1",
+      "before": {
+        "alpha": 0,
+        "beta": -0.15352177587093874,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.1539452818246182,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ratio": null,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/standard/pan-x/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-08,
+          -1.0770849715527069
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.00026666666666841365,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-08,
+          -1.0770849715527069
+        ]
+      },
+      "ratio": null,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/standard/pan-y/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 1.5150717195194765,
+        "target": [
+          -0.4497847384188368,
+          1.3766449312974824,
+          -0.44495475894314485
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.00026666666666841365,
+        "targetDistance": 1.5150717195194765,
+        "target": [
+          -0.4497847384188368,
+          1.3766449312974824,
+          -0.44495475894314485
+        ]
+      },
+      "ratio": null,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/slower-input/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.527509565116379,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8185691178103873,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "ratio": 0.7990252232575867,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/slower-input/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.568966753783169,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.051695559292007,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "ratio": 0.7986462091308085,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/near/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.526523408460063,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276326,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "ratio": 0.7989724750354059,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/near/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.569005498186332,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0517338253692046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "ratio": 0.798649059652729,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/far/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.5265234084600863,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276112,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "ratio": 0.7989724750353947,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/far/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.569005498186307,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 2.0517338253692117,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "ratio": 0.7986490596527395,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/far-limit/zoom/1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.5265234084600863,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -2.8175951359276112,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          -0.009599998722891015,
+          -1.846218733447813e-10,
+          0.009704206777612301
+        ]
+      },
+      "ratio": 0.7989724750353947,
+      "clipped": false
+    },
+    {
+      "key": "touch/show/far-limit/zoom/-1",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 1.686777435819046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 1.686777435819046,
+        "targetDistance": 0.013650333500034556,
+        "target": [
+          0.009599998722891015,
+          1.846218733447813e-10,
+          -0.009704206777612301
+        ]
+      },
+      "ratio": 1.0,
+      "clipped": true
+    }
+  ]
+}

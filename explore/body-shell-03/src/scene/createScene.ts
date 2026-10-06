@@ -95,7 +95,9 @@ export function createApp(canvas: HTMLCanvasElement): App {
   camera.upperRadiusLimit = 42;
   camera.lowerBetaLimit = 0.05;
   camera.upperBetaLimit = Math.PI / 2 - 0.04;
-  camera.wheelPrecision = 40;
+  // Twenty percent less zoom input; retain the existing inertia and limits.
+  camera.wheelPrecision = 50;
+  camera.pinchPrecision = 15;
   // One third less pan input than the first camera-control preview.
   camera.panningSensibility = 150;
   softenOrbitResponse(camera);

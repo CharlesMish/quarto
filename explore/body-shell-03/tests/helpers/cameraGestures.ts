@@ -28,6 +28,8 @@ export async function readCamera(page: Page, engineUrl: string) {
     return {
       alpha: camera.alpha as number, beta: camera.beta as number, radius: camera.radius as number,
       target: camera.target.asArray() as number[],
+      lowerRadiusLimit: camera.lowerRadiusLimit as number,
+      upperRadiusLimit: camera.upperRadiusLimit as number,
       panningSensibility: camera.panningSensibility as number,
       angularSensibilityX: camera.angularSensibilityX as number,
       angularSensibilityY: camera.angularSensibilityY as number,
@@ -80,7 +82,7 @@ export async function resetGesture(page: Page, engineUrl: string, profile: Profi
 }
 
 /** Browser input events: mouse drag, or Chromium's touch emulation (not a phone). */
-export async function gesture(page: Page, kind: Gesture, touch: boolean, framesPerStep = 1): Promise<void> {
+export async function gesture(page: Page, kind: Gesture, touch: boolean, framesPerStep = 1, zoomDirection = 1): Promise<void> {
   const bounds = await page.locator("#view").boundingBox();
   if (!bounds) throw new Error("Missing canvas bounds");
   const x = Math.round(bounds.x + bounds.width / 2);
@@ -95,7 +97,7 @@ export async function gesture(page: Page, kind: Gesture, touch: boolean, framesP
   };
   if (!touch) {
     await page.mouse.move(x, y);
-    if (kind === "zoom") { await page.mouse.wheel(0, 80); return; }
+    if (kind === "zoom") { await page.mouse.wheel(0, 80 * zoomDirection); return; }
     const button = pan ? "right" : "left";
     await page.mouse.down({ button });
     for (let i = 1; i <= 12; i++) { await page.mouse.move(x + dx * i / 12, y + dy * i / 12); await frame(); }
@@ -104,7 +106,7 @@ export async function gesture(page: Page, kind: Gesture, touch: boolean, framesP
   }
   const cdp = await page.context().newCDPSession(page);
   const points = (i: number) => {
-    if (kind === "zoom") return [{ x: x - 40 - i, y, id: 0 }, { x: x + 40 + i, y, id: 1 }];
+    if (kind === "zoom") return [{ x: x - 40 - i * zoomDirection, y, id: 0 }, { x: x + 40 + i * zoomDirection, y, id: 1 }];
     // Place the contact pair perpendicular to the translation. Chromium emits
     // the two pointer moves sequentially; an along-axis pair can temporarily
     // stretch enough to inject a pinch before the second contact catches up.
