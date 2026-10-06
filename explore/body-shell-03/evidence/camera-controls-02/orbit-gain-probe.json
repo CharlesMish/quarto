@@ -1,0 +1,155 @@
+{
+  "note": "Test-only settings overrides; not a shipped candidate or physical-phone result",
+  "rows": [
+    {
+      "divisor": 1000,
+      "framesPerStep": 1,
+      "delta": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "divisor": 1000,
+      "framesPerStep": 3,
+      "delta": {
+        "alpha": 0,
+        "beta": -0.23021153997091737,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "divisor": 1100,
+      "framesPerStep": 1,
+      "delta": {
+        "alpha": 0,
+        "beta": -0.2090080027645721,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "divisor": 1100,
+      "framesPerStep": 3,
+      "delta": {
+        "alpha": 0,
+        "beta": -0.13096775704310715,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "divisor": 1200,
+      "framesPerStep": 1,
+      "delta": {
+        "alpha": 0,
+        "beta": -0.19065629911206394,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "divisor": 1200,
+      "framesPerStep": 3,
+      "delta": {
+        "alpha": 0,
+        "beta": -0.08190200000000125,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "divisor": 1250,
+      "framesPerStep": 1,
+      "delta": {
+        "alpha": 0,
+        "beta": -0.1820333857195351,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "divisor": 1250,
+      "framesPerStep": 3,
+      "delta": {
+        "alpha": 0,
+        "beta": -0.07862592000000035,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "divisor": 1500,
+      "framesPerStep": 1,
+      "delta": {
+        "alpha": 0,
+        "beta": -0.04336000000000162,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "divisor": 1500,
+      "framesPerStep": 3,
+      "delta": {
+        "alpha": 0,
+        "beta": -0.04336000000000162,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ]
+}

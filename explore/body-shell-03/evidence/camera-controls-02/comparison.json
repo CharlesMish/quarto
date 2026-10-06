@@ -1,0 +1,2441 @@
+{
+  "baselineSourceSha": "eb04851dcc443e0e68aae41f52807832c095fdbd",
+  "acceptedMainSha": "11bfa39f45327197d516939046d48b1c7caefac0",
+  "candidateSourceSha256": {
+    "explore/body-shell-03/src/scene/createScene.ts": "6e56ee65c2209c16499261a5e4a4c9ff0aa5a5e6a1026b9002ac0a54ef8ad1d8",
+    "explore/body-shell-03/src/presentation/cameraInputResponse.ts": "8e5116b411daf2a7d1c34f4fe4854a0ffc7ec3f40009993f38cf02799b941c99"
+  },
+  "identicalInitialScreenshots": {
+    "desktop-start.png": true,
+    "touch-start.png": true
+  },
+  "authorityParticipation": "none",
+  "comparison": [
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-08,
+          -1.1232742627832524
+        ]
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.380359794645194,
+        "target": [
+          -0.7066658916429203,
+          2.162874670383218,
+          -0.6990774132859059
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.5800434633802856,
+        "target": [
+          -0.4690731314635683,
+          1.4356804348391292,
+          -0.4640360250345419
+        ]
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4709972045593063,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.313436699294068,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6654746488088787
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.2301590703682962,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15338943262914728,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6664496532059172
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 1.0
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-08,
+          -1.1232742627832524
+        ]
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.380359794645194,
+        "target": [
+          -0.7066658916429203,
+          2.162874670383218,
+          -0.6990774132859059
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.5800434633802856,
+        "target": [
+          -0.4690731314635683,
+          1.4356804348391292,
+          -0.4640360250345419
+        ]
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.47039183484315455,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.31335486460230105,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6661571085875349
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23056518932641779,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15389456192330642,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6674665953386114
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 1.0
+    },
+    {
+      "touch": false,
+      "profile": "game",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-08,
+          -1.1232742627832524
+        ]
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "game",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.380359794645194,
+        "target": [
+          -0.7066658916429203,
+          2.162874670383218,
+          -0.6990774132859059
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.5800434633802856,
+        "target": [
+          -0.4690731314635683,
+          1.4356804348391292,
+          -0.4640360250345419
+        ]
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "game",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.47063741184486574,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.31374490180888814,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6666382525329426
+    },
+    {
+      "touch": false,
+      "profile": "game",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.230705975502009,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15371575341935206,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6662842307611295
+    },
+    {
+      "touch": false,
+      "profile": "game",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.48092397877615767,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 1.0
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.280030912673067,
+        "target": [
+          1.6034988339118592,
+          3.083759958499854e-08,
+          -1.6209048252096991
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-08,
+          -1.0770849715527069
+        ]
+      },
+      "travelRatio": 0.6644961226599859
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3819582346644945,
+        "target": [
+          -0.707140426225473,
+          2.164327066545197,
+          -0.6995468521146488
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.5816676467052893,
+        "target": [
+          -0.4695553085529885,
+          1.4371562222312755,
+          -0.4645130243016704
+        ]
+      },
+      "travelRatio": 0.6640198907299781
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3138563457543275,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6666666666666662
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.1539452818246182,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6666666666666687
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 1.0
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.280030912673067,
+        "target": [
+          1.6034988339118592,
+          3.083759958499854e-08,
+          -1.6209048252096991
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-08,
+          -1.0770849715527069
+        ]
+      },
+      "travelRatio": 0.6644961226599859
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3819582346644945,
+        "target": [
+          -0.707140426225473,
+          2.164327066545197,
+          -0.6995468521146488
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.5816676467052893,
+        "target": [
+          -0.4695553085529885,
+          1.4371562222312755,
+          -0.4645130243016704
+        ]
+      },
+      "travelRatio": 0.6640198907299781
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3138563457543275,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6666666666666662
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.1539452818246182,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6666666666666687
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 1.0
+    },
+    {
+      "touch": true,
+      "profile": "game",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.280030912673067,
+        "target": [
+          1.6034988339118592,
+          3.083759958499854e-08,
+          -1.6209048252096991
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-08,
+          -1.0770849715527069
+        ]
+      },
+      "travelRatio": 0.6644961226599859
+    },
+    {
+      "touch": true,
+      "profile": "game",
+      "gesture": "pan-y",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3819582346644945,
+        "target": [
+          -0.707140426225473,
+          2.164327066545197,
+          -0.6995468521146488
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.5816676467052893,
+        "target": [
+          -0.4695553085529885,
+          1.4371562222312755,
+          -0.4645130243016704
+        ]
+      },
+      "travelRatio": 0.6640198907299781
+    },
+    {
+      "touch": true,
+      "profile": "game",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3138563457543275,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6666666666666662
+    },
+    {
+      "touch": true,
+      "profile": "game",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.1539452818246182,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 0.6666666666666687
+    },
+    {
+      "touch": true,
+      "profile": "game",
+      "gesture": "zoom",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": -3.660628791025811,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "travelRatio": 1.0
+    }
+  ],
+  "rateAndDistance": [
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-08,
+          -1.1232742627832524
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4706657150302497,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3135209745809195,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6661223976358029
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.2300448814806364,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15373833683342453,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6682971420355865
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.380158003069758,
+        "target": [
+          1.6739161566778267,
+          3.2191826759842e-08,
+          -1.692086528517366
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.5818545908796633,
+        "target": [
+          1.1124857903439183,
+          2.1394709115440946e-08,
+          -1.124561831545929
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.6646006646783533
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4709442906405263,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.31346238374009705,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.6656039577712265
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.2304823458691222,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15382602933830414,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.6674091621128031
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-08,
+          -1.1232742627832524
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.47024987062978263,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3133490088771427,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6663457630673874
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23078108698308508,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15357523697258268,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6654585043350578
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-08,
+          -1.1232742627832524
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.47051455835784006,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3139166056356037,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.66717724257293
+    },
+    {
+      "touch": false,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23092867732084876,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15346107178291146,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6645388245553193
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-08,
+          -1.1232742627832524
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.470198881338535,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3135225304162213,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6667870615168277
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.2309994816164047,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15397567617026053,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6665628645260379
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.380158003069758,
+        "target": [
+          1.6739161566778267,
+          3.2191826759842e-08,
+          -1.692086528517366
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.5818545908796633,
+        "target": [
+          1.1124857903439183,
+          2.1394709115440946e-08,
+          -1.124561831545929
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.6646006646783533
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.47010009972516564,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3135867695581785,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.6670638226656632
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23077418830073027,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15371911838215657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.6661018700316674
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-08,
+          -1.1232742627832524
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4704839520846588,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3138541115215032,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6670878148571332
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23011053783286328,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15357523697258268,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6673976707843312
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 2.3803597655742608,
+        "target": [
+          1.674058052096392,
+          3.2194555465991925e-08,
+          -1.6922299642117156
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 1.580043444083481,
+        "target": [
+          1.1112120480628027,
+          2.1370214042804037e-08,
+          -1.1232742627832524
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6637834611955374
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.47049600476709336,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3134198844190667,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6661478126136628
+    },
+    {
+      "touch": false,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23035141050962427,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15338943262914728,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6658931772537965
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.280030912673067,
+        "target": [
+          1.6034988339118592,
+          3.083759958499854e-08,
+          -1.6209048252096991
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-08,
+          -1.0770849715527069
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6644961226599859
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3138563457543275,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6666666666666662
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.1539452818246182,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6666666666666687
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.281413262139781,
+        "target": [
+          1.6044710118527863,
+          3.0856296406867045e-08,
+          -1.6218875561491228
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 1.514447241254136,
+        "target": [
+          1.0650795881205886,
+          2.0483018614569914e-08,
+          -1.0766410346587856
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.6638197762704803
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.47042024728145404,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.313613498187636,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.6666666666666666
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23021153997091737,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.15347435998061187,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.666666666666668
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.280326530335507,
+        "target": [
+          1.603706735732125,
+          3.084159749811022e-08,
+          -1.6211149838057088
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-08,
+          -1.0770849715527069
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6644099785100722
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3138563457543275,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6666666666666662
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.1539452818246182,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6666666666666687
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.000333333333330188,
+        "targetDistance": 2.280030912673067,
+        "target": [
+          1.6034988339118592,
+          3.083759958499854e-08,
+          -1.6209048252096991
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.000333333333330188,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-08,
+          -1.0770849715527069
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6644961226599859
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3138563457543275,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6666666666666662
+    },
+    {
+      "touch": true,
+      "profile": "inspect",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.1539452818246182,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6666666666666687
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.280030912673067,
+        "target": [
+          1.6034988339118592,
+          3.083759958499854e-08,
+          -1.6209048252096991
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-08,
+          -1.0770849715527069
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6644961226599859
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.47079447478735703,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3138563457543275,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6666525682912624
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.1539452818246182,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "standard",
+        "radiusFactor": 1,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6666666666666687
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.281413262139781,
+        "target": [
+          1.6044710118527863,
+          3.0856296406867045e-08,
+          -1.6218875561491228
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 1.514447241254136,
+        "target": [
+          1.0650795881205886,
+          2.0483018614569914e-08,
+          -1.0766410346587856
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.6638197762704803
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.47042024728145404,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.31337039734155203,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.666149892893665
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23021153997091737,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.1534823029487744,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "slower-input",
+        "radiusFactor": 1,
+        "framesPerStep": 3
+      },
+      "travelRatio": 0.6667011695771803
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 2.280030912673067,
+        "target": [
+          1.6034988339118592,
+          3.083759958499854e-08,
+          -1.6209048252096991
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.0003333333333337407,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-08,
+          -1.0770849715527069
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6644961226599859
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4707845186314916,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3138563457543275,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6666666666666662
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.1539452818246182,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "near",
+        "radiusFactor": 0.65,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6666666666666687
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "pan-x",
+      "before": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.000333333333330188,
+        "targetDistance": 2.280030912673067,
+        "target": [
+          1.6034988339118592,
+          3.083759958499854e-08,
+          -1.6209048252096991
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": 0,
+        "radius": 0.000333333333330188,
+        "targetDistance": 1.5150717010161618,
+        "target": [
+          1.0655187578242395,
+          2.0491465413385868e-08,
+          -1.0770849715527069
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6644961226599859
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-x",
+      "before": {
+        "alpha": -0.4708846448516914,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": -0.3138563457543275,
+        "beta": 0,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6665249104760655
+    },
+    {
+      "touch": true,
+      "profile": "show",
+      "gesture": "orbit-y",
+      "before": {
+        "alpha": 0,
+        "beta": -0.23091792273692657,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "alpha": 0,
+        "beta": -0.1539452818246182,
+        "radius": 0,
+        "targetDistance": 0,
+        "target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "variant": {
+        "name": "far",
+        "radiusFactor": 1.35,
+        "framesPerStep": 1
+      },
+      "travelRatio": 0.6666666666666687
+    }
+  ]
+}

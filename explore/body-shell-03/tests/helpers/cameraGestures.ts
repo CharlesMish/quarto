@@ -38,6 +38,11 @@ export async function readCamera(page: Page, engineUrl: string) {
       renderer: scene.getEngine().getGlInfo().renderer as string,
       lighting: window.__MT1!.presentation.getLighting(),
       maxTouchPoints: navigator.maxTouchPoints,
+      residual: {
+        alpha: camera.inertialAlphaOffset as number, beta: camera.inertialBetaOffset as number,
+        radius: camera.inertialRadiusOffset as number,
+        panX: camera.inertialPanningX as number, panY: camera.inertialPanningY as number,
+      },
       inspection: window.__MT1!.getInspectionState(),
       presentation: window.__MT1!.presentation.getState(),
     };
@@ -75,7 +80,7 @@ export async function resetGesture(page: Page, engineUrl: string, profile: Profi
 }
 
 /** Browser input events: mouse drag, or Chromium's touch emulation (not a phone). */
-export async function gesture(page: Page, kind: Gesture, touch: boolean): Promise<void> {
+export async function gesture(page: Page, kind: Gesture, touch: boolean, framesPerStep = 1): Promise<void> {
   const bounds = await page.locator("#view").boundingBox();
   if (!bounds) throw new Error("Missing canvas bounds");
   const x = Math.round(bounds.x + bounds.width / 2);
@@ -83,7 +88,11 @@ export async function gesture(page: Page, kind: Gesture, touch: boolean): Promis
   const pan = kind.startsWith("pan");
   const dx = kind.endsWith("x") ? (pan ? 24 : 48) : 0;
   const dy = kind.endsWith("y") ? 24 : 0;
-  const frame = () => page.evaluate(() => new Promise<void>((resolve) => requestAnimationFrame(() => resolve())));
+  const frame = async () => {
+    for (let i = 0; i < framesPerStep; i++) {
+      await page.evaluate(() => new Promise<void>((resolve) => requestAnimationFrame(() => resolve())));
+    }
+  };
   if (!touch) {
     await page.mouse.move(x, y);
     if (kind === "zoom") { await page.mouse.wheel(0, 80); return; }
