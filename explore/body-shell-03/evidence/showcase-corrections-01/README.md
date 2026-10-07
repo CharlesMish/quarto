@@ -4,6 +4,9 @@
 not a separate reviewer approval. The candidate is local only: no push, merge or
 deployment. The original immutable PR13 preview remains unchanged.
 
+Frozen implementation commit: `01794731e169e6689008686aa4b87f18a07e2f36`.
+All follow-up changes are evidence only.
+
 Reviewed source base: `87b544b82f6d537208f14ed3235a55180d968e4c`.
 Approved main reference: `b4c6715d2d68f5586674048950128ac752be978c`.
 `invariants.json` and `browser-comparison.json` record final implementation source
@@ -18,9 +21,10 @@ the pre-commit parent, not a claim that the unmodified parent contains the fix.
 - Original PR13: **4/4 targeted checks failed as expected** for the new contracts
   (framing, takeover, appearance scope, composed FIT); see `original-regressions.txt`.
 - Matched browser comparison complete: 44 records, 30 PNG captures, no page errors.
-- Full root authority suite and raw frame-trace export are still running at the
-  implementation freeze. Their final logs/traces will be added in an evidence-only
-  follow-up; the separate reviewer can start on this frozen implementation.
+- Raw trace export: **8/8 passed**, **6,474 rendered frames**, minimum canvas
+  margin approximately **8%** across the eight viewports.
+- Full root authority suite: **105/105 passed** (35.2 minutes). Implementation
+  and test source stayed frozen throughout the final run.
 
 Environment: Node 24.16.0; Babylon.js 8.56.2; Vite 7.3.6; installed default
 Playwright Chromium 151.0.7922.34 with ANGLE SwiftShader. Existing dependencies
@@ -57,8 +61,8 @@ or test fixture was changed in that detached checkout.
 
 ## Framing and input evidence
 
-`intermediate-extents/` is being exported for the evidence-only follow-up, with
-every-rendered-frame corner traces and a compact summary. The full suite's line reporter does not persist inline body
+`intermediate-extents/` contains every-rendered-frame corner traces and a
+compact summary. The full suite's line reporter does not persist inline body
 attachments, so the unchanged eight framing tests were run once more with the
 JSON reporter solely to save their raw traces (`framing-trace-run.json`). Viewports: 320×568, 390×844, 568×320, 768×1024,
 799×600, 801×600, 844×390 and 1280×720. Tests include the complete forced intro,

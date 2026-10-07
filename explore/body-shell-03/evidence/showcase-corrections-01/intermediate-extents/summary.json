@@ -1,0 +1,106 @@
+[
+  {
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "renderedFrames": 956,
+    "minX": 0.07999995452436628,
+    "maxX": 0.9200000035872806,
+    "minY": 0.22042339132808933,
+    "maxY": 0.7795766449762285,
+    "forwardIntermediateFrames": 193,
+    "reverseIntermediateFrames": 299
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "renderedFrames": 881,
+    "minX": 0.07999998207615382,
+    "maxX": 0.9199999840306601,
+    "minY": 0.31868253200143376,
+    "maxY": 0.6808644849523252,
+    "forwardIntermediateFrames": 164,
+    "reverseIntermediateFrames": 259
+  },
+  {
+    "viewport": {
+      "width": 568,
+      "height": 320
+    },
+    "renderedFrames": 953,
+    "minX": 0.38136491552333385,
+    "maxX": 0.5887613506259983,
+    "minY": 0.11999997286135437,
+    "maxY": 0.880000092567193,
+    "forwardIntermediateFrames": 198,
+    "reverseIntermediateFrames": 297
+  },
+  {
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "renderedFrames": 577,
+    "minX": 0.08000000413248673,
+    "maxX": 0.9199999600149606,
+    "minY": 0.23717743556734858,
+    "maxY": 0.7628225733632344,
+    "forwardIntermediateFrames": 100,
+    "reverseIntermediateFrames": 177
+  },
+  {
+    "viewport": {
+      "width": 799,
+      "height": 600
+    },
+    "renderedFrames": 806,
+    "minX": 0.07999993704132209,
+    "maxX": 0.9049834824976684,
+    "minY": 0.11999997067249614,
+    "maxY": 0.8800000236911634,
+    "forwardIntermediateFrames": 147,
+    "reverseIntermediateFrames": 243
+  },
+  {
+    "viewport": {
+      "width": 801,
+      "height": 600
+    },
+    "renderedFrames": 805,
+    "minX": 0.07999995656641232,
+    "maxX": 0.9039723064529885,
+    "minY": 0.119999973421591,
+    "maxY": 0.8800000822691102,
+    "forwardIntermediateFrames": 144,
+    "reverseIntermediateFrames": 236
+  },
+  {
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "renderedFrames": 935,
+    "minX": 0.23650679099365307,
+    "maxX": 0.6976689048552871,
+    "minY": 0.11999997402588995,
+    "maxY": 0.8800000641167173,
+    "forwardIntermediateFrames": 192,
+    "reverseIntermediateFrames": 283
+  },
+  {
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "renderedFrames": 561,
+    "minX": 0.07999994107054575,
+    "maxX": 0.8387354058354687,
+    "minY": 0.119999961153687,
+    "maxY": 0.8800000723759629,
+    "forwardIntermediateFrames": 95,
+    "reverseIntermediateFrames": 177
+  }
+]

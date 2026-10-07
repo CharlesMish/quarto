@@ -17,7 +17,9 @@
     "explore/body-shell-03/src/presentation/playbackClock.ts",
     "explore/body-shell-03/src/presentation/fitCamera.ts",
     "explore/body-shell-03/evidence/camera-controls-02",
-    "explore/body-shell-03/evidence/camera-controls-03"
+    "explore/body-shell-03/evidence/camera-controls-03",
+    "evidence",
+    "MT1*"
   ],
   "frozenDiff": [],
   "presetBlockUnchanged": true,
@@ -28,5 +30,8 @@
     "explore/body-shell-03/src/presentation/palette.ts": "d4f6127ce3ea9559664b0e0bad9e23849cf55de03ec21874db1e05760c610755",
     "explore/body-shell-03/src/presentation/lighting.ts": "3c2c62ff52f4afa480977f81f2e16e7f3b7f6a7529f792b552c7d86d6f16dafd"
   },
-  "authorityParticipation": "none; presentation only"
+  "authorityParticipation": "none; presentation only",
+  "implementationCommit": "01794731e169e6689008686aa4b87f18a07e2f36",
+  "implementationSourceTree": "85a1beaa0271ab6dfd05b7e72d244f2fc31f2bd4",
+  "implementationTestsTree": "f1031734297a2a3e574ccbd79c32e1357612f1cf"
 }
