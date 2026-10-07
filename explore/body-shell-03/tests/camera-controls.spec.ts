@@ -78,7 +78,7 @@ for (const touch of [false, true]) {
         await page.waitForFunction(() => Boolean(window.__MT1?.presentation));
       }
       for (const kind of ["pan-x", "pan-y", "orbit-x", "orbit-y", "zoom"] as Gesture[]) {
-        await resetGesture(page, engineUrl, profile);
+        await resetGesture(page, engineUrl, profile, true);
         const before = await readCamera(page, engineUrl);
         const reference = baseline.find((row) => row.touch === touch && row.profile === profile && row.kind === kind)!;
         expect(reference).toBeDefined();
@@ -99,7 +99,7 @@ for (const touch of [false, true]) {
     for (const reference of responseBaseline.filter((row) => row.touch === touch)) {
       await page.reload();
       await page.waitForFunction(() => Boolean(window.__MT1?.presentation));
-      await resetGesture(page, engineUrl, reference.profile);
+      await resetGesture(page, engineUrl, reference.profile, true);
       await page.evaluate(async ({ url, factor }) => {
         const { Engine } = await import(url);
         Engine.LastCreatedScene.activeCamera.radius *= factor;

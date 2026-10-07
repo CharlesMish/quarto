@@ -35,7 +35,8 @@ import "@babylonjs/core/Shaders/pass.fragment";
 /**
  * Presentation lighting for the public viewer. Appearance only: no mesh,
  * material color, pose, authority or certificate is changed, and nothing
- * here participates in fit, clearance or evidence.
+ * here participates in fit, clearance or evidence. Studio and lite rebalance
+ * the existing fill and sun intensities (not their directions).
  *
  * - studio: soft PCF sun shadows, screen-space ambient occlusion, rim light.
  * - lite:   sun shadows and rim light, no ambient occlusion (phones, WebGL1).
@@ -60,6 +61,7 @@ export interface LightingState {
 export interface PresentationLighting {
   readonly floor: Mesh;
   setStudyView(on: boolean): void;
+  setShowcasePolish(on: boolean): void;
   getState(): LightingState;
   dispose(): void;
 }
@@ -109,6 +111,7 @@ export function createPresentationLighting(options: LightingOptions): Presentati
     return {
       floor,
       setStudyView: () => undefined,
+      setShowcasePolish: () => undefined,
       getState: () => ({ tier, studyView: false, shadows: false, ambientOcclusion: false }),
       dispose: () => undefined,
     };
@@ -125,7 +128,7 @@ export function createPresentationLighting(options: LightingOptions): Presentati
     scene.fogEnd = camera.radius + 46;
   });
 
-  // Sun shadows. The sun keeps its original direction and intensity.
+  // Sun shadows. The sun keeps its original direction.
   const webgl2 = engine.webGLVersion >= 2;
   const shadows = new ShadowGenerator(tier === "studio" ? 2048 : 1024, sun);
   if (webgl2) {
@@ -169,11 +172,18 @@ export function createPresentationLighting(options: LightingOptions): Presentati
   }
 
   let studyView = false;
+  let showcasePolish = false;
   let ssaoAttached = false;
-  void hemi; // the fill light keeps its original direction and intensity
+  // Showcase balance: a little less flat fill and a little more key separates
+  // the hull's top from its sides. Directions are unchanged, and study views
+  // return to the original intensities with the rest of the flat look.
+  const original = { hemi: hemi.intensity, sun: sun.intensity };
   const apply = (): void => {
     sun.shadowEnabled = !studyView;
     rim.setEnabled(!studyView);
+    const polished = showcasePolish && !studyView;
+    hemi.intensity = original.hemi * (polished ? 0.85 : 1);
+    sun.intensity = original.sun * (polished ? 1.15 : 1);
     const wantSsao = Boolean(ssao) && !studyView;
     if (ssao && wantSsao !== ssaoAttached) {
       const manager = scene.postProcessRenderPipelineManager;
@@ -191,6 +201,11 @@ export function createPresentationLighting(options: LightingOptions): Presentati
       studyView = on;
       apply();
     },
+    setShowcasePolish(on: boolean) {
+      if (showcasePolish === on) return;
+      showcasePolish = on;
+      apply();
+    },
     getState: () => ({ tier, studyView, shadows: !studyView, ambientOcclusion: Boolean(ssao) && !studyView }),
     dispose() {
       scene.onNewMeshAddedObservable.remove(onNewMesh);
@@ -198,6 +213,8 @@ export function createPresentationLighting(options: LightingOptions): Presentati
       ssao?.dispose();
       shadows.dispose();
       rim.dispose();
+      hemi.intensity = original.hemi;
+      sun.intensity = original.sun;
     },
   };
 }

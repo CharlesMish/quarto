@@ -86,6 +86,14 @@ input[type="range"] { width: 100%; min-width: 0; height: 44px; margin: 0; accent
 .preview-label { display: block; margin-top: 16px; color: var(--cyan); }
 .help { color: var(--muted); line-height: 1.7; }
 .eyebrow, .provenance { color: var(--cyan); font: 11px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; overflow-wrap: anywhere; }
+.provenance-details { margin-top: 16px; border-top: 1px solid var(--line); }
+.provenance-details summary {
+  display: flex; align-items: center; min-height: 44px; color: var(--muted);
+  font-size: 12px; letter-spacing: .04em; cursor: pointer;
+}
+.provenance-details summary:hover { color: var(--ink); }
+.provenance-details summary:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+.provenance-details[open] summary { color: var(--cyan); }
 
 .tour-card {
   top: calc(var(--viewer-top) + 12px); left: 18px; width: min(330px, calc(100% - 36px));

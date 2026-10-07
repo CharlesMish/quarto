@@ -1,0 +1,37 @@
+{
+  "base": "87b544b82f6d537208f14ed3235a55180d968e4c",
+  "frozenPathsCompared": [
+    "src",
+    "tests",
+    "package.json",
+    "package-lock.json",
+    "playwright.config.ts",
+    "explore/body-shell-03/src/design",
+    "explore/body-shell-03/src/machine",
+    "explore/body-shell-03/src/math",
+    "explore/body-shell-03/src/verify",
+    "explore/body-shell-03/src/scene/h1Presentation.ts",
+    "explore/body-shell-03/src/scene/primitives.ts",
+    "explore/body-shell-03/src/scene/materials.ts",
+    "explore/body-shell-03/src/presentation/cameraInputResponse.ts",
+    "explore/body-shell-03/src/presentation/playbackClock.ts",
+    "explore/body-shell-03/src/presentation/fitCamera.ts",
+    "explore/body-shell-03/evidence/camera-controls-02",
+    "explore/body-shell-03/evidence/camera-controls-03",
+    "evidence",
+    "MT1*"
+  ],
+  "frozenDiff": [],
+  "presetBlockUnchanged": true,
+  "presetBlockSha256": "8b555664a3e65fb109d99386df7ba9e7813a6a098fcd7bc6f2fb4d7a50b4e5d0",
+  "sourceSha256": {
+    "explore/body-shell-03/src/scene/createScene.ts": "f69aa66ec93305777eed6b600bc40a04f25268e8ed3067776c91d633d96c25be",
+    "explore/body-shell-03/src/presentation/frameVehicle.ts": "9e04d5d7e1a4cab9c6ad353de8567fca9de9b972947ae98f74a9b23e927d1e2a",
+    "explore/body-shell-03/src/presentation/palette.ts": "d4f6127ce3ea9559664b0e0bad9e23849cf55de03ec21874db1e05760c610755",
+    "explore/body-shell-03/src/presentation/lighting.ts": "3c2c62ff52f4afa480977f81f2e16e7f3b7f6a7529f792b552c7d86d6f16dafd"
+  },
+  "authorityParticipation": "none; presentation only",
+  "implementationCommit": "01794731e169e6689008686aa4b87f18a07e2f36",
+  "implementationSourceTree": "85a1beaa0271ab6dfd05b7e72d244f2fc31f2bd4",
+  "implementationTestsTree": "f1031734297a2a3e574ccbd79c32e1357612f1cf"
+}

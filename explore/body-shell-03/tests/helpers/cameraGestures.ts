@@ -70,7 +70,7 @@ export async function settleCamera(page: Page, engineUrl: string): Promise<void>
   }, engineUrl);
 }
 
-export async function resetGesture(page: Page, engineUrl: string, profile: Profile): Promise<void> {
+export async function resetGesture(page: Page, engineUrl: string, profile: Profile, historicalFraming = false) {
   await page.evaluate((value) => {
     const api = window.__MT1!;
     api.presentation.setPose(0);
@@ -79,6 +79,25 @@ export async function resetGesture(page: Page, engineUrl: string, profile: Profi
     api.presentation.setPlayback(value);
   }, profile);
   await settleCamera(page, engineUrl);
+  const composed = await readCamera(page, engineUrl);
+  if (historicalFraming) {
+    // Input gain depends on distance. Exercise the unchanged historical fit
+    // algorithm at the original pose, independently of the public FIT command.
+    // Do not rewrite the archived observations or copy their tuned settings.
+    await page.evaluate(async (url) => {
+      const { Engine } = await import(url);
+      const { fitVisibleVehicle } = await import(/* @vite-ignore */ "/src/presentation/fitCamera.ts");
+      const scene = Engine.LastCreatedScene;
+      window.__MT1!.setCamera("body"); // leave guided framing; reset screen shift
+      const names = new Set(window.__MT1!.getRenderInventory()
+        .filter((row) => row.objectClass === "physical authority" || row.family === "body-shell-concept" || row.family === "h1-presentation")
+        .map((row) => row.semanticName));
+      const canvas = document.querySelector<HTMLCanvasElement>("#view")!;
+      fitVisibleVehicle(scene.activeCamera, scene.meshes.filter((mesh: { name: string }) => names.has(mesh.name)), canvas.clientWidth / canvas.clientHeight);
+    }, engineUrl);
+    await settleCamera(page, engineUrl);
+  }
+  return composed;
 }
 
 /** Browser input events: mouse drag, or Chromium's touch emulation (not a phone). */

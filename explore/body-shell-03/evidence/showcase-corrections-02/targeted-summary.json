@@ -1,0 +1,124 @@
+{
+  "before": {
+    "stats": {
+      "startTime": "2026-10-07T05:44:31.441Z",
+      "duration": 15738.312999999998,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 4,
+      "flaky": 0
+    },
+    "traces": [
+      {
+        "scenario": "390x844-autoBtn-interrupted-glide",
+        "frames": 91,
+        "clippedFrames": 35,
+        "pausedAt": 0.1688038368963356,
+        "rotations": null
+      },
+      {
+        "scenario": "844x390-autoBtn-interrupted-glide",
+        "frames": 91,
+        "clippedFrames": 0,
+        "pausedAt": 0.16707116079977147,
+        "rotations": null
+      },
+      {
+        "scenario": "844x390-reverseBtn-interrupted-glide",
+        "frames": 90,
+        "clippedFrames": 0,
+        "pausedAt": 0.16419781181473725,
+        "rotations": null
+      },
+      {
+        "scenario": "1280x720-autoBtn-interrupted-glide",
+        "frames": 101,
+        "clippedFrames": 36,
+        "pausedAt": 0.1270078655042659,
+        "rotations": null
+      },
+      {
+        "scenario": "orientation-rest",
+        "frames": 74,
+        "clippedFrames": 6,
+        "pausedAt": null,
+        "rotations": 12
+      },
+      {
+        "scenario": "orientation-reverse",
+        "frames": 73,
+        "clippedFrames": 6,
+        "pausedAt": null,
+        "rotations": 12
+      }
+    ]
+  },
+  "after": {
+    "stats": {
+      "startTime": "2026-10-07T05:45:45.019Z",
+      "duration": 18175.266,
+      "expected": 5,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "traces": [
+      {
+        "scenario": "390x844-autoBtn-interrupted-glide",
+        "frames": 91,
+        "clippedFrames": 0,
+        "pausedAt": 0.16996254455319382,
+        "rotations": null
+      },
+      {
+        "scenario": "390x844-reverseBtn-interrupted-glide",
+        "frames": 90,
+        "clippedFrames": 0,
+        "pausedAt": 0.1512180567200515,
+        "rotations": null
+      },
+      {
+        "scenario": "844x390-autoBtn-interrupted-glide",
+        "frames": 90,
+        "clippedFrames": 0,
+        "pausedAt": 0.171124105445443,
+        "rotations": null
+      },
+      {
+        "scenario": "844x390-reverseBtn-interrupted-glide",
+        "frames": 90,
+        "clippedFrames": 0,
+        "pausedAt": 0.1676479999999979,
+        "rotations": null
+      },
+      {
+        "scenario": "1280x720-autoBtn-interrupted-glide",
+        "frames": 98,
+        "clippedFrames": 0,
+        "pausedAt": 0.15850598453928944,
+        "rotations": null
+      },
+      {
+        "scenario": "1280x720-reverseBtn-interrupted-glide",
+        "frames": 96,
+        "clippedFrames": 0,
+        "pausedAt": 0.16477103124999803,
+        "rotations": null
+      },
+      {
+        "scenario": "orientation-rest",
+        "frames": 72,
+        "clippedFrames": 0,
+        "pausedAt": null,
+        "rotations": 12
+      },
+      {
+        "scenario": "orientation-reverse",
+        "frames": 72,
+        "clippedFrames": 0,
+        "pausedAt": null,
+        "rotations": 12
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "reviewedBase": "f1a96ef0a85bb924c220b85bcb421755d3d27afd",
+  "authorityParticipation": "none",
+  "frozenPathsCompared": [
+    "src",
+    "tests",
+    "package.json",
+    "package-lock.json",
+    "playwright.config.ts",
+    "explore/body-shell-03/src/design",
+    "explore/body-shell-03/src/machine",
+    "explore/body-shell-03/src/math",
+    "explore/body-shell-03/src/verify",
+    "explore/body-shell-03/src/scene/h1Presentation.ts",
+    "explore/body-shell-03/src/scene/primitives.ts",
+    "explore/body-shell-03/src/scene/materials.ts",
+    "explore/body-shell-03/src/presentation/cameraInputResponse.ts",
+    "explore/body-shell-03/src/presentation/playbackClock.ts",
+    "explore/body-shell-03/src/presentation/fitCamera.ts",
+    "explore/body-shell-03/evidence/camera-controls-02",
+    "explore/body-shell-03/evidence/camera-controls-03",
+    "evidence",
+    "MT1*",
+    "explore/body-shell-03/src/presentation/palette.ts",
+    "explore/body-shell-03/src/presentation/lighting.ts",
+    "explore/body-shell-03/src/presentation/frameVehicle.ts",
+    "explore/body-shell-03/tests/camera-controls.spec.ts",
+    "explore/body-shell-03/tests/zoom-response.spec.ts",
+    "explore/body-shell-03/tests/helpers/cameraGestures.ts",
+    "explore/body-shell-03/evidence/showcase-corrections-01"
+  ],
+  "frozenDiff": [],
+  "sourceSha256": "5d52b42a1528ce032572529591584e890d513c5f65cbc94d96952103df87a912",
+  "testSha256": "6e30403f1b8d0df88953b9ccba5b6f522d99cacdc43cc3b78be768948911cd65",
+  "productionChangedFiles": [
+    "explore/body-shell-03/src/scene/createScene.ts"
+  ],
+  "diffHunks": [
+    "@@ -169 +169,3 @@ export function createApp(canvas: HTMLCanvasElement): App {",
+    "@@ -333 +335,5 @@ export function createApp(canvas: HTMLCanvasElement): App {",
+    "@@ -594,0 +601,3 @@ export function createApp(canvas: HTMLCanvasElement): App {",
+    "@@ -596,3 +604,0 @@ export function createApp(canvas: HTMLCanvasElement): App {"
+  ],
+  "oldEvidenceUnchanged": true,
+  "presetBlockUnchanged": true,
+  "presetBlockSha256": "8b555664a3e65fb109d99386df7ba9e7813a6a098fcd7bc6f2fb4d7a50b4e5d0",
+  "applyCameraAndRemainingFunctionsUnchanged": true,
+  "gains": {
+    "wheelPrecision": 50,
+    "pinchPrecision": 15,
+    "panningSensibility": 150
+  }
+}

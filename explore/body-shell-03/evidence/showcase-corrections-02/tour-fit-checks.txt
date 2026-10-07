@@ -1,0 +1,43 @@
+
+Running 2 tests using 1 worker
+
+(node:99570) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/2] tests/viewer-readability.spec.ts:297:1 › tour visits six canonical poses and exits without resetting the inspected pose
+[2/2] tests/viewer-readability.spec.ts:399:1 › fit camera is presentation-only and keeps the inspected pose
+tests/viewer-readability.spec.ts:399:1 › fit camera is presentation-only and keeps the inspected pose
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0,"preset":"body","alpha":0.78,"beta":1.14,"radius":10.562749709887276,"extrema":[{"min":0.16126456306763567,"max":0.8387354058354687},{"min":0.11999998143469541,"max":0.8799999335839785},{"min":0.9986109633191421,"max":0.9996717042239524}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0,"preset":"prop","alpha":0.92,"beta":1.16,"radius":10.319356388752798,"extrema":[{"min":0.13419222020845767,"max":0.865807790738879},{"min":0.11999996390842976,"max":0.8800000474812482},{"min":0.9985001255687885,"max":0.9996769757841591}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.24,"preset":"body","alpha":0.78,"beta":1.14,"radius":9.853430388175688,"extrema":[{"min":0.20762974123174552,"max":0.7923702108722569},{"min":0.11999998814875537,"max":0.880000070597105},{"min":0.998704318191524,"max":0.999655575421983}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.24,"preset":"prop","alpha":0.92,"beta":1.16,"radius":10.110036336967253,"extrema":[{"min":0.21156110836294384,"max":0.7884389480999284},{"min":0.11999995235645118,"max":0.8800000287571557},{"min":0.9987366987519972,"max":0.9996725411016087}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.6,"preset":"body","alpha":0.78,"beta":1.14,"radius":9.849669558042043,"extrema":[{"min":0.22935437995127228,"max":0.7706456222887776},{"min":0.1199999837645583,"max":0.8799999915249491},{"min":0.9990273724151606,"max":0.9996554860599031}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":0.6,"preset":"prop","alpha":0.92,"beta":1.16,"radius":10.184015784285059,"extrema":[{"min":0.256302703357634,"max":0.7436972751136558},{"min":0.11999996464809108,"max":0.8800000415824972},{"min":0.999001354650621,"max":0.9996741222838439}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":1,"preset":"body","alpha":0.78,"beta":1.14,"radius":9.782961185326732,"extrema":[{"min":0.27114374530802776,"max":0.7288562525501912},{"min":0.12000000155767851,"max":0.8800000519331896},{"min":0.9990145786197364,"max":0.9996538930289536}]}
+
+FIT_BOUNDS {"viewport":{"width":1280,"height":720},"amount":1,"preset":"prop","alpha":0.92,"beta":1.16,"radius":10.136616904835904,"extrema":[{"min":0.29691390022446695,"max":0.7030860963028849},{"min":0.1199999719697874,"max":0.8800000171286295},{"min":0.9989918060051208,"max":0.9996731109838668}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0,"preset":"body","alpha":0.78,"beta":1.14,"radius":28.749528421326815,"extrema":[{"min":0.07999998223594036,"max":0.9199999730226284},{"min":0.36371804300798677,"max":0.6362819544637958},{"min":0.9997709864331095,"max":0.9998507595479467}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0,"preset":"prop","alpha":0.92,"beta":1.16,"radius":29.74512865744692,"extrema":[{"min":0.08000001492506158,"max":0.9200000295694034},{"min":0.37037149125603747,"max":0.6296285072593047},{"min":0.9997807841425246,"max":0.9998571409448345}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.24,"preset":"body","alpha":0.78,"beta":1.14,"radius":23.46689546725451,"extrema":[{"min":0.07999999190342037,"max":0.9199999724681012},{"min":0.3447805154621871,"max":0.6552194955788079},{"min":0.9997143578710773,"max":0.9998226458993723}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.24,"preset":"prop","alpha":0.92,"beta":1.16,"radius":23.825823135513012,"extrema":[{"min":0.08000000361579773,"max":0.9199999638769034},{"min":0.34681726955256237,"max":0.6531827568403242},{"min":0.9997174968551823,"max":0.9998278122117045}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.6,"preset":"body","alpha":0.78,"beta":1.14,"radius":22.395238174149735,"extrema":[{"min":0.07999999920919788,"max":0.9199999519977545},{"min":0.3373513620006437,"max":0.6626486096760337},{"min":0.9997177198263676,"max":0.9998155461186201}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":0.6,"preset":"prop","alpha":0.92,"beta":1.16,"radius":21.15557959079455,"extrema":[{"min":0.07999999929734943,"max":0.9199999815520398},{"min":0.32324453994063346,"max":0.6767554586823072},{"min":0.9996875292483641,"max":0.999810324970509}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":1,"preset":"body","alpha":0.78,"beta":1.14,"radius":19.87532977048357,"extrema":[{"min":0.08000002096025462,"max":0.9199999840306601},{"min":0.319135521316357,"max":0.6808644849523252},{"min":0.9996708106532471,"max":0.9997965890868796}]}
+
+FIT_BOUNDS {"viewport":{"width":390,"height":844},"amount":1,"preset":"prop","alpha":0.92,"beta":1.16,"radius":18.34240618955369,"extrema":[{"min":0.08000001765102716,"max":0.920000000347262},{"min":0.297506112330054,"max":0.702493873820514},{"min":0.9996206034921017,"max":0.9997875178483813}]}
+
+  2 passed (56.4s)

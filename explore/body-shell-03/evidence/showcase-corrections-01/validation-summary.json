@@ -1,0 +1,34 @@
+{
+  "implementationCommit": "01794731e169e6689008686aa4b87f18a07e2f36",
+  "publicSuite": {
+    "passed": 75,
+    "durationMinutes": 14.0,
+    "log": "public-tests.txt"
+  },
+  "authoritySuite": {
+    "passed": 105,
+    "durationMinutes": 35.2,
+    "log": "authority-tests.txt"
+  },
+  "builds": {
+    "public": "passed",
+    "authority": "passed"
+  },
+  "originalRegressionChecks": {
+    "expectedFailures": 4,
+    "unexpectedPasses": 0
+  },
+  "framingTrace": {
+    "passed": 8,
+    "renderedFrames": 6474,
+    "minimumCanvasMargin": 0.07999993704132209
+  },
+  "matchedBrowserEvidence": {
+    "records": 44,
+    "pngCaptures": 30,
+    "pageErrors": 0
+  },
+  "independentReview": "pending",
+  "hardwareAndPhysicalPhoneReview": "pending",
+  "remoteActions": "none: no push, PR update, merge or deployment"
+}

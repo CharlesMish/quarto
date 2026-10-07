@@ -25,7 +25,9 @@ Open **http://127.0.0.1:5185/** for the presentation viewer.
 
 - **Drag, right-drag, and scroll** to orbit, pan, and zoom.
 - Move the **machine slider** between **SPREAD** and **DRIVE**, or press **Space** to play/pause.
+- On a fresh visit the viewer plays the transformation once (SPREAD → DRIVE → SPREAD) and then waits. Your first pointer, wheel or key input immediately pauses the intro; the same input still operates its control. It's skipped with reduced motion, in automated browsers, and with `?intro=0` (`?intro=1` forces it).
 - **Show** is the default playback speed (about four seconds). Choose **Inspect** for slower study or **Game** for a quick transformation; the slider stays direct.
+- The camera frames and centres the machine, widens as needed while it unfolds, and glides to the new framing when the transformation settles on SPREAD or DRIVE. Orbiting, panning, or choosing a camera preset hands the camera to you; **FIT** restores composed framing at your current viewing angle.
 - Toggle **BODY ON / BODY OFF** to compare the presentation shell with the exposed mechanism.
 - Use the **section controls**, camera presets, and **INSPECT PICK** to look inside and identify parts.
 

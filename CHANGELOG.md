@@ -6,9 +6,12 @@ Notable changes to Quarto are recorded here. The format follows [Keep a Changelo
 
 ### Added
 - Charter (`docs/CHARTER.md`), MIT license, and this changelog.
+- Showcase polish for the public viewer: link-preview metadata and image, favicon, a one-time load showing of the transformation, centred guided framing that settles on SPREAD and DRIVE, and tests for each (`docs/QUARTO_SHOWCASE_POLISH_01.md`).
 
 ### Changed
 - README updated for visitors, with current setup instructions, model limits, and a pinned viewer screenshot.
+- Public viewer copy: the readout shows progress, and provenance identifiers sit under a collapsed Provenance disclosure in Details & help.
+- Hush Basin palette and studio/lite lighting rebalanced so the folios no longer dominate and the hull and hardware separate. Flat lighting and the accepted palette are unchanged.
 
 ## [0.1.0] - 2026-09-27
 
