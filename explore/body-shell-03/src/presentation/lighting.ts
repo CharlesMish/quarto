@@ -61,6 +61,7 @@ export interface LightingState {
 export interface PresentationLighting {
   readonly floor: Mesh;
   setStudyView(on: boolean): void;
+  setShowcasePolish(on: boolean): void;
   getState(): LightingState;
   dispose(): void;
 }
@@ -110,6 +111,7 @@ export function createPresentationLighting(options: LightingOptions): Presentati
     return {
       floor,
       setStudyView: () => undefined,
+      setShowcasePolish: () => undefined,
       getState: () => ({ tier, studyView: false, shadows: false, ambientOcclusion: false }),
       dispose: () => undefined,
     };
@@ -170,6 +172,7 @@ export function createPresentationLighting(options: LightingOptions): Presentati
   }
 
   let studyView = false;
+  let showcasePolish = false;
   let ssaoAttached = false;
   // Showcase balance: a little less flat fill and a little more key separates
   // the hull's top from its sides. Directions are unchanged, and study views
@@ -178,8 +181,9 @@ export function createPresentationLighting(options: LightingOptions): Presentati
   const apply = (): void => {
     sun.shadowEnabled = !studyView;
     rim.setEnabled(!studyView);
-    hemi.intensity = studyView ? original.hemi : original.hemi * 0.85;
-    sun.intensity = studyView ? original.sun : original.sun * 1.15;
+    const polished = showcasePolish && !studyView;
+    hemi.intensity = original.hemi * (polished ? 0.85 : 1);
+    sun.intensity = original.sun * (polished ? 1.15 : 1);
     const wantSsao = Boolean(ssao) && !studyView;
     if (ssao && wantSsao !== ssaoAttached) {
       const manager = scene.postProcessRenderPipelineManager;
@@ -195,6 +199,11 @@ export function createPresentationLighting(options: LightingOptions): Presentati
     setStudyView(on: boolean) {
       if (studyView === on) return;
       studyView = on;
+      apply();
+    },
+    setShowcasePolish(on: boolean) {
+      if (showcasePolish === on) return;
+      showcasePolish = on;
       apply();
     },
     getState: () => ({ tier, studyView, shadows: !studyView, ambientOcclusion: Boolean(ssao) && !studyView }),

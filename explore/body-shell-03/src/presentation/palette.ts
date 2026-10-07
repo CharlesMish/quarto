@@ -9,6 +9,7 @@ export type PresentationPaletteName = "hush-basin" | "accepted";
 export interface PresentationPalette {
   setPalette(palette: PresentationPaletteName): void;
   setForm(t: number): void;
+  setShowcasePolish(on: boolean): void;
   getPalette(): PresentationPaletteName;
   dispose(): void;
 }
@@ -67,17 +68,14 @@ export function createPresentationPalette(scene: Scene): PresentationPalette {
     shell: appearance("shell", 1.03, 0.55, 0.16),
     accent: appearance("shell", 0.9, 0.4, 0.13),
     carry: appearance("joint", 1, 0.5, 0.2),
-    // Roots, catches and rails sit a step lighter than the hull so the moving
-    // hardware reads against the shell (showcase pass; hue unchanged).
-    joint: appearance("joint", 1.42, 0.5, 0.3),
-    rail: appearance("joint", 1.3, 0.5, 0.3),
+    // Historical Hush appearance is retained for flat and study views.
+    joint: appearance("joint", 1.08, 0.5, 0.3),
+    rail: appearance("joint", 1, 0.5, 0.3),
     // FO1's recess must remain darker than its surrounding frame in either
     // palette. Keep the Hush Basin structural hue, without the old mint mix.
     pocket: appearance("structure", 0.65, 0.25, 0.1),
-    // Large faces must retain a shaded midtone; mint is reserved for small parts.
-    // Held below the lit hardware's brightness so the folio slabs stop
-    // dominating the frame and their facets keep visible shading.
-    folio: appearance("lift", 0.78, 0.08, 0.12),
+    // Normal studio/lite views opt into the showcase terms below.
+    folio: appearance("lift", 0.86, 0.12, 0.12),
     underside: appearance("lift_underlay", 0.96, 0.08, 0.14),
     lock: appearance("lift_edge", 0.78, 0.3, 0.15),
     can: appearance("can", 0.8, 0.15, 0.24),
@@ -87,6 +85,17 @@ export function createPresentationPalette(scene: Scene): PresentationPalette {
   appearances.carry.diffuse = Color3.Lerp(sourceColor("joint"), sourceColor("structure"), 0.35);
   appearances.rail.diffuse = Color3.Lerp(sourceColor("joint"), sourceColor("panel_seam"), 0.28);
 
+  const polished: Partial<Record<MaterialRole, Appearance>> = {
+    joint: appearance("joint", 1.42, 0.5, 0.3),
+    rail: { ...appearances.rail, diffuse: appearances.rail.diffuse.scale(1.3) },
+    folio: appearance("lift", 0.78, 0.08, 0.12),
+  };
+  const polishable: Array<{ material: StandardMaterial; role: MaterialRole }> = [];
+  const applyAppearance = (material: StandardMaterial, style: Appearance): void => {
+    material.diffuseColor.copyFrom(style.diffuse);
+    material.emissiveColor.copyFrom(style.emissive);
+    style.diffuse.scaleToRef(style.specular, material.specularColor);
+  };
   const bindings: Array<{ mesh: AbstractMesh; original: StandardMaterial; variant: StandardMaterial }> = [];
   const variants = new Map<string, StandardMaterial>();
   const animated: Array<{ material: StandardMaterial; role: "core" | "receiver" }> = [];
@@ -106,10 +115,8 @@ export function createPresentationPalette(scene: Scene): PresentationPalette {
       variant = original.clone(`QUARTO_HUSH_${original.uniqueId}_${role}`);
       // Cloning retains alpha, transparency mode, culling and H1 raster depth bias.
       // Only the three color terms change; no accepted material is mutated.
-      const style = appearances[role];
-      variant.diffuseColor.copyFrom(style.diffuse);
-      variant.emissiveColor.copyFrom(style.emissive);
-      style.diffuse.scaleToRef(style.specular, variant.specularColor);
+      applyAppearance(variant, appearances[role]);
+      if (polished[role]) polishable.push({ material: variant, role });
       variants.set(key, variant);
       if (role === "core" || role === "receiver") animated.push({ material: variant, role });
     }
@@ -123,6 +130,12 @@ export function createPresentationPalette(scene: Scene): PresentationPalette {
   let current: PresentationPaletteName = "accepted";
   let form = -1;
   let disposed = false;
+  let showcasePolish = false;
+  const setShowcasePolish = (on: boolean): void => {
+    if (disposed || on === showcasePolish) return;
+    showcasePolish = on;
+    for (const { material, role } of polishable) applyAppearance(material, on ? polished[role]! : appearances[role]);
+  };
 
   const setForm = (t: number): void => {
     if (disposed || !Number.isFinite(t)) return;
@@ -158,6 +171,7 @@ export function createPresentationPalette(scene: Scene): PresentationPalette {
   return {
     setPalette,
     setForm,
+    setShowcasePolish,
     getPalette: () => current,
     dispose() {
       if (disposed) return;
@@ -166,6 +180,7 @@ export function createPresentationPalette(scene: Scene): PresentationPalette {
       variants.clear();
       bindings.length = 0;
       animated.length = 0;
+      polishable.length = 0;
       current = "accepted";
       disposed = true;
     },

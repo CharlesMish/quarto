@@ -43,7 +43,7 @@ import { createH1Presentation } from "./h1Presentation";
 import { createBodyShellConcept } from "./bodyShellConcept";
 import { runBodyShellFit } from "../verify/bodyShellFit";
 import { createPresentationPalette } from "../presentation/palette";
-import { applyFraming, measureComposed, measureFit, updateScreenShift, type Framing, type ScreenShift } from "../presentation/frameVehicle";
+import { applyFraming, expandForVisiblePose, measureComposed, measureFit, updateScreenShift, type Framing, type ScreenShift } from "../presentation/frameVehicle";
 import { TOUR_STOPS, type PresentationPalette, type PresentationState } from "../presentation/viewerState";
 import { chooseLightingTier, createPresentationLighting, createStageFloor } from "../presentation/lighting";
 import { createPlaybackClock, PLAYBACK_PROFILES, type PlaybackClock, type PlaybackProfile } from "../presentation/playbackClock";
@@ -154,8 +154,8 @@ export function createApp(canvas: HTMLCanvasElement): App {
   let lockFocusOn = false;
   let tourStep: number | null = null;
   let followFit = true;
-  // Guided framing: "compose" is the presentation framing used on load and
-  // when playback settles; "fit" is the FIT/tour whole-machine distance. Both
+  // Guided framing: load, FIT and endpoint settles use composition.
+  // "fit" retains the tour stops' historical whole-machine distance. Both
   // keep the machine centred through a screen shift.
   let followMode: "compose" | "fit" = "compose";
   const screenShift: ScreenShift = { x: 0, y: 0 };
@@ -169,7 +169,32 @@ export function createApp(canvas: HTMLCanvasElement): App {
   const aspect = (): number => canvas.clientWidth / Math.max(1, canvas.clientHeight);
   const measureFraming = (): Framing | null => (followMode === "fit" ? measureFit : measureComposed)(camera, fitMeshes, aspect());
   const stopEasing = (): void => { easing = null; };
-  const cancelIntro = (): void => { intro = null; };
+  // Preserve the intent of PLAY/Space when capture-phase takeover pauses the
+  // intro before the control's own click/keydown handler runs.
+  let playAfterTakeover: boolean | null = null;
+  const cancelIntro = (event: Event): void => {
+    // A held Space on the focused button activates on keyup. Auto-repeat must
+    // not erase the PAUSE intent recorded on its first keydown.
+    if (event instanceof KeyboardEvent && event.repeat) return;
+    playAfterTakeover = null;
+    if (!intro) return;
+    const target = event.target instanceof Element ? event.target : null;
+    const key = event instanceof KeyboardEvent ? event : null;
+    const playButton = Boolean(target?.closest("#autoBtn"));
+    const spaceShortcut = key?.code === "Space" && !key.altKey && !key.ctrlKey && !key.metaKey && !key.repeat
+      && !target?.closest('input, select, textarea, button, [contenteditable]:not([contenteditable="false"])');
+    if ((event.type === "pointerdown" && playButton)
+      || (key && playButton && (key.code === "Space" || key.key === "Enter")) || spaceShortcut) {
+      playAfterTakeover = !automatic;
+    }
+    intro = null;
+    automatic = false;
+    clock = null;
+    stopEasing();
+    // Do not cancel/consume the event or a queued slider input. The original
+    // control still performs its command (reverse, preset, FIT, scrub, etc.).
+    syncPresentation();
+  };
   const syncPresentation = (): void => {
     ui.setPresentation(presentationState());
     ui.setViewState({
@@ -209,7 +234,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
     ui.cancelPendingInput();
     leaveTour();
     followFit = true;
-    followMode = "fit";
+    followMode = "compose";
     fitCurrent();
   };
   const setCamera = (preset: string): void => {
@@ -313,12 +338,14 @@ export function createApp(canvas: HTMLCanvasElement): App {
     ui.setFrontT(frontT, automatic);
     ui.setTransform(transformT, automatic);
     palette.setForm(machineT);
+    if (followFit) expandForVisiblePose(camera, fitMeshes, screenShift, aspect());
     syncPresentation();
     refreshDebug(!certify);
   };
 
   const setMachineT = (value: number, certify = false): void => {
     preparePoseCommand();
+    stopEasing();
     applyCanonicalPose(value, certify);
   };
 
@@ -405,7 +432,9 @@ export function createApp(canvas: HTMLCanvasElement): App {
     toggleAutomatic() {
       ui.cancelPendingInput();
       leaveTour();
-      automatic = !automatic;
+      automatic = playAfterTakeover ?? !automatic;
+      playAfterTakeover = null;
+      intro = null; // also covers accessibility/programmatic button activation
       direction = machineT >= 0.999 ? -1 : machineT <= 0.001 ? 1 : direction;
       ui.setMachineT(machineT, automatic, rig.authorityMode());
       syncPresentation();
@@ -461,8 +490,8 @@ export function createApp(canvas: HTMLCanvasElement): App {
   // Direct orbit/pan/zoom leaves guided framing without changing the pose.
   canvas.addEventListener("pointerdown", () => { ui.cancelPendingInput(); leaveTour(); followFit = false; stopEasing(); });
   canvas.addEventListener("wheel", () => { ui.cancelPendingInput(); leaveTour(); followFit = false; stopEasing(); }, { passive: true });
-  // Any visitor input ends the load-time showing; a running leg is left to the
-  // visitor's own controls (PLAY pauses it, scrubbing stops it).
+  // First interaction stops intro-owned motion immediately, without consuming
+  // the input or changing the semantics of ordinary user-started playback.
   for (const type of ["pointerdown", "wheel", "keydown"] as const) {
     window.addEventListener(type, cancelIntro, { capture: true, passive: true });
   }
@@ -488,7 +517,13 @@ export function createApp(canvas: HTMLCanvasElement): App {
   // Study views read as the original flat engineering lighting.
   const studyViewActive = (): boolean =>
     debugOn || sectionOn || propSectionOn || lockFocusOn || bodyConcept.isSection();
-  scene.onBeforeRenderObservable.add(() => lighting.setStudyView(studyViewActive()));
+  scene.onBeforeRenderObservable.add(() => {
+    const study = studyViewActive();
+    const polished = lightingTier !== "flat" && !study && palette.getPalette() === "hush-basin";
+    palette.setShowcasePolish(polished);
+    lighting.setStudyView(study);
+    lighting.setShowcasePolish(polished);
+  });
 
   // Playback only chooses when each canonical pose is shown; the clock never
   // leaves [0, 1] and every frame goes through the presentation pose path.
@@ -558,6 +593,9 @@ export function createApp(canvas: HTMLCanvasElement): App {
       screenShift.y = from.shift.y + (to.shift.y - from.shift.y) * k;
       if (u >= 1) { applyFraming(camera, to, screenShift); easing = null; }
     }
+    // Interpolating target/shift can also tighten a corner between two safe
+    // endpoints. Keep every rendered glide frame inside the same margin.
+    if (followFit && easing) expandForVisiblePose(camera, fitMeshes, screenShift, aspect());
     updateScreenShift(camera, screenShift, aspect());
   });
 

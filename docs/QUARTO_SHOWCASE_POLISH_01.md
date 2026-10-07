@@ -1,5 +1,10 @@
 # Quarto showcase polish 01
 
+The initial PR13 implementation is recorded below. The approved bounded corrections
+to intro takeover, transition framing, FIT and appearance scope are documented in
+[QUARTO_SHOWCASE_CORRECTIONS_01](QUARTO_SHOWCASE_CORRECTIONS_01.md). That record
+supersedes the behavior and open choices below; historical evidence is retained.
+
 Presentation-only polish of the public viewer ahead of a Babylon.js community
 showcase submission. Branch `claude/showcase-polish` from accepted `main` at
 `b4c6715`. Authority participation: **none**.

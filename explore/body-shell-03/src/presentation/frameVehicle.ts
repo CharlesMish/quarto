@@ -12,10 +12,10 @@ import { fitVisibleVehicle } from "./fitCamera";
  *   through ArcRotateCamera.targetScreenOffset, so the orbit centre sits where
  *   the machine looks centred instead of where its bounding-box centre lands;
  * - **composed framing**, a projection-based fit that fills the canvas more
- *   fully than FIT's conservative whole-machine distance.
+ *   fully than the historical whole-machine distance.
  *
- * FIT keeps its exact radius and target (fitVisibleVehicle) and only gains the
- * centring shift, so its measured camera-response baselines are unchanged.
+ * Load and FIT use composed framing; tour stops retain their historical
+ * radius and target through measureFit. Input-gain records remain separate.
  */
 export interface ScreenShift { x: number; y: number }
 
@@ -122,7 +122,7 @@ function solve(
   return { radius: r, shift: { x: ox / (r * tanH), y: oy / (r * tanV) } };
 }
 
-/** FIT: the existing whole-machine radius and target, plus the centring shift. */
+/** Historical tour framing: whole-machine radius/target plus the centring shift. */
 export function measureFit(camera: ArcRotateCamera, candidates: readonly AbstractMesh[], aspect: number): Framing | null {
   const visible = visiblePoints(candidates);
   if (!visible) return null;
@@ -167,4 +167,46 @@ export function updateScreenShift(camera: ArcRotateCamera, shift: ScreenShift, a
   const x = shift.x * camera.radius * tanV * Math.max(aspect, 0.01);
   const y = shift.y * camera.radius * tanV;
   if (camera.targetScreenOffset.x !== x || camera.targetScreenOffset.y !== y) camera.targetScreenOffset.set(x, y);
+}
+
+/**
+ * Keep a guided transition inside the canvas without a per-frame fit solve or
+ * posing ahead. For each current render-bound corner, solve the four frustum
+ * inequalities for radius at the existing target and screen shift. Expand
+ * only; the endpoint glide owns any move inward. No camera work after takeover.
+ */
+export function expandForVisiblePose(
+  camera: ArcRotateCamera, candidates: readonly AbstractMesh[], shift: ScreenShift, aspect: number,
+): void {
+  const { back, right, up } = basis(camera.alpha, camera.beta);
+  const tanV = Math.tan(camera.fov / 2);
+  const tanH = tanV * Math.max(aspect, 0.01);
+  // A composed screen shift is normally well inside these limits. If a new
+  // presentation pose requires an extreme offset, solve that pose directly.
+  if (Math.abs(shift.x) >= COMPOSE_FILL.x || Math.abs(shift.y) >= COMPOSE_FILL.y) {
+    const framing = measureComposed(camera, candidates, aspect);
+    if (framing) applyFraming(camera, framing, shift);
+    return;
+  }
+  let radius = camera.radius;
+  const relative = new Vector3();
+  for (const mesh of candidates) {
+    if (!mesh.isEnabled() || !mesh.isVisible || mesh.visibility <= 0 || mesh.getTotalVertices() === 0) continue;
+    mesh.computeWorldMatrix(true);
+    for (const point of mesh.getBoundingInfo().boundingBox.vectorsWorld) {
+      point.subtractToRef(camera.target, relative);
+      const x = Vector3.Dot(relative, right) / tanH;
+      const y = Vector3.Dot(relative, up) / tanV;
+      const z = Vector3.Dot(relative, back);
+      radius = Math.max(radius, z + camera.minZ,
+        (x + COMPOSE_FILL.x * z) / (COMPOSE_FILL.x - shift.x),
+        (-x + COMPOSE_FILL.x * z) / (COMPOSE_FILL.x + shift.x),
+        (y + COMPOSE_FILL.y * z) / (COMPOSE_FILL.y - shift.y),
+        (-y + COMPOSE_FILL.y * z) / (COMPOSE_FILL.y + shift.y));
+    }
+  }
+  if (radius > camera.radius) {
+    camera.upperRadiusLimit = Math.max(camera.upperRadiusLimit ?? 42, radius);
+    camera.radius = radius;
+  }
 }

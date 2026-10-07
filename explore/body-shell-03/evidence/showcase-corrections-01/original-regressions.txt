@@ -1,0 +1,131 @@
+Original PR13: expected failures against the approved correction contracts.
+
+Stats: {"startTime": "2026-10-07T04:45:06.720Z", "duration": 28997.128, "expected": 0, "skipped": 0, "unexpected": 4, "flaky": 0}
+
+load and FIT share composed framing without changing orbit angles — unexpected
+
+Error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: 10.562749709887276
+Received: 13.750982446637408
+
+Expected precision:    5
+Expected difference: < 0.000005
+Received difference:   3.188232736750132
+
+  123 |     expect(fitted.alpha).toBe(composed.alpha);
+  124 |     expect(fitted.beta).toBe(composed.beta);
+> 125 |     expect(fitted.radius).toBeCloseTo(composed.radius, 5);
+      |                           ^
+  126 |     expect(Math.abs((fitted.minX + fitted.maxX) / 2 - 0.5), "FIT horizontal centre").toBeLessThan(0.02);
+  127 |     expect(Math.abs((fitted.minY + fitted.maxY) / 2 - 0.5), "FIT vertical centre").toBeLessThan(0.02);
+  128 |   }
+    at /Users/cmish/Documents/Codex/2026-10-05/task-4/quarto-pr13-corrections/explore/body-shell-03/tests/showcase-polish.spec.ts:125:27
+
+intro, reverse and scrub stay in the canvas at 390x844 — unexpected
+
+Error: every rendered physical/H1/body corner must fit, including glides
+
+expect(received).toEqual(expected) // deep equality
+
+- Expected  -  1
++ Received  + 47
+
+- Array []
++ Array [
++   Object {
++     "direction": -1,
++     "maxX": 0.9199999840306601,
++     "maxY": 0.6808644849523252,
++     "minX": -0.0028281565959183915,
++     "minY": 0.31419185702197094,
++     "radius": 19.87532977048357,
++     "t": 0.6136429867572942,
++   },
++   Object {
++     "direction": -1,
++     "maxX": 0.9199999840306601,
++     "maxY": 0.6808644849523252,
++     "minX": -0.019196045567347848,
++     "minY": 0.3141918603896788,
++     "radius": 19.87532977048357,
++     "t": 0.6045880353009256,
++   },
++   Object {
++     "direction": -1,
++     "maxX": 0.9199999840306601,
++     "maxY": 0.6808644849523252,
++     "minX": -0.03669660947006076,
++     "minY": 0.3141918631311209,
++     "radius": 19.87532977048357,
++     "t": 0.5946097666323729,
++   },
++   Object {
++     "direction": -1,
++     "maxX": 0.9199999840306601,
++     "maxY": 0.6808644849523252,
++     "minX": -0.05150699259286102,
++     "minY": 0.3141918585212763,
++     "radius": 19.87532977048357,
++     "t": 0.5852214446019397,
++   },
++   Object {
++     "direction": -1,
++     "maxX": 0.9199999840306601,
++     "maxY": 0.6808644849523252,
++     "minX": -0.06503079550170084,
++     "minY": 0.314191858145918,
++     "radius": 19.87532977048357,
++     "t": 0.574823384259259,
++   },
++ ]
+
+  239 |     }
+  240 |     expect(samples.filter(s => s.minX < -0.001 || s.maxX > 1.001 || s.minY < -0.001 || s.maxY > 1.001).slice(0, 5),
+> 241 |       "every rendered physical/H1/body corner must fit, including glides").toEqual([]);
+      |                                                                            ^
+  242 |     expect(await page.evaluate(() => window.__MT1!.getInspectionState().certificate.state)).toBe("STALE");
+  243 |   });
+  244 | }
+    at /Users/cmish/Documents/Codex/2026-10-05/task-4/quarto-pr13-corrections/explore/body-shell-03/tests/showcase-polish.spec.ts:241:76
+
+input pauses intro motion during forward without consuming the gesture — unexpected
+
+Error: mouse
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: false
+Received: true
+
+  268 |       else await page.keyboard.press("b"); // stop intro AND toggle BODY
+  269 |       const paused = await page.evaluate(() => ({ state: window.__MT1!.presentation.getState(), t: window.__MT1!.getMachineT() }));
+> 270 |       expect(paused.state.intro, input).toBe(false); expect(paused.state.automatic, input).toBe(false);
+      |                                                                                            ^
+  271 |       await settleCamera(page, engineUrl); await page.waitForTimeout(1500);
+  272 |       expect(await page.evaluate(() => window.__MT1!.getMachineT()), input).toBe(paused.t);
+  273 |       const after = await readCamera(page, engineUrl);
+    at /Users/cmish/Documents/Codex/2026-10-05/task-4/quarto-pr13-corrections/explore/body-shell-03/tests/showcase-polish.spec.ts:270:92
+
+showcase appearance is limited to normal Hush views in flat — unexpected
+
+Error: hush-basin/false/joint
+
+expect(received).toBeCloseTo(expected, precision)
+
+Expected: 0.162
+Received: 0.213
+
+Expected precision:    8
+Expected difference: < 0.000000005
+Received difference:   0.05099999999999999
+
+  348 |       const expected = polished ? { joint: [0.213, 0.3834, 0.426], rail: baseline.rail.map(x => x * 1.3), folio: [0.1404, 0.5616, 0.5304] } : baseline;
+  349 |       for (const role of ["joint", "rail", "folio"] as const) {
+> 350 |         s[role].diffuse.forEach((v: number, i: number) => expect(v, `${palette}/${study}/${role}`).toBeCloseTo(expected[role][i], 8));
+      |                                                                                                    ^
+  351 |         s[role].specular.forEach((v: number, i: number) => expect(v).toBeCloseTo(expected[role][i] * (role === "folio" ? 0.12 : 0.3), 8));
+  352 |       }
+  353 |       s.folio.emissive.forEach((v: number, i: number) => expect(v).toBeCloseTo((polished ? [0.001904, 0.01088, 0.009792] : [0.002856, 0.01632, 0.014688])[i], 8));
+    at forEach (/Users/cmish/Documents/Codex/2026-10-05/task-4/quarto-pr13-corrections/explore/body-shell-03/tests/showcase-polish.spec.ts:350:100)
+    at /Users/cmish/Documents/Codex/2026-10-05/task-4/quarto-pr13-corrections/explore/body-shell-03/tests/showcase-polish.spec.ts:350:25

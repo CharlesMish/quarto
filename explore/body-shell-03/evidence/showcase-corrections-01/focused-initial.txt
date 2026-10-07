@@ -1,0 +1,65 @@
+
+Running 22 tests using 1 worker
+
+(node:91344) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/22] tests/showcase-polish.spec.ts:52:1 › page identity serves a title, description, link preview and icon
+[2/22] tests/showcase-polish.spec.ts:71:1 › the load-time showing plays SPREAD → DRIVE → SPREAD once without certifying
+[3/22] tests/showcase-polish.spec.ts:90:1 › visitor input ends the showing, and intro=0 or automation keeps the paused start
+[4/22] tests/showcase-polish.spec.ts:111:1 › load and FIT share composed framing without changing orbit angles
+[5/22] tests/showcase-polish.spec.ts:131:1 › playback settling on DRIVE glides to that pose's framing; orbiting opts out
+[6/22] tests/showcase-polish.spec.ts:158:1 › public copy reads as progress and keeps provenance one click away
+[7/22] tests/showcase-polish.spec.ts:213:3 › intro, reverse and scrub stay in the canvas at 320x568
+[8/22] tests/showcase-polish.spec.ts:213:3 › intro, reverse and scrub stay in the canvas at 390x844
+[9/22] tests/showcase-polish.spec.ts:213:3 › intro, reverse and scrub stay in the canvas at 568x320
+[10/22] tests/showcase-polish.spec.ts:213:3 › intro, reverse and scrub stay in the canvas at 768x1024
+[11/22] tests/showcase-polish.spec.ts:213:3 › intro, reverse and scrub stay in the canvas at 799x600
+[12/22] tests/showcase-polish.spec.ts:213:3 › intro, reverse and scrub stay in the canvas at 801x600
+[13/22] tests/showcase-polish.spec.ts:213:3 › intro, reverse and scrub stay in the canvas at 844x390
+[14/22] tests/showcase-polish.spec.ts:213:3 › intro, reverse and scrub stay in the canvas at 1280x720
+[15/22] tests/showcase-polish.spec.ts:247:3 › input pauses intro motion during wait without consuming the gesture
+[16/22] tests/showcase-polish.spec.ts:247:3 › input pauses intro motion during forward without consuming the gesture
+[17/22] tests/showcase-polish.spec.ts:247:3 › input pauses intro motion during hold without consuming the gesture
+[18/22] tests/showcase-polish.spec.ts:247:3 › input pauses intro motion during back without consuming the gesture
+[19/22] tests/showcase-polish.spec.ts:280:1 › intro takeover preserves PAUSE, PLAY, reverse, FIT and slider command intent
+  1) tests/showcase-polish.spec.ts:280:1 › intro takeover preserves PAUSE, PLAY, reverse, FIT and slider command intent
+
+    Error: expect(received).toMatchObject(expected)
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+    -   "automatic": true,
+    +   "automatic": false,
+        "intro": false,
+      }
+
+      305 |   }
+      306 |   await ready(page, "?intro=1&lighting=flat"); await page.locator("#autoBtn").click();
+    > 307 |   expect(await page.evaluate(() => window.__MT1!.presentation.getState())).toMatchObject({ intro: false, automatic: true });
+          |                                                                            ^
+      308 | });
+      309 |
+      310 | for (const tier of ["flat", "lite", "studio"] as const) {
+        at /Users/cmish/Documents/Codex/2026-10-05/task-4/quarto-pr13-corrections/explore/body-shell-03/tests/showcase-polish.spec.ts:307:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/showcase-polish-intro-take-f7c6f-T-and-slider-command-intent/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/showcase-polish-intro-take-f7c6f-T-and-slider-command-intent/error-context.md
+
+
+(node:91936) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[20/22] tests/showcase-polish.spec.ts:311:3 › showcase appearance is limited to normal Hush views in flat
+[21/22] tests/showcase-polish.spec.ts:311:3 › showcase appearance is limited to normal Hush views in lite
+[22/22] tests/showcase-polish.spec.ts:311:3 › showcase appearance is limited to normal Hush views in studio
+  1 failed
+    tests/showcase-polish.spec.ts:280:1 › intro takeover preserves PAUSE, PLAY, reverse, FIT and slider command intent
+  21 passed (5.3m)

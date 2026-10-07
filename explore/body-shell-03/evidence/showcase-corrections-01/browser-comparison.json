@@ -1,0 +1,7008 @@
+{
+  "reviewedBase": "87b544b82f6d537208f14ed3235a55180d968e4c",
+  "candidateParent": "87b544b82f6d537208f14ed3235a55180d968e4c",
+  "sourceFiles": {
+    "scene/createScene.ts": "f69aa66ec93305777eed6b600bc40a04f25268e8ed3067776c91d633d96c25be",
+    "presentation/frameVehicle.ts": "9e04d5d7e1a4cab9c6ad353de8567fca9de9b972947ae98f74a9b23e927d1e2a",
+    "presentation/palette.ts": "d4f6127ce3ea9559664b0e0bad9e23849cf55de03ec21874db1e05760c610755",
+    "presentation/lighting.ts": "3c2c62ff52f4afa480977f81f2e16e7f3b7f6a7529f792b552c7d86d6f16dafd"
+  },
+  "browser": "151.0.7922.34",
+  "method": "Installed default Playwright Chromium; isolated contexts; no owner profile or executable/launch overrides. Touch is emulated, not physical-phone evidence.",
+  "urls": {
+    "base": "http://127.0.0.1:5193",
+    "candidate": "http://127.0.0.1:5194"
+  },
+  "framing": [
+    {
+      "kind": "base",
+      "name": "desktop",
+      "load": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.16126456682184226,
+          "maxX": 0.8379011184281877,
+          "minY": 0.11999998882172568,
+          "maxY": 0.8799999526085137
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 10.562749709887276,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 69,
+          "width": 1280,
+          "height": 473,
+          "top": 69,
+          "right": 1280,
+          "bottom": 542,
+          "left": 0
+        }
+      },
+      "fit": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.2570003994501603,
+          "maxX": 0.7429995632304545,
+          "minY": 0.21701077013562783,
+          "maxY": 0.7829892483690292
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 13.750982446637408,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 69,
+          "width": 1280,
+          "height": 473,
+          "top": 69,
+          "right": 1280,
+          "bottom": 542,
+          "left": 0
+        }
+      },
+      "drive": {
+        "t": 1,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 1,
+          "driveT": 1,
+          "requestedDriveT": 1,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.27114375695070153,
+          "maxX": 0.7168516626967122,
+          "minY": 0.11999999540502398,
+          "maxY": 0.8738673665371003
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 9.782961185326732,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 69,
+          "width": 1280,
+          "height": 473,
+          "top": 69,
+          "right": 1280,
+          "bottom": 542,
+          "left": 0
+        }
+      },
+      "unfolding": {
+        "t": 0.12,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.12,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": -0.0809713381727442,
+          "maxX": 0.7558050228508504,
+          "minY": 0.09997184902644249,
+          "maxY": 1.1500764558747558
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 9.782961185326732,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 69,
+          "width": 1280,
+          "height": 473,
+          "top": 69,
+          "right": 1280,
+          "bottom": 542,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "name": "desktop",
+      "load": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.16126456682184226,
+          "maxX": 0.8379011184281877,
+          "minY": 0.11999998882172568,
+          "maxY": 0.8799999526085137
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 10.562749709887276,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 69,
+          "width": 1280,
+          "height": 473,
+          "top": 69,
+          "right": 1280,
+          "bottom": 542,
+          "left": 0
+        }
+      },
+      "fit": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.16126456682184226,
+          "maxX": 0.8379011184281877,
+          "minY": 0.11999998882172568,
+          "maxY": 0.8799999526085137
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 10.562749709887276,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 69,
+          "width": 1280,
+          "height": 473,
+          "top": 69,
+          "right": 1280,
+          "bottom": 542,
+          "left": 0
+        }
+      },
+      "drive": {
+        "t": 1,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 1,
+          "driveT": 1,
+          "requestedDriveT": 1,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.27114375695070153,
+          "maxX": 0.7168516626967122,
+          "minY": 0.11999999540502398,
+          "maxY": 0.8738673665371003
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 9.782961185326732,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 69,
+          "width": 1280,
+          "height": 473,
+          "top": 69,
+          "right": 1280,
+          "bottom": 542,
+          "left": 0
+        }
+      },
+      "unfolding": {
+        "t": 0.12,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.12,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.07999996854325976,
+          "maxX": 0.6943127865889901,
+          "minY": 0.1315639448844002,
+          "maxY": 0.8268709759210433
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 11.95583335362462,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 69,
+          "width": 1280,
+          "height": 473,
+          "top": 69,
+          "right": 1280,
+          "bottom": 542,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "name": "portrait",
+      "load": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.08000000761028865,
+          "maxX": 0.9199999654623326,
+          "minY": 0.36371805495396703,
+          "maxY": 0.6346498169957587
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "fit": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.09702526737600761,
+          "maxX": 0.9029746861352497,
+          "minY": 0.36875223357597836,
+          "maxY": 0.6296821018440899
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 29.861646343837744,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "drive": {
+        "t": 1,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 1,
+          "driveT": 1,
+          "requestedDriveT": 1,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.08000000906145278,
+          "maxX": 0.9114713642788412,
+          "minY": 0.3191355190449004,
+          "maxY": 0.6783771789949343
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 19.87532977048357,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "unfolding": {
+        "t": 0.12,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.12,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": -0.20716042046051078,
+          "maxX": 1.0616326291078573,
+          "minY": 0.2932730927812746,
+          "maxY": 0.7083753578531455
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 19.87532977048357,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "name": "portrait",
+      "load": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.08000000761028865,
+          "maxX": 0.9199999654623326,
+          "minY": 0.36371805495396703,
+          "maxY": 0.6346498169957587
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "fit": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.08000000761028865,
+          "maxX": 0.9199999654623326,
+          "minY": 0.36371805495396703,
+          "maxY": 0.6346498169957587
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "drive": {
+        "t": 1,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 1,
+          "driveT": 1,
+          "requestedDriveT": 1,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.08000000906145278,
+          "maxX": 0.9114713642788412,
+          "minY": 0.3191355190449004,
+          "maxY": 0.6783771789949343
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 19.87532977048357,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "unfolding": {
+        "t": 0.12,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.12,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.08000002771589233,
+          "maxX": 0.7973661235340677,
+          "minY": 0.34975009036728166,
+          "maxY": 0.5799634264125216
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 33.33341689608076,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "name": "landscape",
+      "load": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.30233108171760054,
+          "maxX": 0.6971820179968289,
+          "minY": 0.11999999737555479,
+          "maxY": 0.8799999955304473
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 10.562749709887276,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 50,
+          "width": 844,
+          "height": 182,
+          "top": 50,
+          "right": 844,
+          "bottom": 232,
+          "left": 0
+        }
+      },
+      "fit": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.35819770003901913,
+          "maxX": 0.641802299595145,
+          "minY": 0.21701078051906358,
+          "maxY": 0.7829892319684156
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 13.750982446637408,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 50,
+          "width": 844,
+          "height": 182,
+          "top": 50,
+          "right": 844,
+          "bottom": 232,
+          "left": 0
+        }
+      },
+      "drive": {
+        "t": 1,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 1,
+          "driveT": 1,
+          "requestedDriveT": 1,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.36645103388825606,
+          "maxX": 0.6265436754797012,
+          "minY": 0.11999998239289887,
+          "maxY": 0.8738673508854099
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 9.782961185326732,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 50,
+          "width": 844,
+          "height": 182,
+          "top": 50,
+          "right": 844,
+          "bottom": 232,
+          "left": 0
+        }
+      },
+      "unfolding": {
+        "t": 0.12,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.12,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.16097442540852172,
+          "maxX": 0.6492748871820043,
+          "minY": 0.09997184792240225,
+          "maxY": 1.1500763795925077
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 9.782961185326732,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 50,
+          "width": 844,
+          "height": 182,
+          "top": 50,
+          "right": 844,
+          "bottom": 232,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "name": "landscape",
+      "load": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.30233108171760054,
+          "maxX": 0.6971820179968289,
+          "minY": 0.11999999737555479,
+          "maxY": 0.8799999955304473
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 10.562749709887276,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 50,
+          "width": 844,
+          "height": 182,
+          "top": 50,
+          "right": 844,
+          "bottom": 232,
+          "left": 0
+        }
+      },
+      "fit": {
+        "t": 0,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.30233108171760054,
+          "maxX": 0.6971820179968289,
+          "minY": 0.11999999737555479,
+          "maxY": 0.8799999955304473
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 10.562749709887276,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 50,
+          "width": 844,
+          "height": 182,
+          "top": 50,
+          "right": 844,
+          "bottom": 232,
+          "left": 0
+        }
+      },
+      "drive": {
+        "t": 1,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 1,
+          "driveT": 1,
+          "requestedDriveT": 1,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.36645103388825606,
+          "maxX": 0.6265436754797012,
+          "minY": 0.11999998239289887,
+          "maxY": 0.8738673508854099
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 9.782961185326732,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 50,
+          "width": 844,
+          "height": 182,
+          "top": 50,
+          "right": 844,
+          "bottom": 232,
+          "left": 0
+        }
+      },
+      "unfolding": {
+        "t": 0.12,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.12,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.23945070646725264,
+          "maxX": 0.621084315378147,
+          "minY": 0.12445763721005138,
+          "maxY": 0.8800000157414144
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 11.41051103204924,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 50,
+          "width": 844,
+          "height": 182,
+          "top": 50,
+          "right": 844,
+          "bottom": 232,
+          "left": 0
+        }
+      },
+      "errors": []
+    }
+  ],
+  "intro": [
+    {
+      "kind": "base",
+      "name": "desktop",
+      "sample": {
+        "t": 0.12293857476135275,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.12293857476135275,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": -0.0809713381727442,
+          "maxX": 0.7536657040180732,
+          "minY": 0.09997184902644249,
+          "maxY": 1.1648244616051122
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 9.782961185326732,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 69,
+          "width": 1280,
+          "height": 473,
+          "top": 69,
+          "right": 1280,
+          "bottom": 542,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "name": "desktop",
+      "sample": {
+        "t": 0.1287881972624015,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.1287881972624015,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.07999996854325976,
+          "maxX": 0.6887319856982883,
+          "minY": 0.1315639448844002,
+          "maxY": 0.860977100972661
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 11.95583335362462,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 69,
+          "width": 1280,
+          "height": 473,
+          "top": 69,
+          "right": 1280,
+          "bottom": 542,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "name": "portrait",
+      "sample": {
+        "t": 0.1219431106851854,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.1219431106851854,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": -0.20716042046051078,
+          "maxX": 1.0592200353922685,
+          "minY": 0.2932730927812746,
+          "maxY": 0.7120863420857747
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 19.87532977048357,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "name": "portrait",
+      "sample": {
+        "t": 0.12513766399999984,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.12513766399999984,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.08003286394621738,
+          "maxX": 0.7934016768318448,
+          "minY": 0.3497578401388674,
+          "maxY": 0.5853650085880796
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 33.33628876227291,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "name": "landscape",
+      "sample": {
+        "t": 0.12284775131481393,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.12284775131481393,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.16097442540852172,
+          "maxX": 0.6480669201602465,
+          "minY": 0.09997184792240225,
+          "maxY": 1.1644248405127082
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 9.782961185326732,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 50,
+          "width": 844,
+          "height": 182,
+          "top": 50,
+          "right": 844,
+          "bottom": 232,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "name": "landscape",
+      "sample": {
+        "t": 0.12822052259097128,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.12822052259097128,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.2535524816638038,
+          "maxX": 0.6110557053349962,
+          "minY": 0.13091717282241608,
+          "maxY": 0.8639885291951542
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 11.904638658151585,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 50,
+          "width": 844,
+          "height": 182,
+          "top": 50,
+          "right": 844,
+          "bottom": 232,
+          "left": 0
+        }
+      },
+      "errors": []
+    }
+  ],
+  "takeover": [
+    {
+      "kind": "base",
+      "input": "wheel",
+      "before": {
+        "t": 0.24232175022498953,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": true,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.24232175022498953,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.19639927358508702,
+          "maxX": 0.8669643756155505,
+          "minY": 0.3816782111700912,
+          "maxY": 0.6346498169957587
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "after": {
+        "t": 0.3418427273267483,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.3418427273267483,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20675562408952713,
+          "maxX": 0.8186405448987141,
+          "minY": 0.38193220318692234,
+          "maxY": 0.6341545188108402
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.831430421326814,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "later": {
+        "t": 0.6040144746584636,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.6040144746584636,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.16843556791529113,
+          "maxX": 0.7942026783602604,
+          "minY": 0.38248838500075627,
+          "maxY": 0.6335637625532653
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.929833003283147,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "input": "touch",
+      "before": {
+        "t": 0.2378936319544343,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": true,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.2378936319544343,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.19481190890179076,
+          "maxX": 0.8669643756155505,
+          "minY": 0.3816782111700912,
+          "maxY": 0.6346498169957587
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "after": {
+        "t": 0.3544569857317353,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.3544569857317353,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20119092262335006,
+          "maxX": 0.8160340091807484,
+          "minY": 0.3785753333752168,
+          "maxY": 0.6257269784994091
+        },
+        "camera": {
+          "alpha": 0.6888747536000001,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "later": {
+        "t": 0.6259476638337966,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.6259476638337966,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.1854764800294724,
+          "maxX": 0.8232506852359057,
+          "minY": 0.3843096681280772,
+          "maxY": 0.6192041528097754
+        },
+        "camera": {
+          "alpha": 0.6261043267916314,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "input": "key",
+      "before": {
+        "t": 0.2478439437492138,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": true,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.2478439437492138,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.1984771164104229,
+          "maxX": 0.8669643756155505,
+          "minY": 0.3816782111700912,
+          "maxY": 0.6346498169957587
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "after": {
+        "t": 0.34,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.34,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20597803767434222,
+          "maxX": 0.8218794044017632,
+          "minY": 0.3816782111700912,
+          "maxY": 0.6346498169957587
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "later": {
+        "t": 0.5765751057075378,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.5765751057075378,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.1410068280316674,
+          "maxX": 0.7965465303252328,
+          "minY": 0.38191328088474136,
+          "maxY": 0.6346498169957587
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "input": "space",
+      "before": {
+        "t": 0.241419679408865,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": true,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.241419679408865,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.19606795629768503,
+          "maxX": 0.8669643756155505,
+          "minY": 0.3816782111700912,
+          "maxY": 0.6346498169957587
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "after": {
+        "t": 0.3237276295718825,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.3237276295718825,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20597803767434222,
+          "maxX": 0.8392469850932903,
+          "minY": 0.3816782111700912,
+          "maxY": 0.6346498169957587
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "later": {
+        "t": 0.3237276295718825,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.3237276295718825,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20597803767434222,
+          "maxX": 0.8392469850932903,
+          "minY": 0.3816782111700912,
+          "maxY": 0.6346498169957587
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.749528421326815,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "input": "wheel",
+      "before": {
+        "t": 0.24676306077742455,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": true,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.24676306077742455,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.19809137586481423,
+          "maxX": 0.8669286928360823,
+          "minY": 0.3816859892451625,
+          "maxY": 0.6346351300937445
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.751951647182878,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "after": {
+        "t": 0.34,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.34,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20682041035680718,
+          "maxX": 0.820812706891014,
+          "minY": 0.3819484523011314,
+          "maxY": 0.634139927958319
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.833853647182877,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "later": {
+        "t": 0.34,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.34,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.2077965158666788,
+          "maxX": 0.8195760012520765,
+          "minY": 0.38226200430457224,
+          "maxY": 0.6335492668204814
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.93225622913921,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "input": "touch",
+      "before": {
+        "t": 0.2445470332056225,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": true,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.2445470332056225,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.1972497240934264,
+          "maxX": 0.8669344534508395,
+          "minY": 0.3816847283680013,
+          "maxY": 0.6346375347402826
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.75155824199267,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "after": {
+        "t": 0.3354001587081514,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.3354001587081514,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20120742841689365,
+          "maxX": 0.8224068685807041,
+          "minY": 0.37902382110865346,
+          "maxY": 0.6257155270649388
+        },
+        "camera": {
+          "alpha": 0.6888747536000001,
+          "beta": 1.14,
+          "radius": 28.75155824199267,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "later": {
+        "t": 0.3354001587081514,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.3354001587081514,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.1868428377050187,
+          "maxX": 0.823222739041611,
+          "minY": 0.3774396818816099,
+          "maxY": 0.6191933321069182
+        },
+        "camera": {
+          "alpha": 0.6261043267916314,
+          "beta": 1.14,
+          "radius": 28.75155824199267,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "input": "key",
+      "before": {
+        "t": 0.24530249489148848,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": true,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.24530249489148848,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.1975476168529257,
+          "maxX": 0.8669154889351817,
+          "minY": 0.38168887126487555,
+          "maxY": 0.6346296805332619
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.752846568781877,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "after": {
+        "t": 0.32117979589843754,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.32117979589843754,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20601129358468934,
+          "maxX": 0.8415389304995254,
+          "minY": 0.38168887126487555,
+          "maxY": 0.6346296805332619
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.752846568781877,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "later": {
+        "t": 0.32117979589843754,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.32117979589843754,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20601129358468934,
+          "maxX": 0.8415389304995254,
+          "minY": 0.38168887126487555,
+          "maxY": 0.6346296805332619
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.752846568781877,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "input": "space",
+      "before": {
+        "t": 0.26046802813740216,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": true,
+          "direction": 1,
+          "playback": "show",
+          "intro": true,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.26046802813740216,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20310832519265873,
+          "maxX": 0.8669551043943229,
+          "minY": 0.38167993583573784,
+          "maxY": 0.634646563599101
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.75006872721117,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "after": {
+        "t": 0.3381691263243672,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.3381691263243672,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20598342884119875,
+          "maxX": 0.8240234607619326,
+          "minY": 0.38167993583573784,
+          "maxY": 0.634646563599101
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.75006872721117,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "later": {
+        "t": 0.3381691263243672,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": 1,
+          "playback": "show",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "inspection": {
+          "candidateId": "MT1-S5HR3R1",
+          "machineT": 0.3381691263243672,
+          "driveT": 0,
+          "requestedDriveT": 0,
+          "mode": "MACHINE",
+          "preview": false,
+          "driveThrustReadyCached": false,
+          "certificate": {
+            "state": "STALE",
+            "present": false,
+            "valid": false,
+            "samples": null,
+            "pairsEvaluated": null
+          }
+        },
+        "bounds": {
+          "minX": 0.20598342884119875,
+          "maxX": 0.8240234607619326,
+          "minY": 0.38167993583573784,
+          "maxY": 0.634646563599101
+        },
+        "camera": {
+          "alpha": 0.78,
+          "beta": 1.14,
+          "radius": 28.75006872721117,
+          "target": [
+            0,
+            1.4774999435245992,
+            -1.0599998569488527
+          ],
+          "pan": 150,
+          "pinch": 15,
+          "wheel": 50
+        },
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+        "canvas": {
+          "x": 0,
+          "y": 47,
+          "width": 390,
+          "height": 579,
+          "top": 47,
+          "right": 390,
+          "bottom": 626,
+          "left": 0
+        }
+      },
+      "errors": []
+    }
+  ],
+  "appearance": [
+    {
+      "kind": "base",
+      "tier": "flat",
+      "palette": "hush-basin",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "flat",
+        "studyView": false,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_984_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_977_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "tier": "flat",
+      "palette": "hush-basin",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "flat",
+        "studyView": false,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_984_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_977_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "tier": "flat",
+      "palette": "accepted",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "flat",
+        "studyView": false,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_984_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_977_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "tier": "flat",
+      "palette": "accepted",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "flat",
+        "studyView": false,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_984_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_977_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "tier": "lite",
+      "palette": "hush-basin",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "lite",
+        "studyView": false,
+        "shadows": true,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.4675,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.8624999999999999,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "tier": "lite",
+      "palette": "hush-basin",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "lite",
+        "studyView": true,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "tier": "lite",
+      "palette": "accepted",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "lite",
+        "studyView": false,
+        "shadows": true,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.4675,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.8624999999999999,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "tier": "lite",
+      "palette": "accepted",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "lite",
+        "studyView": true,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "tier": "studio",
+      "palette": "hush-basin",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "studio",
+        "studyView": false,
+        "shadows": true,
+        "ambientOcclusion": true
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.4675,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.8624999999999999,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "tier": "studio",
+      "palette": "hush-basin",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "studio",
+        "studyView": true,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "tier": "studio",
+      "palette": "accepted",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "studio",
+        "studyView": false,
+        "shadows": true,
+        "ambientOcclusion": true
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.4675,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.8624999999999999,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "base",
+      "tier": "studio",
+      "palette": "accepted",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "studio",
+        "studyView": true,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "flat",
+      "palette": "hush-basin",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "flat",
+        "studyView": false,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_984_folio",
+          "diffuse": [
+            0.1548,
+            0.6192,
+            0.5848
+          ],
+          "emissive": [
+            0.0028560000000000005,
+            0.01632,
+            0.014688
+          ],
+          "specular": [
+            0.018576,
+            0.074304,
+            0.070176
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_977_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "flat",
+      "palette": "hush-basin",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "flat",
+        "studyView": false,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_984_folio",
+          "diffuse": [
+            0.1548,
+            0.6192,
+            0.5848
+          ],
+          "emissive": [
+            0.0028560000000000005,
+            0.01632,
+            0.014688
+          ],
+          "specular": [
+            0.018576,
+            0.074304,
+            0.070176
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_977_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "flat",
+      "palette": "accepted",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "flat",
+        "studyView": false,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_984_folio",
+          "diffuse": [
+            0.1548,
+            0.6192,
+            0.5848
+          ],
+          "emissive": [
+            0.0028560000000000005,
+            0.01632,
+            0.014688
+          ],
+          "specular": [
+            0.018576,
+            0.074304,
+            0.070176
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_977_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "flat",
+      "palette": "accepted",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "flat",
+        "studyView": false,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_984_folio",
+          "diffuse": [
+            0.1548,
+            0.6192,
+            0.5848
+          ],
+          "emissive": [
+            0.0028560000000000005,
+            0.01632,
+            0.014688
+          ],
+          "specular": [
+            0.018576,
+            0.074304,
+            0.070176
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_977_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "lite",
+      "palette": "hush-basin",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "lite",
+        "studyView": false,
+        "shadows": true,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.25688,
+            0.5803200000000001,
+            0.5902000000000001
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.077064,
+            0.174096,
+            0.17706000000000002
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.4675,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.8624999999999999,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "lite",
+      "palette": "hush-basin",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "lite",
+        "studyView": true,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1548,
+            0.6192,
+            0.5848
+          ],
+          "emissive": [
+            0.0028560000000000005,
+            0.01632,
+            0.014688
+          ],
+          "specular": [
+            0.018576,
+            0.074304,
+            0.070176
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "lite",
+      "palette": "accepted",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "lite",
+        "studyView": false,
+        "shadows": true,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1548,
+            0.6192,
+            0.5848
+          ],
+          "emissive": [
+            0.0028560000000000005,
+            0.01632,
+            0.014688
+          ],
+          "specular": [
+            0.018576,
+            0.074304,
+            0.070176
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "lite",
+      "palette": "accepted",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "lite",
+        "studyView": true,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1548,
+            0.6192,
+            0.5848
+          ],
+          "emissive": [
+            0.0028560000000000005,
+            0.01632,
+            0.014688
+          ],
+          "specular": [
+            0.018576,
+            0.074304,
+            0.070176
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "studio",
+      "palette": "hush-basin",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "studio",
+        "studyView": false,
+        "shadows": true,
+        "ambientOcclusion": true
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.25688,
+            0.5803200000000001,
+            0.5902000000000001
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.077064,
+            0.174096,
+            0.17706000000000002
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1404,
+            0.5616,
+            0.5304000000000001
+          ],
+          "emissive": [
+            0.0019040000000000003,
+            0.01088,
+            0.009792
+          ],
+          "specular": [
+            0.016848,
+            0.067392,
+            0.06364800000000001
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.213,
+            0.3834,
+            0.426
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0639,
+            0.11502,
+            0.1278
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.4675,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.8624999999999999,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "studio",
+      "palette": "hush-basin",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "studio",
+        "studyView": true,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1548,
+            0.6192,
+            0.5848
+          ],
+          "emissive": [
+            0.0028560000000000005,
+            0.01632,
+            0.014688
+          ],
+          "specular": [
+            0.018576,
+            0.074304,
+            0.070176
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "studio",
+      "palette": "accepted",
+      "requestedStudy": false,
+      "lighting": {
+        "tier": "studio",
+        "studyView": false,
+        "shadows": true,
+        "ambientOcclusion": true
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1548,
+            0.6192,
+            0.5848
+          ],
+          "emissive": [
+            0.0028560000000000005,
+            0.01632,
+            0.014688
+          ],
+          "specular": [
+            0.018576,
+            0.074304,
+            0.070176
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "kind": "candidate",
+      "tier": "studio",
+      "palette": "accepted",
+      "requestedStudy": true,
+      "lighting": {
+        "tier": "studio",
+        "studyView": true,
+        "shadows": false,
+        "ambientOcclusion": false
+      },
+      "materials": [
+        {
+          "name": "matVane",
+          "diffuse": [
+            0.78,
+            0.76,
+            0.68
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.1404,
+            0.1368,
+            0.12240000000000001
+          ]
+        },
+        {
+          "name": "matMech",
+          "diffuse": [
+            0.55,
+            0.56,
+            0.58
+          ],
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "specular": [
+            0.22000000000000003,
+            0.22400000000000003,
+            0.23199999999999998
+          ]
+        },
+        {
+          "name": "matRail",
+          "diffuse": [
+            0.72,
+            0.55,
+            0.22
+          ],
+          "emissive": [
+            0.12,
+            0.07,
+            0
+          ],
+          "specular": [
+            0.1296,
+            0.099,
+            0.039599999999999996
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_9_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_10_rail",
+          "diffuse": [
+            0.1976,
+            0.4464,
+            0.454
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.05928,
+            0.13392,
+            0.1362
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_903_folio",
+          "diffuse": [
+            0.1548,
+            0.6192,
+            0.5848
+          ],
+          "emissive": [
+            0.0028560000000000005,
+            0.01632,
+            0.014688
+          ],
+          "specular": [
+            0.018576,
+            0.074304,
+            0.070176
+          ]
+        },
+        {
+          "name": "QUARTO_HUSH_896_joint",
+          "diffuse": [
+            0.162,
+            0.2916,
+            0.324
+          ],
+          "emissive": [
+            0.00252,
+            0.005600000000000001,
+            0.0063
+          ],
+          "specular": [
+            0.0486,
+            0.08748,
+            0.0972
+          ]
+        }
+      ],
+      "lights": [
+        {
+          "name": "hemi",
+          "intensity": 0.55,
+          "enabled": true
+        },
+        {
+          "name": "sun",
+          "intensity": 0.75,
+          "enabled": true
+        },
+        {
+          "name": "presentationRim",
+          "intensity": 0.32,
+          "enabled": false
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

@@ -47,7 +47,7 @@ test("pinch and wheel zoom are about 20% gentler across direction, distance and 
         for (const { kind, direction } of traces) {
           await page.reload();
           await page.waitForFunction(() => Boolean(window.__MT1?.presentation));
-          await resetGesture(page, engineUrl, profile);
+          const composedFit = await resetGesture(page, engineUrl, profile, true);
           await page.evaluate(async ({ url, factor }) => {
             const { Engine } = await import(url);
             Engine.LastCreatedScene.activeCamera.radius *= factor;
@@ -101,15 +101,17 @@ test("pinch and wheel zoom are about 20% gentler across direction, distance and 
             await page.getByRole("button", { name: "FIT", exact: true }).click();
             await settleCamera(page, engineUrl);
             const fitted = await readCamera(page, engineUrl);
-            expect(fitted.radius).toBeCloseTo(before.radius, 5);
-            expect(fitted.target).toEqual(before.target);
+            // Public FIT now composes; response traces above still use the
+            // immutable historical distance and gain references.
+            expect(fitted.radius).toBeCloseTo(composedFit.radius, 5);
+            expect(fitted.target).toEqual(composedFit.target);
           }
         }
       }
     }
     // Actual inputs still stop at the original minimum and maximum radius.
     for (const edge of ["lower", "upper"] as const) {
-      await resetGesture(page, engineUrl, "show");
+      await resetGesture(page, engineUrl, "show", true);
       await page.evaluate(async ({ url, edge }) => {
         const { Engine } = await import(url);
         Engine.LastCreatedScene.activeCamera.radius = edge === "lower" ? 0.1 : 41.9;
