@@ -110,14 +110,17 @@ export function createUI(root: HTMLElement, actions: UIActions): PresentationUI 
       <h3>Handover poses</h3><div class="button-grid"><button id="propStowedBtn">PROP STOWED</button><button id="propMidBtn">PROP MID</button><button id="propSeatedBtn">PROP SEATED</button><button id="propReleasedBtn">PROP RELEASED</button></div>
       <h3>Machine inspection poses · keys 1–9</h3><div class="presets">${MACHINE_PRESETS.map(t => `<button data-machine="${t}">${t.toFixed(2)}</button>`).join("")}</div>`;
     if (id === "diagnostics") return `<p class="panel-note">Show readiness, local stages and datum axes for the current pose.</p><button id="debugBtn" aria-pressed="false">DEBUG</button>`;
-    if (id === "folios") return `<p class="panel-note">Individual folio (legacy/source: book) controls are <strong>noncanonical previews</strong>. Move the machine slider to return to the complete transformation.</p>
+    if (id === "folios") return `<p class="panel-note">Move the front or rear folios on their own. These previews sit <strong>outside the full sequence</strong>; move the main slider to return to it.</p>
       <label class="preview-label" for="frontSlider">Front folios · preview</label><input id="frontSlider" type="range" min="0" max="1" value="0" step="0.001" />
       <label class="preview-label" for="slider">Rear folios · preview</label><input id="slider" type="range" min="0" max="1" value="0" step="0.001" />`;
     return `<p class="panel-note">Orbit by dragging, pan with a right-drag and zoom with the wheel. Use FIT to frame the whole machine. Show is the default playback speed (about four seconds). Choose Inspect for slower study or Game for a quick transformation.</p>
       <p class="help">SPACE play/pause · R reset camera · D debug · S section · B body · 1–9 machine poses · ESC close a panel</p>
-      <h3>Presentation and provenance</h3><p>BODY ON combines the solid ${BODY_CONCEPT_INFO.surfaceRevision} surfaces with ${BODY_CONCEPT_INFO.stationRevision} receiving shoulders. BODY SECTION opens one side; PROP SECTION ghosts the aft shell for inspection. BODY OFF exposes the frozen inspectable mechanism. Both color palettes use the same repaired shell.</p>
-      <p class="eyebrow">${BODY_CONCEPT_INFO.conceptId} / ${BODY_CONCEPT_INFO.status}</p><p class="provenance">SOURCE ${MT1_BUILD_INFO.candidateId} · ARCHIVE ${MT1_BUILD_INFO.candidateSha256.slice(0, 12)}… · ${BODY_CONCEPT_INFO.scope}</p>
-      <p class="panel-note">H1 remains awaiting director disposition. Hush Basin is the Godot gameplay realization, with its own simplified native vehicle.</p>`;
+      <h3>Body and mechanism</h3><p>BODY ON shows the presentation shell. BODY OFF exposes the mechanism underneath. BODY SECTION opens one side, and PROP SECTION ghosts the aft shell so you can follow the stern handover. Hush Basin, the Godot game built around Quarto, uses its own simplified version of this vehicle.</p>
+      <details class="provenance-details"><summary>Provenance</summary>
+        <p>BODY ON combines the solid ${BODY_CONCEPT_INFO.surfaceRevision} surfaces with ${BODY_CONCEPT_INFO.stationRevision} receiving shoulders. Both color palettes use the same repaired shell. The shell is presentation only; BODY OFF is the frozen inspectable mechanism.</p>
+        <p class="eyebrow">${BODY_CONCEPT_INFO.conceptId} / ${BODY_CONCEPT_INFO.status}</p><p class="provenance">SOURCE ${MT1_BUILD_INFO.candidateId} · ARCHIVE ${MT1_BUILD_INFO.candidateSha256.slice(0, 12)}… · ${BODY_CONCEPT_INFO.scope}</p>
+        <p class="panel-note">H1 remains awaiting director disposition.</p>
+      </details>`;
   }
 
   const element = <T extends HTMLElement>(selector: string): T => root.querySelector<T>(selector)!;
@@ -320,7 +323,11 @@ export function createUI(root: HTMLElement, actions: UIActions): PresentationUI 
       const phaseLabel = preview ? nextMode : machinePhase(value);
       setText(stateName, phaseLabel.replaceAll("_", " "));
       if (stateName.classList.contains("preview-state") !== preview) stateName.classList.toggle("preview-state", preview);
-      setText(stateValue, `MACHINE ${value.toFixed(3)} · MODE ${nextMode}`);
+      // Previews keep their raw mode visible; the canonical sequence reads as
+      // progress. The exact value and mode stay available as a tooltip.
+      setText(stateValue, preview ? `MACHINE ${value.toFixed(3)} · MODE ${nextMode}` : `SPREAD → DRIVE · ${Math.round(value * 100)}%`);
+      const exact = `Machine ${value.toFixed(3)} · mode ${nextMode}`;
+      if (stateValue.title !== exact) stateValue.title = exact;
       setText(autoBtn, automatic ? "PAUSE ■" : "PLAY ▶");
       for (const button of machineButtons) setPressed(button, Math.abs(Number(button.dataset.machine) - value) < 0.005);
     },

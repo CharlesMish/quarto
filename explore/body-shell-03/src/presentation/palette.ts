@@ -67,13 +67,17 @@ export function createPresentationPalette(scene: Scene): PresentationPalette {
     shell: appearance("shell", 1.03, 0.55, 0.16),
     accent: appearance("shell", 0.9, 0.4, 0.13),
     carry: appearance("joint", 1, 0.5, 0.2),
-    joint: appearance("joint", 1.08, 0.5, 0.3),
-    rail: appearance("joint", 1, 0.5, 0.3),
+    // Roots, catches and rails sit a step lighter than the hull so the moving
+    // hardware reads against the shell (showcase pass; hue unchanged).
+    joint: appearance("joint", 1.42, 0.5, 0.3),
+    rail: appearance("joint", 1.3, 0.5, 0.3),
     // FO1's recess must remain darker than its surrounding frame in either
     // palette. Keep the Hush Basin structural hue, without the old mint mix.
     pocket: appearance("structure", 0.65, 0.25, 0.1),
     // Large faces must retain a shaded midtone; mint is reserved for small parts.
-    folio: appearance("lift", 0.86, 0.12, 0.12),
+    // Held below the lit hardware's brightness so the folio slabs stop
+    // dominating the frame and their facets keep visible shading.
+    folio: appearance("lift", 0.78, 0.08, 0.12),
     underside: appearance("lift_underlay", 0.96, 0.08, 0.14),
     lock: appearance("lift_edge", 0.78, 0.3, 0.15),
     can: appearance("can", 0.8, 0.15, 0.24),

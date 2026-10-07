@@ -11,7 +11,8 @@ export interface PresentationState {
 }
 
 export interface PresentationHooks {
-  getState(): PresentationState & { viewerId: "QUARTO-VIEWER-01" };
+  /** `intro` is true while the load-time showing is pending or running. */
+  getState(): PresentationState & { intro: boolean; viewerId: "QUARTO-VIEWER-01" };
   setPalette(value: PresentationPalette): void;
   setTourStep(value: number | null): void;
   fitCamera(): void;

@@ -43,7 +43,7 @@ import { createH1Presentation } from "./h1Presentation";
 import { createBodyShellConcept } from "./bodyShellConcept";
 import { runBodyShellFit } from "../verify/bodyShellFit";
 import { createPresentationPalette } from "../presentation/palette";
-import { fitVisibleVehicle } from "../presentation/fitCamera";
+import { applyFraming, measureComposed, measureFit, updateScreenShift, type Framing, type ScreenShift } from "../presentation/frameVehicle";
 import { TOUR_STOPS, type PresentationPalette, type PresentationState } from "../presentation/viewerState";
 import { chooseLightingTier, createPresentationLighting, createStageFloor } from "../presentation/lighting";
 import { createPlaybackClock, PLAYBACK_PROFILES, type PlaybackClock, type PlaybackProfile } from "../presentation/playbackClock";
@@ -130,6 +130,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
   const bodyConcept = createBodyShellConcept(scene);
   const palette = createPresentationPalette(scene);
   const solidsByNode = new Map(rig.solids.map((solid) => [solid.node, solid]));
+  const reducedMotion = typeof matchMedia === "function" ? matchMedia("(prefers-reduced-motion: reduce)") : null;
   const datumsByNode = new Map(rig.datums.map((datum) => [datum.node, datum]));
   const presentationNames = new Set([...h1.presentationMeshes, ...bodyConcept.meshes]);
   const fitMeshes = scene.meshes.filter((mesh) => solidsByNode.get(mesh)?.role === "physical" || presentationNames.has(mesh.name));
@@ -153,10 +154,22 @@ export function createApp(canvas: HTMLCanvasElement): App {
   let lockFocusOn = false;
   let tourStep: number | null = null;
   let followFit = true;
+  // Guided framing: "compose" is the presentation framing used on load and
+  // when playback settles; "fit" is the FIT/tour whole-machine distance. Both
+  // keep the machine centred through a screen shift.
+  let followMode: "compose" | "fit" = "compose";
+  const screenShift: ScreenShift = { x: 0, y: 0 };
+  let easing: { from: Framing; to: Framing; elapsed: number } | null = null;
+  // One SPREAD → DRIVE → SPREAD showing after load; see startIntro below.
+  let intro: { stage: "wait" | "forward" | "hold" | "back"; at: number } | null = null;
   let ui: ReturnType<typeof createUI>;
   let debug: ReturnType<typeof createDebugView>;
 
   const presentationState = (): PresentationState => ({ palette: palette.getPalette(), tourStep, automatic, direction, playback });
+  const aspect = (): number => canvas.clientWidth / Math.max(1, canvas.clientHeight);
+  const measureFraming = (): Framing | null => (followMode === "fit" ? measureFit : measureComposed)(camera, fitMeshes, aspect());
+  const stopEasing = (): void => { easing = null; };
+  const cancelIntro = (): void => { intro = null; };
   const syncPresentation = (): void => {
     ui.setPresentation(presentationState());
     ui.setViewState({
@@ -176,18 +189,35 @@ export function createApp(canvas: HTMLCanvasElement): App {
   };
   const fitCurrent = (): void => {
     engine.resize();
-    fitVisibleVehicle(camera, fitMeshes, canvas.clientWidth / Math.max(1, canvas.clientHeight));
+    stopEasing();
+    const framing = measureFraming();
+    if (framing) applyFraming(camera, framing, screenShift);
+  };
+  /** Glide to the guided framing for the pose now shown (endpoint settles). */
+  const easeToFraming = (): void => {
+    if (!followFit) return;
+    engine.resize();
+    const to = measureFraming();
+    if (!to) return;
+    if (reducedMotion?.matches) { stopEasing(); applyFraming(camera, to, screenShift); return; }
+    easing = {
+      from: { radius: camera.radius, target: camera.target.clone(), shift: { ...screenShift }, upperRadiusLimit: camera.upperRadiusLimit ?? 42 },
+      to, elapsed: 0,
+    };
   };
   const fitCamera = (): void => {
     ui.cancelPendingInput();
     leaveTour();
     followFit = true;
+    followMode = "fit";
     fitCurrent();
   };
   const setCamera = (preset: string): void => {
     ui.cancelPendingInput();
     leaveTour();
     followFit = false;
+    stopEasing();
+    screenShift.x = screenShift.y = 0;
     applyCamera(preset, camera);
   };
   const setPalette = (value: PresentationPalette): void => {
@@ -343,8 +373,16 @@ export function createApp(canvas: HTMLCanvasElement): App {
     applyCanonicalPose(stop.t);
     applyCamera(stop.camera, camera);
     followFit = value < 4;
-    if (followFit) fitCurrent();
-    else camera.radius *= Math.max(1, 0.9 / (canvas.clientWidth / Math.max(1, canvas.clientHeight)));
+    if (followFit) {
+      // Tour stops keep FIT's whole-machine distance (their poses are
+      // recorded in evidence/camera-controls-03); they gain only the centring.
+      followMode = "fit";
+      fitCurrent();
+    } else {
+      stopEasing();
+      screenShift.x = screenShift.y = 0;
+      camera.radius *= Math.max(1, 0.9 / (canvas.clientWidth / Math.max(1, canvas.clientHeight)));
+    }
     syncPresentation();
   };
 
@@ -352,6 +390,9 @@ export function createApp(canvas: HTMLCanvasElement): App {
     setMachineT(value) {
       automatic = false;
       setMachineT(value);
+      // Reframe when a visitor lands on SPREAD or DRIVE; never mid-scrub.
+      if (machineT <= 0 || machineT >= 1) easeToFraming();
+      else stopEasing();
     },
     setTransform(value) {
       automatic = false;
@@ -418,8 +459,13 @@ export function createApp(canvas: HTMLCanvasElement): App {
   });
 
   // Direct orbit/pan/zoom leaves guided framing without changing the pose.
-  canvas.addEventListener("pointerdown", () => { ui.cancelPendingInput(); leaveTour(); followFit = false; });
-  canvas.addEventListener("wheel", () => { ui.cancelPendingInput(); leaveTour(); followFit = false; }, { passive: true });
+  canvas.addEventListener("pointerdown", () => { ui.cancelPendingInput(); leaveTour(); followFit = false; stopEasing(); });
+  canvas.addEventListener("wheel", () => { ui.cancelPendingInput(); leaveTour(); followFit = false; stopEasing(); }, { passive: true });
+  // Any visitor input ends the load-time showing; a running leg is left to the
+  // visitor's own controls (PLAY pauses it, scrubbing stops it).
+  for (const type of ["pointerdown", "wheel", "keydown"] as const) {
+    window.addEventListener(type, cancelIntro, { capture: true, passive: true });
+  }
 
   canvas.addEventListener("pointerup", (event) => {
     if (!inspectPickOn) return;
@@ -446,7 +492,6 @@ export function createApp(canvas: HTMLCanvasElement): App {
 
   // Playback only chooses when each canonical pose is shown; the clock never
   // leaves [0, 1] and every frame goes through the presentation pose path.
-  const reducedMotion = typeof matchMedia === "function" ? matchMedia("(prefers-reduced-motion: reduce)") : null;
   let clockPose = -1;
   scene.registerBeforeRender(() => {
     if (!automatic) { clock = null; return; }
@@ -463,6 +508,57 @@ export function createApp(canvas: HTMLCanvasElement): App {
     }
     applyCanonicalPose(sample.machineT);
     clockPose = machineT;
+    if (sample.done) settlePlayback();
+  });
+
+  // Playback that comes to rest on SPREAD or DRIVE glides to the framing for
+  // that pose, so DRIVE is not left at SPREAD's wider distance.
+  const settlePlayback = (): void => {
+    if (machineT > 0 && machineT < 1) return;
+    easeToFraming();
+    if (intro?.stage === "forward" && machineT >= 1) intro = { stage: "hold", at: performance.now() + 1400 };
+    else if (intro?.stage === "back") intro = null;
+  };
+
+  /**
+   * Load-time showing: one Show-speed SPREAD → DRIVE → SPREAD pass on the
+   * ordinary presentation pose path, so a first-time visitor sees the motion
+   * without finding PLAY. It never certifies. It is skipped for reduced
+   * motion and for automated browsers (tests and evidence capture keep the
+   * paused start); `?intro=1` forces it and `?intro=0` turns it off.
+   */
+  const introRequest = typeof location === "undefined" ? null : new URLSearchParams(location.search).get("intro");
+  const introWanted = introRequest === "1"
+    || (introRequest !== "0" && !navigator.webdriver && reducedMotion?.matches !== true);
+  if (introWanted) intro = { stage: "wait", at: performance.now() + 900 };
+  scene.onBeforeRenderObservable.add(() => {
+    if (!intro || performance.now() < intro.at) return;
+    if (intro.stage === "wait" || intro.stage === "hold") {
+      // Respect a visitor who has already moved off the starting pose.
+      if (intro.stage === "wait" && machineT !== 0) { intro = null; return; }
+      direction = intro.stage === "wait" ? 1 : -1;
+      playback = "show";
+      automatic = true;
+      intro = { stage: intro.stage === "wait" ? "forward" : "back", at: 0 };
+      syncPresentation();
+    }
+  });
+
+  // Framing glide and the persistent centring shift. Appearance only.
+  scene.onBeforeRenderObservable.add(() => {
+    if (easing) {
+      easing.elapsed += Math.min(engine.getDeltaTime() / 1000, 0.05);
+      const u = Math.min(1, easing.elapsed / 0.9);
+      const k = u * u * (3 - 2 * u);
+      const { from, to } = easing;
+      camera.upperRadiusLimit = Math.max(from.upperRadiusLimit, to.upperRadiusLimit);
+      camera.setTarget(Vector3.Lerp(from.target, to.target, k), false, false, true);
+      camera.radius = from.radius + (to.radius - from.radius) * k;
+      screenShift.x = from.shift.x + (to.shift.x - from.shift.x) * k;
+      screenShift.y = from.shift.y + (to.shift.y - from.shift.y) * k;
+      if (u >= 1) { applyFraming(camera, to, screenShift); easing = null; }
+    }
+    updateScreenShift(camera, screenShift, aspect());
   });
 
   engine.runRenderLoop(() => {
@@ -478,7 +574,7 @@ export function createApp(canvas: HTMLCanvasElement): App {
 
   window.__MT1 = {
     presentation: {
-      getState: () => ({ ...presentationState(), viewerId: "QUARTO-VIEWER-01" }),
+      getState: () => ({ ...presentationState(), intro: intro !== null, viewerId: "QUARTO-VIEWER-01" }),
       setPalette,
       setTourStep,
       fitCamera,
