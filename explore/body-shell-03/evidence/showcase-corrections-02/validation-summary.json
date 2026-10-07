@@ -1,0 +1,30 @@
+{
+  "reviewedBase": "f1a96ef0a85bb924c220b85bcb421755d3d27afd",
+  "newRegressionTests": {
+    "passed": 5,
+    "renderedFrames": 699,
+    "clippedFrames": 0
+  },
+  "preservedChecks": {
+    "preserved-checks.txt": {
+      "passed": 25,
+      "duration": "10.6m"
+    },
+    "tour-fit-checks.txt": {
+      "passed": 2,
+      "duration": "56.4s"
+    }
+  },
+  "totalTargetedPassed": 32,
+  "publicBuild": "passed",
+  "copiedReviewerProbes": {
+    "interruptedGlideFrames": 211,
+    "orientationFrames": 72,
+    "clippedFrames": 0,
+    "pageErrors": 0
+  },
+  "authorityParticipation": "none",
+  "newFullSuiteRun": false,
+  "independentReview": "pending",
+  "remoteActions": "none"
+}

@@ -166,7 +166,9 @@ export function createApp(canvas: HTMLCanvasElement): App {
   let debug: ReturnType<typeof createDebugView>;
 
   const presentationState = (): PresentationState => ({ palette: palette.getPalette(), tourStep, automatic, direction, playback });
-  const aspect = (): number => canvas.clientWidth / Math.max(1, canvas.clientHeight);
+  // ResizeObserver can lag a CSS resize by one render. Use the dimensions
+  // of the active projection until engine.resize() updates the render buffer.
+  const aspect = (): number => engine.getRenderWidth() / Math.max(1, engine.getRenderHeight());
   const measureFraming = (): Framing | null => (followMode === "fit" ? measureFit : measureComposed)(camera, fitMeshes, aspect());
   const stopEasing = (): void => { easing = null; };
   // Preserve the intent of PLAY/Space when capture-phase takeover pauses the
@@ -330,7 +332,11 @@ export function createApp(canvas: HTMLCanvasElement): App {
    */
   const applyCanonicalPose = (value: number, certify = false): void => {
     previewOn = false;
-    machineT = clamp01(value);
+    const nextT = clamp01(value);
+    // An endpoint glide belongs to the pose for which it was measured. Once
+    // playback moves away, it must not finish later against that obsolete pose.
+    if (nextT !== machineT) stopEasing();
+    machineT = nextT;
     const mapped = certify ? rig.applyMachine(machineT) : rig.applyMachinePose(machineT);
     frontT = mapped.frontT;
     transformT = mapped.rearT;
@@ -592,10 +598,10 @@ export function createApp(canvas: HTMLCanvasElement): App {
       screenShift.x = from.shift.x + (to.shift.x - from.shift.x) * k;
       screenShift.y = from.shift.y + (to.shift.y - from.shift.y) * k;
       if (u >= 1) { applyFraming(camera, to, screenShift); easing = null; }
+      // Guard the terminal frame too, after applying its final target/shift.
+      // Interpolation can tighten a corner between two safe endpoints.
+      if (followFit) expandForVisiblePose(camera, fitMeshes, screenShift, aspect());
     }
-    // Interpolating target/shift can also tighten a corner between two safe
-    // endpoints. Keep every rendered glide frame inside the same margin.
-    if (followFit && easing) expandForVisiblePose(camera, fitMeshes, screenShift, aspect());
     updateScreenShift(camera, screenShift, aspect());
   });
 

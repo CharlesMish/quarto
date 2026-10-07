@@ -1,0 +1,35 @@
+
+Running 25 tests using 1 worker
+
+(node:98572) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/25] tests/camera-controls.spec.ts:61:3 › mouse orbit and pan retain their tuned response, with gentler zoom
+[2/25] tests/camera-controls.spec.ts:61:3 › two-touch orbit and pan retain their tuned response, with gentler zoom
+[3/25] tests/showcase-polish.spec.ts:52:1 › page identity serves a title, description, link preview and icon
+[4/25] tests/showcase-polish.spec.ts:71:1 › the load-time showing plays SPREAD → DRIVE → SPREAD once without certifying
+[5/25] tests/showcase-polish.spec.ts:90:1 › visitor input ends the showing, and intro=0 or automation keeps the paused start
+[6/25] tests/showcase-polish.spec.ts:111:1 › load and FIT share composed framing without changing orbit angles
+[7/25] tests/showcase-polish.spec.ts:131:1 › playback settling on DRIVE glides to that pose's framing; orbiting opts out
+[8/25] tests/showcase-polish.spec.ts:158:1 › public copy reads as progress and keeps provenance one click away
+[9/25] tests/showcase-polish.spec.ts:222:3 › intro, reverse and scrub stay in the canvas at 320x568
+[10/25] tests/showcase-polish.spec.ts:222:3 › intro, reverse and scrub stay in the canvas at 390x844
+[11/25] tests/showcase-polish.spec.ts:222:3 › intro, reverse and scrub stay in the canvas at 568x320
+[12/25] tests/showcase-polish.spec.ts:222:3 › intro, reverse and scrub stay in the canvas at 768x1024
+[13/25] tests/showcase-polish.spec.ts:222:3 › intro, reverse and scrub stay in the canvas at 799x600
+[14/25] tests/showcase-polish.spec.ts:222:3 › intro, reverse and scrub stay in the canvas at 801x600
+[15/25] tests/showcase-polish.spec.ts:222:3 › intro, reverse and scrub stay in the canvas at 844x390
+[16/25] tests/showcase-polish.spec.ts:222:3 › intro, reverse and scrub stay in the canvas at 1280x720
+[17/25] tests/showcase-polish.spec.ts:330:3 › input pauses intro motion during wait without consuming the gesture
+[18/25] tests/showcase-polish.spec.ts:330:3 › input pauses intro motion during forward without consuming the gesture
+[19/25] tests/showcase-polish.spec.ts:330:3 › input pauses intro motion during hold without consuming the gesture
+[20/25] tests/showcase-polish.spec.ts:330:3 › input pauses intro motion during back without consuming the gesture
+[21/25] tests/showcase-polish.spec.ts:367:1 › intro takeover preserves PAUSE, PLAY, reverse, FIT and slider command intent
+[22/25] tests/showcase-polish.spec.ts:409:3 › showcase appearance is limited to normal Hush views in flat
+[23/25] tests/showcase-polish.spec.ts:409:3 › showcase appearance is limited to normal Hush views in lite
+[24/25] tests/showcase-polish.spec.ts:409:3 › showcase appearance is limited to normal Hush views in studio
+[25/25] tests/zoom-response.spec.ts:14:1 › pinch and wheel zoom are about 20% gentler across direction, distance and playback profile
+  Slow test file: tests/showcase-polish.spec.ts (6.3m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  25 passed (10.6m)

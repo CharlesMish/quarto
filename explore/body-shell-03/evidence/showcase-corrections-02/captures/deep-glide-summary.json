@@ -1,0 +1,321 @@
+{
+  "base": "http://127.0.0.1:5194",
+  "results": [
+    {
+      "name": "served source identity",
+      "url": "http://127.0.0.1:5194",
+      "matched": true,
+      "sha256": "5d52b42a1528ce032572529591584e890d513c5f65cbc94d96952103df87a912"
+    },
+    {
+      "name": "interrupted-deep-drive-glide-390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "frames": 70,
+      "clipped": 0,
+      "final": {
+        "at": 1752.4000000953674,
+        "t": 0.1682255591988513,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "game",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "radius": 28.738433704012394,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "alpha": 0.78,
+        "beta": 1.14,
+        "shift": [
+          -0.5775653506356011,
+          0.40583982856656514
+        ],
+        "bounds": {
+          "minX": 0.08521955523691152,
+          "maxX": 0.8723286957689783,
+          "minY": 0.38130949325563657,
+          "maxY": 0.638241037496167
+        },
+        "canvas": {
+          "width": 390,
+          "height": 579
+        }
+      },
+      "actual": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "capture": null
+    },
+    {
+      "name": "FIT restores after interrupted glide",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": {
+        "at": 1902.9000000953674,
+        "t": 0.1682255591988513,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "game",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "radius": 27.020921172536383,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "alpha": 0.78,
+        "beta": 1.14,
+        "shift": [
+          -0.24017266520106276,
+          0.6586595802662906
+        ],
+        "bounds": {
+          "minX": 0.08000002367136043,
+          "maxX": 0.9200000062635586,
+          "minY": 0.3645367477108666,
+          "maxY": 0.6354632809168066
+        },
+        "canvas": {
+          "width": 390,
+          "height": 579
+        }
+      },
+      "actual": {
+        "minX": 0.08000002367136043,
+        "maxX": 0.9200000062635586,
+        "minY": 0.3645367477108666,
+        "maxY": 0.6354632809168066
+      }
+    },
+    {
+      "name": "served source identity",
+      "url": "http://127.0.0.1:5194",
+      "matched": true,
+      "sha256": "5d52b42a1528ce032572529591584e890d513c5f65cbc94d96952103df87a912"
+    },
+    {
+      "name": "interrupted-deep-drive-glide-844x390",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "frames": 70,
+      "clipped": 0,
+      "final": {
+        "at": 1582.7000002861023,
+        "t": 0.1717059559156947,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "game",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "radius": 10.561678362560405,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "alpha": 0.78,
+        "beta": 1.14,
+        "shift": [
+          0.4263391376644368,
+          1.3685106061723615
+        ],
+        "bounds": {
+          "minX": 0.31459587787787946,
+          "maxX": 0.6975823397932654,
+          "minY": 0.13693436808982734,
+          "maxY": 0.8487782078317089
+        },
+        "canvas": {
+          "width": 844,
+          "height": 182
+        }
+      },
+      "actual": {
+        "minX": 0.31459587787787946,
+        "maxX": 0.6885128582566198,
+        "minY": 0.13693436808982734,
+        "maxY": 0.8487782078317089
+      },
+      "capture": null
+    },
+    {
+      "name": "FIT restores after interrupted glide",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "state": {
+        "at": 1733.3000001907349,
+        "t": 0.1717059559156947,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "game",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "radius": 10.025341593246809,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "alpha": 0.78,
+        "beta": 1.14,
+        "shift": [
+          0.27247499498802197,
+          1.3887501455560547
+        ],
+        "bounds": {
+          "minX": 0.29179608690492226,
+          "maxX": 0.7082039232550359,
+          "minY": 0.11999998182195924,
+          "maxY": 0.8800000352645183
+        },
+        "canvas": {
+          "width": 844,
+          "height": 182
+        }
+      },
+      "actual": {
+        "minX": 0.29179608690492226,
+        "maxX": 0.697682683614658,
+        "minY": 0.11999998182195924,
+        "maxY": 0.8800000352645183
+      }
+    },
+    {
+      "name": "served source identity",
+      "url": "http://127.0.0.1:5194",
+      "matched": true,
+      "sha256": "5d52b42a1528ce032572529591584e890d513c5f65cbc94d96952103df87a912"
+    },
+    {
+      "name": "interrupted-deep-drive-glide-1280x720",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": 71,
+      "clipped": 0,
+      "final": {
+        "at": 1740.5999999046326,
+        "t": 0.14515199999999806,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "game",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "radius": 12.083925846633663,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "alpha": 0.78,
+        "beta": 1.14,
+        "shift": [
+          0.4646489697796958,
+          1.566734034506798
+        ],
+        "bounds": {
+          "minX": 0.2299006770474946,
+          "maxX": 0.778919844594528,
+          "minY": 0.14432942890258554,
+          "maxY": 0.8800000329845177
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 473
+        }
+      },
+      "actual": {
+        "minX": 0.2299006770474946,
+        "maxX": 0.778919844594528,
+        "minY": 0.14432942890258554,
+        "maxY": 0.8800000329845177
+      },
+      "capture": null
+    },
+    {
+      "name": "FIT restores after interrupted glide",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "state": {
+        "at": 1925.5999999046326,
+        "t": 0.14515199999999806,
+        "state": {
+          "palette": "hush-basin",
+          "tourStep": null,
+          "automatic": false,
+          "direction": -1,
+          "playback": "game",
+          "intro": false,
+          "viewerId": "QUARTO-VIEWER-01"
+        },
+        "radius": 11.559274062331431,
+        "target": [
+          0,
+          1.4774999435245992,
+          -1.0599998569488527
+        ],
+        "alpha": 0.78,
+        "beta": 1.14,
+        "shift": [
+          0.3968377731860159,
+          1.7353166391968917
+        ],
+        "bounds": {
+          "minX": 0.20627417872542608,
+          "maxX": 0.7937257698996475,
+          "minY": 0.11999996401822163,
+          "maxY": 0.8799999817627684
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 473
+        }
+      },
+      "actual": {
+        "minX": 0.20627417872542608,
+        "maxX": 0.7902246448487313,
+        "minY": 0.11999996401822163,
+        "maxY": 0.8799999817627684
+      }
+    }
+  ],
+  "errors": []
+}

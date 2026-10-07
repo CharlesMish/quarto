@@ -174,6 +174,11 @@ test("public copy reads as progress and keeps provenance one click away", async 
   await expect(page.locator("#foliosPanel")).not.toContainText("legacy/source");
 });
 
+interface FramingSample {
+  t: number; direction: number; minX: number; maxX: number; minY: number; maxY: number; radius: number;
+  at: number; automatic: boolean; width: number; height: number; clientWidth: number; clientHeight: number;
+}
+
 /** Observe every rendered frame, not only endpoints or conservative timed polls. */
 async function startFramingTrace(page: Page) {
   const source = await (await page.request.get("/src/scene/createScene.ts")).text();
@@ -186,7 +191,8 @@ async function startFramingTrace(page: Page) {
       .filter(row => row.objectClass === "physical authority" || row.family === "body-shell-concept" || row.family === "h1-presentation")
       .map(row => row.semanticName));
     const meshes = scene.meshes.filter((m: { name: string }) => names.has(m.name));
-    const samples: Array<{ t: number; direction: number; minX: number; maxX: number; minY: number; maxY: number; radius: number }> = [];
+    const samples: FramingSample[] = [];
+    (window as any).__compositionScene = scene;
     (window as any).__compositionSamples = samples;
     scene.onAfterRenderObservable.add(() => {
       const viewport = camera.viewport.toGlobal(engine.getRenderWidth(), engine.getRenderHeight());
@@ -200,7 +206,10 @@ async function startFramingTrace(page: Page) {
         }
       }
       samples.push({ t: window.__MT1!.getMachineT(), direction: window.__MT1!.presentation.getState().direction,
-        minX, maxX, minY, maxY, radius: camera.radius });
+        minX, maxX, minY, maxY, radius: camera.radius, at: performance.now(),
+        automatic: window.__MT1!.presentation.getState().automatic,
+        width: engine.getRenderWidth(), height: engine.getRenderHeight(),
+        clientWidth: engine.getRenderingCanvas().clientWidth, clientHeight: engine.getRenderingCanvas().clientHeight });
     });
   }, { engineUrl: await cameraModule(page), vectorsUrl: new URL(path, page.url()).href });
 }
@@ -239,6 +248,80 @@ for (const viewport of [
     }
     expect(samples.filter(s => s.minX < -0.001 || s.maxX > 1.001 || s.minY < -0.001 || s.maxY > 1.001).slice(0, 5),
       "every rendered physical/H1/body corner must fit, including glides").toEqual([]);
+    expect(await page.evaluate(() => window.__MT1!.getInspectionState().certificate.state)).toBe("STALE");
+  });
+}
+
+/** Wait on scene renders so resize probes include the first frame at each orientation. */
+async function renderedFrames(page: Page, count: number): Promise<void> {
+  await page.evaluate(count => new Promise<void>(resolve => {
+    const scene = (window as any).__compositionScene;
+    let rendered = 0;
+    const observer = scene.onAfterRenderObservable.add(() => {
+      if (++rendered >= count) { scene.onAfterRenderObservable.remove(observer); resolve(); }
+    });
+  }), count);
+}
+
+for (const viewport of [{ width: 390, height: 844 }, { width: 844, height: 390 }, { width: 1280, height: 720 }]) {
+  test(`interrupted DRIVE glide stays framed after PLAY or REVERSE and PAUSE at ${viewport.width}x${viewport.height}`, async ({ page }, info) => {
+    await page.setViewportSize(viewport);
+    for (const startButton of ["autoBtn", "reverseBtn"]) {
+      await ready(page, "?intro=0&lighting=flat");
+      await startFramingTrace(page);
+      await page.locator("#speedSelect").selectOption("game");
+      await page.locator("#machineSlider").press("End");
+      // Exercise the ordinary button handlers without actionability waits that
+      // would let the 0.9-second endpoint glide finish before the command.
+      const pausedAt = await page.evaluate(startButton => new Promise<number>(resolve => {
+        const scene = (window as any).__compositionScene;
+        document.getElementById(startButton)!.click();
+        const observer = scene.onAfterRenderObservable.add(() => {
+          const t = window.__MT1!.getMachineT();
+          if (t > 0 && t < 0.2) {
+            document.getElementById("autoBtn")!.click();
+            scene.onAfterRenderObservable.remove(observer);
+            resolve(t);
+          }
+        });
+      }), startButton);
+      await page.waitForTimeout(1200); // includes the obsolete glide's terminal frame and rest
+      await renderedFrames(page, 6);
+      const samples = await page.evaluate(() => (window as any).__compositionSamples as FramingSample[]);
+      await info.attach(`${startButton}-interrupted-glide`, { body: JSON.stringify({ viewport, pausedAt, samples }), contentType: "application/json" });
+      expect(pausedAt).toBeGreaterThan(0);
+      expect(pausedAt).toBeLessThan(0.2);
+      expect(samples.filter(s => s.minX < -0.001 || s.maxX > 1.001 || s.minY < -0.001 || s.maxY > 1.001).slice(0, 5),
+        "all frames, including a paused obsolete glide's terminal frame, stay inside the canvas").toEqual([]);
+      expect(samples.slice(-6).every(s => s.t === pausedAt && !s.automatic)).toBe(true);
+      expect(await page.evaluate(() => window.__MT1!.getInspectionState().certificate.state)).toBe("STALE");
+    }
+  });
+}
+
+for (const moving of [false, true]) {
+  test(`orientation transitions stay framed ${moving ? "during reverse" : "at rest"}`, async ({ page }, info) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await ready(page, "?intro=0&lighting=flat");
+    await startFramingTrace(page);
+    await page.locator("#machineSlider").press("End");
+    await page.waitForTimeout(1100);
+    if (moving) {
+      await page.locator("#speedSelect").selectOption("inspect");
+      await page.locator("#autoBtn").click();
+    }
+    await page.evaluate(() => { (window as any).__compositionSamples.length = 0; });
+    for (let i = 0; i < 12; i++) {
+      await page.setViewportSize(i % 2 ? { width: 390, height: 844 } : { width: 844, height: 390 });
+      await renderedFrames(page, 6);
+    }
+    const samples = await page.evaluate(() => (window as any).__compositionSamples as FramingSample[]);
+    await info.attach("orientation-transitions", { body: JSON.stringify({ moving, rotations: 12, samples }), contentType: "application/json" });
+    expect(samples.length).toBeGreaterThanOrEqual(72);
+    expect(new Set(samples.map(s => s.width)).size).toBe(2);
+    if (moving) expect(samples.filter(s => s.automatic && s.t > 0 && s.t < 1).length).toBeGreaterThan(10);
+    expect(samples.filter(s => s.minX < -0.001 || s.maxX > 1.001 || s.minY < -0.001 || s.maxY > 1.001).slice(0, 5),
+      "every rendered frame uses a coherent projection, including resize boundaries").toEqual([]);
     expect(await page.evaluate(() => window.__MT1!.getInspectionState().certificate.state)).toBe("STALE");
   });
 }

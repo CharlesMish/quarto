@@ -1,0 +1,2533 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "build": {
+    "candidateId": "MT1-S5HR3R1",
+    "freezeId": "MT1-S5HR3R1",
+    "candidateSha256": "6df6ddd8086d12329e87b9695c8e309995b2e81c6e72eacea240215ca3a646a3",
+    "candidateSha256Scope": "MT1-S5HR3R1.zip authority candidate; dev tree adds presentation-only inspection plumbing",
+    "sourceCandidateId": "MT1-S5HR3R",
+    "sourceCandidateSha256": "072d936e4bef77c097b464f6aaf414feb630cafaba6a533f9dfbb9e5c4256018",
+    "authorityContractSha256": "e15885cc11777ad49f2b0b5ad2778facb64ee6f932b65bf36742a65afe451ba9",
+    "frozenNegativeControlContractSha256": "8b150937b002d7a054e098182d6453711c477f8eaeb1865c1663541dc135f70d",
+    "nominalGeometryAuthority": {
+      "id": "MT1-S5H",
+      "version": "frozen S5H mechanism geometry carried unchanged through HR3R1",
+      "parametersSha256": "8d713b182f94af2769bec0696fb10cfc94fce98d90e89a46a69aad68e805fc63"
+    },
+    "frozenS4aSha256": "95d09a2429bf93e4060d65190e5ec369ccc88828fe8ae0ce07a7bfcdb7bf08b8",
+    "inspectionSurface": "presentation-only-v1"
+  },
+  "inspection": {
+    "candidateId": "MT1-S5HR3R1",
+    "machineT": 0.1682255591988513,
+    "driveT": 0,
+    "requestedDriveT": 0,
+    "mode": "MACHINE",
+    "preview": false,
+    "driveThrustReadyCached": false,
+    "certificate": {
+      "state": "STALE",
+      "present": false,
+      "valid": false,
+      "samples": null,
+      "pairsEvaluated": null
+    }
+  },
+  "trace": [
+    {
+      "at": 598,
+      "t": 0.9841762370527325,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": true,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.22310317319479872,
+        "maxX": 0.8005848399585034,
+        "minY": 0.386054905476409,
+        "maxY": 0.6363035628926845
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 613.9000000953674,
+      "t": 0.9325970040131921,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": true,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.22310317319479872,
+        "maxX": 0.8005848399585034,
+        "minY": 0.386054905476409,
+        "maxY": 0.6363035628926845
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 629.6000003814697,
+      "t": 0.8586592057998235,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": true,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.22310317319479872,
+        "maxX": 0.8005848399585034,
+        "minY": 0.386054905476409,
+        "maxY": 0.6363035628926845
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 647.3000001907349,
+      "t": 0.7517812499999976,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": true,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.22310317319479872,
+        "maxX": 0.8005848399585034,
+        "minY": 0.38513034630416565,
+        "maxY": 0.6363035628926845
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 663.5,
+      "t": 0.6364426246910375,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": true,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.1996998605217063,
+        "maxX": 0.8005848399585034,
+        "minY": 0.3818410356832757,
+        "maxY": 0.6363035628926845
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 680.3000001907349,
+      "t": 0.5127487738951445,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": true,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.12376973817817453,
+        "maxX": 0.8005848399585034,
+        "minY": 0.36373294039093984,
+        "maxY": 0.6363035628926845
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 696.8000001907349,
+      "t": 0.38834374999999743,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": true,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.18623559438030263,
+        "maxX": 0.8005848399585034,
+        "minY": 0.37730664710373124,
+        "maxY": 0.6363035628926845
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 713.4000000953674,
+      "t": 0.2708886246438308,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": true,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.20579312503017863,
+        "maxX": 0.8663309754360419,
+        "minY": 0.3816059233965733,
+        "maxY": 0.6363035628926845
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 729.5,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": true,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 743.7000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 760.6000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 778,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 794.7000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 811.2000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 827.8000001907349,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 844.6000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 861.4000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 877.2000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 894.4000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 911.2000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 927.9000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 944.6000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 961.3000001907349,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 977.9000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 994.7000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1011.5,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1028.1000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1044.6000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1061.7000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1078.2000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1094.9000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1111.5,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1128,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1144.3000001907349,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1160.6000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1177.7000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1194.1000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1210.4000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1227.5,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1244.3000001907349,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1261.1000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1277.7000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1294.4000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1310.9000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1327.6000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1344.1000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1361,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1377.5,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1394.1000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1410.9000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1427.7000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1444.6000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1461.3000001907349,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1478,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1494.5,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1511.4000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1527.8000001907349,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1544.4000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1561,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1577.9000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1594.4000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1611.1000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1627.7000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1644.3000001907349,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1660.9000000953674,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1677.5,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1694.2000002861023,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1711,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1727.6000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    },
+    {
+      "at": 1744.1000003814697,
+      "t": 0.1682255591988513,
+      "state": {
+        "palette": "hush-basin",
+        "tourStep": null,
+        "automatic": false,
+        "direction": -1,
+        "playback": "game",
+        "intro": false,
+        "viewerId": "QUARTO-VIEWER-01"
+      },
+      "radius": 28.738433704012394,
+      "target": [
+        0,
+        1.4774999435245992,
+        -1.0599998569488527
+      ],
+      "alpha": 0.78,
+      "beta": 1.14,
+      "shift": [
+        -0.5775653506356011,
+        0.40583982856656514
+      ],
+      "bounds": {
+        "minX": 0.08521955523691152,
+        "maxX": 0.8723286957689783,
+        "minY": 0.38130949325563657,
+        "maxY": 0.638241037496167
+      },
+      "canvas": {
+        "width": 390,
+        "height": 579
+      }
+    }
+  ],
+  "capture": null,
+  "final": {
+    "at": 1752.4000000953674,
+    "t": 0.1682255591988513,
+    "state": {
+      "palette": "hush-basin",
+      "tourStep": null,
+      "automatic": false,
+      "direction": -1,
+      "playback": "game",
+      "intro": false,
+      "viewerId": "QUARTO-VIEWER-01"
+    },
+    "radius": 28.738433704012394,
+    "target": [
+      0,
+      1.4774999435245992,
+      -1.0599998569488527
+    ],
+    "alpha": 0.78,
+    "beta": 1.14,
+    "shift": [
+      -0.5775653506356011,
+      0.40583982856656514
+    ],
+    "bounds": {
+      "minX": 0.08521955523691152,
+      "maxX": 0.8723286957689783,
+      "minY": 0.38130949325563657,
+      "maxY": 0.638241037496167
+    },
+    "canvas": {
+      "width": 390,
+      "height": 579
+    }
+  },
+  "actual": {
+    "minX": 0.08521955523691152,
+    "maxX": 0.8723286957689783,
+    "minY": 0.38130949325563657,
+    "maxY": 0.638241037496167
+  }
+}
