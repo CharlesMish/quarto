@@ -145,7 +145,16 @@ input[type="range"] { width: 100%; min-width: 0; height: 44px; margin: 0; accent
   .topbar { inset: max(10px, env(safe-area-inset-top)) 14px auto; gap: 10px; }
   .identity { padding-left: 9px; }
   .title { font-size: 21px; letter-spacing: .12em; }
-  .subtitle { display: none; }
+  .subtitle {
+    display: block;
+    margin-top: 3px;
+    font-size: 10px;
+    letter-spacing: .03em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: min(220px, 48vw);
+  }
   .state-readout { max-width: 190px; }
   .state-name { font-size: 12px; letter-spacing: .025em; }
   .state-value { font-size: 9px; max-width: 190px; }
