@@ -53,7 +53,7 @@ input[type="range"] { width: 100%; min-width: 0; height: 44px; margin: 0; accent
   background: linear-gradient(180deg, #142126, #0e171b); pointer-events: auto;
 }
 .slider-row { display: grid; grid-template-columns: 64px minmax(0, 1fr) 64px; gap: 12px; align-items: center; }
-.end-label { font-size: 11px; color: var(--muted); letter-spacing: .12em; font-weight: 650; }
+.end-label { font-size: 11px; color: var(--cyan); letter-spacing: .14em; font-weight: 700; }
 .end-label:last-child { text-align: right; }
 .primary-actions { display: grid; grid-template-columns: 1fr 1fr 1fr 1.4fr 1.15fr .75fr 1.25fr; gap: 8px; }
 #autoBtn { color: #201809; border-color: var(--amber); background: var(--amber); font-weight: 700; }
@@ -151,7 +151,7 @@ input[type="range"] { width: 100%; min-width: 0; height: 44px; margin: 0; accent
   .state-value { font-size: 9px; max-width: 190px; }
   .control-deck { padding: 6px 10px; bottom: max(8px, env(safe-area-inset-bottom)); }
   .slider-row { grid-template-columns: 56px minmax(0, 1fr) 48px; gap: 8px; }
-  .end-label { font-size: 10px; }
+  .end-label { font-size: 10px; letter-spacing: .1em; }
   /* Two rows: PLAY REVERSE BODY FIT / palette speed TOUR. */
   .primary-actions { grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 6px; }
   .primary-actions > * { grid-column: span 2; }
