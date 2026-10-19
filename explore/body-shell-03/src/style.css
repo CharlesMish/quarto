@@ -60,6 +60,17 @@ input[type="range"] { width: 100%; min-width: 0; height: 44px; margin: 0; accent
 #autoBtn:hover { background: #f2bd6e; }
 .palette-control, .speed-control { min-width: 0; }
 .palette-control select, .speed-control select { width: 100%; height: 100%; padding-inline: 8px; }
+/* Visible captions for the two selects: sighted readers otherwise see only "Hush Basin"
+   and "Show" with no hint that they are palette and playback speed. Reuses the existing
+   label text (already read by screen readers); captions ignore pointer input. */
+.palette-control, .speed-control { position: relative; }
+.palette-control .sr-only, .speed-control .sr-only {
+  width: auto; height: auto; clip-path: none;
+  top: 5px; left: 9px; right: 22px; color: var(--muted); font-size: 8.5px; font-weight: 650;
+  letter-spacing: .1em; line-height: 1; text-transform: uppercase; text-overflow: ellipsis;
+  overflow: hidden; pointer-events: none; z-index: 1;
+}
+.palette-control select, .speed-control select { padding-top: 15px; padding-bottom: 3px; }
 .group-tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; padding-top: 8px; }
 .group-tabs button { border-color: transparent; background: transparent; color: var(--muted); }
 .group-tabs button:hover { color: var(--ink); background: #203138; }
@@ -158,6 +169,7 @@ input[type="range"] { width: 100%; min-width: 0; height: 44px; margin: 0; accent
   #fitBtn { grid-row: 1; grid-column: 7 / span 2; }
   .primary-actions .palette-control, #tourBtn { grid-column: span 3; }
   .primary-actions button, .primary-actions select { padding-inline: 7px; font-size: 11px; }
+  .palette-control .sr-only, .speed-control .sr-only { left: 8px; font-size: 8px; letter-spacing: .06em; }
   .group-tabs { gap: 2px; padding-top: 6px; }
   .group-tabs button { padding: 6px 3px; font-size: 10px; letter-spacing: 0; }
   .button-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
