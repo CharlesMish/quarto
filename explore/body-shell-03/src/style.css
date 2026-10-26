@@ -21,6 +21,11 @@ body { background: #080d10; color: var(--ink); }
   display: block; outline: none; touch-action: none;
 }
 #ui { position: fixed; inset: 0; pointer-events: none; }
+/* Curator 2026-10-26: hairlines frame the viewer band so the canvas edge reads as a
+   deliberate window between topbar and deck (overlay only; canvas size unchanged). */
+#ui::before, #ui::after { content: ""; position: absolute; left: 0; right: 0; height: 1px; background: var(--line); pointer-events: none; }
+#ui::before { top: var(--viewer-top); }
+#ui::after { bottom: var(--viewer-bottom); }
 [hidden] { display: none !important; }
 button, input, select { font: inherit; }
 button, select {
