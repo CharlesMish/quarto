@@ -51,6 +51,7 @@ input[type="range"] { width: 100%; min-width: 0; height: 44px; margin: 0; accent
   width: min(1120px, calc(100% - 24px)); padding: 8px 12px;
   border: 1px solid var(--line); border-top-color: var(--cyan); border-radius: 8px;
   background: linear-gradient(180deg, #142126, #0e171b); pointer-events: auto;
+  box-shadow: 0 -14px 36px rgba(0, 0, 0, .42), 0 1px 0 rgba(137, 200, 192, .08) inset;
 }
 .slider-row { display: grid; grid-template-columns: 64px minmax(0, 1fr) 64px; gap: 12px; align-items: center; }
 .end-label { font-size: 11px; color: var(--muted); letter-spacing: .12em; font-weight: 650; }
