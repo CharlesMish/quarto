@@ -35,6 +35,12 @@ button.active, button[aria-expanded="true"] { color: #101e20; border-color: var(
 button:disabled { cursor: default; opacity: .4; }
 button:disabled:hover { border-color: var(--line); background: #142126; }
 input[type="range"] { width: 100%; min-width: 0; height: 44px; margin: 0; accent-color: var(--amber); cursor: ew-resize; }
+/* Curator 2026-11-02: a drawn SPREAD-DRIVE track with a ringed amber thumb, so the scrub position reads at a glance. */
+input[type="range"] { -webkit-appearance: none; appearance: none; background: transparent; }
+input[type="range"]::-webkit-slider-runnable-track { height: 4px; border-radius: 2px; background: rgba(178, 194, 190, .34); }
+input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; margin-top: -7px; border-radius: 50%; background: var(--amber); border: 3px solid #0e171b; box-shadow: 0 0 0 1px var(--amber); }
+input[type="range"]::-moz-range-track { height: 4px; border-radius: 2px; background: rgba(178, 194, 190, .34); }
+input[type="range"]::-moz-range-thumb { width: 12px; height: 12px; border-radius: 50%; background: var(--amber); border: 3px solid #0e171b; box-shadow: 0 0 0 1px var(--amber); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 .topbar { position: absolute; inset: max(14px, env(safe-area-inset-top)) 22px auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
