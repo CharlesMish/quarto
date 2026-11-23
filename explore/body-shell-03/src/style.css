@@ -21,6 +21,7 @@ body { background: #080d10; color: var(--ink); }
   display: block; outline: none; touch-action: none;
 }
 #ui { position: fixed; inset: 0; pointer-events: none; }
+#ui::before { content: ''; position: absolute; inset: 0 0 auto; height: 96px; background: linear-gradient(180deg, rgb(8 13 16 / 72%), transparent); }
 [hidden] { display: none !important; }
 button, input, select { font: inherit; }
 button, select {
