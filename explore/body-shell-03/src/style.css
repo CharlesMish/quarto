@@ -38,7 +38,7 @@ input[type="range"] { width: 100%; min-width: 0; height: 44px; margin: 0; accent
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 .topbar { position: absolute; inset: max(14px, env(safe-area-inset-top)) 22px auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-.identity { min-width: 0; padding-left: 12px; border-left: 3px solid var(--cyan); }
+.identity { min-width: 0; padding-left: 13px; border-left: 2px solid var(--cyan); }
 .title { font-size: 25px; font-weight: 650; letter-spacing: .17em; line-height: 1.2; }
 .subtitle { margin-top: 5px; color: var(--muted); font-size: 11px; letter-spacing: .045em; }
 .state-readout { min-width: 0; text-align: right; }
